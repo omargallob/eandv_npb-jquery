@@ -9,7 +9,7 @@
 <% content_for(:script) do %>
 <%= stylesheet_link_tag "jquery.Jcrop" %>
 <script type="text/javascript" charset="utf-8">
-	$(function(){
+	$(document).ready(function() {
 		$("#cropbox").Jcrop({
 			onChange: updateCrop,
 			onSelect: updateCrop,
