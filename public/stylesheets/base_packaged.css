@@ -114,14 +114,13 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #upper_pagewrapper #navbar {height: 50px; width: 1020px; margin: 0px auto}
 #upper_pagewrapper #navbar ul {margin: 0px auto}
 #upper_pagewrapper #navbar ul li.cufon-active h2 {color: white}
-#upper_pagewrapper #navbar ul li {list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 14px 20px}
+#upper_pagewrapper #navbar ul li {list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 14px 30px}
 #upper_pagewrapper #navbar ul li a {margin-left: 25px; color: #4d4d4d; text-decoration: none; text-transform: uppercase}
 #upper_pagewrapper #navbar ul li a:hover {color: white}
 #upper_pagewrapper #navbar ul li a.active {color: white}
 #upper_pagewrapper #navbar ul li img {position: absolute; margin-top: 7px; margin-left: 3px}
 #upper_pagewrapper #navbar ul li img.arrow {position: absolute; margin-top: 10px; margin-left: 0px; z-index: 4; display: none}
 #upper_pagewrapper #navbar ul li img.active {display: block}
-#upper_pagewrapper #navbar ul #nav_properties {margin-right: 15px}
 #upper_pagewrapper #largegallery {width: 100%; height: 433px; background-position: 0 -135px}
 #upper_pagewrapper #largegallery #shine {height: 22px; width: 949px; background-image: url(../images/system/bg/front/shine.jpg); margin: 0px auto; margin-top: 28px}
 #upper_pagewrapper #holder {width: 961px; margin: 0px auto; height: 359px; padding-top: 24px}
@@ -151,28 +150,31 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #lower_pagewrapper #footer ul#links li img.eandv {margin: 7px 0 0 7px}
 #lower_pagewrapper #footer #logbox {float: right; width: 250px; margin-top: 0px}
 #lower_pagewrapper #footer #logbox div {float: left; margin-left: 15px; background-color: white}
-#left-side.why {width: 612px}
+#left-side.properties {width: 621px}
 #left-side.home {width: 633px}
-#left-side {width: 621px; float: left; background: transparent}
+#left-side {width: 612px; float: left; background: transparent}
 #left-side #sellyourproperty {width: 170px; float: left; margin-top: 15px}
 #left-side ul#gallerylinks {height: 230px; width: 130px}
 #left-side ul#gallerylinks li {float: left; height: 62px}
-#left-side #side-nav.why {margin-right: 0px}
+#left-side #side-nav.properties {margin-right: 9px}
 #left-side #side-nav.home {margin-right: 0px}
-#left-side #side-nav {width: 170px; float: left; background-color: transparent; margin-right: 9px}
+#left-side #side-nav {width: 170px; float: left; background-color: transparent; margin-right: 0px}
 #left-side #side-nav hr {width: 129px; height: 1px; border: 0px none; float: left; background-color: #e1e1e1; margin-left: 6px}
-#left-side #side-nav .left_tool {width: 162px; height: 188px; background: url(../images/system/bg/front/left_tool.jpg); margin-top: 15px}
+#left-side #side-nav .shorter {height: 182px}
+#left-side #side-nav .relocating {margin: 0px 0 0 -4px}
+#left-side #side-nav .left_tool {width: 162px; background: url(../images/system/bg/front/left_tool.jpg); margin-top: 15px; float: left}
 #left-side #side-nav .left_tool h3 {margin-left: 14px}
-#left-side #side-nav .left_tool .top {width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_top.jpg)}
-#left-side #side-nav .left_tool .bottom {width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px}
+#left-side #side-nav .left_tool .top {width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_top.jpg); float: left}
+#left-side #side-nav .left_tool .bottom {width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px; float: left}
 #left-side #side-nav .left_tool ul {width: 162px; height: 123px; margin: 12px 0 0 0px; padding: 0px}
 #left-side #side-nav .left_tool ul li {height: 41px; margin-left: 14px}
 #left-side #side-nav .left_tool ul li img {float: left}
 #left-side #side-nav .left_tool ul li span {float: left; font-size: 12px; font-style: italic; width: 100px; margin: 2px 0 0 13px; color: #818181}
-#left-side #side-nav ul.submenu {padding: 0px; float: left}
+#left-side #side-nav ul.submenu {padding: 0px; margin: 0px; float: left; width: 170px}
 #left-side #side-nav ul.submenu li {height: 24px; width: 151px; background: url(../images/system/buttons/submenu.jpg); margin: 0 0 5px 5px; padding: 2px 0 0 10px; background-repeat: no-repeat}
 #left-side #side-nav ul.submenu li a {color: white}
 #left-side #side-nav ul.submenu li a:hover {color: black}
+#left-side #side-nav ul.submenu li.active {width: 168px; height: 24px; background: url(../images/system/buttons/submenu_selected.jpg); background-repeat: no-repeat}
 #left-side #side-nav #keep_discovering {width: 150px; height: 80px; background-image: url(../images/system/bg/front/keepdiscovering.jpg)}
 #left-side #side-nav #polaroid {width: 310px; height: 100px; margin-left: -190px}
 #left-side #side-nav ul {padding-left: 5px; width: 120px; float: none}
@@ -266,6 +268,9 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #left-side #main table {margin: 25px}
 #left-side #main a {float: right; margin-bottom: 0px; margin-right: 50px; color: red}
 #left-side #main div.toggle {overflow: hidden}
+#left-side .header_w_image {float: left; text-align: center; width: 162px; margin-left: 0px; height: 35px}
+#left-side .header_w_image img {float: left; margin: 0px 0 0 4px}
+#left-side .header_w_image h3 {float: left; padding: 6px 0 0 0px; margin: 0px}
 #right-column.home {margin-left: 45px}
 #right-column {width: 304px; float: left; margin-left: 16px}
 #right-column .top {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg)}
