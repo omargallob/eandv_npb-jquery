@@ -12,12 +12,21 @@
 					<% if @page.name == page.name %>
 					<li id="nav_<%= page.name %>" class="cufon-active"><h2><%= link_to page.navlabel, view_page_path(page.name)%> <%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></h2></li>
 					<% else %>
-					<li id="nav_<%= page.name %>" ><h2><%= link_to page.navlabel, view_page_path(page.name)%> <%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></h2></li>
+						<% if params[:parent] %>					
+							<% if @parent.name == page.name %>
+							<li id="nav_<%= page.name %>" class="cufon-active"><h2><%= link_to page.navlabel, view_page_path(page.name)%> <%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></h2></li>
+							<% else %>
+							<li id="nav_<%= page.name %>"><h2><%= link_to page.navlabel, view_page_path(page.name)%> <%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></h2></li>
+							<% end %>
+						<% else %>
+						<li id="nav_<%= page.name %>" ><h2><%= link_to page.navlabel, view_page_path(page.name)%> <%= image_tag("system/buttons/nav_arrow.png", :class=>"arrow") %></h2></li>
+						<% end %>
+					
 					<% end %>
 
 			<% end %>	
 		<% end %>
 	<% end -%>
-	<li><h2><%= link_to 'E&V TV', "#" %><%= image_tag("system/buttons/TV.jpg")%></h2></li>	
+	<li class="second-last"><h2><%= link_to 'E&V TV', "#" %><%= image_tag("system/buttons/TV.jpg")%></h2></li>	
 	<li><h2><%= link_to 'E&V'+image_tag("system/buttons/EVMother.jpg"), "http://www.engelvoelkers.com/com/index.php" %></h2></li>
 <% end%>

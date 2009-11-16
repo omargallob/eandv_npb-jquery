@@ -51,7 +51,11 @@ $(document).ready(function() {
   $('#content').css("height","100%"); 
 
 	<% if params[:name] != "home" %>
+		<% if params[:parent] %>
+		set_nav_pointer("<%= params[:parent] %>");
+		<% else %>
 		set_nav_pointer("<%= params[:name] %>");
+		<% end %>
 		<% if params[:name] == "why"  %>
 			chop_front_list();
 

@@ -264,7 +264,7 @@ function nice_fonts(){
      }
  });
   Cufon.replace('h6', {
-	  fontFamily: "AGaramond LT",
+	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#888888',
 	  fontSize: "14px",
     hover: {
