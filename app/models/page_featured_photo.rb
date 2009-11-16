@@ -4,7 +4,7 @@ class PageFeaturedPhoto < ActiveRecord::Base
   has_attachment :content_type => :image,
                  :max_size => 10.megabytes,
                  :path_prefix  => "public/images/featured/page",
-                 :resize_to => [961,359],
+                 :resize_to => "x359",
                  :thumbnails => { :thumb => [134, 50] }
                  
 

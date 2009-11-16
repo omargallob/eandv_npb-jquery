@@ -65,8 +65,9 @@
 			<div id="holder">
 				<div id="cuber">
 					<div id="listOfImages">
+						<%= image_tag "static/slide_2.jpg" %>
 						<% if @page.page_featured_photo %>
-							<%= render :partial => "shared/admin/images/featured_photo", :object => @page %>
+							<%# render :partial => "shared/admin/images/featured_photo", :object => @page %>
 						<% end %>
 					</div>
 				</div>
