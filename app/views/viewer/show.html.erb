@@ -15,7 +15,7 @@
 	</div>
 
 	<div id="main" class="<% if @page.name != "home" %>properties<% end %>">
-		<% if @page.name != "why" %>
+		<% if @page.name == "home" %>
 		<div id="main_top" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 		<% end %>
 		<div id="main_bottom" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
@@ -35,7 +35,7 @@
 		<div class='bottom'></div>
 	<% end %>
 	</div>
-	<% if @page.name == "why" %>
+	<% if @page.name == "why" || @page.name == "about" ||  @page.name == "selling"||  @page.name == "buying" %>
 		<%= render :partial => "shared/why" %>
 	<% end %>
 </div>
@@ -50,7 +50,7 @@ $(document).ready(function() {
 
 	<% if params[:name] != "home" %>
 		set_nav_pointer("<%= params[:name] %>");
-		<% if params[:name] == "why" %>
+		<% if params[:name] == "why"  %>
 			chop_front_list();
 
 		<% end %>

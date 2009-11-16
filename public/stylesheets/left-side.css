@@ -1,3 +1,9 @@
+#left-side.buying { width: 612px; }
+
+#left-side.selling { width: 612px; }
+
+#left-side.about { width: 612px; }
+
 #left-side.why { width: 612px; }
 
 #left-side.home { width: 633px; }
@@ -6,14 +12,19 @@
 #left-side #sellyourproperty { width: 170px; float: left; margin-top: 15px; }
 #left-side ul#gallerylinks { height: 230px; width: 130px; }
 #left-side ul#gallerylinks li { float: left; height: 62px; }
+#left-side #side-nav.buying { margin-right: 0px; }
+#left-side #side-nav.selling { margin-right: 0px; }
+#left-side #side-nav.about { margin-right: 0px; }
 #left-side #side-nav.why { margin-right: 0px; }
 #left-side #side-nav.home { margin-right: 0px; }
 #left-side #side-nav { width: 170px; float: left; background-color: transparent; margin-right: 9px; }
 #left-side #side-nav hr { width: 129px; height: 1px; border: 0px none; float: left; background-color: #e1e1e1; margin-left: 6px; }
-#left-side #side-nav .left_tool { width: 162px; height: 188px; background: url(../images/system/bg/front/left_tool.jpg); margin-top: 15px; }
+#left-side #side-nav .shorter { height: 182px; }
+#left-side #side-nav .relocating { margin: 0px 0 0 -4px; }
+#left-side #side-nav .left_tool { width: 162px; background: url(../images/system/bg/front/left_tool.jpg); margin-top: 15px; float: left; }
 #left-side #side-nav .left_tool h3 { margin-left: 14px; }
-#left-side #side-nav .left_tool .top { width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_top.jpg); }
-#left-side #side-nav .left_tool .bottom { width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px; }
+#left-side #side-nav .left_tool .top { width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_top.jpg); float: left; }
+#left-side #side-nav .left_tool .bottom { width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px; float: left; }
 #left-side #side-nav .left_tool ul { width: 162px; height: 123px; margin: 12px 0 0 0px; padding: 0px; }
 #left-side #side-nav .left_tool ul li { height: 41px; margin-left: 14px; }
 #left-side #side-nav .left_tool ul li img { float: left; }
@@ -115,3 +126,6 @@
 #left-side #main table { margin: 25px; }
 #left-side #main a { float: right; margin-bottom: 0px; margin-right: 50px; color: red; }
 #left-side #main div.toggle { overflow: hidden; }
+#left-side .header_w_image { float: left; text-align: center; width: 162px; margin-left: 0px; height: 35px; }
+#left-side .header_w_image img { float: left; margin: 0px 0 0 4px; }
+#left-side .header_w_image h3 { float: left; padding: 6px 0 0 0px; margin: 0px; }

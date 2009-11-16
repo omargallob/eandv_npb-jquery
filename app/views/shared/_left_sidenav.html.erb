@@ -15,3 +15,13 @@
 
 <%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;" %>
 <hr />
+<% if @page.name == "why" %>
+<div class="left_tool relocating">
+	<div class="top"></div>
+	<div class="header_w_image">
+		<img src="/images/system/buttons/truck.jpg" width="50" height="35" alt="House">
+		<h3>Relocating?</h3>
+	</div>
+	<div class="bottom"></div>
+</div>
+<% end %>	
