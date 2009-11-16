@@ -1,0 +1,35 @@
+--- 
+javascripts: 
+- base: 
+  - _jquery
+  - _jrails
+  - _jquery-ui
+  - swfobject
+  - application
+- secondary:
+  - eye
+  - utils
+  - ui.tabs
+  - ui.combobox
+  - spacegallery
+  - sexylightbox.v2.3.jquery
+  - reflection
+  - jScrollPane
+  - jquery.tmpl.1.1.1
+  - jquery.mousewheel
+  - jquery.jcarousel
+  - jquery.easing.1.3
+  - browserdetect
+
+stylesheets: 
+- base: 
+  - screen
+  - envnpb_front
+  - left-side
+  - right-side
+- secondary:
+  - sexylightbox
+  - ui.combobox
+  - ui.tabs
+  - jquery.jcarousel
+  - JScrollPane

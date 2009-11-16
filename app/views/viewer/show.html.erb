@@ -1,0 +1,57 @@
+<div id="left-side" class="<%= @page.name %>">
+
+<% if params[:name] != "home" %>
+	<div id="title">
+		<h5><%= @page.navlabel %></h5>
+	</div>
+<% end %>
+
+	<div id="side-nav" 	class="<%= @page.name %>">
+			<% if @page.name == "home" %>
+				<%= render :partial => "shared/home_sidenav" %>
+			<% else %>
+				<%= render :partial => "shared/left_sidenav" %>
+			<% end %>
+	</div>
+
+	<div id="main" class="<% if @page.name != "home" %>properties<% end %>">
+		<% if @page.name != "why" %>
+		<div id="main_top" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
+		<% end %>
+		<div id="main_bottom" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
+		<% if @page.name == "home" %>
+			<h1><%= @page.title %> </h1>
+		<% end %>
+		<%= @page.body %>
+	</div>
+</div>
+<div id="right-column">
+	<div id="searchbox" 	class="<% if @page.name != "home" %>advanced<% end %>">
+	<% if @page.name == "home" %>
+		<%= render :partial => "shared/quicksearchbox" %>
+	<% else %>
+		<div class="top"></div>
+			<div><%= render :partial => "shared/advancedsearchbox" %></div>
+		<div class='bottom'></div>
+	<% end %>
+	</div>
+	<% if @page.name == "why" %>
+		<%= render :partial => "shared/why" %>
+	<% end %>
+</div>
+
+<% content_for :script do %>
+<script type="text/javascript">
+$(document).ready(function() {
+	/*$('#main').jScrollPane({scrollbarWidth:17,showArrows:true});*/
+	$('.droppies').combobox(); 
+	front_paragraph_chop();
+  $('#content').css("height","100%"); 
+	$("#main_bottom").appendTo($("#main"));
+	<% if params[:name] != "home" %>
+		set_nav_pointer("<%= params[:name] %>");
+	<% end %>
+	$("#right-column").css("width","260px");
+});
+</script>
+<% end %>

@@ -1,0 +1,38 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/pages_sidenav" %>
+		<li><%= link_to  t('options.edit'), edit_admin_page_path(@page) %></li>
+ 		<li><%= link_to  t('options.back'), admin_pages_path %></li>	
+
+	</ul>
+</div>
+
+<div id="main">
+	<h1><%=h @page.navlabel %> | <%= image_tag @page.thumb.url(:small) %></h1>
+
+	<p><strong>Featured</strong><br />
+		  <%=  @page.featured %>
+	</p>
+
+	<p>
+	  <b><%= t('headerlist.name')%>:</b>
+	  <%=h @page.name %>
+	</p>
+
+	<p>
+	  <b><%= t('headerlist.title')%>:</b>
+	  <%=h @page.title %>
+	</p>
+
+	<p>
+	  <b><%= t('headerlist.body')%>:</b>
+	  <%= @page.body %>
+	</p>
+	
+	<p>
+		 <%# image_tag @page.page_featured_photo.public_filename %>
+	</p>
+</div>	
+
+
+

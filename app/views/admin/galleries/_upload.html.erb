@@ -1,0 +1,12 @@
+<hr />
+
+
+	<p class='upload'>	
+		<%= image_tag upload.photo.url(:thumb) unless upload.photo.blank? %> | 
+		<label for="upload_description">Description:</label>
+		<%= f.text_area :description %>
+|
+		<label for="upload_photo">Photo:</label>
+		<%= f.file_field :photo %> 
+		<%= f.remove_link "remove" %>
+	</p>

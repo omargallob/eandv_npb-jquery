@@ -1,0 +1,220 @@
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require': no such file to load -- rails/init.rb (MissingSourceFile)
+	from /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+	from /Users/ryan/Dev/2.3.4/eandv_npb/vendor/rails/activerecord/lib/../../activesupport/lib/active_support/dependencies.rb:509:in `require'
+	from /Users/ryan/Dev/2.3.4/eandv_npb/vendor/rails/activerecord/lib/../../activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+	from /Users/ryan/Dev/2.3.4/eandv_npb/vendor/rails/activerecord/lib/../../activesupport/lib/active_support/dependencies.rb:509:in `require'
+	from /Users/ryan/Dev/2.3.4/eandv_npb/vendor/plugins/jrails/init.rb:1:in `evaluate_init_rb'
+	from /Users/ryan/Dev/2.3.4/eandv_npb/config/../vendor/rails/railties/lib/rails/plugin.rb:95:in `evaluate_init_rb'
+	from /Users/ryan/Dev/2.3.4/eandv_npb/vendor/rails/activerecord/lib/../../activesupport/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+	from /Users/ryan/Dev/2.3.4/eandv_npb/config/../vendor/rails/railties/lib/rails/plugin.rb:91:in `evaluate_init_rb'
+	 ... 20 levels...
+	from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
+	from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+	from /usr/bin/mongrel_rails:19:in `load'
+	from /usr/bin/mongrel_rails:19
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:42: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:30: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:31: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:34: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:36: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/galleries/show.html.erb:20: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:42: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:47: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:47: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:47: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:47: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:47: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:30: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:31: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:34: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:36: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/galleries/show.html.erb:20: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:47: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:46: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:40: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:41: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:42: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/countries/_country.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/types/index.html.erb:26: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/types/index.html.erb:27: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/facilities/_facility.html.erb:5: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/facilities/_facility.html.erb:6: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/users/index.html.erb:37: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/users/index.html.erb:38: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:29: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:30: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:31: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:34: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/_property.html.erb:36: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:48: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:48: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:72: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:72: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:73: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:73: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:53: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:53: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:53: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:53: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:7: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:40: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:41: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/index.html.erb:42: warning: don't put space before argument parentheses
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.4 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/test/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses

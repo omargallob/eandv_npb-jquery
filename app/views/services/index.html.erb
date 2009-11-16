@@ -1,0 +1,43 @@
+<div id="left-side">
+	<div id="side-nav"  class="properties">
+		<ul>
+			<%= render :partial => "shared/services_sidenav", :object => @categories %>
+		</ul>
+	</div>
+
+	<div id="main" class="properties">
+		<div id="main_top" class="main_border other">	</div>
+		<h1><%= @page.title %> (<%= @categories.size %>)</h1>	
+		<%= @page.body %>
+		<div id="main_bottom" class="main_border other">	</div>
+	</div>
+</div>
+<% content_for :script do %>
+<script type="text/javascript">
+$(document).ready(function() {
+  	 
+
+	/*$("#main").ready(function(){
+		var main_h = $("#main").height();	
+		$('#main_bottom').css('margin-top',main_h);
+		alert(main_h);
+	});*/
+	
+
+	$('.droppies').combobox(); 
+	front_paragraph_chop();
+});
+
+
+</script>
+<% end %>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#main_bottom").appendTo($("#main"));
+  	
+		set_nav_pointer("services");
+				
+});
+
+
+</script>

@@ -1,0 +1,17 @@
+
+<% unless @subpages.empty? %>
+<hr />
+<ul class="submenu">
+	<% for page in @subpages %>
+		<li><%= link_to page.navlabel, view_page_path(page.name)%></li>
+	<% end %>
+</ul>
+<hr />
+<% end %>
+
+<%= image_tag "system/buttons/keepdiscovering.jpg", :height=>"80", :width =>"150" %>
+
+<%= render :partial=>"shared/polaroid"%>
+
+<%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;" %>
+<hr />
