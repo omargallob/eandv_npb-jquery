@@ -3,7 +3,7 @@
 <hr />
 <ul class="submenu">
 	<% for page in @subpages %>
-		<li><%= link_to page.navlabel, view_page_path(page.name)%></li>
+		<li class="<% if @page.name == page.name %>active<% end %>"><%= link_to page.navlabel, view_page_parent_path(@parent.name,page.name)%></li>
 	<% end %>
 </ul>
 <hr />

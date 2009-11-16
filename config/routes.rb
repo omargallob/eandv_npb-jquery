@@ -60,6 +60,7 @@ ActionController::Routing::Routes.draw do |map|
   end
   
   map.view_page ':name', :controller => 'viewer', :action => 'show'
+  map.view_page_parent ':parent/:name', :controller => 'viewer', :action => 'show'
   map.feed_properties '/rss/properties.:format', :controller => 'properties', :action => 'feeds'
   map.feed_favs '/rss/favs.:format', :controller => 'rss', :action => 'favs'
   

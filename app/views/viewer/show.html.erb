@@ -2,7 +2,7 @@
 
 <% if params[:name] != "home" %>
 	<div id="title">
-		<h5><%= @page.navlabel %></h5>
+		<h5><%= @parent.navlabel %></h5>
 	</div>
 <% end %>
 
@@ -45,7 +45,9 @@
 $(document).ready(function() {
 	/*$('#main').jScrollPane({scrollbarWidth:17,showArrows:true});*/
 	$('.droppies').combobox(); 
+<% unless params[:parent] %>
 	front_paragraph_chop();
+<% end %>
   $('#content').css("height","100%"); 
 
 	<% if params[:name] != "home" %>

@@ -1,7 +1,14 @@
 class ViewerController < ApplicationController
   def show
     @page = Page.find_by_name(params[:name])
-    @subpages = @page.subpages
+    @parent = Page.find_by_name(params[:parent])
+    if params[:parent]
+      @subpages = @parent.subpages
+    else
+      @parent = @page
+       @subpages = @page.subpages
+    end
+   
     if @page.metatag
       set_meta_tags :title =>  @page.title,
                   :description => @page.metatag.description,
