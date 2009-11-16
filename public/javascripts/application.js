@@ -224,7 +224,7 @@ function nice_fonts(){
 	
 	
 	Cufon.replace('h2', {
-		   fontFamily: "AGaramond LT",
+		   fontFamily: "GarmdITC BkCn BT",
 		   color: '#818181',
 		   fontSize: "14px",
 		   hover: {
@@ -234,29 +234,29 @@ function nice_fonts(){
 
 
   	Cufon.replace('li.cufon-active h2', {
-		  fontFamily: "AGaramond LT",
+		  fontFamily: "GarmdITC BkCn BT",
 		  color: 'white',
 		  fontSize: "14px",
 	 });
     
   Cufon.replace('h3', {
-	  fontFamily: "AGaramond LT",
+	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#E13939',
 	  fontSize: "12px",
  });
   Cufon.replace('h1', {
-	  fontFamily: "AGaramond LT",
+	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#E13939',
 	  fontSize: "16px",
  });
   Cufon.replace('h5', {
-	  fontFamily: "AGaramond LT",
+	  fontFamily: "GarmdITC BkCn BT",
 	  color: 'white',
 	  fontSize: "16px",
  });
  
   Cufon.replace('h4', {
-	  fontFamily: "AGaramond LT",
+	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#888888',
 	  fontSize: "12px",
     hover: {
