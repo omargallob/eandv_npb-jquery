@@ -114,7 +114,7 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #upper_pagewrapper #navbar {height: 50px; width: 1020px; margin: 0px auto}
 #upper_pagewrapper #navbar ul {margin: 0px auto}
 #upper_pagewrapper #navbar ul li.cufon-active h2 {color: white}
-#upper_pagewrapper #navbar ul li {list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 14px 22px}
+#upper_pagewrapper #navbar ul li {list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 14px 20px}
 #upper_pagewrapper #navbar ul li a {margin-left: 25px; color: #4d4d4d; text-decoration: none; text-transform: uppercase}
 #upper_pagewrapper #navbar ul li a:hover {color: white}
 #upper_pagewrapper #navbar ul li a.active {color: white}
@@ -151,3 +151,177 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #lower_pagewrapper #footer ul#links li img.eandv {margin: 7px 0 0 7px}
 #lower_pagewrapper #footer #logbox {float: right; width: 250px; margin-top: 0px}
 #lower_pagewrapper #footer #logbox div {float: left; margin-left: 15px; background-color: white}
+#left-side.why {width: 612px}
+#left-side.home {width: 633px}
+#left-side {width: 621px; float: left; background: transparent}
+#left-side #sellyourproperty {width: 170px; float: left; margin-top: 15px}
+#left-side ul#gallerylinks {height: 230px; width: 130px}
+#left-side ul#gallerylinks li {float: left; height: 62px}
+#left-side #side-nav.why {margin-right: 0px}
+#left-side #side-nav.home {margin-right: 0px}
+#left-side #side-nav {width: 170px; float: left; background-color: transparent; margin-right: 9px}
+#left-side #side-nav hr {width: 129px; height: 1px; border: 0px none; float: left; background-color: #e1e1e1; margin-left: 6px}
+#left-side #side-nav .left_tool {width: 162px; height: 188px; background: url(../images/system/bg/front/left_tool.jpg); margin-top: 15px}
+#left-side #side-nav .left_tool h3 {margin-left: 14px}
+#left-side #side-nav .left_tool .top {width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_top.jpg)}
+#left-side #side-nav .left_tool .bottom {width: 162px; height: 15px; background: url(../images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px}
+#left-side #side-nav .left_tool ul {width: 162px; height: 123px; margin: 12px 0 0 0px; padding: 0px}
+#left-side #side-nav .left_tool ul li {height: 41px; margin-left: 14px}
+#left-side #side-nav .left_tool ul li img {float: left}
+#left-side #side-nav .left_tool ul li span {float: left; font-size: 12px; font-style: italic; width: 100px; margin: 2px 0 0 13px; color: #818181}
+#left-side #side-nav ul.submenu {padding: 0px; float: left}
+#left-side #side-nav ul.submenu li {height: 24px; width: 151px; background: url(../images/system/buttons/submenu.jpg); margin: 0 0 5px 5px; padding: 2px 0 0 10px; background-repeat: no-repeat}
+#left-side #side-nav ul.submenu li a {color: white}
+#left-side #side-nav ul.submenu li a:hover {color: black}
+#left-side #side-nav #keep_discovering {width: 150px; height: 80px; background-image: url(../images/system/bg/front/keepdiscovering.jpg)}
+#left-side #side-nav #polaroid {width: 310px; height: 100px; margin-left: -190px}
+#left-side #side-nav ul {padding-left: 5px; width: 120px; float: none}
+#left-side #side-nav ul li {list-style: none}
+#left-side #side-nav ul li a {color: black; text-decoration: none}
+#left-side #side-nav ul li a:hover {color: red}
+#left-side #side-nav ul li ul.sublevel li {list-style: disc; list-style-position: inside}
+#left-side .property {margin-top: 14px}
+#left-side #title {width: 610px; height: 26px; float: left; background: url(../images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 26px}
+#left-side #title h5 {margin-left: 3px; text-transform: uppercase}
+#left-side #main.properties {width: 442px; background: url(../images/system/bg/front/main_properties.jpg); margin-left: 0px}
+#left-side #main.properties .top {background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left}
+#left-side #main.properties .bottom {background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left}
+#left-side #property_gallery {width: 621px; height: 374px; float: left; background-image: url(../images/static/GalleryImage.jpg)}
+#left-side #main.why {width: 442px}
+#left-side #main {width: 463px; background: url(../images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px}
+#left-side #main #maylike {width: 402px; height: 85px; float: left; margin: 9px 0 0 20px; background: url(../images/static/youmaylike.jpg)}
+#left-side #main #map {width: 419px; height: 317px; float: left; background: url(../images/static/map.jpg); margin: 10px 11px}
+#left-side #main .further {width: 248px; float: left}
+#left-side #main .further h3 {font-variant: normal; font-style: italic; text-transform: none}
+#left-side #main #facility_list {width: 136px; background: url(../images/system/bg/front/property_facility.jpg); float: left; margin: 3px 0 0 25px}
+#left-side #main #facility_list .top {width: 136px; height: 4px; background: url(../images/system/bg/front/property_facility_top.jpg)}
+#left-side #main #facility_list .bottom {width: 136px; height: 4px; background: url(../images/system/bg/front/property_facility_bottom.jpg)}
+#left-side #main #facility_list h3 {text-align: center; margin: 10px 0 0 0}
+#left-side #main #facility_list p {margin: 0 0 0 12px}
+#left-side #main #facility_list ul {margin: 10px 0 10px 12px; list-style-position: inside}
+#left-side #main #facility_list ul li {font-size: 12px}
+#left-side #main #property_content {width: 248px; float: left; background: transparent; margin-left: 16px; margin-top: 3px}
+#left-side #main #property_content p {font-style: normal; font-size: 12px; margin: 0 0 0 6px}
+#left-side #main #property_header {height: 84px; background: transparent; float: left; margin-left: 16px; width: 409px}
+#left-side #main #property_header h1 {text-transform: uppercase; color: #e2001a; font-style: normal; margin: 0 0 0 6px; width: 223px; padding: 0; font-size: 16px; float: left}
+#left-side #main #property_header p {float: left; margin: 0}
+#left-side #main #property_header .code {float: right; margin: 4px 0 0 0; font-size: 11px}
+#left-side #main #property_header .address {background: url(../images/system/bg/front/main_property_address.jpg); height: 20px; width: 225px; margin: 0 0 0 0px; padding: 2px 0 0 6px; background-repeat: no-repeat}
+#left-side #main #property_header .state {width: 409px; margin: 3px 0 0 6px; font-style: normal}
+#left-side #main #property_header .state strong {text-transform: uppercase}
+#left-side #main #property_header .price {width: 159px; margin: 3px 0 0 6px}
+#left-side #main #property_header ul.facility {margin: 6px 0 0 5px; list-style: none; width: 155px; height: 17px; float: right}
+#left-side #main #property_header ul.facility li {float: left; color: white; text-align: center}
+#left-side #main #property_header ul.facility li p {margin: -2px 0 0 5px; padding: 0}
+#left-side #main #property_header ul.facility li.number {height: 16px; width: 17px; background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg); margin-right: 3px}
+#left-side #main #property_header ul.facility li.bed {height: 16px; width: 24px; background: url(../images/system/buttons/Facility/Icon_Bed.jpg); margin-right: 12px}
+#left-side #main #property_header ul.facility li.bath {height: 21px; width: 22px; background: url(../images/system/buttons/Facility/Icon_Shower.jpg); margin-right: 12px; margin-top: -2px}
+#left-side #main #property_header ul.facility li.garage {height: 18px; width: 24px; background: url(../images/system/buttons/Facility/Icon_Car.jpg); margin-top: -2px}
+#left-side #main ul#view_options {width: 409px; padding: 0px; float: left; margin-top: 0px}
+#left-side #main ul#view_options li {float: left; list-style: none; text-align: center; background-repeat: no-repeat; color: white; font-size: 12px; height: 22px; line-height: 22px; margin: 5px 5px 0 0}
+#left-side #main ul#view_options li span {font-weight: bold; color: black}
+#left-side #main ul#view_options li.buy {width: 37px; background: url(../images/system/buttons/Filters/Filter_Buy.jpg)}
+#left-side #main ul#view_options li.rent {width: 41px; background: url(../images/system/buttons/Filters/Filter_Rent.jpg)}
+#left-side #main ul#view_options li.mls {width: 42px; background: url(../images/system/buttons/Filters/Filter_MLS.jpg)}
+#left-side #main ul#view_options li.date {width: 54px; background: url(../images/system/buttons/Filters/Filter_Date.jpg)}
+#left-side #main ul#view_options li.price {width: 56px; background: url(../images/system/buttons/Filters/Filter_Price.jpg)}
+#left-side #main ul#view_options li.first {width: 60px; margin-right: 15px; line-height: 14px; margin-top: 0; text-transform: uppercase}
+#left-side #main #result_info {width: 409px; height: 74px; float: left; margin-left: 16px}
+#left-side #main #result_info h5 {margin-top: 48px; width: 100%; color: red; font-style: italic}
+#left-side #main #result_info h5 span.left {float: left}
+#left-side #main #result_info h5 span.right {float: right}
+#left-side #main .property {height: 107px; width: 426px; float: left; margin-left: 5px; background: transparent}
+#left-side #main .property .image {height: 90px; width: 120px; float: left; margin: 9px; background: green}
+#left-side #main .property .text {margin: 0px; width: 282px; height: 21px; float: left; margin-bottom: 1px}
+#left-side #main .property .text p {margin-left: 5px; font-style: normal}
+#left-side #main .property .title {margin-top: 9px; text-transform: uppercase}
+#left-side #main .property .address {background: url(../images/system/bg/front/Prop_Top_BG.jpg); height: 20px}
+#left-side #main .property .address p {font-style: italic; margin-top: 2px}
+#left-side #main .property .extra {background: url(../images/system/bg/front/Prop_Bot_BG.jpg); height: 29px}
+#left-side #main .property .extra ul.facility {margin: 6px 0 0 5px; list-style: none; width: 282px; height: 29px}
+#left-side #main .property .extra ul.facility li {float: left; color: white; text-align: center}
+#left-side #main .property .extra ul.facility li p {margin: -2px 0 0 0; padding: 0}
+#left-side #main .property .extra ul.facility li.number {height: 16px; width: 17px; background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg); margin-right: 3px}
+#left-side #main .property .extra ul.facility li.bed {height: 16px; width: 24px; background: url(../images/system/buttons/Facility/Facilities_Bed.jpg); margin-right: 12px}
+#left-side #main .property .extra ul.facility li.bath {height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Shower.jpg); margin-right: 12px; margin-top: -2px}
+#left-side #main .property .extra ul.facility li.garage {height: 20px; width: 22px; background: url(../images/system/buttons/Facility/Facilities_Garage.jpg); margin-right: 12px; margin-top: -2px}
+#left-side #main .property .extra ul.facility li.viewproperty {height: 16px; width: 84px; background: url(../images/system/buttons/viewproperty.jpg); margin-left: 17px; text-align: center}
+#left-side #main .property .extra ul.facility li.viewproperty a {font-size: 10px; color: red; float: left; margin: 1px 0 0 8px; font-variant: small-caps; text-decoration: none}
+#left-side #main .property .price {height: 18px}
+#left-side #main .property .price p {margin: 0 0 0 5px}
+#left-side #main .featured {background: url(../images/system/bg/front/featured_property_bg.jpg)}
+#left-side #main .testing {background: url(../images/system/bg/front/featBG.jpg)}
+#left-side #main hr {width: 409px; height: 1px; text-align: center; background-color: #e1e1e1; border: 0px none; float: left; margin-left: 16px}
+#left-side #main h3 {margin: 13px 0 0 24px}
+#left-side #main #main_top {background-image: url(../images/system/bg/front/main_top.jpg); margin-top: 0}
+#left-side #main #main_bottom {background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; margin-top: 33px}
+#left-side #main .main_border {height: 8px; width: 463px; position: relative}
+#left-side #main #main_top.other {background-image: url(../images/system/bg/front/main_properties_top.jpg); width: 442px; margin-top: 0; height: 15px}
+#left-side #main #main_bottom.other {background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; float: left; margin-top: 33px; height: 15px}
+#left-side #main .properties {width: 442px}
+#left-side #main p {margin: 5px 35px; font-style: italic; font-family: "Georgia"}
+#left-side #main ul {margin: 5px 30px}
+#left-side #main ul.toggle_li {font-style: italic}
+#left-side #main ul.toggle_li li {margin: 20px 0}
+#left-side #main table {margin: 25px}
+#left-side #main a {float: right; margin-bottom: 0px; margin-right: 50px; color: red}
+#left-side #main div.toggle {overflow: hidden}
+#right-column.home {margin-left: 45px}
+#right-column {width: 304px; float: left; margin-left: 16px}
+#right-column .top {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg)}
+#right-column .bottom {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left}
+#right-column h3 {margin-left: 24px}
+#right-column #searchbox.advanced {height: 374px; width: 304px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y}
+#right-column #searchbox.advanced div {float: left}
+#right-column #searchbox.advanced div h3 {margin-left: 24px}
+#right-column #faq {height: 157px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px}
+#right-column #faq #faq_block {height: 109px; width: 269px}
+#right-column #faq #faq_block p {font-style: italic; font-family: "Georgia"; font-size: 12px}
+#right-column #extra {width: 174px; background: url(../images/system/bg/front/right_small1.jpg); float: left; margin-top: 15px}
+#right-column #extra img {margin: 0px 0 0 24px}
+#right-column #extra img.share {margin: 12px 0 0 24px}
+#right-column #extra .top {width: 174px; height: 15px; background: url(../images/system/bg/front/right_small1_top.jpg)}
+#right-column #extra .bottom {width: 174px; height: 15px; background: url(../images/system/bg/front/right_small1_bottom.jpg); position: relative; float: left}
+#right-column #small {width: 117px; height: 161px; float: left; background: url(../images/system/bg/front/right_small2.jpg); margin: 15px 0 0 13px}
+#right-column #small h3 {margin: 14px 0 0 13px}
+#right-column #searchbox {height: 245px; width: 266px; background-color: transparent; float: left}
+#right-column #searchbox h3 {margin-left: 0px}
+#right-column #searchbox #bottom_b {position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 216px}
+#right-column #searchbox form {font-family: "Georgia"}
+#right-column #searchbox form#QuickQuery p {margin-bottom: 0px}
+#right-column #searchbox form#QuickQuery p input#QuickQuery {padding: 6px 0 0 6px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
+#right-column #searchbox form#QuickQuery p.advanced {margin-left: 24px}
+#right-column #searchbox form#Selectable div {float: right; margin-top: 10px}
+#right-column #searchbox form#Selectable div p {margin: 0px; padding: 0px; height: 30px; width: 198px; font-family: "Georgia"; font-size: 12px}
+#right-column #searchbox form#Selectable div p input.formularios {padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-image: url(../images/system/form/dropdown.jpg); background-repeat: no-repeat; font-family: "Georgia"; font-size: 12px}
+#right-column #searchbox form#Selectable div p input.onfocus {background-image: url(../images/system/form/dropdown.jpg)}
+#right-column #searchbox form#Selectable div p input.text_input {padding: 6px 0 0 6px; border: 0px; width: 192px; height: 20px; margin-top: 6px; background-image: url(../images/system/form/advanced_search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
+#right-column #searchbox form#Selectable div p input.short {width: 82px; height: 27px; background-image: url(../images/system/form/ZipBox.jpg)}
+#right-column #searchbox form#Selectable div p span.zip {float: left; margin: 12px 4px 0 0}
+#right-column #searchbox form#Selectable div.titles {margin-top: 22px; color: #838383}
+#right-column #searchbox form#Selectable div.titles p {width: 68px; font-size: 80%; font-variant: small-caps}
+#right-column #schools {width: 304px; float: left; margin: 0px 0 0 0px; background: url(../images/system/bg/front/right_tool.jpg)}
+#right-column #schools hr {width: 280px; float: left; border: 0px none; background: #E1E1E1; margin-left: 12px}
+#right-column #schools h3 {margin-left: 24px}
+#right-column #schools .top {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg)}
+#right-column #schools .bottom {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left}
+#right-column #schools ul {margin: 0 0 0 24px; float: left}
+#right-column #schools ul li.title {color: black; font-size: 12px; font-style: italic}
+#right-column #schools ul li.title span {text-transform: uppercase; font-style: normal}
+#right-column #schools ul.school li {list-style: none; float: left; margin-right: 0px}
+#right-column #schools ul.school li.distance {color: #e13939; width: 90px}
+#right-column #schools ul.school li.title {color: #7e7e7e; font-weight: bold; font-style: normal; width: 120px}
+#right-column #schools ul.school li.title i {font-weight: normal}
+#right-column #schools ul.school li.map {width: 45px; height: 21px; background-image: url(../images/system/buttons/schoolsmap.jpg); color: white; font-size: 12px; line-height: 21px}
+#right-column #schools ul.school li.map span {margin: 0 0 0 8px; text-transform: uppercase}
+#right-column #eanvvip {width: 302px; height: 159px; background: url(../images/system/bg/front/ev_vip_bg.jpg); float: left; margin: 14px 0px}
+#right-column #eanvvip p {margin: 50px; color: white; text-align: center; font-size: 14px; line-height: 18px; font-style: italic}
+#right-column #marketreport {background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px}
+#right-column #marketreport p {margin: 15px 80px; float: left; text-align: center}
+#right-column #marketreport p a {color: #E13939; text-decoration: none}
+#right-column #marketreport p a:hover {color: black}
+#right-column #marketreport .header_w_image {width: 200px; margin-left: 70px}
+#right-column #marketreport .header_w_image h3 {float: left; padding-top: 9px}
+#right-column .header_w_image {float: left; text-align: center; width: 174px; margin-left: 0px; height: 35px}
+#right-column .header_w_image img {float: left; margin: 0px}
+#right-column .header_w_image h3 {float: left; padding: 6px 0 0 0px; margin: 0px}

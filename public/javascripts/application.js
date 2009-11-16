@@ -133,6 +133,71 @@ function front_paragraph_chop(){
 
     });
 }
+
+function chop_front_list(){
+  var ul = $("#main ul");
+  var le = $("#main ul li");
+//  alert(le.length); 
+  var showText='(read more)';
+  var hideText='(back)';
+  var lastfull = 0;
+  $("#main").append('<hr />');
+  $("#main").append("<ul id='li_block0' class='toggle_li'></ul>");
+  for (var i=0; i < le.length; i++) {
+  	var counter=i+1;
+  	var divisible= counter/3;
+  	var s = divisible +'';
+  	var holder= s.split(".");
+  	if(holder.length==1){
+  		$("#main").append("<ul id='li_block"+i+"' class='toggle_li'></ul>");
+				$(le[i]).appendTo("#li_block"+i);
+  		lastfull = i;
+  	}else{
+  	  	$(le[i]).appendTo("#li_block"+lastfull);
+  	  	x = i +2;
+  	  	r = x/3;
+  	  	var st = r +'';
+  	  	var link = st.split(".");
+  	  	
+  	  	if(i==le.length-1){
+  	  	  $('#li_block'+lastfull).append(' <a href="#" class="toggleBack">(back)</a>');
+  	  	}else if(link.length==1){
+  	  	   $('#li_block'+lastfull).append('<a href="#" class="toggleLink">'+showText+'</a>');
+  	  	}
+  	}
+
+  };
+  $('.toggle_li').hide();
+  $("#li_block0").show();
+  
+  $('a.toggleLink').click(function() {
+
+  	// change the link depending on whether the element is shown or hidden
+  	$(this).html ($(this).html()==hideText ? showText : hideText);
+
+  	// toggle the display - uncomment the next line for a basic "accordion" style
+  	$('.toggle_li').hide();$('a.toggleLink').html(showText);
+  	$(this).parent().next('.toggle_li').toggle(400);
+  
+  	// return false so any link destination is not followed
+  	return false;
+
+  });
+  $('a.toggleBack').click(function() {
+
+  	// change the link depending on whether the element is shown or hidden
+  	$(this).html ($(this).html()==hideText ? hideText : hideText);
+
+  	// toggle the display - uncomment the next line for a basic "accordion" style
+  	$('.toggle_li').hide();
+    $('#li_block0').toggle('fast');
+
+  	// return false so any link destination is not followed
+  	return false;
+
+    });
+}
+
 function place_main_bottom(fixed){
   var main_height= $('#main').height();
   if (fixed == "false"){

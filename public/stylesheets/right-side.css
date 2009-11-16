@@ -1,3 +1,5 @@
+#right-column.home { margin-left: 45px; }
+
 #right-column { width: 304px; float: left; margin-left: 16px; }
 #right-column .top { width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg); }
 #right-column .bottom { width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left; }
