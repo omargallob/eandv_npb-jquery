@@ -1,11 +1,37 @@
-<div id="side-nav">
-	<ul>
-		<%= render :partial => "shared/services_sidenav", :object => @categories %>
-	</ul>
+<div id="left-side">
+	<div id="title">
+		<h5><%= @page.title %> > <%= @category.title%></h5>
+	</div>
+	
+	<div id="side-nav">
+		<ul>
+			<%= render :partial => "shared/services_sidenav", :object => @categories %>
+		</ul>
+	</div>
+
+	<div id="main" class="properties">
+	
+		<%= @category.description %>
+		<div id="main_bottom" class="main_border other">	</div>
+	</div>
 </div>
 
-<div id="main">
-	<h1><%= @page.title %> > <%= @category.title%> </h1>
+
+<div id="right-column" class="<% if @page.name == "home" %>home<% end %>">
+	<div id="searchbox" 	class="<% if @page.name != "home" %>advanced<% end %>">
+		<div class="top"></div>
+			<div><%= render :partial => "shared/advancedsearchbox" %></div>
+		<div class='bottom'></div>
+	</div>
 	
-	<%= @category.description %>
+		<%= render :partial => "shared/services_right_tool" %>
+
 </div>
+
+<% content_for :script do %>
+<script type="text/javascript">
+$(document).ready(function() {
+		set_nav_pointer("services");
+});
+</script>
+<% end %>

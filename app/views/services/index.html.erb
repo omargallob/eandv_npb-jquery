@@ -1,17 +1,32 @@
 <div id="left-side">
-	<div id="side-nav"  class="properties">
-		<ul>
+	<div id="title">
+		<h5><%= @page.navlabel %></h5>
+	</div>
+	
+	<div id="side-nav">
+		<ul >
 			<%= render :partial => "shared/services_sidenav", :object => @categories %>
 		</ul>
 	</div>
 
 	<div id="main" class="properties">
-		<div id="main_top" class="main_border other">	</div>
+	
 		<h1><%= @page.title %> (<%= @categories.size %>)</h1>	
 		<%= @page.body %>
 		<div id="main_bottom" class="main_border other">	</div>
 	</div>
 </div>
+<div id="right-column" class="<% if @page.name == "home" %>home<% end %>">
+	<div id="searchbox" 	class="<% if @page.name != "home" %>advanced<% end %>">
+		<div class="top"></div>
+			<div><%= render :partial => "shared/advancedsearchbox" %></div>
+		<div class='bottom'></div>
+	</div>
+
+		<%= render :partial => "shared/services_right_tool" %>
+	
+</div>
+
 <% content_for :script do %>
 <script type="text/javascript">
 $(document).ready(function() {
