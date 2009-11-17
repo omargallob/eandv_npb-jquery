@@ -209,6 +209,7 @@ function place_main_bottom(fixed){
 }
 
 function set_nav_pointer(st){
+  onfocus_forms();
   	$('#upper_pagewrapper').css("height","133px"); 
 		$("#nav_"+st+" img").addClass("active");
 		x = $("#nav_"+st).width();
@@ -269,6 +270,23 @@ function nice_fonts(){
  
 }
 
-function pro_fonts(){
-  alert(BrowserDetect.browser);
+function onfocus_forms(){
+
+      $('input[type="text"]').addClass("idle");  
+      $('input[type="text"]').focus(function() {  
+          $(this).removeClass("idle").addClass("onfocus");  
+          if (this.value == this.defaultValue){  
+              this.value = '';  
+          }  
+          if(this.value != this.defaultValue){  
+              this.select();  
+          }  
+      });  
+      $('input[type="text"]').blur(function() {  
+          $(this).removeClass("onfocus").addClass("idle");  
+          if ($.trim(this.value == '')){  
+              this.value = (this.defaultValue ? this.defaultValue : '');  
+          }  
+      });  
+
 }

@@ -4,9 +4,11 @@
 	</div>
 	
 	<div id="side-nav">
-		<ul >
+		<hr/>
+		<ul class="submenu">
 			<%= render :partial => "shared/services_sidenav", :object => @categories %>
 		</ul>
+		<hr />
 	</div>
 
 	<div id="main" class="properties">
@@ -41,6 +43,7 @@ $(document).ready(function() {
 
 	$('.droppies').combobox(); 
 	front_paragraph_chop();
+
 });
 
 

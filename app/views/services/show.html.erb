@@ -4,7 +4,8 @@
 	</div>
 	
 	<div id="side-nav">
-		<ul>
+		<hr/>
+		<ul class="submenu">
 			<%= render :partial => "shared/services_sidenav", :object => @categories %>
 		</ul>
 	</div>
@@ -31,6 +32,8 @@
 <% content_for :script do %>
 <script type="text/javascript">
 $(document).ready(function() {
+	
+	$('.droppies').combobox();
 		set_nav_pointer("services");
 });
 </script>
