@@ -249,12 +249,7 @@ function nice_fonts(){
 	  color: '#E13939',
 	  fontSize: "16px",
  });
-  Cufon.replace('h5', {
-	  fontFamily: "GarmdITC BkCn BT",
-	  color: 'white',
-	  fontSize: "16px",
- });
- 
+
   Cufon.replace('h4', {
 	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#888888',
