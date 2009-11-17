@@ -114,13 +114,14 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #upper_pagewrapper #navbar {height: 50px; width: 1020px; margin: 0px auto}
 #upper_pagewrapper #navbar ul {margin: 0px auto}
 #upper_pagewrapper #navbar ul li.cufon-active h2 {color: white}
-#upper_pagewrapper #navbar ul li {list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 14px 30px}
+#upper_pagewrapper #navbar ul li {list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 14px 32px}
 #upper_pagewrapper #navbar ul li a {margin-left: 25px; color: #4d4d4d; text-decoration: none; text-transform: uppercase}
 #upper_pagewrapper #navbar ul li a:hover {color: white}
 #upper_pagewrapper #navbar ul li a.active {color: white}
 #upper_pagewrapper #navbar ul li img {position: absolute; margin-top: 7px; margin-left: 3px}
 #upper_pagewrapper #navbar ul li img.arrow {position: absolute; margin-top: 10px; margin-left: 0px; z-index: 4; display: none}
 #upper_pagewrapper #navbar ul li img.active {display: block}
+#upper_pagewrapper #navbar ul #nav_properties {margin-left: 20px}
 #upper_pagewrapper #largegallery {width: 100%; height: 433px; background-position: 0 -135px}
 #upper_pagewrapper #largegallery #shine {height: 22px; width: 949px; background-image: url(../images/system/bg/front/shine.jpg); margin: 0px auto; margin-top: 28px}
 #upper_pagewrapper #holder {width: 961px; margin: 0px auto; height: 359px; padding-top: 24px}
@@ -141,7 +142,7 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #lower_pagewrapper #content #subcontent td table.nolines td {border: 0px none}
 #lower_pagewrapper #footer {margin: 0px auto; width: 100%; height: 35px; background-image: url(../images/system/bg/front/footer_bg.jpg); z-index: 100}
 #lower_pagewrapper #footer ul#links {width: 1000px; margin: 0px auto; list-style: none}
-#lower_pagewrapper #footer ul#links li {line-height: 31px; font-size: 11px; float: left; margin: 0 17px; color: #888888}
+#lower_pagewrapper #footer ul#links li {line-height: 31px; font-size: 11px; float: left; margin: 0 21px; color: #888888}
 #lower_pagewrapper #footer ul#links li img {margin-top: 12px; float: left}
 #lower_pagewrapper #footer ul#links li h4 {margin: 0; font-size: 14px; float: left}
 #lower_pagewrapper #footer ul#links li h4 a {text-decoration: none}
@@ -298,8 +299,9 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #right-column #searchbox form#QuickQuery p.advanced {margin-left: 24px}
 #right-column #searchbox form#Selectable div {float: right; margin-top: 10px}
 #right-column #searchbox form#Selectable div p {margin: 0px; padding: 0px; height: 30px; width: 198px; font-family: "Georgia"; font-size: 12px}
-#right-column #searchbox form#Selectable div p input.formularios {padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-image: url(../images/system/form/dropdown.jpg); background-repeat: no-repeat; font-family: "Georgia"; font-size: 12px}
-#right-column #searchbox form#Selectable div p input.onfocus {background-image: url(../images/system/form/dropdown.jpg)}
+#right-column #searchbox form#Selectable div p input.formularios {padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-repeat: no-repeat; font-family: "Georgia"; font-size: 12px}
+#right-column #searchbox form#Selectable div p input.idle {background-image: url(../images/system/form/dropdown.jpg)}
+#right-column #searchbox form#Selectable div p input.onfocus {background-image: url(../images/system/form/search_input_down.jpg)}
 #right-column #searchbox form#Selectable div p input.text_input {padding: 6px 0 0 6px; border: 0px; width: 192px; height: 20px; margin-top: 6px; background-image: url(../images/system/form/advanced_search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
 #right-column #searchbox form#Selectable div p input.short {width: 82px; height: 27px; background-image: url(../images/system/form/ZipBox.jpg)}
 #right-column #searchbox form#Selectable div p span.zip {float: left; margin: 12px 4px 0 0}
@@ -327,6 +329,8 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #right-column #marketreport p a:hover {color: black}
 #right-column #marketreport .header_w_image {width: 200px; margin-left: 70px}
 #right-column #marketreport .header_w_image h3 {float: left; padding-top: 9px}
+#right-column .partners {margin-top: 14px; float: left}
+#right-column .partners h5 {color: #e2001a; margin: 0 5px 7px 5px; text-align: center}
 #right-column .header_w_image {float: left; text-align: center; width: 174px; margin-left: 0px; height: 35px}
 #right-column .header_w_image img {float: left; margin: 0px}
 #right-column .header_w_image h3 {float: left; padding: 6px 0 0 0px; margin: 0px}
