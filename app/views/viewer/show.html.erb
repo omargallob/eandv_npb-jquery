@@ -1,7 +1,7 @@
 <div id="left-side" class="<%= @page.name %>">
 
 <% if params[:name] != "home" %>
-	<div id="title">
+	<div id="title" class="<% if @page.name == "about" || @parent.name == "about" %>about<% end %>">
 		<h5><%= @parent.navlabel %></h5>
 	</div>
 <% end %>

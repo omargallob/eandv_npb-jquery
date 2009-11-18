@@ -63,6 +63,8 @@ img#mainpic { float: left; margin-right: 10px; }
 
 img#about_image { position: absolute; left: 195px; margin-top: 26px; }
 
-#main.about { margin-top: 370px; }
+#main.about { margin-top: 396px; }
 
 #right-column.about { margin-top: 396px; }
+
+#side-nav.about { margin-top: 26px; }
