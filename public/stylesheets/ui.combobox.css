@@ -29,6 +29,7 @@ border-right: 1px solid #e2001a;
 	background-image: url(../images/system/form/dropdown.jpg);
 	line-height: 24px;
 	width:171px;
+	color: #6b6b6b;
 }
 
 .ui-combobox-list .selected {
