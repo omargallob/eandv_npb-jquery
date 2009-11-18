@@ -10,7 +10,7 @@
 <% end %>
 
 <%= image_tag "system/buttons/keepdiscovering.jpg", :height=>"80", :width =>"150" %>
-<% unless @page.name == "about" || @parent.name == "about" %>
+<% unless @page.name == "about" || params[:parent] == "about" %>
 <%= render :partial=>"shared/polaroid"%>
 <% end %>
 <%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;" %>

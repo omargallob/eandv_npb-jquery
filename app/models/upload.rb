@@ -5,8 +5,11 @@ class Upload < ActiveRecord::Base
                         :thumb => ["120x90#", :jpg],
                         :pagesize => ["720x560>", :jpg],
                       },:processors => [:cropper],
-                      :url => "/assets/property/gallery/:id/:style/:basename.jpg",
-                      :path => ":rails_root/public/assets/property/gallery/:id/:style/:basename.jpg"
+                      :storage => :s3,
+                      :bucket => 'property_gallery',
+                      :path =>"/property/gallery/:id/:style/:basename.jpg",
+                      :s3_credentials => "#{RAILS_ROOT}/config/s3.yml"
+            
   attr_accessor :crop_x, :crop_y, :crop_w, :crop_h     
   
   acts_as_list :scope => :gallery

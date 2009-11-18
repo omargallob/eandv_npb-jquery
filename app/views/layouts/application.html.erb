@@ -44,7 +44,7 @@
 	<link href="http://www.engelvoelkers.com/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
   </head>
   <body>
-	<div id='upper_pagewrapper' <% if @page.name == "home" %>class="home"<% end %>>
+	<div id='upper_pagewrapper' <% if  params[:name] == "home" %>class="home"<% end %>>
 		<div id='header'>
 					
 			<div id="logo"><%= link_to image_tag ("system/bg/front/logo.jpg"), "/" %></div>
