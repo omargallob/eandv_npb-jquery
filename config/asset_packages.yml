@@ -44,7 +44,6 @@ javascripts:
   
 stylesheets: 
 - base: 
-  - screen
   - envnpb_front
   - left-side
   - right-side
@@ -54,3 +53,10 @@ stylesheets:
   - ui.tabs
   - jquery.jcarousel
   - JScrollPane
+- front:
+  - sexylightbox
+  - ui.combobox
+  - ui.tabs
+  - jquery.jcarousel
+  - JScrollPane
+  
