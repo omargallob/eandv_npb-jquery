@@ -142,6 +142,7 @@ function chop_front_list(){
   var hideText='(back)';
   var lastfull = 0;
   $("#main").append('<hr />');
+  $("#main").append('<img src="/images/system/bg/front/corporate.jpg" width="197" height="22" alt="Corporate" class="static_why">');
   $("#main").append("<ul id='li_block0' class='toggle_li'></ul>");
   for (var i=0; i < le.length; i++) {
   	var counter=i+1;
@@ -243,7 +244,7 @@ function nice_fonts(){
   Cufon.replace('h3', {
 	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#E13939',
-	  fontSize: "12px",
+	  fontSize: "16px",
  });
   Cufon.replace('h1', {
 	  fontFamily: "GarmdITC BkCn BT",

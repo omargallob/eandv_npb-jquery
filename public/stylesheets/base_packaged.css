@@ -151,6 +151,12 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #lower_pagewrapper #footer ul#links li img.eandv {margin: 7px 0 0 7px}
 #lower_pagewrapper #footer #logbox {float: right; width: 250px; margin-top: 0px}
 #lower_pagewrapper #footer #logbox div {float: left; margin-left: 15px; background-color: white}
+img#mainpic {float: left; margin-right: 10px}
+img#about_image {position: absolute; left: 195px; margin-top: 26px}
+img.static_why {margin: 30px 0 0 30px}
+#main.about {margin-top: 396px}
+#right-column.about {margin-top: 396px}
+#side-nav.about {margin-top: 26px}
 #left-side.properties {width: 621px}
 #left-side.home {width: 633px}
 #left-side {width: 612px; float: left; background: transparent}
@@ -186,9 +192,12 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #left-side .property {margin-top: 14px}
 #left-side #title {width: 610px; height: 26px; float: left; background: url(../images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 26px}
 #left-side #title h5 {margin-left: 3px; text-transform: uppercase}
+#left-side #title.about {position: absolute; width: 929px; background: url(../images/system/bg/front/long_blackbar.jpg)}
+#left-side .top {background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left}
+#left-side .bottom {background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left}
 #left-side #main.properties {width: 442px; background: url(../images/system/bg/front/main_properties.jpg); margin-left: 0px}
-#left-side #main.properties .top {background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left}
-#left-side #main.properties .bottom {background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left}
+#left-side #services {width: 442px; background: url(../images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px}
+#left-side #services img {margin: 5px 20px}
 #left-side #property_gallery {width: 621px; height: 374px; float: left; background-image: url(../images/static/GalleryImage.jpg)}
 #left-side #main.why {width: 442px}
 #left-side #main {width: 463px; background: url(../images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px}
@@ -268,10 +277,11 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #left-side #main ul.toggle_li li {margin: 20px 0}
 #left-side #main table {margin: 25px}
 #left-side #main a {float: right; margin-bottom: 0px; margin-right: 50px; color: red}
-#left-side #main div.toggle {overflow: hidden}
+#left-side #main div.toggle {overflow: hidden; margin-top: 15px}
 #left-side .header_w_image {float: left; text-align: center; width: 162px; margin-left: 0px; height: 35px}
 #left-side .header_w_image img {float: left; margin: 0px 0 0 4px}
 #left-side .header_w_image h3 {float: left; padding: 6px 0 0 0px; margin: 0px}
+#left-side .header_w_image .services {text-align: left; padding: 0px}
 #right-column.home {margin-left: 45px}
 #right-column {width: 304px; float: left; margin-left: 16px}
 #right-column .top {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg)}
