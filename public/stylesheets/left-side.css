@@ -123,4 +123,4 @@
 #left-side .header_w_image { float: left; text-align: center; width: 162px; margin-left: 0px; height: 35px; }
 #left-side .header_w_image img { float: left; margin: 0px 0 0 4px; }
 #left-side .header_w_image h3 { float: left; padding: 6px 0 0 0px; margin: 0px; }
-#left-side .header_w_image .services { text-align: left; }
+#left-side .header_w_image .services { text-align: left; padding: 0px; }

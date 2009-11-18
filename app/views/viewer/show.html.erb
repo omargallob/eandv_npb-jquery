@@ -13,9 +13,11 @@
 				<%= render :partial => "shared/left_sidenav" %>
 			<% end %>
 	</div>
-
-	<div id="main" class="<% if @page.name != "home" %>properties<% end %>">
-		<% if @page.name == "home" %>
+	<% if params[:name] == "about" || params[:parent] == "about" %>
+		<%= image_tag "static/about_balboa.jpg", :id=>"about_image" %>
+	<% end %>
+	<div id="main" class="<% if @page.name != "home" %>properties <% if @page.name == "about" || @parent.name == "about" %>about<% end %><% end %>">
+		<% if @page.name == "home" || @page.name == "about" || @parent.name == "about" %>
 		<div id="main_top" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 		<% end %>
 		<div id="main_bottom" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
@@ -25,7 +27,7 @@
 		<%= @page.body %>
 	</div>
 </div>
-<div id="right-column" class="<% if @page.name == "home" %>home<% end %>">
+<div id="right-column" class="<% if @page.name == "home" %>home<% end %> <% if @page.name == "about" || @parent.name== "about" %>about<% end %>">
 	<div id="searchbox" 	class="<% if @page.name != "home" %>advanced<% end %>">
 	<% if @page.name == "home" %>
 		<%= render :partial => "shared/quicksearchbox" %>
@@ -35,7 +37,7 @@
 		<div class='bottom'></div>
 	<% end %>
 	</div>
-	<% if @page.name == "why" || @page.name == "about" ||  @page.name == "selling"||  @page.name == "buying" %>
+	<% if @page.name == "why" ||  @page.name == "selling"||  @page.name == "buying" %>
 		<%= render :partial => "shared/why" %>
 	<% end %>
 </div>
