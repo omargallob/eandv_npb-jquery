@@ -109,7 +109,7 @@
 #left-side #main hr { width: 409px; height: 1px; text-align: center; background-color: #e1e1e1; border: 0px none; float: left; margin-left: 16px; }
 #left-side #main h3 { margin: 13px 0 0 24px; }
 #left-side #main #main_top { background-image: url(../images/system/bg/front/main_top.jpg); margin-top: 0; }
-#left-side #main #main_bottom { background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; margin-top: 33px; }
+#left-side #main #main_bottom { background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; margin-top: 17px; }
 #left-side #main .main_border { height: 8px; width: 463px; position: relative; }
 #left-side #main #main_top.other { background-image: url(../images/system/bg/front/main_properties_top.jpg); width: 442px; margin-top: 0; height: 15px; }
 #left-side #main #main_bottom.other { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; float: left; margin-top: 33px; height: 15px; }
