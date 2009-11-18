@@ -6,7 +6,7 @@
 	<%= stylesheet_link_tag "screen"  %>
 	<%= display_meta_tags %>
 	<%= javascript_include_merged :base,:secondary %>
-	<%= stylesheet_link_merged :base, "front_packaged" %>
+	<%= stylesheet_link_merged "base_packaged" %>
 	
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 	<!--[if lt IE 8]>
@@ -32,7 +32,7 @@
 	</style>
 	<![endif]-->
 	<%= yield :script %>
-	<%# javascript_include_tag "cufon" %>
+
 	<script src="/javascripts/cufon.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/fonts/GarmdITC_BkCn_BT_400-GarmdITC_BkCn_BT_700-GarmdITC_BkCn_BT_italic_400-GarmdITC_BkCn_BT_italic_700.font.js" type="text/javascript" charset="utf-8"></script>
 

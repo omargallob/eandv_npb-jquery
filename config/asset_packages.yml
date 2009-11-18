@@ -39,7 +39,6 @@ javascripts:
   - jquery.mousewheel
   - jquery.jcarousel
   - browserdetect
-  - cufon
   - jquery.Jcrop
   
 stylesheets: 
@@ -47,16 +46,16 @@ stylesheets:
   - envnpb_front
   - left-side
   - right-side
+  - sexylightbox
+  - ui.combobox
+  - ui.tabs
+  - jquery.jcarousel
+  - JScrollPane
 - secondary:
   - sexylightbox
   - ui.combobox
   - ui.tabs
   - jquery.jcarousel
   - JScrollPane
-- front:
-  - sexylightbox
-  - ui.combobox
-  - ui.tabs
-  - jquery.jcarousel
-  - JScrollPane
+
   
