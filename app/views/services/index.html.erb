@@ -9,13 +9,34 @@
 			<%= render :partial => "shared/services_sidenav", :object => @categories %>
 		</ul>
 		<hr />
+		<%= image_tag "system/buttons/keepdiscovering.jpg",:style => "margin-top:0px;", :height=>"80", :width =>"150" %>
+
+		<%= render :partial=>"shared/polaroid"%>
+
+		<%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;" %>
+		<hr />
+		<div class="left_tool relocating">
+			<div class="top"></div>
+			<div class="header_w_image">
+				<img src="/images/system/buttons/affiliate.jpg" width="50" height="35" alt="House">
+				<h3 class="services">Become an <br />affiliate</h3>
+			</div>
+			<div class="bottom"></div>
+		</div>
 	</div>
 
 	<div id="main" class="properties">
-	
-		<h1><%= @page.title %> (<%= @categories.size %>)</h1>	
+		<%= image_tag "static/services_main.jpg",:id=>"mainpic" %>
 		<%= @page.body %>
 		<div id="main_bottom" class="main_border other">	</div>
+	</div>
+	
+	<div id="services">
+		<div class="top"></div>
+		<img src="/images/static/interior.jpg" width="403" height="170" alt="Interior">
+		<img src="/images/static/landscaping.jpg" width="403" height="170" alt="Interior">
+		<img src="/images/static/smarthomes.jpg" width="403" height="170" alt="Interior">
+		<div class="bottom"></div>
 	</div>
 </div>
 <div id="right-column" class="<% if @page.name == "home" %>home<% end %>">
@@ -43,7 +64,10 @@ $(document).ready(function() {
 
 	$('.droppies').combobox(); 
 	front_paragraph_chop();
-
+	aux = $("#block0 p:first").html();
+	$("#block0 p:first").html("");
+	$("#mainpic").appendTo("#block0 p:first");
+	$("#block0 p:first").append(aux);
 });
 
 

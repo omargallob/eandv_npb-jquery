@@ -35,9 +35,11 @@
 #left-side .property { margin-top: 14px; }
 #left-side #title { width: 610px; height: 26px; float: left; background: url(../images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 26px; }
 #left-side #title h5 { margin-left: 3px; text-transform: uppercase; }
+#left-side .top { background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
+#left-side .bottom { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }
 #left-side #main.properties { width: 442px; background: url(../images/system/bg/front/main_properties.jpg); margin-left: 0px; }
-#left-side #main.properties .top { background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
-#left-side #main.properties .bottom { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }
+#left-side #services { width: 442px; background: url(../images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px; }
+#left-side #services img { margin: 5px 20px; }
 #left-side #property_gallery { width: 621px; height: 374px; float: left; background-image: url(../images/static/GalleryImage.jpg); }
 #left-side #main.why { width: 442px; }
 #left-side #main { width: 463px; background: url(../images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
@@ -117,7 +119,8 @@
 #left-side #main ul.toggle_li li { margin: 20px 0; }
 #left-side #main table { margin: 25px; }
 #left-side #main a { float: right; margin-bottom: 0px; margin-right: 50px; color: red; }
-#left-side #main div.toggle { overflow: hidden; }
+#left-side #main div.toggle { overflow: hidden; margin-top: 15px; }
 #left-side .header_w_image { float: left; text-align: center; width: 162px; margin-left: 0px; height: 35px; }
 #left-side .header_w_image img { float: left; margin: 0px 0 0 4px; }
 #left-side .header_w_image h3 { float: left; padding: 6px 0 0 0px; margin: 0px; }
+#left-side .header_w_image .services { text-align: left; }

@@ -58,3 +58,5 @@ body span.right { float: right; font-size: 11px; line-height: 18px; font-style: 
 #lower_pagewrapper #footer ul#links li img.eandv { margin: 7px 0 0 7px; }
 #lower_pagewrapper #footer #logbox { float: right; width: 250px; margin-top: 0px; }
 #lower_pagewrapper #footer #logbox div { float: left; margin-left: 15px; background-color: white; }
+
+img#mainpic { float: left; margin-right: 10px; }
