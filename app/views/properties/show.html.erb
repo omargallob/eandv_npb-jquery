@@ -51,7 +51,7 @@
 			<p>Built size: <%= @property.built %> f.t</p>
 		</div>
 		<hr />
-		<div id="map"></div>
+	 	<%= @map.div(:width => 419, :height => 317) %>
 		<hr />
 		<div class="further">
 			<h3>You may also be interested</h3>		
@@ -119,5 +119,9 @@ $(document).ready(function() {
 	//$('#faq_block').jScrollPane({scrollbarWidth:17,showArrows:true});
 	set_nav_pointer("properties");
 });
+
 </script>
+<%= GMap.header %>
+<%= @map.to_html %>
+
 <% end %>

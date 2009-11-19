@@ -45,7 +45,7 @@
 #left-side #main.why { width: 442px; }
 #left-side #main { width: 463px; background: url(../images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
 #left-side #main #maylike { width: 402px; height: 85px; float: left; margin: 9px 0 0 20px; background: url(../images/static/youmaylike.jpg); }
-#left-side #main #map { width: 419px; height: 317px; float: left; background: url(../images/static/map.jpg); margin: 10px 11px; }
+#left-side #main #map { width: 419px; height: 317px; float: left; background: transparent; margin: 10px 11px; }
 #left-side #main .further { width: 248px; float: left; }
 #left-side #main .further h3 { font-variant: normal; font-style: italic; text-transform: none; }
 #left-side #main #facility_list { width: 136px; background: url(../images/system/bg/front/property_facility.jpg); float: left; margin: 3px 0 0 25px; }

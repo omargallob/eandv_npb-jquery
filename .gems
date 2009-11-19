@@ -1,2 +1,3 @@
 aws-s3 --version '>= 0.6.2' --source code.whytheluckystiff.net
 builder --version '>= 2.1.2'
+ym4r --version '>= 0.6.1'

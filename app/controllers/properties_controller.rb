@@ -24,6 +24,18 @@ class PropertiesController < ApplicationController
   @subpages = @page.subpages
        set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
 
+       @map = GMap.new("map")
+           @map.control_init(:large_map => true,:map_type => true)
+           
+          # @map.overlay_init(GMarker.new([75.6,-42.467],:title => "Hello", :info_window => "Info! Info!"))
+
+
+           results = Geocoding::get("Newport Beach")
+            if results.status == Geocoding::GEO_SUCCESS
+              coord = results[0].latlon
+              @map.overlay_init(GMarker.new(coord,:info_window => "Newport Beach"))
+            end
+            @map.center_zoom_init(coord,20)
   end 
   
   def feed
