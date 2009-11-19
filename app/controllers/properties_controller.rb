@@ -26,7 +26,7 @@ class PropertiesController < ApplicationController
 
        @map = GMap.new("map")
        @map.control_init(:large_map => true,:map_type => true)
-       @map.center_zoom_init([35.12313,-110.567],12)
+       @map.center_zoom_init([35.12313,-110.567],8)
         
 
 
