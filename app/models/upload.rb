@@ -6,9 +6,9 @@ class Upload < ActiveRecord::Base
                         :pagesize => ["720x560>", :jpg],
                       },:processors => [:cropper],
                       :storage => :s3,
-                      :bucket => 'property_gallery',
-                      :path =>"/property/gallery/:id/:style/:basename.jpg",
-                      :s3_credentials => "#{RAILS_ROOT}/config/s3.yml"
+                      :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
+                      :path =>"/property/gallery/:id/:style/:basename.jpg"
+
             
   attr_accessor :crop_x, :crop_y, :crop_w, :crop_h     
   
@@ -23,7 +23,7 @@ class Upload < ActiveRecord::Base
 
    def photo_geometry(style = :original)
      @geometry ||= {}
-     @geometry[style] ||= Paperclip::Geometry.from_file(photo.path(style))
+     @geometry[style] ||= Paperclip::Geometry.from_file(photo.to_file(style))
    end
   
    private

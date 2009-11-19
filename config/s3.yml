@@ -1,14 +1,14 @@
 development:
-  bucket: eandv_npb_development
+  bucket: eandv-development
   access_key_id: AKIAI7DG2I3UGHEC6FKA
   secret_access_key: 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
 
 test:
-  bucket: eandv_npb_test
+  bucket: eandv-test
   access_key_id: AKIAI7DG2I3UGHEC6FKA
   secret_access_key: 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
 
 production:
-  bucket: eandv_npb
+  bucket: eandv
   access_key_id: AKIAI7DG2I3UGHEC6FKA
   secret_access_key: 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
