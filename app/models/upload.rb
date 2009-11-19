@@ -23,7 +23,7 @@ class Upload < ActiveRecord::Base
 
    def photo_geometry(style = :original)
      @geometry ||= {}
-     @geometry[style] ||= Paperclip::Geometry.from_file(photo.path(style))
+     @geometry[style] ||= Paperclip::Geometry.from_file(photo.to_file(style))
    end
   
    private
