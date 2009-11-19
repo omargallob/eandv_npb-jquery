@@ -7,8 +7,10 @@ class Page < ActiveRecord::Base
   belongs_to :parent, :class_name => 'Page', :foreign_key => 'parent_id'
   
   has_attached_file :thumb, :styles => {:small => "120x90#", :large => "961x359>"}, :processors => [:cropper],
-                            :url => "/assets/page/:id/thumb/:style/:basename.extension",
-                            :path => ":rails_root/public/assets/page/:id/thumb/:style/:basename.extension"
+                            :url => "/assets/page/:id/thumb/:style/:basename.extension",    
+                            :storage => :s3,
+                            :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
+                            :path => "/assets/page/:id/thumb/:style/:basename.extension"
 
   validates_attachment_presence :thumb
   validates_attachment_size :thumb, :less_than => 5.megabytes
@@ -22,7 +24,7 @@ class Page < ActiveRecord::Base
   
   def thumb_geometry(style = :original)
     @geometry ||= {}
-    @geometry[style] ||= Paperclip::Geometry.from_file(thumb.path(style))
+    @geometry[style] ||= Paperclip::Geometry.from_file(thumb.to_file(style))
   end
   
   def self.find_main
