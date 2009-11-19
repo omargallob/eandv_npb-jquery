@@ -31,7 +31,7 @@ class PropertiesController < ApplicationController
 
 @aux = @property.location.zipcod+", "+@property.location.state
 
-     results = Geocoding::get(@aux)
+     results = Geocoding::get("Newport Beach California")
        if results.status == Geocoding::GEO_SUCCESS
          coord = results[0].latlon
           @map.center_zoom_init(coord,12)
