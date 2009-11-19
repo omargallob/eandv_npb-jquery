@@ -13,13 +13,13 @@
 		$("#cropbox").Jcrop({
 			onChange: updateCrop,
 			onSelect: updateCrop,
-			setSelect: [120,90],
-			aspectRatio: 1.3333333333333333
+			setSelect: [112,74],
+			aspectRatio: 1.513513513513514
 		});
 	});	
 	function updateCrop(coords){
-	  var rx = 120/coords.w;
-	  var ry = 90/coords.h;
+	  var rx = 112/coords.w;
+	  var ry = 74/coords.h;
 	  $('#preview').css({
 	    width: Math.round(rx * <%= @upload.photo_geometry(:pagesize).width %>) + 'px',
 	    height: Math.round(ry * <%= @upload.photo_geometry(:pagesize).height %>) + 'px',

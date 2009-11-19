@@ -25,9 +25,16 @@ class PropertiesController < ApplicationController
        set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
 
        @map = GMap.new("map")
-           @map.control_init(:large_map => true,:map_type => true)
-           @map.center_zoom_init([75.5,-42.56],4)
-           @map.overlay_init(GMarker.new([75.6,-42.467],:title => "Hello", :info_window => "Info! Info!"))
+       @map.control_init(:large_map => true,:map_type => true)
+        
+
+
+     results = Geocoding::get(@property.location.zipcod+", "+@property.location.state)
+       if results.status == Geocoding::GEO_SUCCESS
+         coord = results[0].latlon
+          @map.center_zoom_init(coord,12)
+         #@map.overlay_init(GMarker.new(coord,:info_window =>@property.location.region+", "+ @property.location.zipcod+", "+@property.location.state))
+       end
 
   end 
   
