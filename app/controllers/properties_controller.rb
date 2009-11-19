@@ -32,5 +32,10 @@ class PropertiesController < ApplicationController
         format.xml  #{ render :xml => @properties }
     end
   end
-
+  def feed_images
+     @property = Property.find_by_id(params[:id])
+     respond_to do |format|
+         format.xml  #{ render :xml => @properties }
+     end
+  end
 end

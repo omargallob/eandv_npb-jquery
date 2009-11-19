@@ -51,22 +51,16 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :galleries, :collection => { :prioritize_uploads => :post }
       admin.resources :uploads
       admin.update_gallery 'galleries/:id', :controller=>"galleries",:action => "update"
-     #admin.namespace :property do |property|
-      # property.resources :galleries
-     #end
-     #admin.property_facilities '/location/:location_id/property/:property_id/facilities', :controller => 'facilities', :action => "index"
-     #admin.new_facility '/location/:location_id/property/:property_id/facilities/new', :controller => 'facilities', :action => "new"
-     #admin.edit_facility '/location/:location_id/property/:property_id/facility/:id/edit', :controller => 'facilities', :action => "new"
-     #admin.update_facility '/location/:location_id/property/:property_id/facilities',:controller => "facilities", :action => "update"
-
   end
   
   map.view_page ':name', :controller => 'viewer', :action => 'show'
   map.view_page_parent ':parent/:name', :controller => 'viewer', :action => 'show'
   map.feed_properties '/rss/properties.:format', :controller => 'properties', :action => 'feeds'
   map.feed_favs '/rss/favs.:format', :controller => 'rss', :action => 'favs'
+  map.property_images '/properties/:id/images.xml', :controller => 'properties', :action => 'feed_images'     
   
- # map.feed_properties '/rss/properties.:format', :controller => 'rss', :action => 'properties'
+  
+ # 
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
