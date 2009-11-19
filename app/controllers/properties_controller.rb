@@ -29,11 +29,12 @@ class PropertiesController < ApplicationController
         
 
 
-     results = Geocoding::get(@property.location.zipcod+", "+@property.location.state)
+@aux = @property.location.zipcod+", "+@property.location.state
+
+     results = Geocoding::get(@aux)
        if results.status == Geocoding::GEO_SUCCESS
          coord = results[0].latlon
           @map.center_zoom_init(coord,12)
-         #@map.overlay_init(GMarker.new(coord,:info_window =>@property.location.region+", "+ @property.location.zipcod+", "+@property.location.state))
        end
 
   end 
