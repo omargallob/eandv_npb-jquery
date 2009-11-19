@@ -16,6 +16,14 @@ class Upload < ActiveRecord::Base
   
  # before_edit :reset_photo
   after_update  :reprocess_photo, :if => :cropping?
+ 
+  before_photo_post_process do |upload|
+    false if upload.processing? # do not process if just added
+  end
+
+  after_create do |upload|
+    Delayed::Job.enqueue UploadJob.new(upload.id) # add to queue
+  end
   
   def cropping?
      !crop_x.blank? && !crop_y.blank? && !crop_w.blank? && !crop_h.blank?
@@ -26,6 +34,19 @@ class Upload < ActiveRecord::Base
      @geometry[style] ||= Paperclip::Geometry.from_file(photo.to_file(style))
    end
   
+   def perform
+     self.processing = false # unlock for processing
+     photo.reprocess! # do the processing
+     save
+   end
+   
+   def url(style = :original)
+     if self.photo && processing? && style != :original
+       return photo.send(:interpolate, @@default_url, "#{style}")
+     end
+     photo.url(style)
+   end
+   
    private
      def reprocess_photo
        photo.reprocess!
@@ -33,4 +54,6 @@ class Upload < ActiveRecord::Base
      def reset_photo
        photo.reprocess!
      end
+     
+
 end
