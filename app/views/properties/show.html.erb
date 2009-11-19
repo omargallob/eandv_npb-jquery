@@ -121,7 +121,7 @@ $(document).ready(function() {
 });
 
 </script>
-<%= GMap.header %>
+<%= GMap.header(:with_vml => false, :host => request.host)%>
 <%= @map.to_html %>
 
 <% end %>
