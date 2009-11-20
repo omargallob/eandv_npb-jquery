@@ -13,13 +13,13 @@
 		$("#cropbox").Jcrop({
 			onChange: updateCrop,
 			onSelect: updateCrop,
-			setSelect: [112,74],
-			aspectRatio: 1.513513513513514
+			setSelect: [621,374],
+			aspectRatio: 1.660427807486631 
 		});
 	});	
 	function updateCrop(coords){
-	  var rx = 112/coords.w;
-	  var ry = 74/coords.h;
+	  var rx = 621/coords.w;
+	  var ry = 374/coords.h;
 	  $('#preview').css({
 	    width: Math.round(rx * <%= @upload.photo_geometry(:pagesize).width %>) + 'px',
 	    height: Math.round(ry * <%= @upload.photo_geometry(:pagesize).height %>) + 'px',
@@ -42,7 +42,7 @@
 <%= image_tag @upload.photo.url(:pagesize) , :id => "cropbox" %>
 
 <h4>Preview:</h4>
-<div style="width:120px; height:90px; overflow:hidden">
+<div style="width:621px; height:374px; overflow:hidden">
   <%= image_tag @upload.photo.url(:pagesize), :id => "preview" %>
 </div>
 

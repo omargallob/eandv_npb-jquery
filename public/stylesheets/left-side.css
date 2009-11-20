@@ -32,9 +32,9 @@
 #left-side #side-nav ul li a { color: black; text-decoration: none; }
 #left-side #side-nav ul li a:hover { color: red; }
 #left-side #side-nav ul li ul.sublevel li { list-style: disc; list-style-position: inside; }
-#left-side .property { margin-top: 14px; }
-#left-side #title { width: 610px; height: 26px; float: left; background: url(../images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 26px; }
-#left-side #title h5 { margin-left: 3px; text-transform: uppercase; }
+#left-side .property { margin-top: 0px; }
+#left-side #title { width: 610px; height: 26px; float: left; background: url(../images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 22px; }
+#left-side #title h5 { margin-left: 13px; text-transform: uppercase; }
 #left-side #title.about { position: absolute; width: 929px; background: url(../images/system/bg/front/long_blackbar.jpg); }
 #left-side .top { background-image: url(../images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
 #left-side .bottom { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }

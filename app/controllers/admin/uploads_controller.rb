@@ -3,6 +3,10 @@ class Admin::UploadsController < Admin::BaseController
     @upload = Upload.find_by_id(params[:id])
   end
   
+  def thumb
+    @upload = Upload.find_by_id(params[:id])
+  end
+  
   def update
     @upload = Upload.find_by_id(params[:id])
       if @upload.update_attributes params[:upload]

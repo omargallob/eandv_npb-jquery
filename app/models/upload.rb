@@ -2,14 +2,16 @@ class Upload < ActiveRecord::Base
   belongs_to :gallery
   has_attached_file :photo,
                       :styles => {
-                        :thumb => ["112x74#", :jpg],
-                        :pagesize => ["419x317>", :jpg],
+                        :pagesize => ["621x374#", :jpg],          :thumb => ["83x82#", :jpg],
+                      },:convert_options => {  
+                            :pagesize => "-strip -quality 60",:thumb => "-strip -quality 60 -size 83x82"
                       },:processors => [:cropper],
+     
                       :storage => :s3,
                       :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
-                      :path =>"/property/gallery/:id/:style/:basename.jpg"
-
-            
+                     :path => "/property/gallery/:id/:style/:basename.jpg"
+                      
+  
   attr_accessor :crop_x, :crop_y, :crop_w, :crop_h     
   
   acts_as_list :scope => :gallery
@@ -25,7 +27,7 @@ class Upload < ActiveRecord::Base
      @geometry ||= {}
      @geometry[style] ||= Paperclip::Geometry.from_file(photo.to_file(style))
    end
-  
+
    private
      def reprocess_photo
        photo.reprocess!
@@ -33,4 +35,5 @@ class Upload < ActiveRecord::Base
      def reset_photo
        photo.reprocess!
      end
+
 end
