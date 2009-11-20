@@ -1,4 +1,18 @@
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
-Header set Cache-Control "public"
-Header set Expires "Thu, 15 Apr 2010 20:00:00 GMT"
+#
+# 1 YEAR
+#
+<FilesMatch "\.(ico|flv)$">
+#
+Header set Cache-Control "max-age=29030400, public"
+#
+</FilesMatch>
+#
+ 
+#
+# 1 MONTH
+#
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+#
+Header set Cache-Control "max-age=2419200, public"
+#
 </FilesMatch>
