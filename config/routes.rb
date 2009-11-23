@@ -32,6 +32,9 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :services
      admin.resources :types
      admin.resources :categories
+     admin.category_partners "/category/:category_id/partners", :controller => "partners", :action => "index"
+     admin.category_new_partner "/category/:category_id/new/partner", :controller => "partners", :action => "new"
+     admin.resources :partners
      admin.resources :countries
      admin.resources :locations
      admin.country '/:country/locations', :controller => "locations", :action => "index"

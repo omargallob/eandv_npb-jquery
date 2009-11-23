@@ -1,6 +1,6 @@
 <div id="left-side">
 	<div id="title">
-		<h5><%= @page.title %> > <%= @category.title%></h5>
+		<h5><%= @page.title %>  <% if @category.parent %> > <%= @category.parent.title %><% end %> > <%= @category.title%></h5>
 	</div>
 	
 	<div id="side-nav">
@@ -11,8 +11,20 @@
 	</div>
 
 	<div id="main" class="properties">
+		<%= image_tag @category.main.url(:large),:id=>"mainpic" %>
 		<%= @category.description %>
 		<div id="main_bottom" class="main_border other">	</div>
+	</div>
+	<div id="services">
+		<div class="top"></div>
+		<% if @subcats.size > 0 %>
+			<% for sub in @subcats %>
+				<%= link_to image_tag(sub.photo.url(:large)), services_sub_path(@category.name, sub.name) %>
+			<% end %>
+		<% else %>
+			<%= image_tag(@category.photo.url(:large))%>
+		<% end %>
+		<div class="bottom"></div>
 	</div>
 </div>
 
@@ -31,9 +43,21 @@
 <% content_for :script do %>
 <script type="text/javascript">
 $(document).ready(function() {
-	
+
 	$('.droppies').combobox();
-		set_nav_pointer("services");
+//	front_paragraph_chop();
+	
+
+	aux = $("#main p:first").html();
+	$("#main p:first").html("");
+	$("#mainpic").appendTo("#main p:first");
+	$("#main p:first").append(aux);
+	$("#main p:first").css("margin-top","70px")
+	$("#mainpic").show();
+
+
+	$("#main_bottom").appendTo($("#main"));
+	set_nav_pointer("services");
 });
 </script>
 <% end %>

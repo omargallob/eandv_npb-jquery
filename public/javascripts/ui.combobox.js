@@ -359,7 +359,7 @@ $.extend($.ui.combobox, {
 		change: function(e, ui) {},
 		select: function(e, ui) {},
 		key: function(e, ui) {},
-		arrowURL: '../images/system/form/dropdown-arrow.jpg',
+		arrowURL: '/images/system/form/dropdown-arrow.jpg',
 		arrowHTML: function() {
 			return $('<img class = "ui-combobox-arrow" border = "0" src = "' 
 				+ this.options.arrowURL + '" width = "24" height = "26" />')

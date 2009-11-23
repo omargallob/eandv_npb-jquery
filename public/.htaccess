@@ -1,0 +1,6 @@
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|mp3)$">
+      FileETag -INode MTime Size
+      Header unset Last-Modified
+      Header set Cache-Control "max-age=4586400, public, must-revalidate"
+      Header set Expires "Thu, 31 Dec 2010 20:00:00 GMT"
+</FilesMatch>

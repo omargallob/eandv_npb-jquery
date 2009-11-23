@@ -1,0 +1,22 @@
+<p>
+  <%= f.label :title %><br />
+  <%= f.text_field :title %>
+</p>
+<p>
+  <%= f.label :description %><br />
+  <%= f.text_area :description %>
+</p>
+<p>
+  <%= f.label :url %><br />
+  <%= f.text_field :url %>
+</p>
+
+<p>
+  <%= f.label :telephone %><br />
+  <%= f.text_field :telephone %>
+</p>
+<p>
+  <%= f.label :address %><br />
+  <%= f.text_field :address %>
+</p>
+<%= f.hidden_field :category_id, :value => @category.id %>

@@ -115,7 +115,7 @@
 #left-side #main #main_bottom.other { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; float: left; margin-top: 33px; height: 15px; }
 #left-side #main .properties { width: 442px; }
 #left-side #main p { margin: 5px 35px; font-style: italic; font-family: "Georgia"; }
-#left-side #main ul { margin: 5px 30px; }
+#left-side #main ul { margin: 5px 30px; padding-left: 20px; font-style: italic; }
 #left-side #main ul.toggle_li { font-style: italic; }
 #left-side #main ul.toggle_li li { margin: 20px 0; }
 #left-side #main table { margin: 25px; }

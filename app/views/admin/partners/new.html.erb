@@ -1,0 +1,17 @@
+<div id="side-nav">
+	<ul>
+		 <li><li><%= link_to "back", :back %></li></li>
+	</ul>
+</div>
+<div id="main">
+	<h1>New Partner for service: <%= @category.title %></h1>
+	
+	<% form_for :partner, :url => {:action => ""}, :html => {:multipart => true}  do |f| %>	
+	 <%= f.error_messages %> 
+	
+	  <%= render :partial => "form", :locals => {:f =>f}%>
+	  <p>
+	    <%= f.submit 'Create' %>
+	  </p>
+	<% end %>
+</div>

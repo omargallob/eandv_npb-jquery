@@ -1,0 +1,37 @@
+<div id="side-nav">
+	<ul>
+		<%= render :partial => "shared/admin/partners_sidenav" %>
+	</ul>
+</div>
+
+<div id="main">
+	<h1>Partners for service: <%= @category.title %></h1>
+	
+	<table id="properties_list">	
+		<thead>
+			<tr>
+			<td ><strong>Title</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td ><strong>Description</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td ><strong>Url</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+		
+			<td ><strong>Telephone</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td ><strong>Address</strong></td>
+			<td>&nbsp;|&nbsp;</td>
+			<td ><strong>Options</strong></td>
+			</tr>
+		</thead>
+		</tr>
+		
+			<%= render :partial => 'partners', :object => @partners if @partners %>	
+		
+	</table>
+</div>
+<% content_for(:script) do %>
+<%# stylesheet_link_tag "jquery.Jcrop" %>
+<%# javascript_include_tag "admin/gs_sortable" %>	
+<% end %>
+

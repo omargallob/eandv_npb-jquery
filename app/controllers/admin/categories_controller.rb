@@ -41,12 +41,16 @@ class Admin::CategoriesController < Admin::BaseController
      @category = Category.find(params[:id])
 
      respond_to do |format|
-       if @category.update_attributes(params[:category])
+       if @category.update_attributes params[:category]
          
          format.html {
-            if params[:category][:photo].blank?
-              flash[:notice] = 'Category was successfully updated.'
-               redirect_to(admin_category_path(@category.parent))
+            if params[:category][:photo].blank?         
+                flash[:notice] = 'Category was successfully updated.'
+                if @category.parent
+                  redirect_to(admin_category_path(@category.parent))
+                else
+                  redirect_to(admin_category_path(@category))
+                end 
              else
                render :action => "crop"
              end

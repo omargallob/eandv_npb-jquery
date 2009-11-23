@@ -1,0 +1,15 @@
+<tr>
+	<td ><%= partners.title %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td ><%= partners.description %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td ><%= link_to "partner site", partners.url %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td ><%= partners.telephone %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td ><%= partners.address %></td>
+	<td>&nbsp;|&nbsp;</td>
+	<td ><%= link_to  image_tag ('system/buttons/edit.jpg', :height => "15px", :title => t('options.edit')), edit_admin_partner_path(partners) %>&nbsp;|&nbsp;
+	<%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => t('options.edit')), admin_partner_path(partners), :confirm => 'Are you sure?', :method => :delete %>
+	</td>
+</tr>

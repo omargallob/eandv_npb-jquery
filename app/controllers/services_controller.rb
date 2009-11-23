@@ -3,6 +3,7 @@ class ServicesController < ApplicationController
     @page = Page.find_by_name('services')
     @subpages = @page.subpages
     @categories = Category.find_main
+    @subcats = Category.find_all_sub
   end
   
   def show
@@ -14,8 +15,9 @@ class ServicesController < ApplicationController
       @category = Category.find_by_name(params[:subcategory])
     end
     @categories = Category.find_main
+    @subcats = Category.find_sub(@category.id)
     
-      set_meta_tags :title =>  @page.title + " | " + @category.title,
+      set_meta_tags :title =>  @page.title + " > " + @category.title,
                     :description => @category.description
     
   end 

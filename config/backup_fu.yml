@@ -1,0 +1,19 @@
+development:
+  # The app_name is used as the backup filename prefix
+  app_name: eandv_npb
+  # You must create the s3_bucket specified below via an external tool like S3 Browser, etc
+  s3_bucket: eandv-development
+  access_key_id: AKIAI7DG2I3UGHEC6FKA
+  secret_access_key: 540QzrOcVAaYyTb+Tu25hlUJzvJ6BXbUmFfAdcO6
+  static_paths: "public/"
+staging:
+  app_name: replace_me
+  s3_bucket: some-s3-bucket
+  aws_access_key_id: --replace me with your AWS access key id--
+  aws_secret_access_key: --replace me with your AWS secret access key--
+
+production:
+  app_name: eandv_npb
+  s3_bucket: eandv-development
+  access_key_id: AKIAI7DG2I3UGHEC6FKA
+  secret_access_key: 540QzrOcVAaYyTb+Tu25hlUJzvJ6BXbUmFfAdcO6

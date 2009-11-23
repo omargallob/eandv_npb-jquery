@@ -1,5 +1,5 @@
 	<% for category in services_sidenav -%>
-		<li>
+		<li class="<% if params[:id] == category.name || params[:category] == category.name  %>active<% end %>">
 			<%= link_to category.navlabel, services_par_path(category.name) %> <br/>
 		</li>
 	<% end -%>

@@ -6,12 +6,10 @@ class Upload < ActiveRecord::Base
                       },:convert_options => {  
                             :pagesize => "-strip -quality 60",:thumb => "-strip -quality 60 -size 83x82"
                       },:processors => [:cropper],
-     
                       :storage => :s3,
                       :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
-                     :path => "/property/gallery/:id/:style/:basename.jpg"
+                      :path => "/property/gallery/:id/:style/:basename.jpg"
                       
-  
   attr_accessor :crop_x, :crop_y, :crop_w, :crop_h     
   
   acts_as_list :scope => :gallery
