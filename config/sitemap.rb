@@ -1,16 +1,36 @@
+# Set the host name for URL creation
+SitemapGenerator::Sitemap.default_host = "http://npb.heroku.com"
 
-Sitemap::Routes.host = 'http://localhost:3001'
-Sitemap::Routes.priority = 0.8    # default is 1.0
+SitemapGenerator::Sitemap.add_links do |sitemap|
+  # Put links creation logic here.
+  #
+  # The root path '/' and sitemap index file are added automatically.
+  # Links are added to the Sitemap in the order they are specified.
+  #
+  # Usage: sitemap.add path, options
+  #        (default options are used if you don't specify)
+  #
+  # Defaults: :priority => 0.5, :changefreq => 'weekly', 
+  #           :lastmod => Time.now, :host => default_host
 
-Sitemap::Routes.draw do |map|
- # map.resources :services,:collection => {:feed => :get}
- map.root :controller => "viewer", :action=>"show", :name => 'home'
+  
+  # Examples:
+  
+  # add '/properties'
+  sitemap.add properties_path, :priority => 0.7, :changefreq => 'daily'
 
- 
- map.resources :properties
- #map.resources :services
+  # add all individual properties
+  Property.find(:all).each do |a|
+    sitemap.add property_path(a), :lastmod => a.updated_at
+  end
+  
+  sitemap.add services_path, :priority => 0.7, :changefreq => 'daily'
 
- 
- #map.view_page ':name', :controller => 'viewer', :action => 'show'
- 
+  Category.find_main.each do |a|
+    sitemap.add services_par_path(:category => a.name), :lastmod => a.updated_at
+  end
+  
+  # add merchant path
+  #sitemap.add '/purchase', :priority => 0.7, :host => "https://www.example.com"
+  
 end
