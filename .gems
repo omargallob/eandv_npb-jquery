@@ -1,4 +1,5 @@
 aws-s3 --version '>= 0.6.2' --source code.whytheluckystiff.net
+right_aws --version '>=1.10.0'
 builder --version '>= 2.1.2'
 ym4r --version '>= 0.6.1'
 rets4r --version '>=0.8.5'
