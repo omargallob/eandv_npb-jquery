@@ -155,7 +155,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main .property .address {background: url(../images/system/bg/front/Prop_Top_BG.jpg); height: 20px}
 #left-side #main .property .address p {font-style: italic; margin-top: 2px}
 #left-side #main .property .extra {background: url(../images/system/bg/front/Prop_Bot_BG.jpg); height: 29px}
-#left-side #main .property .extra ul.facility {margin: 6px 0 0 5px; list-style: none; width: 282px; height: 29px}
+#left-side #main .property .extra ul.facility {margin: 6px 0 0 5px; padding: 0px; list-style: none; width: 282px; height: 29px}
 #left-side #main .property .extra ul.facility li {float: left; color: white; text-align: center}
 #left-side #main .property .extra ul.facility li p {margin: -2px 0 0 0; padding: 0}
 #left-side #main .property .extra ul.facility li.number {height: 16px; width: 17px; background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg); margin-right: 3px}
