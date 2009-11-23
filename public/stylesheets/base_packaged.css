@@ -56,7 +56,7 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #lower_pagewrapper #footer ul#links li img.eandv {margin: 7px 0 0 7px}
 #lower_pagewrapper #footer #logbox {float: right; width: 250px; margin-top: 0px}
 #lower_pagewrapper #footer #logbox div {float: left; margin-left: 15px; background-color: white}
-img#mainpic {float: left; margin-right: 10px}
+img#mainpic {float: left; margin-right: 15px; display: none}
 img#about_image {position: absolute; left: 195px; margin-top: 26px}
 img.static_why {margin: 30px 0 0 30px}
 #main.about {margin-top: 396px}
@@ -177,7 +177,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main #main_bottom.other {background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; float: left; margin-top: 33px; height: 15px}
 #left-side #main .properties {width: 442px}
 #left-side #main p {margin: 5px 35px; font-style: italic; font-family: "Georgia"}
-#left-side #main ul {margin: 5px 30px}
+#left-side #main ul {margin: 5px 30px; padding-left: 20px; font-style: italic}
 #left-side #main ul.toggle_li {font-style: italic}
 #left-side #main ul.toggle_li li {margin: 20px 0}
 #left-side #main table {margin: 25px}
