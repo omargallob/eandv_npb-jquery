@@ -41,7 +41,7 @@
 #left-side #main.properties { width: 442px; background: url(../images/system/bg/front/main_properties.jpg); margin-left: 0px; }
 #left-side #services { width: 442px; background: url(../images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px; }
 #left-side #services img { margin: 5px 20px; }
-#left-side #property_gallery { width: 621px; height: 374px; float: left; background: transparent; margin: -6px 0 20px -8px; }
+#left-side #property_gallery { width: 621px; height: 374px; float: left; background: transparent; margin: 0px 0 14px 0px; }
 #left-side #main.why { width: 442px; }
 #left-side #main { width: 463px; background: url(../images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
 #left-side #main #maylike { width: 402px; height: 85px; float: left; margin: 9px 0 0 20px; background: url(../images/static/youmaylike.jpg); }
