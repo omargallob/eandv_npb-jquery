@@ -1,18 +1,15 @@
 development:
-  bucket_name: eandv-development
+  bucket: eandv-development
   access_key_id: AKIAI7DG2I3UGHEC6FKA
   secret_access_key: 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
-  distribution_domain: npb.heroku.net
   acl: public-read
 test:
-  bucket_name:  eandv-test
+  bucket:  eandv-test
   access_key_id: AKIAI7DG2I3UGHEC6FKA
   secret_access_key: 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
-  distribution_domain: npb.heroku.net
-  
 production:
-  bucket_name:  eandv
+  bucket:  eandv
   access_key_id: AKIAI7DG2I3UGHEC6FKA
   secret_access_key: 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
-  distribution_domain: npb.heroku.net
+
 
