@@ -919,3 +919,5 @@
 ** Rails signals registered.  HUP => reload (without restart).  It might not work well.
 ** Mongrel 1.1.4 available at 0.0.0.0:3001
 ** Writing PID file to log/mongrel.pid
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:50: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/galleries/show.html.erb:20: warning: don't put space before argument parentheses
