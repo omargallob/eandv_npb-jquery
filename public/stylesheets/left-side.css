@@ -53,7 +53,7 @@
 #left-side #main #facility_list .bottom { width: 136px; height: 4px; background: url(../images/system/bg/front/property_facility_bottom.jpg); }
 #left-side #main #facility_list h3 { text-align: center; margin: 10px 0 0 0; }
 #left-side #main #facility_list p { margin: 0 0 0 12px; }
-#left-side #main #facility_list ul { margin: 10px 0 10px 12px; list-style-position: inside; }
+#left-side #main #facility_list ul { margin: 10px 0 10px 12px; list-style-position: inside; padding: 0px; }
 #left-side #main #facility_list ul li { font-size: 12px; }
 #left-side #main #property_content { width: 248px; float: left; background: transparent; margin-left: 16px; margin-top: 3px; }
 #left-side #main #property_content p { font-style: normal; font-size: 12px; margin: 0 0 0 6px; }
