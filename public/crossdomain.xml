@@ -2,5 +2,5 @@
 <!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
 <cross-domain-policy>  
   <site-control permitted-cross-domain-policies="master-only" /> 
-  <allow-access-from domain="*" secure="true" /> 
+  <allow-access-from domain="s3.amazonaws.com" /> 
 </cross-domain-policy>
