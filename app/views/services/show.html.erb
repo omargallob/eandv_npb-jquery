@@ -11,6 +11,7 @@
 	</div>
 
 	<div id="main" class="properties">
+		<h1 class="regular"><%= @category.title %> </h1>
 		<%= image_tag @category.main.url(:large),:id=>"mainpic" %>
 		<%= @category.description %>
 		<div id="main_bottom" class="main_border other">	</div>
@@ -52,7 +53,6 @@ $(document).ready(function() {
 	$("#main p:first").html("");
 	$("#mainpic").appendTo("#main p:first");
 	$("#main p:first").append(aux);
-	$("#main p:first").css("margin-top","70px")
 	$("#mainpic").show();
 
 
