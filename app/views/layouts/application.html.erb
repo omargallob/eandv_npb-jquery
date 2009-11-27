@@ -5,14 +5,13 @@
 		<meta name="google-site-verification" content="ysbTsgOLK4J__UnJrjd8cCzrwuezCfaL4G5CsHIs7DQ" />
 	<%= stylesheet_link_tag "screen"  %>
 	<%= display_meta_tags %>
-	<%= javascript_include_merged :base,:secondary %>
+	<%= javascript_include_tag  "_jquery","_jquery-ui","_jrails","swfobject","browserdetect","application","eye","utils","ui.tabs","ui.combobox","spacegallery","jquery.easing.1.3","sexylightbox.v2.3.jquery","reflection", "jScrollPane","jquery.tmpl.1.1.1","jquery.mousewheel", "jquery.jcarousel" %>
+	<%# javascript_include_merged :base,:secondary %>
 	
 	<%= stylesheet_link_merged :base, :secondary %>
 
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 	<!--[if lt IE 8]>
-	
-		
 	      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 	<![endif]-->
 	<style type="text/css">
@@ -39,6 +38,7 @@
 	<script src="/fonts/GarmdITC_BkCn_BT_400-GarmdITC_BkCn_BT_700-GarmdITC_BkCn_BT_italic_400-GarmdITC_BkCn_BT_italic_700.font.js" type="text/javascript" charset="utf-8"></script>
 	
 	<script type="text/javascript" charset="utf-8">
+	
 		if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<"8")){
 	  		$("#content_top").remove();
 			alert("You are using an old browser!!!\n To view this page correctly you have two options: \n 1. upgrade to ie8  \n 2. use a decent one, we hear firefox is good");			
@@ -97,6 +97,6 @@
 	var pageTracker = _gat._getTracker("UA-6199682-12");
 	pageTracker._trackPageview();
 	} catch(err) {}</script>
-	<%= yield :script %>
+<%= yield :script %>
  </body>
 </html>
