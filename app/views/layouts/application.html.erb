@@ -36,9 +36,9 @@
 	<script src="/javascripts/cufon.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/fonts/GarmdITC_BkCn_BT_400-GarmdITC_BkCn_BT_700-GarmdITC_BkCn_BT_italic_400-GarmdITC_BkCn_BT_italic_700.font.js" type="text/javascript" charset="utf-8"></script>
 	<%= yield :script %>
-	<script>
+	<script type="text/javascript" charset="utf-8">
 	alert(BrowserDetect.browser);
-		if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<8)){
+		if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<"8")){
 			alert("You are using an old browser!!!\n To view this page correctly you have two options: \n 1. upgrade to ie8  \n 2. use a decent one, we hear firefox is good")			
 			$("#content_top").remove();
 		}else{

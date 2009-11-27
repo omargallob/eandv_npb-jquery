@@ -5,6 +5,7 @@ javascripts:
   - _jrails
   - _jquery-ui
   - swfobject
+  - browserdetect
   - application
 - secondary:
   - eye
@@ -19,7 +20,6 @@ javascripts:
   - jquery.tmpl.1.1.1
   - jquery.mousewheel
   - jquery.jcarousel
-  - browserdetect
 - admin:
   - _jquery
   - _jrails
