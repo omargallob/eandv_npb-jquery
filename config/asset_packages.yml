@@ -2,8 +2,8 @@
 javascripts: 
 - base: 
   - _jquery
-  - _jrails
   - _jquery-ui
+  - _jrails
   - swfobject
   - browserdetect
   - application

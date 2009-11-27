@@ -1069,3 +1069,4 @@ Tue Nov 24 20:07:15 +0000 2009: Error calling Dispatcher.dispatch #<Mongrel::Tim
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:54: warning: don't put space before argument parentheses
