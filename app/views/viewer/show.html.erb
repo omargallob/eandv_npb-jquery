@@ -20,11 +20,12 @@
 		<% if @page.name == "home" || @page.name == "about" || @parent.name == "about" %>
 		<div id="main_top" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 		<% end %>
-		<div id="main_bottom" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
+		
 		<% if @page.name == "home" %>
 			<h1 class="title"><%= @page.title %> </h1>
 		<% end %>
 		<%= @page.body %>
+		<div id="main_bottom" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 	</div>
 </div>
 <div id="right-column" class="<% if @page.name == "home" %>home<% end %> <% if @page.name == "about" || @parent.name== "about" %>about<% end %>">
@@ -44,11 +45,20 @@
 
 <% content_for :script do %>
 <script type="text/javascript">
-$(document).ready(function() {
+jQuery(document).ready(function() {
 	/*$('#main').jScrollPane({scrollbarWidth:17,showArrows:true});*/
-	$('.droppies').combobox(); 
+
 <% unless params[:parent] %>
-	front_paragraph_chop();
+	
+	if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<"8")){
+			$("#content_top").remove();
+			alert("You are using an old browser!!!\n To view this page correctly you have two options: \n 1. upgrade to ie8  \n 2. use a decent one, we hear firefox is good")
+	}else{
+		front_paragraph_chop();	
+
+	}
+	
+	$('.droppies').combobox();
 <% end %>
   $('#content').css("height","100%"); 
 
@@ -60,11 +70,12 @@ $(document).ready(function() {
 		<% end %>
 		<% if params[:name] == "why"  %>
 			chop_front_list();
-
-	
 		<% end %>
 	<% else %>
-	onfocus_forms();
+	if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<"8")){
+		}else{
+		onfocus_forms();
+	}
  	<% end %>
 	$("#main_bottom").appendTo($("#main"));
 	$("#right-column").css("width","260px");
