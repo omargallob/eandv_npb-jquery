@@ -1,11 +1,11 @@
 --- 
 javascripts: 
 - base: 
+  - swfobject
+  - browserdetect
   - _jquery
   - _jquery-ui
   - _jrails
-  - swfobject
-  - browserdetect
   - application
 - secondary:
   - eye
