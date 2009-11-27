@@ -50,8 +50,7 @@ jQuery(document).ready(function() {
 
 <% unless params[:parent] %>
 	
-	if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<"8")){
-			alert("You are using an old browser!!!\n To view this page correctly you have two options: \n 1. upgrade to ie8  \n 2. use a decent one, we hear firefox is good")
+	if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<8)){
 	}else{
 		front_paragraph_chop();	
 
@@ -71,7 +70,7 @@ jQuery(document).ready(function() {
 			chop_front_list();
 		<% end %>
 	<% else %>
-	if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<"8")){
+	if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<8)){
 		}else{
 		onfocus_forms();
 	}
