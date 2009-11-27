@@ -51,7 +51,6 @@ jQuery(document).ready(function() {
 <% unless params[:parent] %>
 	
 	if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<"8")){
-			$("#content_top").remove();
 			alert("You are using an old browser!!!\n To view this page correctly you have two options: \n 1. upgrade to ie8  \n 2. use a decent one, we hear firefox is good")
 	}else{
 		front_paragraph_chop();	
