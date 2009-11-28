@@ -1,6 +1,9 @@
 --- 
 javascripts: 
 - base: 
+  - _jquery
+  - _jquery-ui
+  - _jrails
   - application
 - secondary:
   - eye
