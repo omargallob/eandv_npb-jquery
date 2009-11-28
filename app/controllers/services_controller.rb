@@ -21,4 +21,15 @@ class ServicesController < ApplicationController
                     :description => @category.description
     
   end 
+  
+  def feed
+    if params[:subcategory] == nil    
+      @category = Category.find_by_name(params[:id])
+    else
+      @category = Category.find_by_name(params[:subcategory])
+    end
+    respond_to do |format|
+        format.xml  { render :xml => @category  }
+    end
+  end
 end

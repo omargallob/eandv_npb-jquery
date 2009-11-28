@@ -23,7 +23,7 @@ ActionController::Routing::Routes.draw do |map|
  
   map.services_par '/services/:category', :controller => "services", :action => "show"
   
-  map.services_sub '/services/:category/:subcategory', :controller => "services", :action => "show"
+  map.services_sub '/services/:category/:subcategory.:format', :controller => "services", :action => "show"
   #admin section
   map.namespace :admin  do |admin|
      admin.root :controller => "overview"
