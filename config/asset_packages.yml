@@ -3,7 +3,6 @@ javascripts:
 - base: 
   - swfobject
   - browserdetect
-  - _jrails
   - application
 - secondary:
   - eye
