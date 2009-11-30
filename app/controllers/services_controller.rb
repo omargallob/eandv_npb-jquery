@@ -33,7 +33,7 @@ class ServicesController < ApplicationController
       @category = Category.find_by_name(params[:subcategory])
     end
     respond_to do |format|
-        format.xml  
+        format.xml  #{ render :xml => @properties }
     end
   end
 end
