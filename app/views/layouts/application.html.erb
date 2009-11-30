@@ -8,13 +8,12 @@
 	<%= javascript_include_tag "browserdetect" %>
 	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 	<script type="text/javascript" charset="utf-8">
+ 	  google.load("swfobject", "2.2");
  		google.load("jquery", "1.3.2");
   	google.load("jqueryui", "1.7.2");
- 	  google.load("swfobject", "2.2");
 	</script>
 	<%= javascript_include_tag "_jrails","application" %>
 	<%= javascript_include_merged :secondary %>
-	
 	<%= stylesheet_link_merged :base, :secondary %>
 
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -104,6 +103,12 @@
 	var pageTracker = _gat._getTracker("UA-6199682-12");
 	pageTracker._trackPageview();
 	} catch(err) {}</script>
+	
 <%= yield :script %>
+<script>
+	$(document).ready(function(){
+		$("a[rel^='prettyPhoto']").prettyPhoto({theme:'light_rounded'});
+	});
+</script>
  </body>
 </html>

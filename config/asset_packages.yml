@@ -15,6 +15,7 @@ javascripts:
   - jquery.tmpl.1.1.1
   - jquery.mousewheel
   - jquery.jcarousel
+  - jquery.prettyPhoto
 - admin:
   - _jquery
   - _jrails
@@ -47,5 +48,6 @@ stylesheets:
   - ui.tabs
   - jquery.jcarousel
   - JScrollPane
+  - prettyPhoto
 
   

@@ -6,7 +6,7 @@
 	</div>
 <% end %>
 
-	<div id="side-nav" 	class="<%= @page.name %>">
+	<div id="side-nav" 	class="<%= @page.name %> <% if @parent.name == "about" %>about<% end %>">
 			<% if @page.name == "home" %>
 				<%= render :partial => "shared/home_sidenav" %>
 			<% else %>
@@ -25,6 +25,9 @@
 			<h1 class="title"><%= @page.title %> </h1>
 		<% end %>
 		<%= @page.body %>
+		<% if params[:parent] == "why" %>
+		<p class="main_links"> <%= link_to "contact us", "/images/slide_1.jpg",:rel =>"prettyPhoto" %> or <%= link_to "chat with us", "/images/slide_1.jpg",:rel =>"prettyPhoto" %> </p>
+		<% end %>
 		<div id="main_bottom" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 	</div>
 </div>
@@ -47,7 +50,7 @@
 <script type="text/javascript">
 jQuery(document).ready(function() {
 	/*$('#main').jScrollPane({scrollbarWidth:17,showArrows:true});*/
-
+	$('.droppies').combobox();
 <% unless params[:parent] %>
 	
 	if((BrowserDetect.browser=="Explorer")&&(BrowserDetect.version<8)){
@@ -56,7 +59,7 @@ jQuery(document).ready(function() {
 
 	}
 	
-	$('.droppies').combobox();
+
 <% end %>
   $('#content').css("height","100%"); 
 

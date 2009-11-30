@@ -6,7 +6,7 @@
 		<li class="<% if @page.name == page.name %>active<% end %>"><%= link_to page.navlabel, view_page_parent_path(@parent.name,page.name)%></li>
 	<% end %>
 </ul>
-<hr />
+<hr class='special' />
 <% end %>
 
 <%= image_tag "system/buttons/keepdiscovering.jpg", :height=>"80", :width =>"150" %>
