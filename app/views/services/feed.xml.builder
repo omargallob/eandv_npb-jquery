@@ -5,7 +5,7 @@ xml.instruct!
     xml.title_back @category.title_back
     xml.body @category.description.gsub(/<\/?[^>]*>/, "")
     xml.image_front @category.photo.url(:large)
-    xml.image_back @category.photo.url(:large)
+    xml.image_back  "http://s3.amazonaws.com/eandv-development/images/system/bg/front/back.jpg"
 
     if params[:id]
       xml.link @category.link_text, "path"=>services_par_path(@category)

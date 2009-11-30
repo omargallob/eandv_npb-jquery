@@ -1,0 +1,13 @@
+<script type="text/javascript">
+		var flashvars = {};
+		flashvars.xml = "/services/<%= params[:id] %>/<%= category %>/feed.xml";
+		//flashvars.font = "font.swf";
+		var attributes = {};
+		attributes.wmode = "transparent";
+		attributes.id = "category_<%= category %>";
+		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/flipside.swf", "category_<%= category %>", "403", "180", "9", "/swf/expressInstall.swf", flashvars, attributes);
+ </script>
+
+<li>
+	<div id="category_<%= category %>"></div>
+</li>
