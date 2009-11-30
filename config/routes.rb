@@ -2,7 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :s3_uploads
 
   
-  
+  map.resources :contact
   map.resources :services #, :path_prefix => ":locale"
   map.resources :properties,:collection => {:feed => :get}
   map.resources :rss,:collection => {:favs => :get,:properties => :get}
@@ -61,7 +61,7 @@ ActionController::Routing::Routes.draw do |map|
   map.feed_properties '/rss/properties.:format', :controller => 'properties', :action => 'feeds'
   map.feed_favs '/rss/favs.:format', :controller => 'rss', :action => 'favs'
   map.property_images '/properties/:id/images.xml', :controller => 'properties', :action => 'feed_images'     
-  
+  map.service_feed '/services/:category/:subcategory/feed.xml', :controller => 'services', :action => 'feed'
   
  # 
   # The priority is based upon order of creation: first created -> highest priority.

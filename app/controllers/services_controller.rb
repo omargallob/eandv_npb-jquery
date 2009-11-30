@@ -4,6 +4,7 @@ class ServicesController < ApplicationController
     @subpages = @page.subpages
     @categories = Category.find_main
     @subcats = Category.find_all_sub
+    
   end
   
   def show
@@ -19,7 +20,10 @@ class ServicesController < ApplicationController
     
       set_meta_tags :title =>  @page.title + " > " + @category.title,
                     :description => @category.description
-    
+    respond_to do |format|
+      format.xml #
+      format.html #
+    end
   end 
   
   def feed
@@ -29,7 +33,7 @@ class ServicesController < ApplicationController
       @category = Category.find_by_name(params[:subcategory])
     end
     respond_to do |format|
-        format.xml  { render :xml => @category  }
+        format.xml  
     end
   end
 end
