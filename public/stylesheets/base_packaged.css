@@ -77,13 +77,17 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav .relocating {margin: 0px 0 0 -4px}
 #left-side #side-nav div.toolset {margin-top: 14px}
 #left-side #side-nav .left_tool {width: 162px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool.jpg); margin-top: 0px; float: left}
-#left-side #side-nav .left_tool h3 {margin-left: 14px}
+#left-side #side-nav .left_tool h3 {margin-left: 16px}
+#left-side #side-nav .left_tool h3 a {text-decoration: none; color: #E13939}
+#left-side #side-nav .left_tool h3 a:hover {color: #888888}
 #left-side #side-nav .left_tool .top {width: 162px; height: 15px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool_top.jpg); float: left}
 #left-side #side-nav .left_tool .bottom {width: 162px; height: 15px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px; float: left}
 #left-side #side-nav .left_tool ul {width: 162px; height: 123px; margin: 12px 0 0 0px; padding: 0px}
 #left-side #side-nav .left_tool ul li {height: 41px; margin-left: 14px}
 #left-side #side-nav .left_tool ul li img {float: left}
 #left-side #side-nav .left_tool ul li span {float: left; font-size: 12px; font-style: italic; width: 100px; margin: 2px 0 0 13px; color: #818181}
+#left-side #side-nav .left_tool ul li span a {color: #888888}
+#left-side #side-nav .left_tool ul li span a:hover {color: #E13939}
 #left-side #side-nav ul.submenu {padding: 0px; margin: 0px; float: left; width: 170px}
 #left-side #side-nav ul.submenu li {height: 24px; width: 151px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/buttons/submenu.jpg); margin: 0 0 0px 5px; padding: 2px 0 0 10px; background-repeat: no-repeat}
 #left-side #side-nav ul.submenu li a {color: white}
@@ -207,6 +211,7 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #extra img.share {margin: 12px 0 0 24px}
 #right-column #extra .top {width: 174px; height: 15px; background: url(../images/system/bg/front/right_small1_top.jpg)}
 #right-column #extra .bottom {width: 174px; height: 15px; background: url(../images/system/bg/front/right_small1_bottom.jpg); position: relative; float: left}
+#right-column #extra h3 {margin-bottom: 8px}
 #right-column #small {width: 117px; height: 161px; float: left; background: url(../images/system/bg/front/right_small2.jpg); margin: 15px 0 0 13px}
 #right-column #small h3 {margin: 14px 0 0 13px}
 #right-column #searchbox {height: 245px; width: 266px; background-color: transparent; float: left}
@@ -254,3 +259,5 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column .header_w_image {float: left; text-align: center; width: 174px; margin-left: 0px; height: 35px}
 #right-column .header_w_image img {float: left; margin: 0px}
 #right-column .header_w_image h3 {float: left; padding: 6px 0 0 0px; margin: 0px}
+#right-column .header_w_image h3 a {color: #E13939; text-decoration: none}
+#right-column .header_w_image h3 a:hover {color: #888888}

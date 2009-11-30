@@ -177,7 +177,11 @@ function nice_fonts(){
 	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#E13939',
 	  fontSize: "16px",
+	  hover: {
+	   		color: '#888888'
+	   }
  });
+
   Cufon.replace('h1.title', {
 	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#E13939',
