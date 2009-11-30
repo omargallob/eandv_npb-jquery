@@ -9,7 +9,7 @@
 	<div id="main" class="property">
 		<div class="top">	</div>
 
-		<h3>property</h3>
+		<h3><span class="title">property</span></h3>
 		<hr />
 		<div id="property_header">
 			<h1><%= @property.title %></h1>
@@ -32,7 +32,7 @@
 		</div>
 		<div id="facility_list">
 			<div class="top"></div>
-			<h3>facilities</h3>
+			<h3><span class="title">facilities</span></h3>
 			<ul>
 			<% for facility in @property.facilities %>
 				<li><%= facility.title %></li>
@@ -75,7 +75,7 @@
 
 	<div id="schools">
 		<div class="top"></div>
-		<h3>nearest schools</h3>
+		<h3><span class="title">nearest schools</span></h3>
 		<hr />
 		<ul><li class="title"><span><%= @property.title %></span>,<br><%= @property.location.region %> (<%= @property.location.zipcod %>),&nbsp;<%= @property.location.county %> county</li></ul>
 		<hr />

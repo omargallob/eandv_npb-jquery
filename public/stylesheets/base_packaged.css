@@ -4,6 +4,9 @@ body a:focus {-moz-outline-style: none}
 body a:hover {color: yellow}
 body h3 {text-transform: uppercase; font-variant: small-caps; color: #e13939; font-family: "Georgia"; font-variant: small-caps; font-size: 16px}
 body h3 span {color: #d4d4d4}
+body h3 span a {text-decoration: none}
+body h3 span.active {color: #E13939}
+body h3 span.active a {text-decoration: none}
 body h3 strong {font-weight: normal; color: #d4d4d4}
 body h1 {font-family: "Georgia"; font-size: 14px; text-transform: uppercase; color: #e2001a}
 body object {outline: none}
@@ -221,7 +224,7 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #searchbox form#QuickQuery p {margin-bottom: 0px}
 #right-column #searchbox form#QuickQuery p input#QuickQuery {padding: 6px 0 0 6px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
 #right-column #searchbox form#QuickQuery p.advanced {margin-left: 24px}
-#right-column #searchbox form#Selectable div {float: right; margin-top: 10px}
+#right-column #searchbox form#Selectable div {float: right; margin-top: 10px; color: #888888}
 #right-column #searchbox form#Selectable div p {margin: 0px; padding: 0px; height: 30px; width: 198px; font-family: "Georgia"; font-size: 12px}
 #right-column #searchbox form#Selectable div p input.formularios {padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-repeat: no-repeat; font-family: "Georgia"; font-size: 12px; color: #6b6b6b}
 #right-column #searchbox form#Selectable div p input.idle {background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/form/dropdown.jpg)}

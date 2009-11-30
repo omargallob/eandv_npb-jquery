@@ -4,6 +4,9 @@ body a:focus { -moz-outline-style: none; }
 body a:hover { color: yellow; }
 body h3 { text-transform: uppercase; font-variant: small-caps; color: #e13939; font-family: "Georgia"; font-variant: small-caps; font-size: 16px; }
 body h3 span { color: #d4d4d4; }
+body h3 span a { text-decoration: none; }
+body h3 span.active { color: #E13939; }
+body h3 span.active a { text-decoration: none; }
 body h3 strong { font-weight: normal; color: #d4d4d4; }
 body h1 { font-family: "Georgia"; font-size: 14px; text-transform: uppercase; color: #e2001a; }
 body object { outline: none; }
