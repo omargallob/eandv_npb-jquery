@@ -75,6 +75,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav hr {width: 129px; height: 1px; border: 0px none; float: left; background-color: #e1e1e1; margin: 8px 0 8px 6px}
 #left-side #side-nav .shorter {height: 182px}
 #left-side #side-nav .relocating {margin: 0px 0 0 -4px}
+#left-side #side-nav div.toolset {margin-top: 14px}
 #left-side #side-nav .left_tool {width: 162px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool.jpg); margin-top: 0px; float: left}
 #left-side #side-nav .left_tool h3 {margin-left: 14px}
 #left-side #side-nav .left_tool .top {width: 162px; height: 15px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool_top.jpg); float: left}
@@ -248,6 +249,7 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #marketreport .header_w_image {width: 200px; margin-left: 70px}
 #right-column #marketreport .header_w_image h3 {float: left; padding-top: 9px}
 #right-column .partners {margin-top: 14px; float: left}
+#right-column .partners h3 {margin-left: 0px}
 #right-column .partners h5 {color: #e2001a; margin: 0 5px 7px 5px; text-align: center}
 #right-column .header_w_image {float: left; text-align: center; width: 174px; margin-left: 0px; height: 35px}
 #right-column .header_w_image img {float: left; margin: 0px}

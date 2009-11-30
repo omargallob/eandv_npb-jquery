@@ -57,6 +57,7 @@
 #right-column #marketreport .header_w_image { width: 200px; margin-left: 70px; }
 #right-column #marketreport .header_w_image h3 { float: left; padding-top: 9px; }
 #right-column .partners { margin-top: 14px; float: left; }
+#right-column .partners h3 { margin-left: 0px; }
 #right-column .partners h5 { color: #e2001a; margin: 0 5px 7px 5px; text-align: center; }
 #right-column .header_w_image { float: left; text-align: center; width: 174px; margin-left: 0px; height: 35px; }
 #right-column .header_w_image img { float: left; margin: 0px; }
