@@ -5,7 +5,14 @@
 		<meta name="google-site-verification" content="ysbTsgOLK4J__UnJrjd8cCzrwuezCfaL4G5CsHIs7DQ" />
 	<%= stylesheet_link_tag "screen"  %>
 	<%= display_meta_tags %>
-	<%= javascript_include_tag  "swfobject","browserdetect","_jquery","_jquery-ui","_jrails","application" %>
+	<%= javascript_include_tag "browserdetect" %>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf-8">
+ 		google.load("jquery", "1.3.2");
+  	google.load("jqueryui", "1.7.2");
+ 	  google.load("swfobject", "2.2");
+	</script>
+	<%= javascript_include_tag "_jrails","application" %>
 	<%= javascript_include_merged :secondary %>
 	
 	<%= stylesheet_link_merged :base, :secondary %>
