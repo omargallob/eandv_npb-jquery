@@ -8,7 +8,9 @@
 </ul>
 <hr class='special' />
 <% end %>
-
+<% if @page.name == "office" %>
+	<hr />
+<% end %>
 <%= image_tag "system/buttons/keepdiscovering.jpg", :height=>"80", :width =>"150" %>
 <% unless @page.name == "about" || params[:parent] == "about" %>
 <%= render :partial=>"shared/polaroid"%>
