@@ -159,7 +159,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main #result_info h5 span.left {float: left}
 #left-side #main #result_info h5 span.right {float: right}
 #left-side #main .property {height: 107px; width: 426px; float: left; margin-left: 5px; background: transparent}
-#left-side #main .property .image {height: 90px; width: 120px; float: left; margin: 9px; background: green}
+#left-side #main .property .image {height: 90px; width: 120px; float: left; margin: 9px; background: transparent}
 #left-side #main .property .text {margin: 0px; width: 282px; height: 21px; float: left; margin-bottom: 1px}
 #left-side #main .property .text p {margin-left: 5px; font-style: normal}
 #left-side #main .property .title {margin-top: 9px; text-transform: uppercase}
