@@ -4,7 +4,7 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
-  before_filter :setmeta, :get_pages_for_tabs, :set_user_locale
+  before_filter :setmeta, :get_pages_for_tabs, :set_user_locale, :pickupproperties
   
   include AuthenticatedSystem
   # You can move this into a different controller, if you wish.  This module gives you the require_role helpers, and others.
@@ -23,7 +23,13 @@ class ApplicationController < ActionController::Base
     I18n.locale = current_user.language if logged_in?
   end
   
-  
+  def pickupproperties
+    @locations = Location.find(:all)
+    @countries = Country.find(:all)
+    @states = @locations.map { |x| x.state }
+    @county = @locations.map { |x| 'Los Angeles - '+x.county }  
+    @region = @locations.map { |x| x.region }
+  end
   
   #def default_url_options(options={}) 
   #   logger.debug "default_url_options is passed options: #{options.inspect}\n"

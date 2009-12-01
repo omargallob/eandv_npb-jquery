@@ -16,6 +16,8 @@ class ViewerController < ApplicationController
     else
       set_meta_tags :title =>  @page.title
     end  
+    
+    #@properties = Property.find(:all)
   end
 
 end

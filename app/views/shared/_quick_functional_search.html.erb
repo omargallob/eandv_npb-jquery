@@ -1,4 +1,4 @@
-<h3><span class="title">Quick Search</span> <strong> &nbsp;|&nbsp;</strong><span class="inactive"><a href="#"> Mls</a> </span>	</h3>
+<h3><span class="title">Quick Search</span> <strong> &nbsp;|&nbsp;</strong><span class="inactive"><a href="#"> Mls</a> </span></h3>
 <form id="QuickQuery"  action="#" method="get" accept-charset="utf-8">
 	<p>
 		<input type="text" id="QuickQuery"><input type="image" src="/images/system/form/search-button.jpg" style="margin-left:10px;margin-top:-2px">
@@ -8,23 +8,34 @@
 	<div>
 		<p>
 			<select class="droppies" name="countries" id="countries">
-				<%= options_from_collection_for_select(@countries, 'title', 'title') %>
+				<option value="U.S.A">Option One</option>
+				<option value="Two">Option Two</option>
+				<option value="Three">Option Three</option>
+				<option value="Four">Option Four</option>
 			</select>
 		</p	>
 		<p>
 			<select class="droppies" name="states" id="states">
-			 <%= options_for_select ( @states.uniq)%>
+				<option value="California">Option One</option>
+				<option value="Two">Option Two</option>
+				<option value="Three">Option Three</option>
+				<option value="Four">Option Four</option>
 			</select>
 		</p	>
 		<p>
 			<select class="droppies" name="region" id="region">
-				<%= options_for_select(@county.uniq) %>
+				<option value="Los Angeles - Orange County">Option One</option>
+				<option value="Two">Option Two</option>
+				<option value="Three">Option Three</option>
+				<option value="Four">Option Four</option>
 			</select>
 		</p	>
 		<p>
 			<select class="droppies" name="area" id="area">
-				<option value="All">All</option>
-				<%= options_for_select ( @region)%>
+				<option value="All">Option One</option>
+				<option value="Two">Option Two</option>
+				<option value="Three">Option Three</option>
+				<option value="Four">Option Four</option>
 			</select>
 		</p	>
 		<p>
@@ -37,7 +48,10 @@
 		</p	>
 		<p>
 			<select class="droppies" name="bedrooms" id="bedrooms">
-				<%= options_for_select ( [1,2,3,4])%>
+				<option value="All">Option One</option>
+				<option value="Two">Option Two</option>
+				<option value="Three">Option Three</option>
+				<option value="Four">Option Four</option>
 			</select>
 		</p	>
 	</div>

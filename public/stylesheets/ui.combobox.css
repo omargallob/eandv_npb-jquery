@@ -19,7 +19,8 @@ border-top: 0px none;
 	margin-left: 2px;
 	margin-top:3px;
 
-
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .ui-combobox-list, .ui-combobox-item {

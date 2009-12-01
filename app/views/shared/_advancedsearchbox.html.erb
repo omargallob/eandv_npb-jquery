@@ -8,42 +8,30 @@
 	<div class="advanced">
 		<p>
 			<select class="droppies" name="countries" id="countries">
-				<option value="U.S.A">Option One</option>
-				<option value="Two">Option Two</option>
-				<option value="Three">Option Three</option>
-				<option value="Four">Option Four</option>
+				<%= options_from_collection_for_select(@countries, 'title', 'title') %>
 			</select>
 		</p	>
 		<p>
 			<select class="droppies" name="states" id="states">
-				<option value="California">Option One</option>
-				<option value="Two">Option Two</option>
-				<option value="Three">Option Three</option>
-				<option value="Four">Option Four</option>
+			 <%= options_for_select ( @states.uniq)%>
 			</select>
 		</p	>
 		<p>
 			<select class="droppies" name="region" id="region">
-				<option value="Los Angeles - Orange County">Option One</option>
-				<option value="Two">Option Two</option>
-				<option value="Three">Option Three</option>
-				<option value="Four">Option Four</option>
+				<%= options_for_select(@county.uniq) %>
 			</select>
 		</p	>
 		<p>
 			<select class="droppies" name="area" id="area">
-				<option value="All">Option One</option>
-				<option value="Two">Option Two</option>
-				<option value="Three">Option Three</option>
-				<option value="Four">Option Four</option>
+				<option value="All">All</option>
+				<%= options_for_select ( @region)%>
 			</select>
 		</p	>
 		<p>
 			<select class="droppies" name="buy_rent" id="buy_rent">
-				<option value="All">Option One</option>
-				<option value="Two">Option Two</option>
-				<option value="Three">Option Three</option>
-				<option value="Four">Option Four</option>
+				<option value="All">All</option>
+				<option value="Buy">Buy</option>
+				<option value="Rent">Rent</option>
 			</select>
 		</p	>
 		<p>
@@ -56,10 +44,7 @@
 		</p	>
 		<p>
 			<select class="droppies" name="bedrooms" id="bedrooms">
-				<option value="All">Option One</option>
-				<option value="Two">Option Two</option>
-				<option value="Three">Option Three</option>
-				<option value="Four">Option Four</option>
+				<%= options_for_select ( [1,2,3,4])%>
 			</select>
 		</p	>
 		<p>	<input type="text" class="text_input short" id="mls"> <span class="zip">Zip</span><input type="text" class="text_input short" id="mls"> </p>
