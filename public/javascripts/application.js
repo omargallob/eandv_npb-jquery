@@ -244,3 +244,12 @@ function onfocus_forms(){
       });  
 
 }
+
+function override_search_submit(){
+var url = '/properties';
+
+	$("#QuickQuery").submit(function () {
+	  $('input[type=image]', this).attr('disabled', 'disabled');
+	});
+
+ }
