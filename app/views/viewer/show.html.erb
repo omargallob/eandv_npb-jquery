@@ -41,7 +41,7 @@
 		<div class='bottom'></div>
 	<% end %>
 	</div>
-	<% if @page.name == "why" ||  @page.name == "selling"||  @page.name == "buying" %>
+	<% if @page.name == "why" ||  params[:parent] == "why" %>
 		<%= render :partial => "shared/why" %>
 	<% end %>
 </div>

@@ -18,6 +18,6 @@
 
 <%= render :partial=>"shared/polaroid"%>
 
-<%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;" %>
+<%= link_to (image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;"), '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
 
 <% end %>

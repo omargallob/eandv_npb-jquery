@@ -15,14 +15,14 @@
 <% unless @page.name == "about" || params[:parent] == "about" %>
 <%= render :partial=>"shared/polaroid"%>
 <% end %>
-<%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;" %>
+<%= link_to (image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;"), '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
 <hr />
-<% if @page.name == "why" %>
+<% if @page.name == "why" || params[:parent] == "why" %>
 <div class="left_tool relocating">
 	<div class="top"></div>
 	<div class="header_w_image">
 		<img src="/images/system/buttons/truck.jpg" width="50" height="35" alt="House">
-		<h3><span class="title"><a href="/images/slide_1.jpg" rel="prettyPhoto">Relocating?</a></span></h3>
+		<h3><span class="title"><a href="/contact?iframe=true&width=560&height=600" rel="prettyPhoto">Relocating?</a></span></h3>
 	</div>
 	<div class="bottom"></div>
 </div>
