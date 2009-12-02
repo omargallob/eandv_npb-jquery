@@ -24,7 +24,7 @@
 #right-column #searchbox #bottom_b { position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 216px; }
 #right-column #searchbox form { font-family: "Georgia"; }
 #right-column #searchbox form#QuickQuery p { margin-bottom: 0px; }
-#right-column #searchbox form#QuickQuery p input#query { padding: 6px 0 0 6px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px; }
+#right-column #searchbox form#QuickQuery p input#query { padding: 6px 0 0 12px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px; font-family: "Georgia"; font-size: 12px; color: #888888; }
 #right-column #searchbox form#QuickQuery p.advanced { margin-left: 24px; }
 #right-column #searchbox form#Selectable div { float: right; margin-top: 10px; color: #888888; }
 #right-column #searchbox form#Selectable div p { margin: 0px; padding: 0px; height: 30px; width: 198px; font-family: "Georgia"; font-size: 12px; }
