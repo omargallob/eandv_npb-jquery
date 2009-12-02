@@ -1,0 +1,63 @@
+
+<div id="left-side" class="properties">
+	<div id="side-nav" class="properties">
+		<%= render :partial => "shared/home_sidenav" %>
+		<%= render :partial => "shared/tool_set" %>
+	</div>
+
+
+	<div id="main">
+		<div class="top">	</div>
+		<h3>Search:  <%= params[:query] || 'all' %></h3>
+		<hr />
+		<ul id="view_options">
+			<li class="first"><span>View Options</span></li>
+			<li class="buy">Buy</li>
+			<li class="rent">Rent</li>
+			<li class="mls">MLS</li>
+			<li class="date">Date <%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %></li>
+			<li class="price">Price <%= image_tag "system/buttons/Filters/Filter_Arrow_down.jpg" %></li>
+		</ul>
+		<hr />
+		<% for property in @properties.uniq %>
+	
+			<%= render :partial => "shared/property", :object => property%>
+		<hr />
+		<% end %>
+		<div id="result_info">
+			<p>
+				<span class="left"><%= @properties.size %> results</span>
+				<span class="right">page <strong>1</strong> 2 3 4 5 > </span>
+			</p>
+		</div>
+		<div class="bottom">	</div>
+	</div>
+</div>
+
+<div id="right-column">
+	<div id="searchbox" class="advanced">
+		<div class="top"></div>
+			<div><%= render :partial => "shared/advancedsearchbox" %></div>
+		<div class='bottom'></div>
+	</div>
+	
+	<%= render :partial => "shared/properties_right" %>
+</div>
+
+<% content_for :script do %>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#upper_pagewrapper').css("height","133px"); 
+	$('#lower_pagewrapper').addClass("large"); 
+	$('#content').css("height","100%"); 
+
+	var main_height= $('#main').height();
+	$('#content').css("height","100%"); 
+	$('.droppies').combobox(); 
+	$('#main').addClass('properties');
+
+	$('#faq_block').jScrollPane({scrollbarWidth:17,showArrows:true});
+	set_nav_pointer("properties");
+});
+</script>
+<% end %>

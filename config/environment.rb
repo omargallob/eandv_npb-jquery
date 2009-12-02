@@ -12,6 +12,7 @@ Rails::Initializer.run do |config|
   config.gem "rets4r", :version => '>=0.8.5'
   config.gem "aws-s3", :lib => "aws/s3"
   config.gem "right_aws"
+  config.gem "acts_as_ferret"
   config.gem 'sitemap_generator', :lib => false, :source => 'http://gemcutter.org'
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers

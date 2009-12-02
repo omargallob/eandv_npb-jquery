@@ -7,7 +7,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :properties,:collection => {:feed => :get}
   map.resources :rss,:collection => {:favs => :get,:properties => :get}
   
-  
+  #search url
+  map.search_query '/search/', :controller => "properties", :action => "search", :method => :get
 
   #user action ( login signup logout)
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'

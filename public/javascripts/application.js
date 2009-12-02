@@ -246,10 +246,17 @@ function onfocus_forms(){
 }
 
 function override_search_submit(){
-var url = '/properties';
 
-	$("#QuickQuery").submit(function () {
-	  $('input[type=image]', this).attr('disabled', 'disabled');
-	});
+ // jQuery.ajaxSetup({ 
+ //    'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+ //  });
 
- }
+  $("#QuickQuery").submit(function () {
+    
+    var aux = $(this).serialize()+"&"+$("#Selectable").serialize();
+    //alert(aux);
+    //$.post($(this).attr("action"),aux, null, "script");
+     return true;
+  });
+
+}
