@@ -3,6 +3,7 @@ ActionController::Routing::Routes.draw do |map|
 
   
   map.resources :contact
+  map.resources :eandv
   map.resources :services #, :path_prefix => ":locale"
   map.resources :properties,:collection => {:feed => :get}
   map.resources :rss,:collection => {:favs => :get,:properties => :get}
