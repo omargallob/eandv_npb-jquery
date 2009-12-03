@@ -21,8 +21,8 @@
 	  var rx = 621/coords.w;
 	  var ry = 374/coords.h;
 	  $('#preview').css({
-	    width: Math.round(rx * <%= @upload.photo_geometry(:pagesize).width %>) + 'px',
-	    height: Math.round(ry * <%= @upload.photo_geometry(:pagesize).height %>) + 'px',
+	    width: Math.round(rx * <%= @upload.photo_geometry(:original).width %>) + 'px',
+	    height: Math.round(ry * <%= @upload.photo_geometry(:original).height %>) + 'px',
 	    marginLeft: '-' + Math.round(rx * coords.x) + 'px',
 	    marginTop: '-' + Math.round(ry * coords.y) + 'px'
 	  });
@@ -39,11 +39,11 @@
 
 
 
-<%= image_tag @upload.photo.url(:pagesize) , :id => "cropbox" %>
+<%= image_tag @upload.photo.url(:original) , :id => "cropbox" %>
 
 <h4>Preview:</h4>
 <div style="width:621px; height:374px; overflow:hidden">
-  <%= image_tag @upload.photo.url(:pagesize), :id => "preview" %>
+  <%= image_tag @upload.photo.url(:original), :id => "preview" %>
 </div>
 
 <% form_for(@upload,:url=>{:action=>"update"},:html=>{:method => :put}) do |f| %>

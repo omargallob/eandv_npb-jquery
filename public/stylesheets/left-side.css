@@ -11,7 +11,7 @@
 #left-side #side-nav { width: 170px; float: left; background-color: transparent; margin-right: 0px; }
 #left-side #side-nav hr { width: 129px; height: 1px; border: 0px none; float: left; background-color: #e1e1e1; margin: 8px 0 8px 6px; }
 #left-side #side-nav .shorter { height: 182px; }
-#left-side #side-nav .relocating { margin: 0px 0 0 -4px; }
+#left-side #side-nav .relocating { margin: 0px; }
 #left-side #side-nav div.toolset { margin-top: 14px; }
 #left-side #side-nav .left_tool { width: 162px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool.jpg); margin-top: 0px; float: left; }
 #left-side #side-nav .left_tool h3 { margin-left: 16px; }

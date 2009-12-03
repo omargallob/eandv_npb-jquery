@@ -33,7 +33,7 @@
 				<% if @property.featured %>
 				<div id="featured">
 				<%= image_tag @property.featured_photo.public_filename if @property.featured_photo %>
-			      	<% form_for(@property.featured_photo, :url => {:controller=>"properties", :action => "update_featured_photo"}, :html => { :multipart => true}) do |form| %>
+			      	<% form_for(@property.featured_photo || :featured_photo, :url => {:controller=>"properties", :action => "update_featured_photo"}, :html => { :multipart => true}) do |form| %>
 						<p>Featured<br />
 						<%= form.file_field :uploaded_data %>
 						</p>
