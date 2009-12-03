@@ -1,14 +1,13 @@
-
 <script type="text/javascript">
 		var flashvars = {};
-		flashvars.xml = "/properties/3/images.xml";
+		flashvars.galleryxml = "/properties/<%= @property.id %>/images.xml";
 		flashvars.font = "font.swf";
 		var attributes = {};
 		attributes.wmode = "transparent";
 		attributes.id = "gcontainer";
-		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/relative.swf", "gcontainer", "627", "382", "9", "/swf/expressInstall.swf", flashvars, attributes);
+		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/Final2.swf", "gcontainer", "627", "382", "9", "/swf/expressInstall.swf", flashvars, attributes);
 </script>
 
 <div id="property_gallery">
-<div id="gcontainer"></div>
+	<div id="gcontainer"></div>
 </div>
