@@ -1,20 +1,33 @@
+<% if controller.action_name == "show" %>
 <div class="left_tool shorter toolset">
 	<div class="top"></div>
 	<h3><span class="title">Tools</span></h3>
 	<ul>
-		<li><%= image_tag "system/buttons/tools/Mortgage.jpg"%> <span>Mortgage calculator</span></li>
-		<li><%= image_tag "system/buttons/tools/Value.jpg"%> <span>Home Value</span> </li>
-		<li><%= image_tag "system/buttons/tools/Neighbourhood.jpg"%> <span>Know you neighbourhood</span></li>
+		<li><%= image_tag "system/buttons/tools/Mortgage.jpg"%> <span>
+			<a href="/mortgage/<%= @property.id%>?iframe=true&width=560&height=600" rel="prettyPhoto[tools]">Mortgage calculator</a></span></li>
+		<li><%= image_tag "system/buttons/tools/Value.jpg"%> 
+			<span>
+				<a href="http://www.rdesk.com/communityinfo/CommunityReports.aspx?ZipCode=92661&allowprint=0&showreportheader=1&showtoolbar=1&appname=1166&LoadedInRdesk=0&AllowSave=0&allowcompare=1&allowchangelocation=0&showhelpicon=1&CSSFile=http%3a%2f%2flocalhost%3a3001%2fstylesheets%2fexternal.css&ReportName=HomeValues2&sid=ca8fac19502845e086e61f9300ff49f1?iframe=true&width=760&height=600" rel="prettyPhoto[tools]">
+				Home <br />Value</a>	
+			</span> 
+		</li>
+		<li><%= image_tag "system/buttons/tools/Neighbourhood.jpg"%>
+			<span>
+			<a href="http://www.rdesk.com/communityinfo/CommunityReports.aspx?ZipCode=92661&allowprint=0&showreportheader=1&showtoolbar=1&appname=1166&LoadedInRdesk=0&AllowSave=0&allowcompare=1&allowchangelocation=0&showhelpicon=1&CSSFile=http%3a%2f%2flocalhost%3a3001%2fstylesheets%2fexternal.css&ReportName=Demographics2&sid=ca8fac19502845e086e61f9300ff49f1?iframe=true&width=760&height=600" rel="prettyPhoto[tools]">Know you neighbourhood</a>
+			</span>
+		</li>
 	</ul>
 	<div class="bottom"></div>
 </div>
+<% end %>
+
 <div class="left_tool shorter toolset">
 	<div class="top"></div>
 	<h3><span class="title">Advice</span></h3>
 	<ul>
-		<li><%= image_tag "system/buttons/tools/MortgageAdvice.jpg"%> <span><a href="/contact?iframe=true&width=560&height=600" rel="prettyPhoto[advice]">Mortgage advice</a></span></li>
-		<li><%= image_tag "system/buttons/tools/LegalAdvice.jpg"%> <span><a href="/contact?iframe=true&width=560&height=600" rel="prettyPhoto[advice]">Legal advice</a></span> </li>
-		<li><%= image_tag "system/buttons/tools/AfterSales.jpg"%> <span><a href="/contact?iframe=true&width=560&height=600" rel="prettyPhoto[advice]">After sales</a></span></li>
+		<li><%= image_tag "system/buttons/tools/MortgageAdvice.jpg"%> <span><a href="/contact?iframe=true&width=560&height=600" rel="prettyPhoto[advice]">Mortgage <br /> advice</a></span></li>
+		<li><%= image_tag "system/buttons/tools/LegalAdvice.jpg"%> <span><a href="/contact?iframe=true&width=560&height=600" rel="prettyPhoto[advice]">Legal<br /> advice</a></span> </li>
+		<li><%= image_tag "system/buttons/tools/AfterSales.jpg"%> <span><a href="/contact?iframe=true&width=560&height=600" rel="prettyPhoto[advice]">After<br /> sales</a></span></li>
 	</ul>
 	<div class="bottom"></div>
 </div>

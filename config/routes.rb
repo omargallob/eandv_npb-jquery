@@ -10,6 +10,10 @@ ActionController::Routing::Routes.draw do |map|
   
   #search url
   map.search_query '/search/', :controller => "properties", :action => "search", :method => :get
+  # know your neighbourhood
+  map.neighbourhood '/neighbourhood', :controller => "contact", :action => "neighbourhood"
+  # mortgage
+  map.neighbourhood '/mortgage/:id', :controller => "contact", :action => "mortgage"
 
   #user action ( login signup logout)
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'

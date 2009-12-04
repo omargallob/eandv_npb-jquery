@@ -10,6 +10,10 @@
 		  <%= f.label :mls_id %><br/>
 	  <%= f.text_field :mls_id %>
 	</p>
+	<p>
+		  <%= f.label :property_number %><br/>
+	  <%= f.text_field :property_number %>
+	</p>
 	<hr/>
 	<p>
 		  <%= f.label :location_id %><br/>
@@ -53,6 +57,10 @@
 	  <%= f.select(:bedrooms,1...12) %>
 	</p>
 	<p>
+		  <%= f.label :half_bathrooms %><br/>
+	  <%=  f.select(:half_bathrooms,1...10) %>
+	</p>
+	<p>
 		  <%= f.label :bathrooms %><br/>
 	  <%=  f.select(:bathrooms,1...15) %>
 	</p>
@@ -60,6 +68,11 @@
 	  <%= f.label :living_areas %><br/>
 	  <%=  f.select(:living_areas,1...4) %>
 	</p>
+	<p>
+	  <%= f.label :garage %><br/>
+	  <%=  f.select(:garage,1...4) %>
+	</p>
+
 	<hr/>
 	<p>
 		  <%= f.label :built %><br/>
