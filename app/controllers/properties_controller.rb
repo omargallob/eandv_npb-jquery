@@ -54,37 +54,45 @@ class PropertiesController < ApplicationController
   end
   
   def search
+    @properties = []
     @page = Page.find_by_name('properties')
     @subpages = @page.subpages
-    set_meta_tags :title =>  "Search: "+ params[:query].capitalize
-    
-    if params[:query] == "All"
-      @properties = Property.find(:all)
+    if params[:query]
+      set_meta_tags :title =>  "Search: "+ params[:query].capitalize
+      if params[:query] == "All"
+        @properties = Property.find(:all)
+      else
+        @properties = Property.find_by_contents(params[:query])
+        @locations = Location.find_by_contents(params[:query])
+        @types = Type.find_by_contents(params[:query])
+        for location in @locations
+          if location.properties
+           for p in location.properties
+            @properties << p
+           end
+          end
+        end
+        for type in @types
+          if type.properties
+           for q in type.properties
+            @properties << q
+           end
+          end
+        end
+      end  
     else
-      @properties = Property.find_by_contents(params[:query])
+      set_meta_tags :title =>  "Search: "+ params[:countries].capitalize
+        #@properties = Property.find_by_contents(params[:query])
+        #@query = params[:states]+" "+params[:region]
+        @locations = Location.find_by_contents(params[:area])
+        for location in @locations
+          if location.properties
+           for p in location.properties
+            @properties << p
+           end
+          end
+        end
     end
-      @locations = Location.find_by_contents(params[:query])
-      @types = Type.find_by_contents(params[:query])
-      for location in @locations
-        if location.properties
-         for p in location.properties
-          @properties << p
-         end
-        end
-      end
-      for type in @types
-        if type.properties
-         for q in type.properties
-          @properties << q
-         end
-        end
-      end
-
-    #render :action => "index"
-    #redirect_to :action => "index"
-    # respond_to do |format|
-  #    format.js  #{ render :xml => @properties }
-  #  end
   end
   
 end

@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
     @locations = Location.find(:all)
     @countries = Country.find(:all)
     @states = @locations.map { |x| x.state }
-    @county = @locations.map { |x| 'Los Angeles - '+x.county }  
+    @county = @locations.map { |x| x.city+" - "+x.county }  
     @region = @locations.map { |x| x.region }
   end
   

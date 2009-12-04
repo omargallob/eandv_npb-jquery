@@ -5,8 +5,7 @@
 		<input type="text" name="query" id="query" value="All"><input type="image" src="/images/system/form/search-button.jpg" style="margin-left:0px;margin-top:-2px">
 	</p	>
 <% end -%>
-
-<form id="Selectable" action="#" method="get" accept-charset="utf-8">
+<% form_tag(search_query_path, {:id=>"Selectable",:class => "form", :method => "GET"}) do %>
 	<div>
 		<p>
 			<select class="droppies" name="countries" id="countries">
@@ -43,6 +42,7 @@
 				<%= options_for_select ( [1,2,3,4])%>
 			</select>
 		</p	>
+		<p style="text-align:right;padding-top:6px"><input type="image" src="/images/system/buttons/SearchButtonBig.jpg" style="margin-left:10px;margin-top:3px; float:right"></p>
 	</div>
 	<div class="titles">
 		<p>Country</p>
@@ -51,7 +51,6 @@
 		<p>Area</p>
 		<p>Price</p>
 		<p>Bedrooms</p>
-	</div>
- 	
-</form>
+	</div> 	
+<% end -%>
 <div id="bottom_b"></div>

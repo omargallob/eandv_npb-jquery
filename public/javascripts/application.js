@@ -251,9 +251,9 @@ function override_search_submit(){
  //    'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
  //  });
 
-  $("#QuickQuery").submit(function () {
+  $("#Selectable").submit(function () {
     
-    var aux = $(this).serialize()+"&"+$("#Selectable").serialize();
+    var aux = $("#Selectable").serialize();
     //alert(aux);
     //$.post($(this).attr("action"),aux, null, "script");
      return true;

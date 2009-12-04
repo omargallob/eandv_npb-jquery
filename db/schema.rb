@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091204121534) do
+ActiveRecord::Schema.define(:version => 20091204165613) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -109,6 +109,8 @@ ActiveRecord::Schema.define(:version => 20091204121534) do
     t.integer  "country_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "city"
+    t.string   "city_initials"
   end
 
   create_table "metatags", :force => true do |t|

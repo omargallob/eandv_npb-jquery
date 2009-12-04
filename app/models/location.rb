@@ -3,7 +3,7 @@ class Location < ActiveRecord::Base
   has_many :developments
   has_many :properties
   
-  acts_as_ferret  :fields => [:state,:region,:area,:zipcod,:county]#:fields => [:location_state,:type_title]
+  acts_as_ferret  :fields => [:state,:city,:city_initials,:region,:area,:zipcod,:county]
   
   
   validates_presence_of :state, :message => "can't be blank"
