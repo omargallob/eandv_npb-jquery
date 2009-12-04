@@ -77,7 +77,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav {width: 170px; float: left; background-color: transparent; margin-right: 0px}
 #left-side #side-nav hr {width: 129px; height: 1px; border: 0px none; float: left; background-color: #e1e1e1; margin: 8px 0 8px 6px}
 #left-side #side-nav .shorter {height: 182px}
-#left-side #side-nav .relocating {margin: 0px 0 0 -4px}
+#left-side #side-nav .relocating {margin: 0px}
 #left-side #side-nav div.toolset {margin-top: 14px}
 #left-side #side-nav .left_tool {width: 162px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool.jpg); margin-top: 0px; float: left}
 #left-side #side-nav .left_tool h3 {margin-left: 16px}
@@ -222,7 +222,7 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #small h3 {margin: 14px 0 0 13px}
 #right-column #searchbox {height: 245px; width: 266px; background-color: transparent; float: left}
 #right-column #searchbox h3 {margin-left: 0px}
-#right-column #searchbox #bottom_b {position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 216px}
+#right-column #searchbox #bottom_b {position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 232px}
 #right-column #searchbox form {font-family: "Georgia"}
 #right-column #searchbox form#QuickQuery p {margin-bottom: 0px}
 #right-column #searchbox form#QuickQuery p input#query {padding: 6px 0 0 12px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px; font-family: "Georgia"; font-size: 12px; color: #888888}
