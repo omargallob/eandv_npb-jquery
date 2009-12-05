@@ -1729,3 +1729,17 @@ LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/develop
 LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
 query: +(county:los city_initials:los area:los zipcod:los region:los state:los city:los) +(county:angeles city_initials:angeles area:angeles zipcod:angeles region:angeles state:angeles city:angeles)
 stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+query: bedrooms:california title:california
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: county:california city_initials:california area:california zipcod:california region:california state:california city:california
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/type
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/type
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/type
+query: title:california
+stored_fields: 

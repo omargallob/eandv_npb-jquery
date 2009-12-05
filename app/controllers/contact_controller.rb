@@ -16,4 +16,8 @@ layout "lightbox"
       @property_tax = 100000
     end 
   end 
+  
+  def plugoo
+    render :layout => false
+  end
 end

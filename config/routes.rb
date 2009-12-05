@@ -14,7 +14,9 @@ ActionController::Routing::Routes.draw do |map|
   map.neighbourhood '/neighbourhood', :controller => "contact", :action => "neighbourhood"
   # mortgage
   map.neighbourhood '/mortgage/:id', :controller => "contact", :action => "mortgage"
-
+  # plugoo
+  map.plugoo '/plugoo', :controller => "contact", :action => "plugoo"
+  
   #user action ( login signup logout)
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
