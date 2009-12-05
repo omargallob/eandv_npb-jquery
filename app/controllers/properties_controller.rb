@@ -26,14 +26,10 @@ class PropertiesController < ApplicationController
 
        @map = GMap.new("map")
        @map.control_init(:large_map => true,:map_type => true)
-       #@map.center_zoom_init([33.599624,-117.827938],8)
+       @map.center_zoom_init([33.599624,-117.827938],8)
         
 
-      results = Geocoding::get(@property.location.zipcod+" "+@property.title)
-       if results.status == Geocoding::GEO_SUCCESS
-         coord = results[0].latlon
-         @map.center_zoom_init(coord,14)
-       end
+
       #@aux = @property.location.zipcod+", "+@property.location.state
 
      #results = Geocoding::get("Newport Beach California")
