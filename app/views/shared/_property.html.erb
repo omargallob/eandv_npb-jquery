@@ -6,7 +6,7 @@
 	<div class="text address"><p> <%=  property.location.region %>,&nbsp;<%=  property.location.county %> </p></div>
 	<div class="price text">
 		<p>
-			<span class="left"> <%= number_to_currency (property.price,:precision => 0) %></span>
+			<span class="left"> <% if property.price == 0 %>(on request)<% else %><%= number_to_currency (property.price,:precision => 0) %><% end %></span>
 			<span class="right">Property #CA8900-<%= property.id %></span>
 		</p>
 	</div>

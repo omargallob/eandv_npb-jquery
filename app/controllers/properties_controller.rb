@@ -26,10 +26,14 @@ class PropertiesController < ApplicationController
 
        @map = GMap.new("map")
        @map.control_init(:large_map => true,:map_type => true)
-       @map.center_zoom_init([33.599624,-117.827938],8)
+       #@map.center_zoom_init([33.599624,-117.827938],8)
         
 
-
+      results = Geocoding::get(@property.location.zipcod+" "+@property.title)
+       if results.status == Geocoding::GEO_SUCCESS
+         coord = results[0].latlon
+         @map.center_zoom_init(coord,14)
+       end
       #@aux = @property.location.zipcod+", "+@property.location.state
 
      #results = Geocoding::get("Newport Beach California")
@@ -81,18 +85,49 @@ class PropertiesController < ApplicationController
         end
       end  
     else
-      set_meta_tags :title =>  "Search: "+ params[:countries].capitalize
+      set_meta_tags :title =>  "Search: "+ params[:region].downcase+": "+ params[:area].downcase
         #@properties = Property.find_by_contents(params[:query])
         #@query = params[:states]+" "+params[:region]
-        @locations = Location.find_by_contents(params[:area])
-        for location in @locations
-          if location.properties
-           for p in location.properties
-            @properties << p
-           end
-          end
+        
+       
+        if params[:area]=="All"
+          @tag = params[:region].split(' - ')
+           @c0 = @tag[0]
+           @c1 = @tag[1]+" County"
+          @locations = Location.find_by_contents(@c0)
+        else
+          @locations = Location.find_by_contents(params[:area])
         end
+
+        if params[:bedrooms]=="All"
+            for location in @locations
+                if location.properties
+                 for p in location.properties       
+                   unless params[:price] == "All"            
+                      if p.price_condition(params[:price])
+                        @properties << p
+                      end
+                   end
+                 end
+                end
+              end
+         else
+           for location in @locations
+               if location.properties
+                for p in location.properties
+                 if p.bedrooms.to_s == params[:bedrooms]
+                    if p.price_condition(params[:price])
+                      @properties << p
+                    end
+                 end
+                end
+               end
+             end
+         end
+       
     end
   end
+  
+  
   
 end

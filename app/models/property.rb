@@ -17,7 +17,25 @@ class Property < ActiveRecord::Base
       return "#{self.title}"
     end
     
+    def price_condition(price)
+      if self.price.to_i < price.to_i
+        if self.price == 0
+           return false
+        else
+          return true
+         end
+      else 
+        return false
+      end
+    end
 
+    def bedroom_condition(bedroom)
+      if self.bedrooms == bedroom
+        return true
+      else 
+        return false
+      end
+    end
   
   #has_many :facility_properties, :dependant => true
   #has_many :facilities,:through => :facility_properties

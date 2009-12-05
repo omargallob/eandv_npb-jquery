@@ -8,7 +8,7 @@
 
 	<div id="main">
 		<div class="top">	</div>
-		<h3>Search:  <%= params[:query] || @query %></h3>
+		<h3><span class="title">Search:  <%= params[:query] || @c1 || params[:region]%> | <%= params[:bedrooms] %> Bedrooms | < <%=  number_to_currency (params[:price].to_i ,:precision => 0) %> </span> </h3>
 		<hr />
 		<ul id="view_options">
 			<li class="first"><span>View Options</span></li>

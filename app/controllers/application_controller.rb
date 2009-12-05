@@ -29,6 +29,8 @@ class ApplicationController < ActionController::Base
     @states = @locations.map { |x| x.state }
     @county = @locations.map { |x| x.city+" - "+x.county }  
     @region = @locations.map { |x| x.region }
+    @aux_props = Property.find(:all,:order => "bedrooms")
+    @bedrooms = @aux_props.map{ |y| y.bedrooms}
   end
   
   #def default_url_options(options={}) 
