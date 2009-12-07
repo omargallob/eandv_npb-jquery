@@ -19,6 +19,6 @@ xml.instruct!
         end
       end
     else
-      xml.link @category.link_text+" + ",  "path"=>services_sub_path(@category.parent.name.downcase,@category.name.downcase)
+      xml.link "Read more",  "path"=>services_sub_path(@category.parent.name.downcase,@category.name.downcase)
     end
   end
