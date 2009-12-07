@@ -47,7 +47,7 @@
 #left-side #services { width: 442px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px; }
 #left-side #services img { margin: 5px 20px; }
 #left-side #services ul { list-style: none; margin: 0 0 0 -27px; }
-#left-side #services ul li { width: 413px; height: 180px; margin-bottom: 20px; }
+#left-side #services ul li { width: 413px; height: 180px; margin-bottom: 0px; }
 #left-side #property_gallery { width: 621px; height: 374px; float: left; background: transparent; margin: -8px 0 22px -7px; }
 #left-side #main.why { width: 442px; }
 #left-side #main { width: 463px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
