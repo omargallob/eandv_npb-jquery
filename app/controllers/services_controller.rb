@@ -21,7 +21,6 @@ class ServicesController < ApplicationController
       set_meta_tags :title =>  @page.title + " > " + @category.title,
                     :description => @category.description
     respond_to do |format|
-      format.xml #
       format.html #
     end
   end 
