@@ -20,10 +20,33 @@
 	    <div id="fragment-3">
 			<div id="image_tabs" class="subtabs">
 			    <ul id="subtabs" >
+					    <li ><a href="#thumbnail"><span>Thumbnail</span></a></li>
 			        <li ><a href="#gallery"><span>Gallery</span></a></li>
 			       	<% if @property.featured %> <li><a href="#featured"><span>Featured</span></a></li><% end %>		
 			    </ul>
 
+				<div id="thumbnail" style="float:left">
+					<h3>Edit thumbnail</h3>	
+					<br><br><br><br>
+					<%= image_tag @property.property_thumbnail.photo(:pagesize) if @property.property_thumbnail %>
+
+					<%= link_to image_tag ('system/buttons/delete.jpg',:height => "15px",:title => "delete"), admin_property_thumbnail_path(@property.property_thumbnail), :confirm => 'Are you sure?', :method => :delete if @property.property_thumbnail%>
+
+					<% form_for :property_thumbnail, :url=>{:controller=>"property_thumbnail",:action=>"create"},:html => { :multipart => true, :method => :post } do |f| %>
+					  <%= f.error_messages %>
+					 	<p>
+							 <%= f.label :photo %><br />
+						     <%= f.file_field :photo  %>
+						</p>
+
+
+					 	<%= f.hidden_field :property_id, :value => @property.id %>
+
+					  <p>
+					    <%= f.submit "Create" %>
+					  </p>
+					<% end %>					
+				</div>
 				<div id="gallery">
 					<h3>Edit gallery</h3>
 				<% if @property.gallery %>

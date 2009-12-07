@@ -1,6 +1,6 @@
 <div id="property_<%= property.id %>" class="property">
 	<div class="image">
-		<%= image_tag "static/thumb.jpg" %>
+		<%= image_tag property.property_thumbnail.photo(:pagesize) if property.property_thumbnail %>
 	</div>
 	<div class="title text"><p><%= property.title %></p></div>
 	<div class="text address"><p> <%=  property.location.region %>,&nbsp;<%=  property.location.county %> </p></div>

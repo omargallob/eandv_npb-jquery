@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091207140419) do
+ActiveRecord::Schema.define(:version => 20091207153804) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -186,6 +186,15 @@ ActiveRecord::Schema.define(:version => 20091207140419) do
     t.string   "property_number"
   end
 
+  create_table "property_thumbnails", :force => true do |t|
+    t.integer  "property_id"
+    t.integer  "position"
+    t.string   "photo_file_name"
+    t.integer  "photo_file_size"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "roles", :force => true do |t|
     t.string "name"
   end
@@ -204,8 +213,8 @@ ActiveRecord::Schema.define(:version => 20091207140419) do
     t.string   "region"
     t.string   "area"
     t.string   "buy_rent"
-    t.integer  "price"
-    t.integer  "bedrooms"
+    t.string   "price"
+    t.string   "bedrooms"
     t.string   "mls"
     t.string   "zip"
     t.datetime "created_at"

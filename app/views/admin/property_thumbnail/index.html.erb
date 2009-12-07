@@ -1,0 +1,19 @@
+<br><br><br><br>
+<%= image_tag @property.property_thumbnail.photo(:pagesize) if @property.property_thumbnail %>
+
+<%= link_to image_tag ('system/buttons/delete.jpg',:height => "15px",:title => "delete"), admin_property_thumbnail_path(@property.property_thumbnail), :confirm => 'Are you sure?', :method => :delete %>
+
+<% form_for :property_thumbnail, :url=>{:action=>"create"},:html => { :multipart => true, :method => :post } do |f| %>
+  <%= f.error_messages %>
+ 	<p>
+		 <%= f.label :photo %><br />
+	     <%= f.file_field :photo  %>
+	</p>
+
+
+ 	<%= f.hidden_field :property_id, :value => @property.id %>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>

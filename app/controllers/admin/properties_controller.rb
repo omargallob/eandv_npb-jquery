@@ -57,7 +57,7 @@ class Admin::PropertiesController < Admin::BaseController
   end
   
   def destroy
-    @property = Development.find(params[:id])
+    @property = Property.find(params[:id])
     @property.destroy
 
     respond_to do |format|

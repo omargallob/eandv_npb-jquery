@@ -6,6 +6,7 @@ class Property < ActiveRecord::Base
 
   has_one :featured_photo
   has_one :gallery
+  has_one :property_thumbnail
   
   acts_as_ferret  :fields => [:title, :bedrooms]#:fields => [:location_state,:type_title]
 

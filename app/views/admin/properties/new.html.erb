@@ -22,7 +22,8 @@
 		<% end %>
 		
 	    <div id="fragment-3">
-	      	<% form_for(:featured_photo, :url => {:controller=>"properties", :action => "save_featured_photo"}, :html => { :multipart => true }) do |form| %>
+	     
+			<% form_for(:featured_photo, :url => {:controller=>"properties", :action => "save_featured_photo"}, :html => { :multipart => true }) do |form| %>
 				<p>Featured<br />
 				<%= form.file_field :uploaded_data %>
 				</p>
