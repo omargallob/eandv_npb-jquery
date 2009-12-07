@@ -3,7 +3,7 @@ xml.instruct!
   xml.category do
     xml.title_front @category.title_front
     xml.title_back @category.title_back
-    xml.body @category.description.gsub(/<\/?[^>]*>/, "")
+    xml.body truncate(@category.description.gsub(/<\/?[^>]*>/, ""), 150)
     xml.image_front @category.photo.url(:large)
     xml.image_back  "http://s3.amazonaws.com/eandv-development/images/system/bg/front/back.jpg"
 

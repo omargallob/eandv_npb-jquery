@@ -1,13 +1,13 @@
 <script type="text/javascript">
 		var flashvars = {};
-		flashvars.flipxml = "http://npb.heroku.com/services/<%= params[:id] %>/<%= category %>/feed.xml";
+		flashvars.flipxml = "http://npb.heroku.com/services/<%= params[:id] %>/<%= service_swf.name %>/feed.xml";
 		flashvars.font = "font.swf";
 		var attributes = {};
 		attributes.wmode = "transparent";
-		attributes.id = "category_<%= category %>";
-		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/FlipUltimo2.swf", "category_<%= category %>", "495", "180", "9", "/swf/expressInstall.swf", flashvars, attributes);
+		attributes.id = "category_<%= service_swf.name  %>";
+		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/FlipUltimo2.swf", "category_<%= service_swf.name  %>", "495", "180", "9", "/swf/expressInstall.swf", flashvars, attributes);
  </script>
 
 <li>
-	<div id="category_<%= category %>"></div>
+	<div id="category_<%= service_swf.name  %>"></div>
 </li>

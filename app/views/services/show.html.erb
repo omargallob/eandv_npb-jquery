@@ -32,15 +32,9 @@
 	<div id="services">
 		<div class="top"></div>
 		<ul>
-			<%= render :partial => "service_swf", :locals =>{:category => "hotela"} %>
+			<%= render :partial => "service_swf", :collection => @subcats %>
 		</ul>
-		<% if @subcats.size > 0 %>
-			<% for sub in @subcats %>
-					<% unless sub.name == "hotela" %><%= link_to image_tag(sub.photo.url(:large)), services_sub_path(@category.name, sub.name) %><% end %>
-			<% end %>
-		<% else %>
-			<%= image_tag(@category.photo.url(:large))%>
-		<% end %>
+	
 		<div class="bottom"></div>
 	</div>
 </div>
