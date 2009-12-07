@@ -8,7 +8,7 @@
 
 	<div id="main">
 		<div class="top">	</div>
-		<h3><span class="title">Search:  <%= params[:query] || @c1 || params[:region]%> | <%= params[:bedrooms] %> Bedrooms | < <%=  number_to_currency (params[:price].to_i ,:precision => 0) %> </span> </h3>
+		<h3><span class="title">Search:  <%= @search_query.query || @c1 || @search_query.region %> | <%= @search_query.bedrooms %> Bedrooms | < <%=  number_to_currency (@search_query.price.to_i ,:precision => 0) %> </span> </h3>
 		<hr />
 		<ul id="view_options">
 			<li class="first"><span>View Options</span></li>
@@ -37,7 +37,7 @@
 <div id="right-column">
 	<div id="searchbox" class="advanced">
 		<div class="top"></div>
-			<div><%= render :partial => "shared/advancedsearch_ajax" %></div>
+			<div><%= render :partial => "shared/advancedsearchbox" %></div>
 		<div class='bottom'></div>
 	</div>
 	

@@ -25,12 +25,14 @@ class ApplicationController < ActionController::Base
   
   def pickupproperties
     @locations = Location.find(:all)
-    @countries = Country.find(:all)
+    @countries = Country.find(:all).collect {|p| [ p.title, p.title ] }
     @states = @locations.map { |x| x.state }
     @county = @locations.map { |x| x.city+" - "+x.county }  
     @region = @locations.map { |x| x.region }
+    @region << "All"
     @aux_props = Property.find(:all,:order => "bedrooms")
     @bedrooms = @aux_props.map{ |y| y.bedrooms}
+    @bedrooms << "All"
   end
   
   #def default_url_options(options={}) 

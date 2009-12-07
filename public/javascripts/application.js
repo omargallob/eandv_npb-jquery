@@ -247,9 +247,9 @@ function onfocus_forms(){
 
 function override_search_submit(){
 
- // jQuery.ajaxSetup({ 
- //    'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
- //  });
+  //jQuery.ajaxSetup({ 
+  //   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+  // });
 
   $("#Selectable").submit(function () {
     

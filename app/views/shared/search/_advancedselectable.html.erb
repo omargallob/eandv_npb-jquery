@@ -1,0 +1,50 @@
+<% form_for :search_query, @search_query,:url=>search_query_path,:html=>{:id=>"Selectable",:class => "form", :method => "GET"} do |form| %>
+	<div>
+		<p>
+			<%= form.select("country", @countries, {:include_blank => false},{:class=>"droppies"})%>
+		</p	>
+		<p>
+			<%= form.select("states", @states.uniq, {:include_blank => false},{:class=>"droppies"})%>
+		</p	>
+		<p>
+		<%= form.select("region", @county.uniq, {:include_blank => false},{:class=>"droppies"})%>
+		</p	>
+		<p>
+		<%= form.select("area", @region.reverse.uniq, {:include_blank => false},{:class=>"droppies"})%>	
+		</p>
+		<p>
+			<select class="droppies" name="search_query[buy_rent]" id="search_query_buy_rent">
+				<option value="All">All</option>
+				<option value="Buy">Buy</option>
+				<option value="Rent">Rent</option>
+			</select>
+		</p	>
+		<p>
+			<select id="search_query_price" name="search_query[price]" class="droppies">
+				<option value="All">All</option>
+				<option value="500000"> < <%= number_to_currency (500000,:precision => 0)%></option>
+				<option value="1500000">< <%= number_to_currency (1500000,:precision => 0)%></option>
+				<option value="3000000">< <%= number_to_currency (3000000,:precision => 0)%></option>
+				<option value="6000000">< <%= number_to_currency (6000000,:precision => 0)%></option>
+				<option value="12000000">< <%= number_to_currency (12000000,:precision => 0)%></option>
+			</select>
+		</p	>
+		<p>
+			<%= form.select("bedrooms", options_for_select(@bedrooms.reverse.uniq), {:include_blank => false},{:class=>"droppies"})%>	
+		</p	>
+		
+		<p>	<input type="text" class="text_input short" name="mls" id="mls"> <span class="zip">Zip</span><input type="text" class="text_input short" id="zip" name="zip"> </p>
+
+		<p style="text-align:right;padding-top:6px"><input type="image" src="/images/system/buttons/SearchButtonBig.jpg" style="margin-left:10px;margin-top:3px; float:right"></p>
+	</div>
+	<div class="titles">
+		<p>Country</p>
+		<p>State</p>
+		<p>Region</p>
+		<p>Area</p>
+		<p>Buy/rent</p>
+		<p>Price</p>
+		<p>Bedrooms</p>
+		<p>MLS #</p>
+	</div>
+<% end -%>

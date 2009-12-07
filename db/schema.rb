@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091204165613) do
+ActiveRecord::Schema.define(:version => 20091207140419) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -197,6 +197,21 @@ ActiveRecord::Schema.define(:version => 20091204165613) do
 
   add_index "roles_users", ["role_id"], :name => "index_roles_users_on_role_id"
   add_index "roles_users", ["user_id"], :name => "index_roles_users_on_user_id"
+
+  create_table "search_queries", :force => true do |t|
+    t.string   "query"
+    t.string   "country"
+    t.string   "region"
+    t.string   "area"
+    t.string   "buy_rent"
+    t.integer  "price"
+    t.integer  "bedrooms"
+    t.string   "mls"
+    t.string   "zip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "states"
+  end
 
   create_table "types", :force => true do |t|
     t.string   "title"

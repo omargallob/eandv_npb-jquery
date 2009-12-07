@@ -46,6 +46,7 @@ class PropertiesController < ApplicationController
         format.xml  #{ render :xml => @properties }
     end
   end
+ 
   def feed_images
      @property = Property.find_by_id(params[:id])
      respond_to do |format|
@@ -57,14 +58,16 @@ class PropertiesController < ApplicationController
     @properties = []
     @page = Page.find_by_name('properties')
     @subpages = @page.subpages
-    if params[:query]
-      set_meta_tags :title =>  "Search: "+ params[:query].capitalize
+    @search_query = SearchQuery.new(params[:search_query])
+    @search_query.save
+    if @search_query.query
+      set_meta_tags :title =>  "Search: "+  @search_query.query.capitalize
       if params[:query] == "All"
         @properties = Property.find(:all)
       else
-        @properties = Property.find_by_contents(params[:query])
-        @locations = Location.find_by_contents(params[:query])
-        @types = Type.find_by_contents(params[:query])
+        @properties = Property.find_by_contents(@search_query.query)
+        @locations = Location.find_by_contents(@search_query.query)
+        @types = Type.find_by_contents(@search_query.query)
         for location in @locations
           if location.properties
            for p in location.properties
@@ -81,28 +84,29 @@ class PropertiesController < ApplicationController
         end
       end  
     else
-      set_meta_tags :title =>  "Search: "+ params[:region].downcase+": "+ params[:area].downcase
+      set_meta_tags :title =>  "Search: "+ @search_query.region.downcase+": "+ @search_query.area.downcase
         #@properties = Property.find_by_contents(params[:query])
         #@query = params[:states]+" "+params[:region]
         
-       
-        if params[:area]=="All"
-          @tag = params[:region].split(' - ')
+        if @search_query.area=="All"
+          @tag = @search_query.region.split(' - ')
            @c0 = @tag[0]
            @c1 = @tag[1]+" County"
           @locations = Location.find_by_contents(@c0)
         else
-          @locations = Location.find_by_contents(params[:area])
+          @locations = Location.find_by_contents(@search_query.area)
         end
 
-        if params[:bedrooms]=="All"
+        if @search_query.bedrooms=="All"
             for location in @locations
                 if location.properties
                  for p in location.properties       
-                   unless params[:price] == "All"            
-                      if p.price_condition(params[:price])
+                   unless @search_query.price == "All"            
+                      if p.price_condition(@search_query.price)
                         @properties << p
                       end
+                   else
+                     @properties << p
                    end
                  end
                 end
@@ -111,8 +115,12 @@ class PropertiesController < ApplicationController
            for location in @locations
                if location.properties
                 for p in location.properties
-                 if p.bedrooms.to_s == params[:bedrooms]
-                    if p.price_condition(params[:price])
+                 if p.bedrooms == @search_query.bedrooms.to_i
+                    unless @search_query.price == "All"            
+                       if p.price_condition(@search_query.price)
+                         @properties << p
+                       end
+                    else
                       @properties << p
                     end
                  end
@@ -123,7 +131,5 @@ class PropertiesController < ApplicationController
        
     end
   end
-  
-  
-  
+
 end
