@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091207153804) do
+ActiveRecord::Schema.define(:version => 20091208123031) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(:version => 20091207153804) do
     t.string   "title_front"
     t.string   "title_back"
     t.string   "link_text"
+    t.string   "description_swf"
   end
 
   create_table "countries", :force => true do |t|
