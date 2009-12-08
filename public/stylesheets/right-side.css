@@ -22,6 +22,8 @@
 #right-column #searchbox { height: 245px; width: 266px; background-color: transparent; float: left; }
 #right-column #searchbox h3 { margin-left: 0px; }
 #right-column #searchbox #bottom_b { position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 232px; }
+#right-column #searchbox #bottom_b2 { position: relative; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); float: left; margin-top: 0px; }
+#right-column #searchbox #eanvvip { margin-top: 20px; margin-left: -27px; }
 #right-column #searchbox form { font-family: "Georgia"; }
 #right-column #searchbox form#QuickQuery p { margin-bottom: 0px; }
 #right-column #searchbox form#QuickQuery p input#search_query_query { padding: 6px 0 0 12px; border: 0px; width: 223px; height: 21px; background-image: url(../images/system/form/search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px; font-family: "Georgia"; font-size: 12px; color: #888888; }

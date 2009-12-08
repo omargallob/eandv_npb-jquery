@@ -8,7 +8,7 @@ class Property < ActiveRecord::Base
   has_one :gallery
   has_one :property_thumbnail
   
-  acts_as_ferret  :fields => [:title, :bedrooms]#:fields => [:location_state,:type_title]
+  acts_as_ferret  :fields => [:title, :bedrooms,:mls_id]#:fields => [:location_state,:type_title]
 
     def location_state
       location.state
@@ -38,6 +38,19 @@ class Property < ActiveRecord::Base
       end
     end
   
+    def mls_condition(mls)
+      unless mls
+        return false
+      else
+        if self.mls == mls
+          return true
+        else 
+          return false
+        end
+      end
+    end
+  
+    
   #has_many :facility_properties, :dependant => true
   #has_many :facilities,:through => :facility_properties
 end

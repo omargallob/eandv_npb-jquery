@@ -2079,3 +2079,139 @@ query: +(zipcod:los city:los county:los area:los city_initials:los region:los st
 stored_fields: 
 LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
 LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+rebuild index: [Property(id: integer, title: string, description: text, bedrooms: integer, bathrooms: integer, living_areas: integer, built: integer, plot: integer, garden: integer, price: integer, location_id: integer, type_id: integer, created_at: datetime, updated_at: datetime, address: text, rental: boolean, facility_ids: string, featured: boolean, mls_id: integer, half_bathrooms: integer, garage: integer, property_number: string)]
+reindexing model Property
+reindex model Property : 100.00% complete : 0.13 secs to finish
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+rebuild index: [Location(id: integer, state: string, county: string, region: string, other: string, zipcod: string, country_id: integer, created_at: datetime, updated_at: datetime, city: string, city_initials: string)]
+reindexing model Location
+reindex model Location : 283.33% complete : 0.06 secs to finish
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+query: mls:457899 bedrooms:457899 title:457899
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+query: mls:098372-a bedrooms:098372-a title:098372-a
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+query: mls:098372-a bedrooms:098372-a title:098372-a
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+rebuild index: [Property(id: integer, title: string, description: text, bedrooms: integer, bathrooms: integer, living_areas: integer, built: integer, plot: integer, garden: integer, price: integer, location_id: integer, type_id: integer, created_at: datetime, updated_at: datetime, address: text, rental: boolean, facility_ids: string, featured: boolean, mls_id: string, half_bathrooms: integer, garage: integer, property_number: string)]
+reindexing model Property
+reindex model Property : 100.00% complete : 0.09 secs to finish
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/property
+query: mls:098372-A bedrooms:098372-a title:098372-a
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+rebuild index: [Location(id: integer, state: string, county: string, region: string, other: string, zipcod: string, country_id: integer, created_at: datetime, updated_at: datetime, city: string, city_initials: string)]
+reindexing model Location
+reindex model Location : 283.33% complete : 0.09 secs to finish
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
+query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
+stored_fields: 

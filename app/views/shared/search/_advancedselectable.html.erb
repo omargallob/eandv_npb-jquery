@@ -33,7 +33,7 @@
 			<%= form.select("bedrooms", options_for_select(@bedrooms.reverse.uniq), {:include_blank => false},{:class=>"droppies"})%>	
 		</p	>
 		
-		<p>	<input type="text" class="text_input short" name="mls" id="mls"> <span class="zip">Zip</span><input type="text" class="text_input short" id="zip" name="zip"> </p>
+		<p>	<input type="text" class="text_input short" name="search_query[mls]" id="search_query_mls" disabled="disabled"> <span class="zip">Zip</span><input type="text" class="text_input short" id="search_query_zip" name="search_query[zip]"> </p>
 
 		<p style="text-align:right;padding-top:6px"><input type="image" src="/images/system/buttons/SearchButtonBig.jpg" style="margin-left:10px;margin-top:3px; float:right"></p>
 	</div>

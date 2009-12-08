@@ -60,6 +60,7 @@ class PropertiesController < ApplicationController
     @subpages = @page.subpages
     @search_query = SearchQuery.new(params[:search_query])
     @search_query.save
+    
     if @search_query.query
       set_meta_tags :title =>  "Search: "+  @search_query.query.capitalize
       if params[:query] == "All"
