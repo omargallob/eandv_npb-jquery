@@ -3,6 +3,6 @@
 <% if controller.action_name == "show"  %>
 <li><%= link_to 'edit', edit_admin_property_path(@property) %></li>
 
+<li><%= link_to 'googlemap', admin_googlemap_path(@property) %></li>
 <li><%= link_to image_tag('system/buttons/rss.jpg',:height=>"20px"), admin_property_path(@property,:format =>"xml") %></li>
-<li><%# link_to image_tag('system/buttons/rss.jpg',:height=>"20px"), admin_property_images_path(@property) %></li>
 <% end %>

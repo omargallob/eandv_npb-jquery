@@ -7,6 +7,7 @@ class Property < ActiveRecord::Base
   has_one :featured_photo
   has_one :gallery
   has_one :property_thumbnail
+  has_one :googlemap
   
   acts_as_ferret  :fields => [:title, :bedrooms,:mls_id]#:fields => [:location_state,:type_title]
 

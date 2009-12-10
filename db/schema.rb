@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091208123031) do
+ActiveRecord::Schema.define(:version => 20091210143803) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -101,6 +101,15 @@ ActiveRecord::Schema.define(:version => 20091208123031) do
     t.datetime "updated_at"
   end
 
+  create_table "googlemaps", :force => true do |t|
+    t.integer  "property_id"
+    t.string   "long_lat"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "long"
+    t.string   "lat"
+  end
+
   create_table "locations", :force => true do |t|
     t.string   "state"
     t.string   "county"
@@ -181,7 +190,7 @@ ActiveRecord::Schema.define(:version => 20091208123031) do
     t.boolean  "rental"
     t.string   "facility_ids"
     t.boolean  "featured"
-    t.integer  "mls_id"
+    t.string   "mls_id"
     t.integer  "half_bathrooms"
     t.integer  "garage"
     t.string   "property_number"

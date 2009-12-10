@@ -20,7 +20,6 @@ javascripts:
   - _jrails
   - _jquery-ui
   - swfobject
-  - application  
   - eye
   - utils
   - ui.tabs
