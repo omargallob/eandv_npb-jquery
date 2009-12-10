@@ -43,18 +43,10 @@
 	</div>
 </div>
 <div id="right-column" class="<% if @page.name == "home" %>home<% end %> <% if @page.name == "about" || @parent.name== "about" %>about<% end %>">
-	<div id="searchbox" 	class="<% if @page.name != "home" %>advanced<% end %>">
-	<% if @page.name == "home" %>
-		<%= render :partial => "shared/quicksearchbox" %>
-		<div id='eanvvip'>
-			<p>Join and receive updates on properties when they are fresh, up to date property market.<br/>	<%= link_to image_tag("system/buttons/joinnow.jpg", :style=> "margin-top:7px"),"/contact?iframe=true&width=560&height=600" ,:rel=>"prettyPhoto" %></p>
-		</div>
-		<div id="bottom_b2"></div>
-	<% else %>
+	<div id="searchbox" 	class="advanced">
 		<div class="top"></div>
 			<div><%= render :partial => "shared/advancedsearchbox" %></div>
 		<div class='bottom'></div>
-	<% end %>
 	</div>
 	<% if @page.name == "why" ||  params[:parent] == "why" %>
 		<%= render :partial => "shared/why" %>

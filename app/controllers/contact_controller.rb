@@ -20,4 +20,9 @@ layout "lightbox"
   def plugoo
     render :layout => false
   end
+  
+  def social
+    render :layout => false
+  end
+  
 end

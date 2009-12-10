@@ -59,9 +59,11 @@
 		<div id='header'>
 					
 			<div id="logo"><%= link_to image_tag ("system/bg/front/logo.jpg"), "/" %></div>
-			<div id="extra"><%= image_tag ("system/buttons/twitter.jpg") %><%= image_tag ("system/buttons/facebook.jpg") %>	<%# render :partial => "shared/user_bar", :object => self %></div>
-			
+			<div id="extra">
+				<%= link_to image_tag ("system/buttons/twitter.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>
+				<%= link_to image_tag ("system/buttons/facebook.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>
 	  	</div>
+		</div>
 		<div id='navbar'>
 			<ul>
 				<%= render :partial => "shared/front_menu" %>					

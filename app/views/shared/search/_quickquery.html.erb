@@ -1,5 +1,5 @@
 <% form_for :search_query, @search_query,:url=>search_query_path,:html=>{:id=>"QuickQuery",:class => "form", :method => "GET"} do |form| %>
-	<p class="<% unless @page.name=="home" %>advanced<% end %>">
+	<p class="advanced">
 	<%= form.text_field :query %>
 	<%= image_submit_tag("/images/system/form/search-button.jpg", :id => "qqs", :name => "qqs") %>
 

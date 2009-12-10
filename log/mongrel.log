@@ -2270,3 +2270,26 @@ Tue Nov 24 20:07:15 +0000 2009: Error calling Dispatcher.dispatch #<Mongrel::Tim
 37.7921509
 -122.394
 100 Spear St, San Francisco, CA 94105, USA
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:63: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
