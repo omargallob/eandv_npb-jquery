@@ -1,4 +1,11 @@
 <strong><%= @property.id %></strong> | <%= @property.title %>, <%= @property.location.region %>, <%= @property.location.county %>, <%= @property.location.state %>, <%= @property.location.zipcod %><br />
 
-<h1><%= @coord %></h1>
+<h1><%= @res.ll %></h1>
 
+
+<% content_for :script do %>
+
+<%= GMap.header(:with_vml => false, :host => request.host)%>
+<%= @map.to_html %>
+
+<% end %>

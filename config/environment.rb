@@ -14,6 +14,8 @@ Rails::Initializer.run do |config|
   config.gem "right_aws"
   config.gem "acts_as_ferret"
   config.gem 'sitemap_generator', :lib => false, :source => 'http://gemcutter.org'
+  config.gem "geokit"
+  
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.
