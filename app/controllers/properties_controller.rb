@@ -83,7 +83,27 @@ class PropertiesController < ApplicationController
       end
     end
     
-    
+     if params[:active]
+        @active =params[:active].downcase
+        @order = params[:search_query][:order]
+        case @active
+          when "price"
+             case @order
+               when "ASC" 
+                 @properties.sort!{|x,y| x.price <=> y.price}
+               when "DESC"
+                 @properties.sort!{|x,y| y.price <=> x.price}
+             end
+           when "date"
+             case @order
+               when "ASC" 
+                 @properties.sort!{|x,y| x.id <=> y.id}
+               when "DESC"
+                 @properties.sort!{|x,y| y.id <=> x.id}
+             end
+        end
+
+      end
     respond_to do |format|
       format.js
     end
@@ -97,6 +117,25 @@ class PropertiesController < ApplicationController
     else
       @properties = Property.find(:all)
     end
+    
+    if params[:search_query][:order]
+        case @active
+          when "price"
+             case @order
+               when "ASC" 
+                 @properties.sort!{|x,y| x.price <=> y.price}
+               when "DESC"
+                 @properties.sort!{|x,y| y.price <=> x.price}
+             end
+           when "date"
+             case @order
+               when "ASC" 
+                 @properties.sort!{|x,y| x.id <=> y.id}
+               when "DESC"
+                 @properties.sort!{|x,y| y.id <=> x.id}
+             end
+        end
+    end
     respond_to do |format|
       format.js #javascript 
     end
@@ -104,7 +143,8 @@ class PropertiesController < ApplicationController
   
   def sort
     @sort_by = params[:sort_by].downcase
-    @order = params[:order]
+    @order = params[:search_query][:order]
+  
     
     if params[:search_query][:referal]=="search"
         pickup_properties(params[:search_query][:id])    
@@ -131,6 +171,17 @@ class PropertiesController < ApplicationController
           when "date"
             @properties = Property.find(:all,:order => 'id '+@order)
         end
+    end
+    
+    if params[:active]
+      @active =params[:active].downcase
+      case @active
+       when "rent"
+         @properties.delete_if {|x| x.rental == false }
+       when "buy"
+         @properties.delete_if {|x| x.rental == true }
+      end
+    
     end
     
    

@@ -263,14 +263,14 @@ jQuery.fn.filter_options = function() {
      'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
    });
   
-  $("#view_options li a.filter").click(function (){
+  $("#view_options li a.filter").click(function (){  
     if($(this).hasClass("active")){
       $(this).removeClass("active");
-      var params = "unsort_by="+$(this).html()+$("#search_options").pickup_search_query();
+      var params = "unsort_by="+$(this).html()+$("#search_options").pickup_search_query()+$(this).pickup_active_sort();
       $.get("/properties/unfilter",params, null, "script");
     }else{
       $(this).addClass("active");
-      var params = "sort_by="+$(this).text()+$("#search_options").pickup_search_query();
+      var params = "sort_by="+$(this).text()+$("#search_options").pickup_search_query()+$(this).pickup_active_sort();
      $.get("/properties/filter",params, null, "script");  
     }
     return false;
@@ -279,11 +279,11 @@ jQuery.fn.filter_options = function() {
   $("#view_options li a.sort").click(function (){
     if($(this).parent().hasClass("active")){
       $(this).parent().removeClass("active");
-      var params = "sort_by="+$(this).text().split(' ').join('')+"&order=DESC"+$("#search_options").pickup_search_query();;
+      var params = "sort_by="+$(this).text().split(' ').join('')+"&search_query[order]=DESC"+$("#search_options").pickup_search_query()+$(this).pickup_active_filter();
       $.get("/properties/sort",params, null, "script");
     }else{
       $(this).parent().addClass("active");
-      var params = "sort_by="+$(this).text().split(' ').join('')+"&order=ASC"+$("#search_options").pickup_search_query();;
+      var params = "sort_by="+$(this).text().split(' ').join('')+"&search_query[order]=ASC"+$("#search_options").pickup_search_query()+$(this).pickup_active_filter();
       $.get("/properties/sort",params, null, "script");  
     }
     return false;
@@ -291,19 +291,24 @@ jQuery.fn.filter_options = function() {
   
 };
 
-jQuery.fn.pickup_active_links = function() {
-  active_filters = $("li a.active");
+jQuery.fn.pickup_active_filter = function() {
+  active_filters = $("#view_options li a.active");
   var params ="";
-  for (var i=0; i < active_filters.length; i++) {
- 
- if(i==0){
-    params += "param_"+i+"="+$(active_filters[i]).text();
- }else{
-   params += "&param_"+i+"="+$(active_filters[i]).text();
- }
+  for (var i=0; i < active_filters.length; i++) { 
+   params += "&active="+$(active_filters[i]).text();
   };
-  return params
+  return params;
 };
+
+jQuery.fn.pickup_active_sort = function() {
+  active_filters = $("#view_options li.active");
+  var params ="";
+  for (var i=0; i < active_filters.length; i++) { 
+   params += "&active="+$(active_filters[i]).text()+"&search_query[order]="+$("#"+$(active_filters[i]).text()+"_order").text();
+  };
+  return params;
+};
+
 
 jQuery.fn.pickup_search_query = function(){
   active_search = $("#search_options li");
