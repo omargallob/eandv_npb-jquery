@@ -4,7 +4,7 @@ class Category < ActiveRecord::Base
   belongs_to :parent, :class_name => 'Category', :foreign_key => 'parent_id'
 
   has_attached_file :photo, :styles => {:small => "92x61#", :large => "403x170>"}, :processors => [:cropper],
-                            :url => "/assets/categories/:id/:style/:basename.extension",
+                            :url => "/assets/categories/:id/:style/:basename.jpg",
                             :storage => :s3,
                             :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
                             :path => "/assets/categories/:id/:style/:basename.jpg"

@@ -6,11 +6,11 @@ class Page < ActiveRecord::Base
   has_many :subpages, :class_name => 'Page', :foreign_key => 'parent_id'
   belongs_to :parent, :class_name => 'Page', :foreign_key => 'parent_id'
   
-  has_attached_file :thumb, :styles => {:small => "120x90#", :large => "961x359>"}, :processors => [:cropper],
-                            :url => "/assets/page/:id/thumb/:style/:basename.extension",    
+  has_attached_file :thumb, :styles => {:small => ["130x56#",:jpg], :large =>["762x354>",:jpg]}, :processors => [:cropper],
+                            :url => "/assets/page/:id/thumb/:style/:basename.jpg",    
                             :storage => :s3,
                             :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
-                            :path => "/assets/page/:id/thumb/:style/:basename.extension"
+                            :path => "/assets/page/:id/thumb/:style/:basename.jpg"
 
   validates_attachment_presence :thumb
   validates_attachment_size :thumb, :less_than => 5.megabytes

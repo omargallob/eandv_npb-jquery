@@ -2,12 +2,34 @@
 
 <pic>
 	<image>http://s3.amazonaws.com/eandv-development/images/bed1.jpg</image>
-	<ptitle>Newport Beach</ptitle>
-	<link>http://www.hotmail.com</link>
-	<image>http://s3.amazonaws.com/eandv-development/images/bed2.jpg</image>
-	<ptitle>Balboa Islands</ptitle>
-	<link>http://www.hotmail.com</link>
-	<image>http://s3.amazonaws.com/eandv-development/images/bed3.jpg</image>
 	<ptitle>Fashion Island</ptitle>
-	<link>http://www.hotmail.com</link>
+	<link>/about/fashion</link>
+	
+	<image>http://s3.amazonaws.com/eandv-development/images/bed1.jpg</image>
+	<ptitle>Balboa Island</ptitle>
+	<link>/about/balboaisl</link>
+	
+	<image>http://s3.amazonaws.com/eandv-development/images/bed1.jpg</image>
+	<ptitle>Balboa Peninsula</ptitle>
+	<link>/about/balboapns</link>
+	
+	<image>http://s3.amazonaws.com/eandv-development/images/bed1.jpg</image>
+	<ptitle>Mariner's Village</ptitle>
+	<link>/about/mariners</link>
+	
+	<image>http://s3.amazonaws.com/eandv-development/images/bed1.jpg</image>
+	<ptitle>Back Bay</ptitle>
+	<link>/about/backbay</link>
+	
+	<image>http://s3.amazonaws.com/eandv-development/images/bed1.jpg</image>
+	<ptitle>Corona del Mar</ptitle>
+	<link>/about/corona</link>
+	
+	<image>http://s3.amazonaws.com/eandv-development/images/bed1.jpg</image>
+	<ptitle>Airport District</ptitle>
+	<link>/about/airport</link>
+
+	<image>http://s3.amazonaws.com/eandv-development/images/bed1.jpg</image>
+	<ptitle>Cannery Village</ptitle>
+	<link>/about/canneryvill</link>
 </pic>
