@@ -1,4 +1,6 @@
 class PropertiesController < ApplicationController
+  include Geokit::Geocoders
+
   def index
 
      @properties = Property.find(:all,:order => 'created_at')
@@ -26,9 +28,17 @@ class PropertiesController < ApplicationController
 
        @map = GMap.new("map")
        @map.control_init(:large_map => true,:map_type => true)
-       @map.center_zoom_init([33.599624,-117.827938],8)
+       
         
+        string =  @property.title+", "+@property.location.region+", "+@property.location.county+", "+@property.location.state
 
+         @res=MultiGeocoder.geocode(string)    
+         if @res.success
+           @longitude = @res.lng
+           @latitude = @res.lat
+         end
+         
+         @map.center_zoom_init([@longitude,@latitude],8)
 
       #@aux = @property.location.zipcod+", "+@property.location.state
 
