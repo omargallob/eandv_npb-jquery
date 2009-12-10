@@ -16,4 +16,12 @@ class RssController < ApplicationController
           format.xml  #{ render :xml => @properties }
       end
   end
+  
+  def about
+       @list = Page.find(:all, :conditions=>['parent_id=?',10])
+        respond_to do |format|
+            format.xml  #{ render :xml => @properties }
+        end
+  end
+  
 end

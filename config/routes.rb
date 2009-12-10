@@ -74,6 +74,7 @@ ActionController::Routing::Routes.draw do |map|
   map.feed_favs '/rss/favs.:format', :controller => 'rss', :action => 'favs'
   map.property_images '/properties/:id/images.xml', :controller => 'properties', :action => 'feed_images'     
   map.service_feed '/services/:category/:subcategory/feed.xml', :controller => 'services', :action => 'feed'
+  map.about_nb '/about.xml', :controller => "rss", :action => "about"
   
  # 
   # The priority is based upon order of creation: first created -> highest priority.
