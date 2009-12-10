@@ -26,19 +26,18 @@ class PropertiesController < ApplicationController
   @subpages = @page.subpages
        set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
 
-       @map = GMap.new("map")
-       @map.control_init(:large_map => true,:map_type => true)
-       
-        
-        string =  @property.title+", "+@property.location.region+", "+@property.location.county+", "+@property.location.state
+       string =  @property.title+", "+@property.location.region+", "+@property.location.county+", "+@property.location.state
 
-         @res=MultiGeocoder.geocode(string)    
-         if @res.success
-           @longitude = @res.lng
-           @latitude = @res.lat
-         end
-         
-         @map.center_zoom_init([@longitude,@latitude],8)
+        @res=GoogleGeocoder.geocode(string)    
+        if @res.success
+          @lng = @res.lng
+          @lat = @res.lat
+        end
+
+        @map = GMap.new("map")
+        @map.control_init(:large_map => true,:map_type => true)
+        @map.center_zoom_init([@lat,@lng],14)
+        @map.overlay_init(GMarker.new([@lat,@lng],:info_window => "#{@property.address}"))
 
       #@aux = @property.location.zipcod+", "+@property.location.state
 

@@ -1,7 +1,6 @@
 <strong><%= @property.id %></strong> | <%= @property.title %>, <%= @property.location.region %>, <%= @property.location.county %>, <%= @property.location.state %>, <%= @property.location.zipcod %><br />
-
 <h1><%= @res.ll %></h1>
-
+<%= @map.div(:width => 419, :height => 317) %>
 
 <% content_for :script do %>
 
