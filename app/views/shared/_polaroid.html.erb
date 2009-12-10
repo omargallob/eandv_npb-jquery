@@ -6,7 +6,10 @@
 		var attributes = {};
 		attributes.wmode = "transparent";
 		attributes.id = "slider";
-		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/polaroids.swf", "pcontainer", "350", "110", "9", "/swf/expressInstall.swf", flashvars, attributes);
+		var params = {}
+		params.allowscriptaccess = "always";
+
+		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/polaroids.swf", "pcontainer", "350", "110", "9", "/swf/expressInstall.swf", flashvars, params,attributes);
 </script>
 
 
