@@ -78,30 +78,8 @@ function chop_front_list(){
   $("#main").append('<img src="/images/system/bg/front/corporate.jpg" width="197" height="22" alt="Corporate" class="static_why">');
   $("#main").append("<ul id='li_block0' class='toggle_li'></ul>");
   for (var i=0; i < le.length; i++) {
-  	var counter=i+1;
-  	var divisible= counter/3;
-  	var s = divisible +'';
-  	var holder= s.split(".");
-  	if(holder.length==1){
-  		$("#main").append("<ul id='li_block"+i+"' class='toggle_li'></ul>");
-				$(le[i]).appendTo("#li_block"+i);
-  		lastfull = i;
-  	}else{
-  	  	$(le[i]).appendTo("#li_block"+lastfull);
-  	  	x = i +2;
-  	  	r = x/3;
-  	  	var st = r +'';
-  	  	var link = st.split(".");
-  	  	
-  	  	if(i==le.length-1){
-  	  	  $('#li_block'+lastfull).append(' <a href="#" class="toggleBack">(back)</a>');
-  	  	}else if(link.length==1){
-  	  	   $('#li_block'+lastfull).append('<a href="#" class="toggleLink">'+showText+'</a>');
-  	  	}
-  	}
-
+				$(le[i]).appendTo("#li_block"+0);
   };
-  $('.toggle_li').hide();
   $("#li_block0").show();
   
   $('a.toggleLink').click(function() {
