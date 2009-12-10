@@ -29,13 +29,7 @@
 		<div id="main_bottom" class="main_border other">	</div>
 	</div>
 	
-	<div id="services">
-		<div class="top"></div>
-			<% for sub in @subcats %>
-				<%= image_tag sub.photo.url(:large) %>
-			<% end %>
-		<div class="bottom"></div>
-	</div>
+
 </div>
 <div id="right-column" class="<% if @page.name == "home" %>home<% end %>">
 	<div id="searchbox" 	class="<% if @page.name != "home" %>advanced<% end %>">

@@ -1,7 +1,7 @@
 class PropertiesController < ApplicationController
   def index
 
-     @properties = Property.find(:all, :include => 'location',:order => 'locations.region')
+     @properties = Property.find(:all,:order => 'created_at')
      @page = Page.find_by_name('properties')
       if @page.metatag
          set_meta_tags :title =>  @page.title,
@@ -55,12 +55,92 @@ class PropertiesController < ApplicationController
   end
   
   def search
-    @properties = []
+  #  @properties = []
     @page = Page.find_by_name('properties')
     @subpages = @page.subpages
     @search_query = SearchQuery.new(params[:search_query])
     @search_query.save
+    pickup_properties(@search_query.id)
+  end
+
+  def filter
+    @sort_by = params[:sort_by]
+
+    if params[:search_query][:referal]=="search"
+        pickup_properties(params[:search_query][:id])    
+         case @sort_by.downcase
+            when "rent"
+              @properties.delete_if {|x| x.rental == false }
+            when "buy"
+              @properties.delete_if {|x| x.rental == true }
+          end
+    else
+      case @sort_by.downcase
+        when "rent"
+          @properties = Property.find(:all, :conditions =>{:rental=>1})
+        when "buy"
+          @properties = Property.find(:all, :conditions =>{:rental=>0})
+      end
+    end
     
+    
+    respond_to do |format|
+      format.js
+    end
+  end
+  
+  def unfilter
+    @unsort_by = params[:unsort_by]
+
+    if params[:search_query][:referal]=="search"
+      pickup_properties(params[:search_query][:id])    
+    else
+      @properties = Property.find(:all)
+    end
+    respond_to do |format|
+      format.js #javascript 
+    end
+  end
+  
+  def sort
+    @sort_by = params[:sort_by].downcase
+    @order = params[:order]
+    
+    if params[:search_query][:referal]=="search"
+        pickup_properties(params[:search_query][:id])    
+         case @sort_by
+            when "price"
+              case @order
+                when "ASC" 
+                  @properties.sort!{|x,y| x.price <=> y.price}
+                when "DESC"
+                  @properties.sort!{|x,y| y.price <=> x.price}
+              end
+            when "date"
+              case @order
+                when "ASC" 
+                  @properties.sort!{|x,y| x.id <=> y.id}
+                when "DESC"
+                  @properties.sort!{|x,y| y.id <=> x.id}
+              end
+          end
+    else
+       case @sort_by
+          when "price"
+            @properties = Property.find(:all,:order => 'price '+@order)
+          when "date"
+            @properties = Property.find(:all,:order => 'id '+@order)
+        end
+    end
+    
+   
+  end
+  
+  
+  
+  def pickup_properties(id)
+    @properties = []
+    @search_query = SearchQuery.find_by_id(id)
     if @search_query.query
       set_meta_tags :title =>  "Search: "+  @search_query.query.capitalize
       if params[:query] == "All"
@@ -129,8 +209,7 @@ class PropertiesController < ApplicationController
                end
              end
          end
-       
     end
+  
   end
-
 end

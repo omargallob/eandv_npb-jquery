@@ -1,0 +1,4 @@
+$('#properties_holder').html('<%= escape_javascript(render :partial => "shared/property", :collection => @properties) %>');
+
+/* update result info */
+$('#result_info p span.left').html('<%= @properties.length %> results');

@@ -1,0 +1,28 @@
+if ("<%= @order %>"=="DESC"){
+  $("li.<%= @sort_by %> a").html("<%= escape_javascript(@sort_by.capitalize)%>");
+  $("li.<%= @sort_by %> img").remove();
+  $("li.<%= @sort_by %>").append("<%= escape_javascript(image_tag('system/buttons/Filters/Filter_Arrow_down.jpg')) %>");
+}else{
+  $("li.<%= @sort_by %> a").html("<%= escape_javascript(@sort_by.capitalize)%>");
+  $("li.<%= @sort_by %> img").remove();
+  $("li.<%= @sort_by %>").append("<%= escape_javascript(image_tag('system/buttons/Filters/Filter_Arrow.jpg')) %>");
+}
+if("<%= @sort_by %>"=="price"){
+  $("li.date img").remove();
+  $("li.date a").css("margin-left","13px")
+  $("li.price a").css("margin-left","7px")
+  if($("li.date").hasClass("active")){
+    $("li.date").removeClass("active")    
+  }
+
+}else{
+  $("li.price img").remove();
+  $("li.price a").css("margin-left","13px")
+  $("li.date a").css("margin-left","7px")
+  if($("li.price").hasClass("active")){
+    $("li.price").removeClass("active")    
+  }
+  
+}
+
+$('#properties_holder').html('<%= escape_javascript(render :partial => "shared/property", :collection => @properties) %>');

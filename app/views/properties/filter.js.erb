@@ -1,0 +1,15 @@
+
+if ("<%= @sort_by %>"=="Rent"){
+  if($("li.buy a").hasClass("active")){
+    $("li.buy a").removeClass("active");
+  }
+}else{
+  if($("li.rent a").hasClass("active")){
+    $("li.rent a").removeClass("active");
+  }
+}
+/* update properties */
+$('#properties_holder').html('<%= escape_javascript(render :partial => "shared/property", :collection => @properties) %>');
+
+/* update result info */
+$('#result_info p span.left').html('<%= @properties.length %> results');

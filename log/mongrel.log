@@ -2152,3 +2152,54 @@ Tue Nov 24 20:07:15 +0000 2009: Error calling Dispatcher.dispatch #<Mongrel::Tim
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/edit.html.erb:4: warning: don't put space before argument parentheses
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/pages/edit.html.erb:4: warning: don't put space before argument parentheses
 /Users/ryan/Dev/2.3.4/eandv_npb/app/views/admin/properties/edit.html.erb:33: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:12: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:12: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:12: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:12: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:12: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:12: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:11: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:11: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:11: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:11: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:11: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:11: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/unfilter.js.erb:1: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:12: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:3: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:9: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:9: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:7: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:7: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:7: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:9: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:11: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:16: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:16: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:20: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/sort.js.erb:28: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:13: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/filter.js.erb:12: warning: parenthesize argument(s) for future version
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/Users/ryan/Dev/2.3.4/eandv_npb/app/controllers/properties_controller.rb:113: warning: multiple values for a block parameter (2 for 1)
+	from /Users/ryan/Dev/2.3.4/eandv_npb/app/controllers/properties_controller.rb:113

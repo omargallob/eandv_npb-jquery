@@ -8,21 +8,19 @@
 	<div id="main">
 		<div class="top">	</div>
 		<h3><span class="title"><%= @page.title %></span></h3>
+		<ul id="search_options" style="display:none">
+			<li id="referal"><%= controller.action_name %></li>
+		</ul>
 		<hr />
 		<ul id="view_options">
 			<li class="first"><span>View Options</span></li>
-			<li class="buy">Buy</li>
-			<li class="rent">Rent</li>
-			<li class="mls">MLS</li>
-			<li class="date">Date <%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %></li>
-			<li class="price">Price <%= image_tag "system/buttons/Filters/Filter_Arrow_down.jpg" %></li>
+			<li class="buy"><a href="#" class="filter">Buy</a></li>
+			<li class="rent"><a href="#" class="filter">Rent</a></li>
+			<li class="date"><a href="#" class="sort">Date </a><%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %></li>
+			<li class="price"><a href="#" class="sort" style="margin-left:13px">Price </a></li>
 		</ul>
 		<hr />
-		<% for property in @properties %>
-	
-			<%= render :partial => "shared/property", :object => property%>
-		<hr />
-		<% end %>
+		<%= render :partial => "properties_holder", :object => @properties %>
 		<div id="result_info">
 			<p>
 				<span class="left"><%= @properties.size %> results</span>
@@ -57,6 +55,7 @@ $(document).ready(function() {
 	$('#main').addClass('properties');
 
 	$('#faq_block').jScrollPane({scrollbarWidth:17,showArrows:true});
+	$("#view_options").filter_options();
 	set_nav_pointer("properties");
 });
 </script>

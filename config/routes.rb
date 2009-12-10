@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :contact
   map.resources :eandv
   map.resources :services #, :path_prefix => ":locale"
-  map.resources :properties,:collection => {:feed => :get}
+  map.resources :properties,:collection => {:feed => :get, :filter=>:get,:unfilter=>:get,:sort => :get, :unsort => :get}
   map.resources :rss,:collection => {:favs => :get,:properties => :get}
   
   #search url
