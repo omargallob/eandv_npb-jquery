@@ -148,6 +148,9 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main ul#view_options {width: 409px; padding: 0px; float: left; margin-top: 0px}
 #left-side #main ul#view_options li {float: left; list-style: none; text-align: center; background-repeat: no-repeat; color: white; font-size: 12px; height: 22px; line-height: 22px; margin: 5px 5px 0 0}
 #left-side #main ul#view_options li span {font-weight: bold; color: black}
+#left-side #main ul#view_options li a {color: white; margin: 0 0 0 7px; text-decoration: none; float: left}
+#left-side #main ul#view_options li a:hover {color: black}
+#left-side #main ul#view_options li a.active {color: black}
 #left-side #main ul#view_options li.buy {width: 37px; background: url(../images/system/buttons/Filters/Filter_Buy.jpg)}
 #left-side #main ul#view_options li.rent {width: 41px; background: url(../images/system/buttons/Filters/Filter_Rent.jpg)}
 #left-side #main ul#view_options li.mls {width: 42px; background: url(../images/system/buttons/Filters/Filter_MLS.jpg)}
