@@ -208,7 +208,7 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column .top {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_top.jpg)}
 #right-column .bottom {width: 304px; height: 15px; background: url(../images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left}
 #right-column h3 {margin-left: 24px}
-#right-column #searchbox.advanced {height: 374px; width: 304px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y}
+#right-column #searchbox.advanced {height: 351px; width: 304px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y}
 #right-column #searchbox.advanced div {float: left}
 #right-column #searchbox.advanced div h3 {margin-left: 24px}
 #right-column #faq {height: 157px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px}
