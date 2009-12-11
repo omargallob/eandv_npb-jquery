@@ -38,6 +38,7 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :admin  do |admin|
      admin.root :controller => "overview"
      admin.resources :pages
+     admin.resources :page_about
      admin.resources :metatag
      admin.resources :services
      admin.resources :types

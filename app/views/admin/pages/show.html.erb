@@ -3,6 +3,9 @@
 		<%= render :partial => "shared/admin/pages_sidenav" %>
 		<li><%= link_to  t('options.edit'), edit_admin_page_path(@page) %></li>
  		<li><%= link_to  t('options.back'), admin_pages_path %></li>	
+ 		<% if @page.parent.name == "about"%>
+			<li><%= link_to  "large image", admin_page_about_path %></li>		
+		<% end %>
 
 	</ul>
 </div>
@@ -30,8 +33,7 @@
 	</p>
 	
 	<p>
-		 <%# image_tag @page.page_featured_photo.public_filename %>
-	</p>
+	<%= image_tag @page.page_about.photo(:pagesize) if @page.page_about %>	</p>
 </div>	
 
 

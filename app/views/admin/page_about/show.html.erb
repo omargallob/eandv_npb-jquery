@@ -1,0 +1,19 @@
+<% if @page.page_about %>
+<%= image_tag @page.page_about.photo(:pagesize)  %>
+
+<%= link_to image_tag ('system/buttons/delete.jpg',:height => "15px",:title => "delete"), admin_page_about_path(@page.page_about), :confirm => 'Are you sure?', :method => :delete %>
+<% end %>
+<% form_for :page_about, :url=>{:action=>"create"},:html => { :multipart => true, :method => :post } do |f| %>
+  <%= f.error_messages %>
+ 	<p>
+		 <%= f.label :photo %><br />
+	     <%= f.file_field :photo  %>
+	</p>
+
+
+ 	<%= f.hidden_field :page_id, :value => @page.id %>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>page
