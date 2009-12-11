@@ -24,4 +24,10 @@ class RssController < ApplicationController
         end
   end
   
+  def partners
+      @partners = Partner.find(:all)
+      respond_to do |format|
+          format.xml  #{ render :xml => @properties }
+      end
+  end
 end
