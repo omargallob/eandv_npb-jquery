@@ -13,12 +13,12 @@
 #left-side #side-nav .shorter { height: 182px; }
 #left-side #side-nav .relocating { margin: 0px; }
 #left-side #side-nav div.toolset { margin-top: 14px; }
-#left-side #side-nav .left_tool { width: 162px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool.jpg); margin-top: 0px; float: left; }
+#left-side #side-nav .left_tool { width: 162px; background: url(/images/system/bg/front/left_tool.jpg); margin-top: 0px; float: left; }
 #left-side #side-nav .left_tool h3 { margin-left: 5px; }
 #left-side #side-nav .left_tool h3 a { text-decoration: none; color: #E13939; }
 #left-side #side-nav .left_tool h3 a:hover { color: #888888; }
-#left-side #side-nav .left_tool .top { width: 162px; height: 15px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool_top.jpg); float: left; }
-#left-side #side-nav .left_tool .bottom { width: 162px; height: 15px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px; float: left; }
+#left-side #side-nav .left_tool .top { width: 162px; height: 15px; background: url(/images/system/bg/front/left_tool_top.jpg); float: left; }
+#left-side #side-nav .left_tool .bottom { width: 162px; height: 15px; background: url(/images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px; float: left; }
 #left-side #side-nav .left_tool ul { width: 162px; height: 123px; margin: 12px 0 0 0px; padding: 0px; }
 #left-side #side-nav .left_tool ul li { height: 41px; margin-left: 14px; }
 #left-side #side-nav .left_tool ul li img { float: left; }
@@ -26,11 +26,11 @@
 #left-side #side-nav .left_tool ul li span a { color: #888888; }
 #left-side #side-nav .left_tool ul li span a:hover { color: #E13939; }
 #left-side #side-nav ul.submenu { padding: 0px; margin: 0px; float: left; width: 170px; }
-#left-side #side-nav ul.submenu li { height: 24px; width: 151px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/buttons/submenu.jpg); margin: 0 0 0px 5px; padding: 2px 0 0 10px; background-repeat: no-repeat; }
+#left-side #side-nav ul.submenu li { height: 24px; width: 151px; background: url(/images/system/buttons/submenu.jpg); margin: 0 0 0px 5px; padding: 2px 0 0 10px; background-repeat: no-repeat; }
 #left-side #side-nav ul.submenu li a { color: white; }
 #left-side #side-nav ul.submenu li a:hover { color: black; }
-#left-side #side-nav ul.submenu li.active { width: 168px; height: 24px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/buttons/submenu_selected.jpg); background-repeat: no-repeat; }
-#left-side #side-nav #keep_discovering { width: 150px; height: 80px; background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/keepdiscovering.jpg); }
+#left-side #side-nav ul.submenu li.active { width: 168px; height: 24px; background: url(/images/system/buttons/submenu_selected.jpg); background-repeat: no-repeat; }
+#left-side #side-nav #keep_discovering { width: 150px; height: 80px; background-image: url(/images/system/bg/front/keepdiscovering.jpg); }
 #left-side #side-nav #polaroid { width: 310px; height: 100px; margin-left: -195px; }
 #left-side #side-nav ul { padding-left: 5px; width: 120px; float: none; }
 #left-side #side-nav ul li { list-style: none; }
@@ -38,26 +38,26 @@
 #left-side #side-nav ul li a:hover { color: red; }
 #left-side #side-nav ul li ul.sublevel li { list-style: disc; list-style-position: inside; }
 #left-side .property { margin-top: 0px; }
-#left-side #title { width: 610px; height: 26px; float: left; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 22px; }
+#left-side #title { width: 610px; height: 26px; float: left; background: url(/images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 22px; }
 #left-side #title h5 { margin-left: 13px; text-transform: uppercase; }
-#left-side #title.about { position: absolute; width: 929px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/long_blackbar.jpg); }
-#left-side .top { background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
-#left-side .bottom { background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }
-#left-side #main.properties { width: 442px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_properties.jpg); margin-left: 0px; }
-#left-side #services { width: 442px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px; }
+#left-side #title.about { position: absolute; width: 929px; background: url(/images/system/bg/front/long_blackbar.jpg); }
+#left-side .top { background-image: url(/images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
+#left-side .bottom { background-image: url(/images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }
+#left-side #main.properties { width: 442px; background: url(/images/system/bg/front/main_properties.jpg); margin-left: 0px; }
+#left-side #services { width: 442px; background: url(/images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px; }
 #left-side #services img { margin: 5px 20px; }
 #left-side #services ul { list-style: none; margin: 0 0 0 -27px; }
 #left-side #services ul li { width: 413px; height: 180px; margin-bottom: 0px; }
 #left-side #property_gallery { width: 621px; height: 374px; float: left; background: transparent; margin: -8px 0 22px -7px; }
 #left-side #main.why { width: 442px; }
-#left-side #main { width: 463px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
-#left-side #main #maylike { width: 402px; height: 85px; float: left; margin: 9px 0 0 20px; background: url(http://s3.engelvoelkersnewportbeach.com/images/static/youmaylike.jpg); }
+#left-side #main { width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
+#left-side #main #maylike { width: 402px; height: 85px; float: left; margin: 9px 0 0 20px; background: url(/images/static/youmaylike.jpg); }
 #left-side #main #map { width: 419px; height: 317px; float: left; background: transparent; margin: 10px 11px; }
 #left-side #main .further { width: 248px; float: left; }
 #left-side #main .further h3 { font-variant: normal; font-style: italic; text-transform: none; }
-#left-side #main #facility_list { width: 136px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/property_facility.jpg); float: left; margin: 3px 0 0 25px; }
-#left-side #main #facility_list .top { width: 136px; height: 4px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/property_facility_top.jpg); }
-#left-side #main #facility_list .bottom { width: 136px; height: 4px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/property_facility_bottom.jpg); }
+#left-side #main #facility_list { width: 136px; background: url(/images/system/bg/front/property_facility.jpg); float: left; margin: 3px 0 0 25px; }
+#left-side #main #facility_list .top { width: 136px; height: 4px; background: url(/images/system/bg/front/property_facility_top.jpg); }
+#left-side #main #facility_list .bottom { width: 136px; height: 4px; background: url(/images/system/bg/front/property_facility_bottom.jpg); }
 #left-side #main #facility_list h3 { text-align: center; margin: 10px 0 0 0; }
 #left-side #main #facility_list p { margin: 0 0 0 12px; }
 #left-side #main #facility_list ul { margin: 10px 0 10px 12px; list-style-position: inside; padding: 0px; }

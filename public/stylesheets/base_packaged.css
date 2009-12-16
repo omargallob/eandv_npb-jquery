@@ -79,12 +79,12 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav .shorter {height: 182px}
 #left-side #side-nav .relocating {margin: 0px}
 #left-side #side-nav div.toolset {margin-top: 14px}
-#left-side #side-nav .left_tool {width: 162px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool.jpg); margin-top: 0px; float: left}
+#left-side #side-nav .left_tool {width: 162px; background: url(/images/system/bg/front/left_tool.jpg); margin-top: 0px; float: left}
 #left-side #side-nav .left_tool h3 {margin-left: 5px}
 #left-side #side-nav .left_tool h3 a {text-decoration: none; color: #E13939}
 #left-side #side-nav .left_tool h3 a:hover {color: #888888}
-#left-side #side-nav .left_tool .top {width: 162px; height: 15px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool_top.jpg); float: left}
-#left-side #side-nav .left_tool .bottom {width: 162px; height: 15px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px; float: left}
+#left-side #side-nav .left_tool .top {width: 162px; height: 15px; background: url(/images/system/bg/front/left_tool_top.jpg); float: left}
+#left-side #side-nav .left_tool .bottom {width: 162px; height: 15px; background: url(/images/system/bg/front/left_tool_bottom.jpg); margin-top: 5px; float: left}
 #left-side #side-nav .left_tool ul {width: 162px; height: 123px; margin: 12px 0 0 0px; padding: 0px}
 #left-side #side-nav .left_tool ul li {height: 41px; margin-left: 14px}
 #left-side #side-nav .left_tool ul li img {float: left}
@@ -92,11 +92,11 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav .left_tool ul li span a {color: #888888}
 #left-side #side-nav .left_tool ul li span a:hover {color: #E13939}
 #left-side #side-nav ul.submenu {padding: 0px; margin: 0px; float: left; width: 170px}
-#left-side #side-nav ul.submenu li {height: 24px; width: 151px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/buttons/submenu.jpg); margin: 0 0 0px 5px; padding: 2px 0 0 10px; background-repeat: no-repeat}
+#left-side #side-nav ul.submenu li {height: 24px; width: 151px; background: url(/images/system/buttons/submenu.jpg); margin: 0 0 0px 5px; padding: 2px 0 0 10px; background-repeat: no-repeat}
 #left-side #side-nav ul.submenu li a {color: white}
 #left-side #side-nav ul.submenu li a:hover {color: black}
-#left-side #side-nav ul.submenu li.active {width: 168px; height: 24px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/buttons/submenu_selected.jpg); background-repeat: no-repeat}
-#left-side #side-nav #keep_discovering {width: 150px; height: 80px; background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/keepdiscovering.jpg)}
+#left-side #side-nav ul.submenu li.active {width: 168px; height: 24px; background: url(/images/system/buttons/submenu_selected.jpg); background-repeat: no-repeat}
+#left-side #side-nav #keep_discovering {width: 150px; height: 80px; background-image: url(/images/system/bg/front/keepdiscovering.jpg)}
 #left-side #side-nav #polaroid {width: 310px; height: 100px; margin-left: -195px}
 #left-side #side-nav ul {padding-left: 5px; width: 120px; float: none}
 #left-side #side-nav ul li {list-style: none}
@@ -104,26 +104,26 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav ul li a:hover {color: red}
 #left-side #side-nav ul li ul.sublevel li {list-style: disc; list-style-position: inside}
 #left-side .property {margin-top: 0px}
-#left-side #title {width: 610px; height: 26px; float: left; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 22px}
+#left-side #title {width: 610px; height: 26px; float: left; background: url(/images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 22px}
 #left-side #title h5 {margin-left: 13px; text-transform: uppercase}
-#left-side #title.about {position: absolute; width: 929px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/long_blackbar.jpg)}
-#left-side .top {background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left}
-#left-side .bottom {background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left}
-#left-side #main.properties {width: 442px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_properties.jpg); margin-left: 0px}
-#left-side #services {width: 442px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px}
+#left-side #title.about {position: absolute; width: 929px; background: url(/images/system/bg/front/long_blackbar.jpg)}
+#left-side .top {background-image: url(/images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left}
+#left-side .bottom {background-image: url(/images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left}
+#left-side #main.properties {width: 442px; background: url(/images/system/bg/front/main_properties.jpg); margin-left: 0px}
+#left-side #services {width: 442px; background: url(/images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px}
 #left-side #services img {margin: 5px 20px}
 #left-side #services ul {list-style: none; margin: 0 0 0 -27px}
 #left-side #services ul li {width: 413px; height: 180px; margin-bottom: 0px}
 #left-side #property_gallery {width: 621px; height: 374px; float: left; background: transparent; margin: -8px 0 22px -7px}
 #left-side #main.why {width: 442px}
-#left-side #main {width: 463px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px}
-#left-side #main #maylike {width: 402px; height: 85px; float: left; margin: 9px 0 0 20px; background: url(http://s3.engelvoelkersnewportbeach.com/images/static/youmaylike.jpg)}
+#left-side #main {width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px}
+#left-side #main #maylike {width: 402px; height: 85px; float: left; margin: 9px 0 0 20px; background: url(/images/static/youmaylike.jpg)}
 #left-side #main #map {width: 419px; height: 317px; float: left; background: transparent; margin: 10px 11px}
 #left-side #main .further {width: 248px; float: left}
 #left-side #main .further h3 {font-variant: normal; font-style: italic; text-transform: none}
-#left-side #main #facility_list {width: 136px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/property_facility.jpg); float: left; margin: 3px 0 0 25px}
-#left-side #main #facility_list .top {width: 136px; height: 4px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/property_facility_top.jpg)}
-#left-side #main #facility_list .bottom {width: 136px; height: 4px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/property_facility_bottom.jpg)}
+#left-side #main #facility_list {width: 136px; background: url(/images/system/bg/front/property_facility.jpg); float: left; margin: 3px 0 0 25px}
+#left-side #main #facility_list .top {width: 136px; height: 4px; background: url(/images/system/bg/front/property_facility_top.jpg)}
+#left-side #main #facility_list .bottom {width: 136px; height: 4px; background: url(/images/system/bg/front/property_facility_bottom.jpg)}
 #left-side #main #facility_list h3 {text-align: center; margin: 10px 0 0 0}
 #left-side #main #facility_list p {margin: 0 0 0 12px}
 #left-side #main #facility_list ul {margin: 10px 0 10px 12px; list-style-position: inside; padding: 0px}
@@ -235,18 +235,18 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #searchbox form#Selectable div {float: right; margin-top: 10px; color: #888888}
 #right-column #searchbox form#Selectable div p {margin: 0px; padding: 0px; height: 30px; width: 198px; font-family: "Georgia"; font-size: 12px}
 #right-column #searchbox form#Selectable div p input.formularios {padding: 6px 0 0 6px; border: 0px; width: 168px; height: 20px; background-repeat: no-repeat; font-family: "Georgia"; font-size: 12px; color: #6b6b6b}
-#right-column #searchbox form#Selectable div p input.idle {background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/form/dropdown.jpg)}
-#right-column #searchbox form#Selectable div p input.onfocus {background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/form/search_input_down.jpg)}
-#right-column #searchbox form#Selectable div p input.text_input {padding: 6px 0 0 6px; border: 0px; width: 192px; height: 20px; margin-top: 6px; background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/form/advanced_search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
-#right-column #searchbox form#Selectable div p input.short {width: 82px; height: 27px; background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/form/ZipBox.jpg)}
+#right-column #searchbox form#Selectable div p input.idle {background-image: url(/images/system/form/dropdown.jpg)}
+#right-column #searchbox form#Selectable div p input.onfocus {background-image: url(/images/system/form/search_input_down.jpg)}
+#right-column #searchbox form#Selectable div p input.text_input {padding: 6px 0 0 6px; border: 0px; width: 192px; height: 20px; margin-top: 6px; background-image: url(/images/system/form/advanced_search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
+#right-column #searchbox form#Selectable div p input.short {width: 82px; height: 27px; background-image: url(/images/system/form/ZipBox.jpg)}
 #right-column #searchbox form#Selectable div p span.zip {float: left; margin: 12px 4px 0 0}
 #right-column #searchbox form#Selectable div.titles {margin-top: 22px; color: #838383}
 #right-column #searchbox form#Selectable div.titles p {width: 68px; font-size: 80%; font-variant: small-caps}
-#right-column #schools {width: 304px; float: left; margin: 0px 0 0 0px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/right_tool.jpg)}
+#right-column #schools {width: 304px; float: left; margin: 0px 0 0 0px; background: url(/images/system/bg/front/right_tool.jpg)}
 #right-column #schools hr {width: 280px; float: left; border: 0px none; background: #E1E1E1; margin-left: 12px}
 #right-column #schools h3 {margin-left: 24px}
-#right-column #schools .top {width: 304px; height: 15px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/right_tool_top.jpg)}
-#right-column #schools .bottom {width: 304px; height: 15px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left}
+#right-column #schools .top {width: 304px; height: 15px; background: url(/images/system/bg/front/right_tool_top.jpg)}
+#right-column #schools .bottom {width: 304px; height: 15px; background: url(/images/system/bg/front/right_tool_bottom.jpg); position: relative; float: left}
 #right-column #schools ul {margin: 0 0 0 24px; float: left}
 #right-column #schools ul li.title {color: black; font-size: 12px; font-style: italic}
 #right-column #schools ul li.title span {text-transform: uppercase; font-style: normal}
@@ -254,11 +254,11 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #schools ul.school li.distance {color: #e13939; width: 90px}
 #right-column #schools ul.school li.title {color: #7e7e7e; font-weight: bold; font-style: normal; width: 120px}
 #right-column #schools ul.school li.title i {font-weight: normal}
-#right-column #schools ul.school li.map {width: 45px; height: 21px; background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/buttons/schoolsmap.jpg); color: white; font-size: 12px; line-height: 21px}
+#right-column #schools ul.school li.map {width: 45px; height: 21px; background-image: url(/images/system/buttons/schoolsmap.jpg); color: white; font-size: 12px; line-height: 21px}
 #right-column #schools ul.school li.map span {margin: 0 0 0 8px; text-transform: uppercase}
-#right-column #eanvvip {width: 302px; height: 159px; background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/ev_vip_bg.jpg); float: left; margin: 14px 0px 0px 0px}
+#right-column #eanvvip {width: 302px; height: 159px; background: url(/images/system/bg/front/ev_vip_bg.jpg); float: left; margin: 14px 0px 0px 0px}
 #right-column #eanvvip p {margin: 50px; color: white; text-align: center; font-size: 14px; line-height: 18px; font-style: italic}
-#right-column #marketreport {background: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px}
+#right-column #marketreport {background: url(/images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px}
 #right-column #marketreport p {margin: 15px 80px; float: left; text-align: center}
 #right-column #marketreport p a {color: #E13939; text-decoration: none}
 #right-column #marketreport p a:hover {color: black}
