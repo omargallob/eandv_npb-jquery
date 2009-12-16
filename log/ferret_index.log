@@ -3055,3 +3055,22 @@ LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/develop
 LocalIndex: ensure_index_exists at /Users/ryan/Dev/2.3.4/eandv_npb/index/development/location
 query: +(city_initials:los zipcod:los city:los county:los area:los region:los state:los) +(city_initials:angeles zipcod:angeles city:angeles county:angeles area:angeles region:angeles state:angeles)
 stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(city_initials:los state:los area:los city:los zipcod:los region:los county:los) +(city_initials:angeles state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+query: bedrooms:92660 mls_id:92660 title:92660
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: city_initials:92660 state:92660 area:92660 city:92660 zipcod:92660 region:92660 county:92660
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+query: title:92660
+stored_fields: 
