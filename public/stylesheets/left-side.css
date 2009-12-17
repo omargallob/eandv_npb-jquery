@@ -49,6 +49,7 @@
 #left-side #services ul { list-style: none; margin: 0 0 0 -27px; }
 #left-side #services ul li { width: 413px; height: 180px; margin-bottom: 0px; }
 #left-side #property_gallery { width: 621px; height: 374px; float: left; background: transparent; margin: -8px 0 22px -7px; }
+#left-side #main.properties h3 { margin-left: 24px; }
 #left-side #main.why { width: 442px; }
 #left-side #main { width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
 #left-side #main #maylike { width: 402px; height: 85px; float: left; margin: 9px 0 0 20px; background: url(/images/static/youmaylike.jpg); }

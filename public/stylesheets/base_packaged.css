@@ -115,6 +115,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #services ul {list-style: none; margin: 0 0 0 -27px}
 #left-side #services ul li {width: 413px; height: 180px; margin-bottom: 0px}
 #left-side #property_gallery {width: 621px; height: 374px; float: left; background: transparent; margin: -8px 0 22px -7px}
+#left-side #main.properties h3 {margin-left: 24px}
 #left-side #main.why {width: 442px}
 #left-side #main {width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px}
 #left-side #main #maylike {width: 402px; height: 85px; float: left; margin: 9px 0 0 20px; background: url(/images/static/youmaylike.jpg)}
@@ -227,11 +228,11 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #chatlive h3 {margin-left: 51px; margin-top: 10px}
 #right-column #small {width: 117px; height: 161px; float: left; background: url(../images/system/bg/front/right_small2.jpg); margin: 15px 0 0 13px}
 #right-column #small h3 {margin: 14px 0 0 13px}
-#right-column #small ul {font-size: 14px; margin: 5px 0 0 28px}
+#right-column #small ul {font-size: 14px; margin: 10px 0 0 28px}
 #right-column #small ul li {line-height: 24px; color: #4D4D4D; font-style: italic}
 #right-column #small2 {width: 122px; height: 125px; float: left; background: url(../images/system/bg/front/ListBG.jpg); margin: 15px 8px 0 0px}
 #right-column #small2 h3 {margin: 14px 0 0 13px}
-#right-column #small2 ul {font-size: 12px; margin: 10px 0 0 28px}
+#right-column #small2 ul {font-size: 12px; margin: 3px 0 0 28px}
 #right-column #small2 ul li {line-height: 20px; color: #4D4D4D; font-style: italic}
 #right-column #searchbox {height: 245px; width: 266px; background-color: transparent; float: left}
 #right-column #searchbox h3 {margin-left: 0px}
