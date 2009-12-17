@@ -3,8 +3,10 @@ class PropertiesController < ApplicationController
 
   def index
 
-     @properties = Property.find(:all,:order => 'created_at')
-     @page = Page.find_by_name('properties')
+    #@properties = Property.find(:all,:order => 'created_at')
+	  @search_query = SearchQuery.find_by_id(156)
+		pickup_properties(@search_query.id)    
+		 @page = Page.find_by_name('properties')
       if @page.metatag
          set_meta_tags :title =>  @page.title,
                      :description => @page.metatag.description,
@@ -23,7 +25,7 @@ class PropertiesController < ApplicationController
 
     @property = Property.find_by_id(params[:id])
     @page = Page.find_by_name('properties')
-  @subpages = @page.subpages
+  	@subpages = @page.subpages
        set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
 
        string =  @property.title+", "+@property.location.region+", "+@property.location.county+", "+@property.location.state
@@ -84,12 +86,13 @@ class PropertiesController < ApplicationController
               @properties.delete_if {|x| x.rental == true }
           end
     else
-      case @sort_by.downcase
-        when "rent"
-          @properties = Property.find(:all, :conditions =>{:rental=>1})
-        when "buy"
-          @properties = Property.find(:all, :conditions =>{:rental=>0})
-      end
+       pickup_properties(156)    
+         case @sort_by.downcase
+            when "rent"
+              @properties.delete_if {|x| x.rental == false }
+            when "buy"
+              @properties.delete_if {|x| x.rental == true }
+          end
     end
     
      if params[:active]
