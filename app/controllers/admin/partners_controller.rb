@@ -27,7 +27,7 @@ class Admin::PartnersController < Admin::BaseController
           }
           format.xml  { render :xml => @partner, :status => :created, :location => @cat }
         else
-          format.html { render :action => "new" }
+          format.html { render :action => "new", :category_id => params[:partner][:category_id] }
           format.xml  { render :xml => @partner.errors, :status => :unprocessable_entity }
         end
       end
