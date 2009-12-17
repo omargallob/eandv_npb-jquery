@@ -221,10 +221,15 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #extra .top {width: 174px; height: 15px; background: url(../images/system/bg/front/right_small1_top.jpg)}
 #right-column #extra .bottom {width: 174px; height: 15px; background: url(../images/system/bg/front/right_small1_bottom.jpg); position: relative; float: left}
 #right-column #extra h3 {margin-bottom: 8px}
+#right-column #extra.home_extra {margin-top: 8px}
 #right-column #small {width: 117px; height: 161px; float: left; background: url(../images/system/bg/front/right_small2.jpg); margin: 15px 0 0 13px}
 #right-column #small h3 {margin: 14px 0 0 13px}
 #right-column #small ul {font-size: 14px; margin: 10px 0 0 28px}
 #right-column #small ul li {line-height: 24px; color: #4D4D4D; font-style: italic}
+#right-column #small2 {width: 117px; height: 161px; float: left; background: url(../images/system/bg/front/right_small2.jpg); margin: 15px 13px 0 0px}
+#right-column #small2 h3 {margin: 14px 0 0 13px}
+#right-column #small2 ul {font-size: 14px; margin: 10px 0 0 28px}
+#right-column #small2 ul li {line-height: 24px; color: #4D4D4D; font-style: italic}
 #right-column #searchbox {height: 245px; width: 266px; background-color: transparent; float: left}
 #right-column #searchbox h3 {margin-left: 0px}
 #right-column #searchbox #bottom_b {position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 232px}
