@@ -55,6 +55,9 @@
 	<% if @page.name == "why" ||  params[:parent] == "why" %>
 		<%= render :partial => "shared/why" %>
 	<% end %>
+	<% if @page.name == "home" %>
+	<%= render :partial => "shared/home_right" %>
+	<% end %>
 </div>
 
 <% content_for :script do %>
@@ -90,7 +93,7 @@ jQuery(document).ready(function() {
 	}
  	<% end %>
 	$("#main_bottom").appendTo($("#main"));
-	$("#right-column").css("width","260px");
+
 	override_search_submit();
 });
 </script>
