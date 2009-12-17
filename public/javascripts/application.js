@@ -257,7 +257,7 @@ jQuery.fn.filter_options = function() {
   $("#view_options li a.sort").click(function (){
     if($(this).parent().hasClass("active")){
       $(this).parent().removeClass("active");
-      var params = "sort_by="+$(this).text().split(' ').join('')+"&search_query[order]=DESC"+$("#search_options").pickup_search_query()+$(this).pickup_active_filter();
+      var params = "sort_by="+$(this).text().split(' ').join('')+$("#search_options").pickup_search_query()+$(this).pickup_active_filter();
       $.get("/properties/sort",params, null, "script");
     }else{
       $(this).parent().addClass("active");

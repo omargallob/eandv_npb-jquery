@@ -177,12 +177,23 @@ class PropertiesController < ApplicationController
               end
           end
     else
-       case @sort_by
-          when "price"
-            @properties = Property.find(:all,:order => 'price '+@order)
-          when "date"
-            @properties = Property.find(:all,:order => 'id '+@order)
-        end
+ 				pickup_properties(156)    
+         case @sort_by
+            when "price"
+              case @order
+                when "ASC" 
+                  @properties.sort!{|x,y| x.price <=> y.price}
+                when "DESC"
+                  @properties.sort!{|x,y| y.price <=> x.price}
+              end
+            when "date"
+              case @order
+                when "ASC" 
+                  @properties.sort!{|x,y| x.id <=> y.id}
+                when "DESC"
+                  @properties.sort!{|x,y| y.id <=> x.id}
+              end
+          end
     end
     
     if params[:active]

@@ -2518,3 +2518,4 @@ Tue Nov 24 20:07:15 +0000 2009: Error calling Dispatcher.dispatch #<Mongrel::Tim
 /home/omar/Proyectos/npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
 /home/omar/Proyectos/npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
 /home/omar/Proyectos/npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses

@@ -2,12 +2,14 @@ if ("<%= @order %>"=="DESC"){
   $("li.<%= @sort_by %> a").html("<%= escape_javascript(@sort_by.capitalize)%>");
   $("li.<%= @sort_by %> img").remove();
   $("li.<%= @sort_by %>").append("<%= escape_javascript(image_tag('system/buttons/Filters/Filter_Arrow_down.jpg')) %>");
+	$("li#order").text("ASC");
 }else{
   $("li.<%= @sort_by %> a").html("<%= escape_javascript(@sort_by.capitalize)%>");
   $("li.<%= @sort_by %> img").remove();
   $("li.<%= @sort_by %>").append("<%= escape_javascript(image_tag('system/buttons/Filters/Filter_Arrow.jpg')) %>");
+	$("li#order").text("DESC");
 }
-$("li#order").text("<%= @sort_by %>");
+
 if("<%= @sort_by %>"=="price"){
   $("li.date img").remove();
   $("li.date a").css("margin-left","13px");
