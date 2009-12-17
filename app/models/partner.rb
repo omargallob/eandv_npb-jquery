@@ -7,7 +7,7 @@ class Partner < ActiveRecord::Base
                          :pagesize => ["304x159>", :jpg]
                        },:convert_options => {  
                              :pagesize => "-strip -quality 60"
-                       },:processors => [:cropper],
+                       },
                        :storage => :s3,
                        :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
                        :path => "services/partner/:id/:style/:basename.jpg"
