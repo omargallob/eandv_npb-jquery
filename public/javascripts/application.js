@@ -167,10 +167,16 @@ function nice_fonts(){
 	   		color: '#E13939'
 	   }
  });
+
   Cufon.replace('h3 strong', {
 	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#888888',
 	  fontSize: "16px",
+ });
+  Cufon.replace('#main h3', {
+	  fontFamily: "GarmdITC BkCn BT",
+	  color: '#E13939',
+	  fontSize: "20px",
  });
   Cufon.replace('h1.title', {
 	  fontFamily: "GarmdITC BkCn BT",
@@ -190,6 +196,11 @@ function nice_fonts(){
     hover: {
      		color: 'white'
      }
+ });
+  Cufon.replace('#main h4', {
+	  fontFamily: "GarmdITC BkCn BT",
+	  color: '#888888',
+	  fontSize: "18px",
  });
   Cufon.replace('h6', {
 	  fontFamily: "GarmdITC BkCn BT",
