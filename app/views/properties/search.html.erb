@@ -8,7 +8,7 @@
 
 	<div id="main">
 		<div class="top">	</div>
-		<h3><span class="title">Search:  <%= @search_query.query || @c1 || @search_query.region %> | <%= @search_query.bedrooms %> Bedrooms | < <%=  number_to_currency (@search_query.price.to_i ,:precision => 0) %> </span> </h3>
+		<h3><span class="title">Search:  <%= @search_query.query || @c1 %> <% if @search_query.area != "All" %><%= @search_query.area %><% end %> | <%= @search_query.bedrooms %> Bedrooms | < <%=  number_to_currency (@search_query.price.to_i ,:precision => 0) %> </span> </h3>
 		<ul id="search_options" style="display:none">
 			<li id="id"><%= @search_query.id %></li>
 			<li id="referal"><%= controller.action_name %></li>
