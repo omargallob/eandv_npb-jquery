@@ -3074,3 +3074,158 @@ LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/ty
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
 query: title:92660
 stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+query: bedrooms:92660 mls_id:92660 title:92660
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: city_initials:92660 state:92660 area:92660 city:92660 zipcod:92660 region:92660 county:92660
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+query: title:92660
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+query: +(mls_id:newport bedrooms:newport title:newport) +(mls_id:beach bedrooms:beach title:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:newport area:newport city:newport zipcod:newport region:newport county:newport city_initials:newport) +(state:beach area:beach city:beach zipcod:beach region:beach county:beach city_initials:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+query: +title:newport +title:beach
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:corona area:corona city:corona zipcod:corona region:corona county:corona city_initials:corona) +(state:del area:del city:del zipcod:del region:del county:del city_initials:del) +(state:mar area:mar city:mar zipcod:mar region:mar county:mar city_initials:mar)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:los area:los city:los zipcod:los region:los county:los city_initials:los) +(state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles city_initials:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:newport area:newport city:newport zipcod:newport region:newport county:newport city_initials:newport) +(state:beach area:beach city:beach zipcod:beach region:beach county:beach city_initials:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:newport area:newport city:newport zipcod:newport region:newport county:newport city_initials:newport) +(state:beach area:beach city:beach zipcod:beach region:beach county:beach city_initials:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:newport area:newport city:newport zipcod:newport region:newport county:newport city_initials:newport) +(state:beach area:beach city:beach zipcod:beach region:beach county:beach city_initials:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:newport area:newport city:newport zipcod:newport region:newport county:newport city_initials:newport) +(state:beach area:beach city:beach zipcod:beach region:beach county:beach city_initials:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:newport area:newport city:newport zipcod:newport region:newport county:newport city_initials:newport) +(state:beach area:beach city:beach zipcod:beach region:beach county:beach city_initials:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:newport area:newport city:newport zipcod:newport region:newport county:newport city_initials:newport) +(state:beach area:beach city:beach zipcod:beach region:beach county:beach city_initials:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:newport area:newport city:newport zipcod:newport region:newport county:newport city_initials:newport) +(state:beach area:beach city:beach zipcod:beach region:beach county:beach city_initials:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:los area:los city:los zipcod:los region:los county:los city_initials:los) +(state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles city_initials:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:los area:los city:los zipcod:los region:los county:los city_initials:los) +(state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles city_initials:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:los area:los city:los zipcod:los region:los county:los city_initials:los) +(state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles city_initials:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:los area:los city:los zipcod:los region:los county:los city_initials:los) +(state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles city_initials:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:los area:los city:los zipcod:los region:los county:los city_initials:los) +(state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles city_initials:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:los area:los city:los zipcod:los region:los county:los city_initials:los) +(state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles city_initials:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:los area:los city:los zipcod:los region:los county:los city_initials:los) +(state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles city_initials:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:los area:los city:los zipcod:los region:los county:los city_initials:los) +(state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles city_initials:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:los area:los city:los zipcod:los region:los county:los city_initials:los) +(state:angeles area:angeles city:angeles zipcod:angeles region:angeles county:angeles city_initials:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:corona area:corona city:corona zipcod:corona region:corona county:corona city_initials:corona) +(state:del area:del city:del zipcod:del region:del county:del city_initials:del) +(state:mar area:mar city:mar zipcod:mar region:mar county:mar city_initials:mar)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: +(state:corona area:corona city:corona zipcod:corona region:corona county:corona city_initials:corona) +(state:del area:del city:del zipcod:del region:del county:del city_initials:del) +(state:mar area:mar city:mar zipcod:mar region:mar county:mar city_initials:mar)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+query: mls_id:orange bedrooms:orange title:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: state:orange area:orange city:orange zipcod:orange region:orange county:orange city_initials:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+query: title:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+query: mls_id:orange bedrooms:orange title:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: state:orange area:orange city:orange zipcod:orange region:orange county:orange city_initials:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+query: title:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+query: mls_id:orange bedrooms:orange title:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: state:orange area:orange city:orange zipcod:orange region:orange county:orange city_initials:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+query: title:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/property
+query: mls_id:orange bedrooms:orange title:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
+query: state:orange area:orange city:orange zipcod:orange region:orange county:orange city_initials:orange
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/type
+query: title:orange
+stored_fields: 
