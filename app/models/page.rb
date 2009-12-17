@@ -13,8 +13,8 @@ class Page < ActiveRecord::Base
                             :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
                             :path => "/assets/page/:id/thumb/:style/:basename.jpg"
 
-  validates_attachment_presence :thumb
-  validates_attachment_size :thumb, :less_than => 5.megabytes
+  #validates_attachment_presence :thumb
+  #validates_attachment_size :thumb, :less_than => 5.megabytes
   
   attr_accessor :crop_x, :crop_y, :crop_w, :crop_h               
   after_update  :reprocess_thumb, :if => :cropping?
