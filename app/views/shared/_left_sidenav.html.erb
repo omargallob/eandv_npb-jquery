@@ -11,7 +11,8 @@
 <% if @page.name == "office" %>
 	<hr />
 <% end %>
-<%= image_tag "system/buttons/keepdiscovering.jpg", :height=>"80", :width =>"150" %>
+<%= render :partial =>"shared/keepdiscovering" %>
+
 <% unless @page.name == "about" || params[:parent] == "about" %>
 <%= render :partial=>"shared/polaroid"%>
 <% end %>
