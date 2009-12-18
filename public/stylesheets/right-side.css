@@ -24,16 +24,16 @@
 #right-column #small h3 { margin: 14px 0 0 13px; }
 #right-column #small ul { font-size: 14px; margin: 10px 0 0 28px; }
 #right-column #small ul li { line-height: 24px; color: #4D4D4D; font-style: italic; }
-#right-column #small2 { width: 122px; height: 125px; float: left; background: url(../images/system/bg/front/ListBG.jpg); margin: 12px 8px 0 0px; }
-#right-column #small2 h3 { margin: 8px 0 0 13px; }
-#right-column #small2 ul { font-size: 12px; margin: 3px 0 0 12px; list-style: none; }
+#right-column #small2 { width: 122px; height: 125px; float: left; background: url(../images/system/bg/front/ListBG.jpg); margin: 12px 8px 0 0px; text-decoration: none; }
+#right-column #small2 h3 { margin: 8px 0 0 13px; text-decoration: none; }
+#right-column #small2 ul { font-size: 12px; margin: 3px 0 0 28px; }
 #right-column #small2 ul li { line-height: 17px; color: #4D4D4D; font-style: italic; margin-top: 5px; }
-#right-column #small2 ul li.segundo img { margin-top: 10px; }
-#right-column #small2 ul li.segundo span { margin-top: 10px; }
 #right-column #small2 ul span { float: left; margin-left: 9px; }
 #right-column #small2 ul span a { color: #4D4D4D; text-decoration: none; }
 #right-column #small2 ul span a:hover { color: E13939; }
 #right-column #small2 ul img { float: left; }
+#right-column #small2 ul li.segundo img { margin-top: 10px; }
+#right-column #small2 ul li.segundo span { margin-top: 10px; }
 #right-column #searchbox { height: 245px; width: 266px; background-color: transparent; float: left; }
 #right-column #searchbox h3 { margin-left: 0px; }
 #right-column #searchbox #bottom_b { position: absolute; height: 2px; width: 266px; background-image: url(../images/system/form/home_separator.jpg); margin-top: 232px; }
