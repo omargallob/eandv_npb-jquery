@@ -249,7 +249,7 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #searchbox form#Selectable div p input.idle {background-image: url(/images/system/form/dropdown.jpg)}
 #right-column #searchbox form#Selectable div p input.onfocus {background-image: url(/images/system/form/search_input_down.jpg)}
 #right-column #searchbox form#Selectable div p input.text_input {padding: 6px 0 0 6px; border: 0px; width: 192px; height: 20px; margin-top: 6px; background-image: url(/images/system/form/advanced_search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
-#right-column #searchbox form#Selectable div p input.short {width: 82px; height: 27px; background-image: url(/images/system/form/ZipBox.jpg)}
+#right-column #searchbox form#Selectable div p input.short {width: 84px; height: 29px; background-image: url(/images/system/form/Zip.jpg)}
 #right-column #searchbox form#Selectable div p span.zip {float: left; margin: 12px 4px 0 0}
 #right-column #searchbox form#Selectable div.titles {margin-top: 22px; color: #838383}
 #right-column #searchbox form#Selectable div.titles p {width: 68px; font-size: 80%; font-variant: small-caps}
