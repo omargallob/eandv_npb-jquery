@@ -5,7 +5,9 @@
 		var attributes = {};
 		attributes.wmode = "transparent";
 		attributes.id = "category_<%= service_swf.name  %>";
-		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/FlipUltimo2.swf", "category_<%= service_swf.name  %>", "495", "180", "9", "/swf/expressInstall.swf", flashvars, attributes);
+		var params = {}
+		params.allowscriptaccess = "always";
+		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/FlipUltimo2.swf", "category_<%= service_swf.name  %>", "495", "180", "9", "/swf/expressInstall.swf", flashvars,params, attributes);
  </script>
 
 <li>
