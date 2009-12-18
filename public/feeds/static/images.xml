@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <images>
-	<image path="/images/static/test/bed1.jpg" urlPath="http://www.adobe.com"/>
-	<image path="/images/static/test/bed3.jpg" urlPath="http://www.adobe.com"/>
-	<image path="/images/static/test/bed2.jpg" urlPath="http://www.adobe.com"/>
+	<image path="/images/static/test/img1.jpg" urlPath="http://www.adobe.com"/>
+	<image path="/images/static/test/img3.jpg" urlPath="http://www.adobe.com"/>
+	<image path="/images/static/test/img2.jpg" urlPath="http://www.adobe.com"/>	<image path="/images/static/test/img4.jpg" urlPath="http://www.adobe.com"/>
+	<image path="/images/static/test/img5.jpg" urlPath="http://www.adobe.com"/>
+	<image path="/images/static/test/img6.jpg" urlPath="http://www.adobe.com"/>	<image path="/images/static/test/img7.jpg" urlPath="http://www.adobe.com"/>
 </images>
