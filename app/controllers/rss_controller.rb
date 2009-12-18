@@ -30,4 +30,11 @@ class RssController < ApplicationController
           format.xml  #{ render :xml => @properties }
       end
   end
+
+	def similar
+		pickup_properties(156)
+      respond_to do |format|
+          format.xml  #{ render :xml => @properties }
+      end
+	end	
 end
