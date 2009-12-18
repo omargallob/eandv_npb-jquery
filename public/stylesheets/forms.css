@@ -1,6 +1,6 @@
 body { color: white; overflow: hidden; }
 body a { color: white; }
 body a:hover { color: yellow; }
-body #pagewrapper { width: 560px; height: 567px; background: white; margin: 0px auto; background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/header.jpg); }
-body #pagewrapper #header { height: 60px; width: 546px; margin: 24px 8px; background-image: url(http://s3.engelvoelkersnewportbeach.com/images/system/bg/front/logo.jpg); }
+body #pagewrapper { width: 560px; height: 567px; background: white; margin: 0px auto; background-image: url(../images/system/bg/front/header.jpg); }
+body #pagewrapper #header { height: 60px; width: 546px; margin: 24px 8px; background-image: url(../images/system/bg/front/logo.jpg); }
 body #pagewrapper #content { height: 515px; }
