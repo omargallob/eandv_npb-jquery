@@ -31,6 +31,8 @@
 #right-column #small2 ul li.segundo img { margin-top: 10px; }
 #right-column #small2 ul li.segundo span { margin-top: 10px; }
 #right-column #small2 ul span { float: left; margin-left: 9px; }
+#right-column #small2 ul span a { color: #4D4D4D; text-decoration: none; }
+#right-column #small2 ul span a:hover { color: E13939; }
 #right-column #small2 ul img { float: left; }
 #right-column #searchbox { height: 245px; width: 266px; background-color: transparent; float: left; }
 #right-column #searchbox h3 { margin-left: 0px; }
