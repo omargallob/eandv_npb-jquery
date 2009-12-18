@@ -13,11 +13,11 @@
 	<%# render :partial => "shared/gallerylinks" %>
 </ul>-->
 
-
+<div id="leftswfcontainer" style="float:left;height:196px">
 <%= render :partial =>"shared/keepdiscovering" %>
 
 <%= render :partial=>"shared/polaroid"%>
-
+</div>
 <%= link_to (image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;"), '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
 
 <% end %>

@@ -11,6 +11,7 @@
 <% if @page.name == "office" %>
 	<hr />
 <% end %>
+
 <%= render :partial =>"shared/keepdiscovering" %>
 
 <% unless @page.name == "about" || params[:parent] == "about" %>

@@ -9,8 +9,10 @@
 			<%= render :partial => "shared/services_sidenav", :object => @categories %>
 		</ul>
 		<hr />
-		<%= render :partial =>"shared/keepdiscovering" %>
-		<%= render :partial=>"shared/polaroid"%>
+		<div id="leftswfcontainer" style="float:left;height:196px">
+			<%= render :partial =>"shared/keepdiscovering" %>
+			<%= render :partial=>"shared/polaroid"%>
+		</div>
 		<%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;" %>
 		<hr />
 		<div class="left_tool relocating">
