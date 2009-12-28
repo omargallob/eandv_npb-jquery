@@ -49,16 +49,16 @@ button { position: relative; top: 0.25em; }
 #lower_pagewrapper #main #facility_list .bottom { position: absolute; }
 #lower_pagewrapper #main_bottom { margin: 0 0 -10px 0; position: absolute; }
 #lower_pagewrapper #schools hr { margin-top: 7px; margin-bottom: 0px; }
-#lower_pagewrapper #footer ul#links li { margin-left: 0px; }
-#lower_pagewrapper #footer ul#links li h4 { font-size: 8px; letter-spacing: 0.2px; float: left; margin: 0; padding: 0; }
+#lower_pagewrapper #content #left-side hr { margin: 7px 0 0 0; }
+#lower_pagewrapper #content #left-side .left_tool { margin-top: -8px; }
+#lower_pagewrapper #content #left-side .left_tool h3 { position: absolute; left: 75px; }
+#lower_pagewrapper #footer ul#links li { margin: 0px 44px 0 0; }
+#lower_pagewrapper #footer ul#links li h4 { font-size: 10px; letter-spacing: 0.2px; float: left; margin: 0; padding: 0; }
 #lower_pagewrapper #footer ul#links li h4 a { color: #888888; }
 #lower_pagewrapper #footer ul#links li h4 a:hover { color: white; }
 #lower_pagewrapper #footer ul#links li h6 a { color: #888888; }
 #lower_pagewrapper #footer ul#links li h6 a:hover { color: white; }
 #lower_pagewrapper #footer ul#links li.first { margin-right: 10px; }
-#lower_pagewrapper #content #left-side hr { margin: 7px 0 0 0; }
-#lower_pagewrapper #content #left-side .left_tool { margin-top: -8px; }
-#lower_pagewrapper #content #left-side .left_tool h3 { position: absolute; left: 75px; }
 
 h2 { font-size: 12px; }
 

@@ -26,3 +26,4 @@
 #lower_pagewrapper #content #right-column h3 span a { text-decoration: none; }
 #lower_pagewrapper #content #right-column h3 span.active { color: #888888; }
 #lower_pagewrapper #content #right-column h3 span.active a { text-decoration: none; }
+#lower_pagewrapper #footer ul#links li { margin: 0px 23px 0 0; }
