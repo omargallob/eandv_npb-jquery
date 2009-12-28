@@ -1,0 +1,28 @@
+#upper_pagewrapper { text-align: left; }
+#upper_pagewrapper #header #extra { margin: -80px 12px 0 0; }
+#upper_pagewrapper #navbar ul li { margin: 14px 25px; }
+#upper_pagewrapper #navbar ul li img { margin: 2px 0 0 3px; }
+#upper_pagewrapper #navbar ul li#nav_properties { margin-left: 8px; }
+
+#lower_pagewrapper #content #left-side #side-nav #leftswfcontainer #kd_container { width: 150px; height: 81px; border: 0px none; }
+#lower_pagewrapper #content #left-side #side-nav #leftswfcontainer #kd_container object { outline: none; }
+#lower_pagewrapper #content #left-side #side-nav .left_tool .top { background-repeat: no-repeat; }
+#lower_pagewrapper #content #left-side #side-nav .left_tool .bottom { margin-top: 5px; background-repeat: no-repeat; }
+#lower_pagewrapper #content #left-side #side-nav .left_tool .header_w_image img { position: absolute; left: 15px; }
+#lower_pagewrapper #content #left-side #side-nav .left_tool .header_w_image h3.services { float: left; margin-left: 25px; }
+#lower_pagewrapper #content #left-side #side-nav .relocating { height: 70px; }
+#lower_pagewrapper #content #left-side #main .main_border { background-repeat: no-repeat; }
+#lower_pagewrapper #content #left-side.home { width: 633px; }
+#lower_pagewrapper #content #right-column #searchbox .top { background-repeat: no-repeat; }
+#lower_pagewrapper #content #right-column #searchbox .bottom { background-repeat: no-repeat; }
+#lower_pagewrapper #content #right-column #extra .top { background-repeat: no-repeat; }
+#lower_pagewrapper #content #right-column #extra .bottom { background-repeat: no-repeat; }
+#lower_pagewrapper #content #right-column #chatlive { background-repeat: no-repeat; }
+#lower_pagewrapper #content #right-column #chatlive h3 { margin-top: 15px; }
+#lower_pagewrapper #content #right-column #chatlive h3 span a:hover { color: #888888; }
+#lower_pagewrapper #content #right-column #chatlive h3 span a { color: #e13939; font-size: 12px; }
+#lower_pagewrapper #content #right-column h3 { color: #e13939; }
+#lower_pagewrapper #content #right-column h3 span { color: #e13939; }
+#lower_pagewrapper #content #right-column h3 span a { text-decoration: none; }
+#lower_pagewrapper #content #right-column h3 span.active { color: #888888; }
+#lower_pagewrapper #content #right-column h3 span.active a { text-decoration: none; }

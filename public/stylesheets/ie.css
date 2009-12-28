@@ -34,14 +34,13 @@ button { position: relative; top: 0.25em; }
 
 #upper_pagewrapper { text-align: left; }
 #upper_pagewrapper #navbar ul li { margin: 14px 25px; }
-#upper_pagewrapper #navbar ul li img { margin: 2px 0 0 3px; }
 
 #lower_pagewrapper { text-align: left; }
 #lower_pagewrapper #content_top { left: 0px; }
 #lower_pagewrapper input.formularios { background-image: url(../images/system/form/dropdown.jpg); margin-top: 8px; }
 #lower_pagewrapper img.ui-combobox-arrow { margin-top: -10px; top: 0px; }
 #lower_pagewrapper span.ui-combobox-list { margin-top: 8px; }
-#lower_pagewrapper form#Selectable div.advanced { margin-right: 15px; text-align: left; }
+#lower_pagewrapper form#Selectable { margin-right: 15px; text-align: left; }
 #lower_pagewrapper hr { margin-top: 7px; margin-bottom: 0px; }
 #lower_pagewrapper #title.about { left: 25px; }
 #lower_pagewrapper #main { overflow: hidden; }
@@ -57,9 +56,10 @@ button { position: relative; top: 0.25em; }
 #lower_pagewrapper #footer ul#links li h6 a { color: #888888; }
 #lower_pagewrapper #footer ul#links li h6 a:hover { color: white; }
 #lower_pagewrapper #footer ul#links li.first { margin-right: 10px; }
+#lower_pagewrapper #content #left-side hr { margin: 7px 0 0 0; }
+#lower_pagewrapper #content #left-side .left_tool { margin-top: -8px; }
+#lower_pagewrapper #content #left-side .left_tool h3 { position: absolute; left: 75px; }
 
 h2 { font-size: 12px; }
 
 .partners h3 { font-size: 10px; line-height: 14px; font-style: normal; }
-
-.left_tool h3 { position: absolute; left: 58px; }

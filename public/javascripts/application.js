@@ -148,7 +148,7 @@ function nice_fonts(){
   	Cufon.replace('li.cufon-active h2', {
 		  fontFamily: "GarmdITC BkCn BT",
 		  color: 'white',
-		  fontSize: "14px",
+		  fontSize: "14px"
 	 });
     
   Cufon.replace('h3 span.title', {
@@ -171,22 +171,22 @@ function nice_fonts(){
   Cufon.replace('h3 strong', {
 	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#888888',
-	  fontSize: "16px",
+	  fontSize: "16px"
  });
   Cufon.replace('#main h3', {
 	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#E13939',
-	  fontSize: "20px",
+	  fontSize: "20px"
  });
   Cufon.replace('h1.title', {
 	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#E13939',
-	  fontSize: "22px",
+	  fontSize: "22px"
  });
   Cufon.replace('h5', {
 	  fontFamily: "GarmdITC BkCn BT",
 	  color: 'white',
-	  fontSize: "18px",
+	  fontSize: "18px"
  });
 
   Cufon.replace('h4', {
@@ -200,7 +200,7 @@ function nice_fonts(){
   Cufon.replace('#main h4', {
 	  fontFamily: "GarmdITC BkCn BT",
 	  color: '#888888',
-	  fontSize: "18px",
+	  fontSize: "18px"
  });
   Cufon.replace('h6', {
 	  fontFamily: "GarmdITC BkCn BT",
@@ -308,4 +308,6 @@ jQuery.fn.filter_options = function() {
   }
   
 };
+
+
 
