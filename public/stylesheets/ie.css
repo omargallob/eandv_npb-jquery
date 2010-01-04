@@ -33,7 +33,7 @@ button { position: relative; top: 0.25em; }
 .ui-tabs { zoom: 1; }
 
 #upper_pagewrapper { text-align: left; }
-#upper_pagewrapper #navbar ul li { margin: 14px 25px; }
+#upper_pagewrapper #navbar ul li h2 img.active { margin-top: 35px; }
 
 #lower_pagewrapper { text-align: left; }
 #lower_pagewrapper #content_top { left: 0px; }
@@ -43,14 +43,16 @@ button { position: relative; top: 0.25em; }
 #lower_pagewrapper form#Selectable { margin-right: 15px; text-align: left; }
 #lower_pagewrapper hr { margin-top: 7px; margin-bottom: 0px; }
 #lower_pagewrapper #title.about { left: 25px; }
-#lower_pagewrapper #main { overflow: hidden; }
-#lower_pagewrapper #main hr { margin-top: 7px; margin-bottom: 0px; }
+#lower_pagewrapper #main { overflow: hidden; text-align: center; }
+#lower_pagewrapper #main hr { margin-top: 7px; margin-bottom: 0px; text-align: center; }
 #lower_pagewrapper #main #facility_list h3 { text-align: center; }
 #lower_pagewrapper #main #facility_list .bottom { position: absolute; }
+#lower_pagewrapper #main .property { text-align: left; }
+#lower_pagewrapper #main h3 { text-align: left; }
+#lower_pagewrapper #main p { text-align: left; }
 #lower_pagewrapper #main_bottom { margin: 0 0 -10px 0; position: absolute; }
 #lower_pagewrapper #schools hr { margin-top: 7px; margin-bottom: 0px; }
 #lower_pagewrapper #content #left-side hr { margin: 7px 0 0 0; }
-#lower_pagewrapper #content #left-side .left_tool { margin-top: -8px; }
 #lower_pagewrapper #content #left-side .left_tool h3 { position: absolute; left: 75px; }
 #lower_pagewrapper #footer ul#links li { margin: 0px 44px 0 0; }
 #lower_pagewrapper #footer ul#links li h4 { font-size: 10px; letter-spacing: 0.2px; float: left; margin: 0; padding: 0; }

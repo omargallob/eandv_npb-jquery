@@ -125,8 +125,14 @@ function set_nav_pointer(st){
 		$("#nav_"+st+" img").addClass("active");
 		x = $("#nav_"+st).width();
 		y= x/2;
-		$("#nav_"+st+" img").css("margin-left",y-10);
+		
 		$("#nav_"+st+" a").css("color","white");
+
+		if(($.browser.msie)&&(($.browser.version == "7.0")||($.browser.version == "6.0"))){
+			$("#nav_"+st+" img").css("margin-left",-y-10);
+		}else{
+			$("#nav_"+st+" img").css("margin-left",y-10);
+		}
 }
 
 function nice_fonts(){

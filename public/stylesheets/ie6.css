@@ -2,6 +2,7 @@
 #upper_pagewrapper #header #extra { margin: -80px 12px 0 0; }
 #upper_pagewrapper #navbar ul li { margin: 14px 25px; }
 #upper_pagewrapper #navbar ul li img { margin: 2px 0 0 3px; }
+#upper_pagewrapper #navbar ul li h2 img.active { margin-top: 30px; }
 #upper_pagewrapper #navbar ul li#nav_properties { margin-left: 8px; }
 
 #lower_pagewrapper #content #left-side #side-nav #leftswfcontainer #kd_container { width: 150px; height: 81px; border: 0px none; }
@@ -12,6 +13,18 @@
 #lower_pagewrapper #content #left-side #side-nav .left_tool .header_w_image h3.services { float: left; margin-left: 25px; }
 #lower_pagewrapper #content #left-side #side-nav .relocating { height: 70px; }
 #lower_pagewrapper #content #left-side #main .main_border { background-repeat: no-repeat; }
+#lower_pagewrapper #content #left-side #main .top { background-repeat: no-repeat; }
+#lower_pagewrapper #content #left-side #main hr { text-align: center; color: #4d4d4d; }
+#lower_pagewrapper #content #left-side #main .property .image { margin: 4px; }
+#lower_pagewrapper #content #left-side #main .property .address { background-repeat: no-repeat; padding: 0 0 0 4px; }
+#lower_pagewrapper #content #left-side #main .property .address p { margin: 0px; }
+#lower_pagewrapper #content #left-side #main .property .text p { margin: 0px; }
+#lower_pagewrapper #content #left-side #main .property .extra { background-repeat: no-repeat; }
+#lower_pagewrapper #content #left-side #main .property .title { margin: 4px 0 0 0px; }
+#lower_pagewrapper #content #left-side #main .property .title p { margin-left: 2px; }
+#lower_pagewrapper #content #left-side #main .property .price { margin-left: 2px; }
+#lower_pagewrapper #content #left-side #main .property ul.facility { margin: 0px; padding-left: 4px; }
+#lower_pagewrapper #content #left-side #main .property ul.facility li { margin-top: 6px; }
 #lower_pagewrapper #content #left-side.home { width: 633px; }
 #lower_pagewrapper #content #right-column #searchbox .top { background-repeat: no-repeat; }
 #lower_pagewrapper #content #right-column #searchbox .bottom { background-repeat: no-repeat; }
@@ -21,6 +34,8 @@
 #lower_pagewrapper #content #right-column #chatlive h3 { margin-top: 15px; }
 #lower_pagewrapper #content #right-column #chatlive h3 span a:hover { color: #888888; }
 #lower_pagewrapper #content #right-column #chatlive h3 span a { color: #e13939; font-size: 12px; }
+#lower_pagewrapper #content #right-column #faq .top { background-repeat: no-repeat; }
+#lower_pagewrapper #content #right-column #faq .jScrollPaneContainer { margin-left: 12px; }
 #lower_pagewrapper #content #right-column h3 { color: #e13939; }
 #lower_pagewrapper #content #right-column h3 span { color: #e13939; }
 #lower_pagewrapper #content #right-column h3 span a { text-decoration: none; }
