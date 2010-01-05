@@ -49,8 +49,11 @@ button { position: relative; top: 0.25em; }
 #lower_pagewrapper #main #facility_list h3 { text-align: center; }
 #lower_pagewrapper #main #facility_list .bottom { position: absolute; }
 #lower_pagewrapper #main .property { text-align: left; }
+#lower_pagewrapper #main ul { text-align: left; }
 #lower_pagewrapper #main h3 { text-align: left; }
+#lower_pagewrapper #main h4 { text-align: left; }
 #lower_pagewrapper #main p { text-align: left; }
+#lower_pagewrapper #main .static_why { text-align: left; margin: 30px 0px; }
 #lower_pagewrapper #main_bottom { margin: 0 0 -10px 0; position: absolute; }
 #lower_pagewrapper #schools hr { margin-top: 7px; margin-bottom: 0px; }
 #lower_pagewrapper #content #left-side hr { margin: 7px 0 0 0; }
