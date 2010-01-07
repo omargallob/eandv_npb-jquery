@@ -1,10 +1,19 @@
 class Admin::MetatagController < Admin::BaseController
   def index
     @pages = Page.find(:all)
+    @services = Category.find_main
+    @properties = Property.find(:all)
   end
   
   def new
-    @page = Page.find_by_name(params[:name])
+		case params[:type]
+			when "page"
+   			@page = Page.find_by_name(params[:name])
+			when "service"
+   			@service = Category.find_by_name(params[:name])
+			when "property"
+   			@property = Property.find_by_id(params[:name])
+		end
   end
   
   def create

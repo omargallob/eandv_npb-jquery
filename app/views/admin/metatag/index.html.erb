@@ -1,3 +1,4 @@
+<div style="float:left; width:450px; border-right: 1px solid green;margin-right: 25px">
 <h2>Pages</h2>
 <table>
 	<% for page in @pages%>
@@ -7,9 +8,62 @@
 		<td><% if page.metatag %>
 			 	 <%= link_to "Edit", edit_admin_metatag_path(page.metatag) %>
 			<% else %>
-			 <%= link_to "Add", :controller => "metatag", :action=>"new", :name=>page.name %>
+			 <%= link_to "Add", :controller => "metatag", :action=>"new", :name=>page.name, :type => "page" %>
 			<% end %>
 		</td>
 	</tr>
 	<% end %>
 </table>
+<hr>
+<h2>Services</h2>
+<table>
+	<% for main_service in @services %>
+	<tr>
+		<td><%= main_service.name %> </td>
+		<td>&nbsp;|&nbsp;</td> 
+		<td><% if main_service.metatag %><%= main_service.metatag.id %> <% else %> No metatags <% end %></td>
+		<td>&nbsp;|&nbsp;</td> 
+		<td><% if main_service.metatag %>
+			 	 <%= link_to "Edit", edit_admin_metatag_path(main_service.metatag) %>
+			<% else %>
+			 <%= link_to "Add", :controller => "metatag", :action=>"new", :name=>main_service.name, :type => "service" %>
+			<% end %></td>
+
+			<% for subcategory in main_service.subcategories %>
+				</tr>
+				<tr>
+				<td>- <%= subcategory.name %> </td>
+				<td>&nbsp;|&nbsp;</td> 
+				<td><% if subcategory.metatag %><%= subcategory.metatag.id %> <% else %> No metatags <% end %></td>
+				<td>&nbsp;|&nbsp;</td> 
+				<td><% if subcategory.metatag %>
+				<%= link_to "Edit", edit_admin_metatag_path(subcategory.metatag) %>
+				<% else %>
+				<%= link_to "Add", :controller => "metatag", :action=>"new", :name=>subcategory.name, :type => "service" %>
+				<% end %></td>
+			
+			<% end %>
+	</tr>
+	<% end %>
+</table>
+<hr>
+</div>
+<div style="width:450px;float:left;border-right: 1px solid green;margin-right: 25px">
+<h2>Properties</h2>
+<table>
+	<% for property in @properties %>
+	<tr>
+		<td><%= property.title %> </td>
+		<td>&nbsp;|&nbsp;</td> 
+		<td>
+			<% if property.metatag %>
+			 	 <%= link_to "Edit", edit_admin_metatag_path(property.metatag) %>
+			<% else %>
+			 <%= link_to "Add", :controller => "metatag", :action=>"new", :name=>property.id, :type => "property" %>
+			<% end %>
+		</td>
+	</tr>
+	<% end %>
+</table>
+<hr />
+</div>

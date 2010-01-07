@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091211145409) do
+ActiveRecord::Schema.define(:version => 20100107151924) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -129,6 +129,8 @@ ActiveRecord::Schema.define(:version => 20091211145409) do
     t.integer  "page_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "category_id"
+    t.integer  "property_id"
   end
 
   create_table "page_abouts", :force => true do |t|

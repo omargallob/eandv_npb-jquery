@@ -1,5 +1,5 @@
 <div id="main">
-	<h2>Adding metadata to page: <%= @page.name %></h2>
+	<h2>Adding metadata to <%= params[:type]%>: <%= params[:name]%></h2>
 
 	<% form_for :metatag, :url => {:action => ""}  do |f| %>	
 	  <%= render :partial => "form", :locals => {:f =>f}%>

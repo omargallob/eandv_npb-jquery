@@ -9,11 +9,12 @@
    <%= f.text_area :keywords %>
  </p>
  <p>
-   	<%= f.label :page_id %><br />
+  
    	<% if controller.action_name == 'new' %>
-		<%= f.hidden_field :page_id, :value=> @page.id %> 
-		<%= @page.id %><br />
-	<% end %>
+			<% if @page %><%= @page.id %>		<%= f.hidden_field :page_id, :value=> @page.id %> <% end %>
+			<% if @service %><%= @service.id %>		<%= f.hidden_field :category_id, :value=> @service.id %> <% end %>
+			<% if @property %><%= @property.id %>		<%= f.hidden_field :property_id, :value=> @property.id %> <% end %>
+		<% end %>
 	
 	
  </p>
