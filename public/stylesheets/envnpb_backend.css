@@ -43,3 +43,5 @@ body a:hover { color: yellow; }
 #content #subcontent p { width: 350px; }
 
 .changed { background: red; }
+
+tr.subcategory { display: none; }

@@ -5,47 +5,22 @@
 </div>
 
 <div id="subcontent">
-	<h1><%= t('pages.index.title')%></h1>
+	<h1><%= t('pages.index.title')%> <b><%= " :"+@parent.name if params[:parent]%></b></h1>
 
 	<table>
 	  <tr>
-		<td class="tableheader">thumb</td>
-		<td>&nbsp;|&nbsp;</td>
-		<td class="tableheader">featured</td>
-		<td>&nbsp;|&nbsp;</td>
-	    <td class="tableheader"><%= t('headerlist.name')%></td>
-			<td>&nbsp;|&nbsp;</td>	   
-	    <td class="tableheader"><%= t('headerlist.title')%></td>
-			<td>&nbsp;|&nbsp;</td>
-	    <td class="tableheader"><%= t('headerlist.body')%></td>
-		<td class="tableheader"><%= t('headerlist.options')%></td>
+			  <td class="tableheader"><%= t('headerlist.name')%></td>
+				<td>&nbsp;|&nbsp;</td>	   
+			  <td class="tableheader"><%= t('headerlist.title')%></td>
+				<td>&nbsp;|&nbsp;</td>
+			  <td class="tableheader"><%= t('headerlist.body')%></td>
+			<td class="tableheader"><%= t('headerlist.options')%></td>
+				<td>&nbsp;|&nbsp;</td>
+			  <td class="tableheader">Sublevel</td>
 	  </tr>
-
-	<% @pages.each do |page| %>
-	  <tr>
-		
-	    <td style="padding:5px"><%=image_tag page.thumb.url(:small) if page.thumb %></td>
-		<td>&nbsp;|&nbsp;</td>
-	    <td><%= page.featured %></td>
-		<td>&nbsp;|&nbsp;</td>	
-	    <td><%=h page.name %></td>
-		<td>&nbsp;|&nbsp;</td>
-	    <td><%=h truncate(page.title, 15) %></td>
-		<td>&nbsp;|&nbsp;</td>	
-	    <td style="padding-top:15px"><%= truncate(page.body,40) %></td>
 	
-	    <td>
-			<table class="nolines">
-				<tr>
-					<td><%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => t('options.show')), admin_page_path(page) %></td><td>&nbsp;|&nbsp;</td>
-	    			<td><%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => t('options.edit')), edit_admin_page_path(page) %></td><td>&nbsp;|&nbsp;</td>
-	    			<td><%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => t('options.delete')), admin_page_path(page), :confirm => 'Are you sure?', :method => :delete %></td>
-				</tr>
+		<%= render :partial => "page", :collection => @pages %>
 
-			</table>	
-		</td>
-	  </tr>
-	<% end %>
 	</table>
 	<br />
 	

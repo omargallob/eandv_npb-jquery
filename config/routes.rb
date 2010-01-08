@@ -38,6 +38,7 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :admin  do |admin|
      admin.root :controller => "overview"
      admin.resources :pages
+	   #admin.page_subs "/pages/:parent/subs", :controller => "partners", :action => "index"
      admin.resources :page_about
      admin.resources :metatag
      admin.resources :services

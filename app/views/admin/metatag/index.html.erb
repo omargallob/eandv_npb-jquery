@@ -55,6 +55,8 @@
 	<tr>
 		<td><%= property.title %> </td>
 		<td>&nbsp;|&nbsp;</td> 
+		<td><% if property.metatag %><%= property.metatag.id %> <% else %> No metatags <% end %></td>
+		<td>&nbsp;|&nbsp;</td>
 		<td>
 			<% if property.metatag %>
 			 	 <%= link_to "Edit", edit_admin_metatag_path(property.metatag) %>

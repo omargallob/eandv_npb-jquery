@@ -31,6 +31,13 @@ class Page < ActiveRecord::Base
   def self.find_main
     Page.find(:all, :conditions => ['parent_id IS NULL'], :order => 'position')
   end
+
+  def self.find_sub(pid)
+    Page.find(:all, :conditions => ['parent_id = ?', pid], :order => 'position')
+  end
+	
+
+
   private
     def reprocess_thumb
       thumb.reprocess!

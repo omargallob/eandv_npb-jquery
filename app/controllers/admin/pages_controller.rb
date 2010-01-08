@@ -1,8 +1,13 @@
 class Admin::PagesController < Admin::BaseController
   def index
      @pagetitle = "Admin - Static pages"
-     @pages = Page.all
-
+    
+		if params[:parent] 
+			@parent = Page.find_by_id(params[:parent])
+			@pages = Page.find_sub(params[:parent])
+		else
+			@pages = Page.find_main
+		end
      respond_to do |format|
        format.html # index.html.erb
        format.xml  { render :xml => @pages }
