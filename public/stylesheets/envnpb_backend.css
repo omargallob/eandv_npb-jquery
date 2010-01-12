@@ -1,6 +1,6 @@
 body { background: #fafafa; color: white; }
-body a { color: white; }
-body a:hover { color: yellow; }
+body a { color: black; }
+body a:hover { color: red; }
 
 #pagewrapper { width: 1020px; margin: 0px auto; background-color: black; }
 #pagewrapper #header { height: 84px; width: 1020px; background-image: url(../images/system/bg/admin/header.png); }

@@ -6,4 +6,5 @@
 	<p><%= t 'overview.countries' %>: <%= @countries.size %></p>
 	<p><%= t 'overview.properties' %> <%= @properties.size %></p>
 	<p><%= t 'overview.facilities' %>: <%= @facilities.size %></p>
+	<p>Number of metatagged pages / Total number of pages: <%= @metatags.size %> / <%= @pages.size + @categories.size + @properties.size %></p>
 </div>
