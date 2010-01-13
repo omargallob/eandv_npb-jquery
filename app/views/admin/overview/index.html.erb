@@ -1,10 +1,47 @@
 <% title "Overview"%>
 
-<div class="overview">
-	<p><%= t "overview.static_pages" %>: <%= @pages.size %></p>
-	<p><%= t "overview.service_categories" %>: <%= @categories.size %></p>	
-	<p><%= t 'overview.countries' %>: <%= @countries.size %></p>
-	<p><%= t 'overview.properties' %> <%= @properties.size %></p>
-	<p><%= t 'overview.facilities' %>: <%= @facilities.size %></p>
-	<p>Number of metatagged pages / Total number of pages: <%= @metatags.size %> / <%= @pages.size + @categories.size + @properties.size %></p>
+<div id="itsthetable">
+<table>
+	<thead>
+		<th>Title</th>	
+		<th></th>
+		<th>Total</th>
+	</thead>
+
+	<tr>
+		<td><%= t "overview.static_pages" %></td>	
+		<td>:</td>	
+		<td><%= @pages.size %></td>
+	</tr>
+
+	<tr>
+		<td><%= t "overview.service_categories" %></td>	
+		<td>:</td>	
+		<td><%= @categories.size %></td>
+	</tr>
+
+	<tr>
+		<td><%= t 'overview.countries' %></td>	
+		<td>:</td>	
+		<td><%= @countries.size %></td>
+	</tr>
+
+	<tr>
+		<td><%= t 'overview.properties' %></td>	
+		<td>:</td>	
+		<td><%= @properties.size %></td>
+	</tr>
+
+	<tr>
+		<td><%= t 'overview.facilities' %></td>	
+		<td>:</td>	
+		<td><%= @facilities.size %></td>
+	</tr>
+
+	<tr>
+		<td>Number of metatagged pages / Total number of pages</td>	
+		<td>:</td>	
+		<td> <%= @metatags.size %> / <%= @pages.size + @categories.size + @properties.size %></td>
+	</tr>
+</table>
 </div>

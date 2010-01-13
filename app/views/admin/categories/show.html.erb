@@ -8,7 +8,16 @@
 
 <h1>SubCategory list for: <%= @parent.title %></h1>
 
+<div id="itsthetable">
 	<table>
+		<thead>
+			<th>Image</th>	
+			<th>Title</th>	
+			<th>Description</th>
+			<th>Partners</th>
+			<th>Options</th>
+			<th>Sublevel</th>
+		</thead>
 	<% @categories.each do |category| %>
 		<%= render :partial => 'shared/service', :object => category %>
 	<% end -%>

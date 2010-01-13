@@ -7,42 +7,31 @@
 		<%= image_tag service.main.url(:large) %>
 		<% end %>
 	</td>
+	<td><%= service.navlabel %></td>	
+	<td width="650px" class="clearfix">
+	<%= service.description %>
+	</td>
 
-</tr>
-</table>
-<table>
-	<tr>
-		
+	<% if controller.action_name == "show" %>
+	<td><%= link_to 'Partners', admin_category_partners_path(service.id) %>&nbsp;
+	<% if service.partners.size > 0 %>
+		(<%= service.partners.size %>)
+	<% end %>
+	</td>
+	<% end %>
 
+	<td><%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => t('options.edit')), edit_admin_category_path(service) %>
+		<%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => t('options.edit')), admin_category_path(service), :confirm => 'Are you sure?', :method => :delete %></td>
+	<td>
+	<% if controller.controller_name == "services" %>
 
-			<td width="650px" class="clearfix">
-	<h1><%= service.title %></h1><%= service.description %>
-			</td>
-
-
-
-		<% if controller.action_name == "show" %>
-		<td>&nbsp;|&nbsp;</td>
-		<td><%= link_to 'Partners', admin_category_partners_path(service.id) %>&nbsp;
-		<% if service.partners.size > 0 %>
-			(<%= service.partners.size %>)
+		<% unless service.subcategories.empty? %>					
+			<%= link_to image_tag("system/buttons/subarrow.png", :width=> "35px"), admin_category_path(service)%>|&nbsp;(<%= service.subcategories.size %>)
 		<% end %>
-		</td>
-		<% end %>
-		<td>&nbsp;|&nbsp;</td>
-		<td><%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => t('options.edit')), edit_admin_category_path(service) %></td>
-		<td>&nbsp;|&nbsp;</td>
-		<td><%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => t('options.edit')), admin_category_path(service), :confirm => 'Are you sure?', :method => :delete %></td>
-		<td>
-		<% if controller.controller_name == "services" %>
+
+	<% end %>
 	
-			<% unless service.subcategories.empty? %>					
-				<%= link_to image_tag("system/buttons/subarrow.png", :width=> "35px"), admin_category_path(service)%>|&nbsp;(<%= service.subcategories.size %>)
-			<% end %>
-
-		<% end %>
-		
-		</td>	
+	</td>	
 </tr>
 
 

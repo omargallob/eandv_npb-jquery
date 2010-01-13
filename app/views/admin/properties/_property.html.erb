@@ -1,33 +1,33 @@
 	<tr>
 		<td> <%= property.location.region %> </td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td> <%= property.title %> </td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td> <%= property.featured %> </td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td> <%= property.type.title %> </td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td> <%= property.rental %> </td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td> <%=  number_with_delimiter(property.price) %></td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td width="250"> <%= truncate(property.description, 30) %> </td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td> <%= property.bedrooms %>  </td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td> <%= property.bathrooms %></td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td><%= property.living_areas %> </td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td> <%= property.built %> </td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td> <%= property.plot %> </td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td> <%= property.garden %></td>
-		<td>&nbsp;|&nbsp;</td>
+
 		<td>
-				<%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => "view"), admin_property_path(property) %> | 
-				<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"), edit_admin_property_path(property) %> | 
+				<%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => "view"), admin_property_path(property) %>  
+				<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"), edit_admin_property_path(property) %> 
 				<%= link_to image_tag ('system/buttons/delete.jpg',:height => "15px",:title => "delete"), admin_property_path(property), :confirm => 'Are you sure?', :method => :delete %>
 			
 			<% if property.gallery %>
@@ -37,6 +37,4 @@
 			<% end %>
 		</td>
 	</tr>
-	<tr>
-		<td></td>
-	</tr>
+

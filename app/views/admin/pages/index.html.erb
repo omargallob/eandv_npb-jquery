@@ -7,21 +7,25 @@
 <div id="subcontent">
 	<h1><%= t('pages.index.title')%> <b><%= " :"+@parent.name if params[:parent]%></b></h1>
 
-	<table>
-	  <tr>
-			  <td class="tableheader"><%= t('headerlist.name')%></td>
-				<td>&nbsp;|&nbsp;</td>	   
-			  <td class="tableheader"><%= t('headerlist.title')%></td>
-				<td>&nbsp;|&nbsp;</td>
-			  <td class="tableheader"><%= t('headerlist.body')%></td>
-			<td class="tableheader"><%= t('headerlist.options')%></td>
-				<td>&nbsp;|&nbsp;</td>
-			  <td class="tableheader">Sublevel</td>
-	  </tr>
-	
-		<%= render :partial => "page", :collection => @pages %>
+	<div id="itsthetable">	
+		<table class="page_list">
+			<thead>
+				<th><%= t('headerlist.name')%></th>	
 
-	</table>
+				<th><%= t('headerlist.title')%></th>
+
+				<th><%= t('headerlist.body')%></th>
+				<th><%= t('headerlist.options')%></th>
+				<th>Sublevel</th>	
+
+
+			</thead>			
+
+
+			<%= render :partial => "page", :collection => @pages %>
+
+		</table>
+	</div>
 	<br />
 	
 </div>	
