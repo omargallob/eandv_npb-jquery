@@ -1,23 +1,42 @@
-Sitemap::Routes.host = 'http://npb.heroku.com'
-Sitemap::Routes.priority = 0.8    # default is 1.0
+# Set the host name for URL creation
+SitemapGenerator::Sitemap.default_host = "http://www.example.com"
 
-Sitemap::Routes.draw do |map|
-
-  # root routes
-  map.root :controller => 'viewer', :action => 'show', :name => "name"
-
-  #map.connect '/properties/:id', :controller => 'properties', :action => 'show', :substitution => {:model => 'Properties',:id => 'id'}
+SitemapGenerator::Sitemap.add_links do |sitemap|
+  # Put links creation logic here.
+  #
+  # The root path '/' and sitemap index file are added automatically.
+  # Links are added to the Sitemap in the order they are specified.
+  #
+  # Usage: sitemap.add path, options
+  #        (default options are used if you don't specify)
+  #
+  # Defaults: :priority => 0.5, :changefreq => 'weekly', 
+  #           :lastmod => Time.now, :host => default_host
 
   
-  map.resources :properties
-  #map.services_par "/services ", :controller => "services", :action =>"index"
+  # Examples:
   
-  map.connect 'services', :controller => "services", :action => "index"
-  map.connect 'services/:parent',  :controller => "services", :action => "show", :substitution => {:model => "Category",:category => "parent_id"} 
-  #map.services_sub 'services/:parent', :controller => 'sitemaps', :action => 'index'
-  #map.services '/services/:parent/:category', :controller => "services", :action => "show", :substitution => {:model => 'Category',:parent=>"parent_id",:category => 'name'}
+  # add '/articles'
+  sitemap.add properties_path, :priority => 0.7, :changefreq => 'daily'
+
+  # add all individual articles
+  Property.find(:all).each do |a|
+    sitemap.add property_path(a), :lastmod => a.updated_at
+  end
+
+  # add merchant path
+  # sitemap.add '/purchase', :priority => 0.7, :host => "https://www.example.com"
   
-  #map.resources :pages
-  #map.connect 'services', :controller => "services", :action => "index"
-  #map.connect 'services/:parent', :controller => "services", :action => "show", :substitution => {:model => "Category", :parent => "name"} 
 end
+
+# Including Sitemaps from Rails Engines.
+#
+# These Sitemaps should be almost identical to a regular Sitemap file except 
+# they needn't define their own SitemapGenerator::Sitemap.default_host since
+# they will undoubtedly share the host name of the application they belong to.
+#
+# As an example, say we have a Rails Engine in vendor/plugins/cadability_client
+# We can include its Sitemap here as follows:
+# 
+# file = File.join(Rails.root, 'vendor/plugins/cadability_client/config/sitemap.rb')
+# eval(open(file).read, binding, file)
