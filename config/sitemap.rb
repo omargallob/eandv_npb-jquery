@@ -17,13 +17,16 @@ SitemapGenerator::Sitemap.add_links do |sitemap|
   # Examples:
   
   # add '/articles'
-  sitemap.add properties_path, :priority => 0.7, :changefreq => 'daily'
-
-  # add all individual articles
+  Page.find_main.each do |p|
+    sitemap.add view_page_path(p.name), :lastmod => p.updated_at
+  end
+  
+  # Properties
   Property.find(:all).each do |a|
     sitemap.add property_path(a), :lastmod => a.updated_at
   end
   
+  # Services
   Category.find_main.each do |cat|
     sitemap.add services_par_path(cat), :lastmod => cat.updated_at
     cat.subcategories.each do |sub|
@@ -31,7 +34,7 @@ SitemapGenerator::Sitemap.add_links do |sitemap|
     end
   end
   
-
+  
   # add merchant path
   # sitemap.add '/purchase', :priority => 0.7, :host => "https://www.example.com"
   
