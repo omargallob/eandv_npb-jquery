@@ -1,43 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3001</loc>
+    <loc>http://npb.heroku.com</loc>
     <priority>0.8</priority>
-    <lastmod>2009-11-19</lastmod>
+    <lastmod>2010-01-31</lastmod>
   </url>
   <url>
-    <loc>http://localhost:3001/properties</loc>
+    <loc>http://npb.heroku.com/properties</loc>
     <priority>0.8</priority>
-    <lastmod>2009-11-19</lastmod>
+    <lastmod>2010-01-31</lastmod>
   </url>
   <url>
-    <loc>http://localhost:3001/properties/1</loc>
+    <loc>http://npb.heroku.com/properties/1</loc>
     <priority>0.8</priority>
-    <lastmod>2009-11-19</lastmod>
+    <lastmod>2010-01-31</lastmod>
   </url>
   <url>
-    <loc>http://localhost:3001/properties/2</loc>
+    <loc>http://npb.heroku.com/properties/2</loc>
     <priority>0.8</priority>
-    <lastmod>2009-11-19</lastmod>
+    <lastmod>2010-01-31</lastmod>
   </url>
   <url>
-    <loc>http://localhost:3001/properties/3</loc>
+    <loc>http://npb.heroku.com/properties/3</loc>
     <priority>0.8</priority>
-    <lastmod>2009-11-19</lastmod>
+    <lastmod>2010-01-31</lastmod>
   </url>
   <url>
-    <loc>http://localhost:3001/properties/4</loc>
+    <loc>http://npb.heroku.com/properties/4</loc>
     <priority>0.8</priority>
-    <lastmod>2009-11-19</lastmod>
+    <lastmod>2010-01-31</lastmod>
   </url>
   <url>
-    <loc>http://localhost:3001/properties/5</loc>
+    <loc>http://npb.heroku.com/properties/5</loc>
     <priority>0.8</priority>
-    <lastmod>2009-11-19</lastmod>
+    <lastmod>2010-01-31</lastmod>
   </url>
   <url>
-    <loc>http://localhost:3001/services</loc>
+    <loc>http://npb.heroku.com/properties/6</loc>
     <priority>0.8</priority>
-    <lastmod>2009-11-19</lastmod>
+    <lastmod>2010-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://npb.heroku.com/properties/7</loc>
+    <priority>0.8</priority>
+    <lastmod>2010-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://npb.heroku.com/properties/8</loc>
+    <priority>0.8</priority>
+    <lastmod>2010-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://npb.heroku.com/properties/9</loc>
+    <priority>0.8</priority>
+    <lastmod>2010-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://npb.heroku.com/services</loc>
+    <priority>0.8</priority>
+    <lastmod>2010-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://npb.heroku.com/services/home-services</loc>
+    <priority>0.8</priority>
+    <lastmod>2010-01-31</lastmod>
+  </url>
+  <url>
+    <loc>http://npb.heroku.com/services/concierge</loc>
+    <priority>0.8</priority>
+    <lastmod>2010-01-31</lastmod>
   </url>
 </urlset>
