@@ -4877,3 +4877,12 @@ LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/lo
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/npb/index/development/location
 query: +(county:los state:los area:los city:los region:los city_initials:los zipcod:los) +(county:angeles state:angeles area:angeles city:angeles region:angeles city_initials:angeles zipcod:angeles)
 stored_fields: 
+LocalIndex: ensure_index_exists at /Users/omar/test/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/omar/test/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/omar/test/EandV/npb/index/development/location
+query: +(region:los city_initials:los county:los area:los zipcod:los city:los state:los) +(region:angeles city_initials:angeles county:angeles area:angeles zipcod:angeles city:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /Users/omar/test/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /Users/omar/test/EandV/npb/index/development/location
+query: +(region:los city_initials:los county:los area:los zipcod:los city:los state:los) +(region:angeles city_initials:angeles county:angeles area:angeles zipcod:angeles city:angeles state:angeles)
+stored_fields: 
