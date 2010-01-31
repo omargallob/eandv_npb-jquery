@@ -23,6 +23,14 @@ SitemapGenerator::Sitemap.add_links do |sitemap|
   Property.find(:all).each do |a|
     sitemap.add property_path(a), :lastmod => a.updated_at
   end
+  
+  Category.find_main.each do |cat|
+    sitemap.add services_par_path(cat), :lastmod => cat.updated_at
+    cat.subcategories.each do |sub|
+      sitemap.add services_sub_path(cat.name,sub.name), :lastmod => sub.updated_at
+    end
+  end
+  
 
   # add merchant path
   # sitemap.add '/purchase', :priority => 0.7, :host => "https://www.example.com"
