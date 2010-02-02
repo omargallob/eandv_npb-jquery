@@ -133,6 +133,8 @@ function set_nav_pointer(st){
 		}else{
 			$("#nav_"+st+" img").css("margin-left",y-10);
 		}
+		
+		
 }
 
 function nice_fonts(){
