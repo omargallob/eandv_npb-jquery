@@ -10,16 +10,7 @@
 			<% if @page.name == "home" %>
 			<hr style="margin-top:2px"/>
 				<%= render :partial => "shared/home_sidenav" %>
-				<hr />
-					<div class="left_tool relocating clearfix">
-						<div class="top"></div>
-						<div class="header_w_image">
-							<img src="/images/system/buttons/affiliate.jpg" width="50" height="35" alt="House">
-							<h3 class="services"><span class="title"><a href="/contact?iframe=true&width=560&height=600" rel="prettyPhoto">Become an <br />affiliate</a></span></h3>
-						</div>
-						<div class="bottom"></div>
-					</div>
-				<hr />
+
 			<% else %>
 				<%= render :partial => "shared/left_sidenav" %>
 			<% end %>
