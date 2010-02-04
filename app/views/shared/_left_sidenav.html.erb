@@ -16,6 +16,7 @@
 
 <% unless @page.name == "about" || params[:parent] == "about" %>
 <%= render :partial=>"shared/polaroid"%>
+
 <% end %>
 <%= link_to (image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;"), '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
 <hr />
@@ -28,4 +29,16 @@
 	</div>
 	<div class="bottom"></div>
 </div>
+
+
+<div class="left_tool shorter toolset"  style="height:70px">
+	<div class="top"></div>
+	<div class="header_w_image">
+		<img src="/images/system/buttons/world.jpg" width="50" height="35" alt="House" style="margin: 3px 0 0 15px">
+		<h3 class="service"><span class="title"><a href="/contact?iframe=true&width=560&height=600" rel="prettyPhoto">E&V<br> Global</a></span></h3>
+	</div>
+	<div class="bottom"></div>
+</div>
+	
+
 <% end %>	
