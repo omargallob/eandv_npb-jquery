@@ -8,9 +8,9 @@
 
 	<td><% unless page.parent_id == nil %> - <% end %><%=h page.name %></td>
 
-	<td width="200px"><%=h truncate(page.title, 15) %></td>
+	<td width="400px"><%=h truncate(page.title, 15) %></td>
 
-	<td style="padding-top:15px"><%= truncate(page.body,40) %></td>
+
 	<td>
 	<table class="nolines">
 		<tr>
@@ -20,7 +20,7 @@
 		</tr>
 	</table>	
 	</td>
-	<td style="text-align:right">
+	<td style="text-align:right;">
 		<% if page.subpages.size > 0  %>
 			<%= link_to image_tag("system/buttons/subarrow.png", :width=> "35px"),{:controller => "pages", :action => "index", :parent => page.id}, :title => "#{page.name} sublevel" %>
 		<% end %>

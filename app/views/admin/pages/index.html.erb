@@ -9,17 +9,15 @@
 
 	<div id="itsthetable">	
 		<table class="page_list">
-			<thead>
+			<tr>
 				<th><%= t('headerlist.name')%></th>	
 
 				<th><%= t('headerlist.title')%></th>
-
-				<th><%= t('headerlist.body')%></th>
 				<th><%= t('headerlist.options')%></th>
 				<th>Sublevel</th>	
 
 
-			</thead>			
+			</tr>			
 
 
 			<%= render :partial => "page", :collection => @pages %>
