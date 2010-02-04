@@ -1,3 +1,9 @@
+	<% if params[:id] == nil %>
+		<li class="active">Intro</li>
+	<% else %>
+		<li><%= link_to "Intro", view_page_path(@page.name)%></li>
+	<% end %>
+
 	<% for category in services_sidenav -%>
 		<li class="<% if params[:id] == category.name || params[:category] == category.name  %>active<% end %>">
 			<%= link_to category.navlabel, services_par_path(category.name) %> <br/>
