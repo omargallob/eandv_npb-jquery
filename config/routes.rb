@@ -64,6 +64,7 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :googlemap
      admin.resources :users
      admin.resources :roles
+     admin.resources :staff
      admin.resources :galleries
      admin.resources :galleries, :collection => { :prioritize_uploads => :post }
       admin.resources :uploads

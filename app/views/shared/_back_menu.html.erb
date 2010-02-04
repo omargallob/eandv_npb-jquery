@@ -39,6 +39,11 @@
 	<li class="cufon-active"><h2><%= link_to 'Users'.upcase , admin_users_path,:class => "active" %></h2></li>
 	<% else %>
 	<li><h2><%= link_to 'Users'.upcase , admin_users_path %></h2></li>
+	<% if controller.controller_name == "staff" %>
+	<li class="cufon-active"><h2><%= link_to 'Staff'.upcase , admin_staff_index_path,:class => "active" %></h2></li>
+	<% else %>
+	<li><h2><%= link_to 'Staff'.upcase , admin_staff_index_path %></h2></li>
+	<% end %>
 	<% end %>
 <% end %>
 

@@ -44,5 +44,5 @@ body a:hover { color: red; }
 
 .changed { background: red; }
 
-table.page_list { margin-top: 45px; display: block; }
+table.page_list { margin-top: 45px; display: block; width: 742px; }
 table.page_list tr.subcategory { display: none; }

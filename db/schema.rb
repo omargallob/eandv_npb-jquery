@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100107151924) do
+ActiveRecord::Schema.define(:version => 20100204203338) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -278,5 +278,18 @@ ActiveRecord::Schema.define(:version => 20100107151924) do
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+
+  create_table "workers", :force => true do |t|
+    t.string   "full_name"
+    t.string   "title"
+    t.text     "description"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+  end
 
 end
