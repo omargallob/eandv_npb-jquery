@@ -52,6 +52,7 @@
 #left-side #main.properties h3 { margin-left: 24px; }
 #left-side #main.why { width: 442px; }
 #left-side #main { width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
+#left-side #main ol.staff li img { float: left; margin: 15px 10px 5px 35px; }
 #left-side #main ol.staff li h1 { padding-bottom: 0px; }
 #left-side #main ol.staff li h2 { margin: 0px 35px; padding: 0px; font-weight: normal; }
 #left-side #main ol.staff li h3 { margin: 15px 35px 0px; }
