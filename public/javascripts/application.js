@@ -143,6 +143,14 @@ function set_nav_pointer(st){
 }
 
 function nice_fonts(){
+
+  Cufon.replace('h1.title', {
+	  fontFamily: "GarmdITC BkCn BT",
+	  color: '#E13939',
+	  fontSize: "18px",
+	 });
+
+
   	Cufon.replace('li.cufon-active h2', {
 		  hover: false
 	 });

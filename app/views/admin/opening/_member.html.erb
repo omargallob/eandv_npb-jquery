@@ -1,0 +1,15 @@
+<tr>
+	<td style="widtd:100px"><%= member.full_name %></td>	
+	<td style="widtd:200px"><%= member.title %></td>
+	<td style="widtd:300px"><%= member.email %></td>
+	<td style="widtd:100px"><%= member.description %></td>
+	<td style="widtd:150px">
+		<table class="nolines">
+		<tr>
+			<td><%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => t('options.show')), admin_staff_path(member) %></td><td>&nbsp;|&nbsp;</td>
+			<td><%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => t('options.edit')), edit_admin_staff_path(member) %></td><td>&nbsp;|&nbsp;</td>
+			<td><%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => t('options.delete')), admin_staff_path(member), :confirm => 'Are you sure?', :method => :delete %></td>
+		</tr>
+	</table>	
+	</td>
+</tr>	

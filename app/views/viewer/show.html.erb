@@ -40,6 +40,11 @@
 					<%= render :partial => "shared/staff", :collection => @staff %>
 				</ol>
 			<% end %>			
+			<% if params[:name] == "employment" %>
+				<ol class="staff">
+					<%= render :partial => "shared/staff", :collection => @staff %>
+				</ol>
+			<% end %>	
 		<% end %>
 
 		<% if params[:parent] == "why" %>

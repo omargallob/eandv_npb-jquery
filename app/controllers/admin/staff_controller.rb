@@ -1,6 +1,6 @@
 class Admin::StaffController < Admin::BaseController
   def index
-		@members = Worker.find(:all)
+		@members = Worker.find(:all, :conditions =>{:vacancy=>false})
   end
 
   def new

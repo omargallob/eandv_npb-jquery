@@ -3373,3 +3373,12 @@ Tue Nov 24 20:07:15 +0000 2009: Error calling Dispatcher.dispatch #<Mongrel::Tim
 /home/omar/Proyectos/EandV/npb/app/views/admin/pages/_page.html.erb:19: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/shared/_gallery.html.erb:7: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/admin/pages/edit.html.erb:4: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:10: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:10: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/opening/_member.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/opening/_member.html.erb:10: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/opening/_member.html.erb:11: warning: don't put space before argument parentheses
