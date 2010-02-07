@@ -1,0 +1,25 @@
+<div id="side-nav">
+	<ul>
+		<li><%= link_to t('options.index'), admin_posts_path  %></li>
+		<li><%= link_to t('options.new'), new_admin_post_path %></li>
+		<li><%= link_to "back", :back %></li>
+	</ul>
+</div>
+
+<div id="subcontent">
+	<h1>Blog (<%= @posts.size %>)</h1>
+
+	<div id="itsthetable">	
+		<table class="page_list">
+			<tr>
+				<th style="width:200px"><%= t('headerlist.title')%></th>
+				<th style="width:600px">Body</th>
+				<th style="width:150px"><%= t('headerlist.options')%></th>
+
+			</tr>			
+			<%= render :partial => "post", :collection => @posts %>
+		</table>
+	</div>
+	<br />
+	
+</div>	

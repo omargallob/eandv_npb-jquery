@@ -131,9 +131,14 @@ function set_nav_pointer(st){
 		if(($.browser.msie)&&(($.browser.version == "7.0")||($.browser.version == "6.0"))){
 			$("#nav_"+st+" img").css("margin-left",-y-10);
 		}else{
+	
 			if(x > 120){
 				z = 30;
-			}else{
+			}
+			else if (x < 70){
+				z=15;
+			}
+			else{
 				z = 20;
 			}
 			$("#nav_"+st+" img").css("margin-left",y-z);
