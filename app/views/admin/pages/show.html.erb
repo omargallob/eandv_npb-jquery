@@ -3,9 +3,12 @@
 		<%= render :partial => "shared/admin/pages_sidenav" %>
 		<li><%= link_to  t('options.edit'), edit_admin_page_path(@page) %></li>
  		<li><%= link_to  t('options.back'), admin_pages_path %></li>	
- 		<% if @page.parent.name == "about"%>
-			<li><%= link_to  "large image", admin_page_about_path %></li>		
+ 		<% unless @page.parent == nil %>
+			<% if @page.parent.name == "about"%>
+				<li><%= link_to  "large image", admin_page_about_path %></li>		
+			<% end %>
 		<% end %>
+ 		
 
 	</ul>
 </div>
