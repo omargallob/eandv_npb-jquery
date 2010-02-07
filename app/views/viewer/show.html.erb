@@ -26,7 +26,10 @@
 		<% if @page.name == "home" || @page.name == "about" || @parent.name == "about" %>
 		<div id="main_top" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 		<% end %>
-		
+		<% if params[:name]== "office" %>
+	 		<%= @map.div(:width => 419, :height => 317) %>
+			<hr />
+		<% end %>		
 		<% if @page.name == "home" %>
 			<h1 class="title"><%= @page.title %> </h1>
 		<% end %>
@@ -38,6 +41,7 @@
 				</ol>
 			<% end %>			
 		<% end %>
+
 		<% if params[:parent] == "why" %>
 		<p class="main_links"> <%= link_to "contact us", "/images/slide_1.jpg",:rel =>"prettyPhoto" %> or <%= link_to "chat with us", "/images/slide_1.jpg",:rel =>"prettyPhoto" %> </p>
 		<% end %>
@@ -110,4 +114,10 @@ jQuery(document).ready(function() {
 
 });
 </script>
+	<% if params[:name] == "office"  %>
+		<%= GMap.header(:with_vml => false, :host => request.host)%>
+		<%= @map.to_html %>
+	<% end %>
+
+
 <% end %>
