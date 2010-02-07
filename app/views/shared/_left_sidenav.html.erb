@@ -5,7 +5,7 @@
 	<% if params[:parent] == nil %>
 		<li class="active">Intro</li>
 	<% else %>
-		<li><%= link_to "Intro", view_page_path(@page.name)%></li>
+		<li><%= link_to "Intro", view_page_path(@page.parent.name)%></li>
 	<% end %>
 	<% for page in @subpages %>
 		<li class="<% if @page.name == page.name %>active<% end %>"><%= link_to page.navlabel, view_page_parent_path(@parent.name,page.name)%></li>
