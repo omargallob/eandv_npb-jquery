@@ -124,7 +124,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main ol.staff li h2 {margin: 0px 35px; padding: 0px; font-weight: normal}
 #left-side #main ol.staff li h3 {margin: 15px 35px 0px}
 #left-side #main ol.staff li h6 {margin: 0px 35px}
-#left-side #main ol#blog {list-style-type: decimal}
+#left-side #main ol#blog {list-style-type: none}
 #left-side #main ol#blog li {background: transparent; margin: 0px; padding: 0 12px}
 #left-side #main ol#blog li hr {margin-left: 4px}
 #left-side #main ol#blog li h3 {padding: 0 0 0 24px; margin: 0px}
