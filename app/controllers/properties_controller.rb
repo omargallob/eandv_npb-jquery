@@ -28,7 +28,7 @@ class PropertiesController < ApplicationController
   	@subpages = @page.subpages
        set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
 
-       string =  @property.title+", "+@property.location.region+", "+@property.location.county+", "+@property.location.state
+       string =  @property.address
 
         @res=GoogleGeocoder.geocode(string)    
         if @res.success

@@ -8,7 +8,7 @@ class Admin::GooglemapController < Admin::BaseController
   
   def show
     @property = Property.find_by_id(params[:id])
-    string =  @property.title+", "+@property.location.region+", "+@property.location.county+", "+@property.location.state
+    string =  @property.address
     
      @res=GoogleGeocoder.geocode(string)    
      if @res.success

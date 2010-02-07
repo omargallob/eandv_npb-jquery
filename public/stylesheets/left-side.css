@@ -66,7 +66,7 @@
 #left-side #main #property_content { width: 248px; float: left; background: transparent; margin-left: 16px; margin-top: 3px; }
 #left-side #main #property_content p { font-style: normal; font-size: 12px; margin: 0 0 0 6px; }
 #left-side #main #property_header { height: 84px; background: transparent; float: left; margin-left: 16px; width: 409px; }
-#left-side #main #property_header h1 { text-transform: uppercase; color: #e2001a; font-style: normal; margin: 0 0 0 6px; width: 223px; padding: 0; font-size: 16px; float: left; }
+#left-side #main #property_header h1 { text-transform: uppercase; color: #e2001a; font-style: normal; margin: 0 0 0 6px; width: 100%; padding: 0; font-size: 16px; float: left; }
 #left-side #main #property_header p { float: left; margin: 0; }
 #left-side #main #property_header .code { float: right; margin: 4px 0 0 0; font-size: 11px; }
 #left-side #main #property_header .address { background: url(../images/system/bg/front/main_property_address.jpg); height: 20px; width: 225px; margin: 0 0 0 0px; padding: 2px 0 0 6px; background-repeat: no-repeat; }
