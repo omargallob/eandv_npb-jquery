@@ -31,6 +31,13 @@
 			<h1 class="title"><%= @page.title %> </h1>
 		<% end %>
 		<%= @page.body %>
+		<% if params[:parent] == "office" %>
+			<% if params[:name] == "staff" %>
+				<ol class="staff">
+					<%= render :partial => "shared/staff", :collection => @staff %>
+				</ol>
+			<% end %>			
+		<% end %>
 		<% if params[:parent] == "why" %>
 		<p class="main_links"> <%= link_to "contact us", "/images/slide_1.jpg",:rel =>"prettyPhoto" %> or <%= link_to "chat with us", "/images/slide_1.jpg",:rel =>"prettyPhoto" %> </p>
 		<% end %>

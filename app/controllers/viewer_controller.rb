@@ -9,6 +9,12 @@ class ViewerController < ApplicationController
        @subpages = @page.subpages
     end
    
+		if params[:parent] == "office"
+			if params[:name] == "staff"
+					@staff = Worker.find(:all)
+			end
+		end
+
     if @page.metatag
       set_meta_tags :title =>  @page.title,
                   :description => @page.metatag.description,

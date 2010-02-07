@@ -118,6 +118,8 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main.properties h3 {margin-left: 24px}
 #left-side #main.why {width: 442px}
 #left-side #main {width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px}
+#left-side #main ol.staff li h3 {margin: 15px 35px 0px}
+#left-side #main ol.staff li h6 {margin: 0px 35px}
 #left-side #main #maylike {width: 402px; height: 85px; float: left; margin: 9px 0 0 20px}
 #left-side #main #map {width: 419px; height: 317px; float: left; background: transparent; margin: 10px 11px}
 #left-side #main .further {width: 248px; float: left}
