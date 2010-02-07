@@ -2,8 +2,8 @@
 <hr>
 <h3><%= post.title %> </h3>
 <hr>
-<%= post.description_html %>
+<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
 <hr>
-<h6>Date Posted: <%= post.created_at %> by <span><%= post.user.login.capitalize %></span></h6>
+<%= post.description_html %>
 <hr>
 </li>
