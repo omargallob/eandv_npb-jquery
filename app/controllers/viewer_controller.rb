@@ -31,7 +31,10 @@ class ViewerController < ApplicationController
 					@staff = Worker.find(:all,:conditions => {:vacancy => true})
 			end
 		end
-
+		
+		if @page.name == "home"
+			@posts = Post.find(:all)
+		end
 
     if @page.metatag
       set_meta_tags :title =>  @page.title,

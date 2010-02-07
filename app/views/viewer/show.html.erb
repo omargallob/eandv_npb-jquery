@@ -52,6 +52,17 @@
 		<% end %>
 		<div id="main_bottom" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 	</div>
+	<% if @page.name == "home" %>
+	<div id="news">
+			<div id="main_top" class="main_border ">	</div>
+			<h1 class="title">Recent News</h1>
+		
+			<ol id="blog">	
+			<%= render :partial => "shared/post", :collection => @posts %>
+			</ol>
+			<div id="main_bottom" class="main_border">	</div>
+	</div>
+	<% end %>
 </div>
 <div id="right-column" class="<% if @page.name == "home" %>home<% end %> <% if @page.name == "about" || @parent.name== "about" %>about<% end %>">
 	<div id="searchbox" 	class="advanced <%= @page.name%>">
