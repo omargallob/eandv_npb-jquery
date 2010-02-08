@@ -5,6 +5,8 @@ class BlogController < ApplicationController
   end
 
   def show
+ 		@page = Page.find_by_name('blog')
+	  @post = Post.find_by_title(params[:id])
   end
 
 end

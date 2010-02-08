@@ -3397,3 +3397,51 @@ Tue Nov 24 20:07:15 +0000 2009: Error calling Dispatcher.dispatch #<Mongrel::Tim
 /home/omar/Proyectos/EandV/npb/app/views/admin/posts/_post.html.erb:7: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/admin/posts/_post.html.erb:8: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/admin/posts/_post.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/config/routes.rb:86: warning: regexp has invalid interval
+/home/omar/Proyectos/EandV/npb/config/routes.rb:86: warning: regexp has invalid interval
+/home/omar/Proyectos/EandV/npb/config/routes.rb:86: warning: regexp has invalid interval
+Mon Feb 08 01:16:27 +0100 2010: Error calling Dispatcher.dispatch #<SyntaxError: /home/omar/Proyectos/EandV/npb/config/routes.rb:86: syntax error, unexpected '}', expecting kEND
+...on => "show", :year => /\d{4/},:month => /\d{1,2/},:day => /...
+                              ^
+/home/omar/Proyectos/EandV/npb/config/routes.rb:86: syntax error, unexpected '}', expecting kEND
+...=> /\d{4/},:month => /\d{1,2/},:day => /\d{1,2/},
+                              ^
+/home/omar/Proyectos/EandV/npb/config/routes.rb:86: syntax error, unexpected '}', expecting kEND
+...=> /\d{1,2/},:day => /\d{1,2/},
+                              ^>
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:521:in `new_constants_in'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/dependencies.rb:145:in `load'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:266:in `load!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:281:in `reload'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:58:in `reload_application'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:33:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/cgi_process.rb:44:in `dispatch_cgi'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:101:in `dispatch_cgi'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:27:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19

@@ -161,15 +161,23 @@ function nice_fonts(){
 	 });
 	
 	
+	Cufon.replace('h2.title', {
+		   fontFamily: "GarmdITC BkCn BT",
+		   color: '#818181',
+		   fontSize: "14px",
+  		 hover: {
+	   	 color: '#E13939'
+	   }
+	 });
+
 	Cufon.replace('h2', {
 		   fontFamily: "GarmdITC BkCn BT",
 		   color: '#818181',
 		   fontSize: "14px",
-		   hover: {
-		   		color: 'white'
-		   }
+	  		hover: {
+	   		color: 'white'
+	  	 }
 	 });
-
 
   	Cufon.replace('li.cufon-active h2', {
 		  fontFamily: "GarmdITC BkCn BT",

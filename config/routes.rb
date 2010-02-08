@@ -83,6 +83,8 @@ ActionController::Routing::Routes.draw do |map|
   map.about_nb '/about.xml', :controller => "rss", :action => "about"
   map.partners '/partners.xml', :controller => "rss", :action => "partners"
 	map.similar '/properties/:id/similar.xml', :controller => "rss", :action => "similar"
+	map.view_blog '/blog/:title', :controller => "blog", :action => "show"
+	#map.connect '/blog/:year/:month/:day', :controller => "blog", :action => "show", :year => /\d{4/},:month => /\d{1,2/},:year => /\d{4/},
  # 
   # The priority is based upon order of creation: first created -> highest priority.
 
