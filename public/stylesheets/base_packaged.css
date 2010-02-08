@@ -117,7 +117,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #property_gallery {width: 621px; height: 374px; float: left; background: transparent; margin: -8px 0 22px -7px}
 #left-side #main.properties h3 {margin-left: 24px}
 #left-side #main.why {width: 442px}
-#left-side #news {width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: right; margin-top: 14px}
+#left-side #news {width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: right; margin-top: 14px; font-size: 14px; color: #4d4d4d}
 #left-side #news #main_top {background-image: url(../images/system/bg/front/main_top.jpg); margin-top: 0}
 #left-side #news #main_bottom {background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; margin-top: 17px}
 #left-side #news .main_border {height: 8px; width: 463px; position: relative}
@@ -125,12 +125,12 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #news ol#blog {list-style-type: none}
 #left-side #news ol#blog li {background: transparent; margin: 0px; padding: 0 12px}
 #left-side #news ol#blog li hr {margin-left: 4px}
-#left-side #news ol#blog li h2 {padding: 0px 0 0 24px; margin: 0px; float: left; width: 150px}
+#left-side #news ol#blog li h2 {padding: 0px 0 0 24px; margin: 0px; float: left; width: 100%}
 #left-side #news ol#blog li h2 a {text-decoration: none}
 #left-side #news ol#blog li h2 a:hover {color: #E13939}
-#left-side #news ol#blog li h6 {margin: 0px; padding: 0 0 0 0px; float: left}
+#left-side #news ol#blog li h6 {margin: 0px; padding: 0 0 0 24px; float: right; text-align: left}
 #left-side #news ol#blog li h6 span {color: #888888}
-#left-side #news ol#blog li p {margin: 10px 0; padding: 0px}
+#left-side #news ol#blog li p {margin: 5px 24px 0px; font-style: italic; font-family: "Georgia"}
 #left-side #main {width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px}
 #left-side #main ol.staff {list-style-type: none}
 #left-side #main ol.staff li img {float: left; margin: 15px 10px 5px 35px}

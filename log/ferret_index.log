@@ -5189,3 +5189,11 @@ LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/developm
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
 query: +(zipcod:los state:los county:los area:los city_initials:los city:los region:los) +(zipcod:angeles state:angeles county:angeles area:angeles city_initials:angeles city:angeles region:angeles)
 stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(zipcod:los state:los county:los area:los city_initials:los city:los region:los) +(zipcod:angeles state:angeles county:angeles area:angeles city_initials:angeles city:angeles region:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(zipcod:los state:los county:los area:los city_initials:los city:los region:los) +(zipcod:angeles state:angeles county:angeles area:angeles city_initials:angeles city:angeles region:angeles)
+stored_fields: 

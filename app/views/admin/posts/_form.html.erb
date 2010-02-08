@@ -6,4 +6,8 @@
 	  <%= f.label :description %><br/>
   <%= f.text_area :description %>
 </p>
+<p>
+	  <%= f.label :body_html %><br/>
+  <%= f.text_area :body_html %>
+</p>
 <%= f.hidden_field :user_id, :value => current_user.id %>

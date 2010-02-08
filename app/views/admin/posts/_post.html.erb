@@ -1,6 +1,9 @@
 <tr>
 	<td><%= post.title %></td>
-	<td><%= post.description_html %></td>
+	<td>
+	<%= post.description_html if controller.action_name == "show" %>
+	<%= post.body_html if controller.action_name == "index" %>
+	</td>
 	<td>
 	<table class="nolines">
 		<tr>

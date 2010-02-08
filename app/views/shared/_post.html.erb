@@ -1,6 +1,7 @@
 <li>
 <hr>
 <h2 class="title"><%= link_to post.title, view_blog_path(post.title) %> </h2>
+<p><%= post.body_html%></p>
 <h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
 <hr>
 </li>
