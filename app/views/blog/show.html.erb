@@ -24,8 +24,8 @@
 
 	<div id="main" class="properties">
 		<%= image_tag "static/services_main.jpg",:id=>"mainpic" %>
-		<%= @page.body %>
-		<ol id="blog">
+
+		<ol id="blog" class="show">
 		<%= render :partial => "post", :object => @post %>
 		</ol>
 		<div id="main_bottom" class="main_border other">	</div>
