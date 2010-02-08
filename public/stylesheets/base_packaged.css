@@ -103,6 +103,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav ul li a {color: black; text-decoration: none}
 #left-side #side-nav ul li a:hover {color: red}
 #left-side #side-nav ul li ul.sublevel li {list-style: disc; list-style-position: inside}
+#left-side #side-nav ol {margin: 0 24px; font-size: 10px}
 #left-side .property {margin-top: 0px}
 #left-side #title {width: 610px; height: 26px; float: left; background: url(/images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 22px}
 #left-side #title h5 {margin-left: 13px; text-transform: uppercase}
