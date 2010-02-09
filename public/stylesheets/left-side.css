@@ -162,7 +162,7 @@
 #left-side #main h3 { margin: 13px 0 0 34px; }
 #left-side #main h4 { margin: 10px 0 5px 34px; text-transform: capitalize; }
 #left-side #main #main_top { background-image: url(../images/system/bg/front/main_top.jpg); margin-top: 0; }
-#left-side #main #main_bottom { background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; margin-top: 17px; }
+#left-side #main #main_bottom { background-image: url(../images/system/bg/front/main_bottom.jpg); float: left; margin-top: 24px; }
 #left-side #main .main_border { height: 8px; width: 463px; position: relative; }
 #left-side #main #main_top.other { background-image: url(../images/system/bg/front/main_properties_top.jpg); width: 442px; margin-top: 0; height: 15px; }
 #left-side #main #main_bottom.other { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; float: left; margin-top: 33px; height: 15px; }
