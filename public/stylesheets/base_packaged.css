@@ -86,7 +86,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav .relocating {margin: 0px}
 #left-side #side-nav div.toolset {margin-top: 14px}
 #left-side #side-nav .left_tool {width: 162px; background: url(/images/system/bg/front/left_tool.jpg); margin-top: 0px; float: left}
-#left-side #side-nav .left_tool .header_w_image {margin-top: 10px}
+#left-side #side-nav .left_tool .header_w_image {margin-top: 15px}
 #left-side #side-nav .left_tool h3 {margin-left: 15px}
 #left-side #side-nav .left_tool h3 a {text-decoration: none; color: #E13939}
 #left-side #side-nav .left_tool h3 a:hover {color: #888888}
@@ -102,10 +102,12 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav .share_box a {margin-left: 18px}
 #left-side #side-nav .chat_box {height: 41px; background-image: url(../images/system/bg/front/RChatBG.jpg); margin-top: 0px}
 #left-side #side-nav .gossip_box {height: 370px; background-image: url(../images/system/bg/front/RGossipBG.jpg); margin-top: 14px}
-#left-side #side-nav .gossip_box #gossip_container {height: 310px; width: 162px}
+#left-side #side-nav .gossip_box .header_w_image {margin-bottom: 10px}
+#left-side #side-nav .gossip_box hr {margin: 15px 16px 13px}
+#left-side #side-nav .gossip_box #gossip_container {height: 300px; width: 162px}
 #left-side #side-nav .gossip_box .jScrollPaneContainer {margin-left: 0px; width: 162px; height: 320px}
 #left-side #side-nav .gossip_box .jScrollPaneContainer ol {width: 162px}
-#left-side #side-nav .gossip_box .jScrollPaneContainer ol li {margin: 0px 35px 0 10px; padding-right: 15px}
+#left-side #side-nav .gossip_box .jScrollPaneContainer ol li {margin: 10px 35px 0 10px; padding-right: 15px}
 #left-side #side-nav .market_box {height: 205px; background-image: url(../images/system/bg/front/RMarketBG.jpg); margin-top: 14px}
 #left-side #side-nav .market_box h3 {text-align: center; width: 100%}
 #left-side #side-nav .market_box h3.download {margin: -5px 0 0 0}

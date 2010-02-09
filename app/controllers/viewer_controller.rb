@@ -33,7 +33,7 @@ class ViewerController < ApplicationController
 		end
 		
 		if @page.name == "home"
-			@posts = Post.find(:all)
+			@posts = Post.find(:all, :order => "id DESC")
 		end
 
     if @page.metatag
