@@ -50,6 +50,7 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #lower_pagewrapper #content #subcontent td {border-bottom: 1px solid black; vertical-align: middle}
 #lower_pagewrapper #content #subcontent td table.nolines td {border: 0px none}
 #lower_pagewrapper #pre-footer {margin: 0px auto; width: 100%; height: 304px; background-image: url(/images/system/bg/front/preFooter.jpg)}
+#lower_pagewrapper #pre-footer #shine {height: 22px; width: 100%; background-image: url(/images/system/bg/front/shine.jpg); background-position: -11px 0; margin: 0px auto}
 #lower_pagewrapper #pre-footer #column_container {width: 1000px; margin: 0px auto}
 #lower_pagewrapper #pre-footer ul.columns {margin-top: 20px; list-style: none; float: left; margin-left: 21px; padding-left: 5px; width: 223px; border-left: 1px solid #d4d4d4}
 #lower_pagewrapper #pre-footer ul.columns li {color: white; font-size: 10px}
@@ -85,6 +86,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav .relocating {margin: 0px}
 #left-side #side-nav div.toolset {margin-top: 14px}
 #left-side #side-nav .left_tool {width: 162px; background: url(/images/system/bg/front/left_tool.jpg); margin-top: 0px; float: left}
+#left-side #side-nav .left_tool .header_w_image {margin-top: 10px}
 #left-side #side-nav .left_tool h3 {margin-left: 15px}
 #left-side #side-nav .left_tool h3 a {text-decoration: none; color: #E13939}
 #left-side #side-nav .left_tool h3 a:hover {color: #888888}
@@ -96,9 +98,18 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav .left_tool ul li span {float: left; font-size: 12px; font-style: italic; width: 100px; margin: 2px 0 0 13px; color: #818181}
 #left-side #side-nav .left_tool ul li span a {color: #888888}
 #left-side #side-nav .left_tool ul li span a:hover {color: #E13939}
-#left-side #side-nav .jScrollPaneContainer {margin-left: 0px; width: 162px; height: 850px}
-#left-side #side-nav .jScrollPaneContainer ol {width: 162px}
-#left-side #side-nav .jScrollPaneContainer ol li {margin: 0px 30px 0 15px}
+#left-side #side-nav .share_box {height: 76px; background-image: url(../images/system/bg/front/share.jpg); margin-top: 14px}
+#left-side #side-nav .share_box a {margin-left: 18px}
+#left-side #side-nav .chat_box {height: 41px; background-image: url(../images/system/bg/front/RChatBG.jpg); margin-top: 14px}
+#left-side #side-nav .gossip_box {height: 370px; background-image: url(../images/system/bg/front/RGossipBG.jpg); margin-top: 14px}
+#left-side #side-nav .gossip_box #gossip_container {height: 310px; width: 162px}
+#left-side #side-nav .gossip_box .jScrollPaneContainer {margin-left: 0px; width: 162px; height: 320px}
+#left-side #side-nav .gossip_box .jScrollPaneContainer ol {width: 162px}
+#left-side #side-nav .gossip_box .jScrollPaneContainer ol li {margin: 0px 35px 0 10px; padding-right: 15px}
+#left-side #side-nav .market_box {height: 205px; background-image: url(../images/system/bg/front/RMarketBG.jpg); margin-top: 14px}
+#left-side #side-nav .market_box h3 {text-align: center; width: 100%}
+#left-side #side-nav .market_box h3.download {margin: -5px 0 0 0}
+#left-side #side-nav .market_box h3.download span.title a {text-transform: capitalize}
 #left-side #side-nav ul.submenu {padding: 0px; margin: 0px; float: left; width: 170px}
 #left-side #side-nav ul.submenu li {height: 24px; width: 151px; background: url(/images/system/buttons/submenu.jpg); margin: 0 0 0px 5px; padding: 2px 0 0 10px; background-repeat: no-repeat; color: white}
 #left-side #side-nav ul.submenu li a {color: white}

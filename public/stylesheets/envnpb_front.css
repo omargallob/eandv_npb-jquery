@@ -54,6 +54,7 @@ body span.right { float: right; font-size: 11px; line-height: 18px; font-style: 
 #lower_pagewrapper #content #subcontent td { border-bottom: 1px solid black; vertical-align: middle; }
 #lower_pagewrapper #content #subcontent td table.nolines td { border: 0px none; }
 #lower_pagewrapper #pre-footer { margin: 0px auto; width: 100%; height: 304px; background-image: url(/images/system/bg/front/preFooter.jpg); }
+#lower_pagewrapper #pre-footer #shine { height: 22px; width: 100%; background-image: url(/images/system/bg/front/shine.jpg); background-position: -11px 0; margin: 0px auto; }
 #lower_pagewrapper #pre-footer #column_container { width: 1000px; margin: 0px auto; }
 #lower_pagewrapper #pre-footer ul.columns { margin-top: 20px; list-style: none; float: left; margin-left: 21px; padding-left: 5px; width: 223px; border-left: 1px solid #d4d4d4; }
 #lower_pagewrapper #pre-footer ul.columns li { color: white; font-size: 10px; }
