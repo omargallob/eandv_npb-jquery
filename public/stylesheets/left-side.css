@@ -32,8 +32,8 @@
 #left-side #side-nav .gossip_box { height: 370px; background-image: url(../images/system/bg/front/RGossipBG.jpg); margin-top: 14px; }
 #left-side #side-nav .gossip_box .header_w_image { margin-bottom: 10px; }
 #left-side #side-nav .gossip_box hr { margin: 15px 16px 13px; }
-#left-side #side-nav .gossip_box #gossip_container { height: 300px; width: 162px; }
-#left-side #side-nav .gossip_box .jScrollPaneContainer { margin-left: 0px; width: 162px; height: 320px; }
+#left-side #side-nav .gossip_box #gossip_container { height: 275px; width: 162px; }
+#left-side #side-nav .gossip_box .jScrollPaneContainer { margin-left: 0px; width: 162px; }
 #left-side #side-nav .gossip_box .jScrollPaneContainer ol { width: 162px; }
 #left-side #side-nav .gossip_box .jScrollPaneContainer ol li { margin: 10px 35px 0 10px; padding-right: 15px; }
 #left-side #side-nav .market_box { height: 205px; background-image: url(../images/system/bg/front/RMarketBG.jpg); margin-top: 14px; }
