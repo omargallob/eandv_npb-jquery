@@ -54,13 +54,14 @@
 	</div>
 	<% if @page.name == "home" %>
 	<div id="news">
-			<div id="main_top" class="main_border ">	</div>
+			
 			<h1 class="title">Recent News</h1>
-		
-			<ol id="blog">	
-			<%= render :partial => "shared/post", :collection => @posts %>
-			</ol>
-			<div id="main_bottom" class="main_border">	</div>
+			<hr>
+			<div id="blog_container">
+				<ol id="blog">	
+				<%= render :partial => "shared/post", :collection => @posts %>
+				</ol>
+			</div>
 	</div>
 	<% end %>
 </div>
@@ -124,6 +125,7 @@ jQuery(document).ready(function() {
 
 		onfocus_forms();
 		$('#gossip_container').jScrollPane({scrollbarWidth:17,showArrows:true});
+		$('#blog_container').jScrollPane({scrollbarWidth:17,showArrows:true});
  	<% end %>
 	$("#main_bottom").appendTo($("#main"));
 
