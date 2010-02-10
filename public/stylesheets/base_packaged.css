@@ -323,7 +323,7 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #schools ul.school li.title i {font-weight: normal}
 #right-column #schools ul.school li.map {width: 45px; height: 21px; background-image: url(/images/system/buttons/schoolsmap.jpg); color: white; font-size: 12px; line-height: 21px}
 #right-column #schools ul.school li.map span {margin: 0 0 0 8px; text-transform: uppercase}
-#right-column #eanvvip {width: 302px; height: 159px; background: url(/images/system/bg/front/ev_vip_bg.jpg); float: left; margin: 14px 0px 0px 0px}
+#right-column #eanvvip {width: 302px; height: 159px; background: url(/images/system/bg/front/ev_vip_bg.jpg); float: left; margin: 14px 0px 14px 0px}
 #right-column #eanvvip p {margin: 50px; color: white; text-align: center; font-size: 14px; line-height: 18px; font-style: italic}
 #right-column #marketreport {background: url(/images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px}
 #right-column #marketreport p {margin: 15px 80px; float: left; text-align: center}
