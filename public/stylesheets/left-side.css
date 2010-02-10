@@ -62,13 +62,13 @@
 #left-side #main.properties { width: 442px; background: url(/images/system/bg/front/main_properties.jpg); margin-left: 0px; }
 #left-side #main.featured { background: black; }
 #left-side #main.featured .top { background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px; }
+#left-side #main.featured .bottom { background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px; margin-top: 15px; }
 #left-side #main.featured p { color: white; }
-#left-side #main.featured .bottom { background: black; }
 #left-side #main.featured h1 { padding: 0px; margin: -24px 0 0 14px; float: left; }
 #left-side #main.featured #property_header p.address { background: url(/images/system/bg/front/FeaturedH2BG.jpg); background-repeat: no-repeat; }
 #left-side #main.featured #facility_list { background: url(/images/system/bg/front/FeaturedFacilitiesH.jpg); }
-#left-side #main.featured #facility_list .top { background: url(/images/system/bg/front/FeaturedFacilitiesBGTop.jpg); margin: 0px; }
-#left-side #main.featured #facility_list .bottom { background: url(/images/system/bg/front/FeaturedFacilitiesBGBottom.jpg); }
+#left-side #main.featured #facility_list .top { background: url(/images/system/bg/front/FeaturedFacilitiesBGTop.jpg); margin: 0px; height: 8px; }
+#left-side #main.featured #facility_list .bottom { background: url(/images/system/bg/front/FeaturedFacilitiesBGBottom.jpg); height: 8px; }
 #left-side #services { width: 442px; background: url(/images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px; }
 #left-side #services img { margin: 5px 20px; }
 #left-side #services ul { list-style: none; margin: 0 0 0 -27px; }
@@ -90,6 +90,11 @@
 #left-side #news ol#blog li h6 span { color: #888888; }
 #left-side #news ol#blog li p { margin: 5px 24px 0px; font-style: italic; font-family: "Georgia"; float: left; }
 #left-side #main { width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
+#left-side #main #comunicate { width: 136px; height: 45px; float: left; margin-left: 24px; }
+#left-side #main #comunicate a { color: white; text-decoration: none; float: left; text-align: center; margin-top: 10px; }
+#left-side #main #comunicate a:hover { color: #E13939; }
+#left-side #main #comunicate a.chat { height: 21px; width: 56px; background: url(/images/system/buttons/FeaturedChatBtn.jpg); }
+#left-side #main #comunicate a.contact { height: 22px; width: 64px; background: url(/images/system/buttons/FeaturedcontactBtn.jpg); }
 #left-side #main ol.staff { list-style-type: none; }
 #left-side #main ol.staff li img { float: left; margin: 15px 10px 5px 35px; }
 #left-side #main ol.staff li h1 { padding-bottom: 0px; }
