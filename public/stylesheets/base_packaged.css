@@ -138,9 +138,9 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main.featured .bottom {background: black}
 #left-side #main.featured h1 {padding: 0px; margin: -24px 0 0 14px; float: left}
 #left-side #main.featured #property_header p.address {background: url(/images/system/bg/front/FeaturedH2BG.jpg); background-repeat: no-repeat}
-#left-side #main.featured #facility_list {background: grey}
-#left-side #main.featured #facility_list .top {background: url(/images/system/bg/front/FeaturedFaciltiesBGTop.jpg)}
-#left-side #main.featured #facility_list .bottom {background: url(/images/system/bg/front/FeaturedFaciltiesBGTop.jpg)}
+#left-side #main.featured #facility_list {background: url(/images/system/bg/front/FeaturedFacilitiesH.jpg)}
+#left-side #main.featured #facility_list .top {background: url(/images/system/bg/front/FeaturedFacilitiesBGTop.jpg); margin: 0px}
+#left-side #main.featured #facility_list .bottom {background: url(/images/system/bg/front/FeaturedFacilitiesBGBottom.jpg)}
 #left-side #services {width: 442px; background: url(/images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px}
 #left-side #services img {margin: 5px 20px}
 #left-side #services ul {list-style: none; margin: 0 0 0 -27px}
