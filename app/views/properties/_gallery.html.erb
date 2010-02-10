@@ -8,6 +8,6 @@
 		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/Final2.swf", "gcontainer", "627", "382", "9", "/swf/expressInstall.swf", flashvars, attributes);
 </script>
 
-<div id="property_gallery">
+<div id="property_gallery" class="<%= 'featured' if @property.featured %>">
 	<div id="gcontainer"></div>
 </div>

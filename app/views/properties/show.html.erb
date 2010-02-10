@@ -6,57 +6,18 @@
 		<%= render :partial => "shared/tool_set" %>
 	</div>
 
-	<div id="main" class="property">
+	<div id="main" class="property  <%= 'featured' if @property.featured %>">
 		<div class="top">	</div>
 
-		<h3><span class="title">property</span></h3>
+		<h1  class="title">
+		<% if @property.featured %>
+		Featured	property
+		<% else %>
+		property
+		<% end %>
+		 </h1>
 		<hr />
-		<div id="property_header">
-			<h1><%= @property.title %></h1>
-			<p class="code">Property code: #CA8900-<%= @property.id %></p>
-			<p class="address"><%= @property.location.region %>,&nbsp;<%= @property.location.county %> county </p>
-			<p class="state"><strong><%= "CA" %></strong> - <%= @property.location.country.title %> </p>
-			<p class="price"><%= number_to_currency(@property.price,:precision => 0) %> </p>
-			<ul class="facility">
-				<li class="number"><p> <%= @property.bedrooms %></p></li>
-				<li class="bed"></li>
-				<li class="number"><p> <%= @property.bathrooms %></p></li>
-				<li class="bath"></li>
-				<li class="number"><p><%= @property.garage %></p></li>
-				<li class="garage"></li>
-			</ul>
-		</div>
-		<hr/>
-		<div id="property_content">
-			<%= @property.description%>
-		</div>
-		<div id="facility_list">
-			<div class="top"></div>
-			<h3><span class="title">facilities</span></h3>
-			<ul>
-			<% for facility in @property.facilities %>
-				<li><%= facility.title %></li>
-			<% end %>
-			</ul>
-			<div class="bottom"></div>		
-		</div>
-		<hr />
-		<div class="further">
-			<p>Further details of this property are available exclusively through E&V.</p>
-		</div>
-		<hr />
-		<div class="further">
-			<p>Land size: <%= @property.plot %> ft.</p>
-		
-			<p>Built size: <%= @property.built %> f.t</p>
-		</div>
-		<hr />
-	 	<%= @map.div(:width => 419, :height => 317) %>
-		<hr />
-		<div class="further">
-			<h3>You may also be interested</h3>		
-		</div>
-		<%= render :partial => "youmaylike" %>
+			<%= render :partial => "property", :object => @property %>
 		<div class="bottom">	</div>
 
 	</div>
