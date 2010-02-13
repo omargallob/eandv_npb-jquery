@@ -29,7 +29,7 @@ module WillPaginate
       :outer_window   => 1, # links around beginning and end
       :separator      => ' ', # single space is friendly to spiders and non-graphic browsers
       :param_name     => :page,
-      :params         => nil,
+      :params         => :sort=>params[:sort]
       :renderer       => 'WillPaginate::LinkRenderer',
       :page_links     => true,
       :container      => true
