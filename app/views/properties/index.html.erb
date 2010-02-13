@@ -14,14 +14,15 @@
 			<li id="price_order"></li>
 			<li id="date_order"></li>
 			<li id="order"></li>
+			<li id="page"><%= params[:page] || 1 %></li>
+			<li id="sort_by"><%= params[:sort_by] %></li>
 		</ul>
 		<hr />
 		<ul id="view_options">
 			<li class="first"><span>View Options</span></li>
 			<li class="buy"><a href="#" class="filter">Buy</a></li>
 			<li class="rent"><a href="#" class="filter">Rent</a></li>
-			<li class="date"><a href="#" class="sort">Date </a><%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %></li>
-			<li class="price"><a href="#" class="sort" style="margin-left:13px">Price </a></li>
+			<li class="price"><a href="#" class="sort" style="margin-left:13px">Price </a><%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %></li>
 		</ul>
 		<hr />
 		<%= render :partial => "properties_holder", :object => @properties %>
@@ -29,7 +30,9 @@
 			<p>
 				<span class="left"><%= @properties.size %> results</span>
 			</p>	
-			<%= will_paginate @properties %>
+			<div id="pagination_holder">
+				<%= will_paginate @properties %>
+			</div>
 		</div>
 		<div class="bottom">	</div>
 	</div>

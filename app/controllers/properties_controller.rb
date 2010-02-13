@@ -7,7 +7,9 @@ class PropertiesController < ApplicationController
 		pickup_properties(@search_query.id)
     #@properties.sort!{|x| x.featured }
 		#@properties.sort!{|x| x.featured == true }
-		@properties = @properties.paginate :page => params[:page], :per_page => 10     
+
+		@properties.sort!{|x,y| x.price <=> y.price}	
+		@properties = @properties.paginate :page => params[:page], :per_page => 10     			
 		 @page = Page.find_by_name('properties')
       if @page.metatag
          set_meta_tags :title =>  @page.title,
@@ -162,7 +164,8 @@ class PropertiesController < ApplicationController
   
     
     if params[:search_query][:referal]=="search"
-        pickup_properties(params[:search_query][:id])    
+        pickup_properties(params[:search_query][:id]) 
+			 # @properties = @properties.paginate :page => params[:page], :per_page => 10        
          case @sort_by
             when "price"
               case @order
@@ -179,8 +182,10 @@ class PropertiesController < ApplicationController
                   @properties.sort!{|x,y| y.id <=> x.id}
               end
           end
+			#@properties = @properties.paginate :page => params[:page], :per_page => 10     		
     else
  				pickup_properties(156)    
+			  
          case @sort_by
             when "price"
               case @order
@@ -197,6 +202,7 @@ class PropertiesController < ApplicationController
                   @properties.sort!{|x,y| y.id <=> x.id}
               end
           end
+			#@properties = @properties.paginate :page => params[:page], :per_page => 10     		
     end
     
     if params[:active]
@@ -209,7 +215,7 @@ class PropertiesController < ApplicationController
       end
     
     end
-   
+   	@properties = @properties.paginate :page => params[:page], :per_page => 10   
   end
   
   
