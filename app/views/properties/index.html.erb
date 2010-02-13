@@ -31,8 +31,10 @@
 		<div id="result_info">
 			<p>
 				<span class="left"><%= @properties.size %> results</span>
-				<span class="right"></span>
-			</p>
+			</p>	
+			<%= will_paginate @properties %>
+			
+			
 		</div>
 		<div class="bottom">	</div>
 	</div>

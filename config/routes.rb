@@ -84,8 +84,9 @@ ActionController::Routing::Routes.draw do |map|
   map.partners '/partners.xml', :controller => "rss", :action => "partners"
 	map.similar '/properties/:id/similar.xml', :controller => "rss", :action => "similar"
 	map.view_blog '/blog/:title', :controller => "blog", :action => "show"
+	map.properties_page '/properties/page/:page', :controller=>"properties", :action => "index"
 	#map.connect '/blog/:year/:month/:day', :controller => "blog", :action => "show", :year => /\d{4/},:month => /\d{1,2/},:year => /\d{4/},
- # 
+  # 
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

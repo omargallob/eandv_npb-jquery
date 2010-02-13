@@ -5,7 +5,8 @@ class PropertiesController < ApplicationController
 
     #@properties = Property.find(:all,:order => 'created_at')
 	  @search_query = SearchQuery.find_by_id(156)
-		pickup_properties(@search_query.id)    
+		pickup_properties(@search_query.id)
+		@properties = @properties.paginate :page => params[:page], :per_page => 10     
 		 @page = Page.find_by_name('properties')
       if @page.metatag
          set_meta_tags :title =>  @page.title,

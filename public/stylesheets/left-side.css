@@ -159,6 +159,9 @@
 #left-side #main #result_info h5 { margin-top: 48px; width: 100%; color: red; font-style: italic; }
 #left-side #main #result_info h5 span.left { float: left; }
 #left-side #main #result_info h5 span.right { float: right; }
+#left-side #main #result_info .pagination { width: 135px; margin-right: 0px; float: right; }
+#left-side #main #result_info .pagination span { float: left; margin: 0 1px; }
+#left-side #main #result_info .pagination a { float: left; margin: 0 1px; }
 #left-side #main .property { height: 107px; width: 426px; float: left; margin-left: 5px; background: transparent; }
 #left-side #main .property .image { height: 90px; width: 120px; float: left; margin: 9px; background: transparent; }
 #left-side #main .property .text { margin: 0px; width: 282px; height: 21px; float: left; margin-bottom: 1px; }
