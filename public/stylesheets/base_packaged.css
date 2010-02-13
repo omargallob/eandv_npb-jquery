@@ -141,7 +141,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main.featured {background: black}
 #left-side #main.featured .top {background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px}
 #left-side #main.featured .bottom {background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px; margin-top: 15px}
-#left-side #main.featured p {color: white}
+#left-side #main.featured p {color: #5d5d5d}
 #left-side #main.featured h1 {padding: 0px; margin: -24px 0 0 14px; float: left}
 #left-side #main.featured #property_header p.address {background: url(/images/system/bg/front/FeaturedH2BG.jpg); background-repeat: no-repeat}
 #left-side #main.featured #facility_list {background: url(/images/system/bg/front/FeaturedFacilitiesH.jpg)}
