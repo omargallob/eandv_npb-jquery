@@ -73,6 +73,7 @@ class PropertiesController < ApplicationController
     @search_query = SearchQuery.new(params[:search_query])
     @search_query.save
     pickup_properties(@search_query.id)
+		@properties = @properties.paginate :page => params[:page], :per_page => 10     
   end
 
   def filter
