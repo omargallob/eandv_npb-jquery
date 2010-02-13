@@ -263,10 +263,16 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main .property .extra ul.facility li.viewproperty a {font-size: 10px; color: red; float: left; margin: 1px 0 0 8px; font-variant: small-caps; text-decoration: none}
 #left-side #main .property .price {height: 18px}
 #left-side #main .property .price p {margin: 0 0 0 5px}
-#left-side #main .featured {background: url(../images/system/bg/front/ListingFeaturedBG.jpg); background-repeat: no-repeat; height: 117px; width: 430px}
+#left-side #main .featured {background: url(../images/system/bg/front/ListingFeaturedBG.jpg); background-repeat: no-repeat; height: 114px; width: 430px}
+#left-side #main .featured .title {margin-top: 11px}
 #left-side #main .featured .image {margin: 16px 7px 0 13px}
 #left-side #main .featured .address {background: transparent}
 #left-side #main .featured .extra {background: transparent}
+#left-side #main .featured .extra ul.facility li.number {background: transparent}
+#left-side #main .featured .extra ul.facility li.number p {margin: 0 0 0 6px}
+#left-side #main .featured .extra ul.facility li.bed {background: transparent}
+#left-side #main .featured .extra ul.facility li.bath {background: transparent}
+#left-side #main .featured .extra ul.facility li.garage {background: transparent}
 #left-side #main .featured .ribbon {background: url(../images/system/bg/front/FeaturedRibbon.gif); background-repeat: no-repeat; height: 62px; width: 62px; position: absolute; margin: 0px}
 #left-side #main .testing {background: url(../images/system/bg/front/featBG.jpg)}
 #left-side #main hr {width: 409px; height: 1px; text-align: center; background-color: #e1e1e1; border: 0px none; float: left; margin-left: 16px}
