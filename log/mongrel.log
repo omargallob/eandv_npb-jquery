@@ -3670,3 +3670,5 @@ Mon Feb 08 01:16:27 +0100 2010: Error calling Dispatcher.dispatch #<SyntaxError:
 	from /home/omar/Proyectos/EandV/npb/app/controllers/properties_controller.rb:9
 /home/omar/Proyectos/EandV/npb/app/controllers/properties_controller.rb:9: warning: multiple values for a block parameter (2 for 1)
 	from /home/omar/Proyectos/EandV/npb/app/controllers/properties_controller.rb:9
+/home/omar/Proyectos/EandV/npb/app/controllers/properties_controller.rb:9: warning: multiple values for a block parameter (2 for 1)
+	from /home/omar/Proyectos/EandV/npb/app/controllers/properties_controller.rb:9
