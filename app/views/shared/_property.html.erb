@@ -23,5 +23,6 @@
 			<li class="viewproperty"><%= link_to "View Property", property_path(property) %></li>
 		</ul>
 	</div>
+	<% if property.featured %><div class="ribbon"></div><% end %>
 </div>
 <hr/>
