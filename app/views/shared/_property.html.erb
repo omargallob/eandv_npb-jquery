@@ -1,4 +1,4 @@
-<div id="property_<%= property.id %>" class="property">
+<div id="property_<%= property.id %>" class="property <%= 'featured' if property.featured %>">
 	<div class="image">
 		<%= image_tag property.property_thumbnail.photo(:pagesize) if property.property_thumbnail %>
 	</div>

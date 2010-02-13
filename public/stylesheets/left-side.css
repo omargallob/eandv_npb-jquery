@@ -104,10 +104,13 @@
 #left-side #news ol#blog li p { margin: 5px 24px 0px; font-style: italic; font-family: "Georgia"; float: left; }
 #left-side #main { width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
 #left-side #main #comunicate { width: 136px; height: 45px; float: left; margin-left: 24px; }
-#left-side #main #comunicate a { color: white; text-decoration: none; float: left; text-align: center; margin-top: 10px; }
-#left-side #main #comunicate a:hover { color: #E13939; }
-#left-side #main #comunicate a.chat { height: 21px; width: 56px; background: url(/images/system/buttons/FeaturedChatBtn.jpg); }
-#left-side #main #comunicate a.contact { height: 22px; width: 64px; background: url(/images/system/buttons/FeaturedcontactBtn.jpg); }
+#left-side #main #comunicate table { margin: 10px auto; padding: 0px; }
+#left-side #main #comunicate table td { padding: 0px; text-align: center; }
+#left-side #main #comunicate table td a { color: white; text-decoration: none; margin: 0px; float: none; }
+#left-side #main #comunicate table td a:hover { color: #E13939; }
+#left-side #main #comunicate table td.chat { height: 21px; width: 56px; background: url(/images/system/buttons/FeaturedChatBtn.jpg); background-repeat: no-repeat; }
+#left-side #main #comunicate table td.contact { height: 22px; width: 64px; margin-left: 15px; background: url(/images/system/buttons/FeaturedcontactBtn.jpg); }
+#left-side #main #comunicate table td.spacer { width: 10px; }
 #left-side #main ol.staff { list-style-type: none; }
 #left-side #main ol.staff li img { float: left; margin: 15px 10px 5px 35px; }
 #left-side #main ol.staff li h1 { padding-bottom: 0px; }
@@ -188,7 +191,9 @@
 #left-side #main .property .extra ul.facility li.viewproperty a { font-size: 10px; color: red; float: left; margin: 1px 0 0 8px; font-variant: small-caps; text-decoration: none; }
 #left-side #main .property .price { height: 18px; }
 #left-side #main .property .price p { margin: 0 0 0 5px; }
-#left-side #main .featured { background: url(../images/system/bg/front/featured_property_bg.jpg); }
+#left-side #main .featured { background: url(../images/system/bg/front/ListingFeaturedBG.jpg); background-repeat: no-repeat; height: 117px; width: 430px; }
+#left-side #main .featured .address { background: transparent; }
+#left-side #main .featured .extra { background: transparent; }
 #left-side #main .testing { background: url(../images/system/bg/front/featBG.jpg); }
 #left-side #main hr { width: 409px; height: 1px; text-align: center; background-color: #e1e1e1; border: 0px none; float: left; margin-left: 16px; }
 #left-side #main h3 { margin: 13px 0 0 34px; }

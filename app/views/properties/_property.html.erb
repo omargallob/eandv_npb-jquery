@@ -28,8 +28,13 @@
 			<div class="bottom"></div>		
 		</div>
 		<div id="comunicate">
-			<%= link_to "chat","/contact?iframe=true&width=560&height=600" ,:rel=>"prettyPhoto", :class=>"chat" %>
-			<%= link_to "contact","/contact?iframe=true&width=560&height=600" ,:rel=>"prettyPhoto", :class=>"contact" %>
+			<table>
+				<tr>
+					<td class="chat">			<%= link_to "chat","/contact?iframe=true&width=560&height=600" ,:rel=>"prettyPhoto" %></td>
+					<td class="spacer"> </td>
+					<td class="contact">	<%= link_to "contact","/contact?iframe=true&width=560&height=600" ,:rel=>"prettyPhoto" %></td>
+				</tr>	
+			</table>	
 		</div>
 		<hr />
 		<div class="further">
