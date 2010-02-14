@@ -22,15 +22,22 @@
 			<li class="first"><span>View Options</span></li>
 			<li class="buy">
 				<% if params[:filter]=="buy"%>
-					<%= link_to "Buy", properties_filter_path("buy"), :class => "active" %>				
+					<%= link_to "Buy", "#", :class => "active" %>				
 				<% else %>
 					<%= link_to "Buy", properties_filter_path("buy")  %>				
 				<% end %>
 			<li class="rent">
 				<% if params[:filter]=="rent"%>
-					<%= link_to "Rent", properties_filter_path("rent"), :class => "active" %>				
+					<%= link_to "Rent", "#", :class => "active" %>				
 				<% else %>
 					<%= link_to "Rent", properties_filter_path("rent")  %>				
+				<% end %>		
+			</li>
+			<li class="price">
+				<% if params[:filter]=="featured"%>
+					<%= link_to "Featured", "#", :class => "active" %>				
+				<% else %>
+					<%= link_to "Featured", featured_path  %>				
 				<% end %>		
 			</li>
 			<li class="price">
@@ -44,13 +51,6 @@
 				<% else %>
 					<%= image_tag "system/buttons/Filters/Filter_Arrow_down.jpg" %>
 				<% end %>
-			</li>
-			<li class="price">
-				<% if params[:filter]=="featured"%>
-					<%= link_to "Featured", properties_filter_path("featured"), :class => "active" %>				
-				<% else %>
-					<%= link_to "Featured", properties_filter_path("featured")  %>				
-				<% end %>		
 			</li>
 		</ul>
 		<hr />
