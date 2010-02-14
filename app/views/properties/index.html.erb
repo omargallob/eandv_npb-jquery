@@ -21,9 +21,17 @@
 		<ul id="view_options">
 			<li class="first"><span>View Options</span></li>
 			<li class="buy">
-				<%= link_to "Buy", properties_filter_path("buy")%>				
+				<% if params[:filter]=="buy"%>
+					<%= link_to "Buy", properties_filter_path("buy"), :class => "active" %>				
+				<% else %>
+					<%= link_to "Buy", properties_filter_path("buy")  %>				
+				<% end %>
 			<li class="rent">
-				<%= link_to "Rent", properties_filter_path("rent")%>				
+				<% if params[:filter]=="rent"%>
+					<%= link_to "Rent", properties_filter_path("rent"), :class => "active" %>				
+				<% else %>
+					<%= link_to "Rent", properties_filter_path("rent")  %>				
+				<% end %>		
 			</li>
 			<li class="price">
 				<% unless params[:filter] %>
