@@ -290,19 +290,6 @@ jQuery.fn.filter_options = function() {
      'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
    });
   
-  $("#view_options li a.filter").click(function (){  
-    if($(this).hasClass("active")){
-      $(this).removeClass("active");
-      var params = "unsort_by="+$(this).html()+$("#search_options").pickup_search_query()+$(this).pickup_active_sort();
-      $.get("/properties/unfilter",params, null, "script");
-    }else{
-      $(this).addClass("active");
-      var params = "sort_by="+$(this).text()+$("#search_options").pickup_search_query()+$(this).pickup_active_sort();
-     $.get("/properties/filter",params, null, "script");  
-    }
-    return false;
-  });
-  
 
   jQuery.fn.pickup_active_filter = function() {
     active_filters = $("#view_options li a.active");

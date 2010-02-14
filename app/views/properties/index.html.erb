@@ -20,14 +20,21 @@
 		<hr />
 		<ul id="view_options">
 			<li class="first"><span>View Options</span></li>
-			<li class="buy"><a href="#" class="filter">Buy</a></li>
-			<li class="rent"><a href="#" class="filter">Rent</a></li>
+			<li class="buy">
+				<%= link_to "Buy", properties_filter_path("buy")%>				
+			<li class="rent">
+				<%= link_to "Rent", properties_filter_path("rent")%>				
+			</li>
 			<li class="price">
-				<%= link_to "Price", properties_order_path(@order) %>
-				<% if @order == "des" %>				
-				<%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %>
+				<% unless params[:filter] %>
+					<%= link_to "Price", properties_order_path(@order) %>
 				<% else %>
-				<%= image_tag "system/buttons/Filters/Filter_Arrow_down.jpg" %>
+					<%= link_to "Price", properties_filter_order_path(params[:filter],@order) %>
+				<% end %>
+				<% if @order == "des" %>				
+					<%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %>
+				<% else %>
+					<%= image_tag "system/buttons/Filters/Filter_Arrow_down.jpg" %>
 				<% end %>
 			</li>
 		</ul>
@@ -38,7 +45,7 @@
 				<span class="left"><%= @properties.size %> results</span>
 			</p>	
 			<div id="pagination_holder">
-				<%= will_paginate @properties %>
+				<%= will_paginate @properties, :params => {:filter => params[:filter]} %>
 			</div>
 		</div>
 		<div class="bottom">	</div>
