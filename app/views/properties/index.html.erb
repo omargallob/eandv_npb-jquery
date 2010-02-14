@@ -22,7 +22,14 @@
 			<li class="first"><span>View Options</span></li>
 			<li class="buy"><a href="#" class="filter">Buy</a></li>
 			<li class="rent"><a href="#" class="filter">Rent</a></li>
-			<li class="price"><a href="#" class="sort" style="margin-left:13px">Price </a><%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %></li>
+			<li class="price">
+				<%= link_to "Price", properties_order_path(@order) %>
+				<% if @order == "des" %>				
+				<%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %>
+				<% else %>
+				<%= image_tag "system/buttons/Filters/Filter_Arrow_down.jpg" %>
+				<% end %>
+			</li>
 		</ul>
 		<hr />
 		<%= render :partial => "properties_holder", :object => @properties %>

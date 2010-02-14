@@ -7,8 +7,13 @@ class PropertiesController < ApplicationController
 		pickup_properties(@search_query.id)
     #@properties.sort!{|x| x.featured }
 		#@properties.sort!{|x| x.featured == true }
-
-		@properties.sort!{|x,y| x.price <=> y.price}	
+		if params[:order]=="des"
+			@properties.sort!{|y,x| x.price <=> y.price}	
+			@order = "asc"	
+		else
+			@properties.sort!{|x,y| x.price <=> y.price}	
+			@order = "des"	
+		end		
 		@properties = @properties.paginate :page => params[:page], :per_page => 10     			
 		 @page = Page.find_by_name('properties')
       if @page.metatag
