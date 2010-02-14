@@ -45,6 +45,13 @@
 					<%= image_tag "system/buttons/Filters/Filter_Arrow_down.jpg" %>
 				<% end %>
 			</li>
+			<li class="price">
+				<% if params[:filter]=="featured"%>
+					<%= link_to "Featured", properties_filter_path("featured"), :class => "active" %>				
+				<% else %>
+					<%= link_to "Featured", properties_filter_path("featured")  %>				
+				<% end %>		
+			</li>
 		</ul>
 		<hr />
 		<%= render :partial => "properties_holder", :object => @properties %>
@@ -72,6 +79,7 @@
 <% content_for :script do %>
 <script type="text/javascript">
 $(document).ready(function() {
+	$('#atffc').remove();
 	$('#upper_pagewrapper').css("height","133px"); 
 	$('#lower_pagewrapper').addClass("large"); 
 	$('#content').css("height","100%"); 

@@ -74,6 +74,7 @@ ActionController::Routing::Routes.draw do |map|
       admin.update_gallery 'galleries/:id', :controller=>"galleries",:action => "update"
   end
   
+	map.featured '/featured', :controller => "properties", :action => "index", :filter => "featured"
   map.view_page ':name', :controller => 'viewer', :action => 'show'
   map.view_page_parent ':parent/:name', :controller => 'viewer', :action => 'show'
   map.feed_properties '/rss/properties.:format', :controller => 'properties', :action => 'feeds'
@@ -88,6 +89,7 @@ ActionController::Routing::Routes.draw do |map|
 	map.properties_order '/properties/order/:order', :controller => "properties", :action => "index"
 	map.properties_filter '/properties/filter/:filter', :controller => "properties", :action => "index"
 	map.properties_filter_order '/properties/filter/:filter/order/:order', :controller => "properties", :action => "index"
+	#map.featured '/properties/featured', :controller => "properties", :action => "index", :aux=>"featured"
 	#map.connect '/blog/:year/:month/:day', :controller => "blog", :action => "show", :year => /\d{4/},:month => /\d{1,2/},:year => /\d{4/},
   # 
   # The priority is based upon order of creation: first created -> highest priority.

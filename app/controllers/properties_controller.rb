@@ -13,6 +13,8 @@ class PropertiesController < ApplicationController
 			@properties.delete_if {|x| x.rental == false }
 			when "buy"
 			@properties.delete_if {|x| x.rental == true }		
+			when "featured"
+			@properties.delete_if {|x| x.featured == false }		
 		end	
 		if params[:order]=="des"
 			@properties.sort!{|y,x| x.price <=> y.price}	
@@ -88,6 +90,21 @@ class PropertiesController < ApplicationController
     @search_query = SearchQuery.new(params[:search_query])
     @search_query.save
     pickup_properties(@search_query.id)
+	case params[:filter]
+			when "rent"
+			@properties.delete_if {|x| x.rental == false }
+			when "buy"
+			@properties.delete_if {|x| x.rental == true }		
+			when "featured"
+			@properties.delete_if {|x| x.featured == false }		
+		end	
+		if params[:order]=="des"
+			@properties.sort!{|y,x| x.price <=> y.price}	
+			@order = "asc"	
+		else
+			@properties.sort!{|x,y| x.price <=> y.price}	
+			@order = "des"	
+		end
 		@properties = @properties.paginate :page => params[:page], :per_page => 10     
   end
 
