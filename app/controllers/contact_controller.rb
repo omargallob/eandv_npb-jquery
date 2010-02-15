@@ -2,6 +2,13 @@ class ContactController < ApplicationController
 layout "lightbox"
 
   def index
+		@interested_in = ["Buying","Selling"]
+		@property_types = Property.find(:all, :include => :type).map{|x| [x.type.title,x.type.id] }
+		#@countries = Country.find(:all).map.{|y| [y.id,y.title]}
+		@countries = Country.find(:all).map{|y| [ y.title, y.id]}
+		#@states = Location.find(:all).map{|z| [z.state]}
+		@states = Property.find(:all, :include => :location).map{|w| w.location.state}
+		@cities = Property.find(:all, :include => :location).map{|w| w.location.region}
   end
 
   def neighbourhood

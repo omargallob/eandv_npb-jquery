@@ -24,6 +24,14 @@ jQuery.fn.nice_fonts = function(){
 	   		color: 'white'
 	  	 }
 	 });
+	Cufon.replace('td span', {
+		   fontFamily: "GarmdITC BkCn BT",
+		   color: '#9d9d9d',
+		   fontSize: "14px",
+	  		hover: {
+	   		color: 'white'
+	  	 }
+	 });
 
 }
 

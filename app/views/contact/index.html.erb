@@ -30,27 +30,30 @@
 		<table id="column2">
 			<tr>
 				<td><h4>Interested in</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td><%= select("cform", "interested_in", @interested_in) %></td>
 			</tr>	
 			<tr>
 				<td><h4>property Type</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td><%= select("cform", "property_types", @property_types.uniq) %></td>
 			</tr>	
 			<tr>
 				<td><h4>Country</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td><%= select("cform", "country", @countries.uniq)%></td>
 			</tr>	
 			<tr>
 				<td><h4>State/Province</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td>
+	
+				<%= select("cform", "state", @states.uniq)  %>
+				</td>
 			</tr>	
 			<tr>
 				<td><h4>City</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td>		<%= select("cform", "city", @cities.uniq)  %></td>
 			</tr>	
 			<tr>
 				<td><h4>Beds</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td>	<%= select("cform", "beds", 1..8)  %><span> Baths</span><%= select("cform", "baths", 1..12)  %></td>
 			</tr>	
 			<tr>
 				<td><h4>Price Range</h4></td>
