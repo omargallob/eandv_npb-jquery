@@ -1,7 +1,82 @@
+<%= form_tag( :action => '#')%>
+<table id="contactform">
+	<tr>
+		<td>
+		<table id="column1">
+			<tr>
+				<td><h4>Name</h4></td>
+				<td> <%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Surname</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Telephone</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Email</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Confirm Email</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+		</table>
+
+		</td>
+		<td>
+		<table id="column2">
+			<tr>
+				<td><h4>Interested in</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>property Type</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Country</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>State/Province</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>City</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Beds</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Price Range</h4></td>
+				<td><%= text_field("cform", "name", :size => 20) %></td>
+			</tr>	
+		</table>
+		</td>
+	</tr>	
+</table>
+			<table id="row2">
+				<tr>
+					<td><h4>Message</h4></td>
+					<td><%= text_area("cform", "name", :rows => 6) %></td>
+			</table>
+<hr>
+<div id="mailing">
+<h3>MAILING LIST</h3>
+<p>Tick to Join our Mailing List and receive alert on new properties as they hit the market</p>
+</div>
+
+<%= submit_tag "submit" %>
+</form>
 <% content_for :script do %>
 <script type="text/javascript">
 jQuery(document).ready(function() {
-	
+	$(document).nice_fonts();
 });
 </script>
 <% end %>

@@ -12,7 +12,7 @@
  		google.load("jquery", "1.3.2");
   	google.load("jqueryui", "1.7.2");
 	</script>
-	<%# javascript_include_tag "_jrails","application" %>
+	<%= javascript_include_tag "forms" %>
 	<%# javascript_include_merged :secondary %>
 	<%# stylesheet_link_merged :base, :secondary %>
 	<%= stylesheet_link_tag "forms" %>
@@ -51,6 +51,7 @@
 		<div id="pagewrapper">
 			<div id="header">
 				<h1>Contact Form</h1>
+				<p>If your interested in one of our properties/services or have any questions you can <span>chat live</span> now, call us on <span>014256256</span> or fill out the contact form below and I or one of my agents will be in contact with you soon</p>
 			</div>
 			<div id="content">
 				<%= yield %>
