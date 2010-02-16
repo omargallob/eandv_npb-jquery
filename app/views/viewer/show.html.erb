@@ -74,6 +74,10 @@
 	<% if @page.name == "why" ||  params[:parent] == "why" %>
 		<%= render :partial => "shared/why" %>
 	<% end %>
+	<% if @page.name == "office" ||  params[:parent] == "office" %>
+		<%= render :partial => "shared/eandv_vip" %>
+		<%= render :partial => "shared/top5" %>
+	<% end %>
 	<% if @page.name == "home" %>
 	<%= render :partial => "shared/home_right" %>
 	
