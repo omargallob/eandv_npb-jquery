@@ -3760,3 +3760,11 @@ Sun Feb 14 16:43:00 +0100 2010: Error calling Dispatcher.dispatch #<SyntaxError:
 ** Rails signals registered.  HUP => reload (without restart).  It might not work well.
 ** Mongrel 1.1.5 available at 0.0.0.0:3001
 ** Writing PID file to log/mongrel.pid
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:61: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:63: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses

@@ -10,7 +10,7 @@ layout "lightbox"
 		#@states = Location.find(:all).map{|z| [z.state]}
 		@states = Property.find(:all, :include => :location).map{|w| w.location.state}
 		@cities = Property.find(:all, :include => :location).map{|w| w.location.region}
-		@contact = Contact.new
+		#@contact = Contact.new
   end
 
   def neighbourhood
