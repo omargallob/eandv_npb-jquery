@@ -112,8 +112,9 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav .gossip_box hr {margin: 15px 16px 13px}
 #left-side #side-nav .gossip_box #gossip_container {height: 275px; width: 162px}
 #left-side #side-nav .gossip_box .jScrollPaneContainer {margin-left: 0px; width: 162px}
-#left-side #side-nav .gossip_box .jScrollPaneContainer ol {width: 162px}
-#left-side #side-nav .gossip_box .jScrollPaneContainer ol li {margin: 10px 35px 0 10px; padding-right: 15px}
+#left-side #side-nav .gossip_box .jScrollPaneContainer ul#gossip {width: 162px; font-size: 10px; height: 100%}
+#left-side #side-nav .gossip_box .jScrollPaneContainer ul#gossip li {margin: 10px 35px 0 16px; padding-right: 15px; height: 100%}
+#left-side #side-nav .gossip_box .jScrollPaneContainer ul#gossip li span {width: 100%; color: #e2001a; margin: 0px; font-style: normal}
 #left-side #side-nav .market_box {height: 205px; background-image: url(../images/system/bg/front/RMarketBG.jpg); margin-top: 14px}
 #left-side #side-nav .market_box h3 {text-align: center; width: 100%}
 #left-side #side-nav .market_box h3.download {margin: -5px 0 0 0}
