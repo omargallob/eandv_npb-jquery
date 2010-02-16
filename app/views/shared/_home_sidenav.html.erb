@@ -29,6 +29,9 @@
 		Chat LIVE now </a></span>	</h3>
 	</div>
 </div>
+<% if controller.controller_name =="properties" and controller.action_name =="index" %>
+	<%= render :partial => "shared/advice" %>
+<% end %>
 <div class="left_tool relocating share_box">
 	<div class="header_w_image" ">
 	<h3><span class="title">
