@@ -43,6 +43,8 @@ layout "lightbox"
 		#Notifier.deliver_signup_newsletter(@contact)
 		mail = Notifier.create_signup_newsletter(params[:id])  # => a tmail object
 		Notifier.deliver(mail)
+		systemmail = Notifier.create_notify_contact_received(params[:id])  # => a tmail object
+		Notifier.deliver(systemmail)
 	end
 
 	private

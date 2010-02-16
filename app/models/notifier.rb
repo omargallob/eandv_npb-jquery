@@ -9,4 +9,18 @@ class Notifier < ActionMailer::Base
    content_type "text/html"
  end
 
+ def notify_contact_received(id)
+ 	 @contact = Contact.find_by_id(id)
+	 case @contact.interested_in
+			when "Buying"
+				recipients "omargallob@gmail.com"
+			when "Selling"
+				recipients "omargallob@gmail.com"
+	 end
+   from @contact.email
+   subject " E&V Contact received - {@contact.interested_in}"
+   body    :account => @contact
+   content_type "text/html"
+ end 
+
 end
