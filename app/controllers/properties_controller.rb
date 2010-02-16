@@ -7,7 +7,7 @@ class PropertiesController < ApplicationController
 		pickup_properties(@search_query.id)
     #@properties.sort!{|x| x.featured }
 		#@properties.sort!{|x| x.featured == true }
-
+    @faqs = Faq.find(:all)
 		case params[:filter]
 			when "rent"
 			@properties.delete_if {|x| x.rental == false }
@@ -37,6 +37,7 @@ class PropertiesController < ApplicationController
           format.html # show.html.erb
           format.xml  #{ render :xml => @properties }
         end
+
   end
 
   def show

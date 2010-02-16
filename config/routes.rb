@@ -69,6 +69,7 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :opening
      admin.resources :posts
      admin.resources :galleries
+     admin.resources :faq
      admin.resources :galleries, :collection => { :prioritize_uploads => :post }
       admin.resources :uploads
       admin.update_gallery 'galleries/:id', :controller=>"galleries",:action => "update"

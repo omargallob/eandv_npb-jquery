@@ -54,6 +54,11 @@
 	<% else %>
 	<li><h2><%= link_to 'posts'.upcase , admin_posts_path %></h2></li>
 	<% end %>
+	<% if controller.controller_name == "faq" %>
+	<li class="cufon-active"><h2><%= link_to 'Faq'.upcase , admin_faq_path,:class => "active" %></h2></li>
+	<% else %>
+	<li><h2><%= link_to 'faq'.upcase , admin_faq_path %></h2></li>
+	<% end %>
 	<% end %>
 <% end %>
 

@@ -1,0 +1,14 @@
+<tr>
+	<td><%= line.question %></td>
+	<td><%= line.answer %></td>
+	<td><%= line.user_name %></td>
+	<td>
+	<table class="nolines">
+		<tr>
+			<td><%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => t('options.show')), admin_faq_path(line) %></td><td>&nbsp;|&nbsp;</td>
+			<td><%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => t('options.edit')), edit_admin_faq_path(line) %></td><td>&nbsp;|&nbsp;</td>
+			<td><%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => t('options.delete')), admin_faq_path(line), :confirm => 'Are you sure?', :method => :delete %></td>
+		</tr>
+	</table>	
+	</td>
+</td>
