@@ -3,7 +3,8 @@
 		
 	</head>	
 	<body>
-			
+	<table cellspacing="0" cellpadding="0" border="1" width="100%">		
+	<tr><td>
 			<table cellspacing="0" cellpadding="0" border="1" width="600px" style="margin:0px auto; background:blue;">
 				<tr><td><%= @contact.name %>	<%= @contact.surname %> </td></tr>
 				<tr><td><%= @contact.telephone %> 	<%= @contact.email %></td></tr>
@@ -16,6 +17,8 @@
 				<tr><td><%= @contact.baths %></td></tr>
 				<tr><td><%= @contact.price_range %></td></tr>
 			</table>
+	</td></tr>
+	</table>
 		<p>
 			<%= @contact.message %>
 		</p>
