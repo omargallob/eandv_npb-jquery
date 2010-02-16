@@ -31,6 +31,7 @@
 #left-side #side-nav .why h3 { margin: 5px 0 0 5px; text-align: left; width: 90px; }
 #left-side #side-nav .why h3 a { margin-left: 0px; }
 #left-side #side-nav .chat_box { height: 41px; background-image: url(../images/system/bg/front/RChatBG.jpg); margin-top: 0px; }
+#left-side #side-nav .chat_box .header_w_image { margin-top: 10px; }
 #left-side #side-nav .global { margin-top: 14px; }
 #left-side #side-nav .global .header_w_image { margin: 0px; }
 #left-side #side-nav .global .header_w_image h3 { margin: 10px 0 0 5px; }
