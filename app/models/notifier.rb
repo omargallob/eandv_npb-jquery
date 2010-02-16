@@ -6,6 +6,7 @@ class Notifier < ActionMailer::Base
    from       "system@engelandvoelkersnewportbeach.com"
    subject    "Welcome to the E&V Newsletter"
    body       :account => @contact
+   content_type "text/html"
  end
 
 end

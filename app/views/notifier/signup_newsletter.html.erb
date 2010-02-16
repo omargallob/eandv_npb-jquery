@@ -1,20 +1,26 @@
-Hi <%= @contact.name %>,
-  Thanks for joining our service! Please check back often.
+<html>
+	<head>
+	</head>	
+	<body>
+		<p>	Hi <%= @contact.name %>,Thanks for joining our service! Please check back often.</p>
+		<ul>
+			<li><%= @contact.name %>	<%= @contact.surname %> </li>
+			<li><%= @contact.telephone %> 	<%= @contact.email %></li>
+			<li><%= @contact.interested_in %></li>
+			<li><%= @contact.property_type %></li>
+			<li><%= @contact.country %></li>
+			<li><%= @contact.state %></li>
+			<li><%= @contact.city %></li>
+			<li><%= @contact.beds %></li>
+			<li><%= @contact.baths %></li>
+			<li><%= @contact.price_range %></li>
+			<li><%= @contact.price_range %></li>
+		</ul>
+		<p>
+			<%= @contact.message %>
+		</p>
 
-your details:
-	<%= @contact.name %>	<%= @contact.surname %> \n
-		<%= @contact.telephone %> 	<%= @contact.email %>
-
-	<%= @contact.interested_in %>
-	<%= @contact.property_type %>
-	<%= @contact.country %>
-	<%= @contact.state%>
-	<%= @contact.city %>
-	<%= @contact.beds %>
-	<%= @contact.baths %>
-	<%= @contact.price_range %>
-	<%= @contact.message %>
-
-
+	</body>	
+</html>
 
 		
