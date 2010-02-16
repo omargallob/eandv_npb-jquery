@@ -2,23 +2,29 @@
 	<head>
 	</head>	
 	<body>
-		<p>	Hi <%= @contact.name %>,Thanks for joining our service! Please check back often.</p>
-		<ul>
-			<li><%= @contact.name %>	<%= @contact.surname %> </li>
-			<li><%= @contact.telephone %> 	<%= @contact.email %></li>
-			<li><%= @contact.interested_in %></li>
-			<li><%= @contact.property_type %></li>
-			<li><%= @contact.country %></li>
-			<li><%= @contact.state %></li>
-			<li><%= @contact.city %></li>
-			<li><%= @contact.beds %></li>
-			<li><%= @contact.baths %></li>
-			<li><%= @contact.price_range %></li>
-		</ul>
-		<p>
-			<%= @contact.message %>
-		</p>
+		
 
+	<table cellspacing="0" cellpadding="0" border="1" width="100%" style="margin:0px auto;padding: 0px">		
+	<tr><td>
+			<table cellspacing="0" cellpadding="0" border="1" width="600px" style="margin:0px auto; background:blue;">
+				<tr><td>Hi <%= @contact.name %>,Thanks for joining our service! Please check back often.	</td></tr>
+							
+				<tr><td><%= @contact.name %>	<%= @contact.surname %> </td></tr>
+
+				<tr><td><%= @contact.telephone %> 	<%= @contact.email %></td></tr>
+				<tr><td><%= @contact.interested_in %></td></tr>
+				<tr><td><%= @contact.property_type %></td></tr>
+				<tr><td><%= @contact.country %></td></tr>
+				<tr><td><%= @contact.state %></td></tr>
+				<tr><td><%= @contact.city %></td></tr>
+				<tr><td><%= @contact.beds %></td></tr>
+				<tr><td><%= @contact.baths %></td></tr>
+				<tr><td><%= @contact.price_range %></td></tr>
+				<tr><td><%= @contact.message %></td></tr>
+			</table>
+	</td></tr>
+	</table>
+	</body>	
 	</body>	
 </html>
 
