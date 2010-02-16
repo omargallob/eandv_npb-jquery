@@ -79,19 +79,8 @@
 	
 	<% end %>
 	<% if @page.name == "about" || params[:parent] == "about"%>
-		<script type="text/javascript">
-				var flashvars = {};
-				flashvars.topXml = "/partners.xml";
-				//flashvars.font = "/swf/font.swf";
-				var attributes = {};
-				attributes.wmode = "transparent";
-				attributes.id = "top5";
-				swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/top5.swf", "top5", "302", "179", "9", "/swf/expressInstall.swf", flashvars, attributes);
-		 </script>
-
-		<div>
-			<div id="top5"></div>
-		</div>
+		<%= render :partial => "shared/services_right_tool" %>	
+		<%= render :partial => "shared/buyersguide" %>		
 	<% end %>
 </div>
 

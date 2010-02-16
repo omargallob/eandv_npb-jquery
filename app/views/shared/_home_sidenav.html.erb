@@ -22,44 +22,13 @@
 
 <% end %>
 <hr />
-<div class="left_tool relocating chat_box">
-
-	<div class="header_w_image" >
-	<h3 style="text-align:left;width:100%;margin:0px;"><%= image_tag "system/buttons/Chat.png" %> <span class="title"><a onclick="window.open('/plugoo','meebome','width=200,height=285');" href="#">
-		Chat LIVE now </a></span>	</h3>
-	</div>
-</div>
+<%= render :partial =>"shared/leftside/chatlive" %>
 <% if controller.controller_name =="properties" and controller.action_name =="index" %>
 	<%= render :partial => "shared/advice" %>
 <% end %>
-<div class="left_tool relocating share_box">
-	<div class="header_w_image" ">
-	<h3><span class="title">
-	Share</span>	</h3>
-	</div>
-<!-- AddThis Button BEGIN -->
-<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4b71689b6c365e0f"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4b71689b6c365e0f"></script>
-<script type="text/javascript">
-var addthis_config = {
-	data_use_flash: false
-}
+<%= render :partial =>"shared/leftside/sharethis" %>
 
-</script>
-<!-- AddThis Button END -->
-
-
-</div>
-
-<div class="left_tool relocating market_box" >
-
-	<div class="header_w_image">
-	<h3 style="text-align:left;width:100%;margin: 0px"><%= image_tag "system/buttons/House.jpg", :style=>"margin: -5px 0 0 2px"  %><span class="title" style="margin: 0 0 10px 0">Market Report </span>	</h3>
-	</div>
-	<%= image_tag "system/bg/front/MarketMag.jpg", :style => "margin-left: 36px;" %>
-	<h3 class="download"><span class="title"><a href="#">
-		Download </a></span>	</h3>
-
-</div>
+<%= render :partial =>"shared/leftside/marketreport" %>
 
 <div class="left_tool relocating gossip_box" >
 	<div class="header_w_image">

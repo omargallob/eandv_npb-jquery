@@ -18,12 +18,17 @@
 <% end %>
 
 <%= render :partial =>"shared/keepdiscovering" %>
-
+<%= link_to (image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;"), '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+<hr />
 <% unless @page.name == "about" || params[:parent] == "about" %>
 <%= render :partial=>"shared/polaroid"%>
+<% else %>
 
+<%= render :partial =>"shared/leftside/chatlive" %>
+<%= render :partial =>"shared/leftside/sharethis" %>
+<%= render :partial =>"shared/leftside/marketreport" %>
 <% end %>
-<%= link_to (image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;"), '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+
 <hr />
 <% if @page.name == "why" || params[:parent] == "why" %>
 
@@ -32,7 +37,5 @@
 
 		<%= render :partial => "shared/leftside/global" %>
 
-
-	
 
 <% end %>	
