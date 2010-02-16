@@ -13,9 +13,9 @@ class Notifier < ActionMailer::Base
  	 @contact = Contact.find_by_id(id)
 	 case @contact.interested_in
 			when "Buying"
-				recipients "omargallob@gmail.com"
+				recipients "ryanstoke@hotmail.com"
 			when "Selling"
-				recipients "omargallob@gmail.com"
+				recipients "ryanstoke@hotmail.com"
 	 end
    from @contact.email
    subject " E&V Contact received - "+@contact.interested_in
