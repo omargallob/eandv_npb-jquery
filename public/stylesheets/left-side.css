@@ -113,6 +113,9 @@
 #left-side #main #comunicate table td.chat { height: 21px; width: 56px; background: url(/images/system/buttons/FeaturedChatBtn.jpg); background-repeat: no-repeat; }
 #left-side #main #comunicate table td.contact { height: 22px; width: 64px; margin-left: 15px; background: url(/images/system/buttons/FeaturedcontactBtn.jpg); }
 #left-side #main #comunicate table td.spacer { width: 10px; }
+#left-side #main #comunicate.nonfeatured table td { background: transparent; }
+#left-side #main #comunicate.nonfeatured table td a { color: #E13939; }
+#left-side #main #comunicate.nonfeatured table td a:hover { color: black; }
 #left-side #main ol.staff { list-style-type: none; }
 #left-side #main ol.staff li img { float: left; margin: 15px 10px 5px 35px; }
 #left-side #main ol.staff li h1 { padding-bottom: 0px; }

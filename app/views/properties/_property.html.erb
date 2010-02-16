@@ -27,7 +27,7 @@
 			</ul>
 			<div class="bottom"></div>		
 		</div>
-		<div id="comunicate">
+		<div id="comunicate" class="<% unless property.featured == true %>nonfeatured<% end %>"
 			<table>
 				<tr>
 					<td class="chat">			<%= link_to "chat","/contact?iframe=true&width=560&height=600" ,:rel=>"prettyPhoto" %></td>
