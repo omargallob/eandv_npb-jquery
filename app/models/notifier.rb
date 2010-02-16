@@ -18,7 +18,7 @@ class Notifier < ActionMailer::Base
 				recipients "omargallob@gmail.com"
 	 end
    from @contact.email
-   subject " E&V Contact received - {@contact.interested_in}"
+   subject " E&V Contact received - "+@contact.interested_in
    body    :account => @contact
    content_type "text/html"
  end 
