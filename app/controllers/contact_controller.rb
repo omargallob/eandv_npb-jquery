@@ -2,7 +2,8 @@ class ContactController < ApplicationController
 layout "lightbox"
 
   def index
-					pickup_variables
+		pickup_variables
+
 		#@contact = Contact.new
   end
 

@@ -1,7 +1,9 @@
 class BlogController < ApplicationController
   def index
 	 @page = Page.find_by_name('blog')
-   @posts = Post.find(:all)
+
+		@subpages = @page.subpages 
+  @posts = Post.find(:all)
 
    set_meta_tags :title =>  "Blog "
 

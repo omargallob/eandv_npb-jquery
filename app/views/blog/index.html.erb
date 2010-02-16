@@ -4,22 +4,7 @@
 	</div>
 	
 	<div id="side-nav">
-
-		<hr />
-		<div id="leftswfcontainer" style="float:left;height:196px">
-			<%= render :partial =>"shared/keepdiscovering" %>
-			<%= render :partial=>"shared/polaroid"%>
-		</div>
-		<%= image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:8px;" %>
-		<hr />
-		<div class="left_tool relocating">
-			<div class="top"></div>
-			<div class="header_w_image">
-				<img src="/images/system/buttons/affiliate.jpg" width="50" height="35" alt="House">
-				<h3 class="services"><span class="title"><a href="/contact?iframe=true&width=560&height=600" rel="prettyPhoto">Become an <br />affiliate</a></span></h3>
-			</div>
-			<div class="bottom"></div>
-		</div>
+		<%= render :partial => "shared/home_sidenav" %>
 	</div>
 
 	<div id="main" class="properties">
@@ -39,6 +24,7 @@
 			<div><%= render :partial => "shared/advancedsearchbox" %></div>
 		<div class='bottom'></div>
 	</div>
+		<%= render :partial => "shared/home_right" %>
 </div>
 
 <% content_for :script do %>
@@ -47,7 +33,7 @@ $(document).ready(function() {
   	 
 
 	$('.droppies').combobox(); 
-
+	$('#gossip_container').jScrollPane({scrollbarWidth:17,showArrows:true});
 	
 	$("#main_bottom").appendTo($("#main"));
 	set_nav_pointer("blog");
