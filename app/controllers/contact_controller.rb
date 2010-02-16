@@ -30,7 +30,7 @@ layout "lightbox"
 	def create
 		@contact = Contact.new(params[:contact])
 		if @contact.save
-			redirect_to :action => "step2"
+			redirect_to :action => "step2", :id => @contact.id
 		else
 			flash[:notice] = "Error!!!!!!!!!1"
 			pickup_variables
@@ -39,6 +39,10 @@ layout "lightbox"
 	end
   
 	def step2
+		@contact = Contact.find_by_id(params[:id])
+		#Notifier.deliver_signup_newsletter(@contact)
+		mail = Notifier.create_signup_newsletter(@contact)  # => a tmail object
+		Notifier.deliver(mail)
 	end
 
 	private
