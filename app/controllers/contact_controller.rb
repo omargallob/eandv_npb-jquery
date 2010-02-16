@@ -3,12 +3,14 @@ layout "lightbox"
 
   def index
 		@interested_in = ["Buying","Selling"]
+		@price_range = ["< 500,000","500,000 - 1,500,000", "1,5 - 4,500,000", "4,5 - 12,000,000","> 12,000,000 "]
 		@property_types = Property.find(:all, :include => :type).map{|x| [x.type.title,x.type.id] }
 		#@countries = Country.find(:all).map.{|y| [y.id,y.title]}
 		@countries = Country.find(:all).map{|y| [ y.title, y.id]}
 		#@states = Location.find(:all).map{|z| [z.state]}
 		@states = Property.find(:all, :include => :location).map{|w| w.location.state}
 		@cities = Property.find(:all, :include => :location).map{|w| w.location.region}
+		@contact = Contact.new
   end
 
   def neighbourhood
@@ -31,5 +33,17 @@ layout "lightbox"
   def social
     render :layout => false
   end
+
+	def create
+		@contact = Contact.new(params[:contact])
+		if @contact.save
+			redirect_to :action => "step2"
+		else
+			flash[:notice] = "<div class='error'>Error!!!!!</div>"
+			redirect_to :action => "index"
+		end
+	end
   
+	def step2
+	end
 end

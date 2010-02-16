@@ -1,27 +1,27 @@
-<%= form_tag( :action => '#')%>
+<% form_for :contact, @contact, :url => {:action => 'create'} do |f| %>
 <table id="contactform">
 	<tr>
 		<td>
 		<table id="column1">
 			<tr>
 				<td><h4>Name</h4></td>
-				<td> <%= text_field("cform", "name", :size => 20) %></td>
+				<td> <%= f.text_field(:name, :size => 20) %></td>
 			</tr>	
 			<tr>
 				<td><h4>Surname</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td><%= f.text_field(:surname, :size => 20) %></td>
 			</tr>	
 			<tr>
 				<td><h4>Telephone</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td><%= f.text_field(:telephone, :size => 20) %></td>
 			</tr>	
 			<tr>
 				<td><h4>Email</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td><%= f.text_field(:email, :size => 20) %></td>
 			</tr>	
 			<tr>
 				<td><h4>Confirm Email</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td><%= text_field(:check_email, :size => 20) %></td>
 			</tr>	
 		</table>
 
@@ -29,35 +29,35 @@
 		<td>
 		<table id="column2">
 			<tr>
-				<td><h4>Interested in</h4></td>
-				<td><%= select("cform", "interested_in", @interested_in) %></td>
+				<td ><h4>Interested in</h4></td>
+				<td class="wide"><%= f.select(:interested_in, @interested_in) %></td>
 			</tr>	
 			<tr>
 				<td><h4>property Type</h4></td>
-				<td><%= select("cform", "property_types", @property_types.uniq) %></td>
+				<td class="wide"><%= f.select(:property_type, @property_types.uniq) %></td>
 			</tr>	
 			<tr>
 				<td><h4>Country</h4></td>
-				<td><%= select("cform", "country", @countries.uniq)%></td>
+				<td class="wide"><%= f.select(:country, @countries.uniq)%></td>
 			</tr>	
 			<tr>
 				<td><h4>State/Province</h4></td>
-				<td>
+				<td class="wide">
 	
-				<%= select("cform", "state", @states.uniq)  %>
+				<%= f.select(:state, @states.uniq)  %>
 				</td>
 			</tr>	
-			<tr>
+			<tr class="wide">
 				<td><h4>City</h4></td>
-				<td>		<%= select("cform", "city", @cities.uniq)  %></td>
+				<td class="wide">		<%= f.select(:city, @cities.uniq)  %></td>
 			</tr>	
 			<tr>
-				<td><h4>Beds</h4></td>
-				<td>	<%= select("cform", "beds", 1..8)  %><span> Baths</span><%= select("cform", "baths", 1..12)  %></td>
+				<td class="short"><h4>Beds</h4></td>
+				<td>	<%= f.select(:beds, 1..8)  %><span> Baths</span><%= f.select(:beds, 1..12)  %></td>
 			</tr>	
 			<tr>
-				<td><h4>Price Range</h4></td>
-				<td><%= text_field("cform", "name", :size => 20) %></td>
+				<td class="wide"><h4>Price Range</h4></td>
+				<td>	<%= f.select(:price_range, @price_range) %></td>
 			</tr>	
 		</table>
 		</td>
@@ -66,7 +66,7 @@
 			<table id="row2">
 				<tr>
 					<td><h4>Message</h4></td>
-					<td><%= text_area("cform", "name", :rows => 6) %></td>
+					<td><%= f.text_area(:message, :rows => 6) %></td>
 			</table>
 <hr>
 <div id="mailing">
@@ -75,7 +75,7 @@
 </div>
 
 <%= submit_tag "submit" %>
-</form>
+<% end %>
 <% content_for :script do %>
 <script type="text/javascript">
 jQuery(document).ready(function() {

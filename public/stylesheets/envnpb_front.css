@@ -9,7 +9,7 @@ body h3 span.active { color: #E13939; }
 body h3 span.active a { text-decoration: none; }
 body h3 strong { font-weight: normal; color: #d4d4d4; }
 body h1 { font-family: "Georgia"; font-size: 14px; text-transform: uppercase; color: #e2001a; }
-body object { outline: none; }
+body object { outline: none; z-index: 0; }
 body span.left { float: left; }
 body span.right { float: right; font-size: 11px; line-height: 18px; font-style: italic; }
 
