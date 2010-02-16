@@ -3,20 +3,20 @@
 		
 	</head>	
 	<body>
-	<table cellspacing="0" cellpadding="0" border="1" width="100%">		
+	<table cellspacing="0" cellpadding="0" border="1" width="100%" style="margin:0px auto;padding: 0px;font-family:Verdana;font-size: 10px">		
 	<tr><td>
-			<table cellspacing="0" cellpadding="0" border="1" width="600px" style="margin:0px auto; background:blue;">
-				<tr><td><%= @contact.name %>	<%= @contact.surname %> </td></tr>
-				<tr><td><%= @contact.telephone %> 	<%= @contact.email %></td></tr>
-				<tr><td><%= @contact.interested_in %></td></tr>
-				<tr><td><%= @contact.property_type %></td></tr>
-				<tr><td><%= @contact.country %></td></tr>
-				<tr><td><%= @contact.state %></td></tr>
-				<tr><td><%= @contact.city %></td></tr>
-				<tr><td><%= @contact.beds %></td></tr>
-				<tr><td><%= @contact.baths %></td></tr>
-				<tr><td><%= @contact.price_range %></td></tr>
-				<tr><td><%= @contact.message %></td></tr>
+	<table cellspacing="0" cellpadding="5" border="0" width="600px" style="margin:0px auto; background:transparent;font-size: 10px">
+				<tr><td>Name</td><td>:</td><td><%= @contact.name %>	<%= @contact.surname %> </td></tr>
+				<tr><td>Telephone & email</td><td>:</td><td><%= @contact.telephone %> 	<%= @contact.email %></td></tr>
+				<tr><td>Interested in</td><td><%= @contact.interested_in %></td></tr>
+				<tr><td>Property Type</td><td>:</td><td><%= @contact.property_type %></td></tr>
+				<tr><td>Country</td><td>:</td><td><%= @contact.country %></td></tr>
+				<tr><td>State</td><td>:</td><td><%= @contact.state %></td></tr>
+				<tr><td>City</td><td>:</td><td><%= @contact.city %></td></tr>
+				<tr><td>Beds</td><td>:</td><td><%= @contact.beds %></td></tr>
+				<tr><td>Baths</td><td>:</td><td><%= @contact.baths %></td></tr>
+				<tr><td>Price Range</td><td>:</td><td><%= @contact.price_range %></td></tr>
+				<tr><td>Message</td><td>:</td><td><%= @contact.message %></td></tr>
 			</table>
 	</td></tr>
 	</table>
