@@ -245,10 +245,10 @@ function nice_fonts(){
 	  color: '#888888',
 	  fontSize: "14px",
     hover: {
-     		color: 'white'
+     		color: '#E13939'
      }
  });
- 
+
 }
 
 function onfocus_forms(){

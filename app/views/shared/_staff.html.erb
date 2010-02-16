@@ -3,7 +3,7 @@
 <h1 class="title"><%= staff.full_name %></h1>
 <h2><%= staff.title %></h2>
 <p><%= staff.description %></p>
-<h6>contact: <%= staff.email %></h6>
+<h6 class="staff">contact: <%= link_to staff.email, '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %></h6>
 <hr />
 </li>
 
