@@ -178,7 +178,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main {width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px}
 #left-side #main #comunicate {width: 136px; height: 45px; float: left; margin-left: 24px}
 #left-side #main #comunicate table {margin: 10px auto; padding: 0px}
-#left-side #main #comunicate table td {padding: 0px; text-align: center}
+#left-side #main #comunicate table td {margin: 0px; padding: 0px; text-align: center}
 #left-side #main #comunicate table td a {color: white; text-decoration: none; margin: 0px; float: none}
 #left-side #main #comunicate table td a:hover {color: #E13939}
 #left-side #main #comunicate table td.chat {height: 21px; width: 56px; background: url(/images/system/buttons/FeaturedChatBtn.jpg); background-repeat: no-repeat}
@@ -307,9 +307,10 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #searchbox.advanced div {float: left}
 #right-column #searchbox.advanced div h3 {margin-left: 24px}
 #right-column #searchbox.about {margin-bottom: 15px}
-#right-column #faq {height: 157px; background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px}
-#right-column #faq #faq_block {height: 109px; width: 269px}
+#right-column #faq {background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px}
+#right-column #faq #faq_block {height: 550px; width: 269px}
 #right-column #faq #faq_block p {font-style: italic; font-family: "Georgia"; font-size: 12px; color: #6b6b6b}
+#right-column #faq #faq_block p span {color: #E13939; width: 100%; float: left}
 #right-column #extra.home {margin-top: 30px}
 #right-column #extra.home_extra {margin-top: 8px}
 #right-column #extra {width: 174px; background: url(../images/system/bg/front/right_small1.jpg); float: left; margin-top: 15px}
