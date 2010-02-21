@@ -4,7 +4,7 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
-  before_filter :setmeta, :get_pages_for_tabs, :set_user_locale, :pickupproperties
+  before_filter :setmeta, :get_pages_for_tabs, :set_user_locale, :pickupproperties, :gossip
   
   include AuthenticatedSystem
   # You can move this into a different controller, if you wish.  This module gives you the require_role helpers, and others.
@@ -110,6 +110,9 @@ def pickup_properties(id)
     end
 
  end
+	def gossip	
+	   @gossips = Faq.find(:all, :conditions =>['gossip = ?', true])
+	end
   #def default_url_options(options={}) 
   #   logger.debug "default_url_options is passed options: #{options.inspect}\n"
   #   { :locale => I18n.locale }

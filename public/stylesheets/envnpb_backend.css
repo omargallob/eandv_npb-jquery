@@ -34,6 +34,7 @@ body a:hover { color: red; }
 #content #tabs #image_tabs div#featured { float: left; padding: 0; margin: 0; }
 #content #tabs #image_tabs ul#subtabs { float: left; width: 100%; }
 #content #tabs #image_tabs ul#subtabs li { background: white; margin: 0px; }
+#content #main { float: left; width: 900px; }
 #content ul.form_list { width: 100%; float: none; margin: 0px; list-style: none; }
 #content #notice { right: 0px; top: 0px; background: green; }
 #content #notice p { padding: 25px; }

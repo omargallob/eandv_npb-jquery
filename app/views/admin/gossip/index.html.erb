@@ -1,0 +1,23 @@
+<div id="side-nav">
+	<ul>
+	<%= link_to "New", new_admin_gossip_path %>
+	</ul>
+</div>
+
+<div id="subcontent">
+	<h1>Property Gossip</b></h1>
+
+	<div id="itsthetable">	
+		<table class="page_list">
+			<tr>
+				<th>Title</th>	
+				<th>Body</th>
+				<th>User</th>
+				<th>Options</th>	
+			</tr>			
+			<%= render :partial => "line", :collection => @gossips %>
+		</table>
+	</div>
+	<br />
+	
+</div>	

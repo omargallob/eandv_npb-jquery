@@ -1,6 +1,6 @@
 class Admin::FaqController < Admin::BaseController
   def index
-	   @faqs = Faq.find(:all)
+	   @faqs = Faq.find(:all, :conditions =>['gossip = ?', false])
   end
 
   def new

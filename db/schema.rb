@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100216213504) do
+ActiveRecord::Schema.define(:version => 20100221171957) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -103,20 +103,23 @@ ActiveRecord::Schema.define(:version => 20100216213504) do
     t.string   "user_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "gossip"
   end
 
-  create_table "featured_photos", :force => true do |t|
-    t.integer  "page_id"
+  create_table "featured_galleries", :force => true do |t|
     t.integer  "property_id"
-    t.integer  "size"
-    t.string   "content_type"
-    t.string   "filename"
-    t.integer  "width"
-    t.integer  "height"
-    t.integer  "parent_id"
-    t.string   "thumbnail"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "featured_uploads", :force => true do |t|
+    t.integer  "featured_gallery_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   create_table "galleries", :force => true do |t|

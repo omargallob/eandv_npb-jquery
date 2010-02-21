@@ -1,0 +1,9 @@
+<hr />
+
+
+	<p class='featured_upload'>	
+		<%= image_tag featured_upload.photo.url(:thumb) unless featured_upload.photo.blank? %> | 
+		<label for="featured_upload_photo">Photo:</label>
+		<%= f.file_field :photo %> 
+		<%= f.remove_link "remove" %>
+	</p>
