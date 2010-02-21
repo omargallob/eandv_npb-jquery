@@ -20,7 +20,7 @@ class Admin::FeaturedController <  Admin::BaseController
 
 	def create
 	 @gallery = FeaturedGallery.new params[:featured_gallery]
-
+	@property = @gallery.property
        if @gallery.save
          flash[:notice] = 'gallery was successfully created.'
          redirect_to admin_featured_path(@gallery)
