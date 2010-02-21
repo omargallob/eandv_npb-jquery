@@ -2,6 +2,13 @@ class Admin::FeaturedController <  Admin::BaseController
 	
   def index
 		@property = Property.find_by_id(params[:property_id])
+		if @property.featured_gallery
+				render :layout =>false
+		else
+		  @gallery = FeaturedGallery.new
+         render :action => "new", :layout => false			
+		end
+		
   end
 
   def show
@@ -14,6 +21,7 @@ class Admin::FeaturedController <  Admin::BaseController
   def new
     @property = Property.find_by_id(params[:property_id])
     @gallery = FeaturedGallery.new
+				render :layout =>false
 	  #@uploads = @gallery.featured_uploads.find(:all)
 
   end
