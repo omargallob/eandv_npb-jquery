@@ -9,7 +9,7 @@ class ViewerController < ApplicationController
       @parent = @page
        @subpages = @page.subpages
     end
-		if @page.name == "office"
+		if @page.name == "shop"
 		 string = "260 Newport Center Drive, Newport Beach, CA 92660" 
 
 			@res=GoogleGeocoder.geocode(string)    
@@ -23,7 +23,7 @@ class ViewerController < ApplicationController
 			@map.center_zoom_init([@lat,@lng],14)
 			@map.overlay_init(GMarker.new([@lat,@lng],:info_window => "#{string}"))
 		end
-		if params[:parent] == "office"
+		if params[:parent] == "shop"
 			if params[:name] == "staff"
 					@staff = Worker.find(:all, :conditions => {:vacancy => false})
 			end
