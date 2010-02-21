@@ -7,7 +7,7 @@ class Admin::FeaturedController <  Admin::BaseController
   def show
 		@property = Property.find_by_id(params[:property_id])
 	  @gallery = FeaturedGallery.find_by_id(params[:id])
-    @uploads = @gallery.featured_uploads.find(:all,:order => "position")
+    @uploads = @gallery.featured_uploads.find(:all)
 		render :layout =>false
   end
 

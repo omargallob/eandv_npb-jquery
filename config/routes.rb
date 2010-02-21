@@ -72,7 +72,7 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :faq
      admin.resources :gossip
      admin.resources :featured
-		 admin.featured_property "/properties/:property_id/featured", :controller => "featured", :action =>"show"
+		 admin.featured_property "/properties/:property_id/featured", :controller => "featured", :action =>"index"
 		 admin.new_feature_gallery_property "/properties/:property_id/featured/new", :controller => "featured", :action =>"new"
      admin.resources :galleries, :collection => { :prioritize_uploads => :post }
       admin.resources :uploads
