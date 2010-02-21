@@ -45,29 +45,20 @@ class PropertiesController < ApplicationController
     @property = Property.find_by_id(params[:id])
     @page = Page.find_by_name('properties')
   	@subpages = @page.subpages
-       set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
+	 set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
 
-       string =  @property.address
+	 string =  @property.address
 
-        @res=GoogleGeocoder.geocode(string)    
-        if @res.success
-          @lng = @res.lng
-          @lat = @res.lat
-        end
+	  @res=GoogleGeocoder.geocode(string)    
+	  if @res.success
+	    @lng = @res.lng
+	    @lat = @res.lat
+	  end
 
-        @map = GMap.new("map")
-        @map.control_init(:large_map => true,:map_type => true)
-        @map.center_zoom_init([@lat,@lng],14)
-        @map.overlay_init(GMarker.new([@lat,@lng],:info_window => "#{@property.address}"))
-
-      #@aux = @property.location.zipcod+", "+@property.location.state
-
-     #results = Geocoding::get("Newport Beach California")
-      # if results.status == Geocoding::GEO_SUCCESS
-       #  coord = results[0].latlon
-      #    @map.center_zoom_init(coord,12)
-      # end
-
+	  @map = GMap.new("map")
+	  @map.control_init(:large_map => true,:map_type => true)
+	  @map.center_zoom_init([@lat,@lng],14)
+	  @map.overlay_init(GMarker.new([@lat,@lng],:info_window => "#{@property.address}"))
   end 
   
   def feed
