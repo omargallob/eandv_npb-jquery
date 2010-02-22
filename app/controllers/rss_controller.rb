@@ -37,4 +37,11 @@ class RssController < ApplicationController
           format.xml  #{ render :xml => @properties }
       end
 	end	
+
+	def featured
+    @featured = Property.find(:all, :conditions => ['featured = ?', true],:include => 'location',:order => 'locations.region')
+      respond_to do |format|
+          format.xml  #{ render :xml => @properties }
+      end
+	end
 end

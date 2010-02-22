@@ -90,6 +90,7 @@ ActionController::Routing::Routes.draw do |map|
   map.service_feed '/services/:category/:subcategory/feed.xml', :controller => 'services', :action => 'feed'
   map.about_nb '/about.xml', :controller => "rss", :action => "about"
   map.partners '/partners.xml', :controller => "rss", :action => "partners"
+  map.featured_feed '/featured.xml', :controller => "rss", :action => "featured"
 	map.similar '/properties/:id/similar.xml', :controller => "rss", :action => "similar"
 	map.view_blog '/blog/:title', :controller => "blog", :action => "show"
 	map.properties_page '/properties/page/:page', :controller=>"properties", :action => "index"
