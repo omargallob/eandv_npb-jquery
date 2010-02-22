@@ -1,7 +1,7 @@
 <div id="main">
 	<h1>Editing country <%= @country.title %></h1>
 
-	<% form_for @country, :url => {:action => "update"}  do |f| %>	
+	<% form_for @country, :url => {:action => "update"}, :html => {:multipart => true}  do |f| %>	
 	 <%= f.error_messages %> 
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>

@@ -2,7 +2,7 @@ class FeaturedUpload < ActiveRecord::Base
 	belongs_to :featured_gallery
   has_attached_file :photo,
                     :styles => {
-                      :pagesize => ["961x359#", :jpg], :thumb  => ["120x44#", :jpg]
+                      :pagesize => ["961x359#", :jpg], :thumb  => ["83x82#", :jpg]
                     },:convert_options => {  
                           :pagesize => "-strip -quality 60"
                     },:processors => [:cropper],

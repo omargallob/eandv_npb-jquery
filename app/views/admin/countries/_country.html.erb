@@ -1,5 +1,5 @@
 <tr>
-	<td><%= country.title %></td>
+	<td><%= country.title %></td><td> <%= image_tag country.flag.url(), :width => "20px"  %></td>
 	<% if controller.action_name == "index" %>
 
 	<td>&nbsp;|&nbsp;</td>

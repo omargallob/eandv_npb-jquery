@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100222152810) do
+ActiveRecord::Schema.define(:version => 20100222215043) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -58,6 +58,10 @@ ActiveRecord::Schema.define(:version => 20100222152810) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "country_initials"
+    t.string   "flag_file_name"
+    t.string   "flag_content_type"
+    t.integer  "flag_file_size"
+    t.datetime "flag_updated_at"
   end
 
   create_table "delayed_jobs", :force => true do |t|
