@@ -76,3 +76,11 @@
 	<% end %>
 </p>
 <hr/>
+<% if property_show.pdf %>
+<p>
+	<strong>LINK TO PDF</strong> <br/>
+   	
+		<%= link_to "pdf", property_show.pdf.url(:original) %><br />
+</p>
+<% end %>
+<hr/>

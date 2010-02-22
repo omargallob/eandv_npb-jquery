@@ -13,7 +13,7 @@
 	        <li><a href="#fragment-2"><span>Extra</span></a></li>
 	        <li><a href="#fragment-3"><span>Media</span></a></li>
 	    </ul>
-		<% form_for @property, :url => {:action => "update"},:html => { :id => "property_file"} do |f| %>	
+		<% form_for @property, :url => {:action => "update"},:html => { :id => "property_file",:multipart => true} do |f| %>	
 		 <%= f.error_messages %> 
 		  <%= render :partial => "form", :locals => {:f =>f}%>
 		<% end %>
@@ -57,6 +57,7 @@
 				<div id="featured">			
 						<%= render :partial =>"featured_form" %>
 				</div>	
+			
 				<% end %>		
 			</div>
 	    </div>

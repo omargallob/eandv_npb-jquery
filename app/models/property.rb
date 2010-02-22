@@ -10,7 +10,16 @@ class Property < ActiveRecord::Base
   has_one :property_thumbnail
   has_one :googlemap
   
+	has_attached_file :pdf,
+										:content_type => "pdf",
+										:storage => :s3,
+										:s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
+										#:url =>  "/property/gallery/:id/:style/:basename.jpg",
+										:path => "property/:id/pdf/:style/:basename.pdf"
+
   acts_as_ferret  :fields => [:title, :bedrooms,:mls_id]#:fields => [:location_state,:type_title]
+
+	validates_attachment_content_type :pdf, :content_type => ['application/pdf']
 
     def location_state
       location.state

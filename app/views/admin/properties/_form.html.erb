@@ -89,12 +89,28 @@
 	<hr />
 	<p>	Facility list</br>
  	
-	<div id="my-id">
+	<div id="my-id" style="float:left">
 	<%= collection_multiple_select('property','facility_ids', Facility.find(:all), :id, :title,:outer_class =>"form_list")%>
 	</div>
 	</p>
+
+	<div style="float:left;width:100%">
 	<hr/>
-	  <p>
+	<p>
+		  <%= f.label :youtube %><br/>
+	  <%= f.text_field :youtube, :size => "4" %> 
+	</p>
+	<hr/>
+	</div>
+	<div style="float:left;width:100%">
+	<hr/>
+	<p>
+		  <%= f.label :pdf %><br/>
+	  <%= f.file_field :pdf %> 
+	</p>
+	<hr/>
+	</div>
+	  <p  style="float:left">
 	    <%= f.submit 'Create' %>
 	  </p>
 </div>
