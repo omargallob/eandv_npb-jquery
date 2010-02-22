@@ -1,2 +1,23 @@
+<div id="side-nav">
+	<ul>
+	<%= link_to "New", admin_new_feature_gallery_property_path  %>
+	</ul>
+</div>
+
+<div id="subcontent">
 <h1>Featured Gallery. </h1>
-<p>Find me in app/views/admin/featured/index.html.erb</p>
+
+	<div id="itsthetable">	
+		<table class="page_list">
+			<tr>
+				<th>Title</th>	
+				<th>Options</th>	
+			</tr>			
+		<%= render :partial => "images", :collection => @fuploads %>
+		</table>
+	</div>
+	<br />
+	
+</div>	
+
+

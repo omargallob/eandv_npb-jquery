@@ -1,0 +1,28 @@
+<div id="side-nav">
+	<ul>
+		<li><%= link_to 'back', :back %></li>
+	</ul>
+</div>
+
+
+
+<h1>Adding more images to gallery</h1>
+<div > 
+	<% form_for @gallery, :url=>{:action=>"update"},:html => { :multipart => true, :method => :put } do |f| %>
+	  <%= f.error_messages %>
+
+ 
+	  <div id='uploads' style='border: 1px solid silver'>
+	    <%= f.render_associated_form(@gallery.featured_uploads, :new => 3) %>
+	  </div>
+ 
+	  <%= f.add_associated_link('Add another photo', @gallery.featured_uploads.build) %>
+
+
+
+	  <p>
+	    <%= f.submit "Create" %>
+	  </p>
+	<% end %>
+</div>
+

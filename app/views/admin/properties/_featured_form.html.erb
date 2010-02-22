@@ -1,1 +1,6 @@
-<iframe src="<%= admin_featured_property_path(@property) %>" width="900" height="100%"></iframe>
+
+<% if @property.featured_gallery %>
+	<%= link_to "show", admin_featured_path(@property.featured_gallery)%>
+<% else %>
+	<%= link_to "new", admin_new_featured_path(@property)%>
+<% end %>

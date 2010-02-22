@@ -37,6 +37,16 @@
 			<% else %>
 				<%= link_to image_tag ('system/buttons/gallery.png', :height => "15px", :title =>"Gallery"), :controller => "galleries",:action=>"new",:property_id=>property %>
 			<% end %>
+
+			
+			<% if property.featured %>
+				<% if property.featured_gallery %>
+					<%= link_to image_tag ('system/buttons/star.jpg', :height => "15px", :title =>"Featured"), admin_featured_path( property.featured_gallery) %>
+				<% else %>
+					<%= link_to image_tag ('system/buttons/star.jpg', :height => "15px", :title =>"New Featured"), :controller => "featured",:action=>"new",:property_id=>property %>
+				<% end %>
+			<% end %>
+				
 		</td>
 	</tr>
 
