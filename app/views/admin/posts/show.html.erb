@@ -1,2 +1,25 @@
-<h1>Admin::Posts#show</h1>
-<p>Find me in app/views/admin/posts/show.html.erb</p>
+<div id="side-nav">
+	<ul>
+		<% # render :partial => "shared/admin/categories_sidenav" 
+		%>
+	<li><%= link_to "back", :back %></li>
+
+	</ul>
+</div>
+
+
+
+<h1><b>Blog Category:</b> <%= @parent.title %></h1>
+
+<div id="itsthetable">
+	<table>
+		<thead>
+			<th>Title</th>	
+			<th>Description</th>
+			<th>Options</th>
+		</thead>
+	
+		<%= render :partial => 'post', :collection => @posts %>
+
+	</table>
+</div>

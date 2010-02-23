@@ -1,22 +1,17 @@
 <li>
 
-<% if controller.action_name == "show" %>
-	<h1 class="title"><%= post.title %> </h1>
-	<hr>
-<% else %>
-
+<hr>
 	<h2 class="title"><%= post.title %> </h2>
-<% end %>
+
 
 
 <% if controller.action_name == "show" %>
 	<%= post.description_html  %>
-	<hr >
 	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
 <% else %>
 	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
 	<%= post.description_html  %>
-	<hr>
+
 <% end %>
 
 </li>

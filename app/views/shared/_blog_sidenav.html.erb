@@ -1,0 +1,37 @@
+<ul class="submenu">
+	<% if params[:id] == nil %>
+		<li class="active">Intro</li>
+	<% else %>
+		<li><%= link_to "Intro", "/blog"%></li>
+	<% end %>
+
+	<% for post in @categories -%>
+		<li class="<% if params[:id] == post.name || params[:post] == post.name  %>active<% end %>">
+			<%= link_to post.navlabel, view_blog_path(post.name) %> <br/>
+		</li>
+	<% end -%>
+</ul>
+<hr />
+<% if @subpages.empty? %>
+<!--<ul id="gallerylinks">
+	<%# render :partial => "shared/gallerylinks" %>
+</ul>-->
+
+<div id="leftswfcontainer" style="float:left;height:196px">
+<%= render :partial =>"shared/keepdiscovering" %>
+
+<%= render :partial=>"shared/polaroid"%>
+</div>
+<%= link_to (image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:8px;"), '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+
+<% end %>
+<hr />
+<%= render :partial =>"shared/leftside/chatlive" %>
+<% if controller.controller_name =="properties" and controller.action_name =="index" %>
+	<%= render :partial => "shared/advice" %>
+<% end %>
+<%= render :partial =>"shared/leftside/sharethis" %>
+
+<%= render :partial =>"shared/leftside/marketreport" %>
+
+

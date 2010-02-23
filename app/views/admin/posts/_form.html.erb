@@ -3,6 +3,17 @@
   <%= f.text_field :title %>
 </p>
 <p>
+	  <%= f.label :navlabel %><br/>
+  <%= f.text_field :navlabel %>
+</p>
+<p>
+	  <%= f.label :name %><br/>
+  <%= f.text_field :name %>
+</p>
+<p>
+	<%= f.collection_select :parent_id, Post.find_main, :id, :title, :include_blank => true%>
+</p>
+<p>
 	  <%= f.label :description %><br/>
   <%= f.text_area :description %>
 </p>

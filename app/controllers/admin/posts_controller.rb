@@ -1,6 +1,6 @@
 class Admin::PostsController < Admin::BaseController
   def index
-		@posts = Post.find(:all)
+		@posts = Post.find_main
   end
 
   def new
@@ -42,6 +42,10 @@ class Admin::PostsController < Admin::BaseController
 	end
 
   def show
+	 @parent = Post.find_by_name(params[:id])
+   @subposts = Post.find_sub(@parent.id)
+      #@subcategories = @category.subcategories
+     
   end
 
 	def destroy
