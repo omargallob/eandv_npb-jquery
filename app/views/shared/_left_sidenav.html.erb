@@ -19,7 +19,7 @@
 <% unless @page.name == "about" || params[:parent] == "about" %>
 <%= render :partial=>"shared/polaroid"%>
 
-<%= link_to (image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;"), '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+<%= link_to (image_tag "system/buttons/sellyourproperty.jpg",:style => "margin-top:20px;"), '/why/selling' %>
 <hr>
 <%= render :partial =>"shared/leftside/chatlive" %>
 <%= render :partial =>"shared/leftside/sharethis" %>
