@@ -26,7 +26,7 @@
 		<% if @page.name == "home" || @page.name == "about" || @parent.name == "about" %>
 		<div id="main_top" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 		<% end %>
-		<% if params[:name]== "office" %>
+		<% if params[:name]== "shop" %>
 	 		<%= @map.div(:width => 419, :height => 317) %>
 			<hr />
 		<% end %>		
@@ -34,7 +34,7 @@
 			<h1 class="title"><%= @page.title %> </h1>
 		<% end %>
 		<%= @page.body %>
-		<% if params[:parent] == "office" %>
+		<% if params[:parent] == "shop" %>
 			<% if params[:name] == "staff" %>
 				<ol class="staff">
 					<%= render :partial => "shared/staff", :collection => @staff %>
@@ -74,7 +74,7 @@
 	<% if @page.name == "why" ||  params[:parent] == "why" %>
 		<%= render :partial => "shared/why" %>
 	<% end %>
-	<% if @page.name == "office" ||  params[:parent] == "office" %>
+	<% if @page.name == "shop" ||  params[:parent] == "shop" %>
 		<%= render :partial => "shared/eandv_vip" %>
 		<%= render :partial => "shared/top5" %>
 	<% end %>
@@ -127,7 +127,7 @@ jQuery(document).ready(function() {
 
 });
 </script>
-	<% if params[:name] == "office"  %>
+	<% if params[:name] == "shop"  %>
 		<%= GMap.header(:with_vml => false, :host => request.host)%>
 		<%= @map.to_html %>
 	<% end %>
