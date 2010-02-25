@@ -26,7 +26,7 @@
 #left-side #side-nav .left_tool ul li span { float: left; font-size: 12px; font-style: italic; width: 100px; margin: 2px 0 0 13px; color: #818181; }
 #left-side #side-nav .left_tool ul li span a { color: #888888; }
 #left-side #side-nav .left_tool ul li span a:hover { color: #E13939; }
-#left-side #side-nav .share_box { height: 76px; background-image: url(../images/system/bg/front/share.jpg); margin-top: 14px; }
+#left-side #side-nav .share_box { height: 76px; background-image: url(../images/system/bg/front/share.jpg); margin: 14px 0; }
 #left-side #side-nav .share_box a { margin-left: 18px; }
 #left-side #side-nav .why h3 { margin: 5px 0 0 5px; text-align: left; width: 90px; }
 #left-side #side-nav .why h3 a { margin-left: 0px; }
@@ -44,7 +44,7 @@
 #left-side #side-nav .gossip_box .jScrollPaneContainer ul#gossip { width: 162px; font-size: 10px; height: 100%; }
 #left-side #side-nav .gossip_box .jScrollPaneContainer ul#gossip li { margin: 10px 35px 0 16px; padding-right: 15px; height: 100%; }
 #left-side #side-nav .gossip_box .jScrollPaneContainer ul#gossip li span { width: 100%; color: #e2001a; margin: 0px; font-style: normal; }
-#left-side #side-nav .market_box { height: 205px; background-image: url(../images/system/bg/front/RMarketBG.jpg); margin-top: 14px; }
+#left-side #side-nav .market_box { height: 205px; background-image: url(../images/system/bg/front/RMarketBG.jpg); margin-top: 0px; }
 #left-side #side-nav .market_box h3 { text-align: center; width: 100%; }
 #left-side #side-nav .market_box h3.download { margin: -5px 0 0 0; }
 #left-side #side-nav .market_box h3.download span.title a { text-transform: capitalize; }
