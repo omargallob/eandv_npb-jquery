@@ -42,8 +42,8 @@ class Admin::PostsController < Admin::BaseController
 	end
 
   def show
-	 @parent = Post.find_by_name(params[:id])
-   @subposts = Post.find_sub(@parent.id)
+	 @parent = Post.find_by_id(params[:id])
+   @posts = @parent.subposts
       #@subcategories = @category.subcategories
      
   end
