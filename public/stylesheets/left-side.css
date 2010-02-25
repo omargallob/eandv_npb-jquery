@@ -106,7 +106,7 @@
 #left-side #news ol#blog li h6 span { color: #888888; }
 #left-side #news ol#blog li p { margin: 5px 24px 0px; font-style: italic; font-family: "Georgia"; float: left; }
 #left-side #main { width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
-#left-side #main #comunicate { width: 136px; height: 45px; float: right; margin-right: 18px; }
+#left-side #main #comunicate { width: 136px; height: 90px; float: right; margin-right: 18px; }
 #left-side #main #comunicate table { margin: 10px auto; padding: 0px; }
 #left-side #main #comunicate table td { margin: 0px; padding: 0px; text-align: center; }
 #left-side #main #comunicate table td a { color: white; text-decoration: none; margin: 0px; float: none; }
@@ -114,6 +114,7 @@
 #left-side #main #comunicate table td.chat { height: 21px; width: 56px; background: url(/images/system/buttons/FeaturedChatBtn.jpg); background-repeat: no-repeat; }
 #left-side #main #comunicate table td.contact { height: 22px; width: 64px; margin-left: 15px; background: url(/images/system/buttons/FeaturedcontactBtn.jpg); }
 #left-side #main #comunicate table td.spacer { width: 10px; }
+#left-side #main #comunicate a { width: 100%; text-align: center; margin: 0px; }
 #left-side #main #comunicate.nonfeatured table td { background: transparent; }
 #left-side #main #comunicate.nonfeatured table td a { color: #E13939; }
 #left-side #main #comunicate.nonfeatured table td a:hover { color: black; }

@@ -16,9 +16,6 @@
 		<hr/>
 		<div id="property_content">
 			<%= property.description%>
-			<% if property.pdf %>			 	
-				<%= link_to "download pdf", property.pdf.url(:original), :style=>"float:left;margin-left:7px" %><br />
-			<% end %>
 		</div>
 		<div id="facility_list">
 			<div class="top"></div>
@@ -38,6 +35,7 @@
 					<td class="contact">	<%= link_to "contact","/contact?iframe=true&width=560&height=600" ,:rel=>"prettyPhoto" %></td>
 				</tr>	
 			</table>	
+		<%= link_to "download pdf", property.pdf.url(:original) if property.pdf.url(:original) != "/pdfs/original/missing.png" %>
 		</div>
 		<hr />
 		<div class="further">
