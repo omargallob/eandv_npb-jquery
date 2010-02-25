@@ -41,7 +41,7 @@ class PropertiesController < ApplicationController
   end
 
   def show
-
+ @faqs = Faq.find(:all)
     @property = Property.find_by_id(params[:id])
     @page = Page.find_by_name('properties')
   	@subpages = @page.subpages
