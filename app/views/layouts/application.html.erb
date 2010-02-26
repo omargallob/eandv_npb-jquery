@@ -74,7 +74,7 @@
 
 <script type="text/javascript">
 		var flashvars = {};
-		//flashvars.stackXml = "/about.xml";
+		flashvars.featuredXml = "/featured.xml";
 		flashvars.font = "font.swf";
 		var attributes = {};
 		attributes.wmode = "transparent";
@@ -90,10 +90,7 @@
 			<div id="holder">
 				<div id="cuber">
 					<div id="listOfImages">
-						<%= image_tag "static/slide_2.jpg" %>
-						<% if @page.page_featured_photo %>
-							<%# render :partial => "shared/admin/images/featured_photo", :object => @page %>
-						<% end %>
+						<%= image_tag ("system/bg/front/logo.jpg") %>
 					</div>
 				</div>
 			</div>	

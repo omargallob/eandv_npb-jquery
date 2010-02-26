@@ -7813,3 +7813,5 @@ query: +(state:los county:los city:los region:los area:los zipcod:los city_initi
 stored_fields: 
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
