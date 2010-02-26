@@ -5,7 +5,7 @@ xml.instruct!
 				 xml.image  upload.photo.url(:pagesize).to_s, "path"=>upload.photo.url(:thumb).to_s
 		end
 		xml.youtube @property.youtube
-		xml.featured @property.featured
+		xml.videoflag @property.featured
 	end
 end
 

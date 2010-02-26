@@ -4,17 +4,84 @@ xml.featured do
 		if property.featured_gallery	
 			property.featured_gallery.featured_uploads.each do |upload|
 			 xml.image(upload.photo.url(:pagesize), :path=>	upload.photo.url(:thumb))
-			 xml.addressA property.title
-			 xml.addressB property.location.region+", "+property.location.county+", "+property.location.state
- 			 xml.bedrooms property.bedrooms.to_s
- 			 xml.bathrooms property.bathrooms.to_s
-			 xml.lotsize property.built	
-			 xml.sqf property.plot	
-			 xml.price number_to_currency(property.price, :precision => 0)	
-			 xml.countryflag property.location.country.flag.url()	
-			 xml.youtube property.youtube	
-	     xml.plink property_path(property)	
+
 			end	
 		end
   end
+	@featured.each do |property|
+		if property.featured_gallery	
+			property.featured_gallery.featured_uploads.each do |upload|
+			 xml.addressA property.title
+
+			end	
+		end
+	end
+	@featured.each do |property|
+		if property.featured_gallery	
+			property.featured_gallery.featured_uploads.each do |upload|
+			 xml.addressB property.location.region+", "+property.location.county+", "+property.location.state
+
+			end	
+		end
+	end
+	@featured.each do |property|
+		if property.featured_gallery	
+			property.featured_gallery.featured_uploads.each do |upload|
+		 			 xml.bedrooms property.bedrooms.to_s
+
+			end	
+		end
+	end
+	@featured.each do |property|
+		if property.featured_gallery	
+			property.featured_gallery.featured_uploads.each do |upload|
+		 		 xml.bathrooms property.bathrooms.to_s
+
+			end	
+		end
+	end
+	@featured.each do |property|
+		if property.featured_gallery	
+			property.featured_gallery.featured_uploads.each do |upload|
+			 xml.lotsize property.built	
+
+			end	
+		end
+	end
+	@featured.each do |property|
+		if property.featured_gallery	
+			property.featured_gallery.featured_uploads.each do |upload|
+			 xml.sqf property.plot	
+
+			end	
+		end
+	end
+	@featured.each do |property|
+		if property.featured_gallery	
+			property.featured_gallery.featured_uploads.each do |upload|
+				xml.price number_to_currency(property.price, :precision => 0)	
+			end	
+		end
+	end
+	@featured.each do |property|
+		if property.featured_gallery	
+			property.featured_gallery.featured_uploads.each do |upload|
+			 xml.countryflag property.location.country.flag.url()	
+			end	
+		end
+	end
+	@featured.each do |property|
+		if property.featured_gallery	
+			property.featured_gallery.featured_uploads.each do |upload|
+			 xml.youtube property.youtube	
+			end	
+		end
+	end
+	@featured.each do |property|
+		if property.featured_gallery	
+			property.featured_gallery.featured_uploads.each do |upload|
+	     xml.plink property_path(property)	
+			end	
+		end
+	end
 end
