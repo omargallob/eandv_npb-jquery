@@ -97,7 +97,7 @@
 #left-side #news hr { width: 409px; height: 1px; text-align: center; background-color: #e1e1e1; border: 0px none; float: left; margin-left: 16px; }
 #left-side #news #blog_container { height: 275px; float: left; }
 #left-side #news ol#blog { list-style-type: none; }
-#left-side #news ol#blog li { background: transparent; margin: 0px; padding: 0 12px; }
+#left-side #news ol#blog li { background: transparent; margin: 0px; padding: 0 24px; }
 #left-side #news ol#blog li hr { margin-left: 4px; }
 #left-side #news ol#blog li h2 { padding: 0px 0 0 24px; margin: 0px; float: left; width: 100%; }
 #left-side #news ol#blog li h2 a { text-decoration: none; }
