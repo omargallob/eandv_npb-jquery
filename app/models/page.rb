@@ -13,7 +13,7 @@ class Page < ActiveRecord::Base
                             :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
                             :path => "/assets/page/:id/thumb/:style/:basename.jpg"
 
- 	has_attached_file :main,:styles => {:pagesize => ["399x297#", :jpg]},:convert_options => {:pagesize => "-strip -quality 60"},:processors => [:cropper],
+ 	has_attached_file :main,:styles => {:pagesize => ["419x317#", :jpg]},:convert_options => {:pagesize => "-strip -quality 60"},:processors => [:cropper],
                        :storage => :s3,
                        :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
                        :path => "/assets/page/:id/main/:style/:basename.jpg",
