@@ -7,7 +7,7 @@ class PropertiesController < ApplicationController
 		pickup_properties(@search_query.id)
     #@properties.sort!{|x| x.featured }
 		#@properties.sort!{|x| x.featured == true }
-    @faqs = Faq.find(:all)
+    @faqs = Faq.find(:all, :conditions => ["gossip = ?",false])
 		case params[:filter]
 			when "rent"
 			@properties.delete_if {|x| x.rental == false }
@@ -41,7 +41,7 @@ class PropertiesController < ApplicationController
   end
 
   def show
- @faqs = Faq.find(:all)
+ @faqs = Faq.find(:all, :conditions => ["gossip = ?",false])
     @property = Property.find_by_id(params[:id])
     @page = Page.find_by_name('properties')
   	@subpages = @page.subpages

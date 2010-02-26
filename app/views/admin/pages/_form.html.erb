@@ -33,15 +33,12 @@
 <p>
 	  <%= f.label :thumb %><br/>
   	  <%= f.file_field(:thumb) %>
-	    <%# s3_swf_upload_tag(:width => 310, 
-		        :height => 60, 
-		        :success => 'alert("success");',
-		        :failed => 'alert(error);',
-		        :selected => 'alert("selected");',
-		        :prefix => 'assets/page',
-		        :initialMessage => 'Press this button to find the file to upload',
-		        :upload => 'Press Here To Activate Upload',
-		        :do_checks => '0') 
-		  %>  
+
+</p>
+
+<p>
+	  <%= f.label :main %><br/>
+  	  <%= f.file_field(:main) %>
+
 </p>
 	

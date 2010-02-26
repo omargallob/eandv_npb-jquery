@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100223165354) do
+ActiveRecord::Schema.define(:version => 20100226200850) do
 
   create_table "categories", :force => true do |t|
     t.string   "title"
@@ -217,6 +217,10 @@ ActiveRecord::Schema.define(:version => 20100223165354) do
     t.string   "thumb_content_type"
     t.integer  "thumb_file_size"
     t.datetime "thumb_updated_at"
+    t.string   "main_file_name"
+    t.string   "main_content_type"
+    t.integer  "main_file_size"
+    t.datetime "main_updated_at"
   end
 
   create_table "partners", :force => true do |t|
