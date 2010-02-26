@@ -4207,3 +4207,4 @@ Sun Feb 14 16:43:00 +0100 2010: Error calling Dispatcher.dispatch #<SyntaxError:
 /home/omar/Proyectos/EandV/npb/app/views/admin/pages/_page.html.erb:18: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/admin/pages/_page.html.erb:19: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/admin/pages/edit.html.erb:4: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/featured/show.html.erb:21: warning: don't put space before argument parentheses
