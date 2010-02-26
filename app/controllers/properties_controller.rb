@@ -239,7 +239,9 @@ class PropertiesController < ApplicationController
    	@properties = @properties.paginate :page => params[:page], :per_page => 10   
   end
   
-  
+  def auxiliar
+		render :layout => "search"
+	end
   
   
 end

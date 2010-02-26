@@ -81,6 +81,7 @@ ActionController::Routing::Routes.draw do |map|
       admin.update_gallery 'galleries/:id', :controller=>"galleries",:action => "update"
   end
   
+	map.auxiliar '/auxiliar', :controller=>"properties", :action => "auxiliar"
 	map.featured '/featured', :controller => "properties", :action => "index", :filter => "featured"
   map.view_page ':name', :controller => 'viewer', :action => 'show'
   map.view_page_parent ':parent/:name', :controller => 'viewer', :action => 'show'

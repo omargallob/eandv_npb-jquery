@@ -15,6 +15,7 @@ javascripts:
   - jquery.mousewheel
   - jquery.jcarousel
   - jquery.prettyPhoto
+  - jquery.formobserver
 - admin:
   - _jquery
   - _jrails
