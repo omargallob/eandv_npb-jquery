@@ -1,0 +1,14 @@
+<% form_for :search_query, @search_query,:url=>search_query_path,:html=>{:id=>"Selectable",:class => "form", :method => "GET"} do |form| %>
+	<div>
+			<table>
+				<tr>
+					<td>Country</td>
+					<td><%= form.select("country", @countries, {:include_blank => false},{:class=>"styled"})%></td>
+				</tr>
+			<table>
+	</div>
+	<div class="titles">
+	
+	
+	</div>
+<% end -%>

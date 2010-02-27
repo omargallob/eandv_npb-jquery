@@ -19,10 +19,38 @@
 		<hr />
 		<ul id="view_options">
 			<li class="first"><span>View Options</span></li>
-					<li class="buy"><a href="#" class="filter">Buy</a></li>
-					<li class="rent"><a href="#" class="filter">Rent</a></li>
-					<li class="date"><a href="#" class="sort">Date </a><%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %></li>
-					<li class="price"><a href="#" class="sort" style="margin-left:13px">Price </a></li>
+			<li class="buy">
+				<% if params[:filter]=="buy"%>
+					<%= link_to "Buy", "#", :class => "active" %>				
+				<% else %>
+					<%= link_to "Buy", properties_filter_path("buy")  %>				
+				<% end %>
+			<li class="rent">
+				<% if params[:filter]=="rent"%>
+					<%= link_to "Rent", "#", :class => "active" %>				
+				<% else %>
+					<%= link_to "Rent", properties_filter_path("rent")  %>				
+				<% end %>		
+			</li>
+			<li class="price">
+				<% if params[:filter]=="featured"%>
+					<%= link_to "Featured", "#", :class => "active" %>				
+				<% else %>
+					<%= link_to "Featured", featured_path  %>				
+				<% end %>		
+			</li>
+			<li class="price">
+				<% unless params[:filter] %>
+					<%= link_to "Price", properties_order_path(@order) %>
+				<% else %>
+					<%= link_to "Price", properties_filter_order_path(params[:filter],@order) %>
+				<% end %>
+				<% if @order == "des" %>				
+					<%= image_tag "system/buttons/Filters/Filter_Arrow.jpg" %>
+				<% else %>
+					<%= image_tag "system/buttons/Filters/Filter_Arrow_down.jpg" %>
+				<% end %>
+			</li>
 		</ul>
 		<hr />
 		<%= render :partial => "properties_holder", :object => @properties %>
@@ -57,7 +85,7 @@ $(document).ready(function() {
 
 	var main_height= $('#main').height();
 	$('#content').css("height","100%"); 
-	$('.droppies').combobox(); 
+	
 	$('#main').addClass('properties');
 	$("#view_options").filter_options();
 	$('#faq_block').jScrollPane({scrollbarWidth:17,showArrows:true});
