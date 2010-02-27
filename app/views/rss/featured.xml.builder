@@ -1,5 +1,5 @@
 xml.instruct!
-xml.featured do
+xml.images do
    @featured.each do |property|
 		if property.featured_gallery	
 			property.featured_gallery.featured_uploads.each do |upload|
@@ -11,7 +11,7 @@ xml.featured do
 	@featured.each do |property|
 		if property.featured_gallery	
 			property.featured_gallery.featured_uploads.each do |upload|
-			 xml.addressA property.title
+			 xml.addressa property.title
 
 			end	
 		end
@@ -19,7 +19,7 @@ xml.featured do
 	@featured.each do |property|
 		if property.featured_gallery	
 			property.featured_gallery.featured_uploads.each do |upload|
-			 xml.addressB property.location.region+", "+property.location.county+", "+property.location.state
+			 xml.addressb property.location.region+", "+property.location.county+", "+property.location.state
 
 			end	
 		end
