@@ -148,6 +148,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main.featured h1.title {color: white}
 #left-side #main.featured hr {background-color: #4d4d4d}
 #left-side #main.featured #property_header h1 {color: white}
+#left-side #main.featured #property_header .address {background: transparent}
 #left-side #main.featured #property_header .address p {background: url(/images/system/bg/front/FeaturedH2BG.jpg); background-repeat: no-repeat; width: 270px}
 #left-side #main.featured #property_header ul.facility li.number {background: transparent}
 #left-side #main.featured #property_header ul.facility li.number p {color: white}
@@ -277,7 +278,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main .featured .image {margin: 16px 7px 0 13px}
 #left-side #main .featured .address {background: transparent}
 #left-side #main .featured .extra {background: transparent}
-#left-side #main .featured .extra ul.facility li.number {background: transparent}
+#left-side #main .featured .extra ul.facility li.number {background: transparent; color: white}
 #left-side #main .featured .extra ul.facility li.number p {margin: 0 0 0 6px}
 #left-side #main .featured .extra ul.facility li.bed {background: transparent}
 #left-side #main .featured .extra ul.facility li.bath {background: transparent}
