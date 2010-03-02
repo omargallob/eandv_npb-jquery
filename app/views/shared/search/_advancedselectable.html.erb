@@ -47,3 +47,20 @@
 		<p>Zip</p>
 	</div>
 <% end -%>
+<div id="output"></div>
+<script>
+$(document).ready(function(){
+	
+	$("#search_query_country").change(onSelectChange);
+	
+});
+function onSelectChange(){
+	var selected = $("#search_query_country option:selected");		
+	var output = "";
+	aux = $('#Selectable').serialize();
+	if(selected.val() != 0){
+	$.post('/update_dd',aux, null, "script");
+		return true;
+	}
+}
+</script>

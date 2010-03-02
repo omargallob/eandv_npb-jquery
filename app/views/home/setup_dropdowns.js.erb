@@ -1,0 +1,10 @@
+
+$('#search_query_states').html('<%= escape_javascript(options_for_select(@states.uniq) ) %>');
+$('#selectsearch_query_states').text('<%= @states.uniq.first %>');
+
+
+$('#search_query_region').html('<%= escape_javascript(options_for_select(@county.uniq) ) %>');
+$('#selectsearch_query_region').text('<%= @county.uniq.first %>');
+
+$('#search_query_area').html('<%= escape_javascript(options_for_select(@region.uniq) ) %>');
+$('#selectsearch_query_area').text('<%= @region.uniq.first %>');

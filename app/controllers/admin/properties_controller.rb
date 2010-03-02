@@ -1,6 +1,6 @@
 class Admin::PropertiesController < Admin::BaseController
   def index
-    @locations = Location.find(:all, :conditions => ['county=?','Orange'])
+    @locations = Location.find(:all)
     @properties = Property.find(:all, :include => 'location',:order => 'locations.region')
      respond_to do |format|
          format.html # show.html.erb
@@ -17,7 +17,7 @@ class Admin::PropertiesController < Admin::BaseController
   end
 
   def new
-    @locations = Location.find(:all, :conditions => ['county=?','Orange'])
+    @locations = Location.find(:all)
     @property = Property.new
   end
 

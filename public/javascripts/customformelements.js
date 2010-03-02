@@ -73,13 +73,13 @@ var Custom = {
 				}
 				span[a] = document.createElement("span");
 				span[a].className = "select";
-				span[a].id = "select" + inputs[a].name;
+				span[a].id = "select" + inputs[a].id;
 				span[a].appendChild(textnode);
 				inputs[a].parentNode.insertBefore(span[a], inputs[a]);
 				if(!inputs[a].getAttribute("disabled")) {
 					inputs[a].onchange = Custom.choose;
 				} else {
-					inputs[a].previousSibling.className = inputs[a].previousSibling.className += " disabled";
+				//	inputs[a].previousSibling.className = inputs[a].previousSibling.className += " disabled";
 				}
 			}
 		}
@@ -137,7 +137,11 @@ var Custom = {
 		for(d = 0; d < option.length; d++) {
 			if(option[d].selected == true) {
 				
-				document.getElementById("select" + this.name).childNodes[0].nodeValue = option[d].childNodes[0].nodeValue;
+				document.getElementById("select" + this.id).childNodes[0].nodeValue = option[d].childNodes[0].nodeValue;
+				if(this.name=='search_query[country]'){
+					//alert(this.value);					
+				}
+
 			}
 		}
 	}

@@ -17,7 +17,7 @@
 	<hr/>
 	<p>
 		  <%= f.label :location_id %><br/>
-	  	  <%= f.select(:location_id, Location.find(:all, :conditions =>['county=?','Orange'],:order => "region").collect {|p| [ ' ('+p.zipcod+') '+p.region, p.id ] })
+	  	  <%= f.select(:location_id, Location.find(:all,:order => "region").collect {|p| [ ' ('+p.zipcod+') '+p.region, p.id ] })
 		   %>
 	</p>
 	<hr/>

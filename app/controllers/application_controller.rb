@@ -25,7 +25,10 @@ class ApplicationController < ActionController::Base
   
   def pickupproperties
     @locations = Location.find(:all)
-    @countries = Country.find(:all).collect {|p| [ p.title, p.title ] }
+		@locations.delete_if{|q| q.properties.size == 0}
+    @countries = Country.find(:all)
+		@countries.delete_if{|s| s.locations.size == 0}
+		@countries = @countries.collect {|p| [ p.title, p.title ]}
     @states = @locations.map { |x| x.state }
     @county = @locations.map { |x| x.city+" - "+x.county }  
     @region = @locations.map { |x| x.region }
@@ -34,6 +37,10 @@ class ApplicationController < ActionController::Base
     @bedrooms = @aux_props.map{ |y| y.bedrooms}
     @bedrooms << "All"
   end
+	
+	def pickup_dropdowns_country()
+
+	end
   
 def pickup_properties(id)
     @properties = []
