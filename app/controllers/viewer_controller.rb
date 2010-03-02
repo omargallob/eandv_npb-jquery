@@ -9,8 +9,21 @@ class ViewerController < ApplicationController
       @parent = @page
        @subpages = @page.subpages
     end
-		if @page.name == "shop"
-		 string = "260 Newport Center Drive, Newport Beach, CA 92660" 
+		if @page.name == "shop" || @parent.name == "about"
+			case @page.name
+				when "fashion"
+		     string = "Fashion Island Shopping Center, Newport Beach, CA 92660" 
+				when "balboaisl"
+				 string = "Balboa Island, Newport Beach, CA 92662" 
+				when "balboapns"
+				 string = "Balboa Peninsula, Newport Beach, CA" 	
+				when "shop"
+				 string = "260 Newport Center Drive, Newport Beach, CA 92660" 	
+				when "about"
+				 string = "260 Newport Center Drive, Newport Beach, CA 92660" 
+				else
+				 string = "260 Newport Center Drive, Newport Beach, CA 92660" 
+			end
 
 			@res=GoogleGeocoder.geocode(string)    
 			if @res.success

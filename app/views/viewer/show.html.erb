@@ -32,10 +32,16 @@
 	 		<%= @map.div(:width => 419, :height => 317) %>
 			<hr />
 		<% end %>		
+	
 		<% if @page.name == "home" %>
 			<h1 class="title"><%= @page.title %> </h1>
 		<% end %>
 		<%= @page.body %>
+		<% if @parent.name == "about" %>
+			<hr />
+	 		<%= @map.div(:width => 419, :height => 317) %>
+			<hr />
+		<% end %>
 		<% if params[:parent] == "shop" %>
 			<% if params[:name] == "staff" %>
 				<ol class="staff">
@@ -130,7 +136,7 @@ jQuery(document).ready(function() {
 
 });
 </script>
-	<% if params[:name] == "shop"  %>
+	<% if params[:name] == "shop" || params[:parent] == "about" %>
 		<%= GMap.header(:with_vml => false, :host => request.host)%>
 		<%= @map.to_html %>
 	<% end %>
