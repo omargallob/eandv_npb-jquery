@@ -20,34 +20,7 @@
 	    clear: both;
 	    visibility: hidden;
 	    }
-#nav, #nav ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	background: url(images/system/bg/admin/navbar.png)
-}
 
-#nav a {
-	display: block;
-	width: 15em;
-}
-
-#nav li {
-	float: left;
-	width: 15em;
-	height: 50px
-	background: url(images/system/bg/admin/navbar.png)
-
-}
-#nav li ul {
-	position: absolute;
-	width: 15em;
-	left: -999em;
-}
-
-#nav li:hover ul {
-	left: auto;
-}
 	</style>
 	<%= javascript_include_merged "admin_packaged" %>
 	<script src="/javascripts/cufon.js" type="text/javascript" charset="utf-8"></script>
@@ -74,18 +47,7 @@
 		  color: 'white',
 		  fontSize: "12px",
 	 });
-sfHover = function() {
-	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
-	for (var i=0; i<sfEls.length; i++) {
-		sfEls[i].onmouseover=function() {
-			this.className+=" sfhover";
-		}
-		sfEls[i].onmouseout=function() {
-			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
-		}
-	}
-}
-if (window.attachEvent) window.attachEvent("onload", sfHover);
+
 	</script>
 	<%= yield :script %>
   </head>
@@ -100,7 +62,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 		  	</div>
 			<div id='navbar'>
 				<ul>
-					<%= render :partial => "shared/back_menu_new" %>
+					<%= render :partial => "shared/back_menu" %>
 				</ul>
 		  	</div>
 		</div>
