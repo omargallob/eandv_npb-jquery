@@ -11,8 +11,10 @@
 			<hr style="margin-top:2px"/>
 				<%= render :partial => "shared/home_sidenav" %>
 
-			<% else %>
+			<% else %>	
+		
 				<%= render :partial => "shared/left_sidenav" %>
+
 			<% end %>
 	</div>
 	<% if params[:name] == "about" || params[:parent] == "about" %>
@@ -39,8 +41,11 @@
 		<%= @page.body %>
 		<% if @parent.name == "about" %>
 			<hr />
+			<% unless params[:name] == "about" %>
 	 		<%= @map.div(:width => 419, :height => 317) %>
 			<hr />
+			<% end %>
+
 		<% end %>
 		<% if params[:parent] == "shop" %>
 			<% if params[:name] == "staff" %>
