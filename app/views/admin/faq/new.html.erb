@@ -1,23 +1,27 @@
 <div id="side-nav">
 	<ul>
-<li>	<%= link_to "New", new_admin_faq_path %></li>
+
 <li>	<%= link_to 'Back', admin_pages_path %></li>
 	</ul>
 </div>
 
 
-<div id="main">
-	<h1>New Faq</h1>
 
+	<h1>New Faq</h1>
+<div style="float:left">	
+	<hr />
 	<% form_for :faq, @faq, :url => {:action => ""}  do |f| %>	
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>
 	    <%= f.submit 'Create' %>
 	  </p>
 	<% end %>
-	<hr />
 
-</div>
+	<hr />
+	</div>
+
+
+
 <% content_for(:script) do %>
 <%= javascript_include_tag 'tiny_mce/tiny_mce' %>
 	<script type="text/javascript">

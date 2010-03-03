@@ -21,7 +21,7 @@ body a:hover { color: red; }
 #content #side-nav ul li { list-style: none; }
 #content #side-nav ul li a { color: black; }
 #content #side-nav ul li a:hover { color: red; }
-#content h1 { font-size: 24px; text-align: left; }
+#content h1 { font-size: 24px; width: 970px; float: left; text-align: right; }
 #content h2 { font-size: 21px; text-align: left; font-weight: bold; }
 #content p { margin: 10px 0 10px 0; }
 #content p span.title-name { width: 150px; }
@@ -48,3 +48,5 @@ body a:hover { color: red; }
 
 table.page_list { margin-top: 45px; display: block; width: 742px; }
 table.page_list tr.subcategory { display: none; }
+
+#itsthetable { float: left; }

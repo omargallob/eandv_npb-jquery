@@ -1,23 +1,20 @@
 <div id="side-nav">
 	<ul>
-		<%= render :partial => "shared/admin/pages_sidenav" %>
+		<%= link_to "Back", :back %>
 	</ul>
 </div>
 
-<div id="subcontent">
 	<h1><%= t('pages.index.title')%> <b><%= " :"+@parent.name if params[:parent]%></b></h1>
 
 	<div id="itsthetable">	
 		<table class="page_list">
-			<tr>
+			<thead>
 				<th><%= t('headerlist.name')%></th>	
 				<th><%= t('headerlist.title')%></th>
 				<th><%= t('headerlist.options')%></th>
 				<th>Sublevel</th>	
-			</tr>			
+			</thead>			
 			<%= render :partial => "page", :collection => @pages %>
 		</table>
 	</div>
-	<br />
-	
-</div>	
+

@@ -1,27 +1,28 @@
 <div id="side-nav">
 	<ul>
-		<%= render :partial => "shared/admin/types_sidenav" %>
+			<li><%= link_to 'back',  :back %></li>
 	</ul>
 </div>
 
-<div id="subcontent">
+
 	<h1>Listing types of developments (total: <%= @types.size %>)</h1>
-	
+	<div id="itsthetable">	
+	<hr />
 	<table>
-	  <tr>
-	    <td class="tableheader">id</td>
-			<td>&nbsp;|&nbsp;</td>
-	    <td class="tableheader">Title</td>
-			<td>&nbsp;|&nbsp;</td>
-		  <td class="tableheader">Options</td>
-	  </tr>
+	  <thead>
+	    <th class="tableheader">id</th>
+	
+	    <th class="tableheader">Title</th>
+
+		  <th class="tableheader">Options</th>
+	  </thead>
 
 	<% @types.each do |type| %>
 	  <tr>
 	    <td class="tableheader"><%= type.id %></td>
-			<td>&nbsp;|&nbsp;</td>
+
 	    <td class="tableheader"><%= type.title %></td>
-			<td>&nbsp;|&nbsp;</td>
+		
 		<td>
 			<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"),edit_admin_type_path(type) %> |
 			<%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => "edit"),admin_type_path(type),:method=>"delete" %>
@@ -29,7 +30,6 @@
 	  </tr>
 	<% end %>
 	</table>
+	<hr />
+	</div>	
 
-	<br />
-	
-</div>	

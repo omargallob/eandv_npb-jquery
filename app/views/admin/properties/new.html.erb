@@ -1,10 +1,11 @@
 <div id="side-nav">
 	<ul>
-		<%= render :partial => "shared/admin/property_sidenav" %>
+		<%= link_to "Back", :back %>
 	</ul>
 </div>
 
-<div id="main">
+
+
 	<h1>New property for Orange County (CA)</h1>
 
 	
@@ -32,7 +33,7 @@
 	    </div>
 	</div>
 	
-</div>
+
 <% content_for :script do %>
 <script type='text/javascript'>
 $(document).ready(function(){

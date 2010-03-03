@@ -1,23 +1,20 @@
 <div id="side-nav">
 	<ul>
-	<%= link_to "New", new_admin_faq_path %>
+		<%= link_to "Back", :back %>
 	</ul>
 </div>
 
-<div id="subcontent">
 	<h1>Frequently Asked Questions</b></h1>
 
 	<div id="itsthetable">	
 		<table class="page_list">
-			<tr>
+			<thead>
 				<th>Question</th>	
 				<th>Answers</th>
 				<th>User</th>
 				<th>Options</th>	
-			</tr>			
+			</thead>			
 			<%= render :partial => "line", :collection => @faqs %>
 		</table>
 	</div>
-	<br />
-	
-</div>	
+

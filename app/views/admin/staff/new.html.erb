@@ -3,17 +3,19 @@
 		<li>	<%= link_to 'Back', admin_pages_path %></li>
 	</ul>
 </div>
-<div id="main">
-	<h1>New staff member</h1>
 
+	<h1>New staff member</h1>
+	<div id="itsthetable">	
+	<hr />
 	<% form_for @member, :url => {:action => ""}, :html => { :multipart => true }  do |f| %>	
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>
 	    <%= f.submit 'Create' %>
 	  </p>
 	<% end %>
+
 	<hr />
+	</div>
 
 
 
-</div>

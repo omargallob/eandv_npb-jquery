@@ -1,27 +1,23 @@
 <div id="side-nav">
 	<ul>
-		<li><%= link_to t('options.index'), admin_opening_index_path  %></li>
-		<li><%= link_to t('options.new'), new_admin_opening_path %></li>
 		<li><%= link_to "back", :back %></li>
 	</ul>
 </div>
 
-<div id="subcontent">
+
 	<h1>Openings (<%= @openings.size %>)</h1>
 
 	<div id="itsthetable">	
 		<table class="page_list">
-			<tr>
+			<thead>
 				<th style="width:100px"><%= t('headerlist.name')%></th>	
 				<th style="width:200px"><%= t('headerlist.title')%></th>
 				<th style="width:100px">Extra</th>
 				<th style="width:300px">Description</th>
 				<th style="width:150px"><%= t('headerlist.options')%></th>
 
-			</tr>			
+			</thead>			
 			<%= render :partial => "member", :collection => @openings %>
 		</table>
 	</div>
-	<br />
-	
-</div>	
+

@@ -1,14 +1,14 @@
 <div id="side-nav">
 	<ul>
-<li>	<%= link_to "New", new_admin_gossip_path %></li>
+
 <li>	<%= link_to 'Back', admin_gossip_index_path %></li>
 	</ul>
 </div>
 
 
-<div id="main">
 	<h1>New Gossip</h1>
-
+<div style="float:left">	
+	<hr />
 	<% form_for :faq, @gossip, :url => {:action => ""}  do |f| %>	
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>
@@ -16,7 +16,6 @@
 	  </p>
 	<% end %>
 	<hr />
-
 </div>
 <% content_for(:script) do %>
 <%= javascript_include_tag 'tiny_mce/tiny_mce' %>
