@@ -1,31 +1,192 @@
-<ul id="nav">
-    <li><a href="#">Overview</a></li>
-    <li>
-        <a href="#">Main Content</a>
+<ul id="menu">
+    <% if controller.controller_name == "overview" %>
+			<li  class="cufon-active"><h2><%= link_to 'Overview'.upcase , {:controller => 'admin/overview', :action => 'index'},:class=>"active" %></h2></li>
+			<% else %>
+			<li ><h2><%= link_to 'Overview'.upcase , {:controller => 'admin/overview', :action => 'index'} %></h2></li>
+		<% end %>
+   <li>
+        <a href="#">MAIN CONTENT</a>
         <ul class="subnav">
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#">PAGES</a>
+								<ul>
+									<% if controller.controller_name == "pages"  and  controller.action_name == "index" %>
+									<li class="cufon-active"><h2><%= link_to 'Listings'.upcase , admin_pages_path,:class => "active" %></h2></li>
+									<% else %>
+									<li><h2><%= link_to 'Listings'.upcase , admin_pages_path %></h2></li>
+									<% end %>
+									<% if controller.controller_name == "pages" and  controller.action_name == "new"  %>
+									<li class="cufon-active"><h2><%= link_to 'New page'.upcase , new_admin_page_path,:class => "active" %></h2></li>
+									<% else %>
+									<li><h2><%= link_to 'New page'.upcase , new_admin_page_path %></h2></li>
+									<% end %>
+								</ul>
+						</li>
+ 						<li><a href="#">SERVICES</a>
+								<ul>
+								<% if controller.controller_name == "services"  and  controller.action_name == "index"  %>
+								<li class="cufon-active"><h2><%= link_to 'Listings'.upcase , {:controller => 'admin/services', :action => 'index'},:class=>"active" %></h2></li>
+								<% else %>
+								<li><h2><%= link_to 'Listings'.upcase , {:controller => 'admin/services', :action => 'index'} %></h2></li>
+								<% end %>
+									<% if controller.controller_name == "categories" and  controller.action_name == "new"  %>
+									<li class="cufon-active"><h2><%= link_to 'New service'.upcase , new_admin_category_path,:class => "active" %></h2></li>
+									<% else %>
+									<li><h2><%= link_to 'New service'.upcase , new_admin_category_path %></h2></li>
+									<% end %>
+								</ul>
+						</li>
+ 						<li><a href="#">PROPERTIES</a>
+								<ul>
+									<% if controller.controller_name == "properties" and  controller.action_name == "index"  %>
+									<li class="cufon-active"><h2><%= link_to 'Listings'.upcase , admin_properties_path,:class=>"active" %></h2></li>
+									<% else %>
+									<li><h2><%= link_to 'Listings'.upcase , admin_properties_path %></h2></li>
+									<% end %>
+									<% if controller.controller_name == "properties" and  controller.action_name == "new"  %>
+									<li class="cufon-active"><h2><%= link_to 'New property'.upcase , new_admin_property_path,:class => "active" %></h2></li>
+									<% else %>
+									<li><h2><%= link_to 'New property'.upcase , new_admin_property_path %></h2></li>
+									<% end %>
+								</ul>
+						</li>
         </ul>
     </li>
     <li>
-        <a href="#">Properties</a>
+        <a href="#">SECONDARY</a>
         <ul class="subnav">
-            <li><a href="#">Countries / locations</a></li>
-            <li><a href="#">Facilities</a></li>
-            <li><a href="#">Properties</a></li>
-            <li><a href="#">Types</a></li>
+            <li><a href="#">STAFF</a>
+								<ul>
+									<% if controller.controller_name == "staff"  and  controller.action_name == "index" %>
+									<li class="cufon-active"><h2><%= link_to 'Listings'.upcase , admin_staff_index_path,:class => "active" %></h2></li>
+									<% else %>
+									<li><h2><%= link_to 'Listings'.upcase , admin_staff_index_path %></h2></li>
+									<% end %>
+									<% if controller.controller_name == "staff" and  controller.action_name == "new"  %>
+									<li class="cufon-active"><h2><%= link_to 'New member'.upcase , new_admin_staff_path,:class => "active" %></h2></li>
+									<% else %>
+									<li><h2><%= link_to 'New member'.upcase , new_admin_staff_path %></h2></li>
+									<% end %>
+								</ul>
+						</li>
+            <li><a href="#">JOB OPENINGS</a>
+								<ul>
+									<% if controller.controller_name == "opening"  and  controller.action_name == "index" %>
+									<li class="cufon-active"><h2><%= link_to 'Listings'.upcase , admin_opening_index_path,:class => "active" %></h2></li>
+									<% else %>
+									<li><h2><%= link_to 'Listings'.upcase , admin_opening_index_path %></h2></li>
+									<% end %>
+									<% if controller.controller_name == "opening" and  controller.action_name == "new"  %>
+									<li class="cufon-active"><h2><%= link_to 'New job'.upcase ,new_admin_staff_path,:class => "active" %></h2></li>
+									<% else %>
+									<li><h2><%= link_to 'New job'.upcase , new_admin_staff_path %></h2></li>
+									<% end %>
+								</ul>
+						</li>
+            <li><a href="#">Blog moderator</a>
+							<ul>
+								<% if controller.controller_name == "posts" and  controller.action_name == "index" %>
+								<li class="cufon-active"><h2><%= link_to 'Listings'.upcase , admin_posts_path,:class => "active" %></h2></li>
+								<% else %>
+								<li><h2><%= link_to 'Listings'.upcase , admin_posts_path %></h2></li>
+								<% end %>
+								<% if controller.controller_name == "posts" and  controller.action_name == "new" %>
+								<li class="cufon-active"><h2><%= link_to 'New post'.upcase , new_admin_post_path,:class => "active" %></h2></li>
+								<% else %>
+								<li><h2><%= link_to 'New post'.upcase , new_admin_post_path %></h2></li>
+								<% end %>
+							</ul>
+						</li>
+            <li><a href="#">FAQ</a>
+							<ul>
+							<% if controller.controller_name == "faq" and  controller.action_name == "index" %>
+							<li class="cufon-active"><h2><%= link_to 'Listings'.upcase , admin_faq_index_path,:class => "active" %></h2></li>
+							<% else %>
+							<li><h2><%= link_to 'Listings'.upcase , admin_faq_index_path %></h2></li>
+							<% end %>
+							<% if controller.controller_name == "faq" and  controller.action_name == "new" %>
+							<li class="cufon-active"><h2><%= link_to 'New Faq'.upcase , new_admin_faq_path,:class => "active" %></h2></li>
+							<% else %>
+							<li><h2><%= link_to 'New Faq'.upcase , new_admin_faq_path %></h2></li>
+							<% end %>
+							</ul>				
+						</li>
+            <li><a href="#">GOSSIP</a>
+							<ul>
+								<% if controller.controller_name == "gossip" and  controller.action_name == "index" %>
+								<li class="cufon-active"><h2><%= link_to 'Listings'.upcase , admin_gossip_index_path,:class => "active" %></h2></li>
+								<% else %>
+								<li><h2><%= link_to 'ListingS'.upcase,  admin_gossip_index_path %></h2></li>
+								<% end %>
+								<% if controller.controller_name == "gossip" and  controller.action_name == "new" %>
+								<li class="cufon-active"><h2><%= link_to 'New gossip'.upcase , new_admin_gossip_path,:class => "active" %></h2></li>
+								<% else %>
+								<li><h2><%= link_to 'New gossip'.upcase,  new_admin_gossip_path %></h2></li>
+								<% end %>
+							</ul>
+						</li>
         </ul>
     </li>
+		<% if current_user.has_role?('admin')%>
     <li>
-        <a href="#">Secondary</a>
+        <h2><a href="#">ADMIN</a></h2>
         <ul class="subnav">
-            <li><a href="#">Staff</a></li>
-            <li><a href="#">Job Openings</a></li>
-            <li><a href="#">Blog moderator</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Gossip</a></li>
+ 					 <li><a href="#">COUNTRIES</a>
+						<ul>
+							<% if controller.controller_name == "countries"  and  controller.action_name == "index" %>
+							<li class="cufon-active"><h2><%= link_to 'listings'.upcase , {:controller => 'admin/countries', :action => 'index'},:class => "active"  %></h2></li>
+							<% else %>
+							<li><h2><%= link_to 'listings'.upcase , {:controller => 'admin/countries', :action => 'index'} %></h2></li>
+							<% end %>
+							<% if controller.controller_name == "countries"  and  controller.action_name == "new" %>
+							<li class="cufon-active"><h2><%= link_to 'New country'.upcase , {:controller => 'admin/countries', :action => 'new'},:class => "active"  %></h2></li>
+							<% else %>
+							<li><h2><%= link_to 'New country'.upcase , {:controller => 'admin/countries', :action => 'new'} %></h2></li>
+							<% end %>
+						</ul>
+					 </li>
+           <li><a href="#">FACILITIES</a>
+						<ul>
+						<% if controller.controller_name == "facilities"  and  controller.action_name == "index"  %>
+							<li class="cufon-active"><h2><%= link_to 'Listings'.upcase , admin_facilities_path,:class => "active" %></h2></li>
+							<% else %>
+							<li><h2><%= link_to 'Listings'.upcase , admin_facilities_path %></h2></li>
+							<% end %>
+						<% if controller.controller_name == "facilities"  and  controller.action_name == "new"  %>
+							<li class="cufon-active"><h2><%= link_to 'New Facility'.upcase , new_admin_facility_path,:class => "active" %></h2></li>
+							<% else %>
+							<li><h2><%= link_to 'New Facility'.upcase , new_admin_facility_path %></h2></li>
+							<% end %>
+						</ul>	
+					 </li>
+           <li><a href="#">TYPES</a>
+						<ul>
+							<% if controller.controller_name == "types" and  controller.action_name == "index"  %>
+							<li class="cufon-active" ><h2><%= link_to 'Listings'.upcase , {:controller => 'admin/types', :action => 'index'},:class=>"active" %></h2></li>
+							<% else %>
+							<li><h2><%= link_to 'Listings'.upcase , {:controller => 'admin/types', :action => 'index'} %></h2></li>
+							<% end %>
+							<% if controller.controller_name == "types" and  controller.action_name == "new"  %>
+							<li class="cufon-active" ><h2><%= link_to 'New types'.upcase , {:controller => 'admin/types', :action => 'new'},:class=>"active" %></h2></li>
+							<% else %>
+							<li><h2><%= link_to 'new Types'.upcase , {:controller => 'admin/types', :action => 'new'} %></h2></li>
+							<% end %>
+						</ul>		
+					 </li> 
+					 <li><a href="#">USERS</a>
+						<ul>
+						<% if controller.controller_name == "users" and controller.action_name == "index"  %>
+							<li class="cufon-active"><h2><%= link_to 'Listings'.upcase , admin_users_path,:class => "active" %></h2></li>
+							<% else %>
+							<li><h2><%= link_to 'Listings'.upcase , admin_users_path %></h2></li>
+						<% end %>
+						<% if controller.controller_name == "users" and controller.action_name == "new"  %>
+							<li class="cufon-active"><h2><%= link_to 'New user'.upcase , new_admin_user_path,:class => "active" %></h2></li>
+							<% else %>
+							<li><h2><%= link_to 'new user'.upcase , new_admin_user_path %></h2></li>
+						<% end %>
+						</ul>
+					</li>
         </ul>
     </li>
-    <li><a href="#">Users</a></li>
-    <li><a href="#">Metatags</a></li>
+		<% end %>
 </ul>

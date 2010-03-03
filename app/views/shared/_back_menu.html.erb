@@ -3,6 +3,7 @@
 <% else %>
 <li ><h2><%= link_to 'Overview'.upcase , {:controller => 'admin/overview', :action => 'index'} %></h2></li>
 <% end %>
+
 <% if controller.controller_name == "pages" %>
 <li class="cufon-active"><h2><%= link_to 'Pages'.upcase , {:controller => 'admin/pages', :action => 'index'},:class=>"active" %></h2></li>
 <% else %>

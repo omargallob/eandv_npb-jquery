@@ -35,6 +35,7 @@ javascripts:
   - jquery.jcarousel
   - browserdetect
   - jquery.Jcrop
+  - menu
   
 stylesheets: 
 - base: 

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<%= display_meta_tags %>	
-    <%= stylesheet_link_tag "screen","envnpb_backend","ui.tabs.css","sexylightbox","orangebrownie" %>
+    <%= stylesheet_link_tag "screen","envnpb_backend","ui.tabs.css","sexylightbox","orangebrownie","drop-down-menu" %>
 	<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 	<!--[if lt IE 8]>
 	      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -20,35 +20,75 @@
 	    clear: both;
 	    visibility: hidden;
 	    }
+#menu, #menu ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+#menu li {
+	float:left;
+	position:relative;
+	line-height: 4.5em;
+	width: 150px;
+}
+#menu li ul {
+	position:absolute;
+	margin:0px;
+	display:none;
+}
+#menu ul li ul {
+	margin-top:-25px;
+	margin-left:150px;
+}
+#menu a {
+	display:block;
+	border-right:1px solid #fff;
+	background:transparent;
+	color:#3B3B3B;
+	text-decoration:none;
+	padding:0 10px;
+}
+#menu a:hover {
+	background-color:#E13939;
+	color:#fff;
+}
+#menu ul {
+	border:0px none
+}
+
+#menu ul a {
+	border-right:none;
+	border-right:1px solid #fff;
+	border-bottom:1px solid #fff;
+	border-left:1px solid #fff;
+	background:#d4d4d4;
+}
+
+/* SHOW SUBMENU 1 */
+#menu li:hover ul, #menu li.over ul {
+	display:block;
+}
+#menu li:hover ul ul, #menu li.over ul ul {
+	display:none;
+}
+/* SHOW SUBMENU 2 */
+#menu ul li:hover ul, #menu ul li.over ul {
+	display:block;
+}
 
 	</style>
 	<%= javascript_include_merged "admin_packaged" %>
-	<script src="/javascripts/cufon.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/fonts/GarmdITC_BkCn_BT_400-GarmdITC_BkCn_BT_700-GarmdITC_BkCn_BT_italic_400-GarmdITC_BkCn_BT_italic_700.font.js" type="text/javascript" charset="utf-8"></script>
-	<script>
-	
-  	Cufon.replace('#navbar ul li.cufon-active h2', {
-		  hover: false
-	 });
-	
-	
-	Cufon.replace('#navbar ul li h2', {
-		   fontFamily: "GarmdITC BkCn BT",
-		   color: '#818181',
-		   fontSize: "12px",
-		   hover: {
-		   		color: 'white'
-		   }
-	 });
 
 
-  	Cufon.replace('#navbar ul li.cufon-active h2', {
-		  fontFamily: "GarmdITC BkCn BT",
-		  color: 'white',
-		  fontSize: "12px",
-	 });
+<!--[if IE]>
+<style type="text/css">
+	#menu li {
+		position:static;
+	}
 
-	</script>
+
+</style>
+<![endif]--> 
 	<%= yield :script %>
   </head>
   <body>
@@ -62,7 +102,7 @@
 		  	</div>
 			<div id='navbar'>
 				<ul>
-					<%= render :partial => "shared/back_menu" %>
+					<%= render :partial => "shared/back_menu_new" %>
 				</ul>
 		  	</div>
 		</div>
