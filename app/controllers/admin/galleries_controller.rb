@@ -15,10 +15,18 @@ class Admin::GalleriesController <  Admin::BaseController
 
   def create
     @gallery = Gallery.new params[:gallery]
-
        if @gallery.save
-         flash[:notice] = 'gallery was successfully created.'
-         redirect_to admin_gallery_path(@gallery)
+				@property = @gallery.property
+
+			
+						if @property.property_thumbnail.nil?
+				      flash[:notice] = '<h1 >steps 1 & 2 are complete!!!</h1><h2>Your missing the thumb for the property listing page - click on the media tab</h2>'
+							redirect_to(edit_admin_property_path(@property))
+						else
+				      flash[:notice] = '<h1 >steps 1, 2 & 3 are complete!!!</h1><h2>Property is 100% complete </h2>'
+							redirect_to(admin_property_path(@property)) 
+						end       
+				
        else
          render :action => "new"
        end
@@ -31,18 +39,32 @@ class Admin::GalleriesController <  Admin::BaseController
   
   def update
     @gallery = Gallery.find_by_id(params[:id])
+		@property = @gallery.property
 	  if @gallery.update_attributes(params[:gallery])
        respond_to do |format|
-       
-          flash[:notice] = 'gallery was successfully UPDATED.'
-          format.html {
-               flash[:notice] = 'gallery was successfully updated.'
-               redirect_to(admin_gallery_path(@gallery))
-          }
+         if @property.featured
+				   	if @property.featured_gallery.nil?
+				      flash[:notice] = '<h1> step2 & 3 are complete!!!</h1><h2>Property is 100% complete</h2>'
+							format.html { redirect_to(admin_property_path(@property)) }
+						else
+				      flash[:notice] = '<h1 >steps 1 & 2 are complete!!!</h1><h2>however the featured image for the home gallery hasnt been uploaded</h2>'
+							format.html { redirect_to(:controller => "featured",:action=>"new",:property_id=>@property ) }
+										
+						end
+					else
+        	if @property.property_thumbnail.nil?
+				      flash[:notice] = '<h1 >steps 1 & 2 are complete!!!</h1><h2>Your missing the thumb for the property listing page - click on the media tab</h2>'
+							format.html { redirect_to(edit_admin_property_path(@property)) }
+						else
+				      flash[:notice] = '<h1 >steps 1, 2 & 3 are complete!!!</h1><h2>Property is 100% complete </h2>'
+							format.html { redirect_to(admin_property_path(@property)) }
+						end    
+					end
 				end	
-        else
-          render :action => "edit"
-        end
+   
+    else
+      render :action => "edit"
+    end
      
   end
   

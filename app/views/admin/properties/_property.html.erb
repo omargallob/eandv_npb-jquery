@@ -1,5 +1,5 @@
 	<tr>
-		<td> <%= property.location.region %> </td>
+		<td> <%= image_tag property.property_thumbnail.photo.url(:pagesize) if property.property_thumbnail %><%= property.location.region %> </td>
 
 		<td> <%= property.title %> </td>
 

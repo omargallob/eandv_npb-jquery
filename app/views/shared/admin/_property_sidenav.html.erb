@@ -1,8 +1,30 @@
 <li><%= link_to 'Index', admin_properties_path %></li>
 <li><%= link_to 'back', :back %></li>
 <% if controller.action_name == "show"  %>
-<li><%= link_to 'edit', edit_admin_property_path(@property) %></li>
+<li>
+	<div style="padding:10px">
+	<%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "edit"), edit_admin_property_path(@property) %> 
+				<%= link_to image_tag ('system/buttons/delete.jpg',:height => "15px",:title => "delete"), admin_property_path(@property), :confirm => 'Are you sure?', :method => :delete %>
+	<% if @property.gallery %>
+				<%= link_to image_tag ('system/buttons/gallery.png', :height => "15px", :title =>"Gallery"), admin_gallery_path(@property.gallery) %>
+			<% else %>
+				<%= link_to image_tag ('system/buttons/gallery.png', :height => "15px", :title =>"New Gallery"), :controller => "galleries",:action=>"new",:property_id=>@property %>
+			<% end %>
 
-<li><%= link_to 'googlemap', admin_googlemap_path(@property) %></li>
+			
+			<% if @property.featured %>
+				<% if @property.featured_gallery %>
+					<%= link_to image_tag ('system/buttons/star.jpg', :height => "15px", :title =>"Featured"), admin_featured_path( @property.featured_gallery) %>
+				<% else %>
+					<%= link_to image_tag ('system/buttons/star.jpg', :height => "15px", :title =>"New Featured"), :controller => "featured",:action=>"new",:property_id=>@property %>
+				<% end %>
+			<% end %>
+	</div>
+
+</li>
+
+
+
+
 <li><%= link_to image_tag('system/buttons/rss.jpg',:height=>"20px"), admin_property_path(@property,:format =>"xml") %></li>
 <% end %>

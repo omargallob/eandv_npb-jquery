@@ -27,8 +27,9 @@ class Admin::PropertiesController < Admin::BaseController
 
       respond_to do |format|
         if @property.save
-          flash[:notice] = 'Created new property in  :'+@property.location.region+ " - ("+@property.location.state=")"
-          format.html { redirect_to(admin_property_path(@property)) }
+					
+          flash[:notice] = '<h1 >step1 complete!!!</h1> Created new property in  :'+@property.location.region+ " - ("+@property.location.state=")<h2>Now you will add the gallery</h2>"
+          format.html { redirect_to :controller => "galleries",:action=>"new",:property_id=>@property  }
         else
           format.html { render :action => "new" }
         end
@@ -45,9 +46,29 @@ class Admin::PropertiesController < Admin::BaseController
   
       respond_to do |format|
         if @property.update_attributes(params[:property])
-      
-          flash[:notice] = 'property was successfully updated.'
-          format.html { redirect_to(admin_property_path(@property)) }
+					
+      		if @property.gallery.nil?
+          flash[:notice] = '<h1>step1 complete!!!</h1><h2>Now you will add the gallery</h2>'
+					format.html {  redirect_to :controller => "galleries",:action=>"new",:property_id=>@property }
+					else
+						if @property.property_thumbnail.nil?
+				      flash[:notice] = '<h1 >steps 1 & 2 are complete!!!</h1><h2>Your missing the thumb for the property listing page - click on the media tab</h2>'
+							format.html { redirect_to(edit_admin_property_path(@property)) }
+						else
+				      if @property.featured
+									if @property.featured_gallery.nil?
+										flash[:notice] = '<h1> steps 1 2 & 3 are complete!!!</h1><h2>however the featured image for the home gallery hasnt been uploaded</h2>'
+										   format.html { redirect_to :controller => "featured",:action=>"new",:property_id=>@property }
+									else
+										flash[:notice] = '<h1 >steps 1, 2, 3 & 4 are complete!!!</h1><h2>Property is 100% complete</h2>'
+										  format.html { redirect_to(admin_property_path(@property)) }
+	
+									end
+							end
+						end      
+       
+					end
+          
           format.xml  { head :ok }
         else
           format.html { render :action => "edit" }

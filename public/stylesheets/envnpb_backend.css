@@ -37,7 +37,9 @@ body a:hover { color: red; }
 #content #tabs #image_tabs ul#subtabs li { background: white; margin: 0px; }
 #content #main { float: left; width: 900px; }
 #content ul.form_list { width: 100%; float: none; margin: 0px; list-style: none; }
-#content #notice { right: 0px; top: 0px; background: green; }
+#content #notice { right: 0px; top: 0px; background: #9d9d9d; }
+#content #notice h1 { text-align: left; }
+#content #notice h2 { padding-bottom: 50px; }
 #content #notice p { padding: 25px; }
 #content #subcontent { width: 920px; float: left; margin-left: 40px; }
 #content #subcontent td { border-bottom: 1px solid black; vertical-align: middle; }

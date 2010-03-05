@@ -31,12 +31,18 @@ class Admin::FeaturedController <  Admin::BaseController
   
   def update
     @gallery = FeaturedGallery.find_by_id(params[:id])
+		@property = @gallery.property
        respond_to do |format|
          if @gallery.update_attributes(params[:featured_gallery])
-          flash[:notice] = 'FeaturedGallery was successfully UPDATED.'
+         
           format.html {
-               flash[:notice] = 'gallery was successfully updated.'
-               redirect_to(admin_featured_path(@gallery))
+              if @property.gallery.nil?
+									flash[:notice] = '<h1 >steps 1 & 2 are complete!!!</h1><h2>Your missing the gallery for the property listing page you are being redirected</h2>'
+									 redirect_to :controller => "gallery",:action=>"new",:property_id=>@property 
+									else
+									flash[:notice] = '<h1 >steps 1, 2 & 3 are complete!!!</h1><h2>Property is 100% complete </h2>'
+									redirect_to(admin_property_path(@property))
+									end    
           }
         else
           render :action => "edit"

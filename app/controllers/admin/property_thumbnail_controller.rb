@@ -37,15 +37,31 @@ class Admin::PropertyThumbnailController < Admin::BaseController
   
   def update
       @property_thumbnail = PropertyThumbnail.find(params[:id])
-
+			@property = @property_thumbnail.property
        respond_to do |format|
          if @property_thumbnail.update_attributes params[:property_thumbnail]
 
            format.html {
               if params[:property_thumbnail][:photo].blank?         
-                  flash[:notice] = 'Category was successfully updated.'
-                
-                    redirect_to(edit_admin_property_path(@property_thumbnail.property))
+								if @property.featured
+									if @property.featured_gallery.nil?
+										flash[:notice] = '<h1> steps 1 2 & 3 are complete!!!</h1><h2>however the featured image for the home gallery hasnt been uploaded</h2>'
+										 redirect_to :controller => "featured",:action=>"new",:property_id=>@property 
+									else
+										flash[:notice] = '<h1 >steps 1, 2, 3 & 4 are complete!!!</h1><h2>Property is 100% complete</h2>'
+										redirect_to(edit_admin_property_path(@property)) 
+	
+									end
+								else
+									if @property.gallery.nil?
+									flash[:notice] = '<h1 >steps 1 & 2 are complete!!!</h1><h2>Your missing the gallery for the property listing page you are being redirected</h2>'
+									 redirect_to :controller => "gallery",:action=>"new",:property_id=>@property 
+									else
+									flash[:notice] = '<h1 >steps 1, 2 & 3 are complete!!!</h1><h2>Property is 100% complete </h2>'
+									redirect_to(admin_property_path(@property))
+									end    
+									
+								end	
                 
                else
                  render :action => "crop"
