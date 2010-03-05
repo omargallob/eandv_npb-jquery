@@ -45,7 +45,7 @@ body span.right { float: right; font-size: 11px; line-height: 18px; font-style: 
 #lower_pagewrapper #content_bottom { background: url(/images/system/bg/front/content_bottom.jpg); height: 63px; background-repeat: repeat-x; position: relative; width: 100%; z-index: 3; }
 #lower_pagewrapper #content { margin: 0px auto; padding: 25px; background: transparent; color: black; width: 970px; font-family: "Georgia"; min-height: 280px; position: relative; z-index: 4; margin-bottom: -63px; }
 #lower_pagewrapper #content #page_header { width: 500px; float: left; }
-#lower_pagewrapper #content h1 { font-size: 22px; padding: 15px 25px 5px 34px; text-align: left; font-family: "Times New Roman"; }
+#lower_pagewrapper #content h1 { font-size: 22px; padding: 15px 25px 5px 9px; text-align: left; font-family: "Times New Roman"; }
 #lower_pagewrapper #content h1.regular { text-transform: capitalize; color: #4d4d4d; font-size: 26px; padding: 15px 25px 25px 35px; }
 #lower_pagewrapper #content h2 { font-size: 21px; padding: 5px; text-align: left; font-weight: bold; }
 #lower_pagewrapper #content p { margin: 10px 0 10px 0; }
