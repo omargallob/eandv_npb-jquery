@@ -9,6 +9,7 @@ layout "lightbox"
 
 	def job
 		pickup_variables_job
+		@appform = Appform.new
 	end
 
   def neighbourhood
@@ -43,6 +44,23 @@ layout "lightbox"
 		end
 	end
   
+	def apply
+		@appform = Appform.new(params[:appform])
+		if @appform.save
+				
+			redirect_to :action => "apply_s2", :id => @appform.id
+		else
+			flash[:notice] = "Error!!!!!!!!!2"
+		end
+	end
+
+	def apply_s2
+		mail = Notifier.create_signup_appform(params[:id])  # => a tmail object
+		Notifier.deliver(mail)
+		systemmail = Notifier.create_notify_appform_received(params[:id])  # => a tmail object
+		Notifier.deliver(systemmail)
+	end
+
 	def step2
 		#Notifier.deliver_signup_newsletter(@contact)
 		mail = Notifier.create_signup_newsletter(params[:id])  # => a tmail object

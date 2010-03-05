@@ -7,7 +7,7 @@
 	<h1>New country</h1>
 	<div id="itsthetable">	
 	<hr />
-	<% form_for :country, :url => {:action => ""}  do |f| %>	
+	<% form_for :country, :url => {:action => ""},:html => {:multipart => true}  do |f| %>	
 	 <%= f.error_messages %> 
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>

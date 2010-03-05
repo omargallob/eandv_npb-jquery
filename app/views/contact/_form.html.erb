@@ -1,14 +1,11 @@
-<table id="contactform">
-	<tr>
-		<td>
 		<table id="column1">
 			<tr>
 				<td ><h4>Applying for</h4></td>
-				<td class="wide"><%= f.select(:interested_in, @interested_in) %></td>
+				<td class="wide"><%= f.select(:job_id,Worker.find(:all, :conditions =>{:vacancy=>true}).collect{|x| [x.title, x.id]}) %></td>
 			</tr>	
 			<tr>
 				<td ><h4>Salutation</h4></td>
-				<td class="wide"><%= f.select(:salutation,%w[Mr Mrs Ms],{},{:index => nil} ) %></td>
+				<td class="wide"><%= f.select(:salutation,%w[Mr Mrs Ms],{:index => nil} ) %></td>
 			</tr>	
 
 			<tr>
@@ -34,7 +31,7 @@
 
 			<tr>
 				<td></td>
-				<td> <%= f.check_box :paid %><h5>Contact me to arrange a job interview</h5></td>
+				<td> <%= f.check_box :contact %><h5>Contact me to arrange a job interview</h5></td>
 			</tr>	
 			<tr>
 				<td><h4>Email</h4></td>
@@ -88,16 +85,20 @@
 				<td><h4>Other</h4></td>
 				<td><%= f.text_field(:lang_other, :size => 20) %></td>
 			</tr>	
+			<tr>
+				<td><h4>Reason</h4></td>
+				<td><%= f.text_field(:reason, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Resume/CV </h4></td>
+				<td><%= f.file_field(:resume, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Report </h4></td>
+				<td><%= f.file_field(:report, :size => 20) %></td>
+			</tr>	
 		</table>
 
-		</td>
-		<td>
-		<table id="column2">
-
-		</table>
-		</td>
-	</tr>	
-</table>
-			
+		
 <hr>
 

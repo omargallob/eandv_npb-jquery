@@ -23,4 +23,23 @@ class Notifier < ActionMailer::Base
    content_type "text/html"
  end 
 
+ def signup_appform(id)
+	@appform = Appform.find_by_id(id)
+	recipients @appform.email
+   bcc        ["Mail Watcher <watcher@engelandvoelkersnewportbeach.com>"]
+   from       "system@engelandvoelkersnewportbeach.com"
+   subject    "Thanks for applying"
+   body       :account => @appform
+   content_type "text/html"
+ end
+
+ def notify_appform_received(id)
+	@appform = Appform.find_by_id(id)
+recipients "omargallob@gmail.com"
+   bcc        ["Mail Watcher <watcher@engelandvoelkersnewportbeach.com>"]
+   from       "system@engelandvoelkersnewportbeach.com"
+   subject    "Thanks for applying"
+   body       :account => @appform
+   content_type "text/html"
+ end
 end

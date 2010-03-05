@@ -1,16 +1,18 @@
-<div id="contact_form"><% form_for :application_form, @application_form, :url => {:action => 'create'} do |f| %>
+<div id="contact_form">
+<% form_for :appform, @appform,:url => {:action => 'apply'}, :html => {:multipart => true} do |f| %>
 
 	 <%= f.error_messages %> 
    <%= render :partial => "form", :locals => {:f =>f}%>
 
 <%= submit_tag "submit" %>
-<% end %>
+
 </div>
+<% end %>
 <% content_for :script do %>
 <script type="text/javascript">
 jQuery(document).ready(function() {
 	$(document).nice_fonts();
-//$('#pagewrapper').jScrollPane({scrollbarWidth:17,showArrows:true});
+$('#contact_form').jScrollPane({scrollbarWidth:17,showArrows:true});
 });
 </script>
 <% end %>

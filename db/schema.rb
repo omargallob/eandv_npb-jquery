@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100305162852) do
+ActiveRecord::Schema.define(:version => 20100305183945) do
 
   create_table "application_forms", :force => true do |t|
     t.integer  "job_id"
@@ -41,6 +41,14 @@ ActiveRecord::Schema.define(:version => 20100305162852) do
     t.string   "report_content_type"
     t.integer  "report_file_size"
     t.datetime "report_updated_at"
+    t.boolean  "contact"
+    t.boolean  "re_know_how"
+    t.boolean  "lang_eng_fluent"
+    t.boolean  "lang_eng_good"
+    t.boolean  "lang_ger_fluent"
+    t.boolean  "lang_spa_fluent"
+    t.boolean  "lang_spa_good"
+    t.boolean  "lang_ger_good"
   end
 
   create_table "categories", :force => true do |t|
