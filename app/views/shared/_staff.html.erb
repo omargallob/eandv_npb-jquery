@@ -3,7 +3,14 @@
 <h1 class="title"><%= staff.full_name %></h1>
 <h2><%= staff.title %></h2>
 <p><%= staff.description %></p>
-<h6 class="staff">contact: <%= link_to staff.email, '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %></h6>
+<h6 class="staff">contact:
+<% if params[:name] == "staff" %>
+ <%= link_to staff.email, '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+<% else %>
+ <%= link_to staff.email, '/job/'+staff.id.to_s+'?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+<% end %>
+
+</h6>
 <hr />
 </li>
 

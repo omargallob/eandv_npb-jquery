@@ -7,24 +7,29 @@ body #pagewrapper #header h1 { color: black; padding: 0 8px 8px  8px; text-trans
 body #pagewrapper #header p { color: #4d4d4d; padding: 12px 8px; border-bottom: 1px solid #e1e1e1; }
 body #pagewrapper #header p span { color: #E13939; text-transform: uppercase; }
 body #pagewrapper #content { height: 515px; }
-body #pagewrapper #content table { float: left; }
+body #pagewrapper #content table { margin: 0px auto; }
 body #pagewrapper #content table tr { margin: 4px 0; }
 body #pagewrapper #content table tr td { vertical-align: top; }
-body #pagewrapper #content table tr td h4 { text-transform: uppercase; text-align: right; text-decoration: none; margin-right: 15px; margin-top: 0px; width: 90px; }
+body #pagewrapper #content table tr td h4 { text-transform: uppercase; text-align: right; text-decoration: none; margin-right: 15px; margin-top: 0px; width: 250px; }
+body #pagewrapper #content table tr td h5 { float: left; margin-top: 2px; }
 body #pagewrapper #content table#column1 { float: left; }
 body #pagewrapper #content table#column1 tr td { vertical-align: middle; }
-body #pagewrapper #content table#column1 tr td input { width: 142px; }
+body #pagewrapper #content table#column1 tr td input[type="text"] { width: 250px; }
+body #pagewrapper #content table#column1 tr td input[type="checkbox"] { margin: 8px 0 0 0; }
+body #pagewrapper #content table#column1 tr td input[type="submit"] { float: right; }
 body #pagewrapper #content table#column2 { float: left; }
-body #pagewrapper #content table#column2 tr td { vertical-align: middle; }
+body #pagewrapper #content table#column2 tr td { vertical-align: middle; text-align: left; }
 body #pagewrapper #content table#column2 tr td.wide select { width: 134px; }
 body #pagewrapper #content table#column2 tr td.short select { width: 40px; }
 body #pagewrapper #content #column1 { margin-left: 10px; }
 body #pagewrapper #content #column2 { margin-left: 10px; }
 body #pagewrapper #content #contactform { margin-top: 25px; }
 body #pagewrapper #content #row2 { float: right; margin-right: 18px; }
-body #pagewrapper #content input { float: right; margin-right: 20px; margin-top: 4px; border: 1px solid #e1e1e1; }
-body #pagewrapper #content textarea { border: 0px none; border: 1px solid #e1e1e1; }
-body #pagewrapper #content select { border: 1px solid #e1e1e1; margin: 4px; }
+body #pagewrapper #content input { float: left; margin-right: 20px; margin-top: 4px; border: 1px solid #e1e1e1; }
+body #pagewrapper #content input[type="checkbox"] { width: 15px; }
+body #pagewrapper #content input[type="submit"] { float: right; }
+body #pagewrapper #content textarea { border: 0px none; border: 1px solid #e1e1e1; width: 200px; }
+body #pagewrapper #content select { border: 1px solid #e1e1e1; margin: 2px 0; width: 200px; }
 body #pagewrapper #content select.short { width: 40px; }
 body #pagewrapper #content #mailing { float: left; margin-left: 50px; width: 150px; }
 body #pagewrapper #content #mailing p { color: #4d4d4d; font-size: 11px; margin-left: 15px; margin-top: 12px; }

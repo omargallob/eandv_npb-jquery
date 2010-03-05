@@ -1,0 +1,59 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  job_id: 1
+  salutation: MyString
+  title: MyString
+  first_name: MyString
+  last_name: MyString
+  add_street: MyString
+  add_city: MyString
+  telephone: MyString
+  contact: 
+  email: MyString
+  current_position: MyString
+  desired_income: MyString
+  re_know_how: 
+  qualifications: MyString
+  education: MyString
+  university: MyString
+  other: MyText
+  it_skills: MyText
+  lang_eng_fluent: 
+  lang_eng_good: 
+  lang_ger_fluent: 
+  lang_good: 
+  lang_spa_fluent: 
+  lang_spa_good: 
+  lang_other: MyText
+  reason: MyText
+  personal_values: MyText
+
+two:
+  job_id: 1
+  salutation: MyString
+  title: MyString
+  first_name: MyString
+  last_name: MyString
+  add_street: MyString
+  add_city: MyString
+  telephone: MyString
+  contact: 
+  email: MyString
+  current_position: MyString
+  desired_income: MyString
+  re_know_how: 
+  qualifications: MyString
+  education: MyString
+  university: MyString
+  other: MyText
+  it_skills: MyText
+  lang_eng_fluent: 
+  lang_eng_good: 
+  lang_ger_fluent: 
+  lang_good: 
+  lang_spa_fluent: 
+  lang_spa_good: 
+  lang_other: MyText
+  reason: MyText
+  personal_values: MyText

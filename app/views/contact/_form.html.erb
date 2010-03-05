@@ -1,0 +1,103 @@
+<table id="contactform">
+	<tr>
+		<td>
+		<table id="column1">
+			<tr>
+				<td ><h4>Applying for</h4></td>
+				<td class="wide"><%= f.select(:interested_in, @interested_in) %></td>
+			</tr>	
+			<tr>
+				<td ><h4>Salutation</h4></td>
+				<td class="wide"><%= f.select(:salutation,%w[Mr Mrs Ms],{},{:index => nil} ) %></td>
+			</tr>	
+
+			<tr>
+				<td><h4>Name</h4></td>
+				<td> <%= f.text_field(:first_name, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Surname</h4></td>
+				<td><%= f.text_field(:last_name, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Street</h4></td>
+				<td><%= f.text_field(:add_street, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>City</h4></td>
+				<td><%= f.text_field(:add_city, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Telephone</h4></td>
+				<td><%= f.text_field(:telephone, :size => 20) %></td>
+			</tr>	
+
+			<tr>
+				<td></td>
+				<td> <%= f.check_box :paid %><h5>Contact me to arrange a job interview</h5></td>
+			</tr>	
+			<tr>
+				<td><h4>Email</h4></td>
+				<td><%= f.text_field(:email, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Current Position</h4></td>
+				<td><%= f.text_field(:current_position, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Desired Income</h4></td>
+				<td><%= f.text_field(:desired_income, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Real Estate Know-How</h4></td>
+				<td><%= f.check_box :re_know_how %><h5>Yes</h5> </td>
+			</tr>	
+			<tr>
+				<td><h4>Qualifications</h4></td>
+				<td><%= f.text_field(:qualifications, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Education</h4></td>
+				<td><%= f.text_field(:education, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>University</h4></td>
+				<td><%= f.text_field(:education, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>Other</h4></td>
+				<td><%= f.text_field(:other, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>IT skills</h4></td>
+				<td><%= f.text_field(:it_skills, :size => 20) %></td>
+			</tr>	
+			<tr>
+				<td><h4>English</h4></td>
+			<td><%= f.check_box :lang_eng_fluent %><h5>Fluent</h5><%= f.check_box :lang_eng_good %><h5>Good</h5> </td>
+			</tr>	
+			<tr>
+				<td><h4>German</h4></td>
+			<td><%= f.check_box :lang_ger_fluent %><h5>Fluent</h5><%= f.check_box :lang_ger_good %><h5>Good</h5> </td>
+			</tr>	
+			<tr>
+				<td><h4>Spanish</h4></td>
+			<td><%= f.check_box :lang_spa_fluent %><h5>Fluent</h5><%= f.check_box :lang_spa_good %><h5>Good</h5> </td>
+			</tr>	
+			<tr>
+				<td><h4>Other</h4></td>
+				<td><%= f.text_field(:lang_other, :size => 20) %></td>
+			</tr>	
+		</table>
+
+		</td>
+		<td>
+		<table id="column2">
+
+		</table>
+		</td>
+	</tr>	
+</table>
+			
+<hr>
+

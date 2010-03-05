@@ -31,7 +31,7 @@ body
 		#content
 			height: 515px
 			table
-				float: left
+				margin: 0px auto
 				tr	
 					margin: 4px 0			
 					td
@@ -42,19 +42,27 @@ body
 							text-decoration: none
 							margin-right: 15px
 							margin-top: 0px
-							width: 90px
+							width: 250px
+						h5
+							float: left
+							margin-top: 2px
 			table#column1
 				float: left
 				tr	
 					td
 						vertical-align: middle
-						input
-							width: 142px
+						input[type="text"]
+							width: 250px
+						input[type="checkbox"]
+							margin: 8px 0 0 0
+						input[type="submit"]
+							float: right
 			table#column2
 				float: left
 				tr	
 					td
 						vertical-align: middle
+						text-align: left
 					td.wide
 						select
 							width: 134px
@@ -72,16 +80,22 @@ body
 				float: right
 				margin-right: 18px
 			input
-				float: right
+				float: left
 				margin-right: 20px
 				margin-top: 4px	
 				border: 1px solid #e1e1e1	
+			input[type="checkbox"]
+				width: 15px
+			input[type="submit"]
+				float: right
 			textarea	
 				border: 0px none	
 				border: 1px solid #e1e1e1			
+				width: 200px
 			select
 				border: 1px solid #e1e1e1	
-				margin: 4px
+				margin: 2px 0 
+				width: 200px
 			select.short
 				width: 40px				
 			#mailing

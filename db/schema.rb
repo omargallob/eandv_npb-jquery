@@ -9,7 +9,39 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100305122003) do
+ActiveRecord::Schema.define(:version => 20100305162852) do
+
+  create_table "application_forms", :force => true do |t|
+    t.integer  "job_id"
+    t.string   "salutation"
+    t.string   "title"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "add_street"
+    t.string   "add_city"
+    t.string   "telephone"
+    t.string   "email"
+    t.string   "current_position"
+    t.string   "desired_income"
+    t.string   "qualifications"
+    t.string   "education"
+    t.string   "university"
+    t.text     "other"
+    t.text     "it_skills"
+    t.text     "lang_other"
+    t.text     "reason"
+    t.text     "personal_values"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "resume_file_name"
+    t.string   "resume_content_type"
+    t.integer  "resume_file_size"
+    t.datetime "resume_updated_at"
+    t.string   "report_file_name"
+    t.string   "report_content_type"
+    t.integer  "report_file_size"
+    t.datetime "report_updated_at"
+  end
 
   create_table "categories", :force => true do |t|
     t.string   "title"

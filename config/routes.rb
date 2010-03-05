@@ -81,7 +81,8 @@ ActionController::Routing::Routes.draw do |map|
       admin.update_gallery 'galleries/:id', :controller=>"galleries",:action => "update"
   end
   
-
+	map.vip_form '/vip', :controller => "contact", :action => "vip"
+	map.job_form '/job/:opening', :controller => "contact", :action => "job"
 	map.updatedropdowns '/update_dd', :controller => "home", :action => "setup_dropdowns"
 	map.auxiliar '/auxiliar', :controller=>"properties", :action => "auxiliar"
 	map.featured '/featured', :controller => "properties", :action => "index", :filter => "featured"
