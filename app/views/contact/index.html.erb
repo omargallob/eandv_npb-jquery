@@ -1,7 +1,6 @@
+<div id="contact_form">
 <% form_for :contact, @contact, :url => {:action => 'create'} do |f| %>
-<table id="contactform">
-	<tr>
-		<td>
+
 		<table id="column1">
 			<tr>
 				<td><h4>Name</h4></td>
@@ -23,11 +22,7 @@
 				<td><h4>Confirm Email</h4></td>
 				<td><%= f.text_field(:email, :size => 20) %></td>
 			</tr>	
-		</table>
 
-		</td>
-		<td>
-		<table id="column2">
 			<tr>
 				<td ><h4>Interested in</h4></td>
 				<td class="wide"><%= f.select(:interested_in, @interested_in) %></td>
@@ -53,20 +48,21 @@
 			</tr>	
 			<tr>
 				<td class="short"><h4>Beds</h4></td>
-				<td>	<%= f.select(:beds, 1..8)  %><span> Baths</span><%= f.select(:beds, 1..12)  %></td>
+				<td>	<%= f.select(:beds, 1..8)  %></td>
 			</tr>	
+			<tr>
+				<td class="short"><h4>Baths</h4></td>
+				<td>	<%= f.select(:baths, 1..12) %></td>
+			</tr>
 			<tr>
 				<td class="wide"><h4>Price Range</h4></td>
 				<td>	<%= f.select(:price_range, @price_range) %></td>
 			</tr>	
-		</table>
-		</td>
-	</tr>	
-</table>
-			<table id="row2">
+
 				<tr>
 					<td><h4>Message</h4></td>
 					<td><%= f.text_area(:message, :rows => 6) %></td>
+				</tr>
 			</table>
 <hr>
 <div id="mailing">
@@ -76,10 +72,12 @@
 
 <%= submit_tag "submit" %>
 <% end %>
+</div>
 <% content_for :script do %>
 <script type="text/javascript">
 jQuery(document).ready(function() {
 	$(document).nice_fonts();
+$('#contact_form').jScrollPane({scrollbarWidth:17,showArrows:true});
 });
 </script>
 <% end %>

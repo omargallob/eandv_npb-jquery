@@ -22,12 +22,12 @@ body #pagewrapper #content table#column2 tr td.wide select { width: 134px; }
 body #pagewrapper #content table#column2 tr td.short select { width: 40px; }
 body #pagewrapper #content #column1 { margin-left: 10px; }
 body #pagewrapper #content #column2 { margin-left: 10px; }
-body #pagewrapper #content #contactform { margin-top: 25px; }
+body #pagewrapper #content #contactform { margin-top: 0px; }
 body #pagewrapper #content #row2 { float: right; margin-right: 18px; }
 body #pagewrapper #content input { float: left; margin-right: 20px; margin-top: 4px; border: 1px solid #e1e1e1; }
 body #pagewrapper #content input[type="checkbox"] { width: 15px; }
 body #pagewrapper #content input[type="submit"] { float: right; }
-body #pagewrapper #content textarea { border: 0px none; border: 1px solid #e1e1e1; width: 200px; }
+body #pagewrapper #content textarea { border: 0px none; border: 1px solid #e1e1e1; width: 250px; }
 body #pagewrapper #content select { border: 1px solid #e1e1e1; margin: 2px 0; width: 250px; }
 body #pagewrapper #content select.short { width: 40px; }
 body #pagewrapper #content #mailing { float: left; margin-left: 50px; width: 150px; }
