@@ -22,7 +22,7 @@
  
 	  <%= f.add_associated_link('Add another photo', @gallery.uploads.build) %>
 
-	 	<%# f.text_field :property_id, :value => @property.id %>
+	 	<%= f.text_field :property_id, :value => @gallery.property.id %>
 
 	  <p>
 	    <%= f.submit "Create" %>

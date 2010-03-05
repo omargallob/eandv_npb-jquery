@@ -31,17 +31,19 @@ class Admin::GalleriesController <  Admin::BaseController
   
   def update
     @gallery = Gallery.find_by_id(params[:id])
+	  if @gallery.update_attributes(params[:gallery])
        respond_to do |format|
-         if @gallery.update_attributes(params[:gallery])
+       
           flash[:notice] = 'gallery was successfully UPDATED.'
           format.html {
                flash[:notice] = 'gallery was successfully updated.'
                redirect_to(admin_gallery_path(@gallery))
           }
+				end	
         else
           render :action => "edit"
         end
-      end
+     
   end
   
   def destroy
