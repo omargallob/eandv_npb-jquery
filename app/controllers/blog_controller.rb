@@ -14,8 +14,14 @@ class BlogController < ApplicationController
   def show
  		@page = Page.find_by_name('blog')
 		@subpages = @page.subpages 
+		if params[:parent] == nil
 	  @post = Post.find_by_name(params[:id])
 		@subposts = @post.subposts
+		else
+	  @post = Post.find_by_name(params[:name])
+		end
+		@parent = Post.find_by_name(params[:parent])
+
 	  @categories = Post.find_main
 	  set_meta_tags :title =>  "Blog | " + @post.title
   end

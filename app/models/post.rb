@@ -3,13 +3,11 @@ class Post < ActiveRecord::Base
 	has_many :subposts, :class_name => 'Post', :foreign_key => 'parent_id'
   belongs_to :parent, :class_name => 'Post', :foreign_key => 'parent_id'
 
-		auto_html_for :description do
-      html_escape
-      image
-      youtube :width => 419, :height => 317
-      link :target => "_blank", :rel => "nofollow"
-      simple_format
-    end
+ has_attached_file :photo, :styles => {:small => "80x60#", :large => "419x317#"},
+                            :url => "/assets/posts/:id/:style/:basename.jpg",
+                            :storage => :s3,
+                            :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
+                            :path => "/assets/posts/:id/:style/:basename.jpg"
 			
  def self.find_main
     Post.find(:all, :conditions => ['parent_id IS NULL'], :order => 'position')

@@ -14,7 +14,11 @@
 		<h1 class="title"><%= @post.title %></h1>
 
 		<ol id="blog" class="show">
+<% if params[:parent] == nil %>
 		<%= render :partial => "post", :collection => @subposts %>
+<% else %>
+		<%= render :partial => "post", :object => @post %>
+<% end %>
 		</ol>
 		<div id="main_bottom" class="main_border other">	</div>
 	</div>

@@ -64,6 +64,9 @@
 				<%= link_to image_tag ("system/buttons/twitter.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>
 				<%= link_to image_tag ("system/buttons/facebook.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>
 	  	</div>
+			<div id="weather">
+				<%= render :partial => "shared/weather" %>			
+			</div>	
 		</div>
 		<div id='navbar'>
 			<ul>
@@ -72,18 +75,18 @@
 	  	</div>	
 		<% if params[:name] == "home" %>
 
-<script type="text/javascript">
-		var flashvars = {};
-		flashvars.featuredXml = "/featured.xml";
-		flashvars.font = "font.swf";
-		var attributes = {};
-		attributes.wmode = "transparent";
-		attributes.id = "slider";
-		var params = {}
-		params.allowscriptaccess = "always";
+		<script type="text/javascript">
+				var flashvars = {};
+				flashvars.featuredXml = "/featured.xml";
+				flashvars.font = "font.swf";
+				var attributes = {};
+				attributes.wmode = "transparent";
+				attributes.id = "slider";
+				var params = {}
+				params.allowscriptaccess = "always";
 
-		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/homefeaturedgallery.swf", "listOfImages", "948", "359", "9", "/swf/expressInstall.swf", flashvars, params,attributes);
-</script>
+				swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/homefeaturedgallery.swf", "listOfImages", "948", "359", "9", "/swf/expressInstall.swf", flashvars, params,attributes);
+		</script>
 
 
 		<div id="largegallery">

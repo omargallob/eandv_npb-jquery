@@ -1,12 +1,12 @@
 <ul class="submenu">
-	<% if params[:id] == nil %>
+	<% if controller.action_name == "index" %>
 		<li class="active">Intro</li>
 	<% else %>
 		<li><%= link_to "Intro", "/blog"%></li>
 	<% end %>
 
 	<% for post in @categories -%>
-		<li class="<% if params[:id] == post.name || params[:post] == post.name  %>active<% end %>">
+		<li class="<% if params[:id] == post.name || params[:parent] == post.name  %>active<% end %>">
 			<%= link_to post.navlabel, view_blog_path(post.name) %> <br/>
 		</li>
 	<% end -%>
