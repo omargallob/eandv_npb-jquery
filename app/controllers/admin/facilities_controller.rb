@@ -5,6 +5,7 @@ class Admin::FacilitiesController < Admin::BaseController
   end
 
   def new
+	 @facility = Facility.new
    # @property = Property.find_by_id(params[:property_id])
   end
 
