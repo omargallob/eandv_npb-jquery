@@ -4,8 +4,8 @@
 
 
 	<td>
-	<%= link_to  image_tag ('system/buttons/delete.jpg', :height => "15px", :title => "delete"), {:controller => "countries", :action =>"destroy", :id => country.id},:confirm => 'Are you sure?', :method => :delete  %>
-
+	<%= link_to  image_tag ('system/buttons/delete.jpg', :height => "15px", :title => "delete"), {:controller => "countries", :action =>"destroy", :id => country.id},:confirm => 'Are you sure?', :method => :delete  %>	&nbsp;|&nbsp;
+<%= link_to  image_tag ('system/buttons/edit.jpg', :height => "15px", :title => "View locations"), edit_admin_country_path(country) %>
 	&nbsp;|&nbsp;
 	<%= link_to  image_tag ('system/buttons/search.jpg', :height => "15px", :title => "View locations"), admin_country_path(country.country_initials.downcase) %>
 	</td>
