@@ -1,5 +1,6 @@
 	<tr>
-		<td> <%= image_tag property.property_thumbnail.photo.url(:pagesize) if property.property_thumbnail %><%= property.location.region %> </td>
+		<td> <%= image_tag property.property_thumbnail.photo.url(:pagesize) if property.property_thumbnail %></td>
+		<td><%= property.location.region %> </td>
 
 		<td> <%= property.title %> </td>
 
@@ -11,21 +12,7 @@
 
 		<td> <%=  number_with_delimiter(property.price) %></td>
 
-		<td width="250"> <%= truncate(property.description, 30) %> </td>
-
-		<td> <%= property.bedrooms %>  </td>
-
-		<td> <%= property.bathrooms %></td>
-
-		<td><%= property.living_areas %> </td>
-
-		<td> <%= property.built %> </td>
-
-		<td> <%= property.plot %> </td>
-
-		<td> <%= property.garden %></td>
-
-		<td> <%= property.garage %></td>
+		<td width="120"> <%= truncate(property.description, 30) %> </td>
 
 		<td>
 				<%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => "view"), admin_property_path(property) %>  
@@ -48,5 +35,6 @@
 			<% end %>
 				
 		</td>
+		<td><%= property.created_at.to_date.to_formatted_s(:long) %></td>
 	</tr>
 

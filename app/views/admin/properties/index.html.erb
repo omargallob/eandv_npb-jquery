@@ -7,9 +7,12 @@
 
 
 	<h1>Property listing for Orange County (Ca)</h1>
-<div id="itsthetable">
-	<table id="properties_list">	
+
+	<table id="properties_list" class="tablesorter">	
 		<thead>
+			<tr>
+			
+			<th>Thumb </th>
 			<th>Area </th>
 			<th>Title</th>
 			<th>Featured</th>
@@ -17,30 +20,43 @@
 			<th>Rental?</th>
 			<th>Price($)</th>
 			<th>Description</th>
-			<th>Bed </th>
-			<th>Bath</th>
-			<th>Living</th>
-			<th>Built</th>
-			<th>Plot</th>
-			<th>Garden</th>
-			<th>Garage</th>
+		
 			<th>Opts</th>
-
+			<th>Date</th>
+			</tr>
 		</thead>
-
+		<tbody>
 		<% if @properties.size > 0 %>
 			<%= render :partial => 'property', :collection => @properties %>	
 		<% end %>
+		<tbody>
 	</table>
-</div>
-<% content_for(:script) do %>
-<%= stylesheet_link_tag "jquery.Jcrop" %>
-<%= javascript_include_tag "admin/gs_sortable" %>	
-<% end %>
-<script type="text/javascript">
-<!--
 
-var TSort_Data = new Array ('properties_list', 's','','s','','s','','s','','n','','h','','i','','i','','i','','i','','i','','i');
-tsRegister();
-// -->
+<% content_for(:script) do %>
+<script type="text/javascript">
+jQuery(document).ready(function() 
+    { 
+        $("#properties_list").tablesorter({ 
+        // pass the headers argument and assing a object 
+        headers: { 
+            // assign the secound column (we start counting zero) 
+            0: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            }, 
+            // assign the third column (we start counting zero) 
+            7: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            },
+	          8: { 
+                // disable it by setting the property sorter to false 
+                sorter: false 
+            } 
+        } 
+    }); 
+    } 
+); 
 </script>
+<% end %>
+
