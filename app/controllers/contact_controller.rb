@@ -4,7 +4,7 @@ layout "lightbox"
   def index
 		pickup_variables_contact
 
-		#@contact = Contact.new
+		@contact = Contact.new
   end
 
 	def job
