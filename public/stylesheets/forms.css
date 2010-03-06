@@ -30,6 +30,18 @@ body #pagewrapper #content input[type="submit"] { float: right; }
 body #pagewrapper #content textarea { border: 0px none; border: 1px solid #e1e1e1; width: 250px; }
 body #pagewrapper #content select { border: 1px solid #e1e1e1; margin: 2px 0; width: 250px; }
 body #pagewrapper #content select.short { width: 40px; }
+body #pagewrapper #content div.fieldWithErrors input { border: 2px solid red; }
+body #pagewrapper #content div.fieldWithErrors textarea { border: 2px solid red; }
+body #pagewrapper #content div.fieldWithErrors table.mceLayout { border: 2px solid red; }
 body #pagewrapper #content #mailing { float: left; margin-left: 50px; width: 150px; }
 body #pagewrapper #content #mailing p { color: #4d4d4d; font-size: 11px; margin-left: 15px; margin-top: 12px; }
 body #pagewrapper #content hr { float: left; width: 546px; height: 1px; margin: 12px 8px; background-color: #e1e1e1; border: 0px none; }
+
+#errorExplanation { float: left; margin-top: 10px; border: 15px solid #E13939; padding: 5px 5px 5px 20px; color: #4d4d4d; }
+#errorExplanation ul { float: left; }
+#errorExplanation ul li { width: 100%; }
+#errorExplanation h2 { font-weight: bold; }
+
+div.fieldWithErrors input { border: 2px solid red; }
+div.fieldWithErrors textarea { border: 2px solid red; }
+div.fieldWithErrors table.mceLayout { border: 2px solid red; }

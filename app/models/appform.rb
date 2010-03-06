@@ -12,4 +12,7 @@ has_attached_file :report,
 										:s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
 										#:url =>  "/property/gallery/:id/:style/:basename.jpg",
 										:path => "assets/report/:email/pdf/:style/:basename.pdf"
+
+validates_presence_of :first_name, :last_name, :email, :telephone
+validates_attachment_presence :resume
 end

@@ -1,7 +1,7 @@
 <div id="contact_form">
 <% form_for :appform, @appform,:url => {:action => 'apply'}, :html => {:multipart => true} do |f| %>
 
-	 <%= f.error_messages %> 
+	 <%= f.error_messages :header_message => "#{@appform.errors.size} errors prevented this application form from being sent"%> 
    <%= render :partial => "form", :locals => {:f =>f}%>
 
 <%= submit_tag "submit" %>

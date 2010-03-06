@@ -7,7 +7,14 @@ jQuery.fn.nice_fonts = function(){
 	   		color: 'white'
 	  	 }
 	 });
-
+	Cufon.replace('h2', {
+		   fontFamily: "GarmdITC BkCn BT",
+		   color: '#E13939',
+		   fontSize: "18px",
+	  		hover: {
+	   		color: 'white'
+	  	 }
+	 });
 	Cufon.replace('h3', {
 		   fontFamily: "GarmdITC BkCn BT",
 		   color: '#E13939',

@@ -38,8 +38,8 @@ layout "lightbox"
 		if @contact.save
 			redirect_to :action => "step2", :id => @contact.id
 		else
-			flash[:notice] = "Error!!!!!!!!!1"
-			pickup_variables
+
+			pickup_variables_contact
 			render :action => "index"
 		end
 	end
@@ -51,6 +51,7 @@ layout "lightbox"
 			redirect_to :action => "apply_s2", :id => @appform.id
 		else
 			flash[:notice] = "Error!!!!!!!!!2"
+			render :action => "job"
 		end
 	end
 
@@ -90,4 +91,6 @@ layout "lightbox"
 		@states = Property.find(:all, :include => :location).map{|w| w.location.state}
 		@cities = Property.find(:all, :include => :location).map{|w| w.location.region}
 	end
+
+
 end
