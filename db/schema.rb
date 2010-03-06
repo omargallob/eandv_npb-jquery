@@ -9,7 +9,47 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100305183945) do
+ActiveRecord::Schema.define(:version => 20100306205104) do
+
+  create_table "appforms", :force => true do |t|
+    t.integer  "job_id"
+    t.string   "salutation"
+    t.string   "title"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "add_street"
+    t.string   "add_city"
+    t.string   "telephone"
+    t.string   "email"
+    t.string   "current_position"
+    t.string   "desired_income"
+    t.string   "qualifications"
+    t.string   "education"
+    t.string   "university"
+    t.text     "other"
+    t.text     "it_skills"
+    t.text     "lang_other"
+    t.text     "reason"
+    t.text     "personal_values"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "resume_file_name"
+    t.string   "resume_content_type"
+    t.integer  "resume_file_size"
+    t.datetime "resume_updated_at"
+    t.string   "report_file_name"
+    t.string   "report_content_type"
+    t.integer  "report_file_size"
+    t.datetime "report_updated_at"
+    t.boolean  "contact"
+    t.boolean  "re_know_how"
+    t.boolean  "lang_eng_fluent"
+    t.boolean  "lang_eng_good"
+    t.boolean  "lang_ger_fluent"
+    t.boolean  "lang_spa_fluent"
+    t.boolean  "lang_spa_good"
+    t.boolean  "lang_ger_good"
+  end
 
   create_table "application_forms", :force => true do |t|
     t.integer  "job_id"
@@ -242,6 +282,10 @@ ActiveRecord::Schema.define(:version => 20100305183945) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "page_id"
+    t.string   "main_file_name"
+    t.string   "main_content_type"
+    t.integer  "main_file_size"
+    t.datetime "main_updated_at"
   end
 
   create_table "pages", :force => true do |t|

@@ -49,8 +49,8 @@ class Admin::PagesController < Admin::BaseController
        if @page.save
          flash[:notice] = 'Page was successfully created.'
          format.html {
-           if params[:page][:thumb].blank?
-             flash[:notice] = 'Category was successfully updated.'
+           if params[:page][:thumb].blank? 
+             flash[:notice] = 'Category was successfully created.'
              redirect_to(admin_page_path(@page))
             else
               render :action => "crop"
@@ -103,10 +103,11 @@ class Admin::PagesController < Admin::BaseController
   def save_featured
     @page_featured_photo = PageFeaturedPhoto.new(params[:page_featured_photo])
       if @page_featured_photo.save
-        flash[:notice] = 'Attachment was successfully created.'
-        redirect_to attachable_url(@page_featured_photo)     
-      else
-        render :action => :new
+ 					if params[:PageFeaturedPhoto][:main].blank? 
+             redirect_to(admin_page_path(@page_featured_photo.page))
+            else
+              render :action => "crop2"
+           end
       end
   end
 
@@ -120,7 +121,6 @@ class Admin::PagesController < Admin::BaseController
       end
   end
 
-  def crop
-  end
+
    
 end

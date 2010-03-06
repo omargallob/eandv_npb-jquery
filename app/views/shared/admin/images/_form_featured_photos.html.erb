@@ -1,6 +1,6 @@
 <% form_for(@page.page_featured_photo || :page_featured_photo, :url => { :action => "update_page_featured" }, :html => { :multipart => true }) do |form| %>
-	<p>Featured<br />
-	<%= form.file_field :uploaded_data %>
+	<p>Main<br />
+	<%= form.file_field :main %>
 	</p>
 	<%= form.hidden_field :page_id, :value => @page.id %>
    <p><%= form.submit 'Save' %></p>

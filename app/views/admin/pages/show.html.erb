@@ -15,7 +15,8 @@
 
 <div id="main">
 	<h1><%=h @page.navlabel %> | <%= image_tag @page.thumb.url(:small) %></h1>
-
+	<% # image_tag @page.page_featured_photo.main.url() if @page.page_featured_photo.main
+ %>
 	<p><strong>Featured</strong><br />
 		  <%=  @page.featured %>
 	</p>

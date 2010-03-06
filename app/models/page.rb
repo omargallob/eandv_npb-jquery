@@ -1,9 +1,9 @@
 class Page < ActiveRecord::Base
   
   has_one :metatag
-  has_one :page_featured_photo,:foreign_key => 'page_id'
+ 
   has_one :page_about
-  
+  has_one :page_featured_photo
   has_many :subpages, :class_name => 'Page', :foreign_key => 'parent_id'
   belongs_to :parent, :class_name => 'Page', :foreign_key => 'parent_id'
   
@@ -13,11 +13,6 @@ class Page < ActiveRecord::Base
                             :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
                             :path => "/assets/page/:id/thumb/:style/:basename.jpg"
 
- 	has_attached_file :main,:styles => {:pagesize => ["419x317#", :jpg]},:convert_options => {:pagesize => "-strip -quality 60"},:processors => [:cropper],
-                       :storage => :s3,
-                       :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
-                       :path => "/assets/page/:id/main/:style/:basename.jpg",
-                       :url => "/assets/page/:id/main/:style/:basename.jpg"    
 
   #validates_attachment_presence :thumb
   #validates_attachment_size :thumb, :less_than => 5.megabytes
@@ -37,6 +32,8 @@ class Page < ActiveRecord::Base
     @geometry ||= {}
     @geometry[style] ||= Paperclip::Geometry.from_file(thumb.to_file(style))
   end
+
+  
   
   def self.find_main
     Page.find(:all, :conditions => ['parent_id IS NULL'], :order => 'position')

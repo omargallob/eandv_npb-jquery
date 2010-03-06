@@ -1,7 +1,6 @@
 <%= f.error_messages %>
 
-<p><% image_tag @page.page_featured_photo.public_filename if @page.page_featured_photo %></p>
-
+<div id="contentform">
  <p>
    <%= f.label :name %><br />
    <%= f.text_field :name %>
@@ -9,10 +8,6 @@
  <p>
    <%= f.label :title %><br />
    <%= f.text_field :title %>
- </p>
- <p>
-   <%= f.label :body %><br />
-   <%= f.text_area :body %>
  </p>
 <p>
 	<%= f.collection_select :parent_id, Page.find(:all), :id, :title, :include_blank => true%>
@@ -25,20 +20,23 @@
 	 <%= f.label :navlabel %><br />
      <%= f.text_field :navlabel  %>
 </p>
+ <p>
+   <%= f.label :body %><br />
+   <%= f.text_area :body %>
+ </p>
+
 <p>
 	  <%= f.label :featured %><br/>
   	  <%= f.check_box(:featured)
 	   %>
 </p>
+</div>
+<div id="media">
 <p>
 	  <%= f.label :thumb %><br/>
   	  <%= f.file_field(:thumb) %>
 
 </p>
 
-<p>
-	  <%= f.label :main %><br/>
-  	  <%= f.file_field(:main) %>
 
-</p>
 	
