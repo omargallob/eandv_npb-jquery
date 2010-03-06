@@ -11,7 +11,8 @@
 <div style="float:left">	
 	<hr />
 	<% form_for :faq, @faq, :url => {:action => ""}  do |f| %>	
-	  <%= render :partial => "form", :locals => {:f =>f}%>
+<%= f.error_messages %> 	
+  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>
 	    <%= f.submit 'Create' %>
 	  </p>

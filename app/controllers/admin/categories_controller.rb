@@ -9,6 +9,7 @@ class Admin::CategoriesController < Admin::BaseController
   end
 
   def new
+	 @cat = Category.new
   end
 
   def create
@@ -16,7 +17,6 @@ class Admin::CategoriesController < Admin::BaseController
     
     respond_to do |format|
       if @cat.save
-      
         format.html { 
           if params[:category][:photo].blank?
             flash[:notice] = 'Category was successfully created.'

@@ -10,6 +10,7 @@
 <div style="float:left">	
 	<hr />
 	<% form_for :faq, @gossip, :url => {:action => ""}  do |f| %>	
+<%= f.error_messages %> 	
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>
 	    <%= f.submit 'Create' %>

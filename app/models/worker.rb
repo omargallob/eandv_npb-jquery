@@ -8,4 +8,7 @@ class Worker < ActiveRecord::Base
                        :storage => :s3,
                        :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
                        :path => "staff/worker/:id/:style/:basename.jpg"
+
+	validates_presence_of :full_name, :description, :title, :email
+	validates_uniqueness_of :full_name, :email
 end

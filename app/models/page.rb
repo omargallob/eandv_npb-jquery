@@ -22,6 +22,10 @@ class Page < ActiveRecord::Base
   #validates_attachment_presence :thumb
   #validates_attachment_size :thumb, :less_than => 5.megabytes
   
+	validates_presence_of :name, :body, :title, :navlabel
+	validates_uniqueness_of :name, :body, :title, :navlabel
+	#validates_numericality_of	:price, :plot, :built, :bedrooms, :bathrooms, :living_areas, :garage
+
   attr_accessor :crop_x, :crop_y, :crop_w, :crop_h               
   after_update  :reprocess_thumb, :if => :cropping?
   

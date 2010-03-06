@@ -8,7 +8,10 @@ class Post < ActiveRecord::Base
                             :storage => :s3,
                             :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
                             :path => "/assets/posts/:id/:style/:basename.jpg"
-			
+
+	validates_presence_of :title, :description, :body_html, :navlabel, :name
+	validates_uniqueness_of :title, :navlabel, :name
+
  def self.find_main
     Post.find(:all, :conditions => ['parent_id IS NULL'], :order => 'position')
  end

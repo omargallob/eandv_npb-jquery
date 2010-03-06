@@ -21,6 +21,11 @@ class Property < ActiveRecord::Base
 
 	validates_attachment_content_type :pdf, :content_type => ['application/pdf']
 
+	
+	validates_presence_of :title, :descripion, :price, :plot, :built, :bedrooms, :address
+	validates_uniqueness_of :title, :address
+	validates_numericality_of	:price, :plot, :built, :bedrooms, :bathrooms, :living_areas, :garage
+
     def location_state
       location.state
     end

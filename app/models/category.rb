@@ -3,6 +3,9 @@ class Category < ActiveRecord::Base
 	has_one :metatag
   has_many :subcategories, :class_name => 'Category', :foreign_key => 'parent_id'
   belongs_to :parent, :class_name => 'Category', :foreign_key => 'parent_id'
+	
+ validates_presence_of :name, :title, :navlabel
+ validates_uniqueness_of :name, :title, :navlabel
 
   has_attached_file :photo, :styles => {:small => "92x61#", :large => "403x170>"}, :processors => [:cropper],
                             :url => "/assets/categories/:id/:style/:basename.jpg",
@@ -19,6 +22,8 @@ class Category < ActiveRecord::Base
   #validates_attachment_size :photo, :less_than => 5.megabytes                          
   #validates_attachment_content_type :content_type => ["image/jpeg","image/png"]
   
+
+
   attr_accessor :crop_x, :crop_y, :crop_w, :crop_h               
   after_update  :reprocess_photo, :if => :cropping?
 

@@ -16,6 +16,8 @@ body a:hover { color: red; }
 
 #content { margin: 0px auto; padding: 25px; background-color: transparent; color: black; width: 970px; border: 1px solid #d4d4d4; }
 #content div.fieldWithErrors input { border: 2px solid red; }
+#content div.fieldWithErrors textarea { border: 2px solid red; }
+#content div.fieldWithErrors table.mceLayout { border: 2px solid red; }
 #content #side-nav { width: 120px; float: left; background-color: white; }
 #content #side-nav ul { padding-left: 5px; width: 120px; float: none; }
 #content #side-nav ul li { list-style: none; }
@@ -29,14 +31,13 @@ body a:hover { color: red; }
 #content ul#tasks_list { width: 100%; margin: 10px auto; list-style: none; }
 #content ul#tasks_list li { border: 1px solid black; width: 100%; }
 #content ul#tasks_list li div.handle { background-image: url(../images/system/buttons/handle.png); width: 64px; height: 64px; float: left; }
-#content #tabs { width: 100%; float: left; }
+#content #tabs { width: 500px; float: left; }
 #content #tabs ul li { position: relative; float: left; border-bottom-width: 0 !important; }
-#content #tabs h3 { margin-top: 15px; float: left; text-align: left; }
+#content #tabs h3 { margin: 15px 0; float: left; text-align: left; width: 100%; }
 #content #tabs #image_tabs div#featured { float: left; padding: 0; margin: 0; }
 #content #tabs #image_tabs ul#subtabs { float: left; width: 100%; }
 #content #tabs #image_tabs ul#subtabs li { background: white; margin: 0px; }
 #content #main { float: left; width: 900px; }
-#content ul.form_list { width: 100%; float: none; margin: 0px; list-style: none; }
 #content #notice { right: 0px; top: 0px; background: #9d9d9d; }
 #content #notice h1 { text-align: left; }
 #content #notice h2 { padding-bottom: 50px; }
@@ -52,3 +53,10 @@ table.page_list { margin-top: 45px; display: block; width: 742px; }
 table.page_list tr.subcategory { display: none; }
 
 #itsthetable { float: left; }
+
+#errorExplanation { float: left; margin-bottom: 50px; border: 15px solid #E13939; padding: 20px; }
+#errorExplanation ul { float: left; }
+#errorExplanation ul li { width: 100%; }
+
+ul.form_list { width: 100%; float: none; margin: 0px; list-style: none; }
+ul.form_list li { width: 500px; float: none; }

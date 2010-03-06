@@ -63,6 +63,10 @@ body
 	div.fieldWithErrors
 		input		
 			border: 2px solid red
+		textarea
+			border: 2px solid red
+		table.mceLayout
+			border: 2px solid red
 	#side-nav
 		width: 120px
 		float: left
@@ -108,7 +112,7 @@ body
 				height: 64px
 				float: left
 	#tabs
-		width: 100%
+		width: 500px
 		float: left
 		ul
 			li
@@ -116,9 +120,10 @@ body
 				float: left
 				border-bottom-width: 0 !important
 		h3
-			margin-top: 15px
+			margin: 15px 0
 			float: left
 			text-align: left
+			width: 100%
 		#image_tabs
 			div#featured
 				float: left
@@ -133,11 +138,7 @@ body
 	#main
 		float: left
 		width: 900px
-	ul.form_list
-		width: 100%
-		float: none
-		margin: 0px
-		list-style: none
+
 	#notice
 		right: 0px
 		top: 0px
@@ -172,3 +173,21 @@ table.page_list
 		display: none
 #itsthetable
 	float: left
+
+#errorExplanation
+	float: left
+	margin-bottom: 50px
+	border: 15px solid #E13939
+	padding: 20px
+	ul
+		float: left
+		li
+			width: 100%
+ul.form_list
+	width: 100%
+	float: none
+	margin: 0px
+	list-style: none
+	li
+		width: 500px
+		float: none
