@@ -1,0 +1,48 @@
+<% title "Crop photo" %>
+<% content_for(:script) do %>
+<%= stylesheet_link_tag "jquery.Jcrop" %>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$("#cropbox").Jcrop({
+			onChange: updateCrop,
+			onSelect: updateCrop,
+			setSelect: [138,206],
+			aspectRatio: 0.669902913
+		});
+	});	
+	function updateCrop(coords){
+	  var rx = 138/coords.w;
+	  var ry = 206/coords.h;
+	  $('#preview').css({
+	    width: Math.round(rx * <%= @category_main.photo_geometry(:original).width %>) + 'px',
+	    height: Math.round(ry * <%= @category_main.photo_geometry(:original).height %>) + 'px',
+	    marginLeft: '-' + Math.round(rx * coords.x) + 'px',
+	    marginTop: '-' + Math.round(ry * coords.y) + 'px'
+	  });
+		var ratio = <%= @category_main.photo_geometry(:original).width %> / <%= @category_main.photo_geometry(:original).width %>; 
+			$("#crop_x").val(Math.round(coords.x * ratio));
+			$("#crop_y").val(Math.round(coords.y * ratio));
+			$("#crop_w").val(Math.round(coords.w * ratio));
+			$("#crop_h").val(Math.round(coords.h * ratio));
+	}
+</script>
+<% end %>
+138x206
+
+<%= image_tag @category_main.photo.url(:original) , :id => "cropbox" %>
+
+<h4>Preview:</h4>
+<div style="width:138px; height:206px; overflow:hidden">
+  <%= image_tag @category_main.photo.url(:original), :id => "preview" %>
+</div>
+
+<% form_for @category_main, :url => {:action => "update", :id =>@category_main.id}, :html =>{ :method =>:put} do |f| %>
+	
+	<% for attribute in [:crop_x,:crop_y,:crop_w,:crop_h]%>
+		<%= f.hidden_field attribute, :id => attribute %>
+	<% end%>
+
+<p>
+	<%= f.submit "Crop" %>
+</p>
+<% end %>

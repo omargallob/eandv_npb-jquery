@@ -1,6 +1,17 @@
-<div id="main">
+<div id="side-nav">
+	<ul>
+		<%= link_to "Back", :back %>
+	</ul>
+</div>
 	<h1>Edit category</h1>
 
+	<div id="tabs" class="ui-tabs">
+	    <ul >
+	        <li ><a href="#contentform"><span>Info</span></a></li>
+	        <li ><a href="#media"><span>Media</span></a></li>
+	  
+	      
+	    </ul>
 	<% form_for @category, :url => {:action => "update"},:html => {:multipart => true}  do |f| %>	
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>
@@ -11,6 +22,12 @@
 	<%= link_to 'Back', admin_pages_path %>
 </div>
 <% content_for(:script) do %>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#tabs").tabs();
+});
+	
+</script>
 <%= javascript_include_tag 'tiny_mce/tiny_mce' %>
 	<script type="text/javascript">
 		tinyMCE.init({

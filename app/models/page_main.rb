@@ -8,7 +8,7 @@ class PageMain < ActiveRecord::Base
                        },:processors => [:cropper],
                        :storage => :s3,
                        :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
-                       :path => "page/:page_id/photo/:style/:basename.jpg"
+                       :path => "page/:id/photo/:style/:basename.jpg"
 
    attr_accessor :crop_x, :crop_y, :crop_w, :crop_h     
 

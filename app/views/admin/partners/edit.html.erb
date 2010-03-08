@@ -6,7 +6,7 @@
 <div id="main">
 	<h1>Editing Partner: <%= @partner.title %> (id#  <%= @partner.id %>)</h1>
 
-	<% form_for @partner, :url => {:action => "update"}  do |f| %>	
+	<% form_for @partner, :url => {:action => "update"}, :html => {:multipart => true}  do |f| %>	
 	 <%= f.error_messages %> 
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>

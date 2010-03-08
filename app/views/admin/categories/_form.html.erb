@@ -1,3 +1,4 @@
+<div id="contentform">
 <p>
   <%= f.label :name %><br />
   <%= f.text_field :name %>
@@ -46,8 +47,18 @@
 	 <%= f.label :photo %><br />
      <%= f.file_field :photo  %>
 </p>
+	  <p>
+	    <%= f.submit 'Create' %>
+	  </p>
+</div>
+<div id="media">
 <hr />
-<p>
-	 <%= f.label :main %><br />
-     <%= f.file_field :main  %>
-</p>
+	<% unless @category.parent %>
+
+		<p>
+			<iframe src="<%= admin_category_main_path(@category) %>" width="850" height="700"></iframe>
+		</p>
+
+	<% end %>
+
+</div>

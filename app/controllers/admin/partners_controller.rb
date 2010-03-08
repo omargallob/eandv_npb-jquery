@@ -18,9 +18,13 @@ class Admin::PartnersController < Admin::BaseController
         if @partner.save
 
           format.html { 
-         
-              flash[:notice] = 'partner was successfully created.'
+          if params[:partner][:photo].blank?
+         			flash[:notice] = 'partner was successfully created.'
               redirect_to( admin_category_partners_path(@partner.category_id)) 
+          else
+            render :action => "crop"
+          end
+              
            
           }
           format.xml  { render :xml => @partner, :status => :created, :location => @cat }
@@ -42,8 +46,13 @@ class Admin::PartnersController < Admin::BaseController
          if @partner.update_attributes(params[:partner])
            format.html { 
             
-               flash[:notice] = 'partner was successfully created.'
-               redirect_to( admin_category_partners_path(@partner.category_id)) 
+                  if params[:partner][:photo].blank?
+         			flash[:notice] = 'partner was successfully created.'
+              redirect_to( admin_category_partners_path(@partner.category_id)) 
+          else
+            render :action => "crop"
+          end
+           
             
             }
            format.xml  { head :ok }

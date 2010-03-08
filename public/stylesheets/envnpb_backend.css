@@ -14,7 +14,7 @@ body a:hover { color: red; }
 #pagewrapper #navbar ul li.cufon-active h2 { color: white; }
 #pagewrapper #navbar ul.subnav li { margin: 0px; padding: 0px; }
 
-#content { margin: 0px auto; padding: 25px; background-color: transparent; color: black; width: 970px; border: 1px solid #d4d4d4; }
+#content { margin: 0px auto; padding: 25px; background-color: transparent; color: black; width: 970px; border: 1px solid #d4d4d4; border-right: 0px none; }
 #content div.fieldWithErrors input { border: 2px solid red; }
 #content div.fieldWithErrors textarea { border: 2px solid red; }
 #content div.fieldWithErrors table.mceLayout { border: 2px solid red; }
