@@ -1,8 +1,9 @@
+<h2>Wide photo (Only being used in the About Section) </h2>
 <% if @page.page_about %>
 <%= image_tag @page.page_about.photo(:pagesize)  %>
 
 <%= link_to image_tag ('system/buttons/delete.jpg',:height => "15px",:title => "delete"), admin_page_about_path(@page.page_about), :confirm => 'Are you sure?', :method => :delete %>
-<% end %>
+<% else %>
 <% form_for :page_about, :url=>{:action=>"create"},:html => { :multipart => true, :method => :post } do |f| %>
   <%= f.error_messages %>
  	<p>
@@ -16,4 +17,7 @@
   <p>
     <%= f.submit "Create" %>
   </p>
-<% end %>page
+<% end %>
+
+<% end %>
+

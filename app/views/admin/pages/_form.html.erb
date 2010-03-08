@@ -40,7 +40,7 @@
 <div id="media">
 
 <% if controller.action_name == "edit" %>
-	<% if @page =="shop"%>
+	<% if @page.name =="shop"%>
 	
 <p>
 	<iframe src="<%= admin_page_main_path(@page) %>" width="850" height="700"></iframe>
@@ -52,7 +52,7 @@
 	<% if @page.parent %>
 		<% if @page.parent.name == "about" %>
 		<p>
-			<iframe src="<%= admin_page_about_path(@page) %>" width="850" height="700"></iframe>
+			<iframe src="<%= admin_page_about_path(@page) %>" width="1200" height="700"></iframe>
 		</p>
 		<% end %>
 	<% end %>

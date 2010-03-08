@@ -45,7 +45,7 @@ layout 'cropper'
               if params[:page_about][:photo].blank?         
                   flash[:notice] = 'Category was successfully updated.'
                 
-                    redirect_to(admin_page_path(@page_about.page))
+                    redirect_to(admin_page_about_path(@page_about.page))
                 
                else
                  render :action => "crop"
@@ -64,7 +64,7 @@ layout 'cropper'
 
     respond_to do |format|
       flash[:notice] = '<h3>Deleted page main for :<i>'+@page_about.page.name.upcase+'</i></h3>'
-      format.html { redirect_to(admin_page_main_path(@page_about.page)) }
+      format.html { redirect_to(admin_page_about_path(@page_about.page)) }
       format.xml  { head :ok }
     end
 	end
