@@ -41,6 +41,7 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :pages
 	   #admin.page_subs "/pages/:parent/subs", :controller => "partners", :action => "index"
      admin.resources :page_about
+     admin.resources :page_main
      admin.resources :metatag
      admin.resources :services
      admin.resources :types

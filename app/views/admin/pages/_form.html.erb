@@ -24,19 +24,37 @@
    <%= f.label :body %><br />
    <%= f.text_area :body %>
  </p>
-
 <p>
 	  <%= f.label :featured %><br/>
   	  <%= f.check_box(:featured)
 	   %>
 </p>
-</div>
-<div id="media">
 <p>
 	  <%= f.label :thumb %><br/>
-  	  <%= f.file_field(:thumb) %>
+ 	  <%= f.file_field(:thumb) %>
+</p>
+ <p>
+	    <%= f.submit 'Update' %>
+	  </p>
+</div>
+<div id="media">
 
+<% if controller.action_name == "edit" %>
+	<% if @page =="shop"%>
+	
+<p>
+	<iframe src="<%= admin_page_main_path(@page) %>" width="850" height="700"></iframe>
 </p>
 
+	<% end %>
 
-	
+
+	<% if @page.parent %>
+		<% if @page.parent.name == "about" %>
+		<p>
+			<iframe src="<%= admin_page_about_path(@page) %>" width="850" height="700"></iframe>
+		</p>
+		<% end %>
+	<% end %>
+<% end %>
+</div>

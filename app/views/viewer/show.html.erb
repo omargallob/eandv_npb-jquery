@@ -29,7 +29,7 @@
 		<div id="main_top" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 		<% end %>
 		<% if params[:name]== "shop" %>
-			<%= image_tag @page.main.url(:pagesize), :style=> "margin: 11px" if  @page.main %>
+			<%= image_tag @page.page_main.photo.url(:pagesize), :style=> "margin: 11px" if  @page.page_main %>
 			<hr />
 	 		<%= @map.div(:width => 419, :height => 317) %>
 			<hr />

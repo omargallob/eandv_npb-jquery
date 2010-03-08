@@ -3,6 +3,7 @@ class Page < ActiveRecord::Base
   has_one :metatag
  
   has_one :page_about
+  has_one :page_main
   has_one :page_featured_photo
   has_many :subpages, :class_name => 'Page', :foreign_key => 'parent_id'
   belongs_to :parent, :class_name => 'Page', :foreign_key => 'parent_id'

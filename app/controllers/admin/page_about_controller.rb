@@ -1,4 +1,6 @@
 class Admin::PageAboutController < Admin::BaseController
+layout 'cropper'
+
   def show
     @page = Page.find_by_id(params[:id])
   end
@@ -56,7 +58,14 @@ class Admin::PageAboutController < Admin::BaseController
          end
        end
   end
+	def destroy
+    @page_about = PageAbout.find_by_id(params[:id])
+    @page_about.destroy
 
-  def crop
-  end
+    respond_to do |format|
+      flash[:notice] = '<h3>Deleted page main for :<i>'+@page_about.page.name.upcase+'</i></h3>'
+      format.html { redirect_to(admin_page_main_path(@page_about.page)) }
+      format.xml  { head :ok }
+    end
+	end
 end
