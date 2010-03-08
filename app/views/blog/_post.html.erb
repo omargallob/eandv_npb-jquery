@@ -1,7 +1,7 @@
 <li>
 
 <hr>
-	<%= image_tag post.photo.url %>
+	<%= image_tag post.photo.url(:large) %>
 	<h2 class="title">
 <% if params[:parent] == nil %>
 	<%= link_to post.title, view_blog_parent_path(post.parent.name, post.name) %>

@@ -9,14 +9,18 @@ class Admin::StaffController < Admin::BaseController
 
 	 def create
     @member = Worker.new(params[:worker])
-    respond_to do |format|
+    
       if @member.save
-        flash[:notice] = 'New staff member added :'+@member.title
-        format.html { redirect_to(admin_staff_index_path) }
+					if params[:worker][:photo].blank?
+							flash[:notice] = 'New staff member added :'+@member.title
+							redirect_to(admin_staff_index_path) 
+						else
+							render :action => "crop"
+						end
       else
-        format.html { render :action => "new" }
+       render :action => "new" 
       end
-    end
+    
   end
   
   def edit
@@ -28,9 +32,12 @@ class Admin::StaffController < Admin::BaseController
        respond_to do |format|
          if @member.update_attributes(params[:worker])
            format.html { 
-            
-               flash[:notice] = 'worker was successfully updated.'
-               redirect_to( admin_staff_path(@member)) 
+						if params[:worker][:photo].blank?
+							flash[:notice] = 'New staff member added :'+@member.title
+							redirect_to(admin_staff_index_path) 
+						else
+							render :action => "crop"
+						end
             
             }
            format.xml  { head :ok }

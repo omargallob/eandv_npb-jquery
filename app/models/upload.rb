@@ -2,7 +2,7 @@ class Upload < ActiveRecord::Base
   belongs_to :gallery
   has_attached_file :photo,
                       :styles => {
-                        :pagesize => ["621x374>", :jpg],          :thumb => ["83x82#", :jpg],
+                        :pagesize => ["621x374#", :jpg],          :thumb => ["83x82#", :jpg],
                       },:convert_options => {  
                             :pagesize => "-strip -quality 60",:thumb => "-strip -quality 60 -size 83x82"
                       },:processors => [:cropper],

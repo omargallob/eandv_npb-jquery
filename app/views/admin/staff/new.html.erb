@@ -7,7 +7,7 @@
 	<h1>New staff member</h1>
 	<div style="float:left">	
 	<hr />
-	<% form_for @member, :url => {:action => ""}, :html => { :multipart => true }  do |f| %>	
+	<% form_for :worker, @member, :url => {:action => ""}, :html => { :multipart => true }  do |f| %>	
 	 <%= f.error_messages %> 
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>
