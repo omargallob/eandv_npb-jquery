@@ -48,7 +48,7 @@ class ViewerController < ApplicationController
 		end
 		if params[:parent] == "shop"
 			if params[:name] == "staff"
-					@staff = Worker.find(:all, :conditions => {:vacancy => false})
+					@staff = Worker.find(:all, :conditions => {:vacancy => false}, :order => :position)
 			end
 			if params[:name] == "employment"
 					@staff = Worker.find(:all,:conditions => {:vacancy => true})

@@ -1,6 +1,6 @@
 class Admin::StaffController < Admin::BaseController
   def index
-		@members = Worker.find(:all, :conditions =>{:vacancy=>false})
+		@members = Worker.find(:all, :conditions =>{:vacancy=>false}, :order => :position)
   end
 
   def new
@@ -62,4 +62,14 @@ class Admin::StaffController < Admin::BaseController
        format.xml  { head :ok }
      end
   end
+
+	def prioritize_staff
+
+			members = Worker.find(:all, :conditions =>{:vacancy=>false})
+    members.each do |member|
+      member.position = params['staff'].index(member.id.to_s) + 1
+      member.save
+    end
+    render :nothing => true
+	end
 end

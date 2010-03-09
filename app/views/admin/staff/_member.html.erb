@@ -1,9 +1,13 @@
+
+		<li id="staff_<%= member.id -%>">
+			<div class="handle">&nbsp;</div> 
+<table>
 <tr>
-	<td style="widtd:100px"><%= member.full_name %></td>	
-	<td style="widtd:200px"><%= member.title %></td>
-	<td style="widtd:300px"><%= member.email %></td>
-	<td style="widtd:100px"><%= member.description %></td>
-	<td style="widtd:150px">
+	<td style="width:100px"><%= member.full_name %></td>	
+	<td style="width:200px"><%= member.title %></td>
+	<td style="width:300px"><%= member.email %></td>
+	<td style="width:100px"><%= member.description %></td>
+	<td style="width:150px">
 		<table class="nolines">
 		<tr>
 			<td><%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => t('options.show')), admin_staff_path(member) %></td><td>&nbsp;|&nbsp;</td>
@@ -13,3 +17,5 @@
 	</table>	
 	</td>
 </tr>	
+</table>
+</li>

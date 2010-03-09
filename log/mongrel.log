@@ -4963,3 +4963,36 @@ Error sending file /home/omar/Proyectos/EandV/npb/public/favicon.ico: Broken pip
 /home/omar/Proyectos/EandV/npb/app/views/admin/posts/_post.html.erb:19: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/admin/posts/_post.html.erb:20: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/admin/posts/_post.html.erb:21: warning: don't put space before argument parentheses
+** TERM signal received.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:10: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:12: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:13: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:12: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:13: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:12: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:13: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:13: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:14: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/staff/_member.html.erb:15: warning: don't put space before argument parentheses

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100308142722) do
+ActiveRecord::Schema.define(:version => 20100309170217) do
 
   create_table "appforms", :force => true do |t|
     t.integer  "job_id"
@@ -283,6 +283,19 @@ ActiveRecord::Schema.define(:version => 20100308142722) do
     t.datetime "updated_at"
   end
 
+  create_table "page_featured_photos", :force => true do |t|
+    t.integer  "size"
+    t.string   "content_type"
+    t.string   "filename"
+    t.integer  "width"
+    t.integer  "height"
+    t.integer  "parent_id"
+    t.string   "thumbnail"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "page_id"
+  end
+
   create_table "page_mains", :force => true do |t|
     t.integer  "page_id"
     t.string   "title"
@@ -460,6 +473,7 @@ ActiveRecord::Schema.define(:version => 20100308142722) do
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
     t.boolean  "vacancy"
+    t.integer  "position"
   end
 
 end
