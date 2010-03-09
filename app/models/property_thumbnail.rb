@@ -2,7 +2,7 @@ class PropertyThumbnail < ActiveRecord::Base
     belongs_to :property
     has_attached_file :photo,
                         :styles => {
-                          :pagesize => ["120x90#", :jpg]
+                          :pagesize => ["120x90#", :jpg],:large => ["600x450>", :jpg]
                         },:convert_options => {  
                               :pagesize => "-strip -quality 60"
                         },:processors => [:cropper],
