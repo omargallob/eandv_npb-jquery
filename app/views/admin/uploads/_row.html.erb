@@ -1,0 +1,8 @@
+<li id="image_<%= row.id -%>">
+			<div class="handle">&nbsp;</div> 
+			<span class="content">
+				<%= link_to (image_tag(row.photo.url(:thumb)),row.photo.url(:pagesize),:rel =>"sexylightbox[group1]")  %>
+				|<%= link_to 'Destroy', admin_upload_path(row), :confirm => 'Are you sure?', :method => :delete %>
+			</span>
+
+		</li>

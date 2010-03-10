@@ -1,7 +1,6 @@
 <div id="side-nav">
 	<ul>
-		<li><%= link_to 'Destroy', admin_gallery_path(@gallery), :confirm => 'Are you sure?', :method => :delete %></li>
-		<li><%= link_to 'edit', edit_admin_gallery_path(@gallery) %></li>
+		<li><%= link_to 'Delete all images', admin_gallery_path(@gallery), :confirm => 'Are you sure?', :method => :delete %></li>
 	</ul>
 </div>
 
@@ -12,19 +11,29 @@
 
 </p>
 <ul id="tasks_list">
-	<% for image in @uploads %>
-	
-		<li id="image_<%= image.id -%>">
-			<div class="handle">&nbsp;</div> 
-			<span class="content">
-				<%= link_to (image_tag(image.photo.url(:thumb)),image.photo.url(:pagesize),:rel =>"sexylightbox[group1]")  %>
-				|<%= link_to "edit", edit_admin_upload_path(image)%> 
-				|<%= link_to 'Destroy', admin_upload_path(image), :confirm => 'Are you sure?', :method => :delete %>
-			</span>
-
-		</li>
-	<% end %>
+<%= render :partial=>"row", :collection => @uploads %>
 </ul>
+
+<% form_for :upload,@upload, :url=>{:controller=>"uploads",:action=>"create"},:html => { :multipart => true,  :id=>"new_upload_form",} do |f| %>
+  <%= f.error_messages %>
+ 
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+ <p>
+ 		<%= f.file_field :photo 
+%> 
+ </p>
+  	
+ 	<%= f.hidden_field :gallery_id, :value => @gallery.id %>
+  	
+ 	<%= hidden_field_tag :format, 'js' %>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
 
 
 	<% content_for(:script) do %>
@@ -59,3 +68,4 @@
 		
 		</script>
 	<% end %>
+<iframe id="iframe_upload" name="iframe_upload" style="display: none"></iframe>

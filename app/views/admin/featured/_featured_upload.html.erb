@@ -3,9 +3,6 @@
 
 	<p class='featured_upload'>	
 		<%= image_tag featured_upload.photo.url(:pagesize) unless featured_upload.photo.blank? %> | 
-		<label for="featured_upload_photo">Photo:</label>
-		<%= f.text_field :title %>
-		<%= f.text_area :description %>  
-		<%= f.file_field :photo %> 
+		
 		<%= f.remove_link "remove" %>
 	</p>

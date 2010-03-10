@@ -1,0 +1,6 @@
+
+
+$("#tasks_list").append('<%= escape_javascript(render(:partial => "row", :object => @upload)) %>');
+$("#tasks_list").highlight();
+SexyLightbox.refresh();
+$("#new_upload_form")[0].reset();

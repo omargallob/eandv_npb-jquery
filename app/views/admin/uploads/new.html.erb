@@ -1,0 +1,17 @@
+<% form_for :upload,@upload, :url=>{:action=>"create"},:html => { :multipart => true, :method => :post } do |f| %>
+  <%= f.error_messages %>
+ 
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+ <p>
+ 		<%= f.file_field :photo %> 
+ </p>
+  	
+ 	<%= f.hidden_field :gallery_id, :value => @gallery.id %>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>

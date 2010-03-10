@@ -1,0 +1,4 @@
+$("#new_upload").before('<div id="flash_notice"><%= escape_javascript(flash.delete(:notice)) %></div>');
+$("#uploads_count").html("<%= pluralize(@upload.gallery.uploads.count, 'upload') %>");
+$("#uploads").append("<%= escape_javascript(render(:partial => @upload)) %>");
+$("#new_upload")[0].reset();

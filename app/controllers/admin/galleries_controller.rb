@@ -37,43 +37,29 @@ class Admin::GalleriesController <  Admin::BaseController
     @gallery = Gallery.find_by_id(params[:id])
   end
   
-  def update
-    @gallery = Gallery.find_by_id(params[:id])
-		@property = @gallery.property
-	  if @gallery.update_attributes(params[:gallery])
-       respond_to do |format|
-         if @property.featured
-				   	if @property.featured_gallery.nil?
-				      flash[:notice] = '<h1> step2 & 3 are complete!!!</h1><h2>Property is 100% complete</h2>'
-							format.html { redirect_to(admin_property_path(@property)) }
-						else
-				      flash[:notice] = '<h1 >steps 1 & 2 are complete!!!</h1><h2>however the featured image for the home gallery hasnt been uploaded</h2>'
-							format.html { redirect_to(:controller => "featured",:action=>"new",:property_id=>@property ) }
-										
-						end
-					else
-        	if @property.property_thumbnail.nil?
-				      flash[:notice] = '<h1 >steps 1 & 2 are complete!!!</h1><h2>Your missing the thumb for the property listing page - click on the media tab</h2>'
-							format.html { redirect_to(edit_admin_property_path(@property)) }
-						else
-				      flash[:notice] = '<h1 >steps 1, 2 & 3 are complete!!!</h1><h2>Property is 100% complete </h2>'
-							format.html { redirect_to(admin_property_path(@property)) }
-						end    
-					end
-				end	
-   
-    else
-      render :action => "edit"
-    end
-     
+   def update
+    @upload = Upload.find_by_id(params[:id])
+      if @upload.update_attributes(params[:upload])
+        if params[:upload][:photo].blank?
+					flash[:notice] = 'Upload was successfully updated.' 
+	        redirect_to admin_gallery_path(@upload.gallery)
+        else
+            render :action => "crop"
+         end
+
+      else
+	        redirect_to admin_gallery_path(@upload.gallery)
+      end
   end
   
   def destroy
     @gallery = Gallery.find_by_id(params[:id])
-    @gallery.destroy
+   for u in @gallery.uploads
+			u.destroy
+	 end
 
     respond_to do |format|
-      format.html { redirect_to(:controller => "galleries",:action=>"new",:property_id=>@gallery.property.id) }
+      format.html { redirect_to(admin_gallery_path(@gallery)) }
       format.xml  { head :ok }
     end
   end

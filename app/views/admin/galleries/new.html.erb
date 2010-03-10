@@ -9,11 +9,11 @@
   </p>
  
   <div id='uploads' style='border: 1px solid silver'>
-    <%= f.render_associated_form(@gallery.uploads, :new => 5) %>
+    <%=  f.render_associated_form(@gallery.uploads, :new => 10) 
+		%>
   </div>
  
-  <%= f.add_associated_link('Add another photo', @gallery.uploads.build) %>
-
+  	
  	<%= f.text_field :property_id, :value => @property.id %>
 
   <p>
