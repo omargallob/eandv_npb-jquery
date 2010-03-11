@@ -8,7 +8,7 @@
 	<h1>Staff (<%= @members.size %>)</h1>
 
 <ul id="staffholder" style="width:920px">
-	<li>
+
 			<table>
 			<thead>
 				<th style="width:100px"><%= t('headerlist.name')%></th>	
@@ -18,7 +18,7 @@
 				<th style="width:150px"><%= t('headerlist.options')%></th>
 			</thead>			
 			</table>
-	</li>
+
 			<%= render :partial => "member", :collection => @members %>
 	
 	</div>

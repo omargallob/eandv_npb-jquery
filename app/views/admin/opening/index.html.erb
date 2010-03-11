@@ -6,10 +6,11 @@
 
 
 	<h1>Openings (<%= @openings.size %>)</h1>
+<ul id="staffholder" style="width:920px">
 
-	<div id="itsthetable">	
 		<table class="page_list">
 			<thead>
+				<th></th>		
 				<th style="width:100px"><%= t('headerlist.name')%></th>	
 				<th style="width:200px"><%= t('headerlist.title')%></th>
 				<th style="width:100px">Extra</th>
@@ -17,7 +18,38 @@
 				<th style="width:150px"><%= t('headerlist.options')%></th>
 
 			</thead>			
-			<%= render :partial => "member", :collection => @openings %>
 		</table>
-	</div>
 
+			<%= render :partial => "member", :collection => @openings %>
+	
+	
+<script>
+$(document).ready(function() {
+
+	// Initialise the first table (as before)
+	//$(".page_list").tableDnD();
+
+		$('#staffholder').sortable(
+				      {
+				        axis: 'y', 
+				        dropOnEmpty:false, 
+				        handle: '.handle', 
+				        cursor: 'crosshair',
+				        items: 'li',
+				        opacity: 0.4,
+				        scroll: true,
+				        update: function(){
+				          $.ajax({
+				              type: 'post', 
+				              data: $('#staffholder').sortable('serialize'), 
+				              dataType: 'script', 
+				              complete: function(request){
+				                  $('#staffholder').effect('highlight');
+				                },
+				              url: '/admin/opening/prioritize_opening'})
+				          }
+       
+				});
+
+});
+</script>

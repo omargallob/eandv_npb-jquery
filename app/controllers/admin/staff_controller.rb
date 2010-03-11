@@ -13,7 +13,11 @@ class Admin::StaffController < Admin::BaseController
       if @member.save
 					if params[:worker][:photo].blank?
 							flash[:notice] = 'New staff member added :'+@member.title
-							redirect_to(admin_staff_index_path) 
+							if @member.vacancy 
+								redirect_to(admin_opening_index_path) 
+							else
+								redirect_to(admin_staff_index_path) 
+							end	
 						else
 							render :action => "crop"
 						end
@@ -58,7 +62,13 @@ class Admin::StaffController < Admin::BaseController
      @member.destroy
 
      respond_to do |format|
-       format.html { redirect_to(admin_staff_index_path) }
+       format.html { 
+				if @member.vacancy 
+								redirect_to(admin_opening_index_path) 
+							else
+								redirect_to(admin_staff_index_path) 
+							end	
+			 }
        format.xml  { head :ok }
      end
   end

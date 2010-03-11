@@ -10,7 +10,7 @@ class Worker < ActiveRecord::Base
                        :path => "staff/worker/:id/:style/:basename.jpg"
 
 	validates_presence_of :full_name, :description, :title, :email
-	validates_uniqueness_of :full_name, :email
+	validates_uniqueness_of :full_name
 
    attr_accessor :crop_x, :crop_y, :crop_w, :crop_h     
 
