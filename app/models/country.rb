@@ -15,5 +15,13 @@ class Country < ActiveRecord::Base
 										#:url =>  "/property/gallery/:id/:style/:basename.jpg",
 										:path => "flags/:id/:style/:basename.jpg"
 
+	has_attached_file :photo, :styles => {:small => ["130x56#",:jpg]},
+                            :url => "/assets/country/:id/:style/:basename.jpg",    
+                            :storage => :s3,
+                            :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
+                            :path => "/assets/country/:id/:style/:basename.jpg"
+
 	validates_attachment_presence :flag
+	validates_attachment_presence :photo
+
 end

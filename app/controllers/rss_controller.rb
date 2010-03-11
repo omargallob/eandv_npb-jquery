@@ -18,7 +18,14 @@ class RssController < ApplicationController
   end
   
   def about
-       @list = Page.find(:all, :conditions=>['parent_id=?',10])
+       @list = Country.find(:all)
+		
+		for c in @list
+			@locations = c.locations
+			@locations.delete_if{|s| s.properties.size == 0}
+		end
+		@list.delete_if{|z| z.locations.size == 0}
+	
         respond_to do |format|
             format.xml  #{ render :xml => @properties }
         end

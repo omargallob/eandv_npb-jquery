@@ -1,5 +1,5 @@
 <tr>
-	<td><%= country.title %></td><td> <%= image_tag country.flag.url(), :width => "20px"  %></td>
+	<td><%= country.title %></td><td> <%= 	link_to (image_tag(country.flag.url(), :width => "20px"),country.photo.url(:original),:rel =>"sexylightbox[group1]")  %></td>
 	<% if controller.action_name == "index" %>
 
 

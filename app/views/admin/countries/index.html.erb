@@ -18,3 +18,12 @@
 	</table>
 	<hr />
 	</div>
+	<% content_for(:script) do %>
+		<script type="text/javascript">
+		    $(document).ready(function(){
+		    	SexyLightbox.initialize({color:'white'});
+	
+			});
+		
+		</script>
+	<% end %>
