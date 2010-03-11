@@ -14,7 +14,7 @@
 <%= render :partial=>"row", :collection => @uploads %>
 </ul>
 
-<% form_for :upload,@upload, :url=>{:controller=>"uploads",:action=>"create"},:html => { :multipart => true,  :id=>"new_upload_form",} do |f| %>
+<% form_for :upload,@upload, :url=>{:controller=>"uploads",:action=>"create"},:html => { :multipart => true,  :id=>"new_upload_form"} do |f| %>
   <%= f.error_messages %>
  
   <p>

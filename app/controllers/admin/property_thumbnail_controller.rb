@@ -20,7 +20,7 @@ class Admin::PropertyThumbnailController < Admin::BaseController
             flash[:notice] = 'Property Thumbnail was successfully created.'
             redirect_to(admin_property_thumbnail_path) 
           else
-            render :action => "crop"
+            redirect_to :action => "edit"
           end
         }
         format.xml  { render :xml => @property_thumbnail, :status => :created, :location => @property_thumbnail }

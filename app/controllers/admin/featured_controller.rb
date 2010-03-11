@@ -54,10 +54,17 @@ class Admin::FeaturedController <  Admin::BaseController
 
   def destroy
     @gallery = FeaturedGallery.find_by_id(params[:id])
-    @gallery.destroy
+	if @gallery
+		for u in @gallery.featured_uploads
+				u.destroy
+		 end
+	else
+		@gallery.destroy
+	end   
+
 
     respond_to do |format|
-      format.html { redirect_to(:controller => "featured",:action=>"new",:property_id=>@gallery.property.id) }
+      format.html { redirect_to(:controller => "featured",:action=>"show",:id=>@gallery.id || @gallery.featured_gallery.id) }
       format.xml  { head :ok }
     end
   end

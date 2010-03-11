@@ -5119,3 +5119,12 @@ Error sending file /home/omar/Proyectos/EandV/npb/public/favicon.ico: Broken pip
 /home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/galleries/_row.html.erb:4: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/featured/show.html.erb:21: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/featured/show.html.erb:21: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/featured_uploads/_featured_upload.html.erb:4: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/featured_uploads/_featured_upload.html.erb:4: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/featured/show.html.erb:21: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/featured/show.html.erb:21: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/featured/show.html.erb:22: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/featured/show.html.erb:21: warning: don't put space before argument parentheses

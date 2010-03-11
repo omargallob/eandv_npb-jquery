@@ -1,0 +1,10 @@
+<li id="image_<%= featured_upload.id -%>">
+			<div class="handle">&nbsp;</div> 
+			<span class="content">
+				<%= link_to (image_tag(featured_upload.photo.url(:thumb)),featured_upload.photo.url(:pagesize),:rel =>"sexylightbox[group1]")  %>
+				|<% # link_to "edit", edit_admin_upload_path(featured_upload)
+					%> 
+				|<%= link_to 'Destroy', admin_upload_path(featured_upload), :confirm => 'Are you sure?', :method => :delete %>
+			</span>
+
+		</li>
