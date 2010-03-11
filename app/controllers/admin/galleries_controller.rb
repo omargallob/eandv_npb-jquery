@@ -16,17 +16,16 @@ class Admin::GalleriesController <  Admin::BaseController
   def create
     @gallery = Gallery.new params[:gallery]
        if @gallery.save
-				@property = @gallery.property
-
-			
-						if @property.property_thumbnail.nil?
-				      flash[:notice] = '<h1 >steps 1 & 2 are complete!!!</h1><h2>Your missing the thumb for the property listing page - click on the media tab</h2>'
-							redirect_to(edit_admin_property_path(@property))
-						else
-				      flash[:notice] = '<h1 >steps 1, 2 & 3 are complete!!!</h1><h2>Property is 100% complete </h2>'
-							redirect_to(admin_property_path(@property)) 
-						end       
-				
+				@property = @gallery.property			
+					if @property.property_thumbnail.nil?
+				    flash[:notice] = '<h1 >steps 1 & 2 are complete!!!</h1><h2>Your missing the thumb for the property listing page - click on the media tab</h2>'
+						redirect_to(edit_admin_property_path(@property))
+					else
+				    flash[:notice] = '<h1 >steps 1, 2 & 3 are complete!!!</h1><h2>Property is 100% complete </h2>'
+						@property.validated = true
+						@property.save!
+						redirect_to(admin_property_path(@property)) 
+					end       
        else
          render :action => "new"
        end

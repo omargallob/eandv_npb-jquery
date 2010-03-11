@@ -41,6 +41,8 @@ class Admin::FeaturedController <  Admin::BaseController
 									 redirect_to :controller => "gallery",:action=>"new",:property_id=>@property 
 									else
 									flash[:notice] = '<h1 >steps 1, 2 & 3 are complete!!!</h1><h2>Property is 100% complete </h2>'
+						@property.validated = true
+						@property.save!
 									redirect_to(admin_property_path(@property))
 									end    
           }

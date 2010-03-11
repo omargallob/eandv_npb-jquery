@@ -3,7 +3,9 @@ class Upload < ActiveRecord::Base
   has_attached_file :photo,
                       :styles => {
                         :pagesize => ["621x374#", :jpg],          :thumb => ["83x82#", :jpg],
-                      },:processors => [:cropper],
+                      },:processors => [:cropper],:convert_options => {  
+                          :thumb => "-resize 83x82 -gravity center"
+                    	},
                       :storage => :s3,
                       :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
                       #:url =>  "/property/gallery/:id/:style/:basename.jpg",
@@ -32,5 +34,4 @@ class Upload < ActiveRecord::Base
      def reset_photo
        photo.reprocess!
      end
-
 end

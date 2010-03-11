@@ -8014,3 +8014,5 @@ LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/developm
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
 query: +(zipcod:los state:los city:los region:los area:los city_initials:los county:los) +(zipcod:angeles state:angeles city:angeles region:angeles area:angeles city_initials:angeles county:angeles)
 stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
