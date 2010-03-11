@@ -53,7 +53,7 @@
 #left-side #side-nav ul.submenu li a { color: white; }
 #left-side #side-nav ul.submenu li a:hover { color: black; }
 #left-side #side-nav ul.submenu li.active { width: 168px; height: 24px; background: url(/images/system/buttons/submenu_selected.jpg); background-repeat: no-repeat; }
-#left-side #side-nav #keep_discovering { width: 150px; height: 81px; background-image: url(/images/system/bg/front/EV-mobile.jpg); margin-bottom: 5px; }
+#left-side #side-nav #keep_discovering { width: 150px; height: 81px; background-image: url(/images/system/bg/front/EV-mobile.jpg); margin-bottom: 5px; float: left; }
 #left-side #side-nav #polaroid { width: 310px; height: 100px; margin-left: -195px; }
 #left-side #side-nav ul { padding-left: 5px; width: 120px; float: none; }
 #left-side #side-nav ul li { list-style: none; }
