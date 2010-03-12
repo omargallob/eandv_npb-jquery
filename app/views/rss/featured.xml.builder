@@ -16,7 +16,8 @@ xml.homes do
 			xml.builtsize property.built
 			xml.price number_to_currency(property.price, :precision => 0)		
 			xml.flagurl property.location.country.flag.url()	
-			xml.videoflag property.youtube	
+			xml.featuredlink property.featured 
+			xml.youtubelink property.youtube	
 		end
   end
 	
