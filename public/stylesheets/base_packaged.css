@@ -125,7 +125,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #side-nav ul.submenu li a {color: white}
 #left-side #side-nav ul.submenu li a:hover {color: black}
 #left-side #side-nav ul.submenu li.active {width: 168px; height: 24px; background: url(/images/system/buttons/submenu_selected.jpg); background-repeat: no-repeat}
-#left-side #side-nav #keep_discovering {width: 150px; height: 81px; background-image: url(/images/system/bg/front/EV-mobile.jpg); margin-bottom: 0px; float: left}
+#left-side #side-nav #keep_discovering {width: 150px; height: 81px; background-image: url(/images/system/bg/front/EV-mobile.jpg); margin-bottom: 5px; float: left}
 #left-side #side-nav #polaroid {width: 310px; height: 100px; margin-left: -195px; float: left}
 #left-side #side-nav ul {padding-left: 5px; width: 120px; float: none}
 #left-side #side-nav ul li {list-style: none}
@@ -139,7 +139,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #title.about {position: absolute; width: 929px; background: url(/images/system/bg/front/long_blackbar.jpg)}
 #left-side .top {background-image: url(/images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left}
 #left-side .bottom {background-image: url(/images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left}
-#left-side #main.properties {width: 442px; background: url(/images/system/bg/front/main_properties.jpg); margin-left: 0px}
+#left-side #main.properties {width: 442px; background: url(/images/system/bg/front/main_properties.jpg); margin-left: 0px; overflow-x: hidden}
 #left-side #main.featured {background: black}
 #left-side #main.featured .top {background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px}
 #left-side #main.featured .bottom {background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px; margin-top: 15px}
@@ -192,9 +192,10 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main #comunicate.nonfeatured table td a {color: #E13939}
 #left-side #main #comunicate.nonfeatured table td a:hover {color: black}
 #left-side #main ol.staff {list-style-type: none}
+#left-side #main ol.staff li {float: left}
 #left-side #main ol.staff li img {float: left; margin: 15px 10px 5px 35px}
-#left-side #main ol.staff li h1 {padding-bottom: 0px}
-#left-side #main ol.staff li h2 {margin: 0px 35px; padding: 0px; font-weight: normal}
+#left-side #main ol.staff li h1 {padding: 15px 25px 0px 0; float: left; width: 250px}
+#left-side #main ol.staff li h2 {margin: 0px; padding: 0px; font-weight: normal; width: 250px; float: left}
 #left-side #main ol.staff li h3 {margin: 15px 35px 0px}
 #left-side #main ol.staff li h6 {margin: 0px 35px}
 #left-side #main ol.staff li h6 a {color: white; float: none}
@@ -202,11 +203,11 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main ol#blog {list-style-type: none}
 #left-side #main ol#blog li {background: transparent; margin: 0px; padding: 0 11px}
 #left-side #main ol#blog li hr {margin-left: 0px}
-#left-side #main ol#blog li h2 {padding: 0 0 0 0px; text-transform: capitalize; margin: 0px; width: 100%; float: left}
+#left-side #main ol#blog li h2 {padding: 0 25px; text-transform: capitalize; margin: 0px; width: 350px; float: left}
 #left-side #main ol#blog li h2 a {float: left; margin: 0px; text-decoration: none}
-#left-side #main ol#blog li h6 {margin: 0px; padding: 0 0 0 0px; float: left}
+#left-side #main ol#blog li h6 {margin: 0px; padding: 0 25px; float: left; width: 350px}
 #left-side #main ol#blog li h6 span {color: #888888}
-#left-side #main ol#blog li p {margin: 10px 0; padding: 0px 5px; float: left; width: 100%}
+#left-side #main ol#blog li p {margin: 10px 0; padding: 0px 25px; float: left}
 #left-side #main ol.show li h1 {padding: 15px 0 0 24px}
 #left-side #main #maylike {width: 402px; height: 85px; float: left; margin: 9px 0 0 20px}
 #left-side #main #map {width: 419px; height: 317px; float: left; background: transparent; margin: 10px 11px}
