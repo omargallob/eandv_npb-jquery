@@ -20,7 +20,7 @@ class Admin::PostsController < Admin::BaseController
       else
         render :action => "new"
       end
-    end
+    
 	end
 
   def edit
