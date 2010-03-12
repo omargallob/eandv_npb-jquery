@@ -81,6 +81,7 @@ class PropertiesController < ApplicationController
     @subpages = @page.subpages
     @search_query = SearchQuery.new(params[:search_query])
     @search_query.save
+ @faqs = Faq.find(:all, :conditions => ["gossip = ?",false])
     pickup_properties(@search_query.id)
 	case params[:filter]
 			when "rent"
