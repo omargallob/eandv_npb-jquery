@@ -1,12 +1,10 @@
 <li>
 
 <hr>
-	<%= image_tag post.photo.url(:large) %>
+	
 	<h2 class="title">
 <% if params[:parent] == nil %>
 	<%= link_to post.title, view_blog_parent_path(post.parent.name, post.name) %>
-<% else %>
-	<%= post.title %>
 <% end %>
 
  </h2>
@@ -16,6 +14,9 @@
 <% if controller.action_name == "show" %>
 	<%= post.body_html  %>
 	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
+<% unless params[:parent] == nil %>
+	<%= image_tag post.photo.url(:large), :style=>"margin-top:15px;" %>
+<% end %>	
 <% else %>
 	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
 	<%= post.body_html  %>
