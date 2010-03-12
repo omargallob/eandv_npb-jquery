@@ -23,7 +23,7 @@
 	</div>
 
 	<div id="main" class="properties">
-		<h1 class="regular"><%= @category.title %> </h1>
+		<h1 class="title"><%= @category.navlabel %> </h1>
 		<%= image_tag @category.main.url(:large),:id=>"mainpic" %>
 		<%= @category.description %>
 		<div id="main_bottom" class="main_border other">	</div>

@@ -30,15 +30,18 @@
 		<% end %>
 		<% if params[:name]== "shop" %>
 			<%= image_tag @page.page_main.photo.url(:pagesize), :style=> "margin: 11px" if  @page.page_main %>
-			<hr />
-	 		<%= @map.div(:width => 419, :height => 317) %>
-			<hr />
 		<% end %>		
 	
 		<% if @page.name == "home" %>
 			<h1 class="title"><%= @page.title %> </h1>
 		<% end %>
 		<%= @page.body %>
+		<% if params[:name]== "shop" %>
+			<hr />
+	 		<%= @map.div(:width => 419, :height => 317) %>
+			<hr />
+		<% end %>		
+
 		<% if @parent.name == "about" %>
 			<hr />
 			<% unless params[:name] == "about" %>
