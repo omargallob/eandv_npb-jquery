@@ -128,6 +128,10 @@
 #left-side #main ol.staff li h6 { margin: 0px 35px; }
 #left-side #main ol.staff li h6 a { color: white; float: none; }
 #left-side #main ol.staff li h6 a:hover { color: white; }
+#left-side #main ol.staff li.employment h1 { margin-left: 36px; }
+#left-side #main ol.staff li.employment h2 { margin-left: 36px; }
+#left-side #main ol.staff li.employment h6 { width: 100%; float: left; }
+#left-side #main ol.staff li.employment p { float: left; }
 #left-side #main ol#blog { list-style-type: none; }
 #left-side #main ol#blog li { background: transparent; margin: 0px; padding: 0 11px; }
 #left-side #main ol#blog li hr { margin-left: 0px; }
