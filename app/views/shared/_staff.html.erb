@@ -6,12 +6,15 @@ employment
 <%= image_tag staff.photo.url(:pagesize) unless staff.vacancy %>
 <h1 class="title"><%= staff.full_name %></h1>
 <h2><%= staff.title %></h2>
-<%= staff.description %>
-<h6 class="staff">email: <%= staff.email %>
+
 <% if params[:name] == "staff" %>
- <%= link_to "CONTACT", '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+<p><%= staff.description %>
+</p>
+<h6 class="staff">email: <%= staff.email %> <%= link_to "CONTACT", '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
 <% else %>
- <%= link_to "APPLY", '/job/'+staff.id.to_s+'?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+<%= staff.description %>
+
+<h6 class="staff">email: <%= staff.email %> <%= link_to "APPLY", '/job/'+staff.id.to_s+'?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
 <% end %>
 
 </h6>

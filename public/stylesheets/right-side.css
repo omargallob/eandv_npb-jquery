@@ -72,11 +72,11 @@
 #right-column #schools ul.school li.map span { margin: 0 0 0 8px; text-transform: uppercase; }
 #right-column #eanvvip { width: 302px; height: 159px; background: url(/images/system/bg/front/ev_vip_bg.jpg); float: left; margin: 14px 0px 14px 0px; }
 #right-column #eanvvip p { margin: 50px; color: white; text-align: center; font-size: 14px; line-height: 18px; font-style: italic; }
-#right-column #marketreport { background: url(/images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px; }
+#right-column #marketreport { background: url(/images/system/bg/front/ggmag.jpg); background-repeat: repeat-y; float: left; margin-top: 15px; width: 304px; height: 309px; }
 #right-column #marketreport p { margin: 15px 80px; float: left; text-align: center; }
 #right-column #marketreport p a { color: #E13939; text-decoration: none; }
 #right-column #marketreport p a:hover { color: black; }
-#right-column #marketreport .header_w_image { width: 200px; margin-left: 70px; }
+#right-column #marketreport .header_w_image { width: 200px; margin-left: 70px; margin-top: 12px; }
 #right-column #marketreport .header_w_image h3 { float: left; padding-top: 9px; }
 #right-column .partners { margin-top: 14px; float: left; }
 #right-column .partners h3 { margin-left: 0px; }
