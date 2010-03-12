@@ -17,7 +17,8 @@ position:absolute;
 right:0;
 top:0;
 width:17px;
-padding:5px;
+padding: 0 5px;
+margin: 5px 0; 
 }
 .jScrollPaneDrag {
 -moz-background-clip:border;
