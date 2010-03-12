@@ -9,7 +9,7 @@ class Admin::PostsController < Admin::BaseController
 	
 	def create
     @post = Post.new(params[:post])
-    respond_to do |format|
+
       if @post.save
           if params[:post][:photo].blank?
          		flash[:notice] = 'post was successfully updated.'
@@ -18,7 +18,7 @@ class Admin::PostsController < Admin::BaseController
             render :action => "crop"
           end
       else
-        format.html { render :action => "new" }
+        render :action => "new"
       end
     end
 	end

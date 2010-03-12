@@ -3,11 +3,11 @@
 <h1 class="title"><%= staff.full_name %></h1>
 <h2><%= staff.title %></h2>
 <p><%= staff.description %></p>
-<h6 class="staff">contact:
+<h6 class="staff">email: <%= staff.email %>
 <% if params[:name] == "staff" %>
- <%= link_to staff.email, '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+ <%= link_to "contact", '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
 <% else %>
- <%= link_to staff.email, '/job/'+staff.id.to_s+'?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+ <%= link_to "contact", '/job/'+staff.id.to_s+'?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
 <% end %>
 
 </h6>
