@@ -29,4 +29,10 @@
 	  <%= f.label :photo %><br/>
   <%= f.file_field :photo %>
 </p>
+
+<p>
+Date posted<br/>
+<%= f.date_select(:date) %>
+</p>
+</p>
 <%= f.hidden_field :user_id, :value => current_user.id %>
