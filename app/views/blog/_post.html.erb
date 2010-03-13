@@ -12,15 +12,20 @@
 
 
 <% if controller.action_name == "show" %>
-	<%= post.body_html  %>
-	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
-<% unless params[:parent] == nil %>
-	<%= image_tag post.photo.url(:large), :style=>"margin-top:15px;" %>
-<% end %>	
-<% else %>
-	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
-	<%= post.body_html  %>
 
+	<% unless params[:parent] == nil %>
+		<%= post.description  %>	
+		<%= image_tag post.photo.url(:large), :style=>"margin-top:15px;" %>
+		<hr>	
+		<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
+	<% else %>
+	<%= image_tag post.photo.url(:small), :style=>"margin-top:15px;float:left;" if post.photo %><%= post.body_html  %>
+	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
+	<% end %>	
+	
+<% else %>
+	<%= image_tag post.photo.url(:small), :style=>"margin-top:15px;float:left;" if post.photo %><%= post.body_html  %>
+	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
 <% end %>
 
 </li>

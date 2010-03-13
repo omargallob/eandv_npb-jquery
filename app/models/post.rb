@@ -17,11 +17,11 @@ class Post < ActiveRecord::Base
  end
   
  def self.find_sub(pid)
-    Post.find(:all, :conditions => ['parent_id = ?', pid])
+    Post.find(:all, :conditions => ['parent_id = ?', pid], :order => 'id DESC')
  end
 
 	def self.find_all_sub
-		Post.find(:all, :conditions => ['parent_id > 0'], :order => 'position')
+		Post.find(:all, :conditions => ['parent_id > 0'], :order => 'id DESC')
 	end
 
 
