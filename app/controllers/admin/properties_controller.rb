@@ -66,13 +66,13 @@ class Admin::PropertiesController < Admin::BaseController
 									end
 							end
 						end      
-       
+       				format.html { redirect_to(edit_admin_property_path(@property)) }
 					end
           
-          format.xml  { head :ok }
+         
         else
           format.html { render :action => "edit" }
-          format.xml  { render :xml => @format.errors, :status => :unprocessable_entity }
+         
         end
       end
   end
