@@ -166,6 +166,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main.properties h3 {margin-left: 24px}
 #left-side #main.why {width: 442px}
 #left-side #news {width: 463px; height: 371px; background: url(/images/system/bg/front/NewsBG.jpg); float: right; margin-top: 14px; font-size: 14px; color: #4d4d4d}
+#left-side #news h1.title {text-transform: capitalize}
 #left-side #news .jScrollPaneContainer {margin: 0px}
 #left-side #news hr {width: 409px; height: 1px; text-align: center; background-color: #e1e1e1; border: 0px none; float: left; margin-left: 16px}
 #left-side #news #blog_container {height: 275px; float: left}
