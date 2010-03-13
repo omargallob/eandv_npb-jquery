@@ -134,7 +134,7 @@
 #left-side #main ol.staff li.employment p { float: left; }
 #left-side #main ol#blog { list-style-type: none; }
 #left-side #main ol#blog li { background: transparent; margin: 0px; padding: 0 11px; }
-#left-side #main ol#blog li hr { margin-left: 0px; }
+#left-side #main ol#blog li hr { margin-left: 6px; }
 #left-side #main ol#blog li h2 { padding: 0 25px; text-transform: capitalize; margin: 0px; width: 350px; float: left; }
 #left-side #main ol#blog li h2 a { float: left; margin: 0px; text-decoration: none; }
 #left-side #main ol#blog li h6 { margin: 0px; padding: 0 25px; float: left; width: 350px; }
