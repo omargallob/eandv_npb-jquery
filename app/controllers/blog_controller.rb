@@ -16,7 +16,7 @@ class BlogController < ApplicationController
 		@subpages = @page.subpages 
 		if params[:parent] == nil
 	  @post = Post.find_by_name(params[:id])
-		@subposts = @post.subposts.find(:all, :order => "id DESC")
+		@subposts = @post.subposts.find(:all, :order => "date DESC")
 		else
 	  @post = Post.find_by_name(params[:name])
 		end
