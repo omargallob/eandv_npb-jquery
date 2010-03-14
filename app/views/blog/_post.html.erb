@@ -20,12 +20,12 @@
 		<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
 	<% else %>
 	<%= image_tag post.photo.url(:small), :style=>"margin-top:15px;float:left;" if post.photo %><%= post.body_html  %>
-	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.date.strftime("%B %d, %Y") %></h6>
+	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.date.to_s %></h6>
 	<% end %>	
 	
 <% else %>
 	<%= image_tag post.photo.url(:small), :style=>"margin-top:15px;float:left;" if post.photo %><%= post.body_html  %>
-	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.date.strftime("%B %d,%Y") %></h6>
+	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.date.to_s %></h6>
 <% end %>
 
 </li>
