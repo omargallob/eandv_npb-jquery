@@ -20,6 +20,15 @@
 <% end %>">
 <% if params[:parent] == nil %>
 		<%= render :partial => "post", :collection => @subposts %>
+		<hr />
+		<div id="result_info">
+			<p>
+				<span class="left"><%= @subposts.size %> results</span>
+			</p>	
+			<div id="pagination_holder">
+				<%= will_paginate @subposts %>
+			</div>
+		</div>
 <% else %>
 		<%= render :partial => "post", :object => @post %>
 <% end %>

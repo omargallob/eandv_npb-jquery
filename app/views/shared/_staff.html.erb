@@ -10,7 +10,9 @@ employment
 <% if params[:name] == "staff" %>
 <p><%= staff.description %>
 </p>
-<h6 class="staff">email: <%= staff.email %> <%= link_to "CONTACT", '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+ <div class="contact"><%= link_to "contact", '/contact?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %></div>
+<h6 class="staff">email: <%= staff.email %></h6>
+
 <% else %>
 <%= staff.description %>
 

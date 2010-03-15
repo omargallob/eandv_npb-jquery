@@ -1,7 +1,7 @@
 <div id="main">
 	<h1>New Location for <%= @country.title %></h1>
 
-	<% form_for :location, :url => {:action => "create"}  do |f| %>	
+	<% form_for :location,@location, :url => {:action => "create"}  do |f| %>	
 	<%= f.error_messages %> 
 	  <%= render :partial => "form", :locals => {:f =>f}%>
 	  <p>

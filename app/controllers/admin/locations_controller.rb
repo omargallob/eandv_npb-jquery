@@ -6,10 +6,12 @@ class Admin::LocationsController < Admin::BaseController
   
   def new
     @country = Country.find_by_country_initials(params[:country].upcase)
+		@location = Location.new
   end
   
   def create
     @location = Location.new(params[:location])
+	  @country = Country.find_by_id(params[:location][:country_id])
     respond_to do |format|
       if @location.save
         flash[:notice] = 'Created Location :'+@location.id.to_s

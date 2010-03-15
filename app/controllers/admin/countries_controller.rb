@@ -8,6 +8,7 @@ class Admin::CountriesController < Admin::BaseController
   end
 
   def new
+
   end
 
   def create

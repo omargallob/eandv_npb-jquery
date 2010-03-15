@@ -8066,3 +8066,89 @@ LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/developm
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
 query: +(city:los region:los area:los city_initials:los zipcod:los county:los state:los) +(city:angeles region:angeles area:angeles city_initials:angeles zipcod:angeles county:angeles state:angeles)
 stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:los region:los area:los city_initials:los county:los zipcod:los state:los) +(city:angeles region:angeles area:angeles city_initials:angeles county:angeles zipcod:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:los region:los area:los city_initials:los county:los zipcod:los state:los) +(city:angeles region:angeles area:angeles city_initials:angeles county:angeles zipcod:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: city:suffolk region:suffolk area:suffolk city_initials:suffolk county:suffolk zipcod:suffolk state:suffolk
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:newport region:newport area:newport city_initials:newport county:newport zipcod:newport state:newport) +(city:beach region:beach area:beach city_initials:beach county:beach zipcod:beach state:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: city:suffolk region:suffolk area:suffolk city_initials:suffolk county:suffolk zipcod:suffolk state:suffolk
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: city:centro region:centro area:centro city_initials:centro county:centro zipcod:centro state:centro
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:newport region:newport area:newport city_initials:newport county:newport zipcod:newport state:newport) +(city:beach region:beach area:beach city_initials:beach county:beach zipcod:beach state:beach)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: city:suffolk region:suffolk area:suffolk city_initials:suffolk county:suffolk zipcod:suffolk state:suffolk
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:los region:los area:los city_initials:los county:los zipcod:los state:los) +(city:angeles region:angeles area:angeles city_initials:angeles county:angeles zipcod:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:los region:los area:los city_initials:los county:los zipcod:los state:los) +(city:angeles region:angeles area:angeles city_initials:angeles county:angeles zipcod:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:saint region:saint area:saint city_initials:saint county:saint zipcod:saint state:saint) +(city:tropez region:tropez area:tropez city_initials:tropez county:tropez zipcod:tropez state:tropez)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/property
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: city:suffolk region:suffolk area:suffolk city_initials:suffolk county:suffolk zipcod:suffolk state:suffolk
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:los region:los area:los city_initials:los county:los zipcod:los state:los) +(city:angeles region:angeles area:angeles city_initials:angeles county:angeles zipcod:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: city:centro region:centro area:centro city_initials:centro county:centro zipcod:centro state:centro
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: city:suffolk region:suffolk area:suffolk city_initials:suffolk county:suffolk zipcod:suffolk state:suffolk
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: city:suffolk region:suffolk area:suffolk city_initials:suffolk county:suffolk zipcod:suffolk state:suffolk
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:los region:los area:los city_initials:los county:los zipcod:los state:los) +(city:angeles region:angeles area:angeles city_initials:angeles county:angeles zipcod:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:los region:los area:los city_initials:los county:los zipcod:los state:los) +(city:angeles region:angeles area:angeles city_initials:angeles county:angeles zipcod:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:los region:los area:los city_initials:los county:los zipcod:los state:los) +(city:angeles region:angeles area:angeles city_initials:angeles county:angeles zipcod:angeles state:angeles)
+stored_fields: 

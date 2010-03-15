@@ -14,6 +14,15 @@
 		<ol id="blog" class="index">
 		<%= render :partial => "post", :collection => @posts %>
 		</ol>
+		<hr />
+		<div id="result_info">
+			<p>
+				<span class="left"><%= @posts.size %> results</span>
+			</p>	
+			<div id="pagination_holder">
+				<%= will_paginate @posts %>
+			</div>
+		</div>
 		<div id="main_bottom" class="main_border other">	</div>
 	</div>
 	

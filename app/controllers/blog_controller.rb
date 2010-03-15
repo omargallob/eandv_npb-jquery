@@ -4,6 +4,7 @@ class BlogController < ApplicationController
 
 		@subpages = @page.subpages 
 	  @posts = Post.find_all_sub
+		@posts =	@posts.paginate :page => params[:page], :per_page => 5     
     @categories = Post.find_main
     #@subcats = Post.find_all_sub
 
@@ -17,6 +18,7 @@ class BlogController < ApplicationController
 		if params[:parent] == nil
 	  @post = Post.find_by_name(params[:id])
 		@subposts = @post.subposts.find(:all, :order => "date DESC")
+		@subposts =	@subposts.paginate :page => params[:page], :per_page => 5    
 		else
 	  @post = Post.find_by_name(params[:name])
 		end
