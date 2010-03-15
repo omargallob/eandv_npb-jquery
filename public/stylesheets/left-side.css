@@ -84,8 +84,8 @@
 #left-side #main.featured #property_header ul.facility li.bath { background: url(/images/system/buttons/Facility/feature_Shower.jpg); height: 19px; }
 #left-side #main.featured #property_header ul.facility li.garage { background: url(/images/system/buttons/Facility/feature_Car.jpg); }
 #left-side #main.featured #facility_list { background: url(/images/system/bg/front/FeaturedFacilitiesH.jpg); }
-#left-side #main.featured #facility_list .top { background: url(/images/system/bg/front/FeaturedFacilitiesBGTop.jpg); margin: 0px; height: 8px; }
-#left-side #main.featured #facility_list .bottom { background: url(/images/system/bg/front/FeaturedFacilitiesBGBottom.jpg); height: 8px; }
+#left-side #main.featured #facility_list .top { background: url(/images/system/bg/front/FeaturedFacilitiesBGTop.jpg); margin: 0px; height: 4px; }
+#left-side #main.featured #facility_list .bottom { background: url(/images/system/bg/front/FeaturedFacilitiesBGBottom.jpg); height: 4px; margin: 0px; }
 #left-side #services { width: 442px; background: url(/images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px; }
 #left-side #services img { margin: 5px 20px; }
 #left-side #services ul { list-style: none; margin: 0 0 0 -27px; }
@@ -138,6 +138,7 @@
 #left-side #main ol.staff li.employment h2 { margin-left: 36px; }
 #left-side #main ol.staff li.employment h6 { width: 260px; float: left; margin-left: 15px; }
 #left-side #main ol.staff li.employment p { float: left; }
+#left-side #main ol.staff li.employment ul li { width: 360px; }
 #left-side #main ol#blog { list-style-type: none; }
 #left-side #main ol#blog li { background: transparent; margin: 0px; padding: 0 11px; }
 #left-side #main ol#blog li hr { margin-left: 6px; }
@@ -190,6 +191,7 @@
 #left-side #main ul#view_options li.mls { width: 42px; background: url(../images/system/buttons/Filters/Filter_MLS.jpg); }
 #left-side #main ul#view_options li.date { width: 54px; background: url(../images/system/buttons/Filters/Filter_Date.jpg); }
 #left-side #main ul#view_options li.price { width: 56px; background: url(../images/system/buttons/Filters/Filter_Price.jpg); }
+#left-side #main ul#view_options li.featured { width: 76px; background: url(../images/system/buttons/Filters/Filter_Featured.jpg); height: 21px; }
 #left-side #main ul#view_options li.first { width: 60px; margin-right: 15px; line-height: 14px; margin-top: 0; text-transform: uppercase; }
 #left-side #main #result_info { width: 409px; height: 74px; float: left; margin-left: 16px; }
 #left-side #main #result_info h5 { margin-top: 48px; width: 100%; color: red; font-style: italic; }

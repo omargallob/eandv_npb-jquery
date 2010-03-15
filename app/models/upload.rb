@@ -34,4 +34,5 @@ class Upload < ActiveRecord::Base
      def reset_photo
        photo.reprocess!
      end
+
 end

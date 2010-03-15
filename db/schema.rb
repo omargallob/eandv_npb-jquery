@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100313233538) do
+ActiveRecord::Schema.define(:version => 20100315132844) do
 
   create_table "appforms", :force => true do |t|
     t.integer  "job_id"

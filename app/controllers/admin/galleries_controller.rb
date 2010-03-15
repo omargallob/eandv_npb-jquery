@@ -31,7 +31,7 @@ class Admin::GalleriesController <  Admin::BaseController
        end
   
   end
-  
+
   def edit
     @gallery = Gallery.find_by_id(params[:id])
   end
