@@ -23,6 +23,7 @@ class PropertiesController < ApplicationController
 			@properties.sort!{|x,y| x.price <=> y.price}	
 			@order = "des"	
 		end
+	  @properties.delete_if {|x| x.validated == false }
 		@properties = @properties.paginate :page => params[:page], :per_page => 10     			
 		 @page = Page.find_by_name('properties')
       if @page.metatag
@@ -244,5 +245,15 @@ class PropertiesController < ApplicationController
 		render :layout => "search"
 	end
   
-  
+  def mls
+ 		@page = Page.find_by_name('properties')
+      if @page.metatag
+         set_meta_tags :title =>  @page.title,
+                     :description => @page.metatag.description,
+                     :keywords =>  @page.metatag.keywords 
+       else
+         set_meta_tags :title =>  @page.title
+      end
+     @subpages = @page.subpages
+	end
 end
