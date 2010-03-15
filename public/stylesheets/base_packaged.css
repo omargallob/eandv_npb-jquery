@@ -208,7 +208,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main ol.staff li .contact a:hover {color: #4a4a4a}
 #left-side #main ol.staff li.employment h1 {margin-left: 36px}
 #left-side #main ol.staff li.employment h2 {margin-left: 36px}
-#left-side #main ol.staff li.employment h6 {width: 100%; float: left}
+#left-side #main ol.staff li.employment h6 {width: 260px; float: left; margin-left: 15px}
 #left-side #main ol.staff li.employment p {float: left}
 #left-side #main ol#blog {list-style-type: none}
 #left-side #main ol#blog li {background: transparent; margin: 0px; padding: 0 11px}

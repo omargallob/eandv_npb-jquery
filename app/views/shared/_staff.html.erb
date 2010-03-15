@@ -15,8 +15,8 @@ employment
 
 <% else %>
 <%= staff.description %>
-
-<h6 class="staff">email: <%= staff.email %> <%= link_to "APPLY", '/job/'+staff.id.to_s+'?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %>
+<div class="contact"><%= link_to "apply", '/job/'+staff.id.to_s+'?iframe=true&width=560&height=600',:rel=>"prettyPhoto" %></div>
+<h6 class="staff">email: <%= staff.email %> </h6>
 <% end %>
 
 </h6>
