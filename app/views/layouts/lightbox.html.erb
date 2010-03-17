@@ -53,9 +53,12 @@
   <body>
 		<div id="pagewrapper">
 			<div id="header">
-				<h1><% if controller.action_name == "index" %>Contact <% end %>
-						<% if controller.action_name == "job" %>Application <% end %>
-					 Form</h1>
+				
+				<h1><% if controller.action_name == "index" %>Contact Form<% end %>
+						<% if controller.action_name == "job" %>Application Form<% end %>
+						<% if controller.action_name == "buyersguide" %>Buyer's Guide <% end %>			
+						<% if controller.action_name == "sellersguide" %>Seller's Guide <% end %>									 
+			</h1>
 	<% if controller.action_name == "index" %>			
 			<p>If your interested in one of our properties/services or have any questions you can <span>chat live</span> now, call us on <span>014256256</span> or fill out the contact form below and I or one of my agents will be in contact with you soon</p>
 	<% end %>

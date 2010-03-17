@@ -92,5 +92,7 @@ layout "lightbox"
 		@cities = Property.find(:all, :include => :location).map{|w| w.location.region}
 	end
 
+	def buyersguide
+	end
 
 end
