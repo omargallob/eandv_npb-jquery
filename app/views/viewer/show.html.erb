@@ -64,7 +64,8 @@
 		<% end %>
 
 		<% if params[:parent] == "why" %>
-		<p class="main_links"> <%= link_to "contact us", "/images/slide_1.jpg",:rel =>"prettyPhoto" %> or <%= link_to "chat with us", "/images/slide_1.jpg",:rel =>"prettyPhoto" %> </p>
+		<p class="main_links"> <a href="/contact?iframe=true&width=560&height=560" rel="prettyPhoto">Contact us</a> or <a onclick="window.open('/plugoo','meebome','width=200,height=285');" href="#">
+		Chat with us</a> </p>
 		<% end %>
 		<div id="main_bottom" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 	</div>
