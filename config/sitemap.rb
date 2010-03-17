@@ -33,6 +33,13 @@ SitemapGenerator::Sitemap.add_links do |sitemap|
       sitemap.add services_sub_path(cat.name,sub.name), :lastmod => sub.updated_at
     end
   end
+	
+	Post.find_main.each do |z|
+		sitemap.add view_blog_path(z), :lastmod => z.updated_at
+		z.subposts.each do |suba|
+			sitemap.add view_blog_parent_path(z.name, suba.name), :lastmod => z.updated_at
+		end
+	end
   
   
   # add merchant path
