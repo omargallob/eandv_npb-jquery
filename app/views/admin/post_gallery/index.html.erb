@@ -1,0 +1,23 @@
+<div id="side-nav">
+	<ul>
+	<%= link_to "New", admin_new_post_gallery_path  %>
+	</ul>
+</div>
+
+<div id="subcontent">
+<h1>Post Gallery. </h1>
+
+	<div id="itsthetable">	
+		<table class="page_list">
+			<tr>
+				<th>Title</th>	
+				<th>Options</th>	
+			</tr>			
+		<%= render :partial => "images", :collection => @fuploads %>
+		</table>
+	</div>
+	<br />
+	
+</div>	
+
+

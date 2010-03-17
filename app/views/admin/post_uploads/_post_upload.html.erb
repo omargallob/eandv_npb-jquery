@@ -1,0 +1,10 @@
+<li id="image_<%= post_upload.id -%>">
+			<div class="handle">&nbsp;</div> 
+			<span class="content">
+				<%= link_to (image_tag(post_upload.photo.url(:thumb)),post_upload.photo.url(:original),:rel =>"sexylightbox[group1]")  %>
+				|<% # link_to "edit", edit_admin_upload_path(post_upload)
+					%> 
+				|<%= link_to 'Destroy', admin_post_uploads_path(post_upload), :confirm => 'Are you sure?', :method => :delete %>
+			</span>
+
+		</li>

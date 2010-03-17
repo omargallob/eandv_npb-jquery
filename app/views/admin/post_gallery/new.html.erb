@@ -1,0 +1,22 @@
+
+<% form_for @gallery, :url=>{:action=>"create"},:html => { :multipart => true, :method => :post } do |f| %>
+  <%= f.error_messages %>
+
+ 
+  <div id='uploads' style='border: 1px solid silver'>
+		
+    <%= 
+
+			
+ f.render_associated_form(@gallery.post_uploads, :new => 5) 
+		%>
+  </div>
+ 
+
+
+ 	<%= f.text_field :post_id, :value => @post.id %>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>

@@ -54,13 +54,13 @@ class Admin::FeaturedController <  Admin::BaseController
 
   def destroy
     @gallery = FeaturedGallery.find_by_id(params[:id])
-	if @gallery
-		for u in @gallery.featured_uploads
-				u.destroy
-		 end
-	else
-		@gallery.destroy
-	end   
+		if @gallery
+			for u in @gallery.featured_uploads
+					u.destroy
+			 end
+		else
+			@gallery.destroy
+		end   
 
 
     respond_to do |format|

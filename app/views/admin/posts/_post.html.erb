@@ -16,6 +16,13 @@
 	<td>
 	<table class="nolines">
 		<tr>
+<td>
+			<% if post.post_gallery %>
+				<%= link_to image_tag ('system/buttons/gallery.png', :height => "15px", :title =>"Gallery"), admin_post_gallery_path(post.post_gallery) %>
+			<% else %>
+				<%= link_to image_tag ('system/buttons/gallery.png', :height => "15px", :title =>"Gallery"), :controller => "post_gallery",:action=>"new",:post_id=>post %>
+			<% end %>
+</td>
 			<td><%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => t('options.show')), admin_post_path(post) %></td><td>&nbsp;|&nbsp;</td>
 			<td><%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => t('options.edit')), edit_admin_post_path(post) %></td><td>&nbsp;|&nbsp;</td>
 			<td><%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => t('options.delete')), admin_post_path(post), :confirm => 'Are you sure?', :method => :delete %></td>

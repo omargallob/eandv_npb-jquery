@@ -43,6 +43,8 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :page_about
      admin.resources :page_main
      admin.resources :category_main
+	   admin.resources :post_gallery
+	   admin.resources :post_uploads
      admin.resources :metatag
      admin.resources :services
      admin.resources :types

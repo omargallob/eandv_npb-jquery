@@ -1,0 +1,80 @@
+
+<div id="side-nav">
+	<ul>
+		<li><%= link_to 'Destroy', admin_post_gallery_path(@gallery), :confirm => 'Are you sure?', :method => :delete %></li>
+		<li><%= link_to 'back', :back %></li>
+	</ul>
+</div>
+
+
+
+<div id="subcontent">
+<h1>Featured Gallery. (<%= @gallery.post_uploads.size %>)<br></h1>
+
+<ul id="tasks_list">
+<%if @uploads.size >0 %>
+	<% for image in @uploads %>
+	
+		<li id="image_<%= image.id -%>" style="height:80px">
+			<div class="handle">&nbsp;</div> 
+			<span class="content">
+				<%= link_to (image_tag(image.photo.url(:thumb)),image.photo.url(:pagesize),:rel =>"sexylightbox[group1]")  %>
+			 |<%= link_to 'Destroy', admin_post_upload_path(image), :confirm => 'Are you sure?', :method => :delete %>
+			</span>
+
+		</li>
+	<% end %>
+<% end %>
+</ul>
+<% form_for :post_upload,@upload, :url=>{:controller=>"post_uploads",:action=>"create"},:html => { :multipart => true,  :id=>"new_upload_form"} do |f| %>
+  <%= f.error_messages %>
+ 
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+ <p>
+ 		<%= f.file_field :photo %> 
+ </p>
+  	
+ 	<%= f.hidden_field :post_gallery_id, :value => @gallery.id %>
+<%= hidden_field_tag :format, 'js' %>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+
+<% end %>
+</div>	
+
+	<% content_for(:script) do %>
+		<script type="text/javascript">
+		    $(document).ready(function(){
+		    	SexyLightbox.initialize({color:'white'});
+	
+				$('#tasks_list').sortable(
+				      {
+				        axis: 'y', 
+				        dropOnEmpty:false, 
+				        handle: '.handle', 
+				        cursor: 'crosshair',
+				        items: 'li',
+				        opacity: 0.4,
+				        scroll: true,
+				        update: function(){
+				          $.ajax({
+				              type: 'post', 
+				              data: $('#tasks_list').sortable('serialize') + '&id=<%=@gallery.id-%>', 
+				              dataType: 'script', 
+				              complete: function(request){
+				                  $('#tasks_list').effect('highlight');
+				                },
+				              url: '/admin/post/prioritize_uploads'})
+				          }
+       
+				});
+
+
+				});
+		
+		</script>
+	<% end %>

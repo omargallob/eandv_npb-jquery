@@ -1,0 +1,9 @@
+<hr />
+
+
+	<p class='post_upload'>	
+		<%= image_tag post_upload.photo.url(:pagesize) unless post_upload.photo.blank? %> | 
+		<label for="upload_photo">Photo:</label>
+		<%= f.file_field :photo %> 
+		<%= f.remove_link "remove" %>
+	</p>

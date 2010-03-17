@@ -15,17 +15,33 @@
 
 	<% unless params[:parent] == nil %>
 		<%= post.description  %>	
-		<%= image_tag post.photo.url(:large), :style=>"margin-top:15px;" %>
+		<% if  post.post_gallery and  post.post_gallery.post_uploads.size > 0 %>
+			<p>	<% for image in post.post_gallery.post_uploads %>
+						<%= link_to (image_tag(image.photo.url(:thumb)),image.photo.url(:original),:rel =>"prettyPhotos[group1]", :style=>"float:left;margin:12px")  %>
+				<% end %>	
+			</p>
+		<% end %>
 		<hr>	
 		<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.created_at %></h6>
 	<% else %>
-	<%= image_tag post.photo.url(:small), :style=>"margin-top:15px;float:left;" if post.photo %><%= post.body_html  %>
+		<% if  post.post_gallery and  post.post_gallery.post_uploads.size > 0 %>
+			<%= image_tag post.post_gallery.post_uploads.first.photo.url(:thumb), :style=>"margin-top:15px;float:left;" if post.photo %>
+		<% else %>
+			<%= image_tag post.photo.url(:small), :style=>"margin-top:15px;float:left;" if post.photo %>
+		<% end %>
+	<%= post.body_html  %>
 	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.date.to_s %></h6>
 	<% end %>	
 	
 <% else %>
-	<%= image_tag post.photo.url(:small), :style=>"margin-top:15px;float:left;" if post.photo %><%= post.body_html  %>
+	<% if  post.post_gallery and  post.post_gallery.post_uploads.size > 0 %>
+			<%= image_tag post.post_gallery.post_uploads.first.photo.url(:thumb), :style=>"margin-top:15px;float:left;" if post.photo %>
+		<% else %>
+			<%= image_tag post.photo.url(:small), :style=>"margin-top:15px;float:left;" if post.photo %>
+		<% end %>
+	<%= post.body_html  %>
 	<h6>Posted by <span><%= post.user.login.capitalize %></span><br>Date Posted: <%= post.date.to_s %></h6>
 <% end %>
+
 
 </li>
