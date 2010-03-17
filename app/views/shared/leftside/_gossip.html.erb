@@ -1,2 +1,2 @@
-	<li><span><%= gossip.question %></span><%= gossip.answer %><%= link_to "link", gossip.user_name %></li>
+	<li><span><%= link_to gossip.title, view_blog_parent_path(gossip.parent.name,gossip.name) %></span><%= gossip.body_html%></li>
 		<hr>

@@ -118,7 +118,8 @@ def pickup_properties(id)
 
  end
 	def gossip	
-	   @gossips = Faq.find(:all, :conditions =>['gossip = ?', true])
+	   @latest_posts = Post.find_all_sub
+		@latest_posts.delete_if{|q| q.parent.name == "news"}
 	end
   #def default_url_options(options={}) 
   #   logger.debug "default_url_options is passed options: #{options.inspect}\n"
