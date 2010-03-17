@@ -24,11 +24,15 @@ class ApplicationController < ActionController::Base
   end
   
   def pickupproperties
-    @locations = Location.find(:all)
+    @locations = Location.find(:all, :include => :country)
 		@locations.delete_if{|q| q.properties.size == 0}
+		@locations.delete_if{|q| q.country.title != "United States"}
+
     @countries = Country.find(:all)
+		
 		@countries.delete_if{|s| s.locations.size == 0}
 		@countries = @countries.collect {|p| [ p.title, p.title ]}
+		
     @states = @locations.map { |x| x.state }
     @county = @locations.map { |x| x.city+" - "+x.county }  
     @region = @locations.map { |x| x.region }
