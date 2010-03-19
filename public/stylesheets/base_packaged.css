@@ -194,7 +194,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main #comunicate.nonfeatured table td a {color: white}
 #left-side #main #comunicate.nonfeatured table td a:hover {color: black}
 #left-side #main #comunicate.nonfeatured table td.chat {height: 21px; width: 56px; background: url(/images/system/buttons/Filters/Filter_Price.jpg); background-repeat: no-repeat}
-#left-side #main #comunicate.nonfeatured table td.contact {height: 22px; width: 64px; margin-left: 15px; background: url(/images/system/buttons/Filters/Filter_Price.jpg); background-repeat: no-repeat}
+#left-side #main #comunicate.nonfeatured table td.contact {height: 22px; width: 63px; margin-left: 15px; background: url(/images/system/buttons/Filters/Filter_Featured.jpg); background-repeat: no-repeat}
 #left-side #main ol.staff {list-style-type: none}
 #left-side #main ol.staff li {float: left}
 #left-side #main ol.staff li img {float: left; margin: 20px 10px 5px 35px}
