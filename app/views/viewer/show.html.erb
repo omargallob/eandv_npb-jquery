@@ -64,8 +64,8 @@
 		<% end %>
 
 		<% if params[:parent] == "why" %>
-		<p class="main_links"> <a href="/contact?iframe=true&width=560&height=560" rel="prettyPhoto">Contact us</a> or <a onclick="window.open('/plugoo','meebome','width=200,height=285');" href="#">
-		Chat with us</a> </p>
+	 <table class="contact"><tr> <td class="contact"><a href="/contact?iframe=true&width=560&height=560" rel="prettyPhoto" >contact </a></td><td>&nbsp; or &nbsp;</td><td class="chat"> <a onclick="window.open('/plugoo','meebome','width=200,height=285');" href="#">
+		chat</a></td></tr></table> 
 		<% end %>
 		<div id="main_bottom" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 	</div>

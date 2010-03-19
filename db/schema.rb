@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100317163655) do
+ActiveRecord::Schema.define(:version => 20100319203153) do
 
   create_table "appforms", :force => true do |t|
     t.integer  "job_id"
@@ -502,6 +502,7 @@ ActiveRecord::Schema.define(:version => 20100317163655) do
     t.datetime "photo_updated_at"
     t.boolean  "vacancy"
     t.integer  "position"
+    t.string   "telephone"
   end
 
 end

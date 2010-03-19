@@ -131,12 +131,12 @@
 #left-side #main ol.staff li h6 { margin: 0px 35px; }
 #left-side #main ol.staff li h6 a { color: white; float: none; }
 #left-side #main ol.staff li h6 a:hover { color: white; }
-#left-side #main ol.staff li .contact { height: 21px; width: 56px; background: url(/images/system/buttons/Filters/Filter_Price.jpg); background-repeat: no-repeat; float: left; margin: 0px 15px 0 35px; padding-top: 3px; text-align: center; }
+#left-side #main ol.staff li .contact { height: 21px; width: 56px; background: url(/images/system/buttons/Filters/Filter_Price.jpg); background-repeat: no-repeat; float: left; margin: 8px 15px 0 35px; padding-top: 3px; text-align: center; }
 #left-side #main ol.staff li .contact a { margin: 0px; color: white; float: none; text-decoration: none; }
 #left-side #main ol.staff li .contact a:hover { color: #4a4a4a; }
 #left-side #main ol.staff li.employment h1 { margin-left: 36px; }
 #left-side #main ol.staff li.employment h2 { margin-left: 36px; }
-#left-side #main ol.staff li.employment h6 { width: 260px; float: left; margin-left: 15px; }
+#left-side #main ol.staff li.employment h6 { width: 260px; float: left; margin-left: 15px; margin-top: 8px; }
 #left-side #main ol.staff li.employment p { float: left; margin-top: 10px; }
 #left-side #main ol.staff li.employment ul li { width: 360px; }
 #left-side #main ol#blog { list-style-type: none; }
@@ -242,8 +242,11 @@
 #left-side #main #main_bottom.other { background-image: url(../images/system/bg/front/main_properties_bottom.jpg); width: 442px; float: left; margin-top: 33px; height: 15px; }
 #left-side #main .properties { width: 442px; }
 #left-side #main p { margin: 5px 35px; font-style: italic; font-family: "Georgia"; }
-#left-side #main p.main_links { text-align: left; }
-#left-side #main p.main_links a { float: none; margin: 0px; }
+#left-side #main table.contact td { text-align: center; }
+#left-side #main table.contact td a { color: white; text-decoration: none; margin-right: 14px; text-align: center; }
+#left-side #main table.contact td a:hover { color: black; }
+#left-side #main table.contact td.contact { width: 76px; background: url(../images/system/buttons/Filters/Filter_Featured.jpg); height: 21px; }
+#left-side #main table.contact td.chat { width: 56px; background: url(../images/system/buttons/Filters/Filter_Price.jpg); height: 21px; }
 #left-side #main ul { margin: 5px 30px; padding-left: 20px; font-style: italic; }
 #left-side #main ul.toggle_li { font-style: italic; }
 #left-side #main ul.toggle_li li { margin: 20px 0; }
