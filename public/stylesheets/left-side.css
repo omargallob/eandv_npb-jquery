@@ -131,7 +131,7 @@
 #left-side #main ol.staff li h6 { margin: 0px 35px; }
 #left-side #main ol.staff li h6 a { color: white; float: none; }
 #left-side #main ol.staff li h6 a:hover { color: white; }
-#left-side #main ol.staff li .contact { height: 21px; width: 56px; background: url(/images/system/buttons/Filters/Filter_Price.jpg); background-repeat: no-repeat; float: left; margin: 8px 15px 0 35px; padding-top: 3px; text-align: center; }
+#left-side #main ol.staff li .contact { height: 21px; width: 63px; background: url(/images/system/buttons/Filters/Filter_Featured.jpg); background-repeat: no-repeat; float: left; margin: 8px 15px 0 35px; padding-top: 3px; text-align: center; }
 #left-side #main ol.staff li .contact a { margin: 0px; color: white; float: none; text-decoration: none; }
 #left-side #main ol.staff li .contact a:hover { color: #4a4a4a; }
 #left-side #main ol.staff li.employment h1 { margin-left: 36px; }
