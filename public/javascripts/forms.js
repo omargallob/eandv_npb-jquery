@@ -67,7 +67,7 @@ jQuery.fn.nice_fonts_featured = function(){
 	  	 }
 	 });
 	
-			Cufon.replace('#header ul li', {
+			Cufon.replace('ul li', {
 		   fontFamily: "GarmdITC BkCn BT",
 		   color: 'white',
 		   fontSize: "14px",

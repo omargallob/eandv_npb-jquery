@@ -2,7 +2,10 @@
 	 <%= f.error_messages :header_message => "#{@user.errors.size} errors prevented this contact form frmo being sent" 
 		%> 
 		<table id="column1">
-
+			<tr>
+				<td><h3>Login</h3></td><td class="spacer"></td>
+				<td> <%= f.text_field(:login, :size => 20) %></td>
+			</tr>	
 			<tr>
 				<td><h3>Full Name</h3></td><td class="spacer"></td>
 				<td> <%= f.text_field(:name, :size => 20) %></td>
@@ -16,10 +19,13 @@
 				<td><%= f.text_field(:email, :size => 20) %></td>
 			</tr>	
 			<tr>
-				<td><h3>*Email Again</h3></td><td class="spacer"></td>
-				<td><%= f.text_field(:email, :size => 10) %></td>
+				<td><h3>Password</h3></td><td class="spacer"></td>
+				<td><%= f.password_field(:password, :size => 20) %></td>
 			</tr>	
-
+			<tr>
+				<td><h3>Confirm</h3></td><td class="spacer"></td>
+				<td><%= f.password_field :password_confirmation,:size => 20 %></td>
+			</tr>	
 				<tr>
 					<td></td><td class="spacer"></td>
 					<td>
@@ -29,9 +35,7 @@
 					</td>
 				</tr>
 			</table>
-<%= f.hidden_field(:login,:value =>"randomized") %>
-<%= f.hidden_field(:password,  :value =>"randomized") %>
-<%= f.hidden_field :password_confirmation,:value =>"randomized" %>
+
 <hr>
 
 
