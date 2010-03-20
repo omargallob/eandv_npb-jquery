@@ -11,6 +11,10 @@
   <%= f.text_field :name %>
 </p>
 <p>
+	  <%= f.label :author %><br/>
+  <%= f.text_field :author %>
+</p>
+<p>
 	<%= f.collection_select :parent_id, Post.find_main, :id, :title, :include_blank => true%>
 </p>
 <p>
@@ -31,4 +35,5 @@ Date posted<br/>
 <%= f.date_select(:date) %>
 </p>
 </p>
-<%= f.hidden_field :user_id, :value => current_user.id %>
+<% # f.hidden_field :user_id, :value => current_user.id 
+%>
