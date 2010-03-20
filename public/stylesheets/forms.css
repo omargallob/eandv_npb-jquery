@@ -1,10 +1,10 @@
 body.vip #pagewrapper { background: url(../images/system/bg/front/VIPformBG.jpg); margin: 0px auto; }
 body.vip #pagewrapper #header { margin-top: 0px; }
 body.vip #pagewrapper #header h1 { padding-top: 8px; }
-body.vip #pagewrapper #header p { border-bottom: 0px none; padding: 6px 8px; }
+body.vip #pagewrapper #header p { border-bottom: 0px none; padding: 0px 8px; }
 body.vip #pagewrapper #header ul { padding-bottom: 12px; border-bottom: 1px solid #e1e1e1; }
 body.vip #pagewrapper #header ul li { margin-left: 45px; }
-body.vip #pagewrapper #content table { padding-left: 45px; }
+body.vip #pagewrapper #content table { padding-left: 45px; padding-top: 15px; }
 body.vip #pagewrapper #content table tr { margin: 4px 0; }
 body.vip #pagewrapper #content table tr td { vertical-align: top; }
 body.vip #pagewrapper #content table tr td h4 { text-transform: uppercase; text-align: right; text-decoration: none; margin-right: 15px; margin-top: 0px; width: 150px; margin-top: 2px; }
