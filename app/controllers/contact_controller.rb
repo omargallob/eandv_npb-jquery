@@ -70,6 +70,27 @@ layout "lightbox"
 		Notifier.deliver(systemmail)
 	end
 
+	def vip
+		@user = User.new
+	end
+
+	def user_create
+	  @user = User.new(params[:user])
+    
+		if @user.save
+			redirect_to :action => "apply_vip", :id => @user.id
+		else
+			render :action => "vip"
+		end
+	end
+
+	def apply_vip
+		mail = Notifier.create_signup_vip(params[:id])  # => a tmail object
+		Notifier.deliver(mail)
+		systemmail = Notifier.create_notify_vip_received(params[:id])  # => a tmail object
+		Notifier.deliver(systemmail)
+	end
+
 	private
 	def pickup_variables_contact
 		@interested_in = ["Buying","Selling"]
@@ -92,6 +113,7 @@ layout "lightbox"
 		@cities = Property.find(:all, :include => :location).map{|w| w.location.region}
 	end
 
+	
 	def buyersguide
 	end
 

@@ -9,6 +9,7 @@ class Notifier < ActionMailer::Base
    content_type "text/html"
  end
 
+
  def notify_contact_received(id)
  	 @contact = Contact.find_by_id(id)
 	 case @contact.interested_in
@@ -38,7 +39,26 @@ class Notifier < ActionMailer::Base
 recipients "omargallob@gmail.com"
    bcc        ["Mail Watcher <watcher@engelandvoelkersnewportbeach.com>"]
    from       "system@engelandvoelkersnewportbeach.com"
-   subject    "Thanks for applying"
+   subject    "EV Application form"
+   body       :account => @appform
+   content_type "text/html"
+ end
+
+ def signup_vip(id)
+ 	 @user = User.find_by_id(id)
+   recipients @user.email
+   bcc        ["Mail Watcher <watcher@engelandvoelkersnewportbeach.com>"]
+   from       "system@engelandvoelkersnewportbeach.com"
+   subject    "Welcome to the E&V VIP Newsletter"
+   body       :account => @user
+   content_type "text/html"
+ end
+ def notify_vip_received(id)
+	 @user = User.find_by_id(id)
+	 recipients "omargallob@gmail.com"
+   bcc        ["Mail Watcher <watcher@engelandvoelkersnewportbeach.com>"]
+   from       "system@engelandvoelkersnewportbeach.com"
+   subject    "E&V VIP Contact received -"
    body       :account => @appform
    content_type "text/html"
  end

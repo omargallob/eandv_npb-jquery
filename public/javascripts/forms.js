@@ -76,7 +76,12 @@ jQuery.fn.nice_fonts_featured = function(){
 	  	 }
 	 });
 	
-	
+		Cufon.replace('h3', {
+		   fontFamily: "GarmdITC BkCn BT",
+		   color: 'white',
+		   fontSize: "14px"
+
+	 });
 	
 }
 
