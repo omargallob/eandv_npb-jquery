@@ -265,7 +265,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main ul#view_options li.date {width: 54px; background: url(../images/system/buttons/Filters/Filter_Date.jpg)}
 #left-side #main ul#view_options li.price {width: 56px; background: url(../images/system/buttons/Filters/Filter_Price.jpg)}
 #left-side #main ul#view_options li.featured {width: 63px; background: url(../images/system/buttons/Filters/Filter_Featured.jpg); height: 21px}
-#left-side #main ul#view_options li.featured a {margin-left: 9px}
+#left-side #main ul#view_options li.featured a {margin-left: 7px}
 #left-side #main ul#view_options li.first {width: 60px; margin-right: 15px; line-height: 14px; margin-top: 0; text-transform: uppercase}
 #left-side #main #result_info {width: 409px; height: 74px; float: left; margin-left: 16px}
 #left-side #main #result_info h5 {margin-top: 48px; width: 100%; color: red; font-style: italic}
@@ -409,7 +409,7 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #marketreport p a {color: #E13939; text-decoration: none}
 #right-column #marketreport p a:hover {color: black}
 #right-column #marketreport .header_w_image {width: 200px; margin-left: 70px; margin-top: 12px}
-#right-column #marketreport .header_w_image h3 {float: left; padding-top: 9px}
+#right-column #marketreport .header_w_image h3 {float: left; padding-top: 5px}
 #right-column .partners {margin-top: 14px; float: left}
 #right-column .partners h3 {margin-left: 0px}
 #right-column .partners h5 {color: #e2001a; margin: 0 5px 7px 5px; text-align: center}
