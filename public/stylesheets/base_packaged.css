@@ -411,6 +411,7 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #marketreport p a:hover {color: black}
 #right-column #marketreport .header_w_image {width: 200px; margin-left: 70px; margin-top: 12px}
 #right-column #marketreport .header_w_image h3 {float: left; padding-top: 5px}
+#right-column #marketreport p.text {width: 250px; float: left; margin: 0 25px; font-style: italic; font-size: 12px}
 #right-column .partners {margin-top: 14px; float: left}
 #right-column .partners h3 {margin-left: 0px}
 #right-column .partners h5 {color: #e2001a; margin: 0 5px 7px 5px; text-align: center}

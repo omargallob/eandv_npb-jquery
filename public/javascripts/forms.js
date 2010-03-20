@@ -63,7 +63,7 @@ jQuery.fn.nice_fonts_featured = function(){
 		   color: 'white',
 		   fontSize: "14px",
 	  		hover: {
-	   		color: '#4d4d4d'
+	   		color: '#E13939'
 	  	 }
 	 });
 	

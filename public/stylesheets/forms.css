@@ -13,8 +13,8 @@ body.vip #pagewrapper #content table tr td.spacer { width: 15px; }
 body.vip #pagewrapper #content table#column1 { margin-top: 0px; }
 
 body { color: white; overflow: hidden; }
-body a { color: white; }
-body a:hover { color: yellow; }
+body a { color: #E13939; }
+body a:hover { color: black; }
 body #pagewrapper { width: 560px; height: 567px; background: white; margin: 0px auto; background: white; background-image: none; }
 body #pagewrapper #header { width: 546px; margin: 24px 7px 0 7px; background-image: none; }
 body #pagewrapper #header h1 { color: black; padding: 0 8px 8px  8px; text-transform: uppercase; border-bottom: 1px solid #e1e1e1; }
