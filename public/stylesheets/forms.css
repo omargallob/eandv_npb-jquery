@@ -1,3 +1,9 @@
+body.vip #pagewrapper { background: url(../images/system/bg/front/VIPformBG.jpg); margin: 0px auto; }
+body.vip #pagewrapper #header { margin-top: 0px; }
+body.vip #pagewrapper #header h1 { padding-top: 8px; }
+body.vip #pagewrapper #header p { border-bottom: 0px none; }
+body.vip #pagewrapper #header ul { margin-left: 45px; }
+
 body { color: white; overflow: hidden; }
 body a { color: white; }
 body a:hover { color: yellow; }

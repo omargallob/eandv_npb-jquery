@@ -50,14 +50,15 @@
 	
 	<link href="http://www.engelvoelkers.com/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
   </head>
-  <body>
+  <body class="<% if controller.action_name == 'vip' %>vip<% end %>">
 		<div id="pagewrapper">
 			<div id="header">
 				
 				<h1><% if controller.action_name == "index" %>Contact Form<% end %>
 						<% if controller.action_name == "job" %>Application Form<% end %>
 						<% if controller.action_name == "buyersguide" %>Buyer's Guide <% end %>			
-						<% if controller.action_name == "sellersguide" %>Seller's Guide <% end %>									 
+						<% if controller.action_name == "sellersguide" %>Seller's Guide <% end %>		
+						<% if controller.action_name == "vip" %>VIP<% end %>									 
 			</h1>
 	<% if controller.action_name == "index" %>			
 			<p>If your interested in one of our properties/services or have any questions you can <span>chat live</span> now, call us on <span>014256256</span> or fill out the contact form below and I or one of my agents will be in contact with you soon</p>
@@ -65,7 +66,23 @@
 	<% if controller.action_name == "job" %>			
 			<p>If your interested in applying for one of our openings or have any questions you can <span>chat live</span> now, call us on <span>014256256</span> or fill out the contact form below and I or one of my agents will be in contact with you soon</p>
 	<% end %>
+	<% if controller.action_name == "vip" %>			
+			<p>If you are interested in any of our properties or have any questions please do not hesitate to
+CONTACT US or why not CHAT LIVE now to one of our agents.</p>
 
+<p>At Engel&Voelkers we consider all of our customers to be VIP’s but those who sign up to our
+E&V VIP programme recieve a wealth of extra information ranging from special investment
+opportunities to special offers from our Partners.</p>
+
+<p>Become an E&V VIP and recieve:
+<ul>
+<li>Access to our exclusive Luxury Global Properties</li>
+<li>Updates on Properties as soon as they hit the market</li>
+<li>Up to date real estate advice</li>
+<li>Invitations to Exclusive E&V partner events</li>
+</ul>
+</p>
+	<% end %>
 			</div>
 			<div id="content">
 				<div id="notice"></div>
