@@ -15,7 +15,7 @@ body.vip #pagewrapper #content table#column1 { margin-top: 0px; }
 body.vip #pagewrapper #content hr { width: 536px; margin-left: 13px; margin-right: 13px; }
 
 body { color: white; overflow: hidden; }
-body a { color: #E13939; }
+body a { color: #E13939; text-decoration: none; }
 body a:hover { color: black; }
 body #pagewrapper { width: 560px; height: 567px; background: white; margin: 0px auto; background: white; background-image: none; }
 body #pagewrapper #header { width: 546px; margin: 24px 7px 0 7px; background-image: none; }
