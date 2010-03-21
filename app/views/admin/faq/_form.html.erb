@@ -7,7 +7,10 @@
   <%= f.label :answer %><br/>
   <%= f.text_area :answer %>
 </p>
-
+<p>
+	  <%= f.label :buyer_or_seller %><br/>
+	  <%=  f.select(:buyer_or_seller,["buyer","seller"]) %>
+	</p>
 <p>
   <%= f.label :user_name %><br/>
   <%= f.text_field :user_name %>

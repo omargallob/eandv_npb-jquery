@@ -7,7 +7,8 @@ class PropertiesController < ApplicationController
 		pickup_properties(@search_query.id)
     #@properties.sort!{|x| x.featured }
 		#@properties.sort!{|x| x.featured == true }
-    @faqs = Faq.find(:all, :conditions => ["gossip = ?",false])
+   @sellers = Faq.find(:all, :conditions => ["gossip = ? AND buyer_or_seller = ?",false,"seller"])
+   @buyers = Faq.find(:all, :conditions => ["gossip = ? AND buyer_or_seller = ?",false,"buyer"])
 		case params[:filter]
 			when "rent"
 			@properties.delete_if {|x| x.rental == false }
@@ -42,7 +43,8 @@ class PropertiesController < ApplicationController
   end
 
   def show
- @faqs = Faq.find(:all, :conditions => ["gossip = ?",false])
+ @sellers = Faq.find(:all, :conditions => ["gossip = ? AND buyer_or_seller = ?",false,"seller"])
+   @buyers = Faq.find(:all, :conditions => ["gossip = ? AND buyer_or_seller = ?",false,"buyer"])
     @property = Property.find_by_id(params[:id])
     @page = Page.find_by_name('properties')
   	@subpages = @page.subpages
@@ -82,7 +84,8 @@ class PropertiesController < ApplicationController
     @subpages = @page.subpages
     @search_query = SearchQuery.new(params[:search_query])
     @search_query.save
- @faqs = Faq.find(:all, :conditions => ["gossip = ?",false])
+	 @sellers = Faq.find(:all, :conditions => ["gossip = ? AND buyer_or_seller = ?",false,"seller"])
+   @buyers = Faq.find(:all, :conditions => ["gossip = ? AND buyer_or_seller = ?",false,"buyer"])
     pickup_properties(@search_query.id)
 	case params[:filter]
 			when "rent"

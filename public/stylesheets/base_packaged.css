@@ -17,8 +17,10 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #upper_pagewrapper #header {height: 84px; width: 1020px; background-image: url(/images/system/bg/front/header.jpg); margin: 0px auto}
 #upper_pagewrapper #header #logo {height: 60px; width: 546px}
 #upper_pagewrapper #header #logo a img {margin: 22px 0 0 42px}
-#upper_pagewrapper #header #extra {height: 19px; right: 0px; margin-top: -55px; float: right; margin-right: 42px}
+#upper_pagewrapper #header #extra {height: 19px; right: 0px; margin-top: -55px; float: right; margin-right: 60px}
 #upper_pagewrapper #header #extra img {float: left; margin-left: 5px}
+#upper_pagewrapper #header #telephone {float: right; margin-right: 60px}
+#upper_pagewrapper #header #telephone p {color: #4d4d4d}
 #upper_pagewrapper #navbar {height: 50px; width: 1020px; margin: 0px auto; overflow: hidden}
 #upper_pagewrapper #navbar ul {margin: 0px auto}
 #upper_pagewrapper #navbar ul li.cufon-active h2 {color: white}
@@ -342,9 +344,11 @@ img.static_why {margin: 30px 0 0 30px}
 #right-column #searchbox.advanced div h3 {margin-left: 24px}
 #right-column #searchbox.about {margin-bottom: 15px}
 #right-column #faq {background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px}
-#right-column #faq #faq_block {height: 550px; width: 269px}
+#right-column #faq h3 {margin-top: 25px}
+#right-column #faq #faq_block {height: 290px; width: 269px}
 #right-column #faq #faq_block p {font-style: normal; font-family: "Georgia"; font-size: 12px; color: #6b6b6b; padding-right: 25px}
 #right-column #faq #faq_block p span {color: #E13939; width: 100%; float: left; font-style: italic}
+#right-column #faq.seller {width: 304px; height: 362px; background: url(../images/system/bg/front/buyersBg.jpg)}
 #right-column #extra.home {margin-top: 30px}
 #right-column #extra.home_extra {margin-top: 8px}
 #right-column #extra {width: 174px; background: url(../images/system/bg/front/right_small1.jpg); float: left; margin-top: 15px}

@@ -19,8 +19,10 @@ body span.right { float: right; font-size: 11px; line-height: 18px; font-style: 
 #upper_pagewrapper #header { height: 84px; width: 1020px; background-image: url(/images/system/bg/front/header.jpg); margin: 0px auto; }
 #upper_pagewrapper #header #logo { height: 60px; width: 546px; }
 #upper_pagewrapper #header #logo a img { margin: 22px 0 0 42px; }
-#upper_pagewrapper #header #extra { height: 19px; right: 0px; margin-top: -55px; float: right; margin-right: 42px; }
+#upper_pagewrapper #header #extra { height: 19px; right: 0px; margin-top: -55px; float: right; margin-right: 60px; }
 #upper_pagewrapper #header #extra img { float: left; margin-left: 5px; }
+#upper_pagewrapper #header #telephone { float: right; margin-right: 60px; }
+#upper_pagewrapper #header #telephone p { color: #4d4d4d; }
 #upper_pagewrapper #navbar { height: 50px; width: 1020px; margin: 0px auto; overflow: hidden; }
 #upper_pagewrapper #navbar ul { margin: 0px auto; }
 #upper_pagewrapper #navbar ul li.cufon-active h2 { color: white; }

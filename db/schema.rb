@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100321172504) do
+ActiveRecord::Schema.define(:version => 20100321175359) do
 
   create_table "appforms", :force => true do |t|
     t.integer  "job_id"
@@ -204,6 +204,7 @@ ActiveRecord::Schema.define(:version => 20100321172504) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "gossip"
+    t.string   "buyer_or_seller"
   end
 
   create_table "featured_galleries", :force => true do |t|

@@ -23,17 +23,13 @@ class Admin::FaqController < Admin::BaseController
 
 	def update
 	@faq = Faq.find_by_id(params[:id])
-       respond_to do |format|
-         if @faq.update_attributes(params[:faq])
-          flash[:notice] = 'faq was successfully UPDATED.'
-          format.html {
-               flash[:notice] = 'faq was successfully updated.'
-               redirect_to admin_faq_path 
-          }
-        else
-          render :action => "edit"
-        end
-      end
+   
+     if @faq.update_attributes(params[:faq])
+      flash[:notice] = 'faq was successfully UPDATED.'
+      redirect_to admin_faq_path 
+    else
+      render :action => "edit"
+    end
 	end
 
 	def show

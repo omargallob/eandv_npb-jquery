@@ -256,6 +256,14 @@ function nice_fonts(){
      		color: '#E13939'
      }
  });
+  Cufon.replace('#telephone p', {
+	  fontFamily: "GarmdITC BkCn BT",
+	  color: '#4d4d4d',
+	  fontSize: "18px",
+    hover: {
+     		color: '#E13939'
+     }
+ });
 
 }
 
