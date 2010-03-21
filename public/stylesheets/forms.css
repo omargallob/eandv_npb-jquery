@@ -1,9 +1,9 @@
-body.vip { font-size: 12px; }
+body.vip { font-size: 14px; }
 body.vip #pagewrapper { background: url(../images/system/bg/front/VIPformBG.jpg); margin: 0px auto; }
-body.vip #pagewrapper #header { margin-top: 0px; }
+body.vip #pagewrapper #header { margin-top: 0px; margin-left: 13px; margin-right: 13px; width: 536px; }
 body.vip #pagewrapper #header h1 { padding-top: 8px; }
 body.vip #pagewrapper #header p { border-bottom: 0px none; padding: 4px 8px; color: white; }
-body.vip #pagewrapper #header ul { padding-bottom: 12px; border-bottom: 1px solid #e1e1e1; }
+body.vip #pagewrapper #header ul { padding-bottom: 12px; border-bottom: 1px solid #e1e1e1; width: 536px; }
 body.vip #pagewrapper #header ul li { margin-left: 45px; }
 body.vip #pagewrapper #content table { padding-left: 45px; padding-top: 15px; }
 body.vip #pagewrapper #content table tr { margin: 4px 0; }
@@ -12,6 +12,7 @@ body.vip #pagewrapper #content table tr td h4 { text-transform: uppercase; text-
 body.vip #pagewrapper #content table tr td h5 { float: left; }
 body.vip #pagewrapper #content table tr td.spacer { width: 15px; }
 body.vip #pagewrapper #content table#column1 { margin-top: 0px; }
+body.vip #pagewrapper #content hr { width: 536px; margin-left: 13px; margin-right: 13px; }
 
 body { color: white; overflow: hidden; }
 body a { color: #E13939; }
