@@ -3,7 +3,7 @@
 		<%= image_tag property.property_thumbnail.photo(:pagesize) if property.property_thumbnail %>
 	</div>
 	<div class="title text"><p><%= property.title %></p></div>
-	<div class="text address"><p style="margin-right:5px"> <%=  property.location.region %>,&nbsp;<%=  property.location.county %> <%= image_tag property.location.country.flag.url(), :width => "20px", :style => "float:right;margin-top: 4px" %> </p></div>
+	<div class="text address"><p style="margin-right:5px"> <%=  property.subtitle if property.subtitle %> <%= image_tag property.location.country.flag.url(), :width => "20px", :style => "float:right;margin-top: 4px" %> </p></div>
 	<div class="price text">
 		<p>
 			<span class="left"> <% if property.price == 0 %>(on request)<% else %><%= number_to_currency (property.price,:precision => 0) %><% end %></span>

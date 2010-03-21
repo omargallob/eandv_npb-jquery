@@ -22,7 +22,7 @@ class Property < ActiveRecord::Base
 	validates_attachment_content_type :pdf, :content_type => ['application/pdf']
 
 	
-	validates_presence_of :title, :description, :price, :plot, :built, :bedrooms, :address, :type_id
+	validates_presence_of :title,:subtitle, :description, :price, :plot, :built, :bedrooms, :address, :type_id
 	validates_uniqueness_of :title, :address
 	validates_numericality_of	:price, :plot, :built, :bedrooms, :bathrooms, :living_areas, :garage
 

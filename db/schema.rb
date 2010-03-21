@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100320214155) do
+ActiveRecord::Schema.define(:version => 20100321172504) do
 
   create_table "appforms", :force => true do |t|
     t.integer  "job_id"
@@ -419,6 +419,7 @@ ActiveRecord::Schema.define(:version => 20100320214155) do
     t.integer  "pdf_file_size"
     t.datetime "pdf_updated_at"
     t.boolean  "validated"
+    t.string   "subtitle"
   end
 
   create_table "property_thumbnails", :force => true do |t|
