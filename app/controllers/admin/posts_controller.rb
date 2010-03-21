@@ -1,4 +1,6 @@
 class Admin::PostsController < Admin::BaseController
+  require 'xml-object'
+
   def index
 		@posts = Post.find_main
   end
@@ -66,4 +68,11 @@ class Admin::PostsController < Admin::BaseController
 		 format.xml  { head :ok }
 	 end
 	end
+
+	def import
+		@doc=REXML::Document.new("/feeds/static/posts.xml")
+		
+	
+	end
+
 end

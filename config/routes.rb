@@ -71,6 +71,7 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :roles
      admin.resources :staff
      admin.resources :opening
+		 admin.import_posts '/posts/import', :controller => "posts", :action =>"import" 
      admin.resources :posts
      admin.resources :galleries
      admin.resources :faq

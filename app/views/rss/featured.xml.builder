@@ -18,6 +18,7 @@ xml.homes do
 			xml.flagurl property.location.country.flag.url()	
 			xml.featuredlink property.featured 
 			xml.youtubelink property.youtube	
+			xml.propertylink property_path(property)
 		end
   end
 	
