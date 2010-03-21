@@ -43,7 +43,7 @@ class Admin::PropertiesController < Admin::BaseController
   
   def update
     @property = Property.find(params[:id])
-  
+  	@gallery = @property.gallery
       respond_to do |format|
         if @property.update_attributes(params[:property])
 					
