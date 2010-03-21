@@ -30,7 +30,7 @@
 		<div id="comunicate" class="<% unless property.featured == true %>nonfeatured<% end %>"
 			<table>
 				<tr>
-					<td class="chat">			<%= link_to "chat","/contact?iframe=true&width=560&height=600" ,:rel=>"prettyPhoto" %></td>
+					<td class="chat">			<%= link_to "chat","#" , :onclick=>"window.open('/plugoo','meebome','width=200,height=285');" %></td>
 					<td class="spacer"> </td>
 					<td class="contact">	<%= link_to "contact","/contact?iframe=true&width=560&height=600" ,:rel=>"prettyPhoto" %></td>
 				</tr>	
