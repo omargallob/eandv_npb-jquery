@@ -8,15 +8,15 @@
 #right-column #searchbox.advanced div { float: left; }
 #right-column #searchbox.advanced div h3 { margin-left: 24px; }
 #right-column #searchbox.about { margin-bottom: 15px; }
-#right-column #faq { background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px; }
+#right-column #faq { background: url(../images/system/bg/front/right_tool.jpg); background-repeat: repeat-y; float: left; margin-top: 15px; height: 275px; }
 #right-column #faq h3 { margin-top: 25px; }
-#right-column #faq #faq_block { height: 290px; width: 269px; }
+#right-column #faq #faq_block { height: 215px; width: 269px; }
 #right-column #faq #faq_block p { font-style: normal; font-family: "Georgia"; font-size: 12px; color: #6b6b6b; padding-right: 25px; }
 #right-column #faq #faq_block p span { color: #E13939; width: 100%; float: left; font-style: italic; }
-#right-column #faq #faq_block2 { height: 290px; width: 269px; }
+#right-column #faq #faq_block2 { height: 215px; width: 269px; }
 #right-column #faq #faq_block2 p { font-style: normal; font-family: "Georgia"; font-size: 12px; color: #6b6b6b; padding-right: 25px; }
 #right-column #faq #faq_block2 p span { color: #E13939; width: 100%; float: left; font-style: italic; }
-#right-column #faq.seller { width: 304px; height: 362px; background: url(../images/system/bg/front/buyersBg.jpg); }
+#right-column #faq.seller { width: 304px; height: 275px; background: url(../images/system/bg/front/buyersBg.jpg); }
 #right-column #extra.home { margin-top: 30px; }
 #right-column #extra.home_extra { margin-top: 8px; }
 #right-column #extra { width: 174px; background: url(../images/system/bg/front/right_small1.jpg); float: left; margin-top: 15px; }
@@ -79,7 +79,7 @@
 #right-column #eanvvip { width: 302px; height: 159px; background: url(/images/system/bg/front/ev_vip_bg.jpg); float: left; margin: 14px 0px 14px 0px; }
 #right-column #eanvvip p { margin: 50px; color: white; text-align: center; font-size: 14px; line-height: 18px; font-style: italic; }
 #right-column #marketreport { background: url(/images/system/bg/front/ggmag.jpg); background-repeat: repeat-y; float: left; margin-top: 15px; width: 304px; height: 309px; }
-#right-column #marketreport p { margin: 15px 80px; float: left; text-align: center; }
+#right-column #marketreport p { margin: 15px 80px 0 80px; float: left; text-align: center; }
 #right-column #marketreport p a { color: #E13939; text-decoration: none; }
 #right-column #marketreport p a:hover { color: black; }
 #right-column #marketreport .header_w_image { width: 200px; margin-left: 70px; margin-top: 12px; }
