@@ -5601,3 +5601,5 @@ Error sending file /home/omar/Proyectos/EandV/npb/public/favicon.ico: Broken pip
 /home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:66: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:67: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/blog/_post.html.erb:20: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses

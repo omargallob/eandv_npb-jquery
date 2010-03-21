@@ -14,13 +14,14 @@
 <% if controller.action_name == "show" %>
 
 	<% unless params[:parent] == nil %>
-		<%= post.description  %>	
 		<% if  post.post_gallery and  post.post_gallery.post_uploads.size > 0 %>
 			<p>	<% for image in post.post_gallery.post_uploads %>
 						<%= link_to (image_tag(image.photo.url(:thumb)),image.photo.url(:original),:rel =>"prettyPhotos[group1]", :style=>"float:left;margin:12px")  %>
 				<% end %>	
 			</p>
 		<% end %>
+		<%= post.description  %>	
+		
 		<hr>	
 		<h6>Posted by <span><%= post.author.capitalize if post.author %></span><br>Date Posted: <%= post.created_at %></h6>
 	<% else %>
