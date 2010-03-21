@@ -29,7 +29,7 @@
 <%= render :partial =>"shared/leftside/sharethis" %>
 
 <%= render :partial =>"shared/leftside/marketreport" %>
-
+<% if @page.name =="home" %>
 <div class="left_tool relocating gossip_box" >
 	<div class="header_w_image">
 	<h3 style="text-align:left;width:100%;margin:0px;">	<%= image_tag "system/buttons/GossipIcon.jpg"  %><span class="title">
@@ -42,4 +42,4 @@
 	</ul>
 	</div>
 </div>
-
+<% end %>
