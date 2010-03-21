@@ -58,23 +58,8 @@ jQuery.fn.nice_fonts_featured = function(){
 	   		color: 'white'
 	  	 }
 	 });
-		Cufon.replace('p', {
-		   fontFamily: "GarmdITC BkCn BT",
-		   color: 'white',
-		   fontSize: "14px",
-	  		hover: {
-	   		color: '#E13939'
-	  	 }
-	 });
-	
-			Cufon.replace('ul li', {
-		   fontFamily: "GarmdITC BkCn BT",
-		   color: 'white',
-		   fontSize: "14px",
-	  		hover: {
-	   		color: '#4d4d4d'
-	  	 }
-	 });
+
+
 	
 		Cufon.replace('h3', {
 		   fontFamily: "GarmdITC BkCn BT",

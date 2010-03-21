@@ -1,7 +1,8 @@
+body.vip { font-size: 12px; }
 body.vip #pagewrapper { background: url(../images/system/bg/front/VIPformBG.jpg); margin: 0px auto; }
 body.vip #pagewrapper #header { margin-top: 0px; }
 body.vip #pagewrapper #header h1 { padding-top: 8px; }
-body.vip #pagewrapper #header p { border-bottom: 0px none; padding: 0px 8px; }
+body.vip #pagewrapper #header p { border-bottom: 0px none; padding: 4px 8px; color: white; }
 body.vip #pagewrapper #header ul { padding-bottom: 12px; border-bottom: 1px solid #e1e1e1; }
 body.vip #pagewrapper #header ul li { margin-left: 45px; }
 body.vip #pagewrapper #content table { padding-left: 45px; padding-top: 15px; }
