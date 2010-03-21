@@ -24,7 +24,7 @@
 				<%= image_tag @page.page_about.photo(:pagesize), :id=>"about_image" %>
 		<% end %>
 	<% end %>
-	<div id="main" class="<% if @page.name != "home" %>properties <% if @page.name == "about" || @parent.name == "about" %>about<% end %><% end %>">
+	<div id="main" class="<% if @page.name != 'home' %>properties <% if @page.name =='about' || @parent.name == 'about' %>about<% end %><% end %><% if @page.name == 'home' %>home<% end %>">
 		<% if @page.name == "home" || @page.name == "about" || @parent.name == "about" %>
 		<div id="main_top" class="main_border <% if @page.name != "home" %>other<% end %>">	</div>
 		<% end %>
@@ -140,8 +140,8 @@ jQuery(document).ready(function() {
 		$('#gossip_container').jScrollPane({scrollbarWidth:17,showArrows:true});
 		$('#blog_container').jScrollPane({scrollbarWidth:17,showArrows:true});
  	<% end %>
-	$("#main_bottom").appendTo($("#main"));
-
+	$("#main_bottom").remove();
+	$("#main_top").remove();
 	override_search_submit();
 
 });
