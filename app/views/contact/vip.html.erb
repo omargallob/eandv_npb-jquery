@@ -1,7 +1,7 @@
 <% form_for :user, @user, :url => {:action => 'user_create'} do |f| %>
 	 <%= f.error_messages :header_message => "#{@user.errors.size} errors prevented this contact form frmo being sent" 
 		%> 
-		<table id="column1">
+		<table id="column1" style="padding-bottom: 15px">
 			<tr>
 				<td><h3>Login</h3></td><td class="spacer"></td>
 				<td> <%= f.text_field(:login, :size => 20) %></td>
@@ -30,7 +30,7 @@
 					<td></td><td class="spacer"></td>
 					<td>
 						
-						<h3>CONFIRM MAILING LIST SUBSCRIPTION</h3>
+						<h3 style="padding-top: 15px">CONFIRM MAILING LIST SUBSCRIPTION</h3>
 						<p style="width:250px"><%= f.check_box(:mailing) %>Tick to Join our Mailing List and receive alerts on new properties as they hit the market 						</p>
 					</td>
 				</tr>
