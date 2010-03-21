@@ -2,11 +2,11 @@
 		<td> <%= image_tag property.property_thumbnail.photo.url(:pagesize) if property.property_thumbnail %></td>
 		<td><%= property.location.region %> </td>
 
-		<td> <%= property.title %> </td>
+		<td> <%= property.title  %> </td>
 
 		<td> <%= property.featured %> </td>
 
-		<td> <%= property.type.title %> </td>
+		<td> <%= property.type.title if  property.type %> </td>
 
 		<td> <%= property.rental %> </td>
 

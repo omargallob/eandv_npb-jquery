@@ -8432,3 +8432,11 @@ LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/developm
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
 query: +(county:saint city:saint region:saint area:saint city_initials:saint zipcod:saint state:saint) +(county:tropez city:tropez region:tropez area:tropez city_initials:tropez zipcod:tropez state:tropez)
 stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(county:los city:los region:los area:los city_initials:los zipcod:los state:los) +(county:angeles city:angeles region:angeles area:angeles city_initials:angeles zipcod:angeles state:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(county:saint city:saint region:saint area:saint city_initials:saint zipcod:saint state:saint) +(county:tropez city:tropez region:tropez area:tropez city_initials:tropez zipcod:tropez state:tropez)
+stored_fields: 
