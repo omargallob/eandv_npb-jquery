@@ -4,7 +4,7 @@ class Partner < ActiveRecord::Base
   
    has_attached_file :photo,
                        :styles => {
-                         :pagesize => ["304x159#", :jpg]
+                         :pagesize => ["304x159#", :jpg],:thumb => ["95x95#", :jpg]
                        },:convert_options => {  
                              :pagesize => "-strip -quality 60"
                        }, :processors => [:cropper],
