@@ -147,6 +147,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side .bottom {background-image: url(/images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left}
 #left-side #main.properties {width: 442px; background: url(/images/system/bg/front/main_properties.jpg); margin-left: 0px; overflow-x: hidden}
 #left-side #main.properties h1.title {padding-left: 24px}
+#left-side #main.properties ol.staff li h1 {padding: 15px 25px 0px 0px}
 #left-side #main.featured {background: black}
 #left-side #main.featured .top {background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px}
 #left-side #main.featured .bottom {background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px; margin-top: 15px}
@@ -205,7 +206,7 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main ol.staff {list-style-type: none}
 #left-side #main ol.staff li {float: left}
 #left-side #main ol.staff li img {float: left; margin: 20px 10px 5px 35px}
-#left-side #main ol.staff li h1 {padding: 15px 25px 0px 0; float: left; width: 250px}
+#left-side #main ol.staff li h1 {padding: 15px 25px 0px 0px; float: left; width: 250px}
 #left-side #main ol.staff li h2 {margin: -9px 0 15px 0; padding: 0px; font-weight: normal; width: 250px; float: left; height: 17px}
 #left-side #main ol.staff li h3 {margin: 15px 35px 0px}
 #left-side #main ol.staff li h6 {margin: 0px 35px}
