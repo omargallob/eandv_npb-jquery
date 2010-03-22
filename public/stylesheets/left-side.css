@@ -68,6 +68,7 @@
 #left-side .top { background-image: url(/images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
 #left-side .bottom { background-image: url(/images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }
 #left-side #main.properties { width: 442px; background: url(/images/system/bg/front/main_properties.jpg); margin-left: 0px; overflow-x: hidden; }
+#left-side #main.properties h1.title { padding-left: 24px; }
 #left-side #main.featured { background: black; }
 #left-side #main.featured .top { background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px; }
 #left-side #main.featured .bottom { background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px; margin-top: 15px; }

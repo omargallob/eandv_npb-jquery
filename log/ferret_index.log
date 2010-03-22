@@ -8584,3 +8584,7 @@ LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/developm
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
 query: city:"sainttropez|saint tropez"~1 region:"sainttropez|saint tropez"~1 area:"sainttropez|saint tropez"~1 county:"sainttropez|saint tropez"~1 city_initials:"sainttropez|saint tropez"~1 state:"sainttropez|saint tropez"~1 zipcod:"sainttropez|saint tropez"~1
 stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(city:los region:los area:los county:los city_initials:los state:los zipcod:los) +(city:angeles region:angeles area:angeles county:angeles city_initials:angeles state:angeles zipcod:angeles)
+stored_fields: 

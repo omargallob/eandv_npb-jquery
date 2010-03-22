@@ -91,6 +91,10 @@ layout "lightbox"
 		Notifier.deliver(systemmail)
 	end
 
+	def lepricaun
+		render :layout => false
+	end
+
 	private
 	def pickup_variables_contact
 		@interested_in = ["Buying","Selling"]

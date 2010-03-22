@@ -91,6 +91,7 @@ ActionController::Routing::Routes.draw do |map|
 	map.vip_form '/vip', :controller => "contact", :action => "vip"
 	map.job_form '/job/:opening', :controller => "contact", :action => "job"
 	map.job_apply '/contact/apply', :controller => "contact", :action => "apply"
+	map.lepricaun '/lepricaun', :controller => "contact", :action => "lepricaun"
 	map.job_apply '/contact/user_create', :controller => "contact", :action => "user_create"
 
 	map.updatedropdowns '/update_dd', :controller => "home", :action => "setup_dropdowns"
