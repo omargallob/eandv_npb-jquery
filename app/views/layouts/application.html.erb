@@ -9,11 +9,11 @@
 		<%= javascript_include_tag "browserdetect","customformelements" %>
 		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 		<script type="text/javascript" charset="utf-8">
-	 	  google.load("swfobject", "2.2");
+	 	 // google.load("swfobject", "2.2");
 	 		google.load("jquery", "1.3.2");
 			google.load("jqueryui", "1.7.2");
 		</script>
-		<%= javascript_include_tag "_jrails","application" %>
+		<%= javascript_include_tag "_jrails","application","swfobject" %>
 		<%= javascript_include_merged :secondary %>
 		<%= stylesheet_link_merged :base, :secondary %>
 
@@ -35,9 +35,7 @@
 	    height: 0;
 	    clear: both;
 	  }
-		.disabled{
-			opacity:1;
-		}
+
 	</style>
 
 	<!--[if IE]>
@@ -79,7 +77,7 @@
 				flashvars.featuredxml = "/featured.xml";
 				flashvars.font = "font.swf";
 				var attributes = {};
-				attributes.wmode = "transparent";
+				attributes.WMode = "transparent";
 				attributes.id = "slider";
 				var params = {}
 				params.allowscriptaccess = "always";

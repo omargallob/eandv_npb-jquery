@@ -2,13 +2,13 @@
 
 #left-side.home { width: 633px; }
 
-#left-side { width: 612px; float: left; background: transparent; }
+#left-side { width: 612px; float: left; background: transparent; position: relative; }
 #left-side #sellyourproperty { width: 170px; float: left; margin-top: 15px; }
 #left-side ul#gallerylinks { height: 230px; width: 130px; }
 #left-side ul#gallerylinks li { float: left; height: 62px; }
 #left-side #side-nav.properties { margin-right: 9px; }
 #left-side #side-nav.home { margin-right: 0px; }
-#left-side #side-nav { width: 170px; float: left; background-color: transparent; margin-right: 0px; }
+#left-side #side-nav { width: 170px; float: left; background-color: transparent; margin-right: 0px; position: relative; z-index: 5; }
 #left-side #side-nav hr { width: 129px; height: 1px; border: 0px none; float: left; background-color: #e1e1e1; margin: 8px 0 8px 6px; }
 #left-side #side-nav .shorter { height: 182px; }
 #left-side #side-nav .relocating { margin: 0px; }
@@ -26,7 +26,7 @@
 #left-side #side-nav .left_tool ul li span { float: left; font-size: 12px; font-style: italic; width: 100px; margin: 2px 0 0 13px; color: #818181; }
 #left-side #side-nav .left_tool ul li span a { color: #888888; }
 #left-side #side-nav .left_tool ul li span a:hover { color: #E13939; }
-#left-side #side-nav .share_box { height: 76px; background-image: url(../images/system/bg/front/share.jpg); margin: 14px 0; }
+#left-side #side-nav .share_box { height: 76px; background-image: url(../images/system/bg/front/share.jpg); margin: 14px 0; position: relative; z-index: 5; }
 #left-side #side-nav .share_box a { margin-left: 18px; }
 #left-side #side-nav .why h3 { margin: 5px 0 0 5px; text-align: left; width: 90px; }
 #left-side #side-nav .why h3 a { margin-left: 0px; }
@@ -64,17 +64,17 @@
 #left-side .property { margin-top: 0px; }
 #left-side #title { width: 610px; height: 26px; float: left; background: url(/images/system/bg/front/long_redbar.jpg); margin-left: 2px; color: white; line-height: 22px; }
 #left-side #title h5 { margin-left: 13px; text-transform: uppercase; }
-#left-side #title.about { position: absolute; width: 929px; background: url(/images/system/bg/front/long_blackbar.jpg); }
+#left-side #title.about { position: absolute; width: 929px; background: url(/images/system/bg/front/long_blackbar.jpg); background-repeat: no-repeat; }
 #left-side .top { background-image: url(/images/system/bg/front/main_properties_top.jpg); margin-top: 0; width: 442px; position: relative; height: 15px; float: left; }
 #left-side .bottom { background-image: url(/images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }
 #left-side #main.properties { width: 442px; background: url(/images/system/bg/front/main_properties.jpg); margin-left: 0px; overflow-x: hidden; }
-#left-side #main.properties h1.title { padding-left: 24px; }
+#left-side #main.properties h1.title { padding-left: 24px; margin-left: 10px; }
 #left-side #main.properties ol.staff li h1 { padding: 15px 25px 0px 0px; }
 #left-side #main.featured { background: black; }
 #left-side #main.featured .top { background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px; }
 #left-side #main.featured .bottom { background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px; margin-top: 15px; }
 #left-side #main.featured p { color: #7e7e7e; }
-#left-side #main.featured h1 { padding: 0px; margin: -24px 0 0 14px; float: left; }
+#left-side #main.featured h1 { padding: 0px; margin: -24px 0 0 0px; float: left; }
 #left-side #main.featured h1.title { color: white; }
 #left-side #main.featured hr { background-color: #4d4d4d; }
 #left-side #main.featured #property_header h1 { color: white; }
@@ -88,10 +88,10 @@
 #left-side #main.featured #facility_list { background: url(/images/system/bg/front/FeaturedFacilitiesH.jpg); }
 #left-side #main.featured #facility_list .top { background: url(/images/system/bg/front/FeaturedFacilitiesBGTop.jpg); margin: 0px; height: 4px; }
 #left-side #main.featured #facility_list .bottom { background: url(/images/system/bg/front/FeaturedFacilitiesBGBottom.jpg); height: 4px; margin: 0px; }
-#left-side #services { width: 442px; background: url(/images/system/bg/front/main_properties.jpg); float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px; }
+#left-side #services { width: 442px; float: right; color: #4d4d4d; font-size: 14px; margin-top: 16px; position: relative; background-image: url(/images/system/bg/front/main_properties.jpg); z-index: -1; }
 #left-side #services img { margin: 5px 20px; }
 #left-side #services ul { list-style: none; margin: 0 0 0 -27px; }
-#left-side #services ul li { width: 413px; height: 180px; margin-bottom: 0px; }
+#left-side #services ul li { width: 413px; height: 180px; margin-bottom: 0px; float: left; }
 #left-side #property_gallery { width: 621px; height: 374px; float: left; background: transparent; margin: -8px 0 22px -7px; }
 #left-side #main.properties h3 { margin-left: 24px; }
 #left-side #main.why { width: 442px; }
@@ -110,7 +110,7 @@
 #left-side #news ol#blog li h6 span { color: #888888; }
 #left-side #news ol#blog li p { margin: 5px 24px 0px; font-style: italic; font-family: "Georgia"; float: left; }
 #left-side #main.home { width: 463px; height: 660px; background: url(../images/system/bg/front/mainPBG.jpg); overflow: hidden; }
-#left-side #main { width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; }
+#left-side #main { width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; position: relative; z-index: 6; }
 #left-side #main #comunicate { width: 136px; height: 90px; float: right; margin-right: 18px; }
 #left-side #main #comunicate table { margin: 10px auto; padding: 0px; }
 #left-side #main #comunicate table td { margin: 0px; padding: 0px; text-align: center; }

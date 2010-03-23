@@ -7,6 +7,7 @@
 	width: 612px
 	float: left
 	background: transparent
+	position: relative
 	#sellyourproperty
 		width: 170px
 		float: left
@@ -26,6 +27,8 @@
 		float: left
 		background-color: transparent
 		margin-right: 0px
+		position: relative
+		z-index: 5
 		hr 
 			width: 129px
 			height: 1px
@@ -89,6 +92,8 @@
 			height: 76px
 			background-image: url(../images/system/bg/front/share.jpg)
 			margin: 14px 0
+			position: relative
+			z-index: 5
 			a 
 				margin-left: 18px
 		.why
@@ -220,7 +225,7 @@
 		position: absolute
 		width: 929px
 		background: url(/images/system/bg/front/long_blackbar.jpg)
-	
+		background-repeat: no-repeat
 	.top
 		background-image: url(/images/system/bg/front/main_properties_top.jpg)
 		margin-top: 0
@@ -241,6 +246,7 @@
 		overflow-x: hidden
 		h1.title
 			padding-left: 24px
+			margin-left: 10px
 		ol.staff
 			li
 				h1
@@ -264,7 +270,7 @@
 			color: #7e7e7e
 		h1
 			padding: 0px
-			margin: -24px 0 0 14px 
+			margin: -24px 0 0 0px 
 			float: left
 		h1.title
 			color: white		
@@ -303,11 +309,13 @@
 				margin: 0px
 	#services
 		width: 442px
-		background: url(/images/system/bg/front/main_properties.jpg)
 		float: right
 		color: #4d4d4d
 		font-size: 14px		
 		margin-top: 16px
+		position: relative
+		background-image: url(/images/system/bg/front/main_properties.jpg)
+		z-index: -1
 		img
 			margin: 5px 20px
 		ul
@@ -317,6 +325,7 @@
 				width: 413px
 				height: 180px
 				margin-bottom: 0px
+				float: left
 	#property_gallery
 		width: 621px
 		height: 374px
@@ -393,6 +402,8 @@
 		color: #4d4d4d
 		overflow: auto
 		font-size: 14px
+		position: relative
+		z-index: 6
 		#comunicate
 			width: 136px
 			height: 90px

@@ -16,6 +16,7 @@ javascripts:
   - jquery.jcarousel
   - jquery.prettyPhoto
   - jquery.formobserver
+  - swfobject
 - admin:
   - _jquery
   - _jrails

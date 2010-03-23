@@ -431,8 +431,11 @@ var swfobject = function() {
 					if (parObj[j] != Object.prototype[j]) { // filter out prototype additions from other potential libraries
 						par += '<param name="' + j + '" value="' + parObj[j] + '" />';
 					}
+
 				}
-				el.outerHTML = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"' + att + '>' + par + '</object>';
+			
+			
+				el.outerHTML = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"' + att + '>' + par + '<param name="WMode" value="transparent"/></object>';
 				objIdArr[objIdArr.length] = attObj.id; // stored to fix object 'leaks' on unload (dynamic publishing only)
 				r = getElementById(attObj.id);	
 			}

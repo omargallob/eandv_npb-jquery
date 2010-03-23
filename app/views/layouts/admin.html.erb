@@ -20,61 +20,45 @@
 	    clear: both;
 	    visibility: hidden;
 	    }
-#menu, #menu ul {
-	list-style:none;
-	padding:0;
-	margin:0;
-}
-#menu li {
-	float:left;
-	position:relative;
-	line-height: 4.5em;
-	width: 150px;
-}
-#menu li ul {
-	position:absolute;
-	margin:0px;
-	display:none;
-}
-#menu ul li ul {
-	margin-top:-25px;
-	margin-left:150px;
-}
-#menu a {
-	display:block;
-	border-right:1px solid #fff;
-	background:transparent;
-	color:#3B3B3B;
-	text-decoration:none;
-	padding:0 10px;
-}
-#menu a:hover {
-	background-color:#E13939;
-	color:#fff;
-}
-#menu ul {
-	border:0px none
+
+#nav, #nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none; 
+	line-height: 1;
 }
 
-#menu ul a {
-	border-right:none;
-	border-right:1px solid #fff;
-	border-bottom:1px solid #fff;
-	border-left:1px solid #fff;
-	background:#d4d4d4;
+#nav a {
+	display: block;
+	width: 10em;
+	color: white
 }
 
-/* SHOW SUBMENU 1 */
-#menu li:hover ul, #menu li.over ul {
-	display:block;
+#nav li {
+	float: left;
+	width: 10em;
 }
-#menu li:hover ul ul, #menu li.over ul ul {
-	display:none;
+
+#nav li ul {
+	position: absolute;
+	width: 10em;
+	left: -999em;
+	background: black;		
 }
-/* SHOW SUBMENU 2 */
-#menu ul li:hover ul, #menu ul li.over ul {
-	display:block;
+#nav li ul ul {
+	margin: -1em 0 0 10em;
 }
+#nav li:hover ul {
+	left: auto;
+}
+#nav li:hover ul ul, #nav li.sfhover ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul {
+	left: auto;
+}
+
 input {  margin-right: 20px; margin-top: 4px; border: 1px solid #e1e1e1; }
 select { border: 1px solid #e1e1e1; margin: 2px 0; }
 	</style>

@@ -3,13 +3,13 @@
 		flashvars.flipxml = "http://npb.heroku.com/services/<%= params[:id] %>/<%= service_swf.name %>/feed.xml";
 		flashvars.font = "font.swf";
 		var attributes = {};
-		attributes.wmode = "transparent";
+		attributes.wmode = "opaque";
 		attributes.id = "category_<%= service_swf.name  %>";
 		var params = {}
 		params.allowscriptaccess = "always";
 		swfobject.embedSWF("http://s3.amazonaws.com/eandv-development/swf/FlipUltimo2.swf", "category_<%= service_swf.name  %>", "495", "180", "9", "/swf/expressInstall.swf", flashvars,params, attributes);
  </script>
 
-<li>
-	<div id="category_<%= service_swf.name  %>"></div>
+<li >
+<div style="position:absolute;z-index:-1">	<div id="category_<%= service_swf.name  %>" ></div></div>
 </li>

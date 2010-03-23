@@ -277,8 +277,8 @@ $.fn.jScrollPane = function(settings)
 					$pane.css({'top':((paneHeight-contentHeight)*p) + 'px'});
 					$this.trigger('scroll');
 					if (settings.showArrows) {
-						$upArrow[destY == 0 ? 'addClass' : 'removeClass']('disabled');
-						$downArrow[destY == maxY ? 'addClass' : 'removeClass']('disabled');
+						$upArrow[destY == 0 ? 'addClass' : 'removeClass'](' ');
+						$downArrow[destY == maxY ? 'addClass' : 'removeClass'](' ');
 					}
 				};
 				var updateScroll = function(e)

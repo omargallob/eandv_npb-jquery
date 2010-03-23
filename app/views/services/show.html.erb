@@ -23,7 +23,7 @@
 	</div>
 
 	<div id="main" class="properties">
-		<h1 class="title"><%= @category.navlabel %> </h1>
+		<h1 class="services"><%= @category.navlabel %> </h1>
 		
 		<%= @category.description %>
 		<div id="main_bottom" class="main_border other">	</div>
@@ -34,8 +34,7 @@
 		<ul>
 			<%= render :partial => "service_swf", :collection => @subcats %>
 		</ul>
-	
-		<div class="bottom"></div>
+		<div class='bottom'></div>
 	</div>
 	<% end %>
 </div>
@@ -63,7 +62,7 @@ $(document).ready(function() {
 	$("#main p:first").append(aux);
 	$("#mainpic").show();
 
-	$("#services ul li:first").css('margin-bottom',"15px");
+
 	$("#main_bottom").appendTo($("#main"));
 	set_nav_pointer("services");
 });
