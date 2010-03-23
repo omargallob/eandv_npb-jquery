@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
   def pickupproperties
     @locations = Location.find(:all, :include => :country)
 		@locations.delete_if{|q| q.properties.size == 0}
-		#@locations.delete_if{|q| q.country.title != "United States"}
+		@locations.delete_if{|q| q.country_id != 9}
 
     @countries = Country.find(:all)
 		
