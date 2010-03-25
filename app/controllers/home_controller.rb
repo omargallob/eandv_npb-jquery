@@ -4,6 +4,9 @@ class HomeController < ApplicationController
     @pagetitle = "Homepage (Front)"
   end
   
+	def smarteragent
+		@page = Page.find_by_name("home")
+	end
 
 	def setup_dropdowns
 		#case params[:search_query][:country]

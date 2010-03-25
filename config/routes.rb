@@ -87,7 +87,7 @@ ActionController::Routing::Routes.draw do |map|
       admin.update_gallery 'galleries/:id', :controller=>"galleries",:action => "update"
   end
 
-	
+	map.mobile '/smarteragent', :controller=>"home", :action => "smarteragent"
 	map.sellersguide '/sellersguide', :controller => "contact", :action => "sellersguide"  
 	map.buyersguide '/buyersguide', :controller => "contact", :action => "buyersguide"  
 	map.mls '/mls', :controller => "properties", :action => "mls"
