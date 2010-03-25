@@ -31,6 +31,18 @@
 		</div>
 <% else %>
 		<%= render :partial => "post", :object => @post %>
+		<hr/>
+		<% if @post.comments.size > 0 %>
+		<div id="comments">
+			<ul>
+					<%= render :partial => "comments", :collection => @post.comments %>
+			</ul>
+		</div>
+		<% end %>
+	
+		<% if logged_in? %>
+			<%= render :partial => "new_comment" %>
+		<% end %>
 <% end %>
 		</ol>
 		<div id="main_bottom" class="main_border other">	</div>

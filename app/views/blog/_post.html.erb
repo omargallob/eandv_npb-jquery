@@ -23,7 +23,7 @@
 		<%= post.description  %>	
 		
 		<hr>	
-		<h6>Posted by <span><%= post.author.capitalize if post.author %></span><br>Date Posted: <%= post.created_at %></h6>
+		<h6>Posted by <span><%= post.author.capitalize if post.author %></span><br>Date Posted: <%= post.created_at %><br>Total Comments: <%= post.comments.size %></h6>
 	<% else %>
 		<% if  post.post_gallery and  post.post_gallery.post_uploads.size > 0 %>
 			<%= image_tag post.post_gallery.post_uploads.first.photo.url(:thumb), :style=>"margin-top:15px;float:left;" if post.photo %>

@@ -5,6 +5,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :contact
   map.resources :eandv
 	map.resources :blog
+	map.resources :comments
   map.resources :services #, :path_prefix => ":locale"
   map.resources :properties,:collection => {:feed => :get, :filter=>:get,:unfilter=>:get,:sort => :get, :unsort => :get}
   map.resources :rss,:collection => {:favs => :get,:properties => :get}
@@ -85,6 +86,8 @@ ActionController::Routing::Routes.draw do |map|
       admin.resources :uploads
       admin.update_gallery 'galleries/:id', :controller=>"galleries",:action => "update"
   end
+
+	
 	map.sellersguide '/sellersguide', :controller => "contact", :action => "sellersguide"  
 	map.buyersguide '/buyersguide', :controller => "contact", :action => "buyersguide"  
 	map.mls '/mls', :controller => "properties", :action => "mls"
@@ -109,7 +112,7 @@ ActionController::Routing::Routes.draw do |map|
 	map.similar '/properties/:id/similar.xml', :controller => "rss", :action => "similar"
 	map.view_blog '/blog/:name', :controller => "blog", :action => "show"
 	map.view_blog_parent '/blog/:parent/:name', :controller => "blog", :action => "show"
-
+	
 	map.properties_page '/properties/page/:page', :controller=>"properties", :action => "index"
 	map.properties_order '/properties/order/:order', :controller => "properties", :action => "index"
 	map.properties_filter '/properties/filter/:filter', :controller => "properties", :action => "index"

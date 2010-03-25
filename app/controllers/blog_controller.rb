@@ -26,6 +26,8 @@ class BlogController < ApplicationController
 
 	  @categories = Post.find_main
 	  set_meta_tags :title =>  "Blog | " + @post.title
+
   end
+
 
 end

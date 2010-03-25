@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
-   
+  has_many :comments
+
 	has_many :subposts, :class_name => 'Post', :foreign_key => 'parent_id'
   belongs_to :parent, :class_name => 'Post', :foreign_key => 'parent_id'
 	has_one :post_gallery

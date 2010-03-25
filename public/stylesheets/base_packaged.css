@@ -23,7 +23,7 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #upper_pagewrapper #header #extra .login {width: 63px; height: 21px; background: url(/images/system/buttons/Filters/Filter_Featured.jpg); background-repeat: no-repeat; float: left; text-align: center; margin: -2px 0 0 5px}
 #upper_pagewrapper #header #extra .login a {color: white; font-size: 10px; text-decoration: none}
 #upper_pagewrapper #header #extra .login a:hover {color: black}
-#upper_pagewrapper #header #telephone {float: right; margin-right: 60px}
+#upper_pagewrapper #header #telephone {float: right; margin-right: 63px; margin-top: -35px}
 #upper_pagewrapper #header #telephone p {color: #4d4d4d}
 #upper_pagewrapper #navbar {height: 50px; width: 1020px; margin: 0px auto; overflow: hidden}
 #upper_pagewrapper #navbar ul {margin: 0px auto}
@@ -226,6 +226,12 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main ol.staff li.employment p {float: left; margin-top: 10px}
 #left-side #main ol.staff li.employment ul li {width: 360px}
 #left-side #main ol#blog {list-style-type: none}
+#left-side #main ol#blog #comments {float: left}
+#left-side #main ol#blog #comments ul {float: left; padding-left: 0px; list-style: none}
+#left-side #main ol#blog #comments ul li {float: left; margin-bottom: 15px; font-size: 10px}
+#left-side #main ol#blog #comments ul li p {width: 270px; float: left; margin: 10px 0; padding-left: 15px}
+#left-side #main ol#blog #comments ul li p.details {width: 240px; margin-top: 0; margin-bottom: 0; padding-left: 15px}
+#left-side #main ol#blog #comments ul li img {float: left}
 #left-side #main ol#blog li {background: transparent; margin: 0px; padding: 0 11px}
 #left-side #main ol#blog li hr {margin-left: 6px}
 #left-side #main ol#blog li h2 {padding: 0 25px; text-transform: capitalize; margin: 0px; width: 350px; float: left}

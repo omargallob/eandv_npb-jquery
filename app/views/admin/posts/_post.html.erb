@@ -23,7 +23,9 @@
 				<%= link_to image_tag ('system/buttons/gallery.png', :height => "15px", :title =>"Gallery"), :controller => "post_gallery",:action=>"new",:post_id=>post %>
 			<% end %>
 </td>
-			<td><%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => t('options.show')), admin_post_path(post) %></td><td>&nbsp;|&nbsp;</td>
+			<td> <% if post.parent == nil %><%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => t('options.show')), admin_post_path(post) %><% else %>
+				<%= link_to image_tag ('system/buttons/search.jpg', :height => "15px", :title => t('options.show')), "#" %>
+			<% end %></td><td>&nbsp;|&nbsp;</td>
 			<td><%= link_to image_tag ('system/buttons/edit.jpg', :height => "15px", :title => t('options.edit')), edit_admin_post_path(post) %></td><td>&nbsp;|&nbsp;</td>
 			<td><%= link_to image_tag ('system/buttons/delete.jpg', :height => "15px", :title => t('options.delete')), admin_post_path(post), :confirm => 'Are you sure?', :method => :delete %></td>
 		</tr>

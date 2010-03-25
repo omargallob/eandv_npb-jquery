@@ -1,0 +1,10 @@
+	<div style="float:left;margin-left:15px">
+		<h1  class="title">New Comment</h1>
+	<% form_for :comment, @comment, :url => {:controller=> "comments",:action => "create"}  do |f| %>	
+	 <%= f.error_messages %> 
+	  <%= render :partial => "form", :locals => {:f =>f}%>
+	  <p>
+	    <%= f.submit 'Post' %>
+	  </p>
+	<% end %>
+	</div>
