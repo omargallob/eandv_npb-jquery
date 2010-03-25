@@ -61,8 +61,10 @@
 					
 			<div id="logo"><%= link_to image_tag ("system/bg/front/logo.jpg"), "/" %></div>
 			<div id="extra">
-				<%= link_to image_tag ("system/buttons/twitter.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>
-				<%= link_to image_tag ("system/buttons/facebook.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>
+				<span class="follow">Follow us on:</span><%= link_to image_tag ("system/buttons/twitter.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>
+				<%= link_to image_tag ("system/buttons/facebook.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>			<span class="follow"> or </span>
+			<div class="login">		<a class="rpxnow" onclick="return false;"
+href="https://engel--volkers-newport-beach.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2F192.168.1.3%3A3001%2Frpx"> Sign In </a></div>
 	  	</div>
 		</div>
 		<div id='navbar'>
@@ -132,6 +134,15 @@
 		$('#atffc').remove();
 nice_fonts();
 	});
+</script>
+<script type="text/javascript">
+  var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
+  document.write(unescape("%3Cscript src='" + rpxJsHost +
+"rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  RPXNOW.overlay = true;
+  RPXNOW.language_preference = 'en';
 </script>
  </body>
 </html>

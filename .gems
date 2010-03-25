@@ -7,6 +7,8 @@ sitemap_generator --version '>=0.2.2'
 geokit --version '>=1.5.0'
 will_paginate --version '>=2.3.11'
 xml-object --version '>=0.9.92' --source http://gemcutter.org
+rpx_now --version '>=0.6.17'
+
 
 
 

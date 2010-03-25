@@ -19,6 +19,10 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #upper_pagewrapper #header #logo a img {margin: 22px 0 0 42px}
 #upper_pagewrapper #header #extra {height: 19px; right: 0px; margin-top: -55px; float: right; margin-right: 60px}
 #upper_pagewrapper #header #extra img {float: left; margin-left: 5px}
+#upper_pagewrapper #header #extra .follow {float: left; color: #4d4d4d; margin-left: 5px}
+#upper_pagewrapper #header #extra .login {width: 63px; height: 21px; background: url(/images/system/buttons/Filters/Filter_Featured.jpg); background-repeat: no-repeat; float: left; text-align: center; margin: -2px 0 0 5px}
+#upper_pagewrapper #header #extra .login a {color: white; font-size: 10px; text-decoration: none}
+#upper_pagewrapper #header #extra .login a:hover {color: black}
 #upper_pagewrapper #header #telephone {float: right; margin-right: 60px}
 #upper_pagewrapper #header #telephone p {color: #4d4d4d}
 #upper_pagewrapper #navbar {height: 50px; width: 1020px; margin: 0px auto; overflow: hidden}
@@ -206,10 +210,11 @@ img.static_why {margin: 30px 0 0 30px}
 #left-side #main ol.staff {list-style-type: none}
 #left-side #main ol.staff li {float: left}
 #left-side #main ol.staff li img {float: left; margin: 20px 10px 5px 35px}
-#left-side #main ol.staff li h1 {padding: 15px 25px 0px 0px; float: left; width: 250px}
+#left-side #main ol.staff li h1 {padding: 15px 25px 0px 0px; float: left; width: 220px}
+#left-side #main ol.staff li h1.name {margin-left: 0px}
 #left-side #main ol.staff li h2 {margin: -9px 0 15px 0; padding: 0px; font-weight: normal; width: 250px; float: left; height: 17px}
 #left-side #main ol.staff li h3 {margin: 15px 35px 0px}
-#left-side #main ol.staff li h6 {margin: 0px 35px}
+#left-side #main ol.staff li h6 {margin: 0px 35px; float: left}
 #left-side #main ol.staff li h6 a {color: white; float: none}
 #left-side #main ol.staff li h6 a:hover {color: white}
 #left-side #main ol.staff li .contact {height: 21px; width: 63px; background: url(/images/system/buttons/Filters/Filter_Featured.jpg); background-repeat: no-repeat; float: left; margin: 8px 15px 0 35px; padding-top: 2px; text-align: center}

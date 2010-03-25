@@ -128,10 +128,11 @@
 #left-side #main ol.staff { list-style-type: none; }
 #left-side #main ol.staff li { float: left; }
 #left-side #main ol.staff li img { float: left; margin: 20px 10px 5px 35px; }
-#left-side #main ol.staff li h1 { padding: 15px 25px 0px 0px; float: left; width: 250px; }
+#left-side #main ol.staff li h1 { padding: 15px 25px 0px 0px; float: left; width: 220px; }
+#left-side #main ol.staff li h1.name { margin-left: 0px; }
 #left-side #main ol.staff li h2 { margin: -9px	0 15px 0; padding: 0px; font-weight: normal; width: 250px; float: left; height: 17px; }
 #left-side #main ol.staff li h3 { margin: 15px 35px 0px; }
-#left-side #main ol.staff li h6 { margin: 0px 35px; }
+#left-side #main ol.staff li h6 { margin: 0px 35px; float: left; }
 #left-side #main ol.staff li h6 a { color: white; float: none; }
 #left-side #main ol.staff li h6 a:hover { color: white; }
 #left-side #main ol.staff li .contact { height: 21px; width: 63px; background: url(/images/system/buttons/Filters/Filter_Featured.jpg); background-repeat: no-repeat; float: left; margin: 8px 15px 0 35px; padding-top: 2px; text-align: center; }

@@ -21,6 +21,10 @@ body span.right { float: right; font-size: 11px; line-height: 18px; font-style: 
 #upper_pagewrapper #header #logo a img { margin: 22px 0 0 42px; }
 #upper_pagewrapper #header #extra { height: 19px; right: 0px; margin-top: -55px; float: right; margin-right: 60px; }
 #upper_pagewrapper #header #extra img { float: left; margin-left: 5px; }
+#upper_pagewrapper #header #extra .follow { float: left; color: #4d4d4d; margin-left: 5px; }
+#upper_pagewrapper #header #extra .login { width: 63px; height: 21px; background: url(/images/system/buttons/Filters/Filter_Featured.jpg); background-repeat: no-repeat; float: left; text-align: center; margin: -2px 0 0 5px; }
+#upper_pagewrapper #header #extra .login a { color: white; font-size: 10px; text-decoration: none; }
+#upper_pagewrapper #header #extra .login a:hover { color: black; }
 #upper_pagewrapper #header #telephone { float: right; margin-right: 60px; }
 #upper_pagewrapper #header #telephone p { color: #4d4d4d; }
 #upper_pagewrapper #navbar { height: 50px; width: 1020px; margin: 0px auto; overflow: hidden; }

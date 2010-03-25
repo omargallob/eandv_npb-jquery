@@ -93,7 +93,7 @@ ActionController::Routing::Routes.draw do |map|
 	map.job_apply '/contact/apply', :controller => "contact", :action => "apply"
 	map.lepricaun '/lepricaun', :controller => "contact", :action => "lepricaun"
 	map.job_apply '/contact/user_create', :controller => "contact", :action => "user_create"
-
+	map.rpx '/rpx', :controller => "sessions", :action =>"rpxnow"
 	map.updatedropdowns '/update_dd', :controller => "home", :action => "setup_dropdowns"
 	map.auxiliar '/auxiliar', :controller=>"properties", :action => "auxiliar"
 	map.featured '/featured', :controller => "properties", :action => "index", :filter => "featured"

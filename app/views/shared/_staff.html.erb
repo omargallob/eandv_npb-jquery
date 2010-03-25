@@ -4,7 +4,7 @@
 employment
 <% end %>'>
 <%= image_tag staff.photo.url(:pagesize) unless staff.vacancy %>
-<h1 class="title"><%= staff.full_name %></h1>
+<h1 class="name"><%= staff.full_name %></h1>
 <h2><%= staff.title %></h2>
 
 <% if params[:name] == "staff" %>

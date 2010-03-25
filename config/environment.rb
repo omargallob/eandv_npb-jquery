@@ -16,6 +16,7 @@ Rails::Initializer.run do |config|
   config.gem 'sitemap_generator', :lib => false, :source => 'http://gemcutter.org'
   config.gem "geokit"
 	config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
+	config.gem "rpx_now"
   #config.gem 'auto_html', :version => '~> 1.2.1', :source => 'http://gemcutter.org'
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
@@ -48,6 +49,9 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :en
+	config.after_initialize do # so rake gems:install works
+    RPXNow.api_key = "2a3f95827b27fd40ec83ee64df09d6caaef2c0af"
+  end
   
 end
 
