@@ -81,7 +81,7 @@ def rpxnow
   end
 end
 
-def do_success(unique_identifier,email,nickname,photo_url)
+def do_success(unique_identifier,email,nickname,photo_url,name,provider)
 	logger.info "UI #{unique_identifier}\n+Email: #{email}\n+Nickname:#{nickname}\n+Photo#{photo_url}" 
 	user = User.find_by_unique_identifier(unique_identifier)
 	unless user
