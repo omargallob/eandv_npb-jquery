@@ -68,12 +68,13 @@ def rpxnow
     nickname = json['profile']['displayName'] if nickname.nil?
     email = json['profile']['email']
     photo_url = json['profile']['photo']
-		name = json['profile']['name']
-		provider = json['profile']['provider']
+		name = json['profile']['name']['givenName']
+		surname = json['profile']['name']['familyName']
+		provider = json['profile']['providerName']
  
     # implement your own do_success method which signs the user in
     # to your website
-   do_success(unique_identifier,email,nickname,photo_url,name,provider)
+   do_success(unique_identifier,email,nickname,photo_url,name,surname,provider)
 
   else
     flash[:notice] = 'Log in failed'
@@ -81,13 +82,27 @@ def rpxnow
   end
 end
 
-def do_success(unique_identifier,email,nickname,photo_url,name,provider)
-	logger.info "UI #{unique_identifier}\n+Email: #{email}\n+Nickname:#{nickname}\n+Photo#{photo_url}" 
+def do_success(unique_identifier,email,nickname,photo_url,name, surname,provider)
+	logger.info "UI #{unique_identifier}\n+Email: #{email}\n+Nickname:#{nickname}\n+Photo#{photo_url}\nProvider: #{provider}" 
 	user = User.find_by_unique_identifier(unique_identifier)
 	unless user
 		user = User.new
-		user.name = nickname
-		user.email = email
+		case provider
+			when "Google"
+				logger.info "Google"
+				user.name = nickname
+				user.email = email
+			when "Facebook"
+				logger.info "Facebook"
+				user.name = name+" "+surname
+				user.email = nickname+"@eandvnpb.com"
+				aux = photo_url.split("/")
+				substr = aux[6]
+				newstr = aux[6].gsub(/[n]/,"q")
+				user.photo_url = photo_url.gsub(substr, newstr)
+				
+		end
+	
 		user.unique_identifier = unique_identifier
 		user.login = nickname
 		user.password = Digest::SHA1.hexdigest("--#{Time.now.to_s}--#{nickname}")
