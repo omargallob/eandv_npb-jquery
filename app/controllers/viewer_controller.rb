@@ -28,11 +28,14 @@ class ViewerController < ApplicationController
 				when "airport"
 				 string = "4750 Birch Street, Newport Beach, CA" 	
 				when "shop"
-				 string = "260 Newport Center Drive, Newport Beach, CA 92660" 	
+				 string = "210 Marine Avenue
+Balboa Island, Newport Beach, CA 92662" 	
 				when "about"
-				 string = "260 Newport Center Drive, Newport Beach, CA 92660" 
+				 string = "210 Marine Avenue
+Balboa Island, Newport Beach, CA 92662" 
 				else
-				 string = "260 Newport Center Drive, Newport Beach, CA 92660" 
+				 string = "210 Marine Avenue
+Balboa Island, Newport Beach, CA 92662" 
 			end
 
 			@res=GoogleGeocoder.geocode(string)    

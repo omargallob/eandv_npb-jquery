@@ -78,7 +78,7 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #lower_pagewrapper #footer #logbox div {float: left; margin-left: 15px; background-color: white}
 img#mainpic {float: left; margin-right: 15px; display: none}
 img#about_image {position: absolute; left: 170px; margin-top: 26px; z-index: 5}
-img.static_why {margin: 30px 0 0 30px}
+img.static_why {margin: 0px 0 0 30px}
 #main.about {margin-top: 396px}
 #right-column.about {margin-top: 396px}
 #side-nav.about {margin-top: 26px}
