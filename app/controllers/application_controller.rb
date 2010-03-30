@@ -89,7 +89,7 @@ def pickup_properties(id)
         end
 
         if @search_query.bedrooms=="All"
-            for location in @locations
+            for location in @locations.results
                 if location.properties
                  for p in location.properties       
                    unless @search_query.price == "All"            
