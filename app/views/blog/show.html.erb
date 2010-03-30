@@ -63,7 +63,10 @@
 <script type="text/javascript">
 $(document).ready(function() {
   	 
-
+<% unless params[:parent] == nil %>
+		taux = $("ol#blog li p");
+		$(taux[1]).addClass("twoliner");
+<% end %>
 /*	$('.styled').combobox(); */
 
 		$('#gossip_container').jScrollPane({scrollbarWidth:17,showArrows:true});

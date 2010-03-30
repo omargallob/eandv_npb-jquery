@@ -2,7 +2,7 @@ class PostUpload < ActiveRecord::Base
 	belongs_to :post_gallery
   has_attached_file :photo,
                     :styles => {
-                      :pagesize => ["961x450<", :jpg], :thumb  => ["80x60#", :jpg]
+                      :pagesize => ["961x450<", :jpg], :thumb  => ["90x65#", :jpg]
                     },:convert_options => {  
                           :pagesize => "-strip -quality 60"
                     },:processors => [:cropper],
