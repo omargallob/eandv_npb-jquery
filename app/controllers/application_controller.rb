@@ -54,9 +54,9 @@ def pickup_properties(id)
       if params[:query] == "All"
         @properties = Property.find(:all)
       else
-        @properties = Property.find_by_contents(@search_query.query)
-        @locations = Location.find_by_contents(@search_query.query)
-        @types = Type.find_by_contents(@search_query.query)
+        @properties = Property.find_with_ferret(@search_query.query)
+        @locations = Location.find_with_ferret(@search_query.query)
+        @types = Type.find_with_ferret(@search_query.query)
         for location in @locations
           if location.properties
            for p in location.properties
@@ -81,9 +81,9 @@ def pickup_properties(id)
           @tag = @search_query.region.split(' - ')
            @c0 = @tag[0]
            @c1 = @tag[1]+" County"
-          @locations = Location.find_by_contents(@c0)
+          @locations = Location.find_with_ferret(@c0)
         else
-          @locations = Location.find_by_contents(@search_query.area)
+          @locations = Location.find_with_ferret(@search_query.area)
         end
 
         if @search_query.bedrooms=="All"
