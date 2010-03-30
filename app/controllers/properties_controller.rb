@@ -3,8 +3,10 @@ class PropertiesController < ApplicationController
 
   def index
     #@properties = Property.find(:all,:order => 'created_at')
-	  @search_query = SearchQuery.find_by_id(156)
-		pickup_properties(@search_query.id)
+	  #@search_query = SearchQuery.find_by_id(156)
+		#pickup_properties(@search_query.id)
+		@location = Location.find_by_id(15,:include => :country)
+		@properties = @location.properties
     #@properties.sort!{|x| x.featured }
 		#@properties.sort!{|x| x.featured == true }
 	case params[:filter]

@@ -8691,3 +8691,15 @@ LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/developm
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
 query: +(area:los state:los city_initials:los city:los county:los zipcod:los region:los) +(area:angeles state:angeles city_initials:angeles city:angeles county:angeles zipcod:angeles region:angeles)
 stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(area:los state:los city_initials:los city:los county:los zipcod:los region:los) +(area:angeles state:angeles city_initials:angeles city:angeles county:angeles zipcod:angeles region:angeles)
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: area:suffolk state:suffolk city_initials:suffolk city:suffolk county:suffolk zipcod:suffolk region:suffolk
+stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(area:newport state:newport city_initials:newport city:newport county:newport zipcod:newport region:newport) +(area:beach state:beach city_initials:beach city:beach county:beach zipcod:beach region:beach)
+stored_fields: 
