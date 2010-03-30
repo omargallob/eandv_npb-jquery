@@ -12,6 +12,8 @@ rpx_now --version '>=0.6.17'
 fastercsv --version '>=1.5.3'
 acts_as_ferret --version '>=0.4.1'
 ferret --version '>=0.11.6'
+haml --version '>=2.2.15'
+
 
 
 
