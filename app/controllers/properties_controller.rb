@@ -5,10 +5,11 @@ class PropertiesController < ApplicationController
     #@properties = Property.find(:all,:order => 'created_at')
 	  #@search_query = SearchQuery.find_by_id(156)
 		#pickup_properties(@search_query.id)
-		@location = Location.find_by_id(15,:include => :country)
-		@properties = @location.properties
+		
+		@properties = Property.find(:all, :conditions => ["location_id = ?",15] )
     #@properties.sort!{|x| x.featured }
 		#@properties.sort!{|x| x.featured == true }
+		logger.info "Filter #{params[:filter]}\n Order #{params[:order]}"
 	case params[:filter]
 			when "rent"
 			@properties.delete_if {|x| x.rental == false }

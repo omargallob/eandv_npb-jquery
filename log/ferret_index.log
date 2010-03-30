@@ -8703,3 +8703,7 @@ LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/developm
 LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
 query: +(area:newport state:newport city_initials:newport city:newport county:newport zipcod:newport region:newport) +(area:beach state:beach city_initials:beach city:beach county:beach zipcod:beach region:beach)
 stored_fields: 
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+LocalIndex: ensure_index_exists at /home/omar/Proyectos/EandV/npb/index/development/location
+query: +(area:newport state:newport city_initials:newport city:newport county:newport zipcod:newport region:newport) +(area:beach state:beach city_initials:beach city:beach county:beach zipcod:beach region:beach)
+stored_fields: 
