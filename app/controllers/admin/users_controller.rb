@@ -58,4 +58,15 @@ class Admin::UsersController < Admin::BaseController
       format.xml  { head :ok }
     end
   end
+
+	def import_csv
+	require 'csv'
+		CSV.open('excel1.csv', 'r').each do |row|
+			unless row[1] == nil
+				CsvImport.create(:name => row[0], :email => row[1])
+			end	
+		end
+	end 
+
+
 end

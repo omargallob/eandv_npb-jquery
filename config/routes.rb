@@ -68,6 +68,8 @@ ActionController::Routing::Routes.draw do |map|
      admin.resources :facilities
      admin.resources :property_thumbnail
      admin.resources :googlemap
+
+		 admin.import_users '/users/import', :controller => "users", :action =>"import_csv" 
      admin.resources :users
      admin.resources :roles
      admin.resources :staff
