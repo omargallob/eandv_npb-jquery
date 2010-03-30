@@ -18,6 +18,7 @@ Rails::Initializer.run do |config|
   config.gem "geokit"
 	config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
 	config.gem "rpx_now"
+	config.gem "websolr-acts_as_solr"
   #config.gem 'auto_html', :version => '~> 1.2.1', :source => 'http://gemcutter.org'
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers

@@ -17,7 +17,9 @@ class Property < ActiveRecord::Base
 										#:url =>  "/property/gallery/:id/:style/:basename.jpg",
 										:path => "property/:id/pdf/:style/:basename.pdf"
 
-  acts_as_ferret  :fields => [:title, :bedrooms,:mls_id]#:fields => [:location_state,:type_title]
+  #acts_as_ferret  :fields => [:title, :bedrooms,:mls_id]#:fields => [:location_state,:type_title]
+
+	 acts_as_solr
 
 	validates_attachment_content_type :pdf, :content_type => ['application/pdf']
 

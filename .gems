@@ -18,3 +18,4 @@ haml --version '>=2.2.15'
 
 
 
+websolr-acts_as_solr
