@@ -55,10 +55,10 @@ def pickup_properties(id)
       if params[:query] == "All"
         @properties = Property.find(:all)
       else
-        @properties = Property.find_with_ferret(@search_query.query)
-        @locations = Location.find_with_ferret(@search_query.query)
-        @types = Type.find_with_ferret(@search_query.query)
-        for location in @locations
+        @properties = Property.find_by_solr(@search_query.query)
+        @locations = Location.find_by_solr(@search_query.query)
+        @types = Type.find_by_solr(@search_query.query)
+        for location in @locations.results
           if location.properties
            for p in location.properties
             @properties << p
