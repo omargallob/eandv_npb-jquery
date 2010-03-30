@@ -10,3 +10,4 @@ require 'rake/rdoctask'
 require 'tasks/rails'
 require 'sitemap_generator/tasks' rescue LoadError
 
+
