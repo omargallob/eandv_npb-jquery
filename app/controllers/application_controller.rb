@@ -50,6 +50,7 @@ def pickup_properties(id)
     @properties = []
     @search_query = SearchQuery.find_by_id(id)
     if @search_query.query
+			logger.info "Picking up from the search box"
       set_meta_tags :title =>  "Search: "+  @search_query.query.capitalize
       if params[:query] == "All"
         @properties = Property.find(:all)
@@ -73,6 +74,7 @@ def pickup_properties(id)
         end
       end  
     else
+			logger.info "Picking up from the drop downs"
       set_meta_tags :title =>  "Search: "+ @search_query.region.downcase+": "+ @search_query.area.downcase
         #@properties = Property.find_by_contents(params[:query])
         #@query = params[:states]+" "+params[:region]
