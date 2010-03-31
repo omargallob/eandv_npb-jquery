@@ -9,7 +9,7 @@ require File.join(File.dirname(__FILE__), 'boot')
 Rails::Initializer.run do |config|
   config.gem 'chriseppstein-compass', :lib => 'compass', :source => 'http://gems.github.com/'
   config.gem 'haml', :lib => 'haml', :version => '>=2.2.0'
-  config.gem "rets4r", :version => '>=0.8.5'
+
   config.gem "aws-s3", :lib => "aws/s3"
   config.gem "right_aws"
 
