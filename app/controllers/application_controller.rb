@@ -65,7 +65,7 @@ def pickup_properties(id)
            end
           end
         end
-        for type in @types
+        for type in @types.results
           if type.properties
            for q in type.properties
             @properties << q
@@ -103,7 +103,7 @@ def pickup_properties(id)
                 end
               end
          else
-           for location in @locations
+           for location in @locations.results
                if location.properties
                 for p in location.properties
                  if p.bedrooms == @search_query.bedrooms.to_i
