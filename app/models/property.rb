@@ -19,7 +19,7 @@ class Property < ActiveRecord::Base
 
   #acts_as_ferret  :fields => [:title, :bedrooms,:mls_id]#:fields => [:location_state,:type_title]
 
-	 acts_as_solr
+	 acts_as_solr :include => [:locations]
 
 	validates_attachment_content_type :pdf, :content_type => ['application/pdf']
 
