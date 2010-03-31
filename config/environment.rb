@@ -12,6 +12,8 @@ Rails::Initializer.run do |config|
   config.gem "rets4r", :version => '>=0.8.5'
   config.gem "aws-s3", :lib => "aws/s3"
   config.gem "right_aws"
+  config.gem "ferret"
+  config.gem "acts_as_ferret"
   config.gem 'sitemap_generator', :lib => false, :source => 'http://gemcutter.org'
   config.gem "geokit"
 	config.gem 'will_paginate', :version => '~> 2.3.11', :source => 'http://gemcutter.org'
