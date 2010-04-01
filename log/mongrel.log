@@ -6740,3 +6740,23 @@ Thu Apr 01 19:12:00 +0200 2010: sent 6 timeslices (9796829) in 0.81425 seconds
 Thu Apr 01 19:13:00 +0200 2010: sent 6 timeslices (9796829) in 0.851967 seconds
 #<Solr::Response::Standard:0xb5b083d4 @data={"response"=>{"maxScore"=>2.3706493, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.3706493}], "numFound"=>1}, "responseHeader"=>{"QTime"=>2, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>2, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>2.3706493, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.3706493}], "numFound"=>1}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>2,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','wt'=>'ruby','qt'=>'standard','q'=>'(Saint Tropez) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.3706493,'docs'=>[{'pk_i'=>[20],'score'=>2.3706493}]}}">
 Thu Apr 01 19:14:00 +0200 2010: sent 269 timeslices (9796829) in 0.865308 seconds
+Thu Apr 01 19:15:00 +0200 2010: sent 6 timeslices (9796829) in 0.815392 seconds
+Thu Apr 01 19:16:00 +0200 2010: sent 6 timeslices (9796829) in 0.819724 seconds
+Thu Apr 01 19:17:00 +0200 2010: sent 6 timeslices (9796829) in 1.757085 seconds
+Thu Apr 01 19:18:00 +0200 2010: sent 6 timeslices (9796829) in 0.811303 seconds
+Thu Apr 01 19:19:00 +0200 2010: sent 6 timeslices (9796829) in 0.811216 seconds
+#<Solr::Response::Standard:0xb5b0d6cc @data={"response"=>{"maxScore"=>2.076757, "start"=>0, "docs"=>[{"pk_i"=>[19], "score"=>2.076757}], "numFound"=>1}, "responseHeader"=>{"QTime"=>2, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Newmarket) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>2, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Newmarket) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>2.076757, "start"=>0, "docs"=>[{"pk_i"=>[19], "score"=>2.076757}], "numFound"=>1}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>2,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','wt'=>'ruby','qt'=>'standard','q'=>'(Newmarket) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.076757,'docs'=>[{'pk_i'=>[19],'score'=>2.076757}]}}">
+Thu Apr 01 19:20:00 +0200 2010: sent 127 timeslices (9796829) in 0.832669 seconds
+Thu Apr 01 19:21:00 +0200 2010: sent 6 timeslices (9796829) in 0.973219 seconds
+Thu Apr 01 19:22:00 +0200 2010: sent 6 timeslices (9796829) in 0.925676 seconds
+Thu Apr 01 19:23:00 +0200 2010: sent 6 timeslices (9796829) in 0.837205 seconds
+Thu Apr 01 19:24:00 +0200 2010: sent 6 timeslices (9796829) in 1.1648 seconds
+Thu Apr 01 19:25:00 +0200 2010: sent 6 timeslices (9796829) in 0.820412 seconds
+Thu Apr 01 19:26:00 +0200 2010: sent 6 timeslices (9796829) in 0.82428 seconds
+Thu Apr 01 19:27:00 +0200 2010: sent 6 timeslices (9796829) in 0.81657 seconds
+Thu Apr 01 19:28:00 +0200 2010: sent 6 timeslices (9796829) in 0.826182 seconds
+Thu Apr 01 19:29:00 +0200 2010: sent 6 timeslices (9796829) in 0.892524 seconds
+Thu Apr 01 19:30:00 +0200 2010: sent 6 timeslices (9796829) in 0.88318 seconds
+Thu Apr 01 19:31:00 +0200 2010: sent 6 timeslices (9796829) in 0.817921 seconds
+Thu Apr 01 19:32:00 +0200 2010: sent 6 timeslices (9796829) in 0.875457 seconds
+Thu Apr 01 19:33:00 +0200 2010: sent 6 timeslices (9796829) in 0.813375 seconds

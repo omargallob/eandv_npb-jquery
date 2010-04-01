@@ -250,3 +250,16 @@ Completed in 211ms (View: 165, DB: 5) | 200 OK [http://localhost/search?search_q
 Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:13:21) [GET]
 Rendering rss/about
 Completed in 55ms (View: 16, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 19:19:34) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Newmarket - Suffolk", "zip"=>"", "bedrooms"=>"All", "country"=>"United Kingdom", "states"=>"Suffolk", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 109ms (View: 54, DB: 10) | 200 OK [http://localhost/search?search_query[country]=United+Kingdom&search_query[states]=Suffolk&search_query[region]=Newmarket+-+Suffolk&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:19:35) [GET]
+Rendering rss/about
+Completed in 52ms (View: 16, DB: 2) | 200 OK [http://localhost/about.xml]
