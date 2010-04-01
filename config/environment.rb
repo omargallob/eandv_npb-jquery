@@ -1,5 +1,6 @@
 # Be sure to restart your server when you modify this file
 
+RAILS_ENV = "production"
 # Specifies gem version of Rails to use when vendor/rails is not present
 RAILS_GEM_VERSION = '2.3.5' unless defined? RAILS_GEM_VERSION
 
@@ -53,6 +54,5 @@ Rails::Initializer.run do |config|
 	config.after_initialize do # so rake gems:install works
     RPXNow.api_key = "2a3f95827b27fd40ec83ee64df09d6caaef2c0af"
   end
-  
 end
 

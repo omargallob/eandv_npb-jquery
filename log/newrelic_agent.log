@@ -1,0 +1,57 @@
+# Logfile created on Thu Apr 01 18:05:17 +0200 2010 by /
+[04/01/10 18:05:17 +0200 banus-dev (4083)] INFO : Dispatcher: mongrel
+[04/01/10 18:05:17 +0200 banus-dev (4083)] INFO : Application: My Application
+[04/01/10 18:05:17 +0200 banus-dev (4083)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 4083
+[04/01/10 18:05:17 +0200 banus-dev (4083)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/01/10 18:05:18 +0200 banus-dev (4083)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/01/10 18:08:43 +0200 banus-dev (4239)] INFO : Dispatcher: mongrel
+[04/01/10 18:08:43 +0200 banus-dev (4239)] INFO : Application: My Application
+[04/01/10 18:08:43 +0200 banus-dev (4239)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 4239
+[04/01/10 18:08:43 +0200 banus-dev (4239)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/01/10 18:08:43 +0200 banus-dev (4239)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/01/10 18:09:42 +0200 banus-dev (4294)] INFO : Dispatcher: mongrel
+[04/01/10 18:09:42 +0200 banus-dev (4294)] INFO : Application: My Application
+[04/01/10 18:09:42 +0200 banus-dev (4294)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 4294
+[04/01/10 18:09:42 +0200 banus-dev (4294)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/01/10 18:09:42 +0200 banus-dev (4294)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/01/10 18:32:49 +0200 banus-dev (4989)] INFO : Dispatcher: mongrel
+[04/01/10 18:32:49 +0200 banus-dev (4989)] INFO : Application: My Application
+[04/01/10 18:32:49 +0200 banus-dev (4989)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 4989
+[04/01/10 18:32:49 +0200 banus-dev (4989)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/01/10 18:32:49 +0200 banus-dev (4989)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/01/10 18:32:54 +0200 banus-dev (4989)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/01/10 18:32:58 +0200 banus-dev (4989)] INFO : Resolved collector0.newrelic.com to 65.74.177.207
+[04/01/10 18:32:58 +0200 banus-dev (4989)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/01/10 18:33:00 +0200 banus-dev (4989)] INFO : Reporting performance data every 60 seconds.
+[04/01/10 18:39:28 +0200 banus-dev (5366)] INFO : Dispatcher: mongrel
+[04/01/10 18:39:28 +0200 banus-dev (5366)] INFO : Application: My Application
+[04/01/10 18:39:28 +0200 banus-dev (5366)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 5366
+[04/01/10 18:39:28 +0200 banus-dev (5366)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/01/10 18:39:28 +0200 banus-dev (5366)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/01/10 18:51:15 +0200 banus-dev (5868)] INFO : Dispatcher: mongrel
+[04/01/10 18:51:15 +0200 banus-dev (5868)] INFO : Application: My Application
+[04/01/10 18:51:15 +0200 banus-dev (5868)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 5868
+[04/01/10 18:51:15 +0200 banus-dev (5868)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/01/10 18:51:15 +0200 banus-dev (5868)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/01/10 18:51:20 +0200 banus-dev (5868)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/01/10 18:51:22 +0200 banus-dev (5868)] INFO : Resolved collector0.newrelic.com to 65.74.177.207
+[04/01/10 18:51:23 +0200 banus-dev (5868)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/01/10 18:51:25 +0200 banus-dev (5868)] INFO : Reporting performance data every 60 seconds.
+[04/01/10 18:54:08 +0200 banus-dev (6016)] INFO : Dispatcher: mongrel
+[04/01/10 18:54:08 +0200 banus-dev (6016)] INFO : Application: My Application
+[04/01/10 18:54:08 +0200 banus-dev (6016)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 6016
+[04/01/10 18:54:08 +0200 banus-dev (6016)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/01/10 18:54:08 +0200 banus-dev (6016)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/01/10 18:54:13 +0200 banus-dev (6016)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/01/10 18:54:15 +0200 banus-dev (6016)] INFO : Resolved collector0.newrelic.com to 65.74.177.207
+[04/01/10 18:54:16 +0200 banus-dev (6016)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/01/10 18:54:18 +0200 banus-dev (6016)] INFO : Reporting performance data every 60 seconds.
+[04/01/10 18:55:50 +0200 banus-dev (6059)] INFO : Dispatcher: mongrel
+[04/01/10 18:55:50 +0200 banus-dev (6059)] INFO : Application: My Application
+[04/01/10 18:55:50 +0200 banus-dev (6059)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 6059
+[04/01/10 18:55:50 +0200 banus-dev (6059)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/01/10 18:55:50 +0200 banus-dev (6059)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/01/10 18:55:55 +0200 banus-dev (6059)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/01/10 18:55:57 +0200 banus-dev (6059)] INFO : Resolved collector0.newrelic.com to 65.74.177.207
+[04/01/10 18:55:58 +0200 banus-dev (6059)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/01/10 18:56:00 +0200 banus-dev (6059)] INFO : Reporting performance data every 60 seconds.
