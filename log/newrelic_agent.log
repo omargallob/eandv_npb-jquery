@@ -204,3 +204,6 @@
 [04/02/10 21:04:52 +0200 banus-dev (8641)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
 [04/02/10 21:04:55 +0200 banus-dev (8641)] INFO : Unable to establish connection with New Relic RPM Service at collector.newrelic.com:80
 [04/02/10 21:04:55 +0200 banus-dev (8641)] INFO : Will re-attempt in 1 minute
+[04/02/10 21:05:56 +0200 banus-dev (8641)] INFO : Resolved collector0.newrelic.com to 65.74.177.207
+[04/02/10 21:05:58 +0200 banus-dev (8641)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/02/10 21:06:00 +0200 banus-dev (8641)] INFO : Reporting performance data every 60 seconds.

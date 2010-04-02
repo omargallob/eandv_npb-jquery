@@ -8191,3 +8191,7 @@ Requiring REXML
 /home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
 ** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+Fri Apr 02 21:07:00 +0200 2010: sent 125 timeslices (9858777) in 0.958299 seconds
+Fri Apr 02 21:08:00 +0200 2010: sent 6 timeslices (9858777) in 0.718803 seconds
