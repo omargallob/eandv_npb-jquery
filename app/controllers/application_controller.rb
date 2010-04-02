@@ -83,13 +83,15 @@ def pickup_properties(id)
           @tag = @search_query.region.split(' - ')
            @c0 = @tag[0]
            @c1 = @tag[1]+" County"
-          @locations = Location.find_by_solr(@c0)
+					logger.info "region 1: " + @c0 + " region 2: "+ @c1
+          @locations = Location.find(:all, :conditions => ["city = ?",@c0])
         else
-          @locations = Location.find_by_solr(@search_query.area)
+					logger.info "area : " + @search_query.area
+          @locations = Location.find(:all, :conditions => ["region = ?",@search_query.area])
         end
 
         if @search_query.bedrooms=="All"
-            for location in @locations.results
+            for location in @locations
                 if location.properties
                  for p in location.properties       
                    unless @search_query.price == "All"            

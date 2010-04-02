@@ -8198,3 +8198,27 @@ Fri Apr 02 21:08:00 +0200 2010: sent 6 timeslices (9858777) in 0.718803 seconds
 Fri Apr 02 21:10:00 +0200 2010: sent 6 timeslices (9858777) in 0.91979 seconds
 Fri Apr 02 21:11:00 +0200 2010: sent 6 timeslices (9858777) in 0.847253 seconds
 Fri Apr 02 21:12:00 +0200 2010: sent 6 timeslices (9858777) in 4.035856 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+#<Solr::Response::Standard:0xb6844458 @data={"response"=>{"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, "responseHeader"=>{"QTime"=>56, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>56, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>56,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','qt'=>'standard','wt'=>'ruby','q'=>'(Saint Tropez) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.744357,'docs'=>[{'pk_i'=>[20],'score'=>2.744357}]}}">
+/home/omar/Proyectos/EandV/npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+#<Solr::Response::Standard:0xb65905cc @data={"response"=>{"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, "responseHeader"=>{"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>1,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','qt'=>'standard','wt'=>'ruby','q'=>'(Saint Tropez) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.744357,'docs'=>[{'pk_i'=>[20],'score'=>2.744357}]}}">
+#<Solr::Response::Standard:0xb63a6720 @data={"response"=>{"maxScore"=>2.432794, "start"=>0, "docs"=>[{"pk_i"=>[15], "score"=>2.432794}], "numFound"=>1}, "responseHeader"=>{"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Newport Beach) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Newport Beach) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>2.432794, "start"=>0, "docs"=>[{"pk_i"=>[15], "score"=>2.432794}], "numFound"=>1}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>1,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','qt'=>'standard','wt'=>'ruby','q'=>'(Newport Beach) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.432794,'docs'=>[{'pk_i'=>[15],'score'=>2.432794}]}}">
