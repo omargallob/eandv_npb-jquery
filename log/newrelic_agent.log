@@ -183,3 +183,12 @@
 [04/02/10 20:22:00 +0200 banus-dev (7549)] INFO : Resolved collector0.newrelic.com to 65.74.177.207
 [04/02/10 20:22:01 +0200 banus-dev (7549)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
 [04/02/10 20:22:03 +0200 banus-dev (7549)] INFO : Reporting performance data every 60 seconds.
+[04/02/10 20:40:35 +0200 banus-dev (8053)] INFO : Dispatcher: mongrel
+[04/02/10 20:40:35 +0200 banus-dev (8053)] INFO : Application: My Application
+[04/02/10 20:40:35 +0200 banus-dev (8053)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 8053
+[04/02/10 20:40:35 +0200 banus-dev (8053)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/02/10 20:40:35 +0200 banus-dev (8053)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/02/10 20:40:40 +0200 banus-dev (8053)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/02/10 20:40:42 +0200 banus-dev (8053)] INFO : Resolved collector0.newrelic.com to 65.74.177.207
+[04/02/10 20:40:42 +0200 banus-dev (8053)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/02/10 20:40:44 +0200 banus-dev (8053)] INFO : Reporting performance data every 60 seconds.

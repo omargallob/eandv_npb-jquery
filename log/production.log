@@ -1192,3 +1192,16 @@ Completed in 71ms (View: 32, DB: 5) | 200 OK [http://localhost/featured.xml]
 Processing RssController#partners (for 127.0.0.1 at 2010-04-02 20:25:20) [GET]
 Rendering rss/partners
 Completed in 77ms (View: 15, DB: 2) | 200 OK [http://localhost/partners.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 20:41:04) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 287ms (View: 199, DB: 13) | 200 OK [http://localhost/search?search_query[country]=France&search_query[states]=Provence-Alpes-Cote+dAzur&search_query[region]=Saint+Tropez+-+Var&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 20:41:05) [GET]
+Rendering rss/about
+Completed in 55ms (View: 16, DB: 2) | 200 OK [http://localhost/about.xml]

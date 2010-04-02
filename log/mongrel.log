@@ -8109,3 +8109,46 @@ Fri Apr 02 20:30:03 +0200 2010: sent 6 timeslices (9856869) in 0.725714 seconds
 Fri Apr 02 20:31:03 +0200 2010: sent 6 timeslices (9856869) in 0.758917 seconds
 Fri Apr 02 20:32:03 +0200 2010: sent 6 timeslices (9856869) in 0.723174 seconds
 Fri Apr 02 20:33:03 +0200 2010: sent 6 timeslices (9856869) in 0.736399 seconds
+Fri Apr 02 20:34:03 +0200 2010: sent 6 timeslices (9856869) in 0.725929 seconds
+Fri Apr 02 20:35:03 +0200 2010: sent 6 timeslices (9856869) in 0.726636 seconds
+Fri Apr 02 20:36:03 +0200 2010: sent 6 timeslices (9856869) in 0.809937 seconds
+Fri Apr 02 20:37:03 +0200 2010: sent 6 timeslices (9856869) in 0.729835 seconds
+Fri Apr 02 20:38:03 +0200 2010: sent 6 timeslices (9856869) in 0.726485 seconds
+Fri Apr 02 20:39:03 +0200 2010: sent 6 timeslices (9856869) in 0.856575 seconds
+Fri Apr 02 20:40:03 +0200 2010: sent 6 timeslices (9856869) in 0.74609 seconds
+** TERM signal received.
+Fri Apr 02 20:40:28 +0200 2010: sent 6 timeslices (9856869) in 0.74242 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 8053
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+#<Solr::Response::Standard:0xb5d40138 @data={"response"=>{"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, "responseHeader"=>{"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>1,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','wt'=>'ruby','qt'=>'standard','q'=>'(Saint Tropez) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.744357,'docs'=>[{'pk_i'=>[20],'score'=>2.744357}]}}", @response={"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}>
+/home/omar/Proyectos/EandV/npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+Fri Apr 02 20:41:44 +0200 2010: sent 129 timeslices (9857672) in 0.783963 seconds
+Fri Apr 02 20:42:44 +0200 2010: sent 6 timeslices (9857672) in 0.750942 seconds
+Fri Apr 02 20:43:44 +0200 2010: sent 6 timeslices (9857672) in 0.740333 seconds
+Fri Apr 02 20:44:44 +0200 2010: sent 6 timeslices (9857672) in 0.878995 seconds
+Fri Apr 02 20:45:44 +0200 2010: sent 6 timeslices (9857672) in 0.741896 seconds
+Fri Apr 02 20:46:44 +0200 2010: sent 6 timeslices (9857672) in 0.760574 seconds
+Fri Apr 02 20:47:44 +0200 2010: sent 6 timeslices (9857672) in 0.760481 seconds
+Fri Apr 02 20:48:44 +0200 2010: sent 6 timeslices (9857672) in 0.739281 seconds
