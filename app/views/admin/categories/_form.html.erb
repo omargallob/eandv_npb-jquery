@@ -53,7 +53,8 @@
 </div>
 <div id="media">
 <hr />
-	<% unless @category.parent %>
+	<% if controller.action_name == "edit" %>
+
 
 		<p>
 			<iframe src="<%= admin_category_main_path(@category) %>" width="850" height="700"></iframe>

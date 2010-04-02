@@ -55,17 +55,18 @@ def pickup_properties(id)
       if params[:query] == "All"
         @properties = Property.find(:all)
       else
-        @properties = Property.find_by_solr(@search_query.query)
-        @locations = Location.find_by_solr(@search_query.query)
-        @types = Type.find_by_solr(@search_query.query)
-        for location in @locations.results
+				logger.info "Query: "+ @search_query.query
+        @properties = Property.find(:all, :conditions => ["title like ? or address like ?",@search_query.query.capitalize,@search_query.query.capitalize])
+				#@locations = Location.find(:all, :conditions => ["city = ?",@c0])
+        @types = Type.find(:all, :conditions => ["title like ?",@search_query.query])
+        for location in @locations
           if location.properties
            for p in location.properties
             @properties << p
            end
           end
         end
-        for type in @types.results
+        for type in @types
           if type.properties
            for q in type.properties
             @properties << q
