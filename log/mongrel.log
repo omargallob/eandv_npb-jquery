@@ -8195,3 +8195,6 @@ Requiring REXML
 ** [NewRelic] Reporting performance data every 60 seconds.
 Fri Apr 02 21:07:00 +0200 2010: sent 125 timeslices (9858777) in 0.958299 seconds
 Fri Apr 02 21:08:00 +0200 2010: sent 6 timeslices (9858777) in 0.718803 seconds
+Fri Apr 02 21:10:00 +0200 2010: sent 6 timeslices (9858777) in 0.91979 seconds
+Fri Apr 02 21:11:00 +0200 2010: sent 6 timeslices (9858777) in 0.847253 seconds
+Fri Apr 02 21:12:00 +0200 2010: sent 6 timeslices (9858777) in 4.035856 seconds
