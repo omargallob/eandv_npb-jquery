@@ -95,6 +95,16 @@ layout "lightbox"
 		render :layout => false
 	end
 
+	def willow_demographics
+		require 'rillow'
+		rillow = Rillow.new('X1-ZWz1c216cd0qvf_7aoby')
+		result = rillow.get_search_results('110 Via Quito','Newport Beach, CA')
+   respond_to do |format|
+      format.xml #
+    end
+	end
+
+
 	private
 	def pickup_variables_contact
 		@interested_in = ["Buying","Selling"]

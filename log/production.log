@@ -263,3 +263,628 @@ Completed in 109ms (View: 54, DB: 10) | 200 OK [http://localhost/search?search_q
 Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:19:35) [GET]
 Rendering rss/about
 Completed in 52ms (View: 16, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 19:39:20) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Los Angeles - OC", "zip"=>"", "bedrooms"=>"All", "country"=>"United States", "states"=>"California", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 691ms (View: 41, DB: 7) | 200 OK [http://localhost/search?search_query[country]=United+States&search_query[states]=California&search_query[region]=Los+Angeles+-+OC&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:39:22) [GET]
+Rendering rss/about
+Completed in 51ms (View: 15, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 19:53:10) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Los Angeles - OC", "zip"=>"", "bedrooms"=>"All", "country"=>"United States", "states"=>"California", "area"=>"All"}}
+Picking up from the drop downs
+
+RuntimeError (There was a problem executing your search: Couldn't connect to the Solr server at http://85.57.51.129:8983/solr. Connection refused - connect(2) in /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:52:in `execute'):
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:101:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 19:53:34) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Los Angeles - OC", "zip"=>"", "bedrooms"=>"All", "country"=>"United States", "states"=>"California", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 702ms (View: 40, DB: 16) | 200 OK [http://localhost/search?search_query[country]=United+States&search_query[states]=California&search_query[region]=Los+Angeles+-+OC&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:53:36) [GET]
+Rendering rss/about
+Completed in 38ms (View: 11, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 19:55:11) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Newmarket - Suffolk", "zip"=>"", "bedrooms"=>"All", "country"=>"United Kingdom", "states"=>"Suffolk", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 1478ms (View: 42, DB: 8) | 200 OK [http://localhost/search?search_query[country]=United+Kingdom&search_query[states]=Suffolk&search_query[region]=Newmarket+-+Suffolk&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:55:14) [GET]
+Rendering rss/about
+Completed in 35ms (View: 11, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2010-04-01 19:55:20) [GET]
+  Parameters: {"filter"=>"rent"}
+Filter rent
+ Order 
+Rendering template within layouts/application
+Rendering properties/index
+Completed in 166ms (View: 29, DB: 15) | 200 OK [http://localhost/properties/filter/rent]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:55:21) [GET]
+Rendering rss/about
+Completed in 51ms (View: 13, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2010-04-01 19:55:22) [GET]
+  Parameters: {"filter"=>"buy"}
+Filter buy
+ Order 
+Rendering template within layouts/application
+Rendering properties/index
+Completed in 108ms (View: 76, DB: 3) | 200 OK [http://localhost/properties/filter/buy]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:55:23) [GET]
+Rendering rss/about
+Completed in 36ms (View: 11, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2010-04-01 19:55:23) [GET]
+  Parameters: {"filter"=>"featured"}
+Filter featured
+ Order 
+Rendering template within layouts/application
+Rendering properties/index
+Completed in 196ms (View: 55, DB: 3) | 200 OK [http://localhost/featured]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:55:24) [GET]
+Rendering rss/about
+Completed in 55ms (View: 16, DB: 3) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2010-04-01 19:55:26) [GET]
+  Parameters: {"filter"=>"featured", "order"=>"des"}
+Filter featured
+ Order des
+Rendering template within layouts/application
+Rendering properties/index
+Completed in 90ms (View: 56, DB: 4) | 200 OK [http://localhost/properties/filter/featured/order/des]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:55:26) [GET]
+Rendering rss/about
+Completed in 40ms (View: 15, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2010-04-01 19:55:28) [GET]
+  Parameters: {"filter"=>"featured", "order"=>"asc"}
+Filter featured
+ Order asc
+Rendering template within layouts/application
+Rendering properties/index
+Completed in 189ms (View: 165, DB: 2) | 200 OK [http://localhost/properties/filter/featured/order/asc]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:55:29) [GET]
+Rendering rss/about
+Completed in 52ms (View: 24, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 19:55:31) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 1198ms (View: 42, DB: 164) | 200 OK [http://localhost/search?search_query[country]=France&search_query[states]=Provence-Alpes-Cote+dAzur&search_query[region]=Saint+Tropez+-+Var&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:55:32) [GET]
+Rendering rss/about
+Completed in 35ms (View: 11, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 19:55:57) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Los Angeles - OC", "zip"=>"", "bedrooms"=>"All", "country"=>"United States", "states"=>"California", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 848ms (View: 39, DB: 6) | 200 OK [http://localhost/search?search_query[country]=United+States&search_query[states]=California&search_query[region]=Los+Angeles+-+OC&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:55:59) [GET]
+Rendering rss/about
+Completed in 208ms (View: 13, DB: 22) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2010-04-01 19:56:00) [GET]
+Filter 
+ Order 
+Rendering template within layouts/application
+Rendering properties/index
+Completed in 136ms (View: 97, DB: 7) | 200 OK [http://localhost/properties]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 19:56:01) [GET]
+Rendering rss/about
+Completed in 52ms (View: 15, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 20:00:58) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Los Angeles - OC", "zip"=>"", "bedrooms"=>"All", "country"=>"United States", "states"=>"California", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 965ms (View: 163, DB: 6) | 200 OK [http://localhost/search?search_query[country]=United+States&search_query[states]=California&search_query[region]=Los+Angeles+-+OC&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-01 20:01:01) [GET]
+Rendering rss/about
+Completed in 53ms (View: 16, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 20:01:26) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Los Angeles - OC", "zip"=>"", "bedrooms"=>"All", "country"=>"United States", "states"=>"California", "area"=>"All"}}
+Picking up from the drop downs
+
+RuntimeError (There was a problem executing your search: Couldn't connect to the Solr server at http://127.0.0.1:8983/solr. Connection refused - connect(2) in /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:52:in `execute'):
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:101:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 20:02:19) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Los Angeles - OC", "zip"=>"", "bedrooms"=>"All", "country"=>"United States", "states"=>"California", "area"=>"All"}}
+Picking up from the drop downs
+
+RuntimeError (There was a problem executing your search: Couldn't connect to the Solr server at http://127.0.0.1:8983/solr. Connection refused - connect(2) in /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:52:in `execute'):
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:101:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 20:02:40) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Los Angeles - OC", "zip"=>"", "bedrooms"=>"All", "country"=>"United States", "states"=>"California", "area"=>"All"}}
+Picking up from the drop downs
+
+RuntimeError (There was a problem executing your search: Couldn't connect to the Solr server at http://127.0.0.1:8983/solr. Connection refused - connect(2) in /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:52:in `execute'):
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:101:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-01 20:03:00) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Los Angeles - OC", "zip"=>"", "bedrooms"=>"All", "country"=>"United States", "states"=>"California", "area"=>"All"}}
+Picking up from the drop downs
+
+RuntimeError (There was a problem executing your search: Couldn't connect to the Solr server at http://npb.heroku.com:8983/solr. Connection timed out - connect(2) in /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:52:in `execute'):
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:101:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 14:40:41) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 1201ms (View: 460, DB: 666) | 200 OK [http://localhost/]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 14:40:44) [GET]
+Rendering rss/about
+Completed in 177ms (View: 129, DB: 4) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 14:40:45) [GET]
+Rendering rss/partners
+Completed in 77ms (View: 17, DB: 29) | 200 OK [http://localhost/partners.xml]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 14:40:45) [GET]
+Rendering rss/featured
+Completed in 160ms (View: 76, DB: 50) | 200 OK [http://localhost/featured.xml]
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2010-04-02 14:40:48) [GET]
+Filter 
+ Order 
+Rendering template within layouts/application
+Rendering properties/index
+Completed in 371ms (View: 174, DB: 31) | 200 OK [http://localhost/properties]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 14:40:49) [GET]
+Rendering rss/about
+Completed in 35ms (View: 11, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#show (for 127.0.0.1 at 2010-04-02 14:40:51) [GET]
+  Parameters: {"id"=>"30"}
+Rendering template within layouts/application
+Rendering properties/show
+Completed in 774ms (View: 150, DB: 78) | 200 OK [http://localhost/properties/30]
+
+
+Processing RssController#similar (for 127.0.0.1 at 2010-04-02 14:40:53) [GET]
+  Parameters: {"id"=>"30"}
+Picking up from the drop downs
+
+Mongrel::TimeoutError (Mongrel timed out this thread: shutdown):
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /usr/lib/ruby/gems/1.8/gems/right_http_connection-1.2.4/lib/net_fix.rb:129:in `request_without_newrelic_trace'
+  /usr/lib/ruby/1.8/net/http.rb:845:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:167:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:153:in `send'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:50:in `execute'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:99:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/rss_controller.rb:42:in `similar'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 14:42:28) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 76ms (View: 44, DB: 25) | 200 OK [http://localhost/]
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2010-04-02 14:42:43) [GET]
+Filter 
+ Order 
+Rendering template within layouts/application
+Rendering properties/index
+Completed in 292ms (View: 215, DB: 9) | 200 OK [http://localhost/properties]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 14:42:44) [GET]
+Rendering rss/about
+Completed in 40ms (View: 13, DB: 3) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#show (for 127.0.0.1 at 2010-04-02 14:42:45) [GET]
+  Parameters: {"id"=>"30"}
+Rendering template within layouts/application
+Rendering properties/show
+Completed in 614ms (View: 51, DB: 9) | 200 OK [http://localhost/properties/30]
+
+
+Processing RssController#similar (for 127.0.0.1 at 2010-04-02 14:42:47) [GET]
+  Parameters: {"id"=>"30"}
+Picking up from the drop downs
+
+Mongrel::TimeoutError (Mongrel timed out this thread: shutdown):
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /usr/lib/ruby/gems/1.8/gems/right_http_connection-1.2.4/lib/net_fix.rb:129:in `request_without_newrelic_trace'
+  /usr/lib/ruby/1.8/net/http.rb:845:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:167:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:153:in `send'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:50:in `execute'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:99:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/rss_controller.rb:42:in `similar'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 14:44:31) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 319ms (View: 177, DB: 7) | 200 OK [http://localhost/]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 14:44:50) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 285ms (View: 228, DB: 5) | 200 OK [http://localhost/]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 14:44:52) [GET]
+Rendering rss/featured
+Completed in 111ms (View: 65, DB: 5) | 200 OK [http://localhost/featured.xml]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 14:44:52) [GET]
+Rendering rss/about
+Completed in 42ms (View: 12, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 14:44:52) [GET]
+Rendering rss/partners
+Completed in 39ms (View: 15, DB: 3) | 200 OK [http://localhost/partners.xml]
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2010-04-02 14:44:58) [GET]
+Filter 
+ Order 
+Rendering template within layouts/application
+Rendering properties/index
+Completed in 239ms (View: 203, DB: 4) | 200 OK [http://localhost/properties]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 14:44:58) [GET]
+Rendering rss/about
+Completed in 57ms (View: 16, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 14:45:02) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+
+Mongrel::TimeoutError (Mongrel timed out this thread: shutdown):
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /usr/lib/ruby/gems/1.8/gems/right_http_connection-1.2.4/lib/net_fix.rb:129:in `request_without_newrelic_trace'
+  /usr/lib/ruby/1.8/net/http.rb:845:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:167:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:153:in `send'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:50:in `execute'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:99:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 14:46:15) [GET]
+  Parameters: {"name"=>"about"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 488ms (View: 50, DB: 50) | 200 OK [http://localhost/about]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 14:46:15) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 62ms (View: 39, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 14:46:15) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 58ms (View: 36, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 14:46:16) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 59ms (View: 36, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 14:46:45) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 315ms (View: 243, DB: 6) | 200 OK [http://localhost/]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 14:46:47) [GET]
+Rendering rss/featured
+Completed in 91ms (View: 59, DB: 4) | 200 OK [http://localhost/featured.xml]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 14:46:47) [GET]
+Rendering rss/about
+Completed in 46ms (View: 13, DB: 4) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 14:46:47) [GET]
+Rendering rss/partners
+Completed in 40ms (View: 13, DB: 3) | 200 OK [http://localhost/partners.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 14:46:50) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+
+Mongrel::TimeoutError (Mongrel timed out this thread: shutdown):
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /usr/lib/ruby/gems/1.8/gems/right_http_connection-1.2.4/lib/net_fix.rb:129:in `request_without_newrelic_trace'
+  /usr/lib/ruby/1.8/net/http.rb:845:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:167:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:153:in `send'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:50:in `execute'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:99:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 14:55:12) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 520ms (View: 425, DB: 20) | 200 OK [http://localhost/]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 14:55:14) [GET]
+Rendering rss/featured
+Completed in 227ms (View: 181, DB: 8) | 200 OK [http://localhost/featured.xml]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 14:55:15) [GET]
+Rendering rss/about
+Completed in 40ms (View: 12, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 14:55:15) [GET]
+Rendering rss/partners
+Completed in 37ms (View: 12, DB: 3) | 200 OK [http://localhost/partners.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 14:55:24) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+
+Mongrel::TimeoutError (Mongrel timed out this thread: shutdown):
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /usr/lib/ruby/gems/1.8/gems/right_http_connection-1.2.4/lib/net_fix.rb:129:in `request_without_newrelic_trace'
+  /usr/lib/ruby/1.8/net/http.rb:845:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:167:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:153:in `send'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:50:in `execute'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:99:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 14:56:46) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+
+RuntimeError (There was a problem executing your search: Couldn't connect to the Solr server at http://127.0.0.1:8983/solr. Connection refused - connect(2) in /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:52:in `execute'):
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:101:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 14:56:58) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 441ms (View: 204, DB: 15) | 200 OK [http://localhost/search?search_query[country]=France&search_query[states]=Provence-Alpes-Cote+dAzur&search_query[region]=Saint+Tropez+-+Var&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 14:57:01) [GET]
+Rendering rss/about
+Completed in 45ms (View: 17, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 14:57:07) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Newmarket - Suffolk", "zip"=>"", "bedrooms"=>"All", "country"=>"United Kingdom", "states"=>"Suffolk", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 135ms (View: 56, DB: 36) | 200 OK [http://localhost/search?search_query[country]=United+Kingdom&search_query[states]=Suffolk&search_query[region]=Newmarket+-+Suffolk&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 14:57:07) [GET]
+Rendering rss/about
+Completed in 60ms (View: 23, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 15:00:18) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 163ms (View: 127, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 15:00:19) [GET]
+Rendering rss/about
+Completed in 159ms (View: 13, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 15:00:19) [GET]
+Rendering rss/partners
+Completed in 39ms (View: 13, DB: 3) | 200 OK [http://localhost/partners.xml]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 15:00:20) [GET]
+Rendering rss/featured
+Completed in 63ms (View: 33, DB: 4) | 200 OK [http://localhost/featured.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 15:00:21) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 912ms (View: 39, DB: 6) | 200 OK [http://localhost/search?search_query[country]=France&search_query[states]=Provence-Alpes-Cote+dAzur&search_query[region]=Saint+Tropez+-+Var&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 15:00:22) [GET]
+Rendering rss/about
+Completed in 36ms (View: 11, DB: 2) | 200 OK [http://localhost/about.xml]

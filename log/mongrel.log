@@ -6760,3 +6760,964 @@ Thu Apr 01 19:30:00 +0200 2010: sent 6 timeslices (9796829) in 0.88318 seconds
 Thu Apr 01 19:31:00 +0200 2010: sent 6 timeslices (9796829) in 0.817921 seconds
 Thu Apr 01 19:32:00 +0200 2010: sent 6 timeslices (9796829) in 0.875457 seconds
 Thu Apr 01 19:33:00 +0200 2010: sent 6 timeslices (9796829) in 0.813375 seconds
+Thu Apr 01 19:34:00 +0200 2010: sent 6 timeslices (9796829) in 0.811103 seconds
+Thu Apr 01 19:35:00 +0200 2010: sent 6 timeslices (9796829) in 0.831404 seconds
+Thu Apr 01 19:36:00 +0200 2010: sent 6 timeslices (9796829) in 0.813289 seconds
+Thu Apr 01 19:37:00 +0200 2010: sent 6 timeslices (9796829) in 0.814886 seconds
+Thu Apr 01 19:38:00 +0200 2010: sent 6 timeslices (9796829) in 0.820896 seconds
+Thu Apr 01 19:39:00 +0200 2010: sent 6 timeslices (9796829) in 0.836145 seconds
+#<Solr::Response::Standard:0xb59ebc6c @data={"response"=>{"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, "responseHeader"=>{"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Los Angeles) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, "highlighting"=>{}}, @header={"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Los Angeles) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>1,'params'=>{'json.nl'=>'map','wt'=>'ruby','fl'=>'pk_i,score','q'=>'(Los Angeles) AND (type_s:Location)','qt'=>'standard'}},'response'=>{'numFound'=>0,'start'=>0,'maxScore'=>0.0,'docs'=>[]},'highlighting'=>{}}">
+Thu Apr 01 19:40:00 +0200 2010: sent 121 timeslices (9796829) in 0.882923 seconds
+Thu Apr 01 19:41:00 +0200 2010: sent 6 timeslices (9796829) in 0.815788 seconds
+Thu Apr 01 19:42:00 +0200 2010: sent 6 timeslices (9796829) in 0.817864 seconds
+Thu Apr 01 19:43:00 +0200 2010: sent 6 timeslices (9796829) in 0.847005 seconds
+Thu Apr 01 19:44:00 +0200 2010: sent 6 timeslices (9796829) in 0.816581 seconds
+Thu Apr 01 19:45:00 +0200 2010: sent 6 timeslices (9796829) in 0.825428 seconds
+Thu Apr 01 19:46:00 +0200 2010: sent 6 timeslices (9796829) in 0.814655 seconds
+Thu Apr 01 19:47:00 +0200 2010: sent 6 timeslices (9796829) in 0.847536 seconds
+Thu Apr 01 19:48:00 +0200 2010: sent 6 timeslices (9796829) in 0.818743 seconds
+Thu Apr 01 19:49:00 +0200 2010: sent 6 timeslices (9796829) in 0.818454 seconds
+Thu Apr 01 19:50:00 +0200 2010: sent 6 timeslices (9796829) in 0.816546 seconds
+Thu Apr 01 19:51:00 +0200 2010: sent 6 timeslices (9796829) in 0.820646 seconds
+Thu Apr 01 19:52:00 +0200 2010: sent 6 timeslices (9796829) in 0.816092 seconds
+Thu Apr 01 19:53:00 +0200 2010: sent 6 timeslices (9796829) in 0.827289 seconds
+#<Solr::Response::Standard:0xb5a7ae94 @data={"response"=>{"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, "responseHeader"=>{"QTime"=>0, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Los Angeles) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, "highlighting"=>{}}, @header={"QTime"=>0, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Los Angeles) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>0,'params'=>{'json.nl'=>'map','wt'=>'ruby','fl'=>'pk_i,score','q'=>'(Los Angeles) AND (type_s:Location)','qt'=>'standard'}},'response'=>{'numFound'=>0,'start'=>0,'maxScore'=>0.0,'docs'=>[]},'highlighting'=>{}}">
+Thu Apr 01 19:54:00 +0200 2010: sent 133 timeslices (9796829) in 0.865072 seconds
+Thu Apr 01 19:55:00 +0200 2010: sent 6 timeslices (9796829) in 0.86909 seconds
+#<Solr::Response::Standard:0xb5c8ff2c @data={"response"=>{"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, "responseHeader"=>{"QTime"=>0, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Newmarket) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, "highlighting"=>{}}, @header={"QTime"=>0, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Newmarket) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>0,'params'=>{'json.nl'=>'map','wt'=>'ruby','fl'=>'pk_i,score','q'=>'(Newmarket) AND (type_s:Location)','qt'=>'standard'}},'response'=>{'numFound'=>0,'start'=>0,'maxScore'=>0.0,'docs'=>[]},'highlighting'=>{}}">
+#<Solr::Response::Standard:0xb5c912a0 @data={"response"=>{"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, "responseHeader"=>{"QTime"=>0, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, "highlighting"=>{}}, @header={"QTime"=>0, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>0,'params'=>{'json.nl'=>'map','wt'=>'ruby','fl'=>'pk_i,score','q'=>'(Saint Tropez) AND (type_s:Location)','qt'=>'standard'}},'response'=>{'numFound'=>0,'start'=>0,'maxScore'=>0.0,'docs'=>[]},'highlighting'=>{}}">
+#<Solr::Response::Standard:0xb5b26fdc @data={"response"=>{"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, "responseHeader"=>{"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Los Angeles) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, "highlighting"=>{}}, @header={"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Los Angeles) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>1,'params'=>{'json.nl'=>'map','wt'=>'ruby','fl'=>'pk_i,score','q'=>'(Los Angeles) AND (type_s:Location)','qt'=>'standard'}},'response'=>{'numFound'=>0,'start'=>0,'maxScore'=>0.0,'docs'=>[]},'highlighting'=>{}}">
+Thu Apr 01 19:56:00 +0200 2010: sent 183 timeslices (9796829) in 0.9154 seconds
+Thu Apr 01 19:57:00 +0200 2010: sent 122 timeslices (9796829) in 0.829924 seconds
+Thu Apr 01 19:58:00 +0200 2010: sent 6 timeslices (9796829) in 0.816111 seconds
+Thu Apr 01 19:59:00 +0200 2010: sent 6 timeslices (9796829) in 0.812234 seconds
+Thu Apr 01 20:00:00 +0200 2010: sent 6 timeslices (9796829) in 0.816549 seconds
+#<Solr::Response::Standard:0xb5a7ef44 @data={"response"=>{"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, "responseHeader"=>{"QTime"=>0, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Los Angeles) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, "highlighting"=>{}}, @header={"QTime"=>0, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Los Angeles) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>0,'params'=>{'json.nl'=>'map','wt'=>'ruby','fl'=>'pk_i,score','q'=>'(Los Angeles) AND (type_s:Location)','qt'=>'standard'}},'response'=>{'numFound'=>0,'start'=>0,'maxScore'=>0.0,'docs'=>[]},'highlighting'=>{}}">
+Thu Apr 01 20:01:00 +0200 2010: sent 110 timeslices (9796829) in 0.964183 seconds
+Thu Apr 01 20:02:00 +0200 2010: sent 57 timeslices (9796829) in 0.945195 seconds
+** TERM signal received.
+Thu Apr 01 20:02:31 +0200 2010: sent 46 timeslices (9796829) in 0.817225 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 7895
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+Thu Apr 01 20:03:47 +0200 2010: sent 49 timeslices (9799944) in 0.891533 seconds
+Thu Apr 01 20:04:47 +0200 2010: sent 6 timeslices (9799944) in 0.798096 seconds
+Thu Apr 01 20:05:47 +0200 2010: sent 6 timeslices (9799944) in 0.850905 seconds
+Thu Apr 01 20:06:47 +0200 2010: sent 6 timeslices (9799944) in 0.821662 seconds
+Thu Apr 01 20:07:47 +0200 2010: sent 6 timeslices (9799944) in 0.819059 seconds
+Thu Apr 01 20:08:47 +0200 2010: sent 6 timeslices (9799944) in 0.806408 seconds
+Thu Apr 01 20:09:47 +0200 2010: sent 6 timeslices (9799944) in 0.800363 seconds
+Thu Apr 01 20:10:47 +0200 2010: sent 6 timeslices (9799944) in 0.932033 seconds
+Thu Apr 01 20:11:47 +0200 2010: sent 6 timeslices (9799944) in 1.044021 seconds
+Thu Apr 01 20:12:47 +0200 2010: sent 23 timeslices (9799944) in 0.818144 seconds
+Thu Apr 01 20:13:47 +0200 2010: sent 6 timeslices (9799944) in 0.873183 seconds
+Thu Apr 01 20:14:47 +0200 2010: sent 6 timeslices (9799944) in 0.799546 seconds
+Thu Apr 01 20:15:47 +0200 2010: sent 6 timeslices (9799944) in 0.900557 seconds
+Thu Apr 01 20:16:47 +0200 2010: sent 6 timeslices (9799944) in 1.053644 seconds
+Thu Apr 01 20:17:47 +0200 2010: sent 6 timeslices (9799944) in 0.869595 seconds
+Thu Apr 01 20:18:47 +0200 2010: sent 6 timeslices (9799944) in 0.985154 seconds
+Thu Apr 01 20:19:47 +0200 2010: sent 6 timeslices (9799944) in 1.872889 seconds
+Thu Apr 01 20:20:47 +0200 2010: sent 6 timeslices (9799944) in 0.807514 seconds
+Thu Apr 01 20:22:47 +0200 2010: sent 6 timeslices (9799944) in 120.005226 seconds
+Thu Apr 01 20:25:47 +0200 2010: sent 6 timeslices (9799944) in 1.217216 seconds
+Thu Apr 01 20:26:47 +0200 2010: sent 6 timeslices (9799944) in 0.917123 seconds
+Thu Apr 01 20:27:47 +0200 2010: sent 6 timeslices (9799944) in 0.802684 seconds
+Thu Apr 01 20:28:47 +0200 2010: sent 6 timeslices (9799944) in 0.80135 seconds
+Thu Apr 01 20:29:47 +0200 2010: sent 6 timeslices (9799944) in 0.832911 seconds
+Thu Apr 01 20:30:47 +0200 2010: sent 6 timeslices (9799944) in 0.802039 seconds
+Thu Apr 01 20:31:47 +0200 2010: sent 6 timeslices (9799944) in 0.89467 seconds
+Thu Apr 01 20:32:47 +0200 2010: sent 6 timeslices (9799944) in 0.801841 seconds
+Thu Apr 01 20:33:47 +0200 2010: sent 6 timeslices (9799944) in 0.798811 seconds
+Thu Apr 01 20:34:47 +0200 2010: sent 6 timeslices (9799944) in 0.801636 seconds
+Thu Apr 01 20:35:47 +0200 2010: sent 6 timeslices (9799944) in 1.070663 seconds
+Thu Apr 01 20:36:47 +0200 2010: sent 6 timeslices (9799944) in 0.802691 seconds
+Thu Apr 01 20:37:47 +0200 2010: sent 6 timeslices (9799944) in 0.806418 seconds
+Thu Apr 01 20:38:47 +0200 2010: sent 6 timeslices (9799944) in 0.81181 seconds
+Thu Apr 01 20:39:47 +0200 2010: sent 6 timeslices (9799944) in 0.80791 seconds
+Thu Apr 01 20:40:47 +0200 2010: sent 6 timeslices (9799944) in 1.215459 seconds
+Thu Apr 01 20:41:47 +0200 2010: sent 6 timeslices (9799944) in 0.801294 seconds
+Thu Apr 01 20:42:47 +0200 2010: sent 6 timeslices (9799944) in 0.841657 seconds
+Thu Apr 01 20:43:47 +0200 2010: sent 6 timeslices (9799944) in 1.924492 seconds
+Thu Apr 01 20:44:47 +0200 2010: sent 6 timeslices (9799944) in 1.106785 seconds
+Thu Apr 01 20:45:47 +0200 2010: sent 6 timeslices (9799944) in 0.804011 seconds
+Thu Apr 01 20:46:47 +0200 2010: sent 6 timeslices (9799944) in 0.940194 seconds
+Thu Apr 01 20:47:47 +0200 2010: sent 6 timeslices (9799944) in 0.804965 seconds
+Thu Apr 01 20:48:47 +0200 2010: sent 6 timeslices (9799944) in 0.815907 seconds
+Thu Apr 01 20:49:47 +0200 2010: sent 6 timeslices (9799944) in 0.81156 seconds
+Thu Apr 01 20:50:47 +0200 2010: sent 6 timeslices (9799944) in 0.800069 seconds
+Thu Apr 01 20:51:47 +0200 2010: sent 6 timeslices (9799944) in 0.802599 seconds
+Thu Apr 01 20:52:47 +0200 2010: sent 6 timeslices (9799944) in 0.801803 seconds
+Thu Apr 01 20:53:47 +0200 2010: sent 6 timeslices (9799944) in 0.801538 seconds
+Thu Apr 01 20:54:47 +0200 2010: sent 6 timeslices (9799944) in 0.807549 seconds
+Thu Apr 01 20:55:47 +0200 2010: sent 6 timeslices (9799944) in 1.202168 seconds
+Thu Apr 01 20:56:47 +0200 2010: sent 6 timeslices (9799944) in 0.804332 seconds
+Thu Apr 01 20:57:47 +0200 2010: sent 6 timeslices (9799944) in 0.819286 seconds
+Thu Apr 01 20:58:47 +0200 2010: sent 6 timeslices (9799944) in 0.802776 seconds
+Thu Apr 01 20:59:47 +0200 2010: sent 6 timeslices (9799944) in 0.804461 seconds
+Thu Apr 01 21:00:47 +0200 2010: sent 6 timeslices (9799944) in 0.80729 seconds
+Thu Apr 01 21:01:47 +0200 2010: sent 6 timeslices (9799944) in 0.808383 seconds
+Thu Apr 01 21:02:47 +0200 2010: sent 6 timeslices (9799944) in 0.80455 seconds
+Thu Apr 01 21:03:47 +0200 2010: sent 6 timeslices (9799944) in 0.853948 seconds
+Thu Apr 01 21:04:47 +0200 2010: sent 6 timeslices (9799944) in 0.825302 seconds
+Thu Apr 01 21:05:47 +0200 2010: sent 6 timeslices (9799944) in 0.81306 seconds
+Thu Apr 01 21:06:47 +0200 2010: sent 6 timeslices (9799944) in 0.905138 seconds
+Thu Apr 01 21:07:47 +0200 2010: sent 6 timeslices (9799944) in 0.8127 seconds
+Thu Apr 01 21:08:47 +0200 2010: sent 6 timeslices (9799944) in 0.804471 seconds
+Thu Apr 01 21:09:47 +0200 2010: sent 6 timeslices (9799944) in 0.803057 seconds
+Thu Apr 01 21:10:47 +0200 2010: sent 6 timeslices (9799944) in 0.802307 seconds
+Thu Apr 01 21:11:47 +0200 2010: sent 6 timeslices (9799944) in 0.912654 seconds
+Thu Apr 01 21:12:47 +0200 2010: sent 6 timeslices (9799944) in 0.811579 seconds
+Thu Apr 01 21:13:47 +0200 2010: sent 6 timeslices (9799944) in 0.892181 seconds
+Thu Apr 01 21:14:47 +0200 2010: sent 6 timeslices (9799944) in 1.070399 seconds
+Thu Apr 01 21:15:47 +0200 2010: sent 6 timeslices (9799944) in 0.814595 seconds
+Thu Apr 01 21:16:47 +0200 2010: sent 6 timeslices (9799944) in 1.190094 seconds
+Thu Apr 01 21:17:47 +0200 2010: sent 6 timeslices (9799944) in 1.093707 seconds
+Thu Apr 01 21:18:47 +0200 2010: sent 6 timeslices (9799944) in 1.149308 seconds
+Thu Apr 01 21:19:47 +0200 2010: sent 6 timeslices (9799944) in 2.574841 seconds
+Thu Apr 01 21:20:47 +0200 2010: sent 6 timeslices (9799944) in 2.887677 seconds
+Thu Apr 01 21:21:47 +0200 2010: sent 6 timeslices (9799944) in 1.527798 seconds
+Thu Apr 01 21:22:47 +0200 2010: sent 6 timeslices (9799944) in 1.129058 seconds
+Thu Apr 01 21:23:47 +0200 2010: sent 6 timeslices (9799944) in 1.199026 seconds
+Thu Apr 01 21:24:47 +0200 2010: sent 6 timeslices (9799944) in 2.566187 seconds
+Thu Apr 01 21:25:47 +0200 2010: sent 6 timeslices (9799944) in 1.08098 seconds
+Thu Apr 01 21:26:47 +0200 2010: sent 6 timeslices (9799944) in 1.07567 seconds
+Thu Apr 01 21:27:47 +0200 2010: sent 6 timeslices (9799944) in 1.082205 seconds
+Thu Apr 01 21:28:47 +0200 2010: sent 6 timeslices (9799944) in 1.034772 seconds
+Thu Apr 01 21:29:47 +0200 2010: sent 6 timeslices (9799944) in 1.04383 seconds
+Thu Apr 01 21:30:47 +0200 2010: sent 6 timeslices (9799944) in 1.168322 seconds
+Thu Apr 01 21:31:47 +0200 2010: sent 6 timeslices (9799944) in 1.289576 seconds
+Thu Apr 01 21:32:47 +0200 2010: sent 6 timeslices (9799944) in 1.129574 seconds
+Thu Apr 01 21:33:47 +0200 2010: sent 6 timeslices (9799944) in 1.33065 seconds
+Thu Apr 01 21:34:47 +0200 2010: sent 6 timeslices (9799944) in 1.167554 seconds
+Thu Apr 01 21:35:47 +0200 2010: sent 6 timeslices (9799944) in 4.347282 seconds
+Thu Apr 01 21:36:47 +0200 2010: sent 6 timeslices (9799944) in 1.144173 seconds
+Thu Apr 01 21:37:47 +0200 2010: sent 6 timeslices (9799944) in 3.484594 seconds
+Thu Apr 01 21:38:47 +0200 2010: sent 6 timeslices (9799944) in 1.085816 seconds
+Thu Apr 01 21:39:47 +0200 2010: sent 6 timeslices (9799944) in 1.230522 seconds
+Thu Apr 01 21:40:47 +0200 2010: sent 6 timeslices (9799944) in 1.066053 seconds
+Thu Apr 01 21:41:47 +0200 2010: sent 6 timeslices (9799944) in 1.088132 seconds
+Thu Apr 01 21:42:47 +0200 2010: sent 6 timeslices (9799944) in 2.585755 seconds
+Thu Apr 01 21:43:47 +0200 2010: sent 6 timeslices (9799944) in 1.221559 seconds
+Thu Apr 01 21:44:47 +0200 2010: sent 6 timeslices (9799944) in 1.237023 seconds
+Thu Apr 01 21:45:47 +0200 2010: sent 6 timeslices (9799944) in 1.240584 seconds
+Thu Apr 01 21:46:47 +0200 2010: sent 6 timeslices (9799944) in 1.380135 seconds
+Thu Apr 01 21:47:47 +0200 2010: sent 6 timeslices (9799944) in 1.14062 seconds
+Thu Apr 01 21:48:47 +0200 2010: sent 6 timeslices (9799944) in 4.073186 seconds
+Thu Apr 01 21:49:47 +0200 2010: sent 6 timeslices (9799944) in 1.474135 seconds
+Thu Apr 01 21:50:47 +0200 2010: sent 6 timeslices (9799944) in 1.28773 seconds
+Thu Apr 01 21:51:47 +0200 2010: sent 6 timeslices (9799944) in 1.134538 seconds
+Thu Apr 01 21:52:47 +0200 2010: sent 6 timeslices (9799944) in 1.356896 seconds
+Thu Apr 01 21:53:47 +0200 2010: sent 6 timeslices (9799944) in 1.20508 seconds
+Thu Apr 01 21:54:47 +0200 2010: sent 6 timeslices (9799944) in 1.23822 seconds
+Thu Apr 01 21:55:47 +0200 2010: sent 6 timeslices (9799944) in 1.383876 seconds
+Thu Apr 01 21:56:47 +0200 2010: sent 6 timeslices (9799944) in 1.030991 seconds
+Thu Apr 01 21:57:47 +0200 2010: sent 6 timeslices (9799944) in 1.102357 seconds
+Thu Apr 01 21:58:47 +0200 2010: sent 6 timeslices (9799944) in 1.286241 seconds
+Thu Apr 01 21:59:47 +0200 2010: sent 6 timeslices (9799944) in 1.374342 seconds
+Thu Apr 01 22:00:47 +0200 2010: sent 6 timeslices (9799944) in 1.185743 seconds
+Thu Apr 01 22:01:47 +0200 2010: sent 6 timeslices (9799944) in 1.168297 seconds
+Thu Apr 01 22:02:47 +0200 2010: sent 6 timeslices (9799944) in 1.205643 seconds
+Thu Apr 01 22:03:47 +0200 2010: sent 6 timeslices (9799944) in 1.279158 seconds
+Thu Apr 01 22:04:47 +0200 2010: sent 6 timeslices (9799944) in 1.117401 seconds
+Thu Apr 01 22:05:47 +0200 2010: sent 6 timeslices (9799944) in 1.131216 seconds
+Thu Apr 01 22:06:47 +0200 2010: sent 6 timeslices (9799944) in 1.01437 seconds
+Thu Apr 01 22:07:47 +0200 2010: sent 6 timeslices (9799944) in 1.263377 seconds
+Thu Apr 01 22:08:47 +0200 2010: sent 6 timeslices (9799944) in 2.955041 seconds
+Thu Apr 01 22:09:47 +0200 2010: sent 6 timeslices (9799944) in 1.225179 seconds
+Thu Apr 01 22:10:47 +0200 2010: sent 6 timeslices (9799944) in 1.345269 seconds
+Thu Apr 01 22:11:47 +0200 2010: sent 6 timeslices (9799944) in 2.658853 seconds
+Thu Apr 01 22:12:47 +0200 2010: sent 6 timeslices (9799944) in 4.098992 seconds
+Thu Apr 01 22:13:47 +0200 2010: sent 6 timeslices (9799944) in 1.215601 seconds
+Thu Apr 01 22:14:47 +0200 2010: sent 6 timeslices (9799944) in 1.198997 seconds
+Thu Apr 01 22:15:47 +0200 2010: sent 6 timeslices (9799944) in 1.396794 seconds
+Thu Apr 01 22:16:47 +0200 2010: sent 6 timeslices (9799944) in 1.138411 seconds
+Thu Apr 01 22:17:47 +0200 2010: sent 6 timeslices (9799944) in 1.261009 seconds
+Thu Apr 01 22:18:47 +0200 2010: sent 6 timeslices (9799944) in 1.214713 seconds
+Thu Apr 01 22:19:47 +0200 2010: sent 6 timeslices (9799944) in 1.491093 seconds
+Thu Apr 01 22:20:47 +0200 2010: sent 6 timeslices (9799944) in 1.54391 seconds
+Thu Apr 01 22:21:47 +0200 2010: sent 6 timeslices (9799944) in 3.233015 seconds
+Thu Apr 01 22:22:47 +0200 2010: sent 6 timeslices (9799944) in 1.247939 seconds
+Thu Apr 01 22:23:47 +0200 2010: sent 6 timeslices (9799944) in 2.922067 seconds
+Thu Apr 01 22:24:47 +0200 2010: sent 6 timeslices (9799944) in 1.104752 seconds
+Thu Apr 01 22:25:47 +0200 2010: sent 6 timeslices (9799944) in 2.133956 seconds
+Thu Apr 01 22:26:47 +0200 2010: sent 6 timeslices (9799944) in 1.536425 seconds
+Thu Apr 01 22:27:47 +0200 2010: sent 6 timeslices (9799944) in 0.899585 seconds
+Thu Apr 01 22:28:47 +0200 2010: sent 6 timeslices (9799944) in 3.440985 seconds
+Thu Apr 01 22:29:47 +0200 2010: sent 6 timeslices (9799944) in 1.438505 seconds
+Thu Apr 01 22:30:47 +0200 2010: sent 6 timeslices (9799944) in 1.031407 seconds
+Thu Apr 01 22:31:47 +0200 2010: sent 6 timeslices (9799944) in 0.909757 seconds
+Thu Apr 01 22:32:47 +0200 2010: sent 6 timeslices (9799944) in 4.308921 seconds
+Thu Apr 01 22:33:47 +0200 2010: sent 6 timeslices (9799944) in 1.475367 seconds
+Thu Apr 01 22:34:47 +0200 2010: sent 6 timeslices (9799944) in 10.430576 seconds
+Thu Apr 01 22:35:47 +0200 2010: sent 6 timeslices (9799944) in 1.345574 seconds
+Thu Apr 01 22:36:47 +0200 2010: sent 6 timeslices (9799944) in 0.88547 seconds
+Thu Apr 01 22:37:47 +0200 2010: sent 6 timeslices (9799944) in 2.874585 seconds
+Thu Apr 01 22:38:47 +0200 2010: sent 6 timeslices (9799944) in 0.957586 seconds
+Thu Apr 01 22:39:47 +0200 2010: sent 6 timeslices (9799944) in 1.273113 seconds
+Thu Apr 01 22:40:47 +0200 2010: sent 6 timeslices (9799944) in 1.125133 seconds
+Thu Apr 01 22:41:47 +0200 2010: sent 6 timeslices (9799944) in 0.930026 seconds
+Thu Apr 01 22:42:47 +0200 2010: sent 6 timeslices (9799944) in 0.87928 seconds
+Thu Apr 01 22:43:47 +0200 2010: sent 6 timeslices (9799944) in 0.940868 seconds
+Thu Apr 01 22:44:47 +0200 2010: sent 6 timeslices (9799944) in 0.826471 seconds
+Thu Apr 01 22:45:47 +0200 2010: sent 6 timeslices (9799944) in 1.029159 seconds
+Thu Apr 01 22:46:47 +0200 2010: sent 6 timeslices (9799944) in 1.015789 seconds
+Thu Apr 01 22:47:47 +0200 2010: sent 6 timeslices (9799944) in 0.98813 seconds
+Thu Apr 01 22:48:47 +0200 2010: sent 6 timeslices (9799944) in 1.077918 seconds
+Thu Apr 01 22:49:47 +0200 2010: sent 6 timeslices (9799944) in 0.920851 seconds
+Thu Apr 01 22:50:47 +0200 2010: sent 6 timeslices (9799944) in 0.93847 seconds
+Thu Apr 01 22:51:47 +0200 2010: sent 6 timeslices (9799944) in 0.8079 seconds
+Thu Apr 01 22:52:47 +0200 2010: sent 6 timeslices (9799944) in 0.80607 seconds
+Thu Apr 01 22:53:47 +0200 2010: sent 6 timeslices (9799944) in 0.803404 seconds
+Thu Apr 01 22:54:47 +0200 2010: sent 6 timeslices (9799944) in 0.807043 seconds
+Thu Apr 01 22:55:47 +0200 2010: sent 6 timeslices (9799944) in 0.933037 seconds
+Thu Apr 01 22:56:47 +0200 2010: sent 6 timeslices (9799944) in 0.801423 seconds
+Thu Apr 01 22:57:47 +0200 2010: sent 6 timeslices (9799944) in 0.818726 seconds
+Thu Apr 01 22:58:47 +0200 2010: sent 6 timeslices (9799944) in 0.803581 seconds
+Thu Apr 01 22:59:47 +0200 2010: sent 6 timeslices (9799944) in 0.803403 seconds
+Thu Apr 01 23:00:47 +0200 2010: sent 6 timeslices (9799944) in 0.860065 seconds
+Thu Apr 01 23:01:47 +0200 2010: sent 6 timeslices (9799944) in 0.805032 seconds
+Thu Apr 01 23:02:47 +0200 2010: sent 6 timeslices (9799944) in 0.803611 seconds
+Thu Apr 01 23:03:47 +0200 2010: sent 6 timeslices (9799944) in 0.814398 seconds
+Thu Apr 01 23:04:47 +0200 2010: sent 6 timeslices (9799944) in 0.800269 seconds
+Thu Apr 01 23:05:47 +0200 2010: sent 6 timeslices (9799944) in 0.812995 seconds
+Thu Apr 01 23:06:47 +0200 2010: sent 6 timeslices (9799944) in 0.808421 seconds
+Thu Apr 01 23:07:47 +0200 2010: sent 6 timeslices (9799944) in 0.809602 seconds
+Thu Apr 01 23:08:47 +0200 2010: sent 6 timeslices (9799944) in 0.891747 seconds
+Thu Apr 01 23:09:47 +0200 2010: sent 6 timeslices (9799944) in 0.893917 seconds
+Thu Apr 01 23:10:47 +0200 2010: sent 6 timeslices (9799944) in 0.810393 seconds
+Thu Apr 01 23:11:47 +0200 2010: sent 6 timeslices (9799944) in 0.823841 seconds
+Thu Apr 01 23:12:47 +0200 2010: sent 6 timeslices (9799944) in 0.813557 seconds
+Thu Apr 01 23:13:47 +0200 2010: sent 6 timeslices (9799944) in 0.800808 seconds
+Thu Apr 01 23:14:47 +0200 2010: sent 6 timeslices (9799944) in 0.811067 seconds
+Thu Apr 01 23:15:47 +0200 2010: sent 6 timeslices (9799944) in 0.860795 seconds
+Thu Apr 01 23:16:47 +0200 2010: sent 6 timeslices (9799944) in 0.798991 seconds
+Thu Apr 01 23:17:47 +0200 2010: sent 6 timeslices (9799944) in 0.802499 seconds
+Thu Apr 01 23:18:47 +0200 2010: sent 6 timeslices (9799944) in 0.93606 seconds
+Thu Apr 01 23:19:47 +0200 2010: sent 6 timeslices (9799944) in 0.940855 seconds
+Thu Apr 01 23:20:47 +0200 2010: sent 6 timeslices (9799944) in 0.846297 seconds
+Thu Apr 01 23:21:47 +0200 2010: sent 6 timeslices (9799944) in 0.815429 seconds
+Thu Apr 01 23:22:47 +0200 2010: sent 6 timeslices (9799944) in 0.884282 seconds
+Thu Apr 01 23:23:47 +0200 2010: sent 6 timeslices (9799944) in 0.843334 seconds
+Thu Apr 01 23:24:47 +0200 2010: sent 6 timeslices (9799944) in 1.873148 seconds
+Thu Apr 01 23:25:47 +0200 2010: sent 6 timeslices (9799944) in 0.834439 seconds
+Thu Apr 01 23:26:47 +0200 2010: sent 6 timeslices (9799944) in 0.901302 seconds
+Thu Apr 01 23:27:47 +0200 2010: sent 6 timeslices (9799944) in 0.933006 seconds
+Thu Apr 01 23:28:47 +0200 2010: sent 6 timeslices (9799944) in 0.802315 seconds
+Thu Apr 01 23:29:47 +0200 2010: sent 6 timeslices (9799944) in 0.944357 seconds
+Thu Apr 01 23:30:47 +0200 2010: sent 6 timeslices (9799944) in 0.805732 seconds
+Thu Apr 01 23:31:47 +0200 2010: sent 6 timeslices (9799944) in 1.239082 seconds
+Thu Apr 01 23:32:47 +0200 2010: sent 6 timeslices (9799944) in 0.815341 seconds
+Thu Apr 01 23:33:47 +0200 2010: sent 6 timeslices (9799944) in 0.806293 seconds
+Thu Apr 01 23:34:47 +0200 2010: sent 6 timeslices (9799944) in 0.802545 seconds
+Thu Apr 01 23:35:47 +0200 2010: sent 6 timeslices (9799944) in 0.820378 seconds
+Thu Apr 01 23:36:47 +0200 2010: sent 6 timeslices (9799944) in 0.799291 seconds
+Thu Apr 01 23:37:47 +0200 2010: sent 6 timeslices (9799944) in 1.27185 seconds
+Thu Apr 01 23:38:47 +0200 2010: sent 6 timeslices (9799944) in 0.81165 seconds
+Thu Apr 01 23:39:47 +0200 2010: sent 6 timeslices (9799944) in 1.390942 seconds
+Thu Apr 01 23:40:47 +0200 2010: sent 6 timeslices (9799944) in 1.588985 seconds
+Thu Apr 01 23:41:47 +0200 2010: sent 6 timeslices (9799944) in 1.085743 seconds
+Thu Apr 01 23:42:47 +0200 2010: sent 6 timeslices (9799944) in 2.789413 seconds
+Thu Apr 01 23:43:47 +0200 2010: sent 6 timeslices (9799944) in 2.724198 seconds
+Thu Apr 01 23:44:47 +0200 2010: sent 6 timeslices (9799944) in 1.328098 seconds
+Thu Apr 01 23:45:47 +0200 2010: sent 6 timeslices (9799944) in 1.26587 seconds
+Thu Apr 01 23:46:47 +0200 2010: sent 6 timeslices (9799944) in 1.22342 seconds
+Thu Apr 01 23:47:47 +0200 2010: sent 6 timeslices (9799944) in 6.340548 seconds
+Thu Apr 01 23:48:47 +0200 2010: sent 6 timeslices (9799944) in 1.273206 seconds
+Thu Apr 01 23:49:47 +0200 2010: sent 6 timeslices (9799944) in 2.857566 seconds
+Thu Apr 01 23:50:47 +0200 2010: sent 6 timeslices (9799944) in 1.184377 seconds
+Thu Apr 01 23:51:47 +0200 2010: sent 6 timeslices (9799944) in 5.038964 seconds
+Thu Apr 01 23:52:47 +0200 2010: sent 6 timeslices (9799944) in 2.568544 seconds
+Thu Apr 01 23:53:47 +0200 2010: sent 6 timeslices (9799944) in 2.462855 seconds
+Thu Apr 01 23:54:47 +0200 2010: sent 6 timeslices (9799944) in 1.302405 seconds
+Thu Apr 01 23:55:47 +0200 2010: sent 6 timeslices (9799944) in 1.114989 seconds
+Thu Apr 01 23:56:47 +0200 2010: sent 6 timeslices (9799944) in 2.458454 seconds
+Thu Apr 01 23:57:47 +0200 2010: sent 6 timeslices (9799944) in 1.394075 seconds
+Thu Apr 01 23:58:47 +0200 2010: sent 6 timeslices (9799944) in 4.270638 seconds
+Thu Apr 01 23:59:47 +0200 2010: sent 6 timeslices (9799944) in 1.327619 seconds
+Fri Apr 02 00:00:47 +0200 2010: sent 6 timeslices (9799944) in 6.067788 seconds
+Fri Apr 02 00:01:47 +0200 2010: sent 6 timeslices (9799944) in 6.94801 seconds
+Fri Apr 02 00:02:47 +0200 2010: sent 6 timeslices (9799944) in 1.136711 seconds
+Fri Apr 02 00:03:47 +0200 2010: sent 6 timeslices (9799944) in 1.250828 seconds
+Fri Apr 02 00:04:47 +0200 2010: sent 6 timeslices (9799944) in 12.566739 seconds
+Fri Apr 02 00:05:47 +0200 2010: sent 6 timeslices (9799944) in 1.130849 seconds
+Fri Apr 02 00:06:47 +0200 2010: sent 6 timeslices (9799944) in 1.326583 seconds
+Fri Apr 02 00:07:47 +0200 2010: sent 6 timeslices (9799944) in 1.141371 seconds
+Fri Apr 02 00:08:47 +0200 2010: sent 6 timeslices (9799944) in 1.38952 seconds
+Fri Apr 02 00:09:47 +0200 2010: sent 6 timeslices (9799944) in 3.184427 seconds
+Fri Apr 02 00:10:47 +0200 2010: sent 6 timeslices (9799944) in 1.530396 seconds
+Fri Apr 02 00:11:47 +0200 2010: sent 6 timeslices (9799944) in 2.719758 seconds
+Fri Apr 02 00:12:47 +0200 2010: sent 6 timeslices (9799944) in 1.350483 seconds
+Fri Apr 02 00:13:47 +0200 2010: sent 6 timeslices (9799944) in 4.20774 seconds
+Fri Apr 02 00:14:47 +0200 2010: sent 6 timeslices (9799944) in 1.267822 seconds
+Fri Apr 02 00:15:47 +0200 2010: sent 6 timeslices (9799944) in 1.314453 seconds
+Fri Apr 02 00:16:47 +0200 2010: sent 6 timeslices (9799944) in 1.146192 seconds
+Fri Apr 02 00:17:47 +0200 2010: sent 6 timeslices (9799944) in 1.45797 seconds
+Fri Apr 02 00:18:47 +0200 2010: sent 6 timeslices (9799944) in 3.0515 seconds
+Fri Apr 02 00:19:47 +0200 2010: sent 6 timeslices (9799944) in 1.384941 seconds
+Fri Apr 02 00:20:47 +0200 2010: sent 6 timeslices (9799944) in 2.802899 seconds
+Fri Apr 02 00:21:47 +0200 2010: sent 6 timeslices (9799944) in 5.731483 seconds
+Fri Apr 02 00:22:47 +0200 2010: sent 6 timeslices (9799944) in 5.051379 seconds
+Fri Apr 02 00:23:47 +0200 2010: sent 6 timeslices (9799944) in 5.450147 seconds
+Fri Apr 02 00:24:47 +0200 2010: sent 6 timeslices (9799944) in 10.220879 seconds
+Fri Apr 02 00:25:47 +0200 2010: sent 6 timeslices (9799944) in 2.891763 seconds
+Fri Apr 02 00:26:47 +0200 2010: sent 6 timeslices (9799944) in 1.199652 seconds
+Fri Apr 02 00:27:47 +0200 2010: sent 6 timeslices (9799944) in 4.332979 seconds
+Fri Apr 02 00:28:47 +0200 2010: sent 6 timeslices (9799944) in 10.412726 seconds
+Fri Apr 02 00:29:47 +0200 2010: sent 6 timeslices (9799944) in 3.000556 seconds
+Fri Apr 02 00:30:47 +0200 2010: sent 6 timeslices (9799944) in 1.050063 seconds
+Fri Apr 02 00:31:47 +0200 2010: sent 6 timeslices (9799944) in 2.545006 seconds
+Fri Apr 02 00:32:47 +0200 2010: sent 6 timeslices (9799944) in 2.471979 seconds
+Fri Apr 02 00:33:47 +0200 2010: sent 6 timeslices (9799944) in 3.754512 seconds
+Fri Apr 02 00:34:47 +0200 2010: sent 6 timeslices (9799944) in 13.83051 seconds
+Fri Apr 02 00:35:47 +0200 2010: sent 6 timeslices (9799944) in 2.264113 seconds
+Fri Apr 02 00:36:47 +0200 2010: sent 6 timeslices (9799944) in 1.071465 seconds
+Fri Apr 02 00:37:47 +0200 2010: sent 6 timeslices (9799944) in 3.163713 seconds
+Fri Apr 02 00:38:47 +0200 2010: sent 6 timeslices (9799944) in 7.749114 seconds
+Fri Apr 02 00:39:47 +0200 2010: sent 6 timeslices (9799944) in 4.451997 seconds
+Fri Apr 02 00:40:47 +0200 2010: sent 6 timeslices (9799944) in 2.79154 seconds
+Fri Apr 02 00:41:47 +0200 2010: sent 6 timeslices (9799944) in 1.246517 seconds
+Fri Apr 02 00:42:47 +0200 2010: sent 6 timeslices (9799944) in 2.31349 seconds
+Fri Apr 02 00:43:47 +0200 2010: sent 6 timeslices (9799944) in 9.613502 seconds
+Fri Apr 02 00:44:47 +0200 2010: sent 6 timeslices (9799944) in 1.446757 seconds
+Fri Apr 02 00:45:47 +0200 2010: sent 6 timeslices (9799944) in 1.381505 seconds
+Fri Apr 02 00:46:47 +0200 2010: sent 6 timeslices (9799944) in 1.366641 seconds
+Fri Apr 02 00:47:47 +0200 2010: sent 6 timeslices (9799944) in 7.894239 seconds
+Fri Apr 02 00:48:47 +0200 2010: sent 6 timeslices (9799944) in 12.132852 seconds
+Fri Apr 02 00:49:47 +0200 2010: sent 6 timeslices (9799944) in 2.741206 seconds
+Fri Apr 02 00:50:47 +0200 2010: sent 6 timeslices (9799944) in 1.226352 seconds
+Fri Apr 02 00:51:47 +0200 2010: sent 6 timeslices (9799944) in 1.313167 seconds
+Fri Apr 02 00:52:47 +0200 2010: sent 6 timeslices (9799944) in 5.636011 seconds
+Fri Apr 02 00:53:47 +0200 2010: sent 6 timeslices (9799944) in 1.253318 seconds
+Fri Apr 02 00:54:47 +0200 2010: sent 6 timeslices (9799944) in 2.328703 seconds
+Fri Apr 02 00:55:47 +0200 2010: sent 6 timeslices (9799944) in 1.385154 seconds
+Fri Apr 02 00:56:47 +0200 2010: sent 6 timeslices (9799944) in 2.584837 seconds
+Fri Apr 02 00:57:47 +0200 2010: sent 6 timeslices (9799944) in 16.435593 seconds
+Fri Apr 02 00:58:47 +0200 2010: sent 6 timeslices (9799944) in 3.115261 seconds
+Fri Apr 02 00:59:47 +0200 2010: sent 6 timeslices (9799944) in 1.059764 seconds
+Fri Apr 02 01:00:47 +0200 2010: sent 6 timeslices (9799944) in 1.604177 seconds
+Fri Apr 02 01:01:47 +0200 2010: sent 6 timeslices (9799944) in 1.340288 seconds
+Fri Apr 02 01:02:47 +0200 2010: sent 6 timeslices (9799944) in 2.850787 seconds
+Fri Apr 02 01:03:47 +0200 2010: sent 6 timeslices (9799944) in 1.263443 seconds
+Fri Apr 02 01:04:47 +0200 2010: sent 6 timeslices (9799944) in 1.534056 seconds
+Fri Apr 02 01:05:47 +0200 2010: sent 6 timeslices (9799944) in 1.418694 seconds
+Fri Apr 02 01:06:47 +0200 2010: sent 6 timeslices (9799944) in 4.641225 seconds
+Fri Apr 02 01:07:47 +0200 2010: sent 6 timeslices (9799944) in 1.435922 seconds
+Fri Apr 02 01:08:47 +0200 2010: sent 6 timeslices (9799944) in 1.152891 seconds
+Fri Apr 02 01:09:47 +0200 2010: sent 6 timeslices (9799944) in 3.048697 seconds
+Fri Apr 02 01:10:47 +0200 2010: sent 6 timeslices (9799944) in 3.550973 seconds
+Fri Apr 02 01:11:47 +0200 2010: sent 6 timeslices (9799944) in 1.445733 seconds
+Fri Apr 02 01:12:47 +0200 2010: sent 6 timeslices (9799944) in 1.467477 seconds
+Fri Apr 02 01:13:47 +0200 2010: sent 6 timeslices (9799944) in 1.650633 seconds
+Fri Apr 02 01:14:47 +0200 2010: sent 6 timeslices (9799944) in 3.600872 seconds
+Fri Apr 02 01:15:47 +0200 2010: sent 6 timeslices (9799944) in 3.58675 seconds
+Fri Apr 02 01:16:47 +0200 2010: sent 6 timeslices (9799944) in 1.47542 seconds
+Fri Apr 02 01:17:47 +0200 2010: sent 6 timeslices (9799944) in 1.628894 seconds
+Fri Apr 02 01:18:47 +0200 2010: sent 6 timeslices (9799944) in 7.973792 seconds
+Fri Apr 02 01:19:47 +0200 2010: sent 6 timeslices (9799944) in 1.388961 seconds
+Fri Apr 02 01:20:47 +0200 2010: sent 6 timeslices (9799944) in 1.486193 seconds
+Fri Apr 02 01:21:47 +0200 2010: sent 6 timeslices (9799944) in 4.77656 seconds
+Fri Apr 02 01:22:47 +0200 2010: sent 6 timeslices (9799944) in 3.137007 seconds
+Fri Apr 02 01:23:47 +0200 2010: sent 6 timeslices (9799944) in 3.228011 seconds
+Fri Apr 02 01:24:47 +0200 2010: sent 6 timeslices (9799944) in 1.455602 seconds
+Fri Apr 02 01:25:47 +0200 2010: sent 6 timeslices (9799944) in 3.754693 seconds
+Fri Apr 02 01:26:47 +0200 2010: sent 6 timeslices (9799944) in 1.236052 seconds
+Fri Apr 02 01:27:47 +0200 2010: sent 6 timeslices (9799944) in 1.733673 seconds
+Fri Apr 02 01:28:47 +0200 2010: sent 6 timeslices (9799944) in 1.896919 seconds
+Fri Apr 02 01:29:47 +0200 2010: sent 6 timeslices (9799944) in 3.362182 seconds
+Fri Apr 02 01:30:47 +0200 2010: sent 6 timeslices (9799944) in 4.437003 seconds
+Fri Apr 02 01:31:47 +0200 2010: sent 6 timeslices (9799944) in 1.76242 seconds
+Fri Apr 02 01:32:47 +0200 2010: sent 6 timeslices (9799944) in 1.646632 seconds
+Fri Apr 02 01:33:47 +0200 2010: sent 6 timeslices (9799944) in 1.765134 seconds
+Fri Apr 02 01:34:47 +0200 2010: sent 6 timeslices (9799944) in 1.662871 seconds
+Fri Apr 02 01:35:47 +0200 2010: sent 6 timeslices (9799944) in 2.867535 seconds
+Fri Apr 02 01:36:47 +0200 2010: sent 6 timeslices (9799944) in 3.568399 seconds
+Fri Apr 02 01:37:47 +0200 2010: sent 6 timeslices (9799944) in 4.596421 seconds
+Fri Apr 02 01:38:47 +0200 2010: sent 6 timeslices (9799944) in 3.929464 seconds
+Fri Apr 02 01:39:47 +0200 2010: sent 6 timeslices (9799944) in 1.755443 seconds
+Fri Apr 02 01:40:47 +0200 2010: sent 6 timeslices (9799944) in 1.115213 seconds
+Fri Apr 02 01:41:47 +0200 2010: sent 6 timeslices (9799944) in 6.056518 seconds
+Fri Apr 02 01:42:47 +0200 2010: sent 6 timeslices (9799944) in 7.095506 seconds
+Fri Apr 02 01:43:47 +0200 2010: sent 6 timeslices (9799944) in 1.561635 seconds
+Fri Apr 02 01:44:47 +0200 2010: sent 6 timeslices (9799944) in 1.415576 seconds
+Fri Apr 02 01:45:47 +0200 2010: sent 6 timeslices (9799944) in 2.891233 seconds
+Fri Apr 02 01:46:47 +0200 2010: sent 6 timeslices (9799944) in 4.189491 seconds
+Fri Apr 02 01:47:47 +0200 2010: sent 6 timeslices (9799944) in 3.352454 seconds
+Fri Apr 02 01:48:47 +0200 2010: sent 6 timeslices (9799944) in 1.429902 seconds
+Fri Apr 02 01:49:47 +0200 2010: sent 6 timeslices (9799944) in 1.389812 seconds
+Fri Apr 02 01:50:47 +0200 2010: sent 6 timeslices (9799944) in 4.861121 seconds
+Fri Apr 02 01:51:47 +0200 2010: sent 6 timeslices (9799944) in 1.304991 seconds
+Fri Apr 02 01:52:47 +0200 2010: sent 6 timeslices (9799944) in 1.323615 seconds
+Fri Apr 02 01:53:47 +0200 2010: sent 6 timeslices (9799944) in 1.606714 seconds
+Fri Apr 02 01:54:47 +0200 2010: sent 6 timeslices (9799944) in 4.517652 seconds
+Fri Apr 02 01:55:47 +0200 2010: sent 6 timeslices (9799944) in 1.229265 seconds
+Fri Apr 02 01:56:47 +0200 2010: sent 6 timeslices (9799944) in 1.2942 seconds
+Fri Apr 02 01:57:47 +0200 2010: sent 6 timeslices (9799944) in 3.313578 seconds
+Fri Apr 02 01:58:47 +0200 2010: sent 6 timeslices (9799944) in 1.522082 seconds
+Fri Apr 02 01:59:47 +0200 2010: sent 6 timeslices (9799944) in 1.205718 seconds
+Fri Apr 02 02:00:47 +0200 2010: sent 6 timeslices (9799944) in 3.221422 seconds
+Fri Apr 02 02:01:47 +0200 2010: sent 6 timeslices (9799944) in 3.393204 seconds
+Fri Apr 02 02:02:47 +0200 2010: sent 6 timeslices (9799944) in 1.572344 seconds
+Fri Apr 02 02:03:47 +0200 2010: sent 6 timeslices (9799944) in 1.420733 seconds
+Fri Apr 02 02:04:47 +0200 2010: sent 6 timeslices (9799944) in 1.257946 seconds
+Fri Apr 02 02:05:47 +0200 2010: sent 6 timeslices (9799944) in 1.539831 seconds
+Fri Apr 02 02:06:47 +0200 2010: sent 6 timeslices (9799944) in 1.411201 seconds
+Fri Apr 02 02:07:47 +0200 2010: sent 6 timeslices (9799944) in 4.001837 seconds
+Fri Apr 02 02:08:47 +0200 2010: sent 6 timeslices (9799944) in 3.83459 seconds
+Fri Apr 02 02:09:47 +0200 2010: sent 6 timeslices (9799944) in 7.504521 seconds
+Fri Apr 02 02:10:47 +0200 2010: sent 6 timeslices (9799944) in 1.558994 seconds
+Fri Apr 02 02:11:47 +0200 2010: sent 6 timeslices (9799944) in 1.391253 seconds
+Fri Apr 02 02:12:47 +0200 2010: sent 6 timeslices (9799944) in 1.459966 seconds
+Fri Apr 02 02:13:47 +0200 2010: sent 6 timeslices (9799944) in 1.454637 seconds
+Fri Apr 02 02:14:47 +0200 2010: sent 6 timeslices (9799944) in 1.501905 seconds
+Fri Apr 02 02:15:47 +0200 2010: sent 6 timeslices (9799944) in 4.238806 seconds
+Fri Apr 02 02:16:47 +0200 2010: sent 6 timeslices (9799944) in 3.208662 seconds
+Fri Apr 02 02:17:47 +0200 2010: sent 6 timeslices (9799944) in 1.737004 seconds
+Fri Apr 02 02:18:47 +0200 2010: sent 6 timeslices (9799944) in 1.357089 seconds
+Fri Apr 02 02:19:47 +0200 2010: sent 6 timeslices (9799944) in 1.501827 seconds
+Fri Apr 02 02:20:47 +0200 2010: sent 6 timeslices (9799944) in 3.41049 seconds
+Fri Apr 02 02:21:47 +0200 2010: sent 6 timeslices (9799944) in 3.679551 seconds
+Fri Apr 02 02:22:47 +0200 2010: sent 6 timeslices (9799944) in 4.127593 seconds
+Fri Apr 02 02:23:47 +0200 2010: sent 6 timeslices (9799944) in 1.515173 seconds
+Fri Apr 02 02:24:47 +0200 2010: sent 6 timeslices (9799944) in 1.451666 seconds
+Fri Apr 02 02:25:47 +0200 2010: sent 6 timeslices (9799944) in 5.808274 seconds
+Fri Apr 02 02:26:47 +0200 2010: sent 6 timeslices (9799944) in 1.20075 seconds
+Fri Apr 02 02:27:47 +0200 2010: sent 6 timeslices (9799944) in 1.60545 seconds
+Fri Apr 02 02:28:47 +0200 2010: sent 6 timeslices (9799944) in 3.582602 seconds
+Fri Apr 02 02:29:47 +0200 2010: sent 6 timeslices (9799944) in 4.637988 seconds
+Fri Apr 02 02:30:47 +0200 2010: sent 6 timeslices (9799944) in 0.972027 seconds
+Fri Apr 02 02:31:47 +0200 2010: sent 6 timeslices (9799944) in 0.752276 seconds
+Fri Apr 02 02:32:47 +0200 2010: sent 6 timeslices (9799944) in 0.775082 seconds
+Fri Apr 02 02:33:47 +0200 2010: sent 6 timeslices (9799944) in 0.755738 seconds
+Fri Apr 02 02:34:47 +0200 2010: sent 6 timeslices (9799944) in 0.754338 seconds
+Fri Apr 02 02:35:47 +0200 2010: sent 6 timeslices (9799944) in 0.750617 seconds
+Fri Apr 02 02:36:47 +0200 2010: sent 6 timeslices (9799944) in 0.753643 seconds
+Fri Apr 02 02:37:47 +0200 2010: sent 6 timeslices (9799944) in 0.755219 seconds
+Fri Apr 02 02:38:47 +0200 2010: sent 6 timeslices (9799944) in 1.042221 seconds
+Fri Apr 02 02:39:47 +0200 2010: sent 6 timeslices (9799944) in 0.750963 seconds
+Fri Apr 02 02:40:47 +0200 2010: sent 6 timeslices (9799944) in 0.749175 seconds
+Fri Apr 02 02:41:47 +0200 2010: sent 6 timeslices (9799944) in 0.75194 seconds
+Fri Apr 02 02:42:47 +0200 2010: sent 6 timeslices (9799944) in 0.756764 seconds
+Fri Apr 02 02:43:47 +0200 2010: sent 6 timeslices (9799944) in 0.758058 seconds
+Fri Apr 02 02:44:47 +0200 2010: sent 6 timeslices (9799944) in 0.771745 seconds
+Fri Apr 02 02:45:47 +0200 2010: sent 6 timeslices (9799944) in 0.781498 seconds
+Fri Apr 02 02:46:47 +0200 2010: sent 6 timeslices (9799944) in 0.801836 seconds
+Fri Apr 02 02:47:47 +0200 2010: sent 6 timeslices (9799944) in 0.816964 seconds
+Fri Apr 02 02:48:47 +0200 2010: sent 6 timeslices (9799944) in 0.804009 seconds
+Fri Apr 02 02:49:47 +0200 2010: sent 6 timeslices (9799944) in 0.80629 seconds
+Fri Apr 02 02:50:47 +0200 2010: sent 6 timeslices (9799944) in 0.812022 seconds
+Fri Apr 02 02:51:47 +0200 2010: sent 6 timeslices (9799944) in 0.882045 seconds
+Fri Apr 02 02:52:47 +0200 2010: sent 6 timeslices (9799944) in 0.801148 seconds
+Fri Apr 02 02:53:47 +0200 2010: sent 6 timeslices (9799944) in 0.802757 seconds
+Fri Apr 02 02:54:47 +0200 2010: sent 6 timeslices (9799944) in 0.807325 seconds
+Fri Apr 02 02:55:47 +0200 2010: sent 6 timeslices (9799944) in 0.806512 seconds
+Fri Apr 02 02:56:47 +0200 2010: sent 6 timeslices (9799944) in 0.816028 seconds
+Fri Apr 02 02:57:47 +0200 2010: sent 6 timeslices (9799944) in 0.801803 seconds
+Fri Apr 02 02:58:47 +0200 2010: sent 6 timeslices (9799944) in 0.80298 seconds
+Fri Apr 02 02:59:47 +0200 2010: sent 6 timeslices (9799944) in 0.80181 seconds
+Fri Apr 02 03:00:47 +0200 2010: sent 6 timeslices (9799944) in 0.804639 seconds
+Fri Apr 02 03:01:47 +0200 2010: sent 6 timeslices (9799944) in 0.801985 seconds
+Fri Apr 02 03:02:47 +0200 2010: sent 6 timeslices (9799944) in 0.87359 seconds
+Fri Apr 02 03:03:47 +0200 2010: sent 6 timeslices (9799944) in 0.807899 seconds
+Fri Apr 02 03:04:47 +0200 2010: sent 6 timeslices (9799944) in 0.799687 seconds
+Fri Apr 02 03:05:47 +0200 2010: sent 6 timeslices (9799944) in 0.803513 seconds
+Fri Apr 02 03:06:47 +0200 2010: sent 6 timeslices (9799944) in 0.919283 seconds
+Fri Apr 02 03:07:47 +0200 2010: sent 6 timeslices (9799944) in 0.803123 seconds
+Fri Apr 02 03:08:47 +0200 2010: sent 6 timeslices (9799944) in 0.830249 seconds
+Fri Apr 02 03:09:47 +0200 2010: sent 6 timeslices (9799944) in 0.805388 seconds
+Fri Apr 02 03:10:47 +0200 2010: sent 6 timeslices (9799944) in 0.89605 seconds
+Fri Apr 02 03:11:47 +0200 2010: sent 6 timeslices (9799944) in 0.804233 seconds
+Fri Apr 02 03:12:47 +0200 2010: sent 6 timeslices (9799944) in 0.801281 seconds
+Fri Apr 02 03:13:47 +0200 2010: sent 6 timeslices (9799944) in 0.863618 seconds
+Fri Apr 02 03:14:47 +0200 2010: sent 6 timeslices (9799944) in 0.803818 seconds
+Fri Apr 02 03:15:47 +0200 2010: sent 6 timeslices (9799944) in 0.805936 seconds
+Fri Apr 02 03:16:47 +0200 2010: sent 6 timeslices (9799944) in 0.970274 seconds
+Fri Apr 02 03:17:47 +0200 2010: sent 6 timeslices (9799944) in 0.80697 seconds
+Fri Apr 02 03:18:47 +0200 2010: sent 6 timeslices (9799944) in 0.823612 seconds
+Fri Apr 02 03:19:47 +0200 2010: sent 6 timeslices (9799944) in 0.804842 seconds
+Fri Apr 02 03:20:47 +0200 2010: sent 6 timeslices (9799944) in 0.804527 seconds
+Fri Apr 02 03:21:47 +0200 2010: sent 6 timeslices (9799944) in 0.799668 seconds
+Fri Apr 02 03:22:47 +0200 2010: sent 6 timeslices (9799944) in 0.833195 seconds
+Fri Apr 02 03:23:47 +0200 2010: sent 6 timeslices (9799944) in 0.809952 seconds
+Fri Apr 02 03:24:47 +0200 2010: sent 6 timeslices (9799944) in 0.806089 seconds
+Fri Apr 02 03:25:47 +0200 2010: sent 6 timeslices (9799944) in 0.80303 seconds
+Fri Apr 02 03:26:47 +0200 2010: sent 6 timeslices (9799944) in 0.855155 seconds
+Fri Apr 02 03:27:47 +0200 2010: sent 6 timeslices (9799944) in 0.807546 seconds
+Fri Apr 02 03:28:47 +0200 2010: sent 6 timeslices (9799944) in 0.802405 seconds
+Fri Apr 02 03:29:47 +0200 2010: sent 6 timeslices (9799944) in 0.802557 seconds
+Fri Apr 02 03:30:47 +0200 2010: sent 6 timeslices (9799944) in 0.980874 seconds
+Fri Apr 02 03:31:47 +0200 2010: sent 6 timeslices (9799944) in 0.804441 seconds
+Fri Apr 02 03:32:47 +0200 2010: sent 6 timeslices (9799944) in 0.870665 seconds
+Fri Apr 02 03:33:47 +0200 2010: sent 6 timeslices (9799944) in 0.964586 seconds
+Fri Apr 02 03:34:47 +0200 2010: sent 6 timeslices (9799944) in 0.829231 seconds
+Fri Apr 02 03:35:47 +0200 2010: sent 6 timeslices (9799944) in 0.811319 seconds
+Fri Apr 02 03:36:47 +0200 2010: sent 6 timeslices (9799944) in 0.804552 seconds
+Fri Apr 02 03:37:47 +0200 2010: sent 6 timeslices (9799944) in 0.800403 seconds
+Fri Apr 02 03:38:47 +0200 2010: sent 6 timeslices (9799944) in 0.806584 seconds
+Fri Apr 02 03:39:47 +0200 2010: sent 6 timeslices (9799944) in 1.853388 seconds
+Fri Apr 02 03:40:47 +0200 2010: sent 6 timeslices (9799944) in 0.805319 seconds
+Fri Apr 02 03:41:47 +0200 2010: sent 6 timeslices (9799944) in 0.80176 seconds
+Fri Apr 02 03:42:47 +0200 2010: sent 6 timeslices (9799944) in 0.807515 seconds
+Fri Apr 02 03:43:47 +0200 2010: sent 6 timeslices (9799944) in 0.843948 seconds
+Fri Apr 02 03:44:47 +0200 2010: sent 6 timeslices (9799944) in 0.802571 seconds
+Fri Apr 02 03:45:47 +0200 2010: sent 6 timeslices (9799944) in 0.835525 seconds
+Fri Apr 02 03:46:47 +0200 2010: sent 6 timeslices (9799944) in 0.805992 seconds
+Fri Apr 02 03:47:47 +0200 2010: sent 6 timeslices (9799944) in 0.808291 seconds
+Fri Apr 02 03:48:47 +0200 2010: sent 6 timeslices (9799944) in 0.801324 seconds
+Fri Apr 02 03:49:47 +0200 2010: sent 6 timeslices (9799944) in 0.81559 seconds
+Fri Apr 02 03:50:47 +0200 2010: sent 6 timeslices (9799944) in 0.80818 seconds
+Fri Apr 02 03:51:47 +0200 2010: sent 6 timeslices (9799944) in 0.807058 seconds
+Fri Apr 02 03:52:47 +0200 2010: sent 6 timeslices (9799944) in 0.801925 seconds
+Fri Apr 02 03:53:47 +0200 2010: sent 6 timeslices (9799944) in 0.803992 seconds
+Fri Apr 02 03:54:47 +0200 2010: sent 6 timeslices (9799944) in 0.810194 seconds
+Fri Apr 02 03:55:47 +0200 2010: sent 6 timeslices (9799944) in 0.802594 seconds
+** TERM signal received.
+Fri Apr 02 03:56:31 +0200 2010: sent 6 timeslices (9799944) in 5.004824 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 5630
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+Fri Apr 02 13:20:19 +0200 2010: sent 10 timeslices (9839549) in 1.595701 seconds
+Fri Apr 02 13:21:19 +0200 2010: sent 6 timeslices (9839549) in 0.946402 seconds
+Fri Apr 02 13:22:19 +0200 2010: sent 6 timeslices (9839549) in 1.061293 seconds
+Fri Apr 02 13:23:19 +0200 2010: sent 6 timeslices (9839549) in 0.878041 seconds
+Fri Apr 02 13:24:19 +0200 2010: sent 6 timeslices (9839549) in 0.983913 seconds
+Fri Apr 02 13:25:19 +0200 2010: sent 6 timeslices (9839549) in 4.326877 seconds
+Fri Apr 02 13:26:19 +0200 2010: sent 6 timeslices (9839549) in 2.562912 seconds
+Fri Apr 02 13:27:19 +0200 2010: sent 6 timeslices (9839549) in 1.154601 seconds
+Fri Apr 02 13:28:19 +0200 2010: sent 6 timeslices (9839549) in 1.092044 seconds
+Fri Apr 02 13:29:19 +0200 2010: sent 6 timeslices (9839549) in 1.014775 seconds
+Fri Apr 02 13:30:19 +0200 2010: sent 6 timeslices (9839549) in 1.209791 seconds
+Fri Apr 02 13:31:19 +0200 2010: sent 6 timeslices (9839549) in 1.186287 seconds
+Fri Apr 02 13:32:19 +0200 2010: sent 6 timeslices (9839549) in 0.940294 seconds
+Fri Apr 02 13:33:19 +0200 2010: sent 6 timeslices (9839549) in 1.041162 seconds
+Fri Apr 02 13:34:19 +0200 2010: sent 6 timeslices (9839549) in 0.969851 seconds
+Fri Apr 02 13:35:19 +0200 2010: sent 6 timeslices (9839549) in 0.970036 seconds
+Fri Apr 02 13:36:19 +0200 2010: sent 6 timeslices (9839549) in 2.613974 seconds
+Fri Apr 02 13:37:19 +0200 2010: sent 6 timeslices (9839549) in 1.045014 seconds
+Fri Apr 02 13:38:19 +0200 2010: sent 6 timeslices (9839549) in 2.275473 seconds
+Fri Apr 02 13:39:19 +0200 2010: sent 6 timeslices (9839549) in 1.024003 seconds
+Fri Apr 02 13:40:19 +0200 2010: sent 6 timeslices (9839549) in 0.998641 seconds
+Fri Apr 02 13:41:19 +0200 2010: sent 6 timeslices (9839549) in 1.154713 seconds
+Fri Apr 02 13:42:19 +0200 2010: sent 6 timeslices (9839549) in 1.134584 seconds
+Fri Apr 02 13:43:19 +0200 2010: sent 6 timeslices (9839549) in 2.190004 seconds
+Fri Apr 02 13:44:19 +0200 2010: sent 6 timeslices (9839549) in 4.063432 seconds
+Fri Apr 02 13:45:19 +0200 2010: sent 6 timeslices (9839549) in 0.957418 seconds
+Fri Apr 02 13:46:19 +0200 2010: sent 6 timeslices (9839549) in 2.515921 seconds
+Fri Apr 02 13:47:19 +0200 2010: sent 6 timeslices (9839549) in 1.937079 seconds
+Fri Apr 02 13:48:19 +0200 2010: sent 6 timeslices (9839549) in 0.982045 seconds
+Fri Apr 02 13:49:19 +0200 2010: sent 6 timeslices (9839549) in 0.948047 seconds
+Fri Apr 02 13:50:19 +0200 2010: sent 6 timeslices (9839549) in 0.74144 seconds
+Fri Apr 02 13:51:19 +0200 2010: sent 6 timeslices (9839549) in 0.773919 seconds
+Fri Apr 02 13:52:19 +0200 2010: sent 6 timeslices (9839549) in 0.824445 seconds
+Fri Apr 02 13:53:19 +0200 2010: sent 6 timeslices (9839549) in 1.529158 seconds
+Fri Apr 02 13:54:19 +0200 2010: sent 6 timeslices (9839549) in 0.971998 seconds
+Fri Apr 02 13:55:19 +0200 2010: sent 6 timeslices (9839549) in 0.802951 seconds
+Fri Apr 02 13:56:19 +0200 2010: sent 6 timeslices (9839549) in 0.730696 seconds
+Fri Apr 02 13:57:19 +0200 2010: sent 6 timeslices (9839549) in 0.731273 seconds
+Fri Apr 02 13:58:19 +0200 2010: sent 6 timeslices (9839549) in 0.781503 seconds
+Fri Apr 02 13:59:19 +0200 2010: sent 6 timeslices (9839549) in 0.917255 seconds
+Fri Apr 02 14:00:19 +0200 2010: sent 6 timeslices (9839549) in 0.845761 seconds
+Fri Apr 02 14:01:19 +0200 2010: sent 6 timeslices (9839549) in 0.716348 seconds
+Fri Apr 02 14:02:19 +0200 2010: sent 6 timeslices (9839549) in 0.715839 seconds
+Fri Apr 02 14:03:19 +0200 2010: sent 6 timeslices (9839549) in 0.727124 seconds
+Fri Apr 02 14:04:19 +0200 2010: sent 6 timeslices (9839549) in 0.842424 seconds
+Fri Apr 02 14:05:19 +0200 2010: sent 6 timeslices (9839549) in 0.745676 seconds
+Fri Apr 02 14:06:19 +0200 2010: sent 6 timeslices (9839549) in 0.824242 seconds
+Fri Apr 02 14:07:19 +0200 2010: sent 6 timeslices (9839549) in 0.880995 seconds
+Fri Apr 02 14:08:19 +0200 2010: sent 6 timeslices (9839549) in 0.731077 seconds
+Fri Apr 02 14:09:19 +0200 2010: sent 6 timeslices (9839549) in 0.7599 seconds
+Fri Apr 02 14:10:19 +0200 2010: sent 6 timeslices (9839549) in 0.782087 seconds
+Fri Apr 02 14:11:19 +0200 2010: sent 6 timeslices (9839549) in 0.84672 seconds
+Fri Apr 02 14:12:19 +0200 2010: sent 6 timeslices (9839549) in 0.799886 seconds
+Fri Apr 02 14:13:19 +0200 2010: sent 6 timeslices (9839549) in 0.834219 seconds
+Fri Apr 02 14:14:19 +0200 2010: sent 6 timeslices (9839549) in 0.919052 seconds
+Fri Apr 02 14:15:19 +0200 2010: sent 6 timeslices (9839549) in 0.788835 seconds
+Fri Apr 02 14:16:19 +0200 2010: sent 6 timeslices (9839549) in 0.817102 seconds
+Fri Apr 02 14:17:19 +0200 2010: sent 6 timeslices (9839549) in 0.814858 seconds
+Fri Apr 02 14:18:19 +0200 2010: sent 6 timeslices (9839549) in 1.0072 seconds
+Fri Apr 02 14:19:19 +0200 2010: sent 6 timeslices (9839549) in 1.04304 seconds
+Fri Apr 02 14:20:19 +0200 2010: sent 6 timeslices (9839549) in 1.234521 seconds
+Fri Apr 02 14:21:19 +0200 2010: sent 6 timeslices (9839549) in 1.280751 seconds
+Fri Apr 02 14:22:19 +0200 2010: sent 6 timeslices (9839549) in 1.033152 seconds
+** TERM signal received.
+Fri Apr 02 14:22:33 +0200 2010: sent 6 timeslices (9839549) in 1.010657 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 7364
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+Fri Apr 02 14:23:49 +0200 2010: sent 10 timeslices (9841888) in 1.34995 seconds
+Fri Apr 02 14:24:49 +0200 2010: sent 6 timeslices (9841888) in 0.746884 seconds
+Fri Apr 02 14:25:49 +0200 2010: sent 6 timeslices (9841888) in 0.890984 seconds
+Fri Apr 02 14:26:49 +0200 2010: sent 6 timeslices (9841888) in 0.861441 seconds
+Fri Apr 02 14:27:49 +0200 2010: sent 6 timeslices (9841888) in 1.093387 seconds
+Fri Apr 02 14:28:49 +0200 2010: sent 6 timeslices (9841888) in 0.98043 seconds
+Fri Apr 02 14:29:49 +0200 2010: sent 6 timeslices (9841888) in 4.043441 seconds
+Fri Apr 02 14:30:49 +0200 2010: sent 6 timeslices (9841888) in 0.893575 seconds
+Fri Apr 02 14:31:49 +0200 2010: sent 6 timeslices (9841888) in 0.819196 seconds
+Fri Apr 02 14:32:49 +0200 2010: sent 6 timeslices (9841888) in 0.797282 seconds
+Fri Apr 02 14:33:49 +0200 2010: sent 6 timeslices (9841888) in 0.845608 seconds
+Fri Apr 02 14:34:49 +0200 2010: sent 6 timeslices (9841888) in 0.837197 seconds
+Fri Apr 02 14:35:49 +0200 2010: sent 6 timeslices (9841888) in 0.759947 seconds
+Fri Apr 02 14:36:49 +0200 2010: sent 6 timeslices (9841888) in 0.886774 seconds
+Fri Apr 02 14:37:49 +0200 2010: sent 6 timeslices (9841888) in 0.723843 seconds
+Fri Apr 02 14:38:49 +0200 2010: sent 6 timeslices (9841888) in 0.767005 seconds
+Fri Apr 02 14:39:49 +0200 2010: sent 6 timeslices (9841888) in 0.809457 seconds
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+Fri Apr 02 14:40:49 +0200 2010: sent 215 timeslices (9841888) in 1.030478 seconds
+Fri Apr 02 14:41:49 +0200 2010: sent 131 timeslices (9841888) in 2.419296 seconds
+** TERM signal received.
+Fri Apr 02 14:42:28 +0200 2010: Reaping 5 threads for slow workers because of 'shutdown'
+Thread #<Thread:0xb5ea8638 sleep> is too old, killing.
+Fri Apr 02 14:42:28 +0200 2010: Error calling Dispatcher.dispatch #<Mongrel::TimeoutError: Mongrel timed out this thread: shutdown>Thread #<Thread:0xb5eae3e4 sleep> is too old, killing.
+
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:221:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19Fri Apr 02 14:42:28 +0200 2010: Error calling Dispatcher.dispatch #<Mongrel::TimeoutError: Mongrel timed out this thread: shutdown>Thread #<Thread:0xb5eb17ec sleep> is too old, killing.
+
+
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:221:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19Fri Apr 02 14:42:28 +0200 2010: Error calling Dispatcher.dispatch #<Mongrel::TimeoutError: Mongrel timed out this thread: shutdown>Thread #<Thread:0xb60d8584 sleep> is too old, killing.
+
+
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:221:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19Waiting for 4 requests to finish, could take 60.0 seconds.
+
+Fri Apr 02 14:42:34 +0200 2010: sent 119 timeslices (9841888) in 0.917865 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 8114
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+Fri Apr 02 14:43:48 +0200 2010: sent 197 timeslices (9842574) in 0.889551 seconds
+** TERM signal received.
+Fri Apr 02 14:44:31 +0200 2010: Reaping 6 threads for slow workers because of 'shutdown'
+Thread #<Thread:0xb5ca6cb8 sleep> is too old, killing.
+Fri Apr 02 14:44:31 +0200 2010: Error calling Dispatcher.dispatch #<Mongrel::TimeoutError: Mongrel timed out this thread: shutdown>Thread #<Thread:0xb5ca7834 sleep> is too old, killing.
+
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:221:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19Fri Apr 02 14:44:31 +0200 2010: Error calling Dispatcher.dispatch #<Mongrel::TimeoutError: Mongrel timed out this thread: shutdown>Thread #<Thread:0xb5cad34c sleep> is too old, killing.
+
+
+Fri Apr 02 14:44:31 +0200 2010: Error calling Dispatcher.dispatch #<Mongrel::TimeoutError: Mongrel timed out this thread: shutdown>Thread #<Thread:0xb5cadd60 sleep> is too old, killing./usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:221:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19
+
+
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:221:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19Fri Apr 02 14:44:31 +0200 2010: Error calling Dispatcher.dispatch #<Mongrel::TimeoutError: Mongrel timed out this thread: shutdown>Thread #<Thread:0xb5ce80f0 sleep> is too old, killing.
+
+
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:221:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19Waiting for 5 requests to finish, could take 60.0 seconds.
+
+Fri Apr 02 14:44:37 +0200 2010: sent 122 timeslices (9842574) in 0.801106 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 8233
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+Fri Apr 02 14:46:01 +0200 2010: sent 227 timeslices (9842639) in 0.92796 seconds
+** TERM signal received.
+Fri Apr 02 14:46:15 +0200 2010: Reaping 5 threads for slow workers because of 'shutdown'
+Thread #<Thread:0xb5e301ec sleep> is too old, killing.
+Waiting for 5 requests to finish, could take 60.0 seconds.
+Fri Apr 02 14:46:21 +0200 2010: sent 132 timeslices (9842639) in 0.763528 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 8288
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+** TERM signal received.
+Fri Apr 02 14:47:41 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 14:47:41 +0200 2010: sent 161 timeslices (9842711) in 0.893849 seconds
+Fri Apr 02 14:47:47 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 14:47:53 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Thread #<Thread:0xb5bb20f0 sleep> is too old, killing.
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 14:47:59 +0200 2010: sent 23 timeslices (9842711) in 0.738406 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 4310
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+Fri Apr 02 14:55:38 +0200 2010: sent 161 timeslices (9843049) in 0.909621 seconds
+** TERM signal received.
+Fri Apr 02 14:56:15 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 14:56:21 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 14:56:27 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Thread #<Thread:0xb5c7927c sleep> is too old, killing.
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 14:56:33 +0200 2010: sent 23 timeslices (9843049) in 0.76054 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 4442
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+#<Solr::Response::Standard:0xb5d75824 @data={"response"=>{"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, "responseHeader"=>{"QTime"=>98, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>98, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>98,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','wt'=>'ruby','qt'=>'standard','q'=>'(Saint Tropez) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.744357,'docs'=>[{'pk_i'=>[20],'score'=>2.744357}]}}">
+/home/omar/Proyectos/EandV/npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+#<Solr::Response::Standard:0xb5e5f488 @data={"response"=>{"maxScore"=>2.076757, "start"=>0, "docs"=>[{"pk_i"=>[19], "score"=>2.076757}], "numFound"=>1}, "responseHeader"=>{"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Newmarket) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Newmarket) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>2.076757, "start"=>0, "docs"=>[{"pk_i"=>[19], "score"=>2.076757}], "numFound"=>1}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>1,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','wt'=>'ruby','qt'=>'standard','q'=>'(Newmarket) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.076757,'docs'=>[{'pk_i'=>[19],'score'=>2.076757}]}}">
+Fri Apr 02 14:57:51 +0200 2010: sent 140 timeslices (9843125) in 0.884041 seconds
+Fri Apr 02 14:58:51 +0200 2010: sent 6 timeslices (9843125) in 0.723787 seconds
+Fri Apr 02 14:59:51 +0200 2010: sent 6 timeslices (9843125) in 0.742763 seconds
+#<Solr::Response::Standard:0xb5d882a8 @data={"response"=>{"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, "responseHeader"=>{"QTime"=>0, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, "highlighting"=>{}}, @header={"QTime"=>0, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>0,'params'=>{'json.nl'=>'map','wt'=>'ruby','fl'=>'pk_i,score','q'=>'(Saint Tropez) AND (type_s:Location)','qt'=>'standard'}},'response'=>{'numFound'=>0,'start'=>0,'maxScore'=>0.0,'docs'=>[]},'highlighting'=>{}}">
+Fri Apr 02 15:00:51 +0200 2010: sent 212 timeslices (9843125) in 0.934228 seconds
+Fri Apr 02 15:01:51 +0200 2010: sent 6 timeslices (9843125) in 0.805576 seconds
+Fri Apr 02 15:02:51 +0200 2010: sent 6 timeslices (9843125) in 0.876845 seconds
+Fri Apr 02 15:03:51 +0200 2010: sent 6 timeslices (9843125) in 0.730848 seconds
+Fri Apr 02 15:04:51 +0200 2010: sent 6 timeslices (9843125) in 0.731965 seconds
