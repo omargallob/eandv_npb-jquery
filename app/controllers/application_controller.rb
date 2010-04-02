@@ -56,9 +56,10 @@ def pickup_properties(id)
         @properties = Property.find(:all)
       else
 				logger.info "Query: "+ @search_query.query
-        @properties = Property.find(:all, :conditions => ["title like ? or address like ?",@search_query.query.capitalize,@search_query.query.capitalize])
-				#@locations = Location.find(:all, :conditions => ["city = ?",@c0])
-        @types = Type.find(:all, :conditions => ["title like ?",@search_query.query])
+				@qq =	"% #{@search_query.query.capitalize} %"
+        @properties = Property.find(:all, :conditions => ["title like ? or subtitle like ?",@qq, @qq ])
+				@locations = Location.find(:all, :conditions => ["city like ?",@qq])
+        @types = Type.find(:all, :conditions => ["title like ?",@qq])
         for location in @locations
           if location.properties
            for p in location.properties

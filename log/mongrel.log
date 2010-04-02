@@ -8240,3 +8240,17 @@ Requiring REXML
 ** Rails signals registered.  HUP => reload (without restart).  It might not work well.
 ** Mongrel 1.1.5 available at 0.0.0.0:3001
 ** Writing PID file to log/mongrel.pid
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/countries/_country.html.erb:2: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/countries/_country.html.erb:8: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/admin/countries/_country.html.erb:10: warning: don't put space before argument parentheses
