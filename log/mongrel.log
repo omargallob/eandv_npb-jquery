@@ -7978,3 +7978,9 @@ Fri Apr 02 18:57:02 +0200 2010: sent 6 timeslices (9852548) in 0.735005 seconds
 Fri Apr 02 18:58:02 +0200 2010: sent 6 timeslices (9852548) in 0.729959 seconds
 #<Solr::Response::Standard:0xb5dd1e44 @data={"response"=>{"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, "responseHeader"=>{"QTime"=>5, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>5, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>5,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','wt'=>'ruby','qt'=>'standard','q'=>'(Saint Tropez) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.744357,'docs'=>[{'pk_i'=>[20],'score'=>2.744357}]}}">
 /home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+Fri Apr 02 18:59:02 +0200 2010: sent 216 timeslices (9852548) in 0.798396 seconds
+Fri Apr 02 19:00:02 +0200 2010: sent 6 timeslices (9852548) in 0.741872 seconds
+Fri Apr 02 19:01:02 +0200 2010: sent 6 timeslices (9852548) in 0.734607 seconds
+Fri Apr 02 19:02:02 +0200 2010: sent 6 timeslices (9852548) in 0.732757 seconds
+Fri Apr 02 19:03:02 +0200 2010: sent 6 timeslices (9852548) in 0.73734 seconds
+Fri Apr 02 19:04:02 +0200 2010: sent 6 timeslices (9852548) in 0.729064 seconds
