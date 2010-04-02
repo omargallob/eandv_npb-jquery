@@ -165,3 +165,21 @@
 [04/02/10 18:48:00 +0200 banus-dev (4580)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
 [04/02/10 18:48:02 +0200 banus-dev (4580)] INFO : Reporting performance data every 60 seconds.
 [04/02/10 19:40:02 +0200 banus-dev (4580)] WARN : Timed out trying to post data to RPM (timeout = 120 seconds)
+[04/02/10 19:59:13 +0200 banus-dev (6782)] INFO : Dispatcher: mongrel
+[04/02/10 19:59:13 +0200 banus-dev (6782)] INFO : Application: My Application
+[04/02/10 19:59:13 +0200 banus-dev (6782)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 6782
+[04/02/10 19:59:13 +0200 banus-dev (6782)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/02/10 19:59:13 +0200 banus-dev (6782)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/02/10 19:59:19 +0200 banus-dev (6782)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/02/10 19:59:20 +0200 banus-dev (6782)] INFO : Resolved collector0.newrelic.com to 65.74.177.207
+[04/02/10 19:59:21 +0200 banus-dev (6782)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/02/10 19:59:23 +0200 banus-dev (6782)] INFO : Reporting performance data every 60 seconds.
+[04/02/10 20:21:53 +0200 banus-dev (7549)] INFO : Dispatcher: mongrel
+[04/02/10 20:21:53 +0200 banus-dev (7549)] INFO : Application: My Application
+[04/02/10 20:21:53 +0200 banus-dev (7549)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 7549
+[04/02/10 20:21:53 +0200 banus-dev (7549)] INFO : Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+[04/02/10 20:21:53 +0200 banus-dev (7549)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/02/10 20:21:58 +0200 banus-dev (7549)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/02/10 20:22:00 +0200 banus-dev (7549)] INFO : Resolved collector0.newrelic.com to 65.74.177.207
+[04/02/10 20:22:01 +0200 banus-dev (7549)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/02/10 20:22:03 +0200 banus-dev (7549)] INFO : Reporting performance data every 60 seconds.

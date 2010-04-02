@@ -1126,3 +1126,69 @@ Completed in 102ms (View: 55, DB: 5) | 200 OK [http://localhost/search?search_qu
 Processing RssController#about (for 127.0.0.1 at 2010-04-02 19:20:36) [GET]
 Rendering rss/about
 Completed in 178ms (View: 12, DB: 18) | 200 OK [http://localhost/about.xml]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 19:59:18) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 374ms (View: 302, DB: 6) | 200 OK [http://localhost/]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 19:59:21) [GET]
+Rendering rss/about
+Completed in 82ms (View: 36, DB: 4) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 19:59:21) [GET]
+Rendering rss/partners
+Completed in 45ms (View: 14, DB: 3) | 200 OK [http://localhost/partners.xml]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 19:59:21) [GET]
+Rendering rss/featured
+Completed in 67ms (View: 36, DB: 4) | 200 OK [http://localhost/featured.xml]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 20:00:45) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 232ms (View: 199, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 20:00:48) [GET]
+Rendering rss/about
+Completed in 55ms (View: 23, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 20:00:48) [GET]
+Rendering rss/featured
+Completed in 54ms (View: 28, DB: 2) | 200 OK [http://localhost/featured.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 20:00:48) [GET]
+Rendering rss/partners
+Completed in 34ms (View: 9, DB: 2) | 200 OK [http://localhost/partners.xml]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 20:25:18) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 433ms (View: 227, DB: 9) | 200 OK [http://localhost/]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 20:25:20) [GET]
+Rendering rss/about
+Completed in 99ms (View: 44, DB: 3) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 20:25:20) [GET]
+Rendering rss/featured
+Completed in 71ms (View: 32, DB: 5) | 200 OK [http://localhost/featured.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 20:25:20) [GET]
+Rendering rss/partners
+Completed in 77ms (View: 15, DB: 2) | 200 OK [http://localhost/partners.xml]
