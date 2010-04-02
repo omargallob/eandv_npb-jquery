@@ -1100,3 +1100,29 @@ Completed in 107ms (View: 53, DB: 8) | 200 OK [http://localhost/search?search_qu
 Processing RssController#about (for 127.0.0.1 at 2010-04-02 18:58:26) [GET]
 Rendering rss/about
 Completed in 35ms (View: 11, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 19:09:50) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Newmarket - Suffolk", "zip"=>"", "bedrooms"=>"All", "country"=>"United Kingdom", "states"=>"Suffolk", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 192ms (View: 37, DB: 22) | 200 OK [http://localhost/search?search_query[country]=United+Kingdom&search_query[states]=Suffolk&search_query[region]=Newmarket+-+Suffolk&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 19:09:51) [GET]
+Rendering rss/about
+Completed in 39ms (View: 13, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 19:20:35) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 102ms (View: 55, DB: 5) | 200 OK [http://localhost/search?search_query[country]=France&search_query[states]=Provence-Alpes-Cote+dAzur&search_query[region]=Saint+Tropez+-+Var&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 19:20:36) [GET]
+Rendering rss/about
+Completed in 178ms (View: 12, DB: 18) | 200 OK [http://localhost/about.xml]
