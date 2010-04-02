@@ -7742,3 +7742,239 @@ Fri Apr 02 15:22:51 +0200 2010: sent 6 timeslices (9843125) in 0.9208 seconds
 Fri Apr 02 15:23:51 +0200 2010: sent 6 timeslices (9843125) in 3.79152 seconds
 Fri Apr 02 15:24:51 +0200 2010: sent 29 timeslices (9843125) in 1.646836 seconds
 Fri Apr 02 15:25:51 +0200 2010: sent 6 timeslices (9843125) in 0.877301 seconds
+Fri Apr 02 15:26:51 +0200 2010: sent 6 timeslices (9843125) in 3.982491 seconds
+** TERM signal received.
+Fri Apr 02 15:27:48 +0200 2010: Reaping 3 threads for slow workers because of 'shutdown'
+Thread #<Thread:0xb5b0eb6c sleep> is too old, killing.
+Fri Apr 02 15:27:48 +0200 2010: Error calling Dispatcher.dispatch #<Mongrel::TimeoutError: Mongrel timed out this thread: shutdown>Thread #<Thread:0xb5b80d0c sleep> is too old, killing.
+
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:221:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19Waiting for 3 requests to finish, could take 60.0 seconds.
+
+Fri Apr 02 15:27:51 +0200 2010: sent 46 timeslices (9843125) in 0.786498 seconds
+Fri Apr 02 15:27:54 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 15:28:00 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/tcphack.rb:12:in `initialize_without_backlog': Address already in use - bind(2) (Errno::EADDRINUSE)
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/tcphack.rb:12:in `initialize'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:93:in `new'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:93:in `initialize'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:139:in `new'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:139:in `listener'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:99:in `cloaker_'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:50:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:50:in `initialize'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:84:in `new'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:84:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+	from /usr/bin/mongrel_rails:19:in `load'
+	from /usr/bin/mongrel_rails:19
+Fri Apr 02 15:28:06 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 15:28:12 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Thread #<Thread:0xb5aed37c sleep> is too old, killing.
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 15:28:18 +0200 2010: sent 23 timeslices (9843125) in 0.752353 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 5689
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** /home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+Writing PID file to log/mongrel.pid/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+** TERM signal received.
+Fri Apr 02 15:28:48 +0200 2010: sent 108 timeslices (9844405) in 0.747573 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 5715
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+** TERM signal received.
+Fri Apr 02 15:29:48 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 15:29:54 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 15:30:00 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 15:30:06 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 15:30:12 +0200 2010: Reaping 1 threads for slow workers because of 'shutdown'
+Thread #<Thread:0xb60622a8 sleep> is too old, killing.
+Waiting for 1 requests to finish, could take 60.0 seconds.
+Fri Apr 02 15:30:13 +0200 2010: sent 176 timeslices (9844425) in 0.815381 seconds
+Fri Apr 02 15:30:18 +0200 2010: sent 6 timeslices (9844425) in 0.832044 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 5946
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+#<Solr::Response::Standard:0xb5ddc8f8 @data={"response"=>{"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, "responseHeader"=>{"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>1, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>1,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','wt'=>'ruby','qt'=>'standard','q'=>'(Saint Tropez) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.744357,'docs'=>[{'pk_i'=>[20],'score'=>2.744357}]}}">
+/home/omar/Proyectos/EandV/npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+Fri Apr 02 15:35:14 +0200 2010: sent 221 timeslices (9844637) in 0.859595 seconds
+Fri Apr 02 15:36:14 +0200 2010: sent 6 timeslices (9844637) in 0.75169 seconds
+Fri Apr 02 15:37:14 +0200 2010: sent 6 timeslices (9844637) in 0.738968 seconds
+Fri Apr 02 15:38:14 +0200 2010: sent 6 timeslices (9844637) in 0.730922 seconds
+Fri Apr 02 15:39:14 +0200 2010: sent 6 timeslices (9844637) in 0.742596 seconds
+Fri Apr 02 15:40:14 +0200 2010: sent 6 timeslices (9844637) in 0.740253 seconds
+Fri Apr 02 15:41:14 +0200 2010: sent 6 timeslices (9844637) in 0.737871 seconds
+Fri Apr 02 15:42:14 +0200 2010: sent 6 timeslices (9844637) in 0.802267 seconds
+Fri Apr 02 15:43:14 +0200 2010: sent 6 timeslices (9844637) in 0.751275 seconds
+Fri Apr 02 15:44:14 +0200 2010: sent 6 timeslices (9844637) in 0.730916 seconds
+Fri Apr 02 15:45:14 +0200 2010: sent 6 timeslices (9844637) in 0.807878 seconds
+Fri Apr 02 15:46:14 +0200 2010: sent 6 timeslices (9844637) in 0.861727 seconds
+Fri Apr 02 15:47:14 +0200 2010: sent 6 timeslices (9844637) in 0.776316 seconds
+Fri Apr 02 15:48:14 +0200 2010: sent 6 timeslices (9844637) in 0.811983 seconds
+Fri Apr 02 15:49:14 +0200 2010: sent 6 timeslices (9844637) in 0.819857 seconds
+Fri Apr 02 15:50:14 +0200 2010: sent 6 timeslices (9844637) in 0.741331 seconds
+Fri Apr 02 15:51:14 +0200 2010: sent 6 timeslices (9844637) in 0.746442 seconds
+Fri Apr 02 15:52:14 +0200 2010: sent 6 timeslices (9844637) in 0.739645 seconds
+Fri Apr 02 15:53:14 +0200 2010: sent 6 timeslices (9844637) in 0.871804 seconds
+Fri Apr 02 15:54:14 +0200 2010: sent 6 timeslices (9844637) in 0.81417 seconds
+Fri Apr 02 15:55:14 +0200 2010: sent 6 timeslices (9844637) in 0.764086 seconds
+Fri Apr 02 15:56:14 +0200 2010: sent 6 timeslices (9844637) in 0.735483 seconds
+Fri Apr 02 15:57:14 +0200 2010: sent 6 timeslices (9844637) in 0.728107 seconds
+Fri Apr 02 15:58:14 +0200 2010: sent 6 timeslices (9844637) in 0.760946 seconds
+Fri Apr 02 15:59:14 +0200 2010: sent 6 timeslices (9844637) in 0.739846 seconds
+Fri Apr 02 16:00:14 +0200 2010: sent 6 timeslices (9844637) in 0.767538 seconds
+Fri Apr 02 16:01:14 +0200 2010: sent 6 timeslices (9844637) in 0.729184 seconds
+Fri Apr 02 16:02:14 +0200 2010: sent 6 timeslices (9844637) in 0.766409 seconds
+Fri Apr 02 16:03:14 +0200 2010: sent 6 timeslices (9844637) in 0.732866 seconds
+Fri Apr 02 16:04:14 +0200 2010: sent 6 timeslices (9844637) in 0.737526 seconds
+Fri Apr 02 16:05:14 +0200 2010: sent 6 timeslices (9844637) in 0.730075 seconds
+Fri Apr 02 16:06:14 +0200 2010: sent 6 timeslices (9844637) in 0.856361 seconds
+Fri Apr 02 16:07:14 +0200 2010: sent 6 timeslices (9844637) in 0.74301 seconds
+Fri Apr 02 16:08:14 +0200 2010: sent 6 timeslices (9844637) in 0.738772 seconds
+Fri Apr 02 16:09:14 +0200 2010: sent 6 timeslices (9844637) in 1.204567 seconds
+Fri Apr 02 16:10:14 +0200 2010: sent 6 timeslices (9844637) in 0.770577 seconds
+Fri Apr 02 16:11:14 +0200 2010: sent 6 timeslices (9844637) in 0.742682 seconds
+Fri Apr 02 16:12:14 +0200 2010: sent 6 timeslices (9844637) in 0.731768 seconds
+Fri Apr 02 16:13:14 +0200 2010: sent 6 timeslices (9844637) in 0.725343 seconds
+Fri Apr 02 16:14:14 +0200 2010: sent 6 timeslices (9844637) in 0.859459 seconds
+Fri Apr 02 16:15:14 +0200 2010: sent 6 timeslices (9844637) in 0.862953 seconds
+Fri Apr 02 16:16:14 +0200 2010: sent 6 timeslices (9844637) in 0.736471 seconds
+Fri Apr 02 16:17:14 +0200 2010: sent 6 timeslices (9844637) in 0.742136 seconds
+Fri Apr 02 16:18:14 +0200 2010: sent 6 timeslices (9844637) in 0.740916 seconds
+Fri Apr 02 16:19:14 +0200 2010: sent 6 timeslices (9844637) in 0.743429 seconds
+Fri Apr 02 16:20:14 +0200 2010: sent 6 timeslices (9844637) in 0.742148 seconds
+Fri Apr 02 16:21:14 +0200 2010: sent 6 timeslices (9844637) in 0.749015 seconds
+Fri Apr 02 16:22:14 +0200 2010: sent 6 timeslices (9844637) in 0.760892 seconds
+Fri Apr 02 16:23:14 +0200 2010: sent 6 timeslices (9844637) in 0.791889 seconds
+Fri Apr 02 16:24:14 +0200 2010: sent 6 timeslices (9844637) in 0.739886 seconds
+Fri Apr 02 16:25:14 +0200 2010: sent 6 timeslices (9844637) in 0.738179 seconds
+Fri Apr 02 16:26:14 +0200 2010: sent 6 timeslices (9844637) in 0.740716 seconds
+Fri Apr 02 16:27:14 +0200 2010: sent 6 timeslices (9844637) in 0.80526 seconds
+Fri Apr 02 16:28:14 +0200 2010: sent 6 timeslices (9844637) in 0.730244 seconds
+Fri Apr 02 16:29:14 +0200 2010: sent 6 timeslices (9844637) in 0.7398 seconds
+Fri Apr 02 16:30:14 +0200 2010: sent 6 timeslices (9844637) in 0.818669 seconds
+Fri Apr 02 16:31:14 +0200 2010: sent 6 timeslices (9844637) in 0.795433 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 4580
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] Reporting performance data every 60 seconds.
+Fri Apr 02 18:49:02 +0200 2010: sent 10 timeslices (9852548) in 0.766073 seconds
+Fri Apr 02 18:50:02 +0200 2010: sent 6 timeslices (9852548) in 0.736719 seconds
+Fri Apr 02 18:51:02 +0200 2010: sent 6 timeslices (9852548) in 0.728206 seconds
+Fri Apr 02 18:52:02 +0200 2010: sent 6 timeslices (9852548) in 0.720327 seconds
+Fri Apr 02 18:53:02 +0200 2010: sent 6 timeslices (9852548) in 0.726924 seconds
+Fri Apr 02 18:54:02 +0200 2010: sent 6 timeslices (9852548) in 1.096132 seconds
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+#<Solr::Response::Standard:0xb619d730 @data={"response"=>{"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, "responseHeader"=>{"QTime"=>168, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>168, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>0.0, "start"=>0, "docs"=>[], "numFound"=>0}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>168,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','wt'=>'ruby','qt'=>'standard','q'=>'(Saint Tropez) AND (type_s:Location)'}},'response'=>{'numFound'=>0,'start'=>0,'maxScore'=>0.0,'docs'=>[]}}">
+/home/omar/Proyectos/EandV/npb/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
+Fri Apr 02 18:55:02 +0200 2010: sent 214 timeslices (9852548) in 1.17859 seconds
+Fri Apr 02 18:56:02 +0200 2010: sent 6 timeslices (9852548) in 0.732567 seconds
+Fri Apr 02 18:57:02 +0200 2010: sent 6 timeslices (9852548) in 0.735005 seconds
+Fri Apr 02 18:58:02 +0200 2010: sent 6 timeslices (9852548) in 0.729959 seconds
+#<Solr::Response::Standard:0xb5dd1e44 @data={"response"=>{"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, "responseHeader"=>{"QTime"=>5, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}}, @header={"QTime"=>5, "params"=>{"qt"=>"standard", "json.nl"=>"map", "q"=>"(Saint Tropez) AND (type_s:Location)", "fl"=>"pk_i,score", "wt"=>"ruby"}, "status"=>0}, @response={"maxScore"=>2.744357, "start"=>0, "docs"=>[{"pk_i"=>[20], "score"=>2.744357}], "numFound"=>1}, @raw_response="{'responseHeader'=>{'status'=>0,'QTime'=>5,'params'=>{'fl'=>'pk_i,score','json.nl'=>'map','wt'=>'ruby','qt'=>'standard','q'=>'(Saint Tropez) AND (type_s:Location)'}},'response'=>{'numFound'=>1,'start'=>0,'maxScore'=>2.744357,'docs'=>[{'pk_i'=>[20],'score'=>2.744357}]}}">
+/home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses

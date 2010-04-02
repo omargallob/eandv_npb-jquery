@@ -888,3 +888,215 @@ Completed in 912ms (View: 39, DB: 6) | 200 OK [http://localhost/search?search_qu
 Processing RssController#about (for 127.0.0.1 at 2010-04-02 15:00:22) [GET]
 Rendering rss/about
 Completed in 36ms (View: 11, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 15:24:01) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+
+Mongrel::TimeoutError (Mongrel timed out this thread: shutdown):
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /usr/lib/ruby/gems/1.8/gems/right_http_connection-1.2.4/lib/net_fix.rb:129:in `request_without_newrelic_trace'
+  /usr/lib/ruby/1.8/net/http.rb:845:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:167:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:153:in `send'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:50:in `execute'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:99:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 15:27:48) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+
+Mongrel::TimeoutError (Mongrel timed out this thread: shutdown):
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /usr/lib/ruby/gems/1.8/gems/right_http_connection-1.2.4/lib/net_fix.rb:129:in `request_without_newrelic_trace'
+  /usr/lib/ruby/1.8/net/http.rb:845:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:167:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:153:in `send'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:50:in `execute'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:99:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 15:28:32) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 312ms (View: 261, DB: 5) | 200 OK [http://localhost/]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 15:29:07) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 377ms (View: 304, DB: 8) | 200 OK [http://localhost/]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 15:29:10) [GET]
+Rendering rss/partners
+Completed in 53ms (View: 28, DB: 3) | 200 OK [http://localhost/partners.xml]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 15:29:10) [GET]
+Rendering rss/featured
+Completed in 60ms (View: 33, DB: 3) | 200 OK [http://localhost/featured.xml]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 15:29:10) [GET]
+Rendering rss/about
+Completed in 151ms (View: 122, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 15:29:12) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+
+Mongrel::TimeoutError (Mongrel timed out this thread: shutdown):
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /usr/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /usr/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /usr/lib/ruby/1.8/net/http.rb:542:in `start'
+  /usr/lib/ruby/gems/1.8/gems/right_http_connection-1.2.4/lib/net_fix.rb:129:in `request_without_newrelic_trace'
+  /usr/lib/ruby/1.8/net/http.rb:845:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:167:in `post'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/solr/connection.rb:153:in `send'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/acts_as_solr.rb:50:in `execute'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/parser_methods.rb:99:in `parse_query'
+  /usr/lib/ruby/gems/1.8/gems/acts_as_solr-1.3.1/lib/class_methods.rb:115:in `find_by_solr'
+  app/controllers/application_controller.rb:86:in `pickup_properties'
+  app/controllers/properties_controller.rb:86:in `search'
+  haml (2.2.15) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 15:34:07) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 359ms (View: 305, DB: 6) | 200 OK [http://localhost/]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 15:34:10) [GET]
+Rendering rss/about
+Completed in 92ms (View: 42, DB: 3) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 15:34:10) [GET]
+Rendering rss/partners
+Completed in 42ms (View: 14, DB: 4) | 200 OK [http://localhost/partners.xml]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 15:34:10) [GET]
+Rendering rss/featured
+Completed in 67ms (View: 36, DB: 4) | 200 OK [http://localhost/featured.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 15:34:23) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 122ms (View: 68, DB: 6) | 200 OK [http://localhost/search?search_query[country]=France&search_query[states]=Provence-Alpes-Cote+dAzur&search_query[region]=Saint+Tropez+-+Var&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 15:34:24) [GET]
+Rendering rss/about
+Completed in 56ms (View: 16, DB: 8) | 200 OK [http://localhost/about.xml]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 18:54:05) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 481ms (View: 388, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 18:54:08) [GET]
+Rendering rss/about
+Completed in 133ms (View: 89, DB: 4) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 18:54:08) [GET]
+Rendering rss/partners
+Completed in 52ms (View: 16, DB: 4) | 200 OK [http://localhost/partners.xml]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 18:54:11) [GET]
+Rendering rss/featured
+Completed in 102ms (View: 62, DB: 8) | 200 OK [http://localhost/featured.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 18:54:28) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 545ms (View: 61, DB: 5) | 200 OK [http://localhost/search?search_query[country]=France&search_query[states]=Provence-Alpes-Cote+dAzur&search_query[region]=Saint+Tropez+-+Var&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 18:54:29) [GET]
+Rendering rss/about
+Completed in 55ms (View: 18, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-02 18:58:22) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 84ms (View: 52, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing RssController#featured (for 127.0.0.1 at 2010-04-02 18:58:24) [GET]
+Rendering rss/featured
+Completed in 56ms (View: 30, DB: 3) | 200 OK [http://localhost/featured.xml]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 18:58:24) [GET]
+Rendering rss/about
+Completed in 156ms (View: 25, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-02 18:58:24) [GET]
+Rendering rss/partners
+Completed in 37ms (View: 11, DB: 2) | 200 OK [http://localhost/partners.xml]
+
+
+Processing PropertiesController#search (for 127.0.0.1 at 2010-04-02 18:58:26) [GET]
+  Parameters: {"method"=>:get, "search_query"=>{"price"=>"All", "buy_rent"=>"All", "region"=>"Saint Tropez - Var", "zip"=>"", "bedrooms"=>"All", "country"=>"France", "states"=>"Provence-Alpes-Cote dAzur", "area"=>"All"}}
+Picking up from the drop downs
+Rendering template within layouts/application
+Rendering properties/search
+Completed in 107ms (View: 53, DB: 8) | 200 OK [http://localhost/search?search_query[country]=France&search_query[states]=Provence-Alpes-Cote+dAzur&search_query[region]=Saint+Tropez+-+Var&search_query[area]=All&search_query[buy_rent]=All&search_query[price]=All&search_query[bedrooms]=All&search_query[zip]=]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 18:58:26) [GET]
+Rendering rss/about
+Completed in 35ms (View: 11, DB: 2) | 200 OK [http://localhost/about.xml]
