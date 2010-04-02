@@ -12,7 +12,6 @@ Rails::Initializer.run do |config|
   config.gem 'haml', :lib => 'haml', :version => '>=2.2.0'
 
   config.gem "aws-s3", :lib => "aws/s3"
-  #config.gem "right_aws"
 
 	config.gem "websolr-acts_as_solr"
   config.gem 'sitemap_generator', :lib => false, :source => 'http://gemcutter.org'

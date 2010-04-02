@@ -8160,3 +8160,34 @@ Fri Apr 02 20:53:44 +0200 2010: sent 6 timeslices (9857672) in 0.768672 seconds
 Fri Apr 02 20:54:44 +0200 2010: sent 6 timeslices (9857672) in 0.73976 seconds
 Fri Apr 02 20:55:44 +0200 2010: sent 6 timeslices (9857672) in 0.724369 seconds
 Fri Apr 02 20:56:44 +0200 2010: sent 6 timeslices (9857672) in 0.725954 seconds
+Fri Apr 02 20:57:44 +0200 2010: sent 6 timeslices (9857672) in 0.727475 seconds
+Fri Apr 02 20:58:44 +0200 2010: sent 6 timeslices (9857672) in 0.831384 seconds
+Fri Apr 02 20:59:44 +0200 2010: sent 6 timeslices (9857672) in 0.738453 seconds
+Fri Apr 02 21:00:44 +0200 2010: sent 6 timeslices (9857672) in 0.728986 seconds
+Fri Apr 02 21:01:44 +0200 2010: sent 6 timeslices (9857672) in 0.733196 seconds
+Fri Apr 02 21:02:44 +0200 2010: sent 6 timeslices (9857672) in 0.737515 seconds
+** TERM signal received.
+Fri Apr 02 21:03:30 +0200 2010: sent 6 timeslices (9857672) in 0.741516 seconds
+** Daemonized, any open files are closed.  Look at log/mongrel.pid and log/mongrel.log for info.
+** Starting Mongrel listening at 0.0.0.0:3001
+** Starting Rails with development environment...
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.10.8 Initialized: pid = 8641
+** [NewRelic] Agent Log found in /home/omar/Proyectos/EandV/npb/log/newrelic_agent.log
+** Rails loaded.
+** Loading any Rails specific GemPlugins
+** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
+** Rails signals registered.  HUP => reload (without restart).  It might not work well.
+** Mongrel 1.1.5 available at 0.0.0.0:3001
+** Writing PID file to log/mongrel.pid
+/home/omar/Proyectos/EandV/npb/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80

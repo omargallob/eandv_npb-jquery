@@ -1205,3 +1205,16 @@ Completed in 287ms (View: 199, DB: 13) | 200 OK [http://localhost/search?search_
 Processing RssController#about (for 127.0.0.1 at 2010-04-02 20:41:05) [GET]
 Rendering rss/about
 Completed in 55ms (View: 16, DB: 2) | 200 OK [http://localhost/about.xml]
+
+
+Processing PropertiesController#index (for 127.0.0.1 at 2010-04-02 21:03:44) [GET]
+Filter 
+ Order 
+Rendering template within layouts/application
+Rendering properties/index
+Completed in 329ms (View: 266, DB: 18) | 200 OK [http://localhost/properties]
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-02 21:03:46) [GET]
+Rendering rss/about
+Completed in 47ms (View: 16, DB: 2) | 200 OK [http://localhost/about.xml]
