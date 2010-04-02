@@ -8102,3 +8102,7 @@ Fri Apr 02 20:25:03 +0200 2010: sent 6 timeslices (9856869) in 0.804065 seconds
 /home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/npb/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
 Fri Apr 02 20:26:03 +0200 2010: sent 148 timeslices (9856869) in 0.916756 seconds
+Fri Apr 02 20:27:03 +0200 2010: sent 6 timeslices (9856869) in 0.727755 seconds
+Fri Apr 02 20:28:03 +0200 2010: sent 6 timeslices (9856869) in 0.723892 seconds
+Fri Apr 02 20:29:03 +0200 2010: sent 6 timeslices (9856869) in 0.728936 seconds
+Fri Apr 02 20:30:03 +0200 2010: sent 6 timeslices (9856869) in 0.725714 seconds
