@@ -97,8 +97,11 @@ layout "lightbox"
 
 	def zillow_demographics
 		require 'rillow'
+	
 		rillow = Rillow.new('X1-ZWz1c216cd0qvf_7aoby')
-		result = rillow.get_search_results('110 Via Quito','Newport Beach, CA')
+		@demographics = rillow.get_demographics(:city => 'Newport Beach', :state=>'CA')
+		@demographics
+
    respond_to do |format|
       format.xml #
       format.html #
