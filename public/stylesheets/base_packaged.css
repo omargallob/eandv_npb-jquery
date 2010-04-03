@@ -410,7 +410,7 @@ img.static_why {margin: 0px 0 0 30px}
 #right-column #searchbox form#Selectable div p input.idle {background-image: url(/images/system/form/dropdown.jpg)}
 #right-column #searchbox form#Selectable div p input.onfocus {background-image: url(/images/system/form/search_input_down.jpg)}
 #right-column #searchbox form#Selectable div p input.text_input {padding: 6px 0 0 6px; border: 0px; width: 192px; height: 20px; margin-top: 6px; background-image: url(/images/system/form/advanced_search_input.jpg); background-repeat: no-repeat; float: left; padding-right: 0px; line-height: 25px}
-#right-column #searchbox form#Selectable div p input.short {width: 64px; height: 29px; background-image: url(/images/system/form/Zip.jpg); padding-left: 10px; padding-right: 8px; background-repeat: no-repeat}
+#right-column #searchbox form#Selectable div p input.short {width: 64px; height: 22px; background-image: url(/images/system/form/Zip.jpg); padding-left: 10px; padding-right: 8px; background-repeat: no-repeat}
 #right-column #searchbox form#Selectable div p span.select {width: 184px; height: 13px; overflow: hidden; background: white; position: absolute; padding: 5px; background-image: url(/images/system/form/dropB.jpg); margin: 0px}
 #right-column #searchbox form#Selectable div p span.zip {float: left; margin: 12px 4px 0 0}
 #right-column #searchbox form#Selectable div p select.styled {width: 197px}
