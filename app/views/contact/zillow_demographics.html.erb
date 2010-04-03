@@ -1,1 +1,10 @@
-<%= image_tag @demographics["response"][0]["charts"][0]["chart"][3]["url"][0], :width=>"211", :height => "120" %>
+<h3 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][1]["name"][0] %></h3>
+<%= image_tag @demographics["response"][0]["charts"][0]["chart"][1]["url"][0], :width=>"183", :height => "60" %>
+<h3 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][2]["name"][0] %></h3>
+<%= image_tag @demographics["response"][0]["charts"][0]["chart"][2]["url"][0], :width=>"211", :height => "120" %>
+<h3 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][3]["name"][0]["content"] %></h3>
+<%= image_tag @demographics["response"][0]["charts"][0]["chart"][3]["url"][0], :width=>"204", :height => "120" %>
+<h3 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][4]["name"][0] %></h3>
+<%= image_tag @demographics["response"][0]["charts"][0]["chart"][4]["url"][0], :width=>"211", :height => "45" %>
+<h5 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][5]["name"][0] %></h5>
+<%= image_tag @demographics["response"][0]["charts"][0]["chart"][5]["url"][0], :width=>"148", :height => "30" %>
