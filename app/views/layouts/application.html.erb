@@ -64,7 +64,7 @@
 				<span class="follow">Follow us on:</span><%= link_to image_tag ("system/buttons/twitter.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>
 				<%= link_to image_tag ("system/buttons/facebook.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>			<span class="follow"> or </span>
 				<div class="login">	<% unless logged_in? %><a class="rpxnow" onclick="return false;"
-	href="https://engel--volkers-newport-beach.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fnpb.heroku.com%2Frpx"> Sign In </a><% else %> <a href="/logout">logout</a> <% end %></div>
+	href="https://engel--volkers-newport-beach.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fnewport-beach.heroku.com%2Frpx"> Sign In </a><% else %> <a href="/logout">logout</a> <% end %></div>
 		</div>
 <% if logged_in? and self.current_user.photo_url %>
 		<div id="telephone">
