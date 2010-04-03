@@ -195,14 +195,14 @@ img.static_why {margin: 0px 0 0 30px}
 #left-side #main {width: 463px; background: url(/images/system/bg/front/main_width.jpg); float: left; color: #4d4d4d; overflow: auto; font-size: 14px; position: relative; z-index: 6}
 #left-side #main #comunicate {width: 136px; height: 90px; float: right; margin-right: 18px}
 #left-side #main #comunicate table {margin: 10px auto; padding: 0px}
-#left-side #main #comunicate table td {margin: 0px; padding: 0px; text-align: center}
+#left-side #main #comunicate table td {margin: 0px; padding: 0px 0 2px 0; text-align: center}
 #left-side #main #comunicate table td a {color: white; text-decoration: none; margin: 0px; float: none}
 #left-side #main #comunicate table td a:hover {color: #E13939}
 #left-side #main #comunicate table td.chat {height: 21px; width: 56px; background: url(/images/system/buttons/FeaturedChatBtn.jpg); background-repeat: no-repeat}
 #left-side #main #comunicate table td.contact {height: 22px; width: 64px; margin-left: 15px; background: url(/images/system/buttons/FeaturedcontactBtn.jpg)}
 #left-side #main #comunicate table td.spacer {width: 10px}
 #left-side #main #comunicate a {width: 100%; text-align: center; margin: 0px}
-#left-side #main #comunicate.nonfeatured table td {background: transparent}
+#left-side #main #comunicate.nonfeatured table td {background: transparent; padding-bottom: 2px}
 #left-side #main #comunicate.nonfeatured table td a {color: white}
 #left-side #main #comunicate.nonfeatured table td a:hover {color: black}
 #left-side #main #comunicate.nonfeatured table td.chat {height: 21px; width: 56px; background: url(/images/system/buttons/Filters/Filter_Price.jpg); background-repeat: no-repeat}
