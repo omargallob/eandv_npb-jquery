@@ -7,7 +7,7 @@ body a:hover { color: red; }
 #pagewrapper #header #logbox { float: right; width: 250px; margin-top: 0px; }
 #pagewrapper #header #logbox div { float: left; margin-left: 15px; background-color: black; }
 #pagewrapper #navbar { height: 50px; background-image: url(../images/system/bg/admin/navbar.png); }
-#pagewrapper #navbar ul li { list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 15px 5px; }
+#pagewrapper #navbar ul li { list-style: none; height: 25px; line-height: 25px; vertical-align: middle; float: left; margin: 11px 30px; padding: 4px; }
 #pagewrapper #navbar ul li a { margin-left: 0px; color: #4d4d4d; text-decoration: none; }
 #pagewrapper #navbar ul li a:hover { color: white; }
 #pagewrapper #navbar ul li a.active { color: white; }
