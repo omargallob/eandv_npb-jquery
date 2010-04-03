@@ -8,7 +8,7 @@ class Category < ActiveRecord::Base
  validates_presence_of :name, :title, :navlabel
  validates_uniqueness_of :name, :title, :navlabel
 
-  has_attached_file :photo, :styles => {:small => "92x61#", :large => "403x170>"}, :processors => [:cropper],
+  has_attached_file :photo, :styles => {:small => "92x61#", :large => "403x170#"}, :processors => [:cropper],
                             :url => "/assets/categories/:id/:style/:basename.jpg",
                             :storage => :s3,
                             :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
