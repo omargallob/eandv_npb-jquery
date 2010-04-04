@@ -39385,3 +39385,687 @@ Processing RssController#partners (for 127.0.0.1 at 2010-04-04 23:18:33) [GET]
 Rendering rss/partners
   [4;35;1mPartner Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
 Completed in 271ms (View: 165, DB: 7) | 200 OK [http://localhost/partners.xml]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-04 23:28:36) [GET]
+  Parameters: {"name"=>"why"}
+  [4;36;1mPage Load (0.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mLocation Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` [0m
+  [4;35;1mCountry Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;35;1mProperty Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;36;1mProperty Load (0.2ms)[0m   [0;1mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPage Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'why') LIMIT 1[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` IS NULL) LIMIT 1[0m
+  [4;36;1mMetatag Load (0.1ms)[0m   [0;1mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 6) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 6) [0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 6) [0m
+Rendered shared/_keepdiscovering (1.6ms)
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/leftside/_chatlive (1.6ms)
+Rendered shared/leftside/_sharethis (0.4ms)
+Rendered shared/leftside/_marketreport (1.3ms)
+Rendered shared/leftside/_global (0.7ms)
+Rendered shared/_left_sidenav (220.3ms)
+Rendered shared/search/_quickquery (2.0ms)
+Rendered shared/search/_advancedselectable (8.9ms)
+Rendered shared/_advancedsearchbox (12.5ms)
+Rendered shared/_top5 (0.4ms)
+Rendered shared/_gg_mag (0.3ms)
+Rendered shared/_why (2.4ms)
+Rendered shared/_front_menu (8.3ms)
+Rendered shared/_prefooter (0.5ms)
+Rendered shared/_footer (3.5ms)
+Completed in 461ms (View: 270, DB: 13) | 200 OK [http://localhost/why]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-04 23:28:39) [GET]
+  [4;35;1mPage Load (0.2ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mLocation Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mCountry Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;36;1mProperty Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;35;1mProperty Load (0.1ms)[0m   [0mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+Rendering rss/about
+Completed in 310ms (View: 15, DB: 6) | 200 OK [http://localhost/about.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-04 23:28:40) [GET]
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mLocation Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mCountry Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;36;1mProperty Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;35;1mProperty Load (0.1ms)[0m   [0mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mPartner Load (0.1ms)[0m   [0;1mSELECT * FROM `partners` [0m
+Rendering rss/partners
+  [4;35;1mPartner Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
+Completed in 244ms (View: 19, DB: 6) | 200 OK [http://localhost/partners.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-04 23:29:08) [GET]
+  Parameters: {"name"=>"why"}
+  [4;36;1mPage Load (0.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mLocation Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` [0m
+  [4;35;1mCountry Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;35;1mProperty Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;36;1mProperty Load (0.2ms)[0m   [0;1mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPage Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'why') LIMIT 1[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` IS NULL) LIMIT 1[0m
+  [4;36;1mMetatag Load (0.1ms)[0m   [0;1mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 6) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 6) [0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 6) [0m
+Rendered shared/_keepdiscovering (1.4ms)
+Rendered shared/_polaroid (0.5ms)
+Rendered shared/leftside/_chatlive (1.0ms)
+Rendered shared/leftside/_sharethis (0.5ms)
+Rendered shared/leftside/_marketreport (2.0ms)
+Rendered shared/leftside/_global (0.5ms)
+Rendered shared/_left_sidenav (15.5ms)
+Rendered shared/search/_quickquery (2.7ms)
+Rendered shared/search/_advancedselectable (11.6ms)
+Rendered shared/_advancedsearchbox (16.3ms)
+Rendered shared/_top5 (0.5ms)
+Rendered shared/_gg_mag (0.5ms)
+Rendered shared/_why (2.7ms)
+Rendered shared/_front_menu (10.2ms)
+Rendered shared/_prefooter (0.4ms)
+Rendered shared/_footer (2.1ms)
+Completed in 395ms (View: 77, DB: 10) | 200 OK [http://localhost/why]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-04 23:29:10) [GET]
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mLocation Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mCountry Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;36;1mProperty Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;35;1mProperty Load (0.1ms)[0m   [0mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+Rendering rss/about
+Completed in 116ms (View: 15, DB: 6) | 200 OK [http://localhost/about.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-04 23:29:11) [GET]
+  [4;35;1mPage Load (0.2ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mLocation Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mCountry Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;36;1mProperty Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;35;1mProperty Load (0.2ms)[0m   [0mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mPartner Load (0.1ms)[0m   [0;1mSELECT * FROM `partners` [0m
+Rendering rss/partners
+  [4;35;1mPartner Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
+Completed in 361ms (View: 26, DB: 10) | 200 OK [http://localhost/partners.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-04 23:29:52) [GET]
+  Parameters: {"name"=>"why"}
+  [4;36;1mPage Load (0.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mLocation Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` [0m
+  [4;35;1mCountry Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;35;1mProperty Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;36;1mProperty Load (0.2ms)[0m   [0;1mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPage Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'why') LIMIT 1[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` IS NULL) LIMIT 1[0m
+  [4;36;1mMetatag Load (0.1ms)[0m   [0;1mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 6) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 6) [0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 6) [0m
+Rendered shared/_keepdiscovering (0.9ms)
+Rendered shared/_polaroid (0.3ms)
+Rendered shared/leftside/_chatlive (0.7ms)
+Rendered shared/leftside/_sharethis (0.3ms)
+Rendered shared/leftside/_marketreport (1.4ms)
+Rendered shared/leftside/_global (0.3ms)
+Rendered shared/_left_sidenav (11.5ms)
+Rendered shared/search/_quickquery (2.0ms)
+Rendered shared/search/_advancedselectable (8.0ms)
+Rendered shared/_advancedsearchbox (11.4ms)
+Rendered shared/_top5 (0.3ms)
+Rendered shared/_gg_mag (0.3ms)
+Rendered shared/_why (1.8ms)
+Rendered shared/_front_menu (4.5ms)
+Rendered shared/_prefooter (0.3ms)
+Rendered shared/_footer (1.6ms)
+Completed in 363ms (View: 48, DB: 9) | 200 OK [http://localhost/why]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-04 23:29:54) [GET]
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mLocation Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mCountry Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;36;1mProperty Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;35;1mProperty Load (0.1ms)[0m   [0mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mPartner Load (0.1ms)[0m   [0;1mSELECT * FROM `partners` [0m
+Rendering rss/partners
+  [4;35;1mPartner Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
+Completed in 252ms (View: 151, DB: 6) | 200 OK [http://localhost/partners.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-04 23:29:55) [GET]
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` [0m
+  [4;35;1mCountry Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;35;1mProperty Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;36;1mProperty Load (0.1ms)[0m   [0;1mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+Rendering rss/about
+Completed in 114ms (View: 15, DB: 6) | 200 OK [http://localhost/about.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ViewerController#show (for 127.0.0.1 at 2010-04-04 23:30:16) [GET]
+  Parameters: {"name"=>"why"}
+  [4;36;1mPage Load (0.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` [0m
+  [4;35;1mCountry Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;35;1mProperty Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `properties`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;36;1mProperty Load (0.1ms)[0m   [0;1mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPage Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`name` = 'why') LIMIT 1[0m
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`name` IS NULL) LIMIT 1[0m
+  [4;36;1mMetatag Load (0.1ms)[0m   [0;1mSELECT * FROM `metatags` WHERE (`metatags`.page_id = 6) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering viewer/show
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `pages` WHERE (`pages`.parent_id = 6) [0m
+  [4;36;1mPage Load (0.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 6) [0m
+Rendered shared/_keepdiscovering (0.9ms)
+Rendered shared/_polaroid (0.3ms)
+Rendered shared/leftside/_chatlive (0.6ms)
+Rendered shared/leftside/_sharethis (0.3ms)
+Rendered shared/leftside/_marketreport (1.4ms)
+Rendered shared/leftside/_global (0.3ms)
+Rendered shared/_left_sidenav (11.8ms)
+Rendered shared/search/_quickquery (2.5ms)
+Rendered shared/search/_advancedselectable (11.5ms)
+Rendered shared/_advancedsearchbox (15.7ms)
+Rendered shared/_top5 (0.5ms)
+Rendered shared/_gg_mag (1.6ms)
+Rendered shared/_why (149.7ms)
+Rendered shared/_front_menu (4.3ms)
+Rendered shared/_prefooter (0.3ms)
+Rendered shared/_footer (1.4ms)
+Completed in 324ms (View: 201, DB: 7) | 200 OK [http://localhost/why]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RssController#about (for 127.0.0.1 at 2010-04-04 23:30:18) [GET]
+  [4;35;1mPage Load (0.2ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mLocation Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mCountry Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;36;1mProperty Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;35;1mSQL (10.8ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;35;1mProperty Load (0.1ms)[0m   [0mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;36;1mLocation Load (0.1ms)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+Rendering rss/about
+Completed in 245ms (View: 15, DB: 16) | 200 OK [http://localhost/about.xml]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RssController#partners (for 127.0.0.1 at 2010-04-04 23:30:18) [GET]
+  [4;35;1mPage Load (0.1ms)[0m   [0mSELECT * FROM `pages` WHERE (parent_id IS NULL) ORDER BY position[0m
+  [4;36;1mLocation Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.1ms)[0m   [0mSELECT * FROM `locations` [0m
+  [4;36;1mCountry Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mCountry Load (0.1ms)[0m   [0mSELECT * FROM `countries` WHERE (`countries`.`id` IN (11,12,13,9)) [0m
+  [4;36;1mProperty Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `properties`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 11) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 13) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 14) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 15) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 16) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 17) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 18) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 19) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `properties` WHERE (`properties`.location_id = 20) [0m
+  [4;36;1mCountry Load (0.1ms)[0m   [0;1mSELECT * FROM `countries` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 9) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 10) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 12) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `locations` WHERE (`locations`.country_id = 13) [0m
+  [4;35;1mProperty Load (0.2ms)[0m   [0mSELECT * FROM `properties` ORDER BY bedrooms[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (parent_id > 0) ORDER BY date DESC[0m
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mPost Load (0.1ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mPost Load (0.1ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mPartner Load (0.1ms)[0m   [0;1mSELECT * FROM `partners` [0m
+Rendering rss/partners
+  [4;35;1mPartner Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `partners`[0m
+Completed in 250ms (View: 19, DB: 6) | 200 OK [http://localhost/partners.xml]

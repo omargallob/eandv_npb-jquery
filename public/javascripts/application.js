@@ -285,7 +285,7 @@ function nice_fonts(){
      		color: '#E13939'
      }
  });
-
+	$("#tv_image").show();
 }
 
 function onfocus_forms(){
