@@ -303,3 +303,5 @@ The error occurred while evaluating nil.[]
 [04/04/10 19:11:45 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: You have a nil object when you didn't expect it!
 You might have expected an instance of ActiveRecord::Base.
 The error occurred while evaluating nil.[]
+[04/04/10 20:53:58 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: can't convert Property into Array
+[04/04/10 20:54:00 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: can't convert Property into Array
