@@ -1,10 +1,31 @@
-<h3 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][1]["name"][0] %></h3>
+<div class="zillow_columns">
+<h2 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][0]["name"][0] %></h2>
+<%= image_tag @demographics["response"][0]["charts"][0]["chart"][0]["url"][0], :width=>"183", :height => "60" %>
+<h2 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][1]["name"][0] %></h2>
 <%= image_tag @demographics["response"][0]["charts"][0]["chart"][1]["url"][0], :width=>"183", :height => "60" %>
-<h3 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][2]["name"][0] %></h3>
+<h2 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][2]["name"][0] %></h2>
 <%= image_tag @demographics["response"][0]["charts"][0]["chart"][2]["url"][0], :width=>"211", :height => "120" %>
-<h3 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][3]["name"][0]["content"] %></h3>
+<h2 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][3]["name"][0]["content"] %></h2>
 <%= image_tag @demographics["response"][0]["charts"][0]["chart"][3]["url"][0], :width=>"204", :height => "120" %>
-<h3 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][4]["name"][0] %></h3>
+</div>
+<div class="zillow_columns">
+<h2 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][4]["name"][0] %></h2>
 <%= image_tag @demographics["response"][0]["charts"][0]["chart"][4]["url"][0], :width=>"211", :height => "45" %>
-<h5 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][5]["name"][0] %></h5>
+<h2 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][5]["name"][0]["content"] %></h2>
 <%= image_tag @demographics["response"][0]["charts"][0]["chart"][5]["url"][0], :width=>"148", :height => "30" %>
+<h2 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][6]["name"][0] %></h2>
+<%= image_tag @demographics["response"][0]["charts"][0]["chart"][6]["url"][0], :width=>"204", :height => "90" %>
+<h2 style="color:#4d4d4d"><%= @demographics["response"][0]["charts"][0]["chart"][7]["name"][0] %></h2>
+<%= image_tag @demographics["response"][0]["charts"][0]["chart"][7]["url"][0], :width=>"225", :height => "105" %>
+</div>
+<hr/>
+<img src="http://www.zillow.com/widgets/GetVersionedResource.htm?path=/static/logos/Zillowlogo_200x50.gif" width="200" height="50" alt="Zillow Real Estate Search" style="float:right;"/>	
+	
+<% content_for :script do %>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	$(document).nice_fonts();
+
+});
+</script>
+<% end %>

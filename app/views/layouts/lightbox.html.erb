@@ -63,7 +63,10 @@
 						<% if controller.action_name == "job" %>Application Form<% end %>
 						<% if controller.action_name == "buyersguide" %>Buyer's Guide <% end %>			
 						<% if controller.action_name == "sellersguide" %>Seller's Guide <% end %>		
-						<% if controller.action_name == "vip" %>VIP<% end %>									 
+						<% if controller.action_name == "vip" %>VIP<% end %>	
+						<% if controller.action_name == "zillow_demographics" %>	
+							Know Your Neighbourhood: <%= @location.region %>
+					<% end %>								 
 			</h1>
 	<% if controller.action_name == "index" %>			
 			<p style="margin-top:4px">If your interested in one of our properties/services or have any questions you can <span><a onclick="window.open('/plugoo','meebome','width=200,height=285');" href="#" class="live">
@@ -90,7 +93,7 @@ opportunities to special offers from our Partners.</p>
 <li>Invitations to Exclusive E&V partner events</li>
 </ul>
 </p>
-	<% end %>
+	<% end %>/
 			</div>
 			<div id="content">
 				<div id="notice"></div>

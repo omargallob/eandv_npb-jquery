@@ -54,6 +54,8 @@ body #pagewrapper #content #mailing p { color: #4d4d4d; font-size: 11px; margin-
 body #pagewrapper #content hr { float: left; width: 546px; height: 1px; margin: 12px 8px; background-color: #e1e1e1; border: 0px none; }
 body #pagewrapper #content #wide { color: #4d4d4d; padding: 26px 0 0 0; height: 500px; width: 520px; }
 body #pagewrapper #content #wide p { margin: 5px 35px 5px 0; }
+body #pagewrapper .zillow_columns { float: left; width: 250px; background: transparent; padding-left: 25px; margin-top: 15px; }
+body #pagewrapper .zillow_columns h3 { margin: 10px 0 5px 0; }
 
 #errorExplanation { float: left; margin-top: 10px; border: 15px solid #E13939; padding: 5px 5px 5px 20px; color: #4d4d4d; }
 #errorExplanation ul { float: left; }

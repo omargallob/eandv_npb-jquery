@@ -96,12 +96,12 @@ layout "lightbox"
 	end
 
 	def zillow_demographics
-		require 'rillow'
-	
+		require 'rillow'		
+		@location = Location.find_by_id(params[:id])
 		rillow = Rillow.new('X1-ZWz1c216cd0qvf_7aoby')
-		@demographics = rillow.get_demographics(:city => 'Newport Beach', :state=>'CA')
+		@demographics = rillow.get_demographics(:city => @location.region, :state=>'CA')
 		@demographics
-
+		@region_chart = rillow.get_region_chart(:unit_type =>'percent',:city=> @location.city,:state=>'CA', :width=>300, :height=>150, :chart_duration=>'5years')
    respond_to do |format|
       format.xml #
       format.html #

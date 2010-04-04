@@ -13,7 +13,11 @@
 		</li>
 		<li><%= image_tag "system/buttons/tools/Neighbourhood.jpg"%>
 			<span>
-			<a href="/demographics?iframe=true&width=760&height=600" rel="prettyPhoto[tools]">Know you neighbourhood</a>
+			<% if @property.location.country_id == 9 %>
+			<a href="/demographics/<%= @property.location.id %>?iframe=true&width=560&height=640" rel="prettyPhoto[tools]">Know you neighbourhood</a>
+			<% else %>
+			<a href="/social?iframe=true&width=300&height=80" rel="prettyPhoto[tools]">Know you neighbourhood</a>
+			<% end %>
 			</span>
 		</li>
 		<li><%= image_tag "system/buttons/tools/Neighbourhood.jpg"%>
