@@ -69,6 +69,7 @@
 #left-side .bottom { background-image: url(/images/system/bg/front/main_properties_bottom.jpg); width: 442px; position: relative; height: 15px; float: left; }
 #left-side #main.properties { width: 442px; background: url(/images/system/bg/front/main_properties.jpg); margin-left: 0px; overflow-x: hidden; }
 #left-side #main.properties h1.title { padding-left: 24px; margin-left: 10px; }
+#left-side #main.properties h1.ptitle { padding-left: 12px; margin-left: 10px; }
 #left-side #main.properties ol.staff li h1 { padding: 15px 25px 0px 0px; }
 #left-side #main.featured { background: black; }
 #left-side #main.featured .top { background: url(/images/system/bg/front/FeaturedBlack.jpg); background-repeat: repeat-x; height: 27px; width: 440px; margin-left: 1px; }

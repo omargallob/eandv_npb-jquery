@@ -95,13 +95,13 @@ layout "lightbox"
 		render :layout => false
 	end
 
-	def zillow_demographics
+	def zillow_homevalue
 		require 'rillow'		
 		@location = Location.find_by_id(params[:id])
 		rillow = Rillow.new('X1-ZWz1c216cd0qvf_7aoby')
 		@demographics = rillow.get_demographics(:city => @location.region, :state=>'CA')
 		@demographics
-		@region_chart = rillow.get_region_chart(:unit_type =>'percent',:city=> @location.city,:state=>'CA', :width=>300, :height=>150, :chart_duration=>'5years')
+		#@region_chart = rillow.get_region_chart(:unit_type =>'percent',:city=> @location.city,:state=>'CA', :width=>300, :height=>150, :chart_duration=>'5years')
    respond_to do |format|
       format.xml #
       format.html #

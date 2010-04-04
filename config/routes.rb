@@ -19,7 +19,7 @@ ActionController::Routing::Routes.draw do |map|
   # plugoo
   map.plugoo '/plugoo', :controller => "contact", :action => "plugoo"
   # social (twitter & facebook)
-  map.demographics '/demographics/:id', :controller => "contact", :action => "zillow_demographics"
+  map.home_value '/homevalue/:id', :controller => "contact", :action => "zillow_homevalue"
   # 
   map.plugoo '/social', :controller => "contact", :action => "social"
   
