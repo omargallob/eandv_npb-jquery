@@ -265,10 +265,10 @@ img.static_why {margin: 0px 0 0 30px}
 #left-side #main #property_header p {float: left; margin: 0}
 #left-side #main #property_header .code {float: right; margin: 4px 0 0 0; font-size: 11px}
 #left-side #main #property_header .address {background: url(../images/system/bg/front/main_property_address.jpg); height: 20px; width: 225px; margin: 0 0 0 0px; padding: 2px 0 0 6px; background-repeat: no-repeat}
-#left-side #main #property_header .state {width: 409px; margin: 3px 0 0 6px; font-style: normal}
+#left-side #main #property_header .state {width: 200px; margin: 25px 0 0 6px; font-style: normal}
 #left-side #main #property_header .state strong {text-transform: uppercase}
 #left-side #main #property_header .price {width: 159px; margin: 3px 0 0 6px}
-#left-side #main #property_header ul.facility {margin: 6px 0 0 5px; list-style: none; width: 155px; height: 17px; float: right}
+#left-side #main #property_header ul.facility {margin: 25px 0 0 5px; list-style: none; width: 155px; height: 17px; float: right}
 #left-side #main #property_header ul.facility li {float: left; color: white; text-align: center}
 #left-side #main #property_header ul.facility li p {margin: -2px 0 0 5px; padding: 0}
 #left-side #main #property_header ul.facility li.number {height: 16px; width: 17px; background: url(../images/system/buttons/Facility/Facilites_NumBG.jpg); margin-right: 3px}
