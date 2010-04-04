@@ -45,24 +45,28 @@ class PropertiesController < ApplicationController
 
 
   def show
-@title = params[:title].gsub(/-/," ")
-		@property = Property.find_by_title(@title)
-    @page = Page.find_by_name('properties')
-  	@subpages = @page.subpages
-	 set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
+		if params[:title]
+			@title = params[:title].gsub(/-/," ")
+			@property = Property.find_by_title(@title)
+  	  @page = Page.find_by_name('properties')
+  		@subpages = @page.subpages
+		 set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
+	
+		 string =  @property.address
 
-	 string =  @property.address
+			@res=GoogleGeocoder.geocode(string)    
+			if @res.success
+			  @lng = @res.lng
+			  @lat = @res.lat
+			end
 
-	  @res=GoogleGeocoder.geocode(string)    
-	  if @res.success
-	    @lng = @res.lng
-	    @lat = @res.lat
-	  end
-
-	  @map = GMap.new("map")
-	  @map.control_init(:large_map => true,:map_type => true)
-	  @map.center_zoom_init([@lat,@lng],14)
-	  @map.overlay_init(GMarker.new([@lat,@lng],:info_window => "#{@property.address}"))
+			@map = GMap.new("map")
+			@map.control_init(:large_map => true,:map_type => true)
+			@map.center_zoom_init([@lat,@lng],14)
+			@map.overlay_init(GMarker.new([@lat,@lng],:info_window => "#{@property.address}"))
+		else
+			redirect_to properties_path
+		end
   end 
   
   def feed
@@ -83,9 +87,15 @@ class PropertiesController < ApplicationController
   #  @properties = []
     @page = Page.find_by_name('properties')
     @subpages = @page.subpages
-    @search_query = SearchQuery.new(params[:search_query])
-    @search_query.save
-	 pickup_properties(@search_query.id)
+		if params[:regional]=="true"
+			@region = params[:region].gsub(/-/," ")
+			@location = Location.find_by_region(@region)
+			@properties = @location.properties
+		else
+	    @search_query = SearchQuery.new(params[:search_query])
+	    @search_query.save
+		 pickup_properties(@search_query.id)
+		end
 	case params[:filter]
 			when "rent"
 			@properties.delete_if {|x| x.rental == false }
