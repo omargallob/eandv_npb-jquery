@@ -1,9 +1,8 @@
 		<div id="property_header">
 			<h1><%= property.title %></h1>
 			<p class="code">Property code: #CA8900-<%= property.id %></p>
-			<p class="address"><%= property.location.region %>,&nbsp;<%= property.location.county %> county </p>
-			<p class="state"><strong><%= "CA" %></strong> - <%= property.location.country.title %> </p>
-			<p class="price"><%= number_to_currency(property.price,:precision => 0) %> </p>
+			<p class="address"><%= property.subtitle %> </p>
+			<p class="state"><%= image_tag property.location.country.flag.url(), :width => "20px", :style => "float:left;margin-top: 4px" %> <%= number_to_currency(property.price,:precision => 0) %> </p>
 			<ul class="facility">
 				<li class="number"><p> <%= property.bedrooms %></p></li>
 				<li class="bed"></li>
