@@ -1,8 +1,16 @@
 
 <table style="color:#4d4d4d;font-size:12px;float:left;margin-left:15px">
-
+<thead>
+	<tr>
+		<th></th>
+		<th><h3>City</h3></th>
+		<th></th>
+		<th><h3>National</h3></th>
+	</tr>
+</thead>
+<tbody>
 <tr style="border-bottom: 1px solid #e1e1e1;">
-	<td style="padding:10px"><%= @demographics["response"][0]["pages"][0]["page"][0]["name"][0] %></td>
+	<td style="padding:10px"><h3><%= @demographics["response"][0]["pages"][0]["page"][0]["name"][0] %></h3></td>
 </tr>
 <tr>
 	<td width="250px"><%= @demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][0]["name"][0] %></td>
@@ -85,7 +93,7 @@
 
 
 <tr style="border-bottom: 1px solid #e1e1e1;">
-	<td style="padding:10px"><%= @demographics["response"][0]["pages"][0]["page"][1]["name"][0] %></td>
+	<td style="padding:10px"><h3><%= @demographics["response"][0]["pages"][0]["page"][1]["name"][0] %></h3></td>
 </tr>
 
 <% for att1 in @demographics["response"][0]["pages"][0]["page"][1]["tables"][0]["table"][0]["data"][0]["attribute"] %>
@@ -94,13 +102,13 @@
 
 
 <tr style="border-bottom: 1px solid #e1e1e1;">
-	<td style="padding:10px"><%= @demographics["response"][0]["pages"][0]["page"][2]["name"][0] %></td>
+	<td style="padding:10px"><h3><%= @demographics["response"][0]["pages"][0]["page"][2]["name"][0] %></h3></td>
 </tr>
 
 <% for att2 in @demographics["response"][0]["pages"][0]["page"][2]["tables"][0]["table"][0]["data"][0]["attribute"] %>
 	<%= render :partial =>"table_zillow", :object =>att2 %> 
 <% end %>
-
+</tbody>
 </table>
 <hr/>
 <img src="http://www.zillow.com/widgets/GetVersionedResource.htm?path=/static/logos/Zillowlogo_200x50.gif" width="200" height="50" alt="Zillow Real Estate Search" style="float:right;"/>	

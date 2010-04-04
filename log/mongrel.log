@@ -8379,3 +8379,11 @@ Requiring REXML
 /home/omar/Proyectos/EandV/newport-beach/app/views/contact/_table_zillow.html.erb:8: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/newport-beach/app/views/contact/_table_zillow.html.erb:10: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/newport-beach/app/views/contact/_table_zillow.html.erb:18: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
