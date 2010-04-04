@@ -2,19 +2,18 @@
 	<td width="250px"><%= table_zillow["name"] %></td>
 	<% if  table_zillow["values"][0]["city"][0]["value"][0]["content"] == nil %>
 	<td>
-		<h3>
+
 			<% if table_zillow["values"][0]["city"][0]["value"][0]["type"] == "percent" %>Bla<% end %>
 				<%= table_zillow["values"][0]["city"][0]["value"][0] %>
-		</h3>
+
 	</td>
 	<td width="15"></td>
 	<td>
-		<h3><%= table_zillow["values"][0]["nation"][0]["value"][0] %></h3>
+		<%= table_zillow["values"][0]["nation"][0]["value"][0] %>
 	</td>		
 
 	<% else %>	
 	<td>
-		<h3>
 
 <% if table_zillow["values"][0]["city"][0]["value"][0]["type"] == "percent" %>
 		<%= number_to_percentage(table_zillow["values"][0]["city"][0]["value"][0]["content"],:precision => 4) %><% else %>
@@ -22,15 +21,15 @@
 
 		<%= table_zillow["values"][0]["city"][0]["value"][0]["content"] %><% end %>
 
-</h3>
+
 	</td>
 	<td width="15"></td>
 	<td>
-		<h3><% if table_zillow["values"][0]["city"][0]["value"][0]["type"] == "percent" %>
+		<% if table_zillow["values"][0]["city"][0]["value"][0]["type"] == "percent" %>
 		<%= number_to_percentage(table_zillow["values"][0]["nation"][0]["value"][0]["content"],:precision => 4) %><% else %>
 
 
-		<%= number_with_precision(table_zillow["values"][0]["nation"][0]["value"][0]["content"],:precision => 2) %><% end %></h3>
+		<%= number_with_precision(table_zillow["values"][0]["nation"][0]["value"][0]["content"],:precision => 2) %><% end %>
 	</td>
 	<% end %>
 </tr>
