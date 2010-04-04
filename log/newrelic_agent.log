@@ -263,3 +263,43 @@ The error occurred while evaluating nil.[]
 You might have expected an instance of ActiveRecord::Base.
 The error occurred while evaluating nil.[]
 [04/04/10 18:23:21 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: undefined method `number_to_precentage' for #<ActionView::Base:0xb540c7c4>
+[04/04/10 18:37:50 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]
+[04/04/10 18:44:32 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: compile error
+/home/omar/Proyectos/EandV/newport-beach/app/views/contact/zillow_demographics.html.erb:14: syntax error, unexpected '<'
+; @output_buffer.concat(( <%= number_to_currency(@demogra...
+                           ^
+/home/omar/Proyectos/EandV/newport-beach/app/views/contact/zillow_demographics.html.erb:14: syntax error, unexpected ',', expecting ')'
+...]["content"], :precision => 0,:unit => "")
+                              ^
+/home/omar/Proyectos/EandV/newport-beach/app/views/contact/zillow_demographics.html.erb:15: syntax error, unexpected ')', expecting kEND
+ ).to_s); @output_buffer.concat "\n</t...
+        ^
+[04/04/10 18:46:14 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: compile error
+/home/omar/Proyectos/EandV/newport-beach/app/views/contact/zillow_demographics.html.erb:70: syntax error, unexpected tINTEGER, expecting ')'
+..."][0]["data"][0]["attribute"]5]["values"][0]["nation"][0]["v...
+                              ^
+/home/omar/Proyectos/EandV/newport-beach/app/views/contact/zillow_demographics.html.erb:70: syntax error, unexpected ']', expecting ')'
+..."][0]["attribute"]5]["values"][0]["nation"][0]["value"][0]["...
+                              ^
+/home/omar/Proyectos/EandV/newport-beach/app/views/contact/zillow_demographics.html.erb:70: syntax error, unexpected ']', expecting ')'
+...ute"]5]["values"][0]["nation"][0]["value"][0]["content"], :p...
+                              ^
+/home/omar/Proyectos/EandV/newport-beach/app/views/contact/zillow_demographics.html.erb:70: syntax error, unexpected ']', expecting ')'
+...ues"][0]["nation"][0]["value"][0]["content"], :precision => ...
+                              ^
+/home/omar/Proyectos/EandV/newport-beach/app/views/contact/zillow_demographics.html.erb:70: syntax error, unexpected ']', expecting ')'
+...on"][0]["value"][0]["content"], :precision => 0)
+                              ^
+/home/omar/Proyectos/EandV/newport-beach/app/views/contact/zillow_demographics.html.erb:71: syntax error, unexpected ')', expecting kEND
+ ).to_s); @output_buffer.concat "\n</t...
+        ^
+[04/04/10 18:58:25 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: /home/omar/Proyectos/EandV/newport-beach/app/controllers/contact_controller.rb:116: syntax error, unexpected tIDENTIFIER, expecting kEND
+		@first percentage = number_with_precision(@demo...
+		                 ^
+[04/04/10 18:58:37 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: undefined method `number_with_precision' for #<ContactController:0xb4f36150>
+[04/04/10 18:59:02 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: undefined method `number_to_currency' for #<ContactController:0xb53af6f0>
+[04/04/10 19:11:45 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]

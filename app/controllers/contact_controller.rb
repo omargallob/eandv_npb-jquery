@@ -113,7 +113,7 @@ layout "lightbox"
 		rillow = Rillow.new('X1-ZWz1c216cd0qvf_7aoby')
 		@demographics = rillow.get_demographics(:city => @location.region, :state=>'CA')
 		logger.info "Lookin for valur"
-		
+		@firstpercentage = @demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][6]["values"][0]["city"][0]["value"][0]["content"]
 		#@region_chart = rillow.get_region_chart(:unit_type =>'percent',:city=> @location.city,:state=>'CA', :width=>300, :height=>150, :chart_duration=>'5years')
    respond_to do |format|
       format.xml #

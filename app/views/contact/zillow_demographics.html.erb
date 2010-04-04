@@ -1,18 +1,93 @@
 
 <table style="color:#4d4d4d;font-size:12px;float:left">
-<% for att in @demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"] %>
-<tr>
-	<td width="250px"><%= att["name"] %></td>
 
-	<td><% z = att["values"][0]["city"].to_a %></td>
-	
+<tr style="border-bottom: 1px solid #e1e1e1;">
+	<td style="padding:10px"><%= @demographics["response"][0]["pages"][0]["page"][0]["name"][0] %></td>
 </tr>
-<% end %>
+<tr>
+	<td width="250px"><%= @demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][0]["name"][0] %></td>
+
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][0]["values"][0]["city"][0]["value"][0]["content"], :precision => 0,:unit => "")
+ %></td>
+	<td>
+	</td>
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][0]["values"][0]["nation"][0]["value"][0]["content"], :precision => 0,:unit => "")
+ %>
+</td>	
+</tr>
+
+<tr>
+	<td width="250px"><%= @demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][1]["name"][0] %></td>
+
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][1]["values"][0]["city"][0]["value"][0]["content"], :precision => 0)
+ %></td>
+	<td>
+	</td>
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][1]["values"][0]["nation"][0]["value"][0]["content"], :precision => 0)
+ %>
+</td>	
+</tr>
+<tr>
+	<td width="250px"><%= @demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][2]["name"][0] %></td>
+
+	<td><%=  number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][2]["values"][0]["city"][0]["value"][0]["content"], :precision => 0)
+ %></td>
+	<td>
+	</td>
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][2]["values"][0]["nation"][0]["value"][0]["content"], :precision => 0)
+ %>
+</td>	
+</tr>
+<tr>
+	<td width="250px"><%= @demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][3]["name"][0] %></td>
+
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][3]["values"][0]["city"][0]["value"][0]["content"], :precision => 0)
+ %></td>
+	<td>
+	</td>
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][3]["values"][0]["nation"][0]["value"][0]["content"], :precision => 0)
+ %>
+</td>	
+</tr>
+<tr>
+	<td width="250px"><%= @demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][4]["name"][0] %></td>
+
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][4]["values"][0]["city"][0]["value"][0]["content"], :precision => 0)
+ %></td>
+	<td>
+	</td>
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][4]["values"][0]["nation"][0]["value"][0]["content"], :precision => 0)
+ %>
+</td>	
+</tr>
+<tr>
+	<td width="250px"><%= @demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][5]["name"][0] %></td>
+
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][5]["values"][0]["city"][0]["value"][0]["content"], :precision => 0)
+ %></td>
+	<td>
+	</td>
+	<td><%= number_to_currency(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][5]["values"][0]["nation"][0]["value"][0]["content"], :precision => 0)
+ %>
+</td>	
+</tr>
+<tr>
+	<td width="250px"><%= @demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][6]["name"][0] %></td>
+	<td><%= number_to_percentage(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][6]["values"][0]["city"][0]["value"][0]["content"], :precision => 4)%></td>
+	<td>
+	</td>
+	<td><%= number_to_percentage(@demographics["response"][0]["pages"][0]["page"][0]["tables"][0]["table"][0]["data"][0]["attribute"][6]["values"][0]["nation"][0]["value"][0]["content"], :precision => 4)
+ %>
+</td>	
+</tr>
+
+
 
 
 <tr style="border-bottom: 1px solid #e1e1e1;">
 	<td style="padding:10px"><%= @demographics["response"][0]["pages"][0]["page"][1]["name"][0] %></td>
 </tr>
+
 <% for att1 in @demographics["response"][0]["pages"][0]["page"][1]["tables"][0]["table"][0]["data"][0]["attribute"] %>
 	<%= render :partial =>"table_zillow", :object =>att1 %> 
 <% end %>
