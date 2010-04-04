@@ -20,7 +20,7 @@
 
 		<td> <%= property.garage %></td></p></li>
 			<li class="garage"></li>
-			<li class="viewproperty"><%= link_to "View Property", property_path(property) %></li>
+			<li class="viewproperty"><%= link_to "View Property", property_full_path(property.location.region.downcase.gsub(/ /,"-"),property.title.gsub(/ /,"-")) %></li>
 		</ul>
 	</div>
 	<% if property.featured %><div class="ribbon"></div><% end %>

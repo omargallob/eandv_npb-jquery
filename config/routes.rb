@@ -32,6 +32,8 @@ ActionController::Routing::Routes.draw do |map|
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :users
 
+	map.property_region "/:region/", :controller=>"properties", :action =>"search"
+	map.property_full "/:region/:title", :controller=>"properties", :action =>"show"
   map.resource :session
   #map.namespace :services do |services|
    # services.pare
