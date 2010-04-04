@@ -8388,3 +8388,4 @@ Requiring REXML
 /home/omar/Proyectos/EandV/newport-beach/app/views/layouts/application.html.erb:64: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/newport-beach/app/views/layouts/application.html.erb:65: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/newport-beach/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
