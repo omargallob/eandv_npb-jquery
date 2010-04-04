@@ -66,7 +66,10 @@
 						<% if controller.action_name == "vip" %>VIP<% end %>	
 						<% if controller.action_name == "zillow_homevalue" %>	
 						Home Value: <%= @location.region %>
-					<% end %>								 
+					<% end %>				
+						<% if controller.action_name == "zillow_demographics" %>	
+					Know your neighbourhood: <%= @location.region %>
+					<% end %>						 
 			</h1>
 	<% if controller.action_name == "index" %>			
 			<p style="margin-top:4px">If your interested in one of our properties/services or have any questions you can <span><a onclick="window.open('/plugoo','meebome','width=200,height=285');" href="#" class="live">

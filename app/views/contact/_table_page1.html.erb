@@ -1,0 +1,13 @@
+<tr>
+	<td width="250px"><%= table_page1["name"] %></td>
+
+	<% if  table_page1["values"][0]["city"][0]["value"][0]["content"]  %>
+	<td><h3><%= table_page1["values"][0]["city"][0]["value"][0] %></h3></td>
+	<td width="15"></td>
+	<td><h3><%= table_page1["values"][0]["nation"][0]["value"][0] %></h3></td>		
+	<% else %>	
+	<td><h3><%= table_page1["values"][0]["city"][0]["value"][0]["content"] %></h3></td>
+	<td width="15"></td>
+	<td><h3><%= table_page1["values"][0]["nation"][0]["value"][0]["content"] %></h3></td>
+	<% end %>
+</tr>

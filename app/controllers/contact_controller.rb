@@ -107,7 +107,19 @@ layout "lightbox"
       format.html #
     end
 	end
-
+	def zillow_demographics
+		require 'rillow'		
+		@location = Location.find_by_id(15)
+		rillow = Rillow.new('X1-ZWz1c216cd0qvf_7aoby')
+		@demographics = rillow.get_demographics(:city => @location.region, :state=>'CA')
+		logger.info "Lookin for valur"
+		
+		#@region_chart = rillow.get_region_chart(:unit_type =>'percent',:city=> @location.city,:state=>'CA', :width=>300, :height=>150, :chart_duration=>'5years')
+   respond_to do |format|
+      format.xml #
+      format.html #
+    end
+	end
 
 	private
 	def pickup_variables_contact
