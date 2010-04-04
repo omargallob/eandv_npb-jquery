@@ -42,6 +42,9 @@ class RssController < ApplicationController
 		@property = Property.find_by_id(params[:id])
 		@properties = Property.find(:all, :conditions =>['bedrooms = ?',@property.bedrooms])
 		@properties.delete_if{|qqq| qqq.id == @property.id}
+		if @properties.length == 0
+			@properties << @property
+		end
 		#pickup_properties(156)
       respond_to do |format|
           format.xml  #{ render :xml => @properties }
