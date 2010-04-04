@@ -1,5 +1,5 @@
 
-<table style="color:#4d4d4d;font-size:12px;float:left">
+<table style="color:#4d4d4d;font-size:12px;float:left;margin-left:15px">
 
 <tr style="border-bottom: 1px solid #e1e1e1;">
 	<td style="padding:10px"><%= @demographics["response"][0]["pages"][0]["page"][0]["name"][0] %></td>
@@ -102,4 +102,14 @@
 <% end %>
 
 </table>
+<hr/>
+<img src="http://www.zillow.com/widgets/GetVersionedResource.htm?path=/static/logos/Zillowlogo_200x50.gif" width="200" height="50" alt="Zillow Real Estate Search" style="float:right;"/>	
+<% content_for :script do %>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	$(document).nice_fonts();
+
+});
+</script>
+<% end %>
 
