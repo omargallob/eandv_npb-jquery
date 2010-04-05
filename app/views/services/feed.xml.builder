@@ -14,11 +14,11 @@ xml.instruct!
           xml.subcategory do
             xml.title subcategory.title
             xml.body subcategory.description.gsub(/<\/?[^>]*>/, "")
-            xml.link services_sub_path(@category.name.downcase,subcategory.navlabel.downcase)
+            xml.link services_sub_path(@category.name.downcase,subcategory.name.downcase)
           end
         end
       end
     else
-      xml.link "Read more",  "path"=>services_sub_path(@category.parent.name.downcase,@category.navlabel.downcase)
+      xml.link "Read more",  "path"=>services_sub_path(@category.parent.name.downcase,@category.name.downcase)
     end
   end

@@ -318,3 +318,13 @@ The error occurred while evaluating nil.[]
 [04/05/10 02:53:12 +0200 banus-dev (8172)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 8172
 [04/05/10 02:53:12 +0200 banus-dev (8172)] INFO : Agent Log found in /home/omar/Proyectos/EandV/newport-beach/log/newrelic_agent.log
 [04/05/10 02:53:12 +0200 banus-dev (8172)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/05/10 12:08:04 +0200 banus-dev (4119)] INFO : Dispatcher: mongrel
+[04/05/10 12:08:04 +0200 banus-dev (4119)] INFO : Application: My Application
+[04/05/10 12:08:04 +0200 banus-dev (4119)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 4119
+[04/05/10 12:08:04 +0200 banus-dev (4119)] INFO : Agent Log found in /home/omar/Proyectos/EandV/newport-beach/log/newrelic_agent.log
+[04/05/10 12:08:04 +0200 banus-dev (4119)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/05/10 12:19:51 +0200 banus-dev (4880)] INFO : Dispatcher: mongrel
+[04/05/10 12:19:51 +0200 banus-dev (4880)] INFO : Application: My Application
+[04/05/10 12:19:51 +0200 banus-dev (4880)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 4880
+[04/05/10 12:19:51 +0200 banus-dev (4880)] INFO : Agent Log found in /home/omar/Proyectos/EandV/newport-beach/log/newrelic_agent.log
+[04/05/10 12:19:51 +0200 banus-dev (4880)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
