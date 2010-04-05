@@ -1,5 +1,5 @@
 <li>
 	
-	<%= image_tag comments.user.photo_url %><p class="details"><%= comments.user.name %><br><%= comments.created_at %></p>
+	<%= image_tag comments.user.photo_url if comments.user.photo_url %><p class="details"><%= comments.user.name if comments.user.name %><br><%= comments.created_at if comments.created_at %></p>
 	<p><%= comments.body %></p>
 </li>

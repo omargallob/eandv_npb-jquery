@@ -24,12 +24,16 @@ class ApplicationController < ActionController::Base
   end
   
   def pickupproperties
-    @locations = Location.find(:all, :include => :country)
-		@locations.delete_if{|q| q.properties.size == 0}
-		@locations.delete_if{|q| q.country_id != 9}
 
-    @countries = Country.find(:all)
-		
+	if controller_name =="properties" and action_name =="search"
+		@country = Country.find_by_title(params[:search_query][:country])
+		@locations = @country.locations
+	else
+    @locations = Location.find(:all, :include => :country)
+		@locations.delete_if{|q| q.country_id != 9}
+	end	
+		@locations.delete_if{|q| q.properties.size == 0}
+	  @countries = Country.find(:all)
 		@countries.delete_if{|s| s.locations.size == 0}
 		@countries = @countries.collect {|p| [ p.title, p.title ]}
 		
