@@ -8487,3 +8487,8 @@ Requiring REXML
 /home/omar/Proyectos/EandV/newport-beach/app/views/properties/search.html.erb:11: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/blog/_comments.html.erb:6: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/blog/_comments.html.erb:6: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/blog/_comments.html.erb:6: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/blog/_comments.html.erb:6: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/blog/_comments.html.erb:6: warning: don't put space before argument parentheses

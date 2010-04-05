@@ -18,4 +18,14 @@ class Admin::CommentsController < Admin::BaseController
 		end
   end
 
+  def destroy
+      @comment = Comment.find(params[:id])
+       @comment.destroy
+
+       respond_to do |format|
+         format.html { redirect_to(view_blog_parent_path(@comment.post.parent.name,@comment.post.name )) }
+         format.xml  { head :ok }
+       end
+  end
+
 end
