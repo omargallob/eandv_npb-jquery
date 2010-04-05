@@ -3,7 +3,7 @@
 
 	<td><%= service.navlabel %></td>	
 	<td width="350px" class="clearfix">
-	<%= service.description %>
+	<%= truncate(service.description, 150) %>
 	</td>
 
 	<% if controller.action_name == "show" %>

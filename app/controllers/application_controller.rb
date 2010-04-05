@@ -64,10 +64,10 @@ def pickup_properties(id)
         @properties = Property.find(:all)
       else
 				logger.info "Query: "+ @search_query.query
-				@qq =	"% #{@search_query.query.capitalize} %"
-        @properties = Property.find(:all, :conditions => ["title like ? or subtitle like ?",@qq, @qq ])
-				@locations = Location.find(:all, :conditions => ["city like ?",@qq])
-        @types = Type.find(:all, :conditions => ["title like ?",@qq])
+
+        @properties = Property.find(:all, :conditions => ["title like ? or subtitle like ?","%"+@search_query.query+"%","%"+@search_query.query+"%"])
+				@locations = Location.find(:all, :conditions => ["city like ? or zipcod = ?","%"+@search_query.query+"%",@search_query.query])
+        @types = Type.find(:all, :conditions => ["title like ?",@search_query.query])
         for location in @locations
           if location.properties
            for p in location.properties
@@ -75,13 +75,7 @@ def pickup_properties(id)
            end
           end
         end
-        for type in @types
-          if type.properties
-           for q in type.properties
-            @properties << q
-           end
-          end
-        end
+     
       end  
     else
 			logger.info "Picking up from the drop downs"
