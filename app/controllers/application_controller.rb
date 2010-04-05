@@ -26,8 +26,12 @@ class ApplicationController < ActionController::Base
   def pickupproperties
 
 	if controller_name =="properties" and action_name =="search"
-		@country = Country.find_by_title(params[:search_query][:country])
-		@locations = @country.locations
+		if params[:search_query][:query] == "All"
+			@country = Country.find_by_title(params[:search_query][:country])
+			@locations = @country.locations
+		else
+			@locations = Location.find(:all, :include => :country)
+		end
 	else
     @locations = Location.find(:all, :include => :country)
 		@locations.delete_if{|q| q.country_id != 9}
