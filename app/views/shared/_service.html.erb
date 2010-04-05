@@ -1,14 +1,8 @@
 
 <tr>
-	<td>
-		<% if controller.action_name == "show" %>
-		<%= image_tag service.photo.url(:large) %>
-		<% else %>
-		<%= image_tag service.main.url(:large) %>
-		<% end %>
-	</td>
+
 	<td><%= service.navlabel %></td>	
-	<td width="650px" class="clearfix">
+	<td width="350px" class="clearfix">
 	<%= service.description %>
 	</td>
 
