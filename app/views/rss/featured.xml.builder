@@ -9,7 +9,7 @@ xml.homes do
 				end	
 			end
 			xml.title property.title
-			xml.title2 property.location.region+", "+property.location.county+", "+property.location.state
+			xml.title2 property.location.region+", "+property.location.county_initials+", "+property.location.state_initials
 			xml.beds property.bedrooms.to_s
 			xml.baths property.bathrooms
 			xml.lotsize property.plot	
