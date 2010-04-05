@@ -8492,3 +8492,10 @@ Requiring REXML
 /home/omar/Proyectos/EandV/newport-beach/app/views/blog/_comments.html.erb:6: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/newport-beach/app/views/blog/_comments.html.erb:6: warning: don't put space before argument parentheses
 /home/omar/Proyectos/EandV/newport-beach/app/views/blog/_comments.html.erb:6: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/admin/countries/_country.html.erb:2: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/admin/countries/_country.html.erb:7: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/admin/countries/_country.html.erb:8: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/admin/countries/_country.html.erb:10: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/admin/locations/_location.html.erb:15: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/admin/locations/_location.html.erb:16: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/admin/locations/_location.html.erb:17: warning: don't put space before argument parentheses

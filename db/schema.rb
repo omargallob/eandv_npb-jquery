@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100329184854) do
+ActiveRecord::Schema.define(:version => 20100405165104) do
 
   create_table "appforms", :force => true do |t|
     t.integer  "job_id"
@@ -283,6 +283,8 @@ ActiveRecord::Schema.define(:version => 20100329184854) do
     t.datetime "updated_at"
     t.string   "city"
     t.string   "city_initials"
+    t.string   "state_initials"
+    t.string   "county_initials"
   end
 
   create_table "metatags", :force => true do |t|
