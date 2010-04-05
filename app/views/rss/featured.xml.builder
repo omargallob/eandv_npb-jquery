@@ -18,7 +18,7 @@ xml.homes do
 			xml.flagurl property.location.country.flag.url()	
 			xml.featuredlink property.featured 
 			xml.youtubelink property.youtube	
-			xml.propertylink property_path(property)
+			xml.propertylink property_full_path(property.location.region.gsub(/ /,"-"),property.title.gsub(/ /,"-"))
 		end
   end
 	
