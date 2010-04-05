@@ -29,7 +29,7 @@ class ServicesController < ApplicationController
     if params[:subcategory] == nil    
       @category = Category.find_by_name(params[:id])
     else
-      @category = Category.find_by_navlabel(params[:subcategory])
+      @category = Category.find_by_name(params[:subcategory])
     end
     respond_to do |format|
         format.xml  #{ render :xml => @properties }
