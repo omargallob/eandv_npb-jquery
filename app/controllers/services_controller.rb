@@ -11,7 +11,7 @@ class ServicesController < ApplicationController
     @page = Page.find_by_name('services')
     
     if params[:subcategory] == nil    
-      @category = Category.find_by_name(params[:id])
+      @category = Category.find_by_name(params[:category])
     else
       @category = Category.find_by_name(params[:subcategory])
     end

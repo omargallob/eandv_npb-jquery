@@ -6,7 +6,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :eandv
 	map.resources :blog
 	map.resources :comments
-  map.resources :services #, :path_prefix => ":locale"
+  map.service_feed '/services/:category/:subcategory/feed.xml', :controller => 'services', :action => 'feed'	
+map.services_par '/services/:category', :controller => "services", :action => "show"
+  
+  map.services_sub '/services/:category/:subcategory.:format', :controller => "services", :action => "show"  
+	map.resources :services #, :path_prefix => ":locale"
   map.resources :properties,:collection => {:feed => :get, :filter=>:get,:unfilter=>:get,:sort => :get, :unsort => :get}
   map.resources :rss,:collection => {:favs => :get,:properties => :get}
   
@@ -39,9 +43,7 @@ ActionController::Routing::Routes.draw do |map|
    # services.pare
   #end
  
-  map.services_par '/services/:category', :controller => "services", :action => "show"
   
-  map.services_sub '/services/:category/:subcategory.:format', :controller => "services", :action => "show"
   #admin section
   map.namespace :admin  do |admin|
      admin.root :controller => "overview"
@@ -113,7 +115,7 @@ ActionController::Routing::Routes.draw do |map|
   map.feed_properties '/rss/properties.:format', :controller => 'properties', :action => 'feeds'
   map.feed_favs '/rss/favs.:format', :controller => 'rss', :action => 'favs'
   map.property_images '/properties/:id/images.xml', :controller => 'properties', :action => 'feed_images'     
-  map.service_feed '/services/:category/:subcategory/feed.xml', :controller => 'services', :action => 'feed'
+
   map.about_nb '/about.xml', :controller => "rss", :action => "about"
   map.partners '/partners.xml', :controller => "rss", :action => "partners"
   map.featured_feed '/featured.xml', :controller => "rss", :action => "featured"

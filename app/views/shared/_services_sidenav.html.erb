@@ -1,4 +1,4 @@
-	<% if params[:id] == nil %>
+	<% if params[:category] == nil %>
 		<li class="active">Intro</li>
 	<% else %>
 		<li><%= link_to "Intro", view_page_path(@page.name)%></li>
