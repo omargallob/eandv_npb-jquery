@@ -65,8 +65,8 @@ def pickup_properties(id)
       else
 				logger.info "Query: "+ @search_query.query
 
-        @properties = Property.find(:all, :conditions => ["title like ? or subtitle like ?","%"+@search_query.query+"%","%"+@search_query.query+"%"])
-				@locations = Location.find(:all, :conditions => ["city like ? or zipcod = ?","%"+@search_query.query+"%",@search_query.query])
+        @properties = Property.find(:all, :conditions => ["title like ? or subtitle like ?","%"+@search_query.query.capitalize+"%","%"+@search_query.query.capitalize+"%"])
+				@locations = Location.find(:all, :conditions => ["city like ? or zipcod = ?","%"+@search_query.query.capitalize+"%",@search_query.query])
         @types = Type.find(:all, :conditions => ["title like ?",@search_query.query])
         for location in @locations
           if location.properties
