@@ -17,12 +17,12 @@ body.vip #pagewrapper #content hr { width: 536px; margin-left: 13px; margin-righ
 body { color: white; overflow: hidden; }
 body a { color: #E13939; text-decoration: none; }
 body a:hover { color: black; }
-body #pagewrapper { width: 560px; height: 567px; background: white; margin: 0px auto; background: white; background-image: none; }
+body #pagewrapper { width: 380px; height: 400px; background: white; float: left; background: white; background-image: none; }
 body #pagewrapper #header { width: 546px; margin: 24px 7px 0 7px; background-image: none; }
 body #pagewrapper #header h1 { color: black; padding: 0 8px 8px  8px; text-transform: uppercase; border-bottom: 1px solid #e1e1e1; }
 body #pagewrapper #header p { color: #4d4d4d; padding: 12px 8px; border-bottom: 1px solid #e1e1e1; }
 body #pagewrapper #header p span { color: #E13939; text-transform: uppercase; }
-body #pagewrapper #content { height: 515px; }
+body #pagewrapper #content { height: 350px; }
 body #pagewrapper #content table tr { margin: 4px 0; }
 body #pagewrapper #content table tr td { vertical-align: top; }
 body #pagewrapper #content table tr td h4 { text-transform: uppercase; text-align: right; text-decoration: none; margin-right: 15px; margin-top: 0px; width: 150px; margin-top: 2px; }
@@ -52,7 +52,7 @@ body #pagewrapper #content div.fieldWithErrors table.mceLayout { border: 2px sol
 body #pagewrapper #content #mailing { float: left; margin-left: 50px; width: 150px; }
 body #pagewrapper #content #mailing p { color: #4d4d4d; font-size: 11px; margin-left: 15px; margin-top: 12px; }
 body #pagewrapper #content hr { float: left; width: 546px; height: 1px; margin: 12px 8px; background-color: #e1e1e1; border: 0px none; }
-body #pagewrapper #content #wide { color: #4d4d4d; padding: 0; height: 500px; width: 520px; }
+body #pagewrapper #content #wide { color: #4d4d4d; padding: 0; height: 300px; width: 520px; }
 body #pagewrapper #content #wide p { margin: 5px 35px 5px 0; }
 body #pagewrapper #content #wide h2 { margin: 10px 0 5px 0; }
 body #pagewrapper .zillow_columns { float: left; width: 250px; background: transparent; padding-left: 25px; margin-top: 15px; }
