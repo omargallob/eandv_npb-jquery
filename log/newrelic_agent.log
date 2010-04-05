@@ -313,3 +313,8 @@ The error occurred while evaluating nil.[]
 [04/05/10 00:39:26 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: undefined method `subpages' for nil:NilClass
 [04/05/10 00:39:34 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: private method `gsub' called for nil:NilClass
 [04/05/10 00:40:21 +0200 banus-dev (15571)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: private method `gsub' called for nil:NilClass
+[04/05/10 02:53:12 +0200 banus-dev (8172)] INFO : Dispatcher: mongrel
+[04/05/10 02:53:12 +0200 banus-dev (8172)] INFO : Application: My Application
+[04/05/10 02:53:12 +0200 banus-dev (8172)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 8172
+[04/05/10 02:53:12 +0200 banus-dev (8172)] INFO : Agent Log found in /home/omar/Proyectos/EandV/newport-beach/log/newrelic_agent.log
+[04/05/10 02:53:12 +0200 banus-dev (8172)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
