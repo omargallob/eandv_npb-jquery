@@ -8436,3 +8436,4 @@ Requiring REXML
 	from /usr/bin/mongrel_rails:19:in `load'
 	from /usr/bin/mongrel_rails:19
 /home/omar/Proyectos/EandV/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
+/home/omar/Proyectos/EandV/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
