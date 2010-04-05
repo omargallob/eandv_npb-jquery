@@ -36,6 +36,12 @@ map.services_par '/services/:category', :controller => "services", :action => "s
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :users
 
+
+	map.properties_page '/properties/page/:page', :controller=>"properties", :action => "index"
+	map.properties_order '/properties/order/:order', :controller => "properties", :action => "index"
+	map.properties_filter '/properties/filter/:filter', :controller => "properties", :action => "index"
+	map.properties_filter_order '/properties/filter/:filter/order/:order', :controller => "properties", :action => "index"
+
 	map.property_region "/properties/:region/", :controller=>"properties", :action =>"search", :regional => "true"
 	map.property_full "/properties/:region/:title", :controller=>"properties", :action =>"show"
   map.resource :session
@@ -123,10 +129,6 @@ map.services_par '/services/:category', :controller => "services", :action => "s
 	map.view_blog '/blog/:name', :controller => "blog", :action => "show"
 	map.view_blog_parent '/blog/:parent/:name', :controller => "blog", :action => "show"
 	
-	map.properties_page '/properties/page/:page', :controller=>"properties", :action => "index"
-	map.properties_order '/properties/order/:order', :controller => "properties", :action => "index"
-	map.properties_filter '/properties/filter/:filter', :controller => "properties", :action => "index"
-	map.properties_filter_order '/properties/filter/:filter/order/:order', :controller => "properties", :action => "index"
 	#map.featured '/properties/featured', :controller => "properties", :action => "index", :aux=>"featured"
 	#map.connect '/blog/:year/:month/:day', :controller => "blog", :action => "show", :year => /\d{4/},:month => /\d{1,2/},:year => /\d{4/},
   # 
