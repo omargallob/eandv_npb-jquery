@@ -26,18 +26,20 @@
 	    clear: both;
 	  }
 		body{
-
+			color: #4d4d4d
 			overflow: hidden;
 		}
 		#contact_form{
-			width:480px;
-			height:350px;
+			width:500px;
+			height: 250px;
 			float: left;
-			
-			padding-bottom: 45px;
+		}
+		#contact_form.vip{
+			width: 200px
 		}
 		.jScrollPaneContainer{
-					margin-top: 0px;		
+					margin-top: 0px;	
+					margin-left: 0px;	
 		}	
 		.jScrollPaneTrack{
 					margin: 5px 0;		
@@ -58,7 +60,7 @@
 	
 	<link href="http://www.engelvoelkers.com/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
   </head>
-  <body class="<% if controller.action_name == 'vip' || controller.action_name == 'user_create' %>vip<% end %>">
+  <body >
 		<div id="pagewrapper">
 			<div id="header">
 				
@@ -91,15 +93,10 @@ CONTACT US or why not <a onclick="window.open('http://chatserver.comm100.com/Cha
 E&V VIP programme recieve a wealth of extra information ranging from special investment
 opportunities to special offers from our Partners.</p>
 
-<p>Become an E&V VIP and recieve:
-<ul>
-<li>Access to our exclusive Luxury Global Properties</li>
-<li>Updates on Properties as soon as they hit the market</li>
-<li>Up to date real estate advice</li>
-<li>Invitations to Exclusive E&V partner events</li>
-</ul>
-</p>
-	<% end %>/
+<p style="border-bottom:0px;padding-bottom:4px"></p>
+
+
+	<% end %>
 			</div>
 			<div id="content">
 				<div id="notice"></div>

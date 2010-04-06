@@ -31,7 +31,7 @@
 				<tr>
 					<td class="chat">			<%= link_to "chat","#" , :onclick=>"window.open('http://chatserver.comm100.com/ChatWindow.aspx?siteId=25828&planId=368&visitType=1&byHref=1','livechat','width=500,height=450');" %></td>
 					<td class="spacer"> </td>
-					<td class="contact">	<%= link_to "contact","/contact?iframe=true&width=560&height=600" ,:rel=>"prettyPhoto" %></td>
+					<td class="contact">	<%= link_to "contact","/contact?iframe=true&width=560&height=400" ,:rel=>"prettyPhoto" %></td>
 				</tr>	
 			</table>	
 		<%= link_to "download pdf", property.pdf.url(:original) if property.pdf.url(:original) != "/pdfs/original/missing.png" %>

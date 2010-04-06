@@ -52,7 +52,7 @@ jQuery.fn.nice_fonts = function(){
 jQuery.fn.nice_fonts_featured = function(){
 	Cufon.replace('h1', {
 		   fontFamily: "GarmdITC BkCn BT",
-		   color: 'white',
+		   color: '#4d4d4d',
 		   fontSize: "24px",
 	  		hover: {
 	   		color: 'white'
@@ -63,7 +63,7 @@ jQuery.fn.nice_fonts_featured = function(){
 	
 		Cufon.replace('h3', {
 		   fontFamily: "GarmdITC BkCn BT",
-		   color: 'white',
+		   color: '#4d4d4d',
 		   fontSize: "14px"
 
 	 });

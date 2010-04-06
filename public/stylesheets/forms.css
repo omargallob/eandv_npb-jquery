@@ -14,7 +14,7 @@ body.vip #pagewrapper #content table tr td.spacer { width: 15px; }
 body.vip #pagewrapper #content table#column1 { margin-top: 0px; }
 body.vip #pagewrapper #content hr { width: 536px; margin-left: 13px; margin-right: 13px; }
 
-body { color: white; overflow: hidden; }
+body { color: white; overflow: hidden; font-size: 12px; }
 body a { color: #E13939; text-decoration: none; }
 body a:hover { color: black; }
 body #pagewrapper { width: 380px; height: 400px; background: white; float: left; background: white; background-image: none; }
@@ -23,15 +23,20 @@ body #pagewrapper #header h1 { color: black; padding: 0 8px 8px  8px; text-trans
 body #pagewrapper #header p { color: #4d4d4d; padding: 12px 8px; border-bottom: 1px solid #e1e1e1; }
 body #pagewrapper #header p span { color: #E13939; text-transform: uppercase; }
 body #pagewrapper #content { height: 350px; }
+body #pagewrapper #content ul { width: 155px; float: left; margin-left: 10px; }
+body #pagewrapper #content ul li { color: #4d4d4d; font-size: 12px; }
+body #pagewrapper #content ul li.submit { margin-top: 45px; list-style: none; }
 body #pagewrapper #content table tr { margin: 4px 0; }
 body #pagewrapper #content table tr td { vertical-align: top; }
 body #pagewrapper #content table tr td h4 { text-transform: uppercase; text-align: right; text-decoration: none; margin-right: 15px; margin-top: 0px; width: 150px; margin-top: 2px; }
 body #pagewrapper #content table tr td h5 { float: left; }
-body #pagewrapper #content table#column1 { float: left; margin-top: 20px; }
+body #pagewrapper #content table tr td p { color: #4d4d4d; }
+body #pagewrapper #content table#column1 { float: left; margin-top: 0px; }
 body #pagewrapper #content table#column1 tr td { vertical-align: middle; }
 body #pagewrapper #content table#column1 tr td input[type="text"] { width: 250px; }
 body #pagewrapper #content table#column1 tr td input[type="checkbox"] { margin: 8px 0 0 0; }
 body #pagewrapper #content table#column1 tr td input[type="submit"] { float: right; }
+body #pagewrapper #content table#column1.contact { margin: 20px 0 0 0; }
 body #pagewrapper #content table#column2 { float: left; }
 body #pagewrapper #content table#column2 tr td { vertical-align: middle; text-align: left; }
 body #pagewrapper #content table#column2 tr td.wide select { width: 134px; }
@@ -42,7 +47,7 @@ body #pagewrapper #content #contactform { margin-top: 0px; }
 body #pagewrapper #content #row2 { float: right; margin-right: 18px; }
 body #pagewrapper #content input { float: left; margin-right: 20px; margin-top: 4px; border: 1px solid #e1e1e1; }
 body #pagewrapper #content input[type="checkbox"] { width: 15px; }
-body #pagewrapper #content input[type="submit"] { float: right; }
+body #pagewrapper #content input[type="submit"] { float: right; margin-right: 72px; }
 body #pagewrapper #content textarea { border: 0px none; border: 1px solid #e1e1e1; width: 250px; }
 body #pagewrapper #content select { border: 1px solid #e1e1e1; margin: 2px 0; width: 250px; }
 body #pagewrapper #content select.short { width: 40px; }
@@ -52,7 +57,7 @@ body #pagewrapper #content div.fieldWithErrors table.mceLayout { border: 2px sol
 body #pagewrapper #content #mailing { float: left; margin-left: 50px; width: 150px; }
 body #pagewrapper #content #mailing p { color: #4d4d4d; font-size: 11px; margin-left: 15px; margin-top: 12px; }
 body #pagewrapper #content hr { float: left; width: 546px; height: 1px; margin: 12px 8px; background-color: #e1e1e1; border: 0px none; }
-body #pagewrapper #content #wide { color: #4d4d4d; padding: 0; height: 300px; width: 520px; }
+body #pagewrapper #content #wide { color: #4d4d4d; padding: 0 0 0 24px; height: 300px; width: 520px; }
 body #pagewrapper #content #wide p { margin: 5px 35px 5px 0; }
 body #pagewrapper #content #wide h2 { margin: 10px 0 5px 0; }
 body #pagewrapper .zillow_columns { float: left; width: 250px; background: transparent; padding-left: 25px; margin-top: 15px; }
