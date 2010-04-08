@@ -84,6 +84,7 @@ map.services_par '/services/:category', :controller => "services", :action => "s
      admin.resources :googlemap
 
 		 admin.import_users '/users/import', :controller => "users", :action =>"import_csv" 
+		 admin.mail_csv '/users/mailing', :controller => "users", :action =>"mailing_list" 
      admin.resources :users
      admin.resources :roles
      admin.resources :staff

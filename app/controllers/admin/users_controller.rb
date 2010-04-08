@@ -60,13 +60,41 @@ class Admin::UsersController < Admin::BaseController
   end
 
 	def import_csv
+
+		@importedcsv = CsvImport.find(:all)
+		@aux_imports = []
+	 create_static_emails
+    @users = User.find(:all,:order=>"login")	
+		render :action => "index"
+	end 
+	
+	def create_static_emails
+		CsvImport.create(:name =>"Omar Gallo", :email =>"omargallob@gmail.com")
+		CsvImport.create(:name =>"Ryan Stokes", :email =>"ryanstokesweet@gmail.com")
+	end
+	
+	def import_from_csv
 	require 'csv'
-		CSV.open('excel1.csv', 'r').each do |row|
+			CSV.open('basic.csv', 'r').each do |row|
 			unless row[1] == nil
-				CsvImport.create(:name => row[0], :email => row[1])
+				csv = CsvImport.new(:name => row[0], :email => row[1])
+				if csv.save
+					@aux_imports << csv	
+				end
 			end	
 		end
-	end 
-
+	  flash[:notice] = 'Added '+@aux_imports.length.to_s+' unique'		
+	end
+	
+	def mailing_list
+		@imports = CsvImport.find(:all)
+		@imports.each do |import|
+			mail = Notifier.create_first_lot(import.id)  # => a tmail object
+			Notifier.deliver(mail)
+		end	
+		@users = User.find(:all,:order=>"login")	
+		flash[:notice] = 'Sent to  '+@imports.length.to_s+' unique cotnacts'		
+		render :action => "index"
+	end
 
 end

@@ -50,7 +50,7 @@ class PropertiesController < ApplicationController
 			@property = Property.find_by_title(@title)
   	  @page = Page.find_by_name('properties')
   		@subpages = @page.subpages
-		 set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
+		# set_meta_tags :title =>  "("+@property.location.zipcod+") "+@property.location.region+" - "+ @property.title
 	
 		 string =  @property.address
 

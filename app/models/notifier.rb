@@ -62,4 +62,14 @@ recipients "omargallob@gmail.com"
    body       :account => @appform
    content_type "text/html"
  end
+
+	def first_lot(id)
+		@import = CsvImport.find_by_id(id)
+ 	 recipients @import.email
+   from       "info@engelandvoelkersnewportbeach.com"
+   subject    "E&V Newport Beach"
+   body       :name => @import
+   content_type "text/html"
+	end
+
 end
