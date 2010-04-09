@@ -88,11 +88,11 @@ class Admin::UsersController < Admin::BaseController
 	end
 	
 	def mailing_list
-		@imports = CsvImport.find_by_id(1)
-		@imports.each do |import|
-			mail = Notifier.create_first_lot(import.id)  # => a tmail object
+		@import = CsvImport.find_by_id(1)
+
+			mail = Notifier.create_first_lot(@import.id)  # => a tmail object
 			Notifier.deliver(mail)
-		end	
+		
 		@users = User.find(:all,:order=>"login")	
 		#flash[:notice] = 'Sent to  '+@imports.length.to_s+' unique cotnacts'		
 		render :action => "index"
