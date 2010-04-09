@@ -102,6 +102,22 @@ class Admin::UsersController < Admin::BaseController
 		render :action => "index"
 	end
 
+	def csvs_vip_newsletter
+		@import1 = CsvImport.find_by_id(1)
+		@import2 = CsvImport.find_by_id(2)
+
+			mail = Notifier.create_vip_newsletter(@import1.id)  # => a tmail object
+			Notifier.deliver(mail)
+
+			mail2 = Notifier.create_vip_newsletter(@import2.id)  # => a tmail object
+			Notifier.deliver(mail2)
+
+
+		@users = User.find(:all,:order=>"login")	
+		flash[:notice] = 'VIP sent Sent to 2 unique cotnacts'		
+		render :action => "index"
+	end
+
 	def list_csvs
 		@imports = CsvImport.find(:all,:order=>"name")
 	end

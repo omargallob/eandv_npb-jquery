@@ -71,5 +71,13 @@ recipients "omargallob@gmail.com"
    body       :name => @import
    content_type "text/html"
 	end
+	def vip_newsletter(id)
+ 	 @import = CsvImport.find_by_id(id)
+ 	 recipients @import.email
+   from       "info@engelandvoelkersnewportbeach.com"
+   subject    "E&V VIP @ Newport Beach"
+   body       :name => @import
+   content_type "text/html"
+	end
 
 end
