@@ -70,6 +70,13 @@ Balboa Island, Newport Beach, CA 92662"
       set_meta_tags :title =>  @page.title
     end  
     
+		@contact_pop = params[:contact_lightbox]
+		if @contact_pop == "true"
+			 respond_to do |format|
+       	format.js #show.js.erb
+				format.html 
+     		end
+		end	
     #@properties = Property.find(:all)
   end
 

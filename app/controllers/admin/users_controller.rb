@@ -63,7 +63,7 @@ class Admin::UsersController < Admin::BaseController
 
 		@importedcsv = CsvImport.find(:all)
 		@aux_imports = []
-	 create_static_emails
+	  import_from_csv
     @users = User.find(:all,:order=>"login")	
 		render :action => "index"
 	end 
@@ -75,14 +75,15 @@ class Admin::UsersController < Admin::BaseController
 	
 	def import_from_csv
 	require 'csv'
-			CSV.open('basic.csv', 'r').each do |row|
-			unless row[1] == nil
-				csv = CsvImport.new(:name => row[0], :email => row[1])
-				if csv.save
-					@aux_imports << csv	
-				end
-			end	
-		end
+			CSV.open('csvs/CSV13.csv', 'r').each do |row|
+				unless row[1] == nil
+					csv = CsvImport.new(:name => row[0], :email => row[1])
+					if csv.save
+						@aux_imports << csv	
+					end
+				end	
+			end
+			
 	  flash[:notice] = 'Added '+@aux_imports.length.to_s+' unique'		
 	end
 	
@@ -97,4 +98,7 @@ class Admin::UsersController < Admin::BaseController
 		render :action => "index"
 	end
 
+	def list_csvs
+		@imports = CsvImport.find(:all,:order=>"name")
+	end
 end
