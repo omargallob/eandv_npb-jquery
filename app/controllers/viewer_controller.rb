@@ -59,7 +59,10 @@ Balboa Island, Newport Beach, CA 92662"
 		end
 		
 		if @page.name == "home"
-			@posts = Post.find_sub(4)
+
+		 @posts= Post.find_all_sub
+		@posts.delete_if{|q| q.parent.name == "news"}
+
 		end
 
     if @page.metatag

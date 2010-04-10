@@ -130,8 +130,7 @@ def pickup_properties(id)
 
  end
 	def gossip	
-	   @latest_posts = Post.find_all_sub
-		@latest_posts.delete_if{|q| q.parent.name == "news"}
+		@latest_posts = Post.find_sub(4)
 	end
   #def default_url_options(options={}) 
   #   logger.debug "default_url_options is passed options: #{options.inspect}\n"
