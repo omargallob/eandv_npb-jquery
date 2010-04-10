@@ -1,6 +1,5 @@
 class Admin::BaseController < ApplicationController		
- before_filter :login_required
- require_role ["admin",'eandv']
+
  layout 'admin' 
  
  def setmeta
