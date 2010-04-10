@@ -18,7 +18,11 @@
 			<% end %>
 	</div>
 	<% if params[:name] == "about" || params[:parent] == "about" %>
+		<% if @page.page_about %>
 			<%= image_tag @page.page_about.photo(:pagesize), :id=>"about_image" %>
+		<% else %>
+				<%= image_tag "static/about_balboa.jpg", :id=>"about_image" %>
+		<% end %>
 	<% end %>
 	<div id="main" class="<% if @page.name != 'home' %>properties <% if @page.name =='about' || @parent.name == 'about' %>about<% end %><% end %><% if @page.name == 'home' %>home<% end %>">
 		<% if @page.name == "home" || @page.name == "about" || @parent.name == "about" %>
