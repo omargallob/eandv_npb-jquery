@@ -55,6 +55,13 @@
 			<iframe src="<%= admin_page_about_path(@page) %>" width="1200" height="700"></iframe>
 		</p>
 		<% end %>
+
+	<% else %>
+		<% if @page.name == "about" %>
+		<p>
+			<iframe src="<%= admin_page_about_path(@page) %>" width="1200" height="700"></iframe>
+		</p>
+		<% end %>
 	<% end %>
 <% end %>
 </div>
