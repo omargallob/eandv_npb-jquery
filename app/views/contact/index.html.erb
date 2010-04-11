@@ -1,5 +1,5 @@
 <div id="contact_form">
-<% form_for :contact, @contact, :url => {:action => 'create'} do |f| %>
+<% form_for :contact, @contact, :url => {:action => 'create'},:html=>{:id=>"contact"} do |f| %>
 	 <%= f.error_messages :header_message => "#{@contact.errors.size} errors prevented this contact form frmo being sent"%> 
 		<table id="column1" class="contact">
 			<tr>
@@ -78,10 +78,20 @@ jQuery(document).ready(function() {
 
 $('#contact_form').jScrollPane({scrollbarWidth:17,showArrows:true});
 
-
+$("#contact_country").change(onSelectChange2);
 
 	
 });
+
+function onSelectChange2(){
+	var selected = $("#contact_country option:selected");		
+	var output = "";
+	aux = $('#contact').serialize();
+	if(selected.val() != 0){
+	$.post('/update_dd_form',aux, null, "script");
+		return true;
+	}
+}
 </script>
 
 <% end %>

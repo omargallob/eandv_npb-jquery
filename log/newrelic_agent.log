@@ -398,3 +398,11 @@ The error occurred while evaluating nil.+
 [04/11/10 20:16:08 +0200 banus-dev (21095)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 21095
 [04/11/10 20:16:08 +0200 banus-dev (21095)] INFO : Agent Log found in /home/omar/Proyectos/EandV/newport-beach/log/newrelic_agent.log
 [04/11/10 20:16:08 +0200 banus-dev (21095)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/11/10 23:24:47 +0200 banus-dev (21095)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]
+[04/11/10 23:24:59 +0200 banus-dev (21095)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]
+[04/11/10 23:27:56 +0200 banus-dev (21095)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: undefined method `locations' for nil:NilClass
+[04/11/10 23:29:14 +0200 banus-dev (21095)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to RPM until the queued errors have been sent: Missing template home/setup_dropdowns_form.erb in view path app/views

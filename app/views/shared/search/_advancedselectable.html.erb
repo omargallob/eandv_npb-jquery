@@ -59,7 +59,7 @@ function onSelectChange(){
 	var output = "";
 	aux = $('#Selectable').serialize();
 	if(selected.val() != 0){
-	$.post('/update_dd',aux, null, "script");
+	$.post('/update_dd_form',aux, null, "script");
 		return true;
 	}
 }

@@ -29,5 +29,19 @@ class HomeController < ApplicationController
       format.js #
     end
 	end
+	def setup_dropdowns_form
 
+		@country = Country.find_by_id(params[:contact][:country])
+		@locations = @country.locations
+		@locations.delete_if{|s| s.properties.size == 0}
+
+		 		@states = @locations.map { |x| x.state }
+				@county = @locations.map { |x| x.county }  
+				@region = @locations.map { |x| x.region }
+				
+
+    respond_to do |format|
+      format.js #
+    end
+	end
 end
