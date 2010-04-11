@@ -21,7 +21,7 @@ class HomeController < ApplicationController
 		@locations.delete_if{|s| s.properties.size == 0}
 
 		 		@states = @locations.map { |x| x.state }
-				@county = @locations.map { |x| x.city+" - "+x.county }  
+				@county = @locations.map { |x| x.county }  
 				@region = @locations.map { |x| x.region }
 				
 
