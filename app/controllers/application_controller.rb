@@ -42,7 +42,7 @@ class ApplicationController < ActionController::Base
 		@countries = @countries.collect {|p| [ p.title, p.title ]}
 		
     @states = @locations.map { |x| x.state }
-    @county = @locations.map { |x| x.city+" - "+x.county }  
+    @county = @locations.map { |x| x.county }  
     @region = @locations.map { |x| x.region }
     @region << "All"
     @aux_props = Property.find(:all,:order => "bedrooms")

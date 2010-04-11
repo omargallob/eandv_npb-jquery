@@ -32,7 +32,7 @@
 #left-side #side-nav .why h3 a { margin-left: 0px; }
 #left-side #side-nav .chat_box { height: 41px; background-image: none; margin-top: 0px; }
 #left-side #side-nav .chat_box .header_w_image { margin-top: 10px; }
-#left-side #side-nav .global { margin-top: 14px; }
+#left-side #side-nav .global { background-image: url(../images/system/bg/front/RglobalBG.jpg); margin-top: 14px; height: 41px; }
 #left-side #side-nav .global .header_w_image { margin: 0px; }
 #left-side #side-nav .global .header_w_image h3 { margin: 10px 0 0 5px; }
 #left-side #side-nav .global .header_w_image img { margin: 0 0 0 15px; }
