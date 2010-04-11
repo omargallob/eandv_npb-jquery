@@ -84,11 +84,10 @@ def pickup_properties(id)
         #@query = params[:states]+" "+params[:region]
         
         if @search_query.area=="All"
-          @tag = @search_query.region.split(' - ')
-           @c0 = @tag[0]
-           @c1 = @tag[1]+" County"
-					logger.info "region 1: " + @c0 + " region 2: "+ @c1
-          @locations = Location.find(:all, :conditions => ["city = ?",@c0])
+         @search_query.region
+
+					
+          @locations = Location.find(:all, :conditions => ["county = ?",@search_query.region])
         else
 					logger.info "area : " + @search_query.area
           @locations = Location.find(:all, :conditions => ["region = ?",@search_query.area])
