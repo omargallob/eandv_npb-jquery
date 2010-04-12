@@ -1,6 +1,6 @@
 <tr>
 	
-	<td><%= image_tag post.photo.url(:small) if controller.action_name == "show"  %><%= post.title %></td>
+	<td><%= post.title %></td>
 	<td>
 	<%= post.description if controller.action_name == "show" %>
 	<% # post.body_html if controller.action_name == "index" 

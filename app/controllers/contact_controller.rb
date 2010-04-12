@@ -128,9 +128,13 @@ layout "lightbox"
 		@property_types = Property.find(:all, :include => :type).map{|x| [x.type.title,x.type.id] }
 		#@countries = Country.find(:all).map.{|y| [y.id,y.title]}
 		@countries = Country.find(:all).map{|y| [ y.title, y.id]}
-		#@states = Location.find(:all).map{|z| [z.state]}
-		@states = Property.find(:all, :include => :location).map{|w| w.location.state}
-		@cities = Property.find(:all, :include => :location).map{|w| w.location.region}
+
+		@usa = Country.find_by_id(9)
+		@locations = @usa.locations
+		@locations.delete_if{|q| q.properties.size == 0}
+
+		@states = @locations.map{|q| q.state }
+		@cities = @locations.map{|q| q.region }
 	end
 	def pickup_variables_job
 		@interested_in = Worker.find(:all, :conditions =>{:vacancy=>true}).collect{|x| [x.title, x.id]}
