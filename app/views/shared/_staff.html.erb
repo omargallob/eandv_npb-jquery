@@ -3,7 +3,7 @@
 <% else %>
 employment
 <% end %>'>
-<%= image_tag staff.photo.url(:pagesize) unless staff.vacancy %>
+<%= image_tag staff.photo.url(:pagesize), :style=>"width:115px" unless staff.vacancy %>
 <h1 class="name"><%= staff.full_name %></h1>
 <h2><%= staff.title %></h2>
 
