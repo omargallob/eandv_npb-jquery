@@ -74,7 +74,9 @@ class User < ActiveRecord::Base
   def self.authenticate(login, password)
     return nil if login.blank? || password.blank?
     u = find :first, :conditions => ['login = ? and activated_at IS NOT NULL', login] # need to get the salt
+		logger.info "#{password.to_s}"
     u && u.authenticated?(password) ? u : nil
+		
   end
 
   def login=(value)
