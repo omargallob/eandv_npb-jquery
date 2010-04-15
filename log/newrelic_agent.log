@@ -442,3 +442,8 @@ The error occurred while evaluating nil.[]
 [04/15/10 20:54:29 +0200 banus-dev (18166)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 18166
 [04/15/10 20:54:29 +0200 banus-dev (18166)] INFO : Agent Log found in /home/omar/Proyectos/newport-beach/log/newrelic_agent.log
 [04/15/10 20:54:29 +0200 banus-dev (18166)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/15/10 21:32:44 +0200 banus-dev (19172)] INFO : Dispatcher: mongrel
+[04/15/10 21:32:44 +0200 banus-dev (19172)] INFO : Application: My Application
+[04/15/10 21:32:44 +0200 banus-dev (19172)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 19172
+[04/15/10 21:32:44 +0200 banus-dev (19172)] INFO : Agent Log found in /home/omar/Proyectos/newport-beach/log/newrelic_agent.log
+[04/15/10 21:32:45 +0200 banus-dev (19172)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present

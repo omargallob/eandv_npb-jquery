@@ -38,7 +38,8 @@ map.services_par '/services/:category', :controller => "services", :action => "s
     map.signup '/signup', :controller => 'users', :action => 'new'
     map.login  '/login',  :controller => 'sessions', :action => 'new'
     map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-    
+		  
+		map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil
 	map.resources :users
 
 	map.properties_page '/properties/page/:page', :controller=>"properties", :action => "index"

@@ -52,6 +52,8 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :en
 	config.after_initialize do # so rake gems:install works
     RPXNow.api_key = "2a3f95827b27fd40ec83ee64df09d6caaef2c0af"
+		ENV['RECAPTCHA_PUBLIC_KEY']  = '6LeCggwAAAAAAHKGCu_Mxa6WPGs_VLW1TQvU0pm7'
+		ENV['RECAPTCHA_PRIVATE_KEY'] = '6LeCggwAAAAAAAaEhSpcQ-5a76TVmSDYKP-i_OHy'
   end
 end
 

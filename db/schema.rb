@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100415130512) do
+ActiveRecord::Schema.define(:version => 20100415194014) do
 
   create_table "appforms", :force => true do |t|
     t.integer  "job_id"
@@ -510,6 +510,8 @@ ActiveRecord::Schema.define(:version => 20100415130512) do
     t.boolean  "mailing"
     t.string   "unique_identifier"
     t.string   "photo_url"
+    t.string   "activation_code"
+    t.datetime "activated_at"
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
