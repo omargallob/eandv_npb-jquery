@@ -45,8 +45,6 @@
 	    } 
 	</style>
 	<![endif]-->
-
-
 	<script src="/javascripts/cufon.js" type="text/javascript" charset="utf-8"></script>
 	<script src="/fonts/GarmdITC_BkCn_BT_400-GarmdITC_BkCn_BT_700-GarmdITC_BkCn_BT_italic_400-GarmdITC_BkCn_BT_italic_700.font.js" type="text/javascript" charset="utf-8"></script>
 	
@@ -65,7 +63,10 @@
 				<%= link_to image_tag ("system/buttons/facebook.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>			<span class="follow"> or </span>
 				<div class="login">	<% unless logged_in? %><a class="rpxnow" onclick="return false;"
 	href="https://engel--volkers-newport-beach.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fnewport-beach.heroku.com%2Frpx"> Sign In </a><% else %> <a href="/logout">logout</a> <% end %></div>
-		</div>
+<% unless logged_in? %>
+<div class="login"><a href="/signup">SignUp</a></div>
+<% end %>
+	</div>
 <% if logged_in? and self.current_user.photo_url %>
 		<div id="telephone">
 			<%= image_tag self.current_user.photo_url , :style=>"padding: 2px;border: 1px solid #4d4d4d"%>

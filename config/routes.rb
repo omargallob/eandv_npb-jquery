@@ -30,12 +30,16 @@ map.services_par '/services/:category', :controller => "services", :action => "s
   map.plugoo '/social', :controller => "contact", :action => "social"
   
   #user action ( login signup logout)
-  map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-  map.login '/login', :controller => 'sessions', :action => 'new'
-  map.register '/register', :controller => 'users', :action => 'create'
-  map.signup '/signup', :controller => 'users', :action => 'new'
-  map.resources :users
-
+  #map.logout '/logout', :controller => 'sessions', :action => 'destroy'
+  #map.login '/login', :controller => 'sessions', :action => 'new'
+  #map.register '/register', :controller => 'users', :action => 'create'
+  #map.signup '/signup', :controller => 'users', :action => 'new'
+  
+    map.signup '/signup', :controller => 'users', :action => 'new'
+    map.login  '/login',  :controller => 'sessions', :action => 'new'
+    map.logout '/logout', :controller => 'sessions', :action => 'destroy'
+    
+	map.resources :users
 
 	map.properties_page '/properties/page/:page', :controller=>"properties", :action => "index"
 	map.properties_order '/properties/order/:order', :controller => "properties", :action => "index"

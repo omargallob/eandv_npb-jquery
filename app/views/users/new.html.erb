@@ -1,13 +1,15 @@
-<h1>Sign up as a new user </h1>
+
+
+<h1 class="title">Sign up as a new user </h1>
 <% @user.password = @user.password_confirmation = nil %>
 
 <%= error_messages_for :user %>
 <% form_for :user, :url => users_path do |f| -%>
+<div id="user_space">
+	<p style="margin-top:4px;width:550px">If your interested in one of our properties/services or have any questions you can <span><a onclick="window.open('http://chatserver.comm100.com/ChatWindow.aspx?siteId=25828&planId=368&visitType=1&byHref=1','livechat','width=500,height=450');" href="#" class="live">
+		CHAT LIVE </a></span> now, call us on <span>+1 949 673 3444</span> or fill out the contact form below  and one of our agents will be in contact soon</p>
 <p><%= label_tag 'login' %><br/>
 <%= f.text_field :login %></p>
-
-<p><%= label_tag 'email' %><br/>
-<%= f.text_field :email %></p>
 
 <p><%= label_tag 'password' %><br/>
 <%= f.password_field :password %></p>
@@ -15,8 +17,27 @@
 <p><%= label_tag 'password_confirmation', 'Confirm Password' %><br/>
 <%= f.password_field :password_confirmation %></p>
 
-<%= f.hidden_field 'role', 'id', :value => "2" %>
-	
+<%= f.hidden_field 'role_ids', :value => "4" %>
+
+<p><%= label_tag 'email' %><br/>
+<%= f.text_field :email %></p>
+
+<p><%= label_tag 'telephone' %><br/>
+<%= f.text_field :telephone %></p>
+
+<h2 class="title">MAILING LIST</h2>
+<p style="width:250px"><%= f.check_box :mailing %>Tick to Join our Mailing List and receive alert on new properties as they hit the market</p>
 
 <p><%= submit_tag 'Sign up' %></p>
+</div>
+
 <% end -%>
+<% content_for :script do %>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	
+
+});
+</script>
+
+<% end %>

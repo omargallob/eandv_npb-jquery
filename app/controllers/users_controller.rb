@@ -1,12 +1,13 @@
 class UsersController < ApplicationController
   # Be sure to include AuthenticationSystem in Application Controller instead
-
+	
   
 
   # render new.rhtml
   def new
     @pagetitle="Create Admin User"
     @user = User.new
+		@page = Page.find_by_name("home")
   end
  
   def create
@@ -23,6 +24,8 @@ class UsersController < ApplicationController
       flash[:notice] = "Thanks for signing up!  We're sending you an email with your activation code."
     else
       flash[:error]  = "We couldn't set up that account, sorry.  Please try again, or contact an admin (link is above)."
+
+			@page = Page.find_by_name("home")
       render :action => 'new'
     end
   end
