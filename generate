@@ -564,4 +564,47 @@ Resetting sequences
 [01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git [K[K[K[Kgit heroku db[K[K[C[1@p[1@u[1@s[1@h[1P[1P[1P[1P[C[1@ [1@p[1@u[1@s[1@h[C[1@ [C[C[C[C[C[C[C[Co[Kmsa[K[Kaster
 Counting objects: 17, done.
 Compressing objects:  11% (1/9)   Compressing objects:  22% (2/9)   Compressing objects:  33% (3/9)   Compressing objects:  44% (4/9)   Compressing objects:  55% (5/9)   Compressing objects:  66% (6/9)   Compressing objects:  77% (7/9)   Compressing objects:  88% (8/9)   Compressing objects: 100% (9/9)   Compressing objects: 100% (9/9), done.
-Writing objects:  11% (1/9)   Writing objects:  22% (2/9)   Writing objects:  33% (3/9)   Writing objects:  44% (4/9)   Writing objects:  55% (5/9)   Writing objects:  66% (6/9)   Writing objects:  77% (7/9)   Writing objects:  88% (8/9)   Writing objects: 100% (9/9)  
+Writing objects:  11% (1/9)   Writing objects:  22% (2/9)   Writing objects:  33% (3/9)   Writing objects:  44% (4/9)   Writing objects:  55% (5/9)   Writing objects:  66% (6/9)   Writing objects:  77% (7/9)   Writing objects:  88% (8/9)   Writing objects: 100% (9/9)   Writing objects: 100% (9/9), 12.35 KiB, done.
+Total 9 (delta 8), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Removing .DS_Store files
+-----> Gemfile detected, running Bundler
+       All dependencies are satisfied
+       Locking environment
+-----> Rails app detected
+-----> Installing Exceptional plugin from git://github.com/contrast/exceptional.git... done.
+-----> Installing quick_sendgrid plugin from git://github.com/pedro/quick_sendgrid.git... done.
+-----> Configuring New Relic plugin... done.
+       Installing the New Relic plugin... done.
+       Compiled slug size is 41.9MB
+-----> Launching.................... done
+       http://newport-beach.heroku.com deployed to Heroku
+
+-----> Running email deploy notification... done
+-----> Running New Relic deploy notification... done
+
+To git@heroku.com:newport-beach.git
+   b2370a6..5174f94  master -> master
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git push  heroku master[9Pheroku db:pushgit push heroku mastercommit -m "recaptcha and activation in users"add .[K
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git add .push  heroku master[9Pheroku db:pushgit push heroku mastercommit -m "recaptcha and activation in users"add .[Kcommit -m "recaptcha and activation in users"add .[Kcommit -m "recaptcha and activation in users"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"a"d"d" "o"r"d"e"r"i"n"g" "t"o" "s"u"b"c"a"t"s"
+Created commit 9c01bf8: add ordering to subcats
+ 5 files changed, 1137 insertions(+), 90 deletions(-)
+ rewrite public/images/system/bg/front/GGMag.jpg (99%)
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git commit -m "add ordering to subcats"add .[Kpush  heroku master
+Counting objects: 33, done.
+Compressing objects:   5% (1/17)   Compressing objects:  11% (2/17)   Compressing objects:  17% (3/17)   Compressing objects:  23% (4/17)   Compressing objects:  29% (5/17)   Compressing objects:  35% (6/17)   Compressing objects:  41% (7/17)   Compressing objects:  47% (8/17)   Compressing objects:  52% (9/17)   Compressing objects:  58% (10/17)   Compressing objects:  64% (11/17)   Compressing objects:  70% (12/17)   Compressing objects:  76% (13/17)   Compressing objects:  82% (14/17)   Compressing objects:  88% (15/17)   Compressing objects:  94% (16/17)   Compressing objects: 100% (17/17)   Compressing objects: 100% (17/17), done.
+Writing objects:   5% (1/17)   Writing objects:  11% (2/17)   Writing objects:  17% (3/17)   Writing objects:  23% (4/17)   Writing objects:  29% (5/17)   Writing objects:  35% (6/17)   Writing objects:  41% (7/17)   Writing objects:  47% (8/17)   Writing objects:  52% (9/17)   Writing objects:  58% (10/17)   Writing objects:  64% (11/17)   Writing objects:  70% (12/17)   Writing objects:  76% (13/17)   Writing objects:  82% (14/17)   Writing objects:  88% (15/17)   Writing objects:  94% (16/17)   Writing objects: 100% (17/17)   Writing objects: 100% (17/17), 16.20 KiB, done.
+Total 17 (delta 15), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Removing .DS_Store files
+-----> Gemfile detected, running Bundler
+       All dependencies are satisfied
+       Locking environment
+-----> Rails app detected
+-----> Installing Exceptional plugin from git://github.com/contrast/exceptional.git... done.
+-----> Installing quick_sendgrid plugin from git://github.com/pedro/quick_sendgrid.git... done.
+-----> Configuring New Relic plugin... done.
+       Installing the New Relic plugin... done.
+       Compiled sl
