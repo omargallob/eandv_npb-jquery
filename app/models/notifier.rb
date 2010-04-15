@@ -45,7 +45,7 @@ recipients "omargallob@gmail.com"
  end
 
  def signup_vip(id)
- 	 @user = User.find_by_id(id)
+ 	 @user = Contact.find_by_id(id)
    recipients @user.email
    bcc        ["Mail Watcher <watcher@engelandvoelkersnewportbeach.com>"]
    from       "system@engelandvoelkersnewportbeach.com"
@@ -54,7 +54,7 @@ recipients "omargallob@gmail.com"
    content_type "text/html"
  end
  def notify_vip_received(id)
-	 @user = User.find_by_id(id)
+	 @user = Contact.find_by_id(id)
 	 recipients "omargallob@gmail.com"
    bcc        ["Mail Watcher <watcher@engelandvoelkersnewportbeach.com>"]
    from       "system@engelandvoelkersnewportbeach.com"

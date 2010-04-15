@@ -71,14 +71,14 @@ layout "lightbox"
 	end
 
 	def vip
-		@user = User.new
+		@contact = Contact.new
 	end
 
-	def user_create
-	  @user = User.new(params[:user])
+	def contact_create
+	  @contact = Contact.new(params[:contact])
     
-		if @user.save
-			redirect_to :action => "apply_vip", :id => @user.id
+		if @contact.save
+			redirect_to :action => "apply_vip", :id => @contact.id
 		else
 			render :action => "vip"
 		end

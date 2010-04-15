@@ -14,7 +14,7 @@ body.vip #pagewrapper #content table tr td.spacer { width: 15px; }
 body.vip #pagewrapper #content table#column1 { margin-top: 0px; }
 body.vip #pagewrapper #content hr { width: 536px; margin-left: 13px; margin-right: 13px; }
 
-body { color: white; overflow: hidden; font-size: 12px; }
+body { color: white; overflow: hidden; font-size: 14px; }
 body a { color: #E13939; text-decoration: none; }
 body a:hover { color: black; }
 body #pagewrapper { width: 380px; height: 400px; background: white; float: left; background: white; background-image: none; }
@@ -24,8 +24,8 @@ body #pagewrapper #header p { color: #4d4d4d; padding: 12px 8px; border-bottom: 
 body #pagewrapper #header p span { color: #E13939; text-transform: uppercase; }
 body #pagewrapper #content { height: 350px; }
 body #pagewrapper #content ul { width: 155px; float: left; margin-left: 10px; }
-body #pagewrapper #content ul li { color: #4d4d4d; font-size: 12px; }
-body #pagewrapper #content ul li.submit { margin-top: 45px; list-style: none; }
+body #pagewrapper #content ul li { color: #4d4d4d; font-size: 14px; }
+body #pagewrapper #content ul li.submit { margin-top: 25px; list-style: none; }
 body #pagewrapper #content table tr { margin: 4px 0; }
 body #pagewrapper #content table tr td { vertical-align: top; }
 body #pagewrapper #content table tr td h4 { text-transform: uppercase; text-align: right; text-decoration: none; margin-right: 15px; margin-top: 0px; width: 150px; margin-top: 2px; }
@@ -36,6 +36,7 @@ body #pagewrapper #content table#column1 tr td { vertical-align: middle; }
 body #pagewrapper #content table#column1 tr td input[type="text"] { width: 250px; }
 body #pagewrapper #content table#column1 tr td input[type="checkbox"] { margin: 8px 0 0 0; }
 body #pagewrapper #content table#column1 tr td input[type="submit"] { float: right; }
+body #pagewrapper #content table#column1 tr td.spacer { width: 15px; }
 body #pagewrapper #content table#column1.contact { margin: 20px 0 0 0; }
 body #pagewrapper #content table#column2 { float: left; }
 body #pagewrapper #content table#column2 tr td { vertical-align: middle; text-align: left; }
