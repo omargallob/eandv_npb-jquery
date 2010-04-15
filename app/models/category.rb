@@ -43,7 +43,7 @@ class Category < ActiveRecord::Base
   end
   
   def self.find_sub(pid)
-    Category.find(:all, :conditions => ['parent_id = ?', pid])
+    Category.find(:all, :conditions => ['parent_id = ?', pid], :order => 'position')
   end
   
   def self.find_all_sub
