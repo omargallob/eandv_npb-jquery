@@ -1,8 +1,9 @@
 <% content_for :script do %>
 <script type="text/javascript">
 jQuery(document).ready(function() {
-	$(document).nice_fonts();
-	$('#header p').html("An email has been sent tour team.<br> Thank you for getting in touch with us, one of our agents will be getting back to you very soon")	
+
+
+var t=setTimeout("window.location.replace('http://newport-beach.heroku.com')",5000);
 });
 </script>
 <% end %>

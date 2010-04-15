@@ -1,7 +1,7 @@
 body { background: #222222; color: white; overflow: auto; font-family: "Georgia"; z-index: -1; }
-body a { color: black; outline: none; }
+body a { color: black; outline: none; text-decoration: none; }
 body a:focus { -moz-outline-style: none; }
-body a:hover { color: yellow; }
+body a:hover { color: #E13939; }
 body h3 { text-transform: uppercase; font-variant: small-caps; color: #e13939; font-family: "Georgia"; font-variant: small-caps; font-size: 16px; }
 body h3 span { color: #d4d4d4; }
 body h3 span a { text-decoration: none; }
@@ -59,6 +59,11 @@ body span.right { float: right; font-size: 11px; line-height: 18px; font-style: 
 #lower_pagewrapper #content ul { margin-right: 50px; }
 #lower_pagewrapper #content #user_space { margin: 0px; width: 900px; padding-left: 36px; font-size: 14px; }
 #lower_pagewrapper #content #user_space p input { border: 1px solid #e1e1e1; }
+#lower_pagewrapper #content #contact_form { width: 500px; font-size: 14px; padding-left: 36px; }
+#lower_pagewrapper #content #contact_form td { padding: 0; margin-right: 25px; }
+#lower_pagewrapper #content #contact_form td input { width: 250px; border: 1px solid #e1e1e1; }
+#lower_pagewrapper #content #contact_form td textarea { width: 250px; border: 1px solid #e1e1e1; }
+#lower_pagewrapper #content #contact_form td select { width: 250px; border: 1px solid #e1e1e1; }
 #lower_pagewrapper #content #subcontent { width: 720px; float: left; margin-left: 40px; }
 #lower_pagewrapper #content #subcontent td { border-bottom: 1px solid black; vertical-align: middle; }
 #lower_pagewrapper #content #subcontent td table.nolines td { border: 0px none; }

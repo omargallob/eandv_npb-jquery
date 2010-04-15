@@ -5,6 +5,8 @@ layout "lightbox"
 		pickup_variables_contact
 
 		@contact = Contact.new
+		@page = Page.find_by_name("home")
+    render :layout => "application"
   end
 
 	def job
@@ -35,12 +37,16 @@ layout "lightbox"
 
 	def create
 		@contact = Contact.new(params[:contact])
-		if @contact.save
-			redirect_to :action => "step2", :id => @contact.id
-		else
+		if verify_recaptcha(:model => @contact, :message => 'Oh! Its error with reCAPTCHA!')
+			if @contact.save
+				redirect_to :action => "step2", :id => @contact.id
+			else
 
-			pickup_variables_contact
-			render :action => "index"
+				pickup_variables_contact
+
+			@page = Page.find_by_name("home")
+				render :action => "index", :layout => "application"
+			end
 		end
 	end
   
