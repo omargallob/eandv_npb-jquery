@@ -53,6 +53,8 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #lower_pagewrapper #content h2 {font-size: 21px; padding: 5px; text-align: left; font-weight: bold}
 #lower_pagewrapper #content p {margin: 10px 0 10px 0}
 #lower_pagewrapper #content ul {margin-right: 50px}
+#lower_pagewrapper #content #user_space {margin: 0px; width: 900px; padding-left: 36px; font-size: 14px}
+#lower_pagewrapper #content #user_space p input {border: 1px solid #e1e1e1}
 #lower_pagewrapper #content #subcontent {width: 720px; float: left; margin-left: 40px}
 #lower_pagewrapper #content #subcontent td {border-bottom: 1px solid black; vertical-align: middle}
 #lower_pagewrapper #content #subcontent td table.nolines td {border: 0px none}
@@ -82,6 +84,9 @@ img.static_why {margin: 0px 0 0 30px}
 #main.about {margin-top: 396px}
 #right-column.about {margin-top: 396px}
 #side-nav.about {margin-top: 26px}
+#errorExplanation {float: left; margin-bottom: 50px; border: 15px solid #E13939; padding: 20px; width: 850px}
+#errorExplanation ul {float: left}
+#errorExplanation ul li {width: 100%}
 #left-side.properties {width: 621px}
 #left-side.home {width: 633px}
 #left-side {width: 612px; float: left; background: transparent; position: relative}

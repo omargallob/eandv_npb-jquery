@@ -212,4 +212,106 @@ Receiving data
 Receiving indexes
 Resetting sequences
 
-[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m heroku db:pull[5Pgit add ../script/destroy authenticated nb_user nb_sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m heroku db:pull[5Pgit add ../script/destroy authenticated nb_user nb_sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@generate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+Ready to generate.
+----------------------------------------------------------------------
+Once finished, don't forget to:
+
+- Add an observer to config/environment.rb
+    config.active_record.observers = :user_observer
+- Add routes to these resources. In config/routes.rb, insert routes like:
+    map.signup '/signup', :controller => 'users', :action => 'new'
+    map.login  '/login',  :controller => 'sessions', :action => 'new'
+    map.logout '/logout', :controller => 'sessions', :action => 'destroy'
+    map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil
+
+----------------------------------------------------------------------
+
+We've create a new site key in config/initializers/site_keys.rb.  If you have existing
+user accounts their passwords will no longer work (see README). As always,
+keep this file safe but don't post it in public.
+
+----------------------------------------------------------------------
+      exists  app/models/
+      exists  app/controllers/
+      exists  app/controllers/
+      exists  app/helpers/
+      exists  app/views/sessions
+      create  app/views/user_mailer
+      exists  app/controllers/
+      exists  app/helpers/
+      exists  app/views/users
+      exists  config/initializers
+      exists  test/functional/
+      exists  test/functional/
+      exists  test/unit/
+      exists  test/fixtures/
+overwrite app/models/user.rb? (enter "h" for help) [Ynaqdh] n
+        skip  app/models/user.rb
+      create  app/models/user_mailer.rb
+      create  app/models/user_observer.rb
+overwrite app/controllers/sessions_controller.rb? (enter "h" for help) [Ynaqdh] n
+        skip  app/controllers/sessions_controller.rb
+overwrite app/controllers/users_controller.rb? (enter "h" for help) [Ynaqdh] n
+        skip  app/controllers/users_controller.rb
+      create  lib/authenticated_system.rb
+      create  lib/authenticated_test_helper.rb
+      create  config/initializers/site_keys.rb
+   identical  test/functional/sessions_controller_test.rb
+overwrite test/functional/users_controller_test.rb? (enter "h" for help) [Ynaqdh] n
+        skip  test/functional/users_controller_test.rb
+overwrite test/unit/user_test.rb? (enter "h" for help) [Ynaqdh] n
+        skip  test/unit/user_test.rb
+      create  test/unit/user_mailer_test.rb
+overwrite test/fixtures/users.yml? (enter "h" for help) [Ynaqdh] n
+        skip  test/fixtures/users.yml
+   identical  app/helpers/sessions_helper.rb
+   identical  app/helpers/users_helper.rb
+overwrite app/views/sessions/new.html.erb? (enter "h" for help) [Ynaqdh] n
+        skip  app/views/sessions/new.html.erb
+overwrite app/views/users/new.html.erb? (enter "h" for help) [Ynaqdh] n
+        skip  app/views/users/new.html.erb
+      create  app/views/users/_user_bar.html.erb
+      create  app/views/user_mailer/activation.erb
+      create  app/views/user_mailer/signup_notification.erb
+      exists  db/migrate
+Another migration is already named create_users: db/migrate/20091016152037_create_users.rb
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m ./script/generate authenticated user sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku db:pull[K[5Pgit add ../script/destroy authenticated nb_user nb_sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add .[K
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git add ../script/generate authenticated user sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku db:pull[K[5Pgit add ../script/destroy authenticated nb_user nb_sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@generate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Pscript/destroy model user_observer[1@generate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pheroku db:pullcd newport-beach/[8PEandV/[5Pexittail -f log/development.log [6Pgit push heroku mastercommit -m "sign up link"[C[1P"[1P"[1P"[1P"w"o"r"k"i"n"g"
+Created commit 4bac57e: sign up working
+ 18 files changed, 5857 insertions(+), 18 deletions(-)
+ create mode 100644 app/models/user_mailer.rb
+ create mode 100644 app/models/user_observer.rb
+ create mode 100644 app/views/user_mailer/activation.erb
+ create mode 100644 app/views/user_mailer/signup_notification.erb
+ create mode 100644 app/views/users/_user_bar.html.erb
+ create mode 100644 generate
+ create mode 100644 test/unit/user_mailer_test.rb
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git commit -m "sign up working"add .[K./script/generate authenticated user sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku db:pull[K[5Pgit add ../script/destroy authenticated nb_user nb_sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@generate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Pscript/destroy model user_observer./script/generate authenticated nb_user nb_sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Pscript/destroy model user_observer[1@generate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pheroku db:pullcd newport-beach/[8PEandV/[5Pexittail -f log/development.log [6Pgit push heroku mastercommit -m "staff width 115px"[11Ppush heroku master
+Counting objects: 61, done.
+Compressing objects:   2% (1/35)   Compressing objects:   5% (2/35)   Compressing objects:   8% (3/35)   Compressing objects:  11% (4/35)   Compressing objects:  14% (5/35)   Compressing objects:  17% (6/35)   Compressing objects:  20% (7/35)   Compressing objects:  22% (8/35)   Compressing objects:  25% (9/35)   Compressing objects:  28% (10/35)   Compressing objects:  31% (11/35)   Compressing objects:  34% (12/35)   Compressing objects:  37% (13/35)   Compressing objects:  40% (14/35)   Compressing objects:  42% (15/35)   Compressing objects:  45% (16/35)   Compressing objects:  48% (17/35)   Compressing objects:  51% (18/35)   Compressing objects:  54% (19/35)   Compressing objects:  57% (20/35)   Compressing objects:  60% (21/35)   Compressing objects:  62% (22/35)   Compressing objects:  65% (23/35)   Compressing objects:  68% (24/35)   Compressing objects:  71% (25/35)   Compressing objects:  74% (26/35)   Compressing objects:  77% (27/35)   Compressing objects:  80% (28/35)   Compressing objects:  82% (29/35)   Compressing objects:  85% (30/35)   Compressing objects:  88% (31/35)   Compressing objects:  91% (32/35)   Compressing objects:  94% (33/35)   Compressing objects:  97% (34/35)   Compressing objects: 100% (35/35)   Compressing objects: 100% (35/35), done.
+Writing objects:   2% (1/35)   Writing objects:   5% (2/35)   Writing objects:   8% (3/35)   Writing objects:  11% (4/35)   Writing objects:  14% (5/35)   Writing objects:  17% (6/35)   Writing objects:  20% (7/35)   Writing objects:  22% (8/35)   Writing objects:  25% (9/35)   Writing objects:  28% (10/35)   Writing objects:  31% (11/35)   Writing objects:  34% (12/35)   Writing objects:  37% (13/35)   Writing objects:  40% (14/35)   Writing objects:  42% (15/35)   Writing objects:  45% (16/35)   Writing objects:  48% (17/35)   Writing objects:  51% (18/35)   Writing objects:  54% (19/35)   Writing objects:  57% (20/35)   Writing objects:  60% (21/35)   Writing objects:  62% (22/35)   Writing objects:  65% (23/35)   Writing objects:  68% (24/35)   Writing objects:  71% (25/35)   Writing objects:  74% (26/35)   Writing objects:  77% (27/35)   Writing objects:  80% (28/35)   Writing objects:  82% (29/35)   Writing objects:  85% (30/35)   Writing objects:  88% (31/35)   Writing objects:  91% (32/35)   Writing objects:  94% (33/35)   Writing objects:  97% (34/35)   Writing objects: 100% (35/35)   Writing objects: 100% (35/35), 20.72 KiB, done.
+Total 35 (delta 23), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Removing .DS_Store files
+-----> Gemfile detected, running Bundler
+       All dependencies are satisfied
+       Locking environment
+-----> Rails app detected
+-----> Installing Exceptional plugin from git://github.com/contrast/exceptional.git... done.
+-----> Installing quick_sendgrid plugin from git://github.com/pedro/quick_sendgrid.git... done.
+-----> Configuring New Relic plugin... done.
+       Installing the New Relic plugin... done.
+       Compiled slug size is 41.9MB
+-----> Launching................................ done
+       http://newport-beach.heroku.com deployed to Heroku
+
+-----> Running email deploy notification... done
+-----> Running New Relic deploy notification... done
+
+To git@heroku.com:newport-beach.git
+   06a7b77..4bac57e  master -> master
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git push heroku mastercommit -m "sign up working"add .[K./script/generate authenticated user sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku db:pull[K[5Pgit add ../script/destroy authenticated nb_user nb_sessions --include-activation[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@generate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[38Pscript/destroy model user_observer[1@generate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pheroku db:pullcd newport-beach/[8PEandV/[5Pexittail -f log/development.log [6Pgit push heroku mastercommit -m "staff width 115px"add .[Kpush heroku master[12Premotecommit -m "e&v vip"a[C[C[C[C[C[C[C[C[C[Cadd .[Kcompass --watch[1Pheroku db:pullmongrel_rails start -d -p 3001cd Proyectos/EandV/newport-beach/[3Pmongrel_rails start -d -p 3001cd Proyectos/EandV/newport-beach/[20Pscript/servercd granada-insider/..[Kgit push heroku mastercommit -m "xml fix abouyrt" add .[Kheroku db:pullexit[Kscript/servercd Proyectos/granada-insider/exit[Kcompass --watch[5Pd public/rake db:migratescript/generate paperclip post photoexit[Krake db:migratescript/generate model temp_upload[18Prake db:migratescript/generate migration AddProcessingToUpload processing:booleandelayed_job[Kplugin install git://github.com/collectiveidea/delayed_job.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgem list[Kit push heroku mastercommit -m "xml fix" add .[Kpush heroku mastercommit -m "falash on whats on" add .[Kheroku db:pushrake db:migratescript/generate migration AddTwoLinerToPost two_liner:string[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pdestroy migration AddTwoLinerToPost two_liner[1@generate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[K[1Pexitrake jobs:work exit[Kgem list[4Pexitscript/servercd Proyectos/granada-insider/exit[Kgit push heroku mastercommit -m "posts  + subposts" add .[Kheroku db:pushscript/generate controller admin::posts index show edit new[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pdestroy controller [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@generate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku db:push[Kllv:pullb:pullscript/generate controller admin::uploads index show delete[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[19Pdestroy controller admin::uploads[1@generate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Puploadsrake routes[K[7Pexit[1Ptrake db:migratescript/generate migration AddPositionToPost position:integer[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crake db:migrate[Kscript/generate migration AddParentIdToPost parent_id:integer[C[C[C
