@@ -763,4 +763,344 @@ Total 19 (delta 14), reused 0 (delta 0)
 -----> Installing Exceptional plugin from git://github.com/contrast/exceptional.git... done.
 -----> Installing quick_sendgrid plugin from git://github.com/pedro/quick_sendgrid.git... done.
 -----> Configuring New Relic plugin... done.
-       Installing the New Relic
+       Installing the New Relic plugin... done.
+       Compiled slug size is 41.9MB
+-----> Launching................................ done
+       http://newport-beach.heroku.com deployed to Heroku
+
+-----> Running email deploy notification... done
+-----> Running New Relic deploy notification... done
+
+To git@heroku.com:newport-beach.git
+   6254ffd..4099c41  master -> master
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git push  heroku mastercommit -m "clogin v2"add .[Kpush  heroku masteradd .[Kpush  heroku masteradd .[K
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git add .push  heroku mastercommit -m "clogin v2"3"
+Created commit 3c80baa: clogin v23
+ 5 files changed, 625 insertions(+), 9 deletions(-)
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git commit -m "clogin v23"add .[Kpush  heroku master
+Counting objects: 23, done.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   8% (1/12)   Writing objects:  16% (2/12)   Writing objects:  25% (3/12)   Writing objects:  33% (4/12)   Writing objects:  41% (5/12)   Writing objects:  50% (6/12)   Writing objects:  58% (7/12)   Writing objects:  66% (8/12)   Writing objects:  75% (9/12)   Writing objects:  83% (10/12)   Writing objects:  91% (11/12)   Writing objects: 100% (12/12)   Writing objects: 100% (12/12), 4.02 KiB, done.
+Total 12 (delta 11), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Removing .DS_Store files
+-----> Gemfile detected, running Bundler
+       All dependencies are satisfied
+       Locking environment
+-----> Rails app detected
+-----> Installing Exceptional plugin from git://github.com/contrast/exceptional.git... done.
+-----> Installing quick_sendgrid plugin from git://github.com/pedro/quick_sendgrid.git... done.
+-----> Configuring New Relic plugin... done.
+       Installing the New Relic plugin... done.
+       Compiled slug size is 41.9MB
+-----> Launching.................... done
+       http://newport-beach.heroku.com deployed to Heroku
+
+-----> Running email deploy notification... done
+-----> Running New Relic deploy notification... done
+
+To git@heroku.com:newport-beach.git
+   4099c41..3c80baa  master -> master
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m heroku logs
+==> production.log <==
+# Logfile created on Thu Apr 15 18:46:57 -0700 2010Starting the New Relic Agent.
+
+
+Processing RssController#featured (for 86.135.136.57 at 2010-04-15 18:47:02) [GET]
+Rendering rss/featured
+Completed in 274ms (View: 210, DB: 35) | 200 OK [http://newport-beach.heroku.com/featured.xml]
+
+
+Processing SessionsController#new (for 85.57.51.129 at 2010-04-15 18:47:03) [GET]
+Rendering template within layouts/comments
+Rendering sessions/new
+Completed in 42ms (View: 5, DB: 23) | 200 OK [http://newport-beach.heroku.com/login]
+
+
+Processing HomeController#signin (for 85.57.51.129 at 2010-04-15 18:47:05) [GET]
+Rendering home/signin
+Completed in 38ms (View: 2, DB: 25) | 200 OK [http://newport-beach.heroku.com/clogin]
+
+
+Processing SessionsController#new (for 85.57.51.129 at 2010-04-15 18:47:06) [GET]
+Rendering template within layouts/comments
+Rendering sessions/new
+Completed in 34ms (View: 3, DB: 20) | 200 OK [http://newport-beach.heroku.com/login]
+
+
+Processing SessionsController#destroy (for 86.135.136.57 at 2010-04-15 18:47:28) [GET]
+Redirected to http://newport-beach.heroku.com/
+Completed in 43ms (DB: 29) | 302 Found [http://newport-beach.heroku.com/logout]
+
+
+Processing ViewerController#show (for 86.135.136.57 at 2010-04-15 18:47:28) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 368ms (View: 286, DB: 53) | 200 OK [http://newport-beach.heroku.com/]
+
+
+Processing SessionsController#new (for 86.135.136.57 at 2010-04-15 18:47:33) [GET]
+Rendering template within layouts/comments
+Rendering sessions/new
+Completed in 42ms (View: 3, DB: 26) | 200 OK [http://newport-beach.heroku.com/login]
+
+
+Processing HomeController#signin (for 86.135.136.57 at 2010-04-15 18:49:00) [GET]
+Rendering home/signin
+Completed in 58ms (View: 1, DB: 46) | 200 OK [http://newport-beach.heroku.com/clogin]
+
+
+Processing RssController#about (for 86.135.136.57 at 2010-04-15 18:49:09) [GET]
+Rendering rss/about
+Completed in 93ms (View: 8, DB: 67) | 200 OK [http://newport-beach.heroku.com/about.xml]
+
+
+Processing HomeController#signin (for 86.135.136.57 at 2010-04-15 18:50:25) [GET]
+Rendering home/signin
+Completed in 39ms (View: 1, DB: 28) | 200 OK [http://newport-beach.heroku.com/clogin]
+
+==> exceptional.log <==
+# Logfile created on Thu Apr 15 18:46:59 -0700 2010 by logger.rb
+[INFO] (init.rb:19) Fri Apr 16 01:46:59 UTC 2010 - Loading Exceptional for 2.3.5
+[INFO] (dj.rb:9) Fri Apr 16 01:46:59 UTC 2010 - DJ integration enabled
+
+==> newrelic_agent.log <==
+# Logfile created on Thu Apr 15 18:46:59 -0700 2010 by logger.rb
+[04/15/10 18:46:59 -0700 railgun64.22142 (15051)] INFO : Dispatcher: thin
+[04/15/10 18:46:59 -0700 railgun64.22142 (15051)] INFO : Application: newport-beach
+[04/15/10 18:46:59 -0700 railgun64.22142 (15051)] INFO : New Relic RPM Agent 2.11.1 Initialized: pid = 15051
+[04/15/10 18:46:59 -0700 railgun64.22142 (15051)] INFO : Agent Log found in /disk1/home/slugs/160122_3c80baa_b882/mnt/log/newrelic_agent.log
+[04/15/10 18:46:59 -0700 railgun64.22142 (15051)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/15/10 18:47:09 -0700 railgun64.22142 (15051)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/15/10 18:47:11 -0700 railgun64.22142 (15051)] INFO : Resolved collector0.newrelic.com to 65.74.177.213
+[04/15/10 18:47:12 -0700 railgun64.22142 (15051)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/15/10 18:47:14 -0700 railgun64.22142 (15051)] INFO : Reporting performance data every 60 seconds.
+
+==> dyno-1130059.log <==
+/home/slugs/160122_3c80baa_b882/mnt/.bundle/gems/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.11.1 Initialized: pid = 15051
+** [NewRelic] Agent Log found in /disk1/home/slugs/160122_3c80baa_b882/mnt/log/newrelic_agent.log
+>> Thin web server (v1.2.6 codename Crazy Delicious)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:41172, CTRL+C to stop
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/layouts/application.html.erb:60: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/layouts/application.html.erb:63: warning: don't put space before argument parentheses
+
+==> dj-1130757.log <==
+(in /disk1/home/slugs/160122_3c80baa_b882/mnt)
+Requiring REXML
+RPM Monitoring DJ worker host:railgun64.22103 pid:23648
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+** [NewRelic] New Relic RPM Agent 2.11.1 Initialized: pid = 23648
+** [NewRelic] Agent Log found in /disk1/home/slugs/160122_3c80baa_b882/mnt/log/newrelic_agent.log
+*** Starting job worker host:railgun64.22103 pid:23648
+
+==> newrelic_agent.log <==
+# Logfile created on Thu Apr 15 18:46:54 -0700 2010 by logger.rb
+[04/15/10 18:46:54 -0700 railgun64.22103 (23648)] INFO : Dispatcher: delayed_job
+[04/15/10 18:46:54 -0700 railgun64.22103 (23648)] INFO : Application: newport-beach
+[04/15/10 18:46:54 -0700 railgun64.22103 (23648)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/15/10 18:46:54 -0700 railgun64.22103 (23648)] INFO : Resolved collector0.newrelic.com to 65.74.177.213
+[04/15/10 18:46:55 -0700 railgun64.22103 (23648)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/15/10 18:46:55 -0700 railgun64.22103 (23648)] INFO : Reporting performance data every 60 seconds.
+[04/15/10 18:46:55 -0700 railgun64.22103 (23648)] INFO : New Relic RPM Agent 2.11.1 Initialized: pid = 23648
+[04/15/10 18:46:55 -0700 railgun64.22103 (23648)] INFO : Agent Log found in /disk1/home/slugs/160122_3c80baa_b882/mnt/log/newrelic_agent.log
+[04/15/10 18:46:55 -0700 railgun64.22103 (23648)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+
+==> production.log <==
+# Logfile created on Thu Apr 15 18:46:51 -0700 2010
+==> exceptional.log <==
+# Logfile created on Thu Apr 15 18:46:52 -0700 2010 by logger.rb
+[INFO] (init.rb:19) Fri Apr 16 01:46:52 UTC 2010 - Loading Exceptional for 2.3.5
+[INFO] (dj.rb:9) Fri Apr 16 01:46:52 UTC 2010 - DJ integration enabled
+
+==> production.log <==
+# Logfile created on Thu Apr 15 18:47:00 -0700 2010Starting the New Relic Agent.
+
+
+Processing HomeController#signin (for 86.135.136.57 at 2010-04-15 18:47:33) [GET]
+Rendering home/signin
+Completed in 45ms (View: 2, DB: 26) | 200 OK [http://newport-beach.heroku.com/clogin]
+
+
+Processing HomeController#signin (for 85.57.51.129 at 2010-04-15 18:47:55) [GET]
+Rendering home/signin
+Completed in 150ms (View: 1, DB: 19) | 200 OK [http://newport-beach.heroku.com/clogin]
+
+
+Processing SessionsController#new (for 85.57.51.129 at 2010-04-15 18:47:56) [GET]
+Rendering template within layouts/comments
+Rendering sessions/new
+Completed in 41ms (View: 6, DB: 18) | 200 OK [http://newport-beach.heroku.com/login]
+
+
+Processing UsersController#new (for 86.135.136.57 at 2010-04-15 18:49:34) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 62ms (View: 26, DB: 19) | 200 OK [http://newport-beach.heroku.com/signup]
+
+
+Processing SessionsController#new (for 86.135.136.57 at 2010-04-15 18:50:25) [GET]
+Rendering template within layouts/comments
+Rendering sessions/new
+Completed in 30ms (View: 2, DB: 18) | 200 OK [http://newport-beach.heroku.com/login]
+
+==> exceptional.log <==
+# Logfile created on Thu Apr 15 18:47:01 -0700 2010 by logger.rb
+[INFO] (init.rb:19) Fri Apr 16 01:47:01 UTC 2010 - Loading Exceptional for 2.3.5
+[INFO] (dj.rb:9) Fri Apr 16 01:47:01 UTC 2010 - DJ integration enabled
+
+==> newrelic_agent.log <==
+# Logfile created on Thu Apr 15 18:47:01 -0700 2010 by logger.rb
+[04/15/10 18:47:01 -0700 railgun64.19643 (32393)] INFO : Dispatcher: thin
+[04/15/10 18:47:01 -0700 railgun64.19643 (32393)] INFO : Application: newport-beach
+[04/15/10 18:47:01 -0700 railgun64.19643 (32393)] INFO : New Relic RPM Agent 2.11.1 Initialized: pid = 32393
+[04/15/10 18:47:01 -0700 railgun64.19643 (32393)] INFO : Agent Log found in /disk1/home/slugs/160122_3c80baa_b882/mnt/log/newrelic_agent.log
+[04/15/10 18:47:01 -0700 railgun64.19643 (32393)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/15/10 18:47:12 -0700 railgun64.19643 (32393)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/15/10 18:47:13 -0700 railgun64.19643 (32393)] INFO : Resolved collector0.newrelic.com to 65.74.177.213
+[04/15/10 18:47:14 -0700 railgun64.19643 (32393)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/15/10 18:47:16 -0700 railgun64.19643 (32393)] INFO : Reporting performance data every 60 seconds.
+
+==> dyno-1162533.log <==
+/home/slugs/160122_3c80baa_b882/mnt/.bundle/gems/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.11.1 Initialized: pid = 32393
+** [NewRelic] Agent Log found in /disk1/home/slugs/160122_3c80baa_b882/mnt/log/newrelic_agent.log
+>> Thin web server (v1.2.6 codename Crazy Delicious)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:51316, CTRL+C to stop
+** [NewRelic] Connected to NewRelic Service at collector0.newrelic.com:80
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/layouts/application.html.erb:60: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/layouts/application.html.erb:63: warning: don't put space before argument parentheses
+
+==> production.log <==
+# Logfile created on Thu Apr 15 18:46:46 -0700 2010Starting the New Relic Agent.
+
+
+Processing ServicesController#feed (for 85.57.51.129 at 2010-04-15 18:46:51) [GET]
+  Parameters: {"subcategory"=>"dining", "category"=>"concierge"}
+Rendering services/feed
+Completed in 107ms (View: 28, DB: 57) | 200 OK [http://newport-beach.heroku.com/services/concierge/dining/feed.xml]
+
+
+Processing ServicesController#feed (for 85.57.51.129 at 2010-04-15 18:46:51) [GET]
+  Parameters: {"subcategory"=>"hotels", "category"=>"concierge"}
+Rendering services/feed
+Completed in 192ms (View: 6, DB: 48) | 200 OK [http://newport-beach.heroku.com/services/concierge/hotels/feed.xml]
+
+
+Processing ServicesController#feed (for 85.57.51.129 at 2010-04-15 18:46:51) [GET]
+  Parameters: {"subcategory"=>"newport-beach-activities", "category"=>"concierge"}
+Rendering services/feed
+Completed in 65ms (View: 5, DB: 46) | 200 OK [http://newport-beach.heroku.com/services/concierge/newport-beach-activities/feed.xml]
+
+
+Processing ServicesController#feed (for 85.57.51.129 at 2010-04-15 18:46:51) [GET]
+  Parameters: {"subcategory"=>"plan-a-meating", "category"=>"concierge"}
+Rendering services/feed
+Completed in 66ms (View: 5, DB: 48) | 200 OK [http://newport-beach.heroku.com/services/concierge/plan-a-meating/feed.xml]
+
+
+Processing RssController#partners (for 85.57.51.129 at 2010-04-15 18:46:51) [GET]
+Rendering rss/partners
+Completed in 68ms (View: 12, DB: 44) | 200 OK [http://newport-beach.heroku.com/partners.xml]
+
+
+Processing ViewerController#show (for 85.57.51.129 at 2010-04-15 18:46:52) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 364ms (View: 249, DB: 81) | 200 OK [http://newport-beach.heroku.com/]
+
+
+Processing RssController#about (for 85.57.51.129 at 2010-04-15 18:46:52) [GET]
+Rendering rss/about
+Completed in 87ms (View: 9, DB: 60) | 200 OK [http://newport-beach.heroku.com/about.xml]
+
+
+Processing RssController#featured (for 85.57.51.129 at 2010-04-15 18:46:58) [GET]
+Rendering rss/featured
+Completed in 158ms (View: 29, DB: 114) | 200 OK [http://newport-beach.heroku.com/featured.xml]
+
+
+Processing HomeController#signin (for 85.57.51.129 at 2010-04-15 18:47:01) [GET]
+Rendering home/signin
+Completed in 56ms (View: 2, DB: 43) | 200 OK [http://newport-beach.heroku.com/clogin]
+
+
+Processing RssController#about (for 86.135.136.57 at 2010-04-15 18:47:02) [GET]
+Rendering rss/about
+Completed in 115ms (View: 8, DB: 85) | 200 OK [http://newport-beach.heroku.com/about.xml]
+
+
+Processing ViewerController#show (for 86.135.136.57 at 2010-04-15 18:47:25) [GET]
+  Parameters: {"name"=>"home"}
+Rendering template within layouts/application
+Rendering viewer/show
+Completed in 112ms (View: 21, DB: 73) | 200 OK [http://newport-beach.heroku.com/]
+
+
+Processing RssController#featured (for 86.135.136.57 at 2010-04-15 18:47:28) [GET]
+Rendering rss/featured
+Completed in 266ms (View: 21, DB: 94) | 200 OK [http://newport-beach.heroku.com/featured.xml]
+
+
+Processing RssController#featured (for 86.135.136.57 at 2010-04-15 18:47:32) [GET]
+Rendering rss/featured
+Completed in 95ms (View: 19, DB: 62) | 200 OK [http://newport-beach.heroku.com/featured.xml]
+
+
+Processing SessionsController#new (for 86.135.136.57 at 2010-04-15 18:49:00) [GET]
+Rendering template within layouts/comments
+Rendering sessions/new
+Completed in 61ms (View: 4, DB: 45) | 200 OK [http://newport-beach.heroku.com/login]
+
+
+Processing RssController#partners (for 86.135.136.57 at 2010-04-15 18:49:10) [GET]
+Rendering rss/partners
+Completed in 63ms (View: 7, DB: 45) | 200 OK [http://newport-beach.heroku.com/partners.xml]
+
+==> newrelic_agent.log <==
+# Logfile created on Thu Apr 15 18:46:48 -0700 2010 by logger.rb
+[04/15/10 18:46:48 -0700 railgun64.22101 (29804)] INFO : Dispatcher: thin
+[04/15/10 18:46:48 -0700 railgun64.22101 (29804)] INFO : Application: newport-beach
+[04/15/10 18:46:48 -0700 railgun64.22101 (29804)] INFO : New Relic RPM Agent 2.11.1 Initialized: pid = 29804
+[04/15/10 18:46:48 -0700 railgun64.22101 (29804)] INFO : Agent Log found in /disk1/home/slugs/160122_3c80baa_b882/mnt/log/newrelic_agent.log
+[04/15/10 18:46:48 -0700 railgun64.22101 (29804)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/15/10 18:46:58 -0700 railgun64.22101 (29804)] INFO : Resolved collector.newrelic.com to 65.74.177.195
+[04/15/10 18:46:59 -0700 railgun64.22101 (29804)] INFO : Resolved collector0.newrelic.com to 65.74.177.213
+[04/15/10 18:47:00 -0700 railgun64.22101 (29804)] INFO : Connected to NewRelic Service at collector0.newrelic.com:80
+[04/15/10 18:47:01 -0700 railgun64.22101 (29804)] INFO : Reporting performance data every 60 seconds.
+
+==> exceptional.log <==
+# Logfile created on Thu Apr 15 18:46:47 -0700 2010 by logger.rb
+[INFO] (init.rb:19) Fri Apr 16 01:46:47 UTC 2010 - Loading Exceptional for 2.3.5
+[INFO] (dj.rb:9) Fri Apr 16 01:46:47 UTC 2010 - DJ integration enabled
+
+==> dyno-1130756.log <==
+/home/slugs/160122_3c80baa_b882/mnt/.bundle/gems/gems/rails-2.3.5/lib/rails/gem_dependency.rb:119:Warning: Gem::Dependency#version_requirements is deprecated and will be removed on or after August 2010.  Use #requirement
+Requiring REXML
+** [NewRelic] New Relic RPM Agent 2.11.1 Initialized: pid = 29804
+** [NewRelic] Agent Log found in /disk1/home/slugs/160122_3c80baa_b882/mnt/log/newrelic_agent.log
+>> Thin web server (v1.2.6 codename Crazy Delicious)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:58719, CTRL+C to stop
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/shared/search/_advancedselectable.html.erb:25: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/shared/search/_advancedselectable.html.erb:26: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/shared/search/_advancedselectable.html.erb:27: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/shared/search/_advancedselectable.html.erb:28: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/shared/search/_advancedselectable.html.erb:29: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/layouts/application.html.erb:60: warning: don't put space before argument parentheses
+/disk1/home/slugs/160122_3c80baa_b882/mnt/app/views/layouts/application.h

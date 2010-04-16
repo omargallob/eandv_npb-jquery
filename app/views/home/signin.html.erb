@@ -48,7 +48,27 @@
   </head>
   <body>
 
-<iframe src="<%= login_path %>" width="373px" height="271px" style="overflow:hidden;float:left"></iframe>
+<div style='width:373px;height;271px;overflow:hidden;float:left'>
+
+	<div style="padding: 5px 40px;float: left">
+
+	<%= image_tag "system/bg/front/EV-Member-Card.jpg", :style=>"margin-left:-11px"%>
+	<% form_tag session_path, :target => "_parent" do -%>
+	<p style="float:left;width:100px;margin:5px 0px;"><%= label_tag 'login' %></p>
+	<p style="float:left;margin:5px 0; "><%= text_field_tag 'login', @login %></p>
+
+	<p style="float:left;width:100px;margin:5px 0px;"><%= label_tag 'password' %></p>
+	<p style="float:left;margin:5px 0;"><%= password_field_tag 'password', nil %></p>
+
+
+	<p style="float:left;margin:5px 0;"><%= label_tag 'remember_me', 'Remember me' %>
+	<%= check_box_tag 'remember_me', '1', @remember_me %></p>
+
+
+	<p style="float:left;padding-left:30px;margin-top:7px"><%= image_submit_tag 'system/buttons/Sign-In-Btn.jpg' %></p>
+	<% end -%>
+	</div>
+</div>
 <iframe src="http://engel--volkers-newport-beach.rpxnow.com/openid/embed?token_url=http://newport-beach.heroku.com/rpx&language_preference=en" width="373px" height="240px" style="float:left"></iframe>
 
 
