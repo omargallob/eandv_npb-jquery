@@ -16,8 +16,7 @@
 		</li>
 		<li><%= image_tag "system/buttons/tools/Neighbourhood.jpg"%>
 			<span>
-				<!--<a href="http://www.rdesk.com/communityinfo/CommunityReports.aspx?ZipCode=92661&allowprint=0&showreportheader=1&showtoolbar=1&appname=1166&LoadedInRdesk=0&AllowSave=0&allowcompare=1&allowchangelocation=0&showhelpicon=1&CSSFile=http%3a%2f%2npb.heroku.com%2fstylesheets%2fexternal.css&ReportName=HomeValues2&sid=ca8fac19502845e086e61f9300ff49f1?iframe=true&width=760&height=600" rel="prettyPhoto[tools]">
-	Know you neighbourhood	</a>	-->
+
 			<% if @property.location.country_id == 9 %>
 			<a href="/demographics/?iframe=true&width=560&height=600" rel="prettyPhoto[tools]">Know your neighbourhood</a>
 			<% else %>
