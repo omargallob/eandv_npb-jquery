@@ -63,7 +63,7 @@
 				<%= link_to image_tag ("system/buttons/facebook.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>			<span class="follow"> or </span>
 				<div class="login">	<% unless logged_in? %><a href="/clogin?iframe=true=width=373&height=515" rel="prettyPhotos"> Sign In </a><% else %> <a href="/logout">logout</a> <% end %></div>
 <% unless logged_in? %>
-<div class="login"><a href="/signup">SignUp</a></div>
+<div class="login"><a href="/signup">Join</a></div>
 <% end %>
 	</div>
 <% if logged_in? and self.current_user.photo_url %>

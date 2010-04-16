@@ -5,7 +5,8 @@
 		<meta name="google-site-verification" content="ysbTsgOLK4J__UnJrjd8cCzrwuezCfaL4G5CsHIs7DQ" />
 	<%= stylesheet_link_tag "screen"  %>
 	<%= display_meta_tags %>
-	<%# javascript_include_tag "browserdetect" %>
+
+  <%= stylesheet_link_tag 'scaffold' %>
 	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 	<script type="text/javascript" charset="utf-8">
  	  google.load("swfobject", "2.2");
@@ -28,6 +29,12 @@
 		}
 		#content p{
 			color: #4d4d4d;	
+		}
+		input[type="text"]{
+			width: 173px;
+		}
+					input[type="password"]{
+			width: 173px;
 		}
 			
 	</style>
@@ -65,7 +72,8 @@
 	<%= check_box_tag 'remember_me', '1', @remember_me %></p>
 
 
-	<p style="float:left;padding-left:30px;margin-top:7px"><%= image_submit_tag 'system/buttons/Sign-In-Btn.jpg' %></p>
+	<p style="float:left;padding-left:30px;margin-top:7px"><%= image_submit_tag 'system/buttons/cool_LogIn.jpg' %> <%= link_to image_tag("system/buttons/cool_SignIn.jpg"), "/signup", :target =>"
+_parent"%></p>
 	<% end -%>
 	</div>
 </div>
