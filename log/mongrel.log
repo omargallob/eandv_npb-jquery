@@ -10235,3 +10235,6 @@ Requiring REXML
 /home/omar/Proyectos/newport-beach/app/views/admin/pages/edit.html.erb:13: warning: don't put space before argument parentheses
 /home/omar/Proyectos/newport-beach/app/views/admin/page_about/show.html.erb:5: warning: don't put space before argument parentheses
 /home/omar/Proyectos/newport-beach/app/views/shared/_property.html.erb:9: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/layouts/application.html.erb:60: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/layouts/application.html.erb:62: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/layouts/application.html.erb:63: warning: don't put space before argument parentheses

@@ -61,8 +61,7 @@
 			<div id="extra">
 				<span class="follow">Follow us on:</span><%= link_to image_tag ("system/buttons/twitter.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>
 				<%= link_to image_tag ("system/buttons/facebook.jpg"),"/social?iframe=true&width=300&height=80",:rel=>"prettyPhotos" ,:style=>"float:left" %>			<span class="follow"> or </span>
-				<div class="login">	<% unless logged_in? %><a class="rpxnow" onclick="return false;"
-	href="https://engel--volkers-newport-beach.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fnewport-beach.heroku.com%2Frpx"> Sign In </a><% else %> <a href="/logout">logout</a> <% end %></div>
+				<div class="login">	<% unless logged_in? %><a href="/clogin?iframe=true=width=373&height=515" rel="prettyPhotos"> Sign In </a><% else %> <a href="/logout">logout</a> <% end %></div>
 <% unless logged_in? %>
 <div class="login"><a href="/signup">SignUp</a></div>
 <% end %>
