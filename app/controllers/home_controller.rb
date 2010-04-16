@@ -44,4 +44,7 @@ class HomeController < ApplicationController
       format.js #
     end
 	end
+	def signin
+		render :layout => false 
+	end
 end

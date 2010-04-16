@@ -10,6 +10,7 @@ class SessionsController < ApplicationController
                   :description => 'Member login page.',
                   :keywords => 'Engel&Volkers, Site, Login, Admin'
     @subpages = [""]
+		render :layout => "comments"
   end
 
   def create

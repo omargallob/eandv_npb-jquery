@@ -34,7 +34,8 @@ map.services_par '/services/:category', :controller => "services", :action => "s
   #map.login '/login', :controller => 'sessions', :action => 'new'
   #map.register '/register', :controller => 'users', :action => 'create'
   #map.signup '/signup', :controller => 'users', :action => 'new'
-  
+		map.complex_login "/clogin", :controller =>'home', :action =>'signin'  
+
     map.signup '/signup', :controller => 'users', :action => 'new'
     map.login  '/login',  :controller => 'sessions', :action => 'new'
     map.logout '/logout', :controller => 'sessions', :action => 'destroy'
