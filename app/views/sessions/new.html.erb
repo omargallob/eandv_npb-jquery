@@ -1,16 +1,19 @@
-<div style="padding: 5px 40px;">
-<% form_tag session_path do -%>
+
+<div style="padding: 5px 40px;float: left">
+
+<%= image_tag "system/bg/front/EV-Member-Card.jpg", :style=>"margin-left:-11px"%>
+<% form_tag session_path, :target => "_parent" do -%>
 <p style="float:left;width:100px;margin:5px 0px;"><%= label_tag 'login' %></p>
 <p style="float:left;margin:5px 0; "><%= text_field_tag 'login', @login %></p>
 
 <p style="float:left;width:100px;margin:5px 0px;"><%= label_tag 'password' %></p>
 <p style="float:left;margin:5px 0;"><%= password_field_tag 'password', nil %></p>
 
-<!-- Uncomment this if you want this functionality
-<p><%= label_tag 'remember_me', 'Remember me' %>
-<%= check_box_tag 'remember_me', '1', @remember_me %></p>
--->
 
-<p style="float:right;padding-right:30px;"><%= submit_tag 'Log in' %></p>
+<p style="float:left;margin:5px 0;"><%= label_tag 'remember_me', 'Remember me' %>
+<%= check_box_tag 'remember_me', '1', @remember_me %></p>
+
+
+<p style="float:left;padding-left:30px;margin-top:7px"><%= image_submit_tag 'system/buttons/Sign-In-Btn.jpg' %></p>
 <% end -%>
 </div>
