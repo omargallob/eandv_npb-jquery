@@ -607,4 +607,79 @@ Total 17 (delta 15), reused 0 (delta 0)
 -----> Installing quick_sendgrid plugin from git://github.com/pedro/quick_sendgrid.git... done.
 -----> Configuring New Relic plugin... done.
        Installing the New Relic plugin... done.
-       Compiled sl
+       Compiled slug size is 41.9MB
+-----> Launching.................. done
+       http://newport-beach.heroku.com deployed to Heroku
+
+-----> Running email deploy notification... done
+-----> Running New Relic deploy notification... done
+
+To git@heroku.com:newport-beach.git
+   5174f94..9c01bf8  master -> master
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git push  heroku mastercommit -m "add ordering to subcats"add .[K
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git add .push  heroku mastercommit -m "add ordering to subcats"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"c"h"a"n"g"e" "m"a"r"k"e"t" "r"e"p"o"r"t" "i"m"a"g"e"
+Created commit 3fa9149: change market report image
+ 2 files changed, 82 insertions(+), 60 deletions(-)
+ rewrite public/images/system/bg/front/MarketMag.jpg (99%)
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git commit -m "change market report image"add .[Kpush  heroku master
+Counting objects: 17, done.
+Compressing objects:  11% (1/9)   Compressing objects:  22% (2/9)   Compressing objects:  33% (3/9)   Compressing objects:  44% (4/9)   Compressing objects:  55% (5/9)   Compressing objects:  66% (6/9)   Compressing objects:  77% (7/9)   Compressing objects:  88% (8/9)   Compressing objects: 100% (9/9)   Compressing objects: 100% (9/9), done.
+Writing objects:  11% (1/9)   Writing objects:  22% (2/9)   Writing objects:  33% (3/9)   Writing objects:  44% (4/9)   Writing objects:  55% (5/9)   Writing objects:  66% (6/9)   Writing objects:  77% (7/9)   Writing objects:  88% (8/9)   Writing objects: 100% (9/9)   Writing objects: 100% (9/9), 7.96 KiB, done.
+Total 9 (delta 7), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Removing .DS_Store files
+-----> Gemfile detected, running Bundler
+       All dependencies are satisfied
+       Locking environment
+-----> Rails app detected
+-----> Installing Exceptional plugin from git://github.com/contrast/exceptional.git... done.
+-----> Installing quick_sendgrid plugin from git://github.com/pedro/quick_sendgrid.git... done.
+-----> Configuring New Relic plugin... done.
+       Installing the New Relic plugin... done.
+       Compiled slug size is 41.9MB
+-----> Launching............................. done
+       http://newport-beach.heroku.com deployed to Heroku
+
+-----> Running email deploy notification... done
+-----> Running New Relic deploy notification... done
+
+To git@heroku.com:newport-beach.git
+   9c01bf8..3fa9149  master -> master
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git push  heroku mastercommit -m "change market report image"add .[K
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git add .push  heroku mastercommit -m "change market report image"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"c"o"t"n"a"c"t" "f"o"r"m" "t"o" "c"o"n"t"a"c"t" "p"a"g"e"
+Created commit 33f6539: change cotnact form to contact page
+ 10 files changed, 3046 insertions(+), 31 deletions(-)
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git commit -m "change cotnact form to contact page"add .[Kpush  heroku master
+Counting objects: 45, done.
+Compressing objects:   4% (1/23)   Compressing objects:   8% (2/23)   Compressing objects:  13% (3/23)   Compressing objects:  17% (4/23)   Compressing objects:  21% (5/23)   Compressing objects:  26% (6/23)   Compressing objects:  30% (7/23)   Compressing objects:  34% (8/23)   Compressing objects:  39% (9/23)   Compressing objects:  43% (10/23)   Compressing objects:  47% (11/23)   Compressing objects:  52% (12/23)   Compressing objects:  56% (13/23)   Compressing objects:  60% (14/23)   Compressing objects:  65% (15/23)   Compressing objects:  69% (16/23)   Compressing objects:  73% (17/23)   Compressing objects:  78% (18/23)   Compressing objects:  82% (19/23)   Compressing objects:  86% (20/23)   Compressing objects:  91% (21/23)   Compressing objects:  95% (22/23)   Compressing objects: 100% (23/23)   Compressing objects: 100% (23/23), done.
+Writing objects:   4% (1/23)   Writing objects:   8% (2/23)   Writing objects:  13% (3/23)   Writing objects:  17% (4/23)   Writing objects:  21% (5/23)   Writing objects:  26% (6/23)   Writing objects:  30% (7/23)   Writing objects:  34% (8/23)   Writing objects:  39% (9/23)   Writing objects:  43% (10/23)   Writing objects:  47% (11/23)   Writing objects:  52% (12/23)   Writing objects:  56% (13/23)   Writing objects:  60% (14/23)   Writing objects:  65% (15/23)   Writing objects:  69% (16/23)   Writing objects:  73% (17/23)   Writing objects:  78% (18/23)   Writing objects:  82% (19/23)   Writing objects:  86% (20/23)   Writing objects:  91% (21/23)   Writing objects:  95% (22/23)   Writing objects: 100% (23/23)   Writing objects: 100% (23/23), 10.08 KiB, done.
+Total 23 (delta 22), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Removing .DS_Store files
+-----> Gemfile detected, running Bundler
+       All dependencies are satisfied
+       Locking environment
+-----> Rails app detected
+-----> Installing Exceptional plugin from git://github.com/contrast/exceptional.git... done.
+-----> Installing quick_sendgrid plugin from git://github.com/pedro/quick_sendgrid.git... done.
+-----> Configuring New Relic plugin... done.
+       Installing the New Relic plugin... done.
+       Compiled slug size is 41.9MB
+-----> Launching.................... done
+       http://newport-beach.heroku.com deployed to Heroku
+
+-----> Running email deploy notification... done
+-----> Running New Relic deploy notification... done
+
+To git@heroku.com:newport-beach.git
+   3fa9149..33f6539  master -> master
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m git push  heroku mastercommit -m "change cotnact form to contact page"add .[Kpush  heroku mastercommit -m "change market report image"add .[Kpush  heroku mastercommit -m "add ordering to subcats"add .[Kpush  heroku master[9Pheroku db:pushgit push heroku mastercommit -m "recaptcha and activation in users"add .[Krake db:migrate[1Pheroku db:pull[5Pgit add .rake db:migrate[1Pheroku db:pullscript/plugin install git://github.com/ambethia/recaptcha.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[39Pgit push heroku mastercommit -m "sign up working css fix"add .[Krake asset:packager:build_all[7Pgit push heroku mastercommit -m "sign up working"[9Ppush heroku masterrake asset:packager:build_all
+(in /home/omar/Proyectos/newport-beach)
+Created /home/omar/Proyectos/newport-beach/public/javascripts/base_packaged.js
+Created /home/omar/Proyectos/newport-beach/public/javascripts/secondary_packaged.js
+Created /home/omar/Proyectos/newport-beach/public/javascripts/admin_packaged.js
+Created /home/omar/Proyectos/newport-beach/public/stylesheets/base_packaged.css
+Created /home/omar/Proyectos/newport-beach/public/stylesheets/secondary_packaged.css
+[01;32momar@banus-dev[01;34m ~/Proyectos/newport-beach $[00m rake asset:packager:build_all
