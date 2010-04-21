@@ -98,6 +98,7 @@ map.services_par '/services/:category', :controller => "services", :action => "s
      admin.resources :staff
      admin.resources :opening
 		 admin.import_posts '/posts/import', :controller => "posts", :action =>"import" 
+		 admin.import_activate '/posts/import_activate', :controller => "posts", :action =>"import_action" 
      admin.resources :posts
      admin.resources :galleries
      admin.resources :faq

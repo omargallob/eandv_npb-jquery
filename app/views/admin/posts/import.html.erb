@@ -1,1 +1,33 @@
-<h1><%= @doc %></h1>
+<div id="side-nav">
+	<ul>
+		<li><%= link_to 'back', :back %></li>
+		<li><%= link_to "activate import", admin_import_activate_path %></li>
+	</ul>
+</div>
+<div id="main">
+	<div id="itsthetable">	
+		<table class="page_list">
+			<thead>
+				<th style="width:200px"><%= t('headerlist.title')%></th>
+				<th style="width:100px">Imported</th>
+				<th style="width:100px">Date</th>
+				<th style="width:150px"><%= t('headerlist.options')%></th>
+			</thead>			
+
+			<%  (@imports/"channel/item").each do |item| %>
+			<tr class=item>
+				<td>
+					<%= item.at("title").inner_html %><br/>
+					<%= item.at("author").inner_html %>
+				</td>
+				<td><% if Post.has_title?(item.at("title").inner_html)%> true<% else %>false <% end %></td>
+				<td>					<%= item.at("pubDate") %></td>
+				<td></td>
+
+			</tr>   
+			<% end %>
+
+		</table>
+	</div>
+</div>
+

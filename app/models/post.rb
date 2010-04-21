@@ -25,6 +25,14 @@ class Post < ActiveRecord::Base
 		Post.find(:all, :conditions => ['parent_id > 0'], :order => 'date DESC')
 	end
 
+ def self.has_title?(title)
+	result = Post.find(:all, :conditions => ['title = ?',title])
+	if result.size == 1
+		return true
+	else
+		return false
+	end
+ end		
 
  attr_accessor :crop_x, :crop_y, :crop_w, :crop_h     
 

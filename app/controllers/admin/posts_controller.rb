@@ -70,9 +70,21 @@ class Admin::PostsController < Admin::BaseController
 	end
 
 	def import
-		@doc=REXML::Document.new("/feeds/static/posts.xml")
-		
+ 		require 'hpricot'
 	
+		@imports = open("http://www.inman.com/syndication/Oryx_Hogan/index.xml") do |f|
+   			Hpricot.XML(f)
+ 		end
+ 
+	end
+	def import_action
+ 		require 'hpricot'
+		@imports = open("http://www.inman.com/syndication/Oryx_Hogan/index.xml") do |f|
+		 			Hpricot.XML(f)
+	 		end
+		(@imports/"channel/item").each do |item|
+			Post.build(:title => item.at("title").inner_html, :description => item.at("description").inner_html , :body_html =>item.at("tsubitle").inner_html, :navlabel=>item.at("title").inner_html.gsub(/ /,"-").downcase, :name => item.at("title").inner_html.gsub(/ /,"-").downcase)
+		end
 	end
 
 end
