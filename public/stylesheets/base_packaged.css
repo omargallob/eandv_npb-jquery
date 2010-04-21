@@ -69,9 +69,13 @@ body span.right {float: right; font-size: 11px; line-height: 18px; font-style: i
 #lower_pagewrapper #pre-footer ul.columns {margin-top: 20px; list-style: none; float: left; margin-left: 21px; padding-left: 5px; width: 223px; border-left: 1px solid #d4d4d4}
 #lower_pagewrapper #pre-footer ul.columns li {color: white; font-size: 10px}
 #lower_pagewrapper #pre-footer ul.columns li h5 {margin-bottom: 10px}
+#lower_pagewrapper #pre-footer ul.columns li a {color: white}
+#lower_pagewrapper #pre-footer ul.columns li a:hover {color: black}
 #lower_pagewrapper #pre-footer ul.last {width: 105px}
 #lower_pagewrapper #pre-footer ul.extracountries {width: 85px; float: left; border: 0px none; list-style: none; margin-top: 48px}
 #lower_pagewrapper #pre-footer ul.extracountries li {font-size: 10px}
+#lower_pagewrapper #pre-footer ul.extracountries li a {color: white}
+#lower_pagewrapper #pre-footer ul.extracountries li a:hover {color: black}
 #lower_pagewrapper #footer {margin: 0px auto; width: 100%; height: 35px; background-image: url(/images/system/bg/front/footer_bg.jpg); z-index: 100}
 #lower_pagewrapper #footer ul#links {width: 1000px; margin: 0px auto; list-style: none}
 #lower_pagewrapper #footer ul#links li {line-height: 31px; font-size: 11px; float: left; margin: 0 21px; color: #888888}
