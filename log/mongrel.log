@@ -10317,3 +10317,14 @@ Requiring REXML
 /home/omar/Proyectos/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
 /home/omar/Proyectos/newport-beach/app/views/admin/posts/import.html.erb:22: warning: string literal in condition
 /home/omar/Proyectos/newport-beach/app/views/admin/posts/import.html.erb:22: warning: string literal in condition
+/home/omar/Proyectos/newport-beach/app/views/admin/opening/_member.html.erb:14: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/admin/opening/_member.html.erb:15: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/admin/opening/_member.html.erb:16: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/admin/post_gallery/show.html.erb:21: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses
+/home/omar/Proyectos/newport-beach/app/views/blog/_post.html.erb:19: warning: don't put space before argument parentheses

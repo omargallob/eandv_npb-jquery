@@ -28,6 +28,9 @@
 	<% else %>
 		<% if  post.post_gallery and  post.post_gallery.post_uploads.size > 0 %>
 			<%= image_tag post.post_gallery.post_uploads.first.photo.url(:thumb), :style=>"margin-top:15px;float:left;" if post.photo %>
+		<% else %>	
+
+   		<%= image_tag post.photo.url(:small), :style=>"margin-top:15px;float:left;" if post.photo %>
 		<% end %>
 	<%= post.body_html  %>
 	<h6>Posted by <span><%= post.author.capitalize if post.author %></span><br>Date Posted: <%= post.date.to_s %></h6>
@@ -36,7 +39,10 @@
 <% else %>
 	<% if  post.post_gallery and  post.post_gallery.post_uploads.size > 0 %>
 			<%= image_tag post.post_gallery.post_uploads.first.photo.url(:thumb), :style=>"margin-top:15px;float:left;" if post.photo %>
-		<% end %>
+	<% else %>	
+   		<%= image_tag post.photo.url(:small), :style=>"margin-top:15px;float:left;" if post.photo %>
+
+	<% end %>
 	<%= post.body_html  %>
 	<h6>Posted by <span><%= post.author.capitalize if post.author %></span><br>Date Posted: <%= post.date.to_s %></h6>
 <% end %>

@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
 	has_many :subposts, :class_name => 'Post', :foreign_key => 'parent_id'
   belongs_to :parent, :class_name => 'Post', :foreign_key => 'parent_id'
 	has_one :post_gallery
- has_attached_file :photo, :styles => {:small => "80x60#", :large => "419x317#"},
+ has_attached_file :photo, :styles => {:small => "90x65#", :large => "419x317#"},
                             :url => "/assets/posts/:id/:style/:basename.jpg",
                             :storage => :s3,:processors => [:cropper],
                             :s3_credentials => "#{RAILS_ROOT}/config/s3.yml",
