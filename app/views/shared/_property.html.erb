@@ -16,9 +16,9 @@
 			<li class="bed"></li>
 			<li class="number"><p> <%= property.bathrooms %></p></li>
 			<li class="bath"></li>
-			<li class="number"><p></li>
+			<li class="number"><p>
 
-		<td> <%= property.garage %></td></p></li>
+	 <%= property.garage %></p></li>
 			<li class="garage"></li>
 			<li class="viewproperty"><%= link_to "View Property", property_full_path(property.location.region.gsub(/ /,"-"),property.title.gsub(/ /,"-")) %></li>
 		</ul>
