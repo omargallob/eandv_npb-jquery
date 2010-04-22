@@ -82,16 +82,19 @@ def pickup_properties(id)
       set_meta_tags :title =>  "Search: "+ @search_query.region.downcase+": "+ @search_query.area.downcase
         #@properties = Property.find_by_contents(params[:query])
         #@query = params[:states]+" "+params[:region]
-        
-        if @search_query.area=="All"
-         @search_query.region
+       if @search_query.zip == nil
+		      if @search_query.area=="All"
+		       @search_query.region
 
 					
-          @locations = Location.find(:all, :conditions => ["county = ?",@search_query.region])
-        else
-					logger.info "area : " + @search_query.area
-          @locations = Location.find(:all, :conditions => ["region = ?",@search_query.area])
-        end
+		        @locations = Location.find(:all, :conditions => ["county = ?",@search_query.region])
+		      else
+						logger.info "area : " + @search_query.area
+		        @locations = Location.find(:all, :conditions => ["region = ?",@search_query.area])
+		      end
+				else
+		        @locations = Location.find(:all, :conditions => ["zipcod = ?",@search_query.zip])
+				end	
 
         if @search_query.bedrooms=="All"
             for location in @locations
