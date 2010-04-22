@@ -1,5 +1,5 @@
 class ViewerController < ApplicationController
-  	protect_from_forgery :except => :show
+
   include Geokit::Geocoders
   def show
     @page = Page.find_by_name(params[:name])
