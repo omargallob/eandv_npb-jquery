@@ -12,7 +12,7 @@ rpx_now --version '>=0.6.17'
 fastercsv --version '>=1.5.3'
 haml --version '>=2.2.15'
 hpricot --version '>=0.8.2""
-
+rillow --version '>=0.2.0'
 
 
 
