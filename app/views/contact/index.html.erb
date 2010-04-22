@@ -30,7 +30,7 @@
 				<td class="wide"><%= f.select(:interested_in, @interested_in) %></td>
 			</tr>	
 			<tr>
-				<td><h2>property Type</h2></td>
+				<td><h2>Property Type</h2></td>
 				<td class="wide"><%= f.select(:property_type, @property_types.uniq) %></td>
 			</tr>	
 			<tr>
@@ -69,7 +69,7 @@
 <hr>
 <div id="mailing">
 <h2>MAILING LIST</h2>
-<p><%= check_box "post","mailing" %>Tick to Join our Mailing List and receive alert on new properties as they hit the market</p>
+<p><%= check_box "post","mailing" %>Click to Join our Mailing List and receive alert on new properties as they hit the market</p>
 </div>
 <%= recaptcha_tags %>
 <%= submit_tag "submit" %>

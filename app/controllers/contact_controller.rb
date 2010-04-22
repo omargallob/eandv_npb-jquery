@@ -129,9 +129,9 @@ layout "lightbox"
 
 	private
 	def pickup_variables_contact
-		@interested_in = ["Buying","Selling"]
+		@interested_in = ["Buying","Selling","Renting"]
 		@price_range = ["< 500,000","500,000 - 1,500,000", "1,5 - 4,500,000", "4,5 - 12,000,000","> 12,000,000 "]
-		@property_types = Property.find(:all, :include => :type).map{|x| [x.type.title,x.type.id] }
+		@property_types = Type.find(:all)
 		#@countries = Country.find(:all).map.{|y| [y.id,y.title]}
 		@countries = Country.find(:all).map{|y| [ y.title, y.id]}
 
