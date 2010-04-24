@@ -13,7 +13,6 @@ Rails::Initializer.run do |config|
 
   config.gem "aws-s3", :lib => "aws/s3"
 
-	config.gem "xml-object"
 	config.gem "websolr-acts_as_solr"
   config.gem 'sitemap_generator', :lib => false, :source => 'http://gemcutter.org'
   config.gem "geokit"

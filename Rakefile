@@ -11,4 +11,3 @@ require 'tasks/rails'
 require 'sitemap_generator/tasks' rescue LoadError
 
 
-require 'aas_tasks'

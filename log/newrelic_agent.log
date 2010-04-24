@@ -1407,3 +1407,18 @@ The error occurred while evaluating nil.[]
 [04/23/10 00:27:49 +0200 banus-dev (4627)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 4627
 [04/23/10 00:27:49 +0200 banus-dev (4627)] INFO : Agent Log found in /home/omar/Proyectos/newport-beach/log/newrelic_agent.log
 [04/23/10 00:27:49 +0200 banus-dev (4627)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/24/10 13:43:06 +0200 omar-gallos-MacBook-Pro.local (873)] INFO : Dispatcher: mongrel
+[04/24/10 13:43:06 +0200 omar-gallos-MacBook-Pro.local (873)] INFO : Application: My Application
+[04/24/10 13:43:06 +0200 omar-gallos-MacBook-Pro.local (873)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 873
+[04/24/10 13:43:06 +0200 omar-gallos-MacBook-Pro.local (873)] INFO : Agent Log found in /Users/omar/Proyectos/EandV/newport-beach/log/newrelic_agent.log
+[04/24/10 13:43:06 +0200 omar-gallos-MacBook-Pro.local (873)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/24/10 14:14:29 +0200 omar-gallos-MacBook-Pro.local (1127)] INFO : Dispatcher: mongrel
+[04/24/10 14:14:29 +0200 omar-gallos-MacBook-Pro.local (1127)] INFO : Application: My Application
+[04/24/10 14:14:29 +0200 omar-gallos-MacBook-Pro.local (1127)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 1127
+[04/24/10 14:14:29 +0200 omar-gallos-MacBook-Pro.local (1127)] INFO : Agent Log found in /Users/omar/Proyectos/EandV/newport-beach/log/newrelic_agent.log
+[04/24/10 14:14:29 +0200 omar-gallos-MacBook-Pro.local (1127)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
+[04/24/10 15:23:20 +0200 omar-gallos-MacBook-Pro.local (189)] INFO : Dispatcher: mongrel
+[04/24/10 15:23:20 +0200 omar-gallos-MacBook-Pro.local (189)] INFO : Application: My Application
+[04/24/10 15:23:20 +0200 omar-gallos-MacBook-Pro.local (189)] INFO : New Relic RPM Agent 2.10.8 Initialized: pid = 189
+[04/24/10 15:23:20 +0200 omar-gallos-MacBook-Pro.local (189)] INFO : Agent Log found in /Users/omar/Proyectos/EandV/newport-beach/log/newrelic_agent.log
+[04/24/10 15:23:20 +0200 omar-gallos-MacBook-Pro.local (189)] INFO : NewRelic::Agent::Samplers::DelayedJobLockSampler sampler not available: No DJ worker present
